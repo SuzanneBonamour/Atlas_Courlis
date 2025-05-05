@@ -74,7 +74,9 @@ L’objectif général de cette étude est de mieux comprendre l’utilisation d
 ::: {#fig-photo_intro}
 ```{r}
 #| echo: false
+
 knitr::include_graphics("photo_intro.png")
+
 ```
 
 Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, photos : Adrien Chaigne, Loic Jomat, Romain Beaubert).
