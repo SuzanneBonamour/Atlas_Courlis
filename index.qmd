@@ -69,6 +69,8 @@ Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaborat
 
 L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
 
+test photo ?
+
 ::: {#fig-zone_map}
 ```{r}
 #| echo: false
