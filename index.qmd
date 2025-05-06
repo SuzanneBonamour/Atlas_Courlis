@@ -85,6 +85,25 @@ tags$iframe(
 Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, photos : Adrien Chaigne, Loic Jomat, Romain Beaubert).
 :::
 
+::: {#fig-ma_figure}
+```{r}
+#| echo: false
+knitr::include_graphics("Photo_intro.png", dpi = 400)
+```
+
+Ma légende personnalisée ici, comme pour les cartes dynamiques. dpi 400
+:::
+
+::: {#fig-ma_figure}
+```{r}
+#| echo: false
+knitr::include_graphics("Photo_intro.png", dpi = 200)
+```
+
+Ma légende personnalisée ici, comme pour les cartes dynamiques. dpi 200
+:::
+
+
 À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
 
 Le travail présenté ici propose une cartographie fine de la répartition des courlis dans le site fonctionnel de la réserve de Moëze-Oléron en fonction des fluctuations environnementales et des perturbations anthropiques dédectées et mesurables sur la zone.
