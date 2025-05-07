@@ -65,44 +65,18 @@ palette_viri = viridis::viridis(10, begin = 0, end = 1, direction = 1, option = 
 
 # **Introduction**
 
-Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-photo_intro).
+Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-Photo_intro).
 
 L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
 
-test photo ?
-
-::: {#fig-zone_map}
+::: {#fig-Photo_intro}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "Photo_intro.png",
-  width = "100%",
-  height = "400px"
-)
+knitr::include_graphics("Photo_intro.png", dpi = 100)
 ```
 
 Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, photos : Adrien Chaigne, Loic Jomat, Romain Beaubert).
 :::
-
-::: {#fig-ma_figure}
-```{r}
-#| echo: false
-knitr::include_graphics("Photo_intro.png", dpi = 400)
-```
-
-Ma légende personnalisée ici, comme pour les cartes dynamiques. dpi 400
-:::
-
-::: {#fig-ma_figure}
-```{r}
-#| echo: false
-knitr::include_graphics("Photo_intro.png", dpi = 200)
-```
-
-Ma légende personnalisée ici, comme pour les cartes dynamiques. dpi 200
-:::
-
 
 À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
 
@@ -878,7 +852,44 @@ Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de ven
 -   Effort de chasse
 -   Periode de chasse
 
-#### ! Tonnes de chasse
+#### Tonnes de chasse
+
+::: {#fig-map_tonnes}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "map_tonnes.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
+:::
+
+::: {#fig-map_tonnes_v2}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "map_tonnes_v2.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Tonnes de chasse (point noir), zone marginale (jaune, 1.5km), zone de danger (rouge, 300m).
+:::
+
+::: {#fig-preds_tonnes_chasses_plot}
+```{r}
+#| echo: false
+knitr::include_graphics("preds_tonnes_chasses_plot.png", dpi = 400)
+```
+
+aaaaaaaaaaaaaaaaaaa
+:::
 
 ### ! Pêche à pied
 
