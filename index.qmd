@@ -852,7 +852,20 @@ Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de ven
 -   Effort de chasse
 -   Periode de chasse
 
-#### Tonnes de chasse
+#### Chasse à la tonnes
+
+La [chasse à la tonnes](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne) est une forme de chasse dite traditionnelle se pratiquant de nuit à l'affût dans des tonnes de chasse @fig-Une_tonne_de_chasse_au_gibier_d_eau. Les tonnes de chasses sont des constructions en dur, enterrées ou semi-enterrées et camouflés au bord d'une plan d'eau (la mare à la tonne).
+
+::: {#fig-Une_tonne_de_chasse_au_gibier_d_eau}
+```{r}
+#| echo: false
+#| out.width: 50% #"50%"  # ou "300px", selon ce que tu veux
+#| fig-align: "center"
+knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg")
+```
+
+Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (photo: Jean-Pierre Bazard).
+:::
 
 ::: {#fig-map_tonnes}
 ```{r}
@@ -885,11 +898,84 @@ Tonnes de chasse (point noir), zone marginale (jaune, 1.5km), zone de danger (ro
 ::: {#fig-preds_tonnes_chasses_plot}
 ```{r}
 #| echo: false
-knitr::include_graphics("preds_tonnes_chasses_plot.png", dpi = 900)
+#| out.width: 40% #"50%"  # ou "300px", selon ce que tu veux
+#| fig-align: "center"
+knitr::include_graphics("preds_tonnes_chasses_plot.png")
 ```
 
 Nombre de point GPS rapporté à l'aire de la zone marginale ou de danger en fonction de la période de chasse.
 :::
+
+Tableau de resultats :
+
+```{r, warning=FALSE}
+#| echo: false
+
+library(gt)
+
+atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
+
+
+# Charger les résultats du modèle
+# model_table <- readRDS(paste0(atlas_path,"resultats_modele_lmer.rds"))
+
+# Charger les résultats
+res <- readRDS(paste0(atlas_path,"resultats_modeles.rds"))
+fixed <- res$fixed
+r2 <- res$r2
+random <- res$random
+
+# Tableau des effets fixes
+
+fixed <- fixed %>%
+  mutate(term = recode(term,
+                       `(Intercept)` = "Intercept",
+                       "zonezone de danger" = "Zone de danger",
+                       "tonnes_periodchasse ouverte" = "Chasse ouverte",
+                       "zonezone de danger:tonnes_periodchasse ouverte" = "Zone de danger : chasse ouverte"
+  ))
+
+
+fixed %>%
+  gt() %>%
+  tab_header(title = "Effets fixes") %>%
+  cols_hide(columns = vars(effect)) %>%
+  fmt_scientific(
+    columns = vars(estimate, std.error, statistic, p.value, conf.low, conf.high),
+    decimals = 2
+  ) %>%
+  cols_label(
+    term = "",
+    estimate = "Coefficient",
+    std.error = "Erreur Std",
+    statistic = "t",
+    p.value = "p-value",
+    conf.low = "IC 2.5%",
+    conf.high = "IC 97.5%",
+    signif = "Signif."
+  ) %>%
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  )
+
+
+# Effets aléatoires
+random %>%
+  gt() %>%
+  tab_header(title = "Variance des effets aléatoires") %>%
+  fmt_scientific(columns = vars(Variance, `Écart-type`), decimals = 2)
+
+# R²
+r2 %>%
+  gt() %>%
+  tab_header(title = "R²") %>%
+  cols_hide(columns = optional) %>%
+  cols_label(R2_conditional = "R2 conditional",
+    R2_marginal = "R2 marginal") %>% 
+  fmt_number(columns = everything(), decimals = 2)
+
+```
 
 ### ! Pêche à pied
 
