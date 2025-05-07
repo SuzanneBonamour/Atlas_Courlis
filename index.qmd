@@ -885,10 +885,10 @@ Tonnes de chasse (point noir), zone marginale (jaune, 1.5km), zone de danger (ro
 ::: {#fig-preds_tonnes_chasses_plot}
 ```{r}
 #| echo: false
-knitr::include_graphics("preds_tonnes_chasses_plot.png", dpi = 400)
+knitr::include_graphics("preds_tonnes_chasses_plot.png", dpi = 900)
 ```
 
-aaaaaaaaaaaaaaaaaaa
+Nombre de point GPS rapporté à l'aire de la zone marginale ou de danger en fonction de la période de chasse.
 :::
 
 ### ! Pêche à pied
@@ -914,7 +914,7 @@ Toutes les données utilisées sont disponibles ici : XX
 3.  **Cloner le dépôt**
 
     ``` sh
-    git clone [https://github.com/utilisateur/mon_projet_biodiversite.git](https://github.com/SuzanneBonamour/CourlisServeur.git)  
+    git clone [CourlisServeur](https://github.com/SuzanneBonamour/CourlisServeur.git)  
     ```
 
 4.  **Installer les dépendances**
