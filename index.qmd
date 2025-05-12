@@ -57,6 +57,14 @@ with_tz(Sys.time(), "Europe/Paris")
 
 palette_viri = viridis::viridis(10, begin = 0, end = 1, direction = 1, option = "plasma")
 
+## Chemins de données ----------------------------------------------------------
+
+data_path <- "D:/Projets_Suzanne/Courlis/3) Data/1) data/"
+data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
+data_image_path <- "D:/Projets_Suzanne/Courlis/3) Data/3) images/"
+data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
+atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
+
 ```
 
 ::: {.logo-row style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;"}
@@ -90,7 +98,14 @@ Le détails des méthodes est disponible dans le document [Readme]{style="font-f
 
 ## La zone d'étude
 
-La zone d'étude (voir @fig-zone_map) est un rectangle de XXX km² qui s'étend :
+```{r}
+#| include: false
+BOX <- sf::st_read(paste0(data_generated_path, "BOX.gpkg")) 
+area_box <- sf::st_area(BOX)
+area_box_km <- as.numeric((round(area_box / 1000000, 1)))
+```
+
+La zone d'étude (voir @fig-zone_map) est un rectangle de `r area_box_km` km² qui s'étend :
 
 -   au Nord jusqu'à l'estuaire de la Charente,
 -   à l'Est jusqu'à la limite Est de la ville de Rochefort,
@@ -181,12 +196,9 @@ Pourcentage moyen de temps passé dans la réserve pour :
 ::: {#fig-duree_dans_reserve_plot}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "duree_dans_reserve_plot.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
 ```
 
 Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentage moyen pour chaque comportement.
@@ -214,17 +226,14 @@ tags$iframe(
 Domaine vital à 95% (ligne) et à 50% (couleur pleine).
 :::
 
-Aire (en m²) des domaines vitaux individuels estimés à 95% (points) et 50% (couleurs) des observations (@fig-home_range_aire_plot, @fig-HR_pourc_RN).
+Aire (en m²) des domaines vitaux individuels estimés à 95% (points) et 50% (couleurs) des observations (@fig-area_hr_plot, @fig-HR_pourc_RN).
 
-::: {#fig-home_range_aire_plot}
+::: {#fig-area_hr_plot}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "area_hr_plot.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
 
 Moyenne (ligne noire) de l'aire des domaines vitaux à 95% +/- écart-type (lignes gris pointillés).
@@ -249,14 +258,10 @@ Domaines vitaux à 95% (à gauche) et à 50% (à droite) en fonction de son pour
 ::: {#fig-reposoir_photo}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "1-Reposoir limicoles Oléron-Photo RNNMO LPO.jpg",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 30% 
+#| fig-align: "center"
+knitr::include_graphics("1-Reposoir limicoles Oléron-Photo RNNMO LPO.jpg", dpi = 100)
 ```
-
 Reposoir de limicoles dans la réserve naturelle de Moëze-Oléron.
 :::
 
@@ -334,9 +339,7 @@ Reposoirs secondaires en fonction de la hauteur de marée basse.
 
 ### Reposoir en fonction de l'age
 
-**Age chronologique**
-
-L'âge au baguage déterminé grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adulte après le 1er septembre de l'année suivante.
+L'âge des individus est déterminé au baguage grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
 
 ::: {#fig-UDMap_roosting_age_ZOOM}
 ```{r}
@@ -371,6 +374,17 @@ Variation des reposoirs en fonction du sexe.
 :::
 
 ## Identification des zones d'alimentation
+
+::: {#fig-Pointe_d'Arceau_et_pointe_de_Bellevue}
+```{r}
+#| echo: false
+#| out.width: 50% 
+#| fig-align: "center"
+knitr::include_graphics("Pointe_d'Arceau_et_pointe_de_Bellevue,_Oléron.jpg", dpi = 100)
+```
+
+Sur le Bassin de l'Ile d'Oléron - Pointe d'Arceau et pointe de Bellevue (Auteur : Idaho69).
+:::
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
@@ -459,12 +473,9 @@ Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la dista
 ::: {#fig-distance_roost_forag_plot}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "distance_roost_forag_plot.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("distance_roost_forag_plot.png", dpi = 100)
 ```
 
 Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
@@ -477,12 +488,9 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 ::: {#fig-distance_roost_forag_age_sex_plot}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "distance_roost_forag_age_sex_plot.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("distance_roost_forag_age_sex_plot.png", dpi = 100)
 ```
 
 Effets du sexe (à gauche) et de l'âge (à droite) sur la distance individuelle à chaque cycle de marais entre les zones d'alimentation et de repos.
@@ -514,15 +522,12 @@ tags$iframe(
 Reposoirs annuels.
 :::
 
-::: {#fig-plot_overlapp_roosting_year_repet_pop}
+::: {#fig-plot.overlapp_roosting_year_repet_pop}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "plot.overlapp_roosting_year_repet_pop.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("plot.overlapp_roosting_year_repet_pop.png", dpi = 100)
 ```
 
 Pourcentage de chevauchement des reposoirs entre années.
@@ -530,15 +535,12 @@ Pourcentage de chevauchement des reposoirs entre années.
 
 Analyses individuelles :
 
-::: {#fig-plot_roosting_year_repet}
+::: {#fig-plot.roosting_year_repet}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "plot.roosting_year_repet.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("plot.roosting_year_repet.png", dpi = 100)
 ```
 
 Pourcentage de chevauchement moyen des reposoirs individuelles entre années.
@@ -580,12 +582,9 @@ Zones d'alimentation annuels.
 ::: {#fig-plot.overlapp_foraging_year_repet_pop}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "plot.overlapp_foraging_year_repet_pop.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("plot.overlapp_foraging_year_repet_pop.png", dpi = 100)
 ```
 
 Pourcentage de chevauchement des zones d'alimentation entre années.
@@ -596,12 +595,9 @@ Analyses individuelles :
 ::: {#fig-plot.foraging_year_repet}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "plot.foraging_year_repet.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("plot.foraging_year_repet.png", dpi = 100)
 ```
 
 Pourcentage de chevauchement moyen des zones d'alimentation individuelles entre années.
@@ -614,12 +610,9 @@ Il y a une corrélation significative de la fidélité entre années et individu
 ::: {#fig-correlation_fidelite_plot}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "correlation_fidelite_plot.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 30% 
+#| fig-align: "center"
+knitr::include_graphics("correlation_fidelite_plot.png", dpi = 100)
 ```
 
 Correlation entre la fidélité aux reposoirs et aux zones d'alimentation.
@@ -635,15 +628,12 @@ Correlation entre la fidélité aux reposoirs et aux zones d'alimentation.
 
 #### Reposoirs
 
-::: {#fig-plot_roosting_maree_repet}
+::: {#fig-plot.roosting_maree_repet}
 ```{r}
 #| echo: false
-
-tags$iframe(
-  src = "plot.roosting_maree_repet.png",
-  width = "100%",
-  height = "400px"
-)
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("plot.roosting_maree_repet.png", dpi = 100)
 ```
 
 Variation des reposoirs individuels au cours des cycles de marée.
@@ -845,6 +835,16 @@ Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de ven
 :::
 
 ### Chasse
+
+::: {#fig-Chasse_au_Marais_Paris_Musées_20230829003750}
+```{r}
+#| echo: false
+#| out.width: 50% #"50%"  # ou "300px", selon ce que tu veux
+#| fig-align: "center"
+knitr::include_graphics("Chasse_au_Marais_Paris_Musées_20230829003750.jpg", dpi = 100)
+```
+La chasse au marais. Musée Carnavalet, Histoire de Paris. (Auteurs : Beaume, Emile ou Marie Emile, Pézenas, 28–04–1888 - 1967, dessinateur-lithographe ; Langlumé, Pierre, Poitiers, 1790 - 1830, imprimeur-lithographe Anonyme, editeur.) 
+:::
 
 #### Chasse à pied
 
