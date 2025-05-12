@@ -481,9 +481,7 @@ knitr::include_graphics("distance_roost_forag_plot.png", dpi = 100)
 Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
 :::
 
-Les distances à chaque cycle de marais des paires de centoïds indivudelles entre les zones d'alimentation et de repos ont été comparé entre les mâles et les femelles, et les adultes et les juvéniles (@fig-distance_roost_forag_age_sex_plot).
-
-Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significatives entre les mâles et les femelles.
+Les distances à chaque cycle de marais des paires de centoïds individuels entre les zones d'alimentation et de repos ont été comparé entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_age_sex_plot).
 
 ::: {#fig-distance_roost_forag_age_sex_plot}
 ```{r}
@@ -495,6 +493,8 @@ knitr::include_graphics("distance_roost_forag_age_sex_plot.png", dpi = 100)
 
 Effets du sexe (à gauche) et de l'âge (à droite) sur la distance individuelle à chaque cycle de marais entre les zones d'alimentation et de repos.
 :::
+
+Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significatives entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
 
 ## Fidélité aux espaces
 
@@ -522,7 +522,7 @@ tags$iframe(
 Reposoirs annuels.
 :::
 
-::: {#fig-plot.overlapp_roosting_year_repet_pop}
+::: {#fig-plot_overlapp_roosting_year_repet_pop}
 ```{r}
 #| echo: false
 #| out.width: 70% 
@@ -535,7 +535,7 @@ Pourcentage de chevauchement des reposoirs entre années.
 
 Analyses individuelles :
 
-::: {#fig-plot.roosting_year_repet}
+::: {#fig-plot_roosting_year_repet}
 ```{r}
 #| echo: false
 #| out.width: 70% 
@@ -544,21 +544,6 @@ knitr::include_graphics("plot.roosting_year_repet.png", dpi = 100)
 ```
 
 Pourcentage de chevauchement moyen des reposoirs individuelles entre années.
-:::
-
-::: {#fig-UDMap_roosting_rep_inter_year}
-```{r}
-#| eval: false
-#| include: false
-
-tags$iframe(
-  src = "UDMap_roosting_rep_inter_year.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs annuelles individuelles.
 :::
 
 #### Zones d'alimentation
@@ -610,19 +595,13 @@ Il y a une corrélation significative de la fidélité entre années et individu
 ::: {#fig-correlation_fidelite_plot}
 ```{r}
 #| echo: false
-#| out.width: 30% 
+#| out.width: 25% 
 #| fig-align: "center"
 knitr::include_graphics("correlation_fidelite_plot.png", dpi = 100)
 ```
 
 Correlation entre la fidélité aux reposoirs et aux zones d'alimentation.
 :::
-
-### ! Changement au cours des mois
-
-#### ! Reposoirs
-
-#### ! Zone d'alimentation
 
 ### Changement au cours des cycles de marée
 
@@ -641,15 +620,12 @@ Variation des reposoirs individuels au cours des cycles de marée.
 
 #### ! Alimentation
 
-::: {#fig-plot_foraging_maree_repet}
+::: {#fig-plot_._foraging_maree_repet}
 ```{r}
 #| echo: false
-
-# tags$iframe(
-#   src = "plot.foraging_maree_repet.png",
-#   width = "100%",
-#   height = "400px"
-# )
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("plot.foraging_maree_repet.png", dpi = 100)
 ```
 
 Variation des zones d'alimentation individuelles au cours des cycles de marée.
