@@ -844,13 +844,99 @@ tags$iframe(
 Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 :::
 
-### ! Chasse
+### Chasse
 
-#### ! Chasseur à pied
+#### Chasse à pied
 
--   Zone de chasse
--   Effort de chasse
--   Periode de chasse
+Période de chasse.
+
+::: {#fig-UDMap_100x100_roosting_in_out_saison_glob}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_100x100_roosting_in_out_saison_glob.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+UDMap_100x100_roosting_in_out_saison_glob
+:::
+
+::: {#fig-UDMap_100x100_foraging_in_out_saison_glob}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_100x100_foraging_in_out_saison_glob.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+UDMap_100x100_foraging_in_out_saison_glob
+:::
+
+Jour avec ou sans chasseur pendant la période de chasse.
+
+::: {#fig-UDMap_100x100_roosting_jour_de_chasse_glob}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_100x100_roosting_jour_de_chasse_glob.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+UDMap_100x100_roosting_jour_de_chasse_glob
+:::
+
+::: {#fig-UDMap_100x100_foraging_jour_de_chasse_glob}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_100x100_foraging_jour_de_chasse_glob.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+UDMap_100x100_foraging_jour_de_chasse_glob
+:::
+
+Nombre de chasseur pendant la période de chasse.
+
+::: {#fig-UDMap_100x100_roosting_seuil_chasse_glob}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_100x100_roosting_seuil_chasse_glob.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+UDMap_100x100_roosting_seuil_chasse_glob
+:::
+
+::: {#fig-UDMap_100x100_foraging_seuil_chasse_glob}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_100x100_foraging_seuil_chasse_glob.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+UDMap_100x100_foraging_seuil_chasse_glob
+:::
 
 #### Chasse à la tonnes
 
@@ -895,6 +981,18 @@ tags$iframe(
 Tonnes de chasse (point noir), zone marginale (jaune, 1.5km), zone de danger (rouge, 300m).
 :::
 
+Modèle statistiques utilisé (packages "lmerTest") :
+
+nombre de point GPS ~ zone * periode de chasse + (individu)
+
+Modèle linéaire mixte, uniquement sur les points GPS enregistrés de nuit.
+
+Le nombre de point GPS est rapporté à la surface totale de chaque zone (danger ou proximité).
+
+Zone et période de chasse sont des effets fixes.
+
+Individu est une effet aléatoire.
+
 ::: {#fig-preds_tonnes_chasses_plot}
 ```{r}
 #| echo: false
@@ -906,7 +1004,7 @@ knitr::include_graphics("preds_tonnes_chasses_plot.png")
 Nombre de point GPS rapporté à l'aire de la zone marginale ou de danger en fonction de la période de chasse.
 :::
 
-Tableau de resultats :
+Tableau de resultats du modèle :
 
 ```{r, warning=FALSE}
 #| echo: false
