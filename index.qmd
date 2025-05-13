@@ -132,7 +132,7 @@ Zones d'études - zone d'étude globale (zone blanche) et zones d'études rédui
 
 ### Nettoyage des données GPS
 
-Le nettoyage des données issues des balises GPS a principalement été effectué à l'aide du package R adehabitat.
+Le nettoyage des données issues des balises GPS a principalement été effectué à l'aide du package R adehabitat (Calenge 2006).
 
 En résumé, les points utilisé pour déterminé les comportements d'alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d'étude ont été utilisé. Le temps entre chaque point de localisation sauvegardé par individé pouvant varier et propoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l'oiseau a enregistré plus d'un point par période de 5 min ont été analyses (éviter d'analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basses de 100 points estimés par individus sur une période supérieure à de fois 28 jours (deux cycles lunaires) à été appliqué pour maintenir une très haute qualité de suivi des individus pour les analyses.
 
@@ -206,7 +206,7 @@ Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en
 
 ## Domaines vitaux au sein de la réserve de Moëze-Oléron
 
-Les domaines vitaux ("home range") individuels sont estimés à partir de tous les points (tous comportements confondus), en utilisant les fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR".
+Les domaines vitaux ("home range") individuels sont estimés à partir de tous les points (tous comportements confondus), en utilisant les fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" (Calenge 2006).
 
 Deux domaines vitaux sont estimés pour chaque individus, le 1er à partir de 95% de l'aire totale de tous les points de l'individu, le 2ème à partir de 50% (@fig-UDMap_HR_ID).
 
@@ -239,6 +239,8 @@ knitr::include_graphics("area_hr_plot.png", dpi = 100)
 Moyenne (ligne noire) de l'aire des domaines vitaux à 95% +/- écart-type (lignes gris pointillés).
 :::
 
+Pourcentage de l'aire des domaines vitaux individuels (à 95% et 50%) situés dans la réserve naturelle de Moëze-Oléron (@fig-HR_pourc_RN).
+
 ::: {#fig-HR_pourc_RN}
 ```{r}
 #| echo: false
@@ -267,7 +269,7 @@ Reposoir de limicoles dans la réserve naturelle de Moëze-Oléron.
 
 Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les reposoirs sont estimé à partir des données de l'ensemble des individus, soit de façon global (@fig-UDMap_roosting_glob) sur toute la zone d'études (sur des grilles de 100m x 100m), soit de façon plus fine (@fig-UDMap_roosting_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les reposoirs sont identifié à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR".
+Les reposoirs sont estimé à partir des données de l'ensemble des individus, soit de façon global (@fig-UDMap_roosting_glob) sur toute la zone d'études (sur des grilles de 100m x 100m), soit de façon plus fine (@fig-UDMap_roosting_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les reposoirs sont identifié à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" (Calenge 2006).
 
 ::: {#fig-UDMap_roosting_glob}
 ```{r}
@@ -297,7 +299,7 @@ tags$iframe(
 Reposoirs secondaires.
 :::
 
-Méthode 2 : identification des hotspots (avec au moins 3 individus qui utilisent la zone)
+Méthode 2 : identification des hotspots (avec au moins 3 individus qui utilisent la zone) (Bakker et al. 2021)
 
 ::: {#fig-UDMap_roosting_hotspot}
 ```{r}
@@ -388,7 +390,7 @@ Sur le Bassin de l'Ile d'Oléron - Pointe d'Arceau et pointe de Bellevue (Auteur
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les zones d'almimentation sont estimées à partir des données de l'ensemble des individus, soit de façon global (@fig-UDMap_foraging_glob) sur toute la zone d'études (sur des grilles de 100m x 100m), soit de façon plus fine (@fig-UDMap_foraging_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR".
+Les zones d'almimentation sont estimées à partir des données de l'ensemble des individus, soit de façon global (@fig-UDMap_foraging_glob) sur toute la zone d'études (sur des grilles de 100m x 100m), soit de façon plus fine (@fig-UDMap_foraging_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" (Calenge 2006).
 
 ::: {#fig-UDMap_foraging_glob}
 ```{r}
@@ -417,6 +419,8 @@ tags$iframe(
 
 Zones d'alimentation secondaires (sur des grilles zone par zone de 10x10m).
 :::
+
+Méthode 2 (Bakker et al. 2021).
 
 ::: {#fig-UDMap_foraging_hotspot}
 ```{r}
@@ -550,7 +554,7 @@ Pourcentage de chevauchement moyen des reposoirs individuelles entre années.
 
 Analyses globales :
 
-::: {#fig-UDMap.foraging_year_repet_pop}
+::: {#fig-UDMap_foraging_year_repet_pop}
 ```{r}
 #| echo: false
 
@@ -590,7 +594,9 @@ Pourcentage de chevauchement moyen des zones d'alimentation individuelles entre 
 
 #### Correlation entre la fidélité aux reposoirs et aux zones d'alimentation
 
-Il y a une corrélation significative de la fidélité entre années et individuelle aux reposoir set aux zones d'alimentation (p-value : 0.039 \*, adj-R² : 0.32). Les individus qui sont fortement fidèle à leur zone d'alimentation le sont aussi pour leur reposoirs.
+Il y a une corrélation significative de la fidélité entre années et individuelle aux reposoirs et aux zones d'alimentation (p-value : 0.039 \*, adj-R² : 0.32). 
+
+Les individus qui sont fortement fidèle à leur zone d'alimentation le sont aussi pour leur reposoirs.
 
 ::: {#fig-correlation_fidelite_plot}
 ```{r}
@@ -980,7 +986,7 @@ knitr::include_graphics("preds_tonnes_chasses_plot.png")
 Nombre de point GPS rapporté à l'aire de la zone marginale ou de danger en fonction de la période de chasse.
 :::
 
-Tableau de resultats du modèle :
+Résultats du modèle :
 
 ```{r, warning=FALSE}
 #| echo: false
@@ -1087,7 +1093,10 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 
 # **Bibliographie**
 
-XX
+Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
+
+Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of
+space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
 
 # **Travail de terrain**
 
@@ -1095,11 +1104,7 @@ Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et éq
 
 # **Remerciements**
 
-Je remercie chaleureusement :
-
--   Les meilleures co-bureaux : Anaïs et Marine
--   Anais une fois de plus pour nos brainstorming récurrents !
--   Les membres sympathiques du Cambouis pour leur bons conseils et nos discussions endiablées à base data et de code \<3
+Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pour leurs conseils pertinents.
 
 # **Contact**
 
