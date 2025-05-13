@@ -210,7 +210,7 @@ Les domaines vitaux ("home range") individuels sont estimés à partir de tous l
 
 Deux domaines vitaux sont estimés pour chaque individus, le 1er à partir de 95% de l'aire totale de tous les points de l'individu, le 2ème à partir de 50% (@fig-UDMap_HR_ID).
 
-La [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau) est utilisé pour estimer le meilleur smoothing paramètre "h" à chaque sous jeux de données, puis "h" est divisé par 2 pour affiner la précision des cartes.
+La [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau) est utilisé pour estimer un smoothing paramètre h/2 à adapté à chaque échantillon du jeu de données et permettant des analyses de grain très fin.
 
 ::: {#fig-UDMap_HR_ID}
 ```{r}
@@ -307,6 +307,20 @@ Méthode 2 : identification des hotspots (avec au moins 3 individus qui utilisen
 
 tags$iframe(
   src = "UDMap_roosting_hotspot.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs (hotspot).
+:::
+
+::: {#fig-UDMap_roosting_hotspot_from1id}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_hotspot_from1id.html",
   width = "100%",
   height = "400px"
 )
@@ -817,16 +831,6 @@ Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de ven
 :::
 
 ### Chasse
-
-::: {#fig-Chasse_au_Marais_Paris_Musées_20230829003750}
-```{r}
-#| echo: false
-#| out.width: 50% #"50%"  # ou "300px", selon ce que tu veux
-#| fig-align: "center"
-knitr::include_graphics("Chasse_au_Marais_Paris_Musées_20230829003750.jpg", dpi = 100)
-```
-La chasse au marais. Musée Carnavalet, Histoire de Paris. (Auteurs : Beaume, Emile ou Marie Emile, Pézenas, 28–04–1888 - 1967, dessinateur-lithographe ; Langlumé, Pierre, Poitiers, 1790 - 1830, imprimeur-lithographe Anonyme, editeur.) 
-:::
 
 #### Chasse à pied
 
