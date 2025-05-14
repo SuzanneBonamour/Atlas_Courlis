@@ -73,14 +73,14 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 
 # **Introduction**
 
-## Contexte de l'étude
-
 <img src="20170226-Großer_Brachvogel.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
 </p>
+
+## Contexte de l'étude
 
 Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-Photo_intro).
 
@@ -152,12 +152,14 @@ France : Liste rouge nationale : Vulnérable. Protégé par l’arrêté du 29 o
 
 International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions, mais interdite en France).
 
+<a href="#top">↑ retour en haut</a>
+
 # **Atlas dynamiques**
 
 <img src="Eurasian_Curlew_by_Tisha_Mukherjee_08.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : Tisha Mukherjee (Wikimedia Commons)
 </p>
 
@@ -335,7 +337,7 @@ Domaines vitaux à 95% (à gauche) et à 50% (à droite) en fonction de son pour
 <img src="1-Reposoir limicoles Oléron-Photo RNNMO LPO.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: bottom; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : Réserve Naturelle de Moëze-Oléron (RNNMO-LPO)
 </p>
 
@@ -463,17 +465,6 @@ Variation des reposoirs en fonction du sexe.
 :::
 
 ## Identification des zones d'alimentation
-
-::: {#fig-Pointe_d'Arceau_et_pointe_de_Bellevue}
-```{r}
-#| echo: false
-#| out.width: 50% 
-#| fig-align: "center"
-knitr::include_graphics("Pointe_d'Arceau_et_pointe_de_Bellevue,_Oléron.jpg", dpi = 100)
-```
-
-Sur le Bassin de l'Ile d'Oléron - Pointe d'Arceau et pointe de Bellevue (Auteur : Idaho69).
-:::
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
@@ -1011,18 +1002,12 @@ Zone d'alimentation en fonction du nombre de chasseur présents.
 
 #### Chasse à la tonnes
 
+<div style="float: right; width: 500px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;">
+  <img src="Une_tonne_de_chasse_au_gibier_d'eau.jpg" style="width: 100%;">
+  <p>Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (photo: Jean-Pierre Bazard).</p>
+</div>
+
 La [chasse à la tonnes](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne) est une forme de chasse dite traditionnelle se pratiquant de nuit à l'affût dans des tonnes de chasse @fig-Une_tonne_de_chasse_au_gibier_d_eau. Les tonnes de chasses sont des constructions en dur, enterrées ou semi-enterrées et camouflés au bord d'une plan d'eau (la mare à la tonne).
-
-::: {#fig-Une_tonne_de_chasse_au_gibier_d_eau}
-```{r}
-#| echo: false
-#| out.width: 50% #"50%"  # ou "300px", selon ce que tu veux
-#| fig-align: "center"
-knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg")
-```
-
-Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (photo: Jean-Pierre Bazard).
-:::
 
 ::: {#fig-map_tonnes}
 ```{r}
@@ -1159,7 +1144,7 @@ r2 %>%
 <img src="Numenius_arquata_(no).jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : Arnstein Rønning (Wikimedia Commons)
 </p>
 
@@ -1168,7 +1153,7 @@ r2 %>%
 <img src="France_-_17_-_Saint-Froult_-_Sentier_des_Polders.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : KiwiNeko14 (Wikimedia Commons)
 </p>
 
@@ -1196,12 +1181,14 @@ Ouvrez R et exécutez : `r    install.packages(c("lubridate", "ggplot2", "sf", "
 
 Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et les cartographies sont disponibles sur le github repository XX. Afin de repoduire les résultats, faire tourner les scripts les uns après les autres par ordre alphabétique "A_Courlis_GPS_x", puis "B_Courlis_ENV_x", etc...
 
+<a href="#top">↑ retour en haut</a>
+
 # **Bibliographie**
 
 <img src="France_-_17_-_Saint-Froult_-_Plage_de_Plaisance.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : KiwiNeko14 (Wikimedia Commons)
 </p>
 
@@ -1216,29 +1203,33 @@ space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
 <img src="Réserve_naturelle_nationale_de_Moëze-Oléron(3).jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
-  Crédit photo : Ji-Elle(Wikimedia Commons)
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
+  Crédit photo : Ji-Elle (Wikimedia Commons)
 </p>
 
 Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
+
+<a href="#top">↑ retour en haut</a>
 
 # **Remerciements**
 
 <img src="RNN_Moëze_Oléron_-_img_48656.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : Pmau (Wikimedia Commons)
 </p>
 
 Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pour leurs conseils pertinents.
+
+<a href="#top">↑ retour en haut</a>
 
 # **Contact**
 
 <img src="Pont_d'Oléron.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 
-<p style="font-size: 0.8em; color: gray; text-align: right; margin-top: 0;">
+<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
   Crédit photo : Mutichou (Wikimedia Commons)
 </p>
 
