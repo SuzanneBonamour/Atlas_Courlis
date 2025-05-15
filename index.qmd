@@ -334,11 +334,11 @@ Domaines vitaux à 95% (à gauche) et à 50% (à droite) en fonction de son pour
 
 ## Identification des reposoirs
 
-<img src="1-Reposoir limicoles Oléron-Photo RNNMO LPO.jpg"
+<img src="Pointe_d'Arceau_et_pointe_de_Bellevue,_Oléron.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: bottom; margin-bottom: 5px;" />
 
 <p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-  Crédit photo : Réserve Naturelle de Moëze-Oléron (RNNMO-LPO)
+  Crédit photo : Idaho69 (Wikimedia Commons)
 </p>
 
 
@@ -1002,12 +1002,27 @@ Zone d'alimentation en fonction du nombre de chasseur présents.
 
 #### Chasse à la tonnes
 
-<div style="float: right; width: 500px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;">
+<div style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;">
   <img src="Une_tonne_de_chasse_au_gibier_d'eau.jpg" style="width: 100%;">
-  <p>Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (photo: Jean-Pierre Bazard).</p>
+  <p>Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (crédit photo: Jean-Pierre Bazard).</p>
 </div>
 
-La [chasse à la tonnes](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne) est une forme de chasse dite traditionnelle se pratiquant de nuit à l'affût dans des tonnes de chasse @fig-Une_tonne_de_chasse_au_gibier_d_eau. Les tonnes de chasses sont des constructions en dur, enterrées ou semi-enterrées et camouflés au bord d'une plan d'eau (la mare à la tonne).
+La [chasse à la tonnes](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et dissimulée appelée tonne. Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer et de tirer les oiseaux migrateurs, principalement les anatidés (canards, oies), souvent de nuit.
+
+La tonne est enterrée ou semi-enterrée et équipée pour permettre l’observation, l’attente prolongée et le tir. Des appelants vivants (canards domestiques dressés) ou artificiels (formes flottantes) sont disposés sur le plan d’eau pour simuler la présence d’un groupe et inciter les oiseaux sauvages à se poser.
+
+Ces plans d’eau (appelé mare à la tonne) sont spécifiquement aménagés pour optimiser leur attractivité : contrôle de la végétation, entretien régulier, et gestion du niveau d’eau. Leur usage est réservé aux installations déclarées.
+
+Cette pratique est fortement ancrée dans le patrimoine cynégétique local, notamment sur le littoral et les marais de Charente-Maritime. Toutefois, elle soulève des questions relatives à la pression exercée sur les espèces migratrices, à la conservation des zones humides, et à la cohabitation avec d’autres usagers de la nature.
+
+Réglementation en Charente-Maritime : 
+
+- Période de chasse : ouverture généralement fin aout, fermeture fin février.
+- Horaires de tir : Le tir de nuit est autorisé dans le cadre de la chasse à la tonne. En période anticipée (à partir du 17 août), le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime (DPM) et fluvial (DPF).
+- Installations des tonnes : La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes. Les installations doivent répondre à des normes de sécurité et ne peuvent être déplacées sans autorisation.
+- Appelants : L’utilisation d’appelants vivants est autorisée sous réserve de déclaration, baguage et respect des règles de détention (traçabilité, soins, conditions sanitaires). Les formes artificielles sont également admises.
+
+<div style="clear: both;"></div>
 
 ::: {#fig-map_tonnes}
 ```{r}
@@ -1023,6 +1038,11 @@ tags$iframe(
 Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
 :::
 
+Afin d'étudier l'effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l'utilisation del'espace des Courlis cendré, deux zones ont été définies (@fig-map_tonnes_v2) :
+
+- Zone de danger : zone d'un rayon de 300m entourant chaque tonnes de chasse (en orange)
+- Zone de proximité : zone d'une rayon de 1.5 km entournat chaque tonnes de chasse (en jaune)
+
 ::: {#fig-map_tonnes_v2}
 ```{r}
 #| echo: false
@@ -1034,20 +1054,34 @@ tags$iframe(
 )
 ```
 
-Tonnes de chasse (point noir), zone marginale (jaune, 1.5km), zone de danger (rouge, 300m).
+Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
 :::
 
-Modèle statistiques utilisé (packages "lmerTest") :
+Pour estimer les effets de la période de chasse (hors ou pendant la pépriode de chasse) et de la zone (de danger ou de proximité) sur la répartition spatiale des points GPS enregistrés pour chaque individu, le modèle linéaire mixte suivant a été appliqué via le packages R "lmerTest":
 
-nombre de point GPS ~ zone * periode de chasse + (individu)
+$$
+Nbpoint_{it} = \beta_0 + \beta_1 \text{zone}_i + \beta_2 \text{period}_t + \beta_3 \left(\text{zone}_i \times \text{period}_t\right) + IND_i + \varepsilon_{it}
+$$
 
-Modèle linéaire mixte, uniquement sur les points GPS enregistrés de nuit.
+Avec :
 
-Le nombre de point GPS est rapporté à la surface totale de chaque zone (danger ou proximité).
+$$
+IND_i \sim \mathcal{N}(0, \sigma_b^2), \quad \varepsilon_{it} \sim \mathcal{N}(0, \sigma^2)
+$$
 
-Zone et période de chasse sont des effets fixes.
+Ainsi, le nombre de point GPS enregistrés $Nbpoint_{it}$ pour l'individu $i$ est expliqué par trois effets fixes : 
 
-Individu est une effet aléatoire.
+- $\beta_1$ correspondant l'effet de la zone $\text{zone}_i$
+- $\beta_2$ correspondant à l'effet de la période $\text{period}_t$
+- $\beta_3$ correspondant à l'effet intéractif de la $\text{zone}_i$ par la $\text{period}_t$, c'est-à-dire l'effet de la zone de danger *versus* de proximité sachant que le point a été enregistré durant *versus* en dehors de la période de chasse
+
+$\beta_0$ est l'ordonné à l'origine du modèle.
+
+Puisqu'un même individus comptent plusieurs points GPS enregistré, et que ces points ne sont donc pas indépendants entre eux, un effet aléaoire $IND_i$ a été ajouté. $\varepsilon_{it}$ correspond aux résidus du modèle, autrement dit à la variation dans le nombre de points GPS $Nbpoint_{it}$ qui n'est pas expliqué par ces variables.
+
+Puisque la chasse à la tonnes se pratique de nuit, uniquement les points GPS enregistrés de nuit ont été inclus dans l'analyse.
+
+Aussi, l'aire des zones de danger et de proximité sont nécessairement différentes, avec la zone de proximité bien plus étendues que la zone de danger. Le nombre point GPS enregistrés pour chaque individus dans chaque zone a donc été divisé par surface total de chaque zone afin de prendre en compte la non répartition homogène des points GPS entre les deux zones uniquement due à leur surface respective.
 
 ::: {#fig-preds_tonnes_chasses_plot}
 ```{r}
@@ -1083,7 +1117,7 @@ random <- res$random
 
 fixed <- fixed %>%
   mutate(term = recode(term,
-                       `(Intercept)` = "Intercept",
+                       `(Intercept)` = "Intercept $$(\beta_0)$$",
                        "zonezone de danger" = "Zone de danger",
                        "tonnes_periodchasse ouverte" = "Chasse ouverte",
                        "zonezone de danger:tonnes_periodchasse ouverte" = "Zone de danger : chasse ouverte"

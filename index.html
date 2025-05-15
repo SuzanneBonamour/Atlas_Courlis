@@ -69,6 +69,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -379,9 +422,9 @@ Figure&nbsp;6: Domaines vitaux à 95% (à gauche) et à 50% (à droite) en fonct
 </section>
 <section id="identification-des-reposoirs" class="level2">
 <h2 class="anchored" data-anchor-id="identification-des-reposoirs">Identification des reposoirs</h2>
-<p><img src="1-Reposoir limicoles Oléron-Photo RNNMO LPO.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: bottom; margin-bottom: 5px;"></p>
+<p><img src="Pointe_d'Arceau_et_pointe_de_Bellevue,_Oléron.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: bottom; margin-bottom: 5px;"></p>
 <p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-Crédit photo : Réserve Naturelle de Moëze-Oléron (RNNMO-LPO)
+Crédit photo : Idaho69 (Wikimedia Commons)
 </p>
 <p>Le comportement de repos est défini comme un point GPS d’une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction <span style="font-family: 'Courier';">speedfilter</span> du package “adehabitatHR”.</p>
 <p>Les reposoirs sont estimé à partir des données de l’ensemble des individus, soit de façon global (<a href="#fig-UDMap_roosting_glob" class="quarto-xref">Figure&nbsp;7</a>) sur toute la zone d’études (sur des grilles de 100m x 100m), soit de façon plus fine (<a href="#fig-UDMap_roosting_ZOOM" class="quarto-xref">Figure&nbsp;8</a>) sur les zones spécifiques A, B, C, D et E (voir <a href="#fig-zone_map" class="quarto-xref">Figure&nbsp;2</a>, sur des grilles de 10m x 10m). Les reposoirs sont identifié à l’aide de la fonction <span style="font-family: 'Courier';">kernelUD</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</p>
@@ -1096,13 +1139,26 @@ Figure&nbsp;45: Zone d’alimentation en fonction du nombre de chasseur présent
 </section>
 <section id="chasse-à-la-tonnes" class="level4">
 <h4 class="anchored" data-anchor-id="chasse-à-la-tonnes">Chasse à la tonnes</h4>
-<div style="float: right; width: 500px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;">
+<div style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;">
 <img src="Une_tonne_de_chasse_au_gibier_d'eau.jpg" style="width: 100%;">
 <p>
-Une tonne de chasse au gibier d’eau, Éguille-sur-Seudre, Charente-Maritime, France (photo: Jean-Pierre Bazard).
+Une tonne de chasse au gibier d’eau, Éguille-sur-Seudre, Charente-Maritime, France (crédit photo: Jean-Pierre Bazard).
 </p>
 </div>
-<p>La <a href="https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne">chasse à la tonnes</a> est une forme de chasse dite traditionnelle se pratiquant de nuit à l’affût dans des tonnes de chasse <strong>?@fig-Une_tonne_de_chasse_au_gibier_d_eau</strong>. Les tonnes de chasses sont des constructions en dur, enterrées ou semi-enterrées et camouflés au bord d’une plan d’eau (la mare à la tonne).</p>
+<p>La <a href="https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne">chasse à la tonnes</a>, est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et dissimulée appelée tonne. Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer et de tirer les oiseaux migrateurs, principalement les anatidés (canards, oies), souvent de nuit.</p>
+<p>La tonne est enterrée ou semi-enterrée et équipée pour permettre l’observation, l’attente prolongée et le tir. Des appelants vivants (canards domestiques dressés) ou artificiels (formes flottantes) sont disposés sur le plan d’eau pour simuler la présence d’un groupe et inciter les oiseaux sauvages à se poser.</p>
+<p>Ces plans d’eau (appelé mare à la tonne) sont spécifiquement aménagés pour optimiser leur attractivité : contrôle de la végétation, entretien régulier, et gestion du niveau d’eau. Leur usage est réservé aux installations déclarées.</p>
+<p>Cette pratique est fortement ancrée dans le patrimoine cynégétique local, notamment sur le littoral et les marais de Charente-Maritime. Toutefois, elle soulève des questions relatives à la pression exercée sur les espèces migratrices, à la conservation des zones humides, et à la cohabitation avec d’autres usagers de la nature.</p>
+<p>Réglementation en Charente-Maritime :</p>
+<ul>
+<li>Période de chasse : ouverture généralement fin aout, fermeture fin février.</li>
+<li>Horaires de tir : Le tir de nuit est autorisé dans le cadre de la chasse à la tonne. En période anticipée (à partir du 17 août), le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime (DPM) et fluvial (DPF).</li>
+<li>Installations des tonnes : La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes. Les installations doivent répondre à des normes de sécurité et ne peuvent être déplacées sans autorisation.</li>
+<li>Appelants : L’utilisation d’appelants vivants est autorisée sous réserve de déclaration, baguage et respect des règles de détention (traçabilité, soins, conditions sanitaires). Les formes artificielles sont également admises.</li>
+</ul>
+<div style="clear: both;">
+
+</div>
 <div id="fig-map_tonnes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-map_tonnes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1117,10 +1173,15 @@ Figure&nbsp;46: Tonnes de chasse (point noir), entourées de zones de danger de 
 </div>
 </figure>
 </div>
+<p>Afin d’étudier l’effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l’utilisation del’espace des Courlis cendré, deux zones ont été définies (<a href="#fig-map_tonnes_v2" class="quarto-xref">Figure&nbsp;47</a>) :</p>
+<ul>
+<li>Zone de danger : zone d’un rayon de 300m entourant chaque tonnes de chasse (en orange)</li>
+<li>Zone de proximité : zone d’une rayon de 1.5 km entournat chaque tonnes de chasse (en jaune)</li>
+</ul>
 <div id="fig-map_tonnes_v2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;47: Tonnes de chasse (point noir), zone marginale (jaune, 1.5km), zone de danger (rouge, 300m).
+Figure&nbsp;47: Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
 </figcaption>
 <div aria-describedby="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1131,12 +1192,24 @@ Figure&nbsp;47: Tonnes de chasse (point noir), zone marginale (jaune, 1.5km), zo
 </div>
 </figure>
 </div>
-<p>Modèle statistiques utilisé (packages “lmerTest”) :</p>
-<p>nombre de point GPS ~ zone * periode de chasse + (individu)</p>
-<p>Modèle linéaire mixte, uniquement sur les points GPS enregistrés de nuit.</p>
-<p>Le nombre de point GPS est rapporté à la surface totale de chaque zone (danger ou proximité).</p>
-<p>Zone et période de chasse sont des effets fixes.</p>
-<p>Individu est une effet aléatoire.</p>
+<p>Pour estimer les effets de la période de chasse (hors ou pendant la pépriode de chasse) et de la zone (de danger ou de proximité) sur la répartition spatiale des points GPS enregistrés pour chaque individu, le modèle linéaire mixte suivant a été appliqué via le packages R “lmerTest”:</p>
+<p><span class="math display">
+Nbpoint_{it} = \beta_0 + \beta_1 \text{zone}_i + \beta_2 \text{period}_t + \beta_3 \left(\text{zone}_i \times \text{period}_t\right) + IND_i + \varepsilon_{it}
+</span></p>
+<p>Avec :</p>
+<p><span class="math display">
+IND_i \sim \mathcal{N}(0, \sigma_b^2), \quad \varepsilon_{it} \sim \mathcal{N}(0, \sigma^2)
+</span></p>
+<p>Ainsi, le nombre de point GPS enregistrés <span class="math inline">Nbpoint_{it}</span> pour l’individu <span class="math inline">i</span> est expliqué par trois effets fixes :</p>
+<ul>
+<li><span class="math inline">\beta_1</span> correspondant l’effet de la zone <span class="math inline">\text{zone}_i</span></li>
+<li><span class="math inline">\beta_2</span> correspondant à l’effet de la période <span class="math inline">\text{period}_t</span></li>
+<li><span class="math inline">\beta_3</span> correspondant à l’effet intéractif de la <span class="math inline">\text{zone}_i</span> par la <span class="math inline">\text{period}_t</span>, c’est-à-dire l’effet de la zone de danger <em>versus</em> de proximité sachant que le point a été enregistré durant <em>versus</em> en dehors de la période de chasse</li>
+</ul>
+<p><span class="math inline">\beta_0</span> est l’ordonné à l’origine du modèle.</p>
+<p>Puisqu’un même individus comptent plusieurs points GPS enregistré, et que ces points ne sont donc pas indépendants entre eux, un effet aléaoire <span class="math inline">IND_i</span> a été ajouté. <span class="math inline">\varepsilon_{it}</span> correspond aux résidus du modèle, autrement dit à la variation dans le nombre de points GPS <span class="math inline">Nbpoint_{it}</span> qui n’est pas expliqué par ces variables.</p>
+<p>Puisque la chasse à la tonnes se pratique de nuit, uniquement les points GPS enregistrés de nuit ont été inclus dans l’analyse.</p>
+<p>Aussi, l’aire des zones de danger et de proximité sont nécessairement différentes, avec la zone de proximité bien plus étendues que la zone de danger. Le nombre point GPS enregistrés pour chaque individus dans chaque zone a donc été divisé par surface total de chaque zone afin de prendre en compte la non répartition homogène des points GPS entre les deux zones uniquement due à leur surface respective.</p>
 <div id="fig-preds_tonnes_chasses_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-preds_tonnes_chasses_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1158,23 +1231,23 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
 <p>Résultats du modèle :</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="rcykcocoeo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rcykcocoeo table {
+<div id="rtfglyjthx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rtfglyjthx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rcykcocoeo thead, #rcykcocoeo tbody, #rcykcocoeo tfoot, #rcykcocoeo tr, #rcykcocoeo td, #rcykcocoeo th {
+#rtfglyjthx thead, #rtfglyjthx tbody, #rtfglyjthx tfoot, #rtfglyjthx tr, #rtfglyjthx td, #rtfglyjthx th {
   border-style: none;
 }
 
-#rcykcocoeo p {
+#rtfglyjthx p {
   margin: 0;
   padding: 0;
 }
 
-#rcykcocoeo .gt_table {
+#rtfglyjthx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1200,12 +1273,12 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-left-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_caption {
+#rtfglyjthx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rcykcocoeo .gt_title {
+#rtfglyjthx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1217,7 +1290,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-width: 0;
 }
 
-#rcykcocoeo .gt_subtitle {
+#rtfglyjthx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1229,7 +1302,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-width: 0;
 }
 
-#rcykcocoeo .gt_heading {
+#rtfglyjthx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1241,13 +1314,13 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_bottom_border {
+#rtfglyjthx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_col_headings {
+#rtfglyjthx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1262,7 +1335,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_col_heading {
+#rtfglyjthx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1282,7 +1355,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#rcykcocoeo .gt_column_spanner_outer {
+#rtfglyjthx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1294,15 +1367,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 4px;
 }
 
-#rcykcocoeo .gt_column_spanner_outer:first-child {
+#rtfglyjthx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rcykcocoeo .gt_column_spanner_outer:last-child {
+#rtfglyjthx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rcykcocoeo .gt_column_spanner {
+#rtfglyjthx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1314,11 +1387,11 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   width: 100%;
 }
 
-#rcykcocoeo .gt_spanner_row {
+#rtfglyjthx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rcykcocoeo .gt_group_heading {
+#rtfglyjthx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1344,7 +1417,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   text-align: left;
 }
 
-#rcykcocoeo .gt_empty_group_heading {
+#rtfglyjthx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1359,15 +1432,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: middle;
 }
 
-#rcykcocoeo .gt_from_md > :first-child {
+#rtfglyjthx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rcykcocoeo .gt_from_md > :last-child {
+#rtfglyjthx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rcykcocoeo .gt_row {
+#rtfglyjthx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1386,7 +1459,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#rcykcocoeo .gt_stub {
+#rtfglyjthx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1399,7 +1472,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rcykcocoeo .gt_stub_row_group {
+#rtfglyjthx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1413,15 +1486,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: top;
 }
 
-#rcykcocoeo .gt_row_group_first td {
+#rtfglyjthx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rcykcocoeo .gt_row_group_first th {
+#rtfglyjthx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rcykcocoeo .gt_summary_row {
+#rtfglyjthx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1431,16 +1504,16 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rcykcocoeo .gt_first_summary_row {
+#rtfglyjthx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_first_summary_row.thick {
+#rtfglyjthx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rcykcocoeo .gt_last_summary_row {
+#rtfglyjthx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1450,7 +1523,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_grand_summary_row {
+#rtfglyjthx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1460,7 +1533,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rcykcocoeo .gt_first_grand_summary_row {
+#rtfglyjthx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1470,7 +1543,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_last_grand_summary_row_top {
+#rtfglyjthx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1480,11 +1553,11 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_striped {
+#rtfglyjthx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rcykcocoeo .gt_table_body {
+#rtfglyjthx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1493,7 +1566,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_footnotes {
+#rtfglyjthx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1507,7 +1580,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_footnote {
+#rtfglyjthx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1516,7 +1589,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rcykcocoeo .gt_sourcenotes {
+#rtfglyjthx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1530,7 +1603,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rcykcocoeo .gt_sourcenote {
+#rtfglyjthx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1538,72 +1611,72 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rcykcocoeo .gt_left {
+#rtfglyjthx .gt_left {
   text-align: left;
 }
 
-#rcykcocoeo .gt_center {
+#rtfglyjthx .gt_center {
   text-align: center;
 }
 
-#rcykcocoeo .gt_right {
+#rtfglyjthx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rcykcocoeo .gt_font_normal {
+#rtfglyjthx .gt_font_normal {
   font-weight: normal;
 }
 
-#rcykcocoeo .gt_font_bold {
+#rtfglyjthx .gt_font_bold {
   font-weight: bold;
 }
 
-#rcykcocoeo .gt_font_italic {
+#rtfglyjthx .gt_font_italic {
   font-style: italic;
 }
 
-#rcykcocoeo .gt_super {
+#rtfglyjthx .gt_super {
   font-size: 65%;
 }
 
-#rcykcocoeo .gt_footnote_marks {
+#rtfglyjthx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rcykcocoeo .gt_asterisk {
+#rtfglyjthx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rcykcocoeo .gt_indent_1 {
+#rtfglyjthx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rcykcocoeo .gt_indent_2 {
+#rtfglyjthx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rcykcocoeo .gt_indent_3 {
+#rtfglyjthx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rcykcocoeo .gt_indent_4 {
+#rtfglyjthx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rcykcocoeo .gt_indent_5 {
+#rtfglyjthx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rcykcocoeo .katex-display {
+#rtfglyjthx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rcykcocoeo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rtfglyjthx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1627,7 +1700,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="term">Intercept</td>
+<td class="gt_row gt_left" headers="term">Intercept $$(eta_0)$$</td>
 <td class="gt_row gt_right" headers="estimate">3.72&nbsp;×&nbsp;10<sup>−1</sup></td>
 <td class="gt_row gt_right" headers="std.error">4.39&nbsp;×&nbsp;10<sup>−2</sup></td>
 <td class="gt_row gt_right" headers="statistic">8.48</td>
@@ -1676,23 +1749,23 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
 </div>
 </div>
 <div class="cell-output-display">
-<div id="mtmrsdgxyo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mtmrsdgxyo table {
+<div id="mtgutogbzr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mtgutogbzr table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mtmrsdgxyo thead, #mtmrsdgxyo tbody, #mtmrsdgxyo tfoot, #mtmrsdgxyo tr, #mtmrsdgxyo td, #mtmrsdgxyo th {
+#mtgutogbzr thead, #mtgutogbzr tbody, #mtgutogbzr tfoot, #mtgutogbzr tr, #mtgutogbzr td, #mtgutogbzr th {
   border-style: none;
 }
 
-#mtmrsdgxyo p {
+#mtgutogbzr p {
   margin: 0;
   padding: 0;
 }
 
-#mtmrsdgxyo .gt_table {
+#mtgutogbzr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1718,12 +1791,12 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-left-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_caption {
+#mtgutogbzr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mtmrsdgxyo .gt_title {
+#mtgutogbzr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1735,7 +1808,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-width: 0;
 }
 
-#mtmrsdgxyo .gt_subtitle {
+#mtgutogbzr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1747,7 +1820,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-width: 0;
 }
 
-#mtmrsdgxyo .gt_heading {
+#mtgutogbzr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1759,13 +1832,13 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_bottom_border {
+#mtgutogbzr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_col_headings {
+#mtgutogbzr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1780,7 +1853,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_col_heading {
+#mtgutogbzr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1800,7 +1873,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#mtmrsdgxyo .gt_column_spanner_outer {
+#mtgutogbzr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1812,15 +1885,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 4px;
 }
 
-#mtmrsdgxyo .gt_column_spanner_outer:first-child {
+#mtgutogbzr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mtmrsdgxyo .gt_column_spanner_outer:last-child {
+#mtgutogbzr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mtmrsdgxyo .gt_column_spanner {
+#mtgutogbzr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1832,11 +1905,11 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   width: 100%;
 }
 
-#mtmrsdgxyo .gt_spanner_row {
+#mtgutogbzr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mtmrsdgxyo .gt_group_heading {
+#mtgutogbzr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1862,7 +1935,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   text-align: left;
 }
 
-#mtmrsdgxyo .gt_empty_group_heading {
+#mtgutogbzr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1877,15 +1950,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: middle;
 }
 
-#mtmrsdgxyo .gt_from_md > :first-child {
+#mtgutogbzr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mtmrsdgxyo .gt_from_md > :last-child {
+#mtgutogbzr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mtmrsdgxyo .gt_row {
+#mtgutogbzr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1904,7 +1977,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#mtmrsdgxyo .gt_stub {
+#mtgutogbzr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1917,7 +1990,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#mtmrsdgxyo .gt_stub_row_group {
+#mtgutogbzr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1931,15 +2004,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: top;
 }
 
-#mtmrsdgxyo .gt_row_group_first td {
+#mtgutogbzr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mtmrsdgxyo .gt_row_group_first th {
+#mtgutogbzr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mtmrsdgxyo .gt_summary_row {
+#mtgutogbzr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1949,16 +2022,16 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#mtmrsdgxyo .gt_first_summary_row {
+#mtgutogbzr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_first_summary_row.thick {
+#mtgutogbzr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mtmrsdgxyo .gt_last_summary_row {
+#mtgutogbzr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1968,7 +2041,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_grand_summary_row {
+#mtgutogbzr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1978,7 +2051,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#mtmrsdgxyo .gt_first_grand_summary_row {
+#mtgutogbzr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1988,7 +2061,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_last_grand_summary_row_top {
+#mtgutogbzr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1998,11 +2071,11 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_striped {
+#mtgutogbzr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mtmrsdgxyo .gt_table_body {
+#mtgutogbzr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2011,7 +2084,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_footnotes {
+#mtgutogbzr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2025,7 +2098,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_footnote {
+#mtgutogbzr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2034,7 +2107,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#mtmrsdgxyo .gt_sourcenotes {
+#mtgutogbzr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2048,7 +2121,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#mtmrsdgxyo .gt_sourcenote {
+#mtgutogbzr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2056,72 +2129,72 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#mtmrsdgxyo .gt_left {
+#mtgutogbzr .gt_left {
   text-align: left;
 }
 
-#mtmrsdgxyo .gt_center {
+#mtgutogbzr .gt_center {
   text-align: center;
 }
 
-#mtmrsdgxyo .gt_right {
+#mtgutogbzr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mtmrsdgxyo .gt_font_normal {
+#mtgutogbzr .gt_font_normal {
   font-weight: normal;
 }
 
-#mtmrsdgxyo .gt_font_bold {
+#mtgutogbzr .gt_font_bold {
   font-weight: bold;
 }
 
-#mtmrsdgxyo .gt_font_italic {
+#mtgutogbzr .gt_font_italic {
   font-style: italic;
 }
 
-#mtmrsdgxyo .gt_super {
+#mtgutogbzr .gt_super {
   font-size: 65%;
 }
 
-#mtmrsdgxyo .gt_footnote_marks {
+#mtgutogbzr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mtmrsdgxyo .gt_asterisk {
+#mtgutogbzr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mtmrsdgxyo .gt_indent_1 {
+#mtgutogbzr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mtmrsdgxyo .gt_indent_2 {
+#mtgutogbzr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mtmrsdgxyo .gt_indent_3 {
+#mtgutogbzr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mtmrsdgxyo .gt_indent_4 {
+#mtgutogbzr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mtmrsdgxyo .gt_indent_5 {
+#mtgutogbzr .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mtmrsdgxyo .katex-display {
+#mtgutogbzr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mtmrsdgxyo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mtgutogbzr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2154,23 +2227,23 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
 </div>
 </div>
 <div class="cell-output-display">
-<div id="goqhcnvfpf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#goqhcnvfpf table {
+<div id="xdnvkoyfld" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xdnvkoyfld table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#goqhcnvfpf thead, #goqhcnvfpf tbody, #goqhcnvfpf tfoot, #goqhcnvfpf tr, #goqhcnvfpf td, #goqhcnvfpf th {
+#xdnvkoyfld thead, #xdnvkoyfld tbody, #xdnvkoyfld tfoot, #xdnvkoyfld tr, #xdnvkoyfld td, #xdnvkoyfld th {
   border-style: none;
 }
 
-#goqhcnvfpf p {
+#xdnvkoyfld p {
   margin: 0;
   padding: 0;
 }
 
-#goqhcnvfpf .gt_table {
+#xdnvkoyfld .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2196,12 +2269,12 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-left-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_caption {
+#xdnvkoyfld .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#goqhcnvfpf .gt_title {
+#xdnvkoyfld .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2213,7 +2286,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-width: 0;
 }
 
-#goqhcnvfpf .gt_subtitle {
+#xdnvkoyfld .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2225,7 +2298,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-width: 0;
 }
 
-#goqhcnvfpf .gt_heading {
+#xdnvkoyfld .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2237,13 +2310,13 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_bottom_border {
+#xdnvkoyfld .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_col_headings {
+#xdnvkoyfld .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2258,7 +2331,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_col_heading {
+#xdnvkoyfld .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2278,7 +2351,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#goqhcnvfpf .gt_column_spanner_outer {
+#xdnvkoyfld .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2290,15 +2363,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 4px;
 }
 
-#goqhcnvfpf .gt_column_spanner_outer:first-child {
+#xdnvkoyfld .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#goqhcnvfpf .gt_column_spanner_outer:last-child {
+#xdnvkoyfld .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#goqhcnvfpf .gt_column_spanner {
+#xdnvkoyfld .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2310,11 +2383,11 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   width: 100%;
 }
 
-#goqhcnvfpf .gt_spanner_row {
+#xdnvkoyfld .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#goqhcnvfpf .gt_group_heading {
+#xdnvkoyfld .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2340,7 +2413,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   text-align: left;
 }
 
-#goqhcnvfpf .gt_empty_group_heading {
+#xdnvkoyfld .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2355,15 +2428,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: middle;
 }
 
-#goqhcnvfpf .gt_from_md > :first-child {
+#xdnvkoyfld .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#goqhcnvfpf .gt_from_md > :last-child {
+#xdnvkoyfld .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#goqhcnvfpf .gt_row {
+#xdnvkoyfld .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2382,7 +2455,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#goqhcnvfpf .gt_stub {
+#xdnvkoyfld .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2395,7 +2468,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#goqhcnvfpf .gt_stub_row_group {
+#xdnvkoyfld .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2409,15 +2482,15 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: top;
 }
 
-#goqhcnvfpf .gt_row_group_first td {
+#xdnvkoyfld .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#goqhcnvfpf .gt_row_group_first th {
+#xdnvkoyfld .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#goqhcnvfpf .gt_summary_row {
+#xdnvkoyfld .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2427,16 +2500,16 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#goqhcnvfpf .gt_first_summary_row {
+#xdnvkoyfld .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_first_summary_row.thick {
+#xdnvkoyfld .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#goqhcnvfpf .gt_last_summary_row {
+#xdnvkoyfld .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2446,7 +2519,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_grand_summary_row {
+#xdnvkoyfld .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2456,7 +2529,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#goqhcnvfpf .gt_first_grand_summary_row {
+#xdnvkoyfld .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2466,7 +2539,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_last_grand_summary_row_top {
+#xdnvkoyfld .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2476,11 +2549,11 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_striped {
+#xdnvkoyfld .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#goqhcnvfpf .gt_table_body {
+#xdnvkoyfld .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2489,7 +2562,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_footnotes {
+#xdnvkoyfld .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2503,7 +2576,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_footnote {
+#xdnvkoyfld .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2512,7 +2585,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#goqhcnvfpf .gt_sourcenotes {
+#xdnvkoyfld .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2526,7 +2599,7 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#goqhcnvfpf .gt_sourcenote {
+#xdnvkoyfld .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2534,72 +2607,72 @@ Figure&nbsp;48: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#goqhcnvfpf .gt_left {
+#xdnvkoyfld .gt_left {
   text-align: left;
 }
 
-#goqhcnvfpf .gt_center {
+#xdnvkoyfld .gt_center {
   text-align: center;
 }
 
-#goqhcnvfpf .gt_right {
+#xdnvkoyfld .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#goqhcnvfpf .gt_font_normal {
+#xdnvkoyfld .gt_font_normal {
   font-weight: normal;
 }
 
-#goqhcnvfpf .gt_font_bold {
+#xdnvkoyfld .gt_font_bold {
   font-weight: bold;
 }
 
-#goqhcnvfpf .gt_font_italic {
+#xdnvkoyfld .gt_font_italic {
   font-style: italic;
 }
 
-#goqhcnvfpf .gt_super {
+#xdnvkoyfld .gt_super {
   font-size: 65%;
 }
 
-#goqhcnvfpf .gt_footnote_marks {
+#xdnvkoyfld .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#goqhcnvfpf .gt_asterisk {
+#xdnvkoyfld .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#goqhcnvfpf .gt_indent_1 {
+#xdnvkoyfld .gt_indent_1 {
   text-indent: 5px;
 }
 
-#goqhcnvfpf .gt_indent_2 {
+#xdnvkoyfld .gt_indent_2 {
   text-indent: 10px;
 }
 
-#goqhcnvfpf .gt_indent_3 {
+#xdnvkoyfld .gt_indent_3 {
   text-indent: 15px;
 }
 
-#goqhcnvfpf .gt_indent_4 {
+#xdnvkoyfld .gt_indent_4 {
   text-indent: 20px;
 }
 
-#goqhcnvfpf .gt_indent_5 {
+#xdnvkoyfld .gt_indent_5 {
   text-indent: 25px;
 }
 
-#goqhcnvfpf .katex-display {
+#xdnvkoyfld .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#goqhcnvfpf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xdnvkoyfld div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
