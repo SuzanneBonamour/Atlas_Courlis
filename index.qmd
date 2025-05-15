@@ -92,7 +92,7 @@ L’objectif général de cette étude est de mieux comprendre l’utilisation d
 knitr::include_graphics("Photo_intro.png", dpi = 100)
 ```
 
-Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, photos : Adrien Chaigne, Loic Jomat, Romain Beaubert).
+Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, crédit photos : Armel Deniau, Loic Jomat, Romain Beaubert).
 :::
 
 À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
