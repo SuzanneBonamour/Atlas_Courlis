@@ -1117,7 +1117,7 @@ random <- res$random
 
 fixed <- fixed %>%
   mutate(term = recode(term,
-                       `(Intercept)` = "Intercept $$(\beta_0)$$",
+                       `(Intercept)` = "Intercept",
                        "zonezone de danger" = "Zone de danger",
                        "tonnes_periodchasse ouverte" = "Chasse ouverte",
                        "zonezone de danger:tonnes_periodchasse ouverte" = "Zone de danger : chasse ouverte"
