@@ -646,12 +646,6 @@ tags$iframe(
 Variation de zone d'alimentation en fonction du jour et de la nuit.
 :::
 
-### ! Changement dans l'utilisation de l'espace avant vs. après l'ouverture de la digue, mise en place de la brèche ?
-
-XX
-
-brèche, ouverture de la digue : variable "brèche" : avant/après 2018 ; "brèche \_summary" : digue intacte \< 2018, ouverture progressive \< 2021/07 ; ouverture complète \> 2021/07 ; variable "bèche_detail" : "digue intacte" \< 2018, ), "ouverture progressive" \< 2020-10-01, "disparition du seuil" \< 2021-07-01,"ouverture complète" \> 2021-07-01
-
 ### Utilisation de l'espace par les Courlis cendré lors d'évènements climatiques extrêmes
 
 Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
