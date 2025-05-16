@@ -578,118 +578,11 @@ Effets du sexe (à gauche) et de l'âge (à droite) sur la distance individuelle
 
 Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significatives entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
 
-## Fidélité aux espaces
+## Fidélité aux espaces au cours des cycles de marée
 
 Afin d'estimer la fidélité au espace, pour le repos, comme pour l'alimentation, des zones d'utilisation principale de l'espace sont estimée en fonction des années ou des mois, puis le chvauchement de ces zones est estimé deux à deux. Un fort chevauchement équivaut à une forte similarité entre les zones au cours du temps, ce qui équivaut à une forte fidélité aux espaces.
 
-### Changement au cours des années
-
-La fidélité aux espaces de repos et d'alimentation sont estimé entre années. Une analyses à l'échelle de la population (@fig-UDMap_roosting_year_repet_pop, @fig-plot_overlapp_roosting_year_repet_pop) et par individu (@fig-plot_roosting_year_repet, @fig-UDMap_roosting_rep_inter_year) ont été effectué.
-
-#### Reposoirs
-
-Analyses globales :
-
-::: {#fig-UDMap_roosting_year_repet_pop}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap.roosting_year_repet_pop.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs annuels.
-:::
-
-::: {#fig-plot_overlapp_roosting_year_repet_pop}
-```{r}
-#| echo: false
-#| out.width: 70% 
-#| fig-align: "center"
-knitr::include_graphics("plot.overlapp_roosting_year_repet_pop.png", dpi = 100)
-```
-
-Pourcentage de chevauchement des reposoirs entre années.
-:::
-
-Analyses individuelles :
-
-::: {#fig-plot_roosting_year_repet}
-```{r}
-#| echo: false
-#| out.width: 70% 
-#| fig-align: "center"
-knitr::include_graphics("plot.roosting_year_repet.png", dpi = 100)
-```
-
-Pourcentage de chevauchement moyen des reposoirs individuelles entre années.
-:::
-
-#### Zones d'alimentation
-
-Analyses globales :
-
-::: {#fig-UDMap_foraging_year_repet_pop}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap.foraging_year_repet_pop.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zones d'alimentation annuels.
-:::
-
-::: {#fig-plot.overlapp_foraging_year_repet_pop}
-```{r}
-#| echo: false
-#| out.width: 70% 
-#| fig-align: "center"
-knitr::include_graphics("plot.overlapp_foraging_year_repet_pop.png", dpi = 100)
-```
-
-Pourcentage de chevauchement des zones d'alimentation entre années.
-:::
-
-Analyses individuelles :
-
-::: {#fig-plot.foraging_year_repet}
-```{r}
-#| echo: false
-#| out.width: 70% 
-#| fig-align: "center"
-knitr::include_graphics("plot.foraging_year_repet.png", dpi = 100)
-```
-
-Pourcentage de chevauchement moyen des zones d'alimentation individuelles entre années.
-:::
-
-#### Correlation entre la fidélité aux reposoirs et aux zones d'alimentation
-
-Il y a une corrélation significative de la fidélité entre années et individuelle aux reposoirs et aux zones d'alimentation (p-value : 0.039 \*, adj-R² : 0.32). 
-
-Les individus qui sont fortement fidèle à leur zone d'alimentation le sont aussi pour leur reposoirs.
-
-::: {#fig-correlation_fidelite_plot}
-```{r}
-#| echo: false
-#| out.width: 25% 
-#| fig-align: "center"
-knitr::include_graphics("correlation_fidelite_plot.png", dpi = 100)
-```
-
-Correlation entre la fidélité aux reposoirs et aux zones d'alimentation.
-:::
-
-### Changement au cours des cycles de marée
-
-#### Reposoirs
+### Reposoirs
 
 ::: {#fig-plot.roosting_maree_repet}
 ```{r}
@@ -702,7 +595,7 @@ knitr::include_graphics("plot.roosting_maree_repet.png", dpi = 100)
 Variation des reposoirs individuels au cours des cycles de marée.
 :::
 
-#### ! Alimentation
+### ! Alimentation
 
 ::: {#fig-plot_._foraging_maree_repet}
 ```{r}
@@ -1164,14 +1057,6 @@ r2 %>%
   fmt_number(columns = everything(), decimals = 2)
 
 ```
-
-### ! Pêche à pied
-
--   Zone de pêche
--   Effort de pêche
--   Période de pêche
-
-<a href="#top">↑ retour en haut</a>
 
 # **Discussion**
 
