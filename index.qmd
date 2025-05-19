@@ -207,6 +207,27 @@ En résumé, les points utilisé pour déterminé les comportements d'alimentati
 
 ### Taille du jeu de données analysé
 
+#### Etape de nettoyage
+
+## Taille jeu de données 
+
+Taille du jeu de données brut :
+
+- Nombre d'individu : 99
+- Nombre de point GPS enregistrés : 5 230 178
+
+Taille du jeu de données dans la zone d'étude :
+
+- Nombre d'individu : 83
+- Nombre de point GPS enregistrés : 3 138 014
+
+Taille du jeu de données final utilisé :
+
+- Nombre d'individu : 46
+- Nombre de point GPS enregistrés : 406 687
+- Nombre de femme : 7, nombre de mâle : 7
+- Nombre de juvéniles : 7, nombre d'adulte : 18
+
 ```{r}
 #| eval: false
 #| include: false
@@ -250,8 +271,6 @@ sexe_dt <- GPS %>%
 # -   `r age_dt_point$Var1[1]` points GPS correspondent à `r age_dt_ind$n[1]` individus adultes, `r age_dt_point$Var1[2]` points GPS correspondent à `r age_dt_ind$n[2]` des individus juvéniles, et `r age_dt_ind$n[3]` des individus n'ont pas d'âge identifié
 # -   `r sexe_dt$n[1]` individus sont assignées femelles, `r sexe_dt$n[2]` sont assignés mâles, et `r sexe_dt$n[3]` individus n'ont pas de sexe identifié
 ```
-
-
 
 ## Temps passé dans la réserve de Moëze-Oléron
 
@@ -303,7 +322,7 @@ tags$iframe(
 Domaine vital à 95% (ligne) et à 50% (couleur pleine).
 :::
 
-Aire (en m²) des domaines vitaux individuels estimés à 95% (points) et 50% (couleurs) des observations (@fig-area_hr_plot, @fig-HR_pourc_RN).
+Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs, @fig-area_hr_plot). 
 
 ::: {#fig-area_hr_plot}
 ```{r}
@@ -313,23 +332,7 @@ Aire (en m²) des domaines vitaux individuels estimés à 95% (points) et 50% (c
 knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
 
-Moyenne (ligne noire) de l'aire des domaines vitaux à 95% +/- écart-type (lignes gris pointillés).
-:::
-
-Pourcentage de l'aire des domaines vitaux individuels (à 95% et 50%) situés dans la réserve naturelle de Moëze-Oléron (@fig-HR_pourc_RN).
-
-::: {#fig-HR_pourc_RN}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "HR_pourc_RN.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Domaines vitaux à 95% (à gauche) et à 50% (à droite) en fonction de son pourcentage dans la réserve naturelle.
+Aire du domaine vital individuel à 95% (ronds oranges) ou 50% (triangles verts). Moyenne (lignes pleines) +/- écart-type (lignes pointillés). Pourcentage de chevauchement avec la réserve en couleurs.
 :::
 
 ## Identification des reposoirs
@@ -344,20 +347,25 @@ Domaines vitaux à 95% (à gauche) et à 50% (à droite) en fonction de son pour
 
 Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les reposoirs sont estimé à partir des données de l'ensemble des individus, soit de façon global (@fig-UDMap_roosting_glob) sur toute la zone d'études (sur des grilles de 100m x 100m), soit de façon plus fine (@fig-UDMap_roosting_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les reposoirs sont identifié à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+Les reposoirs sont estimé :
 
-::: {#fig-UDMap_roosting_glob}
+- à partir des données de l'ensemble des individus via la délimitation de zone "hotspot" [Bakker et al. (2021)](#bakker2021) et de façon global sur toute la zone d'études (sur des grilles de 100m x 100m, @fig-UDMap_roosting_hotspot_from1id)
+- de façon plus fine (@fig-UDMap_roosting_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). 
+
+Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+
+::: {#fig-UDMap_roosting_hotspot_from1id}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_glob.html",
+  src = "UDMap_roosting_hotspot_from1id.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Reposoirs principaux.
+Reposoirs (hotspot).
 :::
 
 ::: {#fig-UDMap_roosting_ZOOM}
@@ -374,35 +382,7 @@ tags$iframe(
 Reposoirs secondaires.
 :::
 
-Méthode 2 : identification des hotspots (avec au moins 3 individus qui utilisent la zone) [Bakker et al. (2021)](#bakker2021).
-
-::: {#fig-UDMap_roosting_hotspot}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_hotspot.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs (hotspot).
-:::
-
-::: {#fig-UDMap_roosting_hotspot_from1id}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_hotspot_from1id.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs (hotspot).
-:::
+### Reposoirs entre fonction de la hauteur d'eau
 
 Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_roosting_tides_high_type_ZOOM).
 
@@ -468,20 +448,25 @@ Variation des reposoirs en fonction du sexe.
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les zones d'almimentation sont estimées à partir des données de l'ensemble des individus, soit de façon global (@fig-UDMap_foraging_glob) sur toute la zone d'études (sur des grilles de 100m x 100m), soit de façon plus fine (@fig-UDMap_foraging_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+Les zones d'almimentation sont estimées :
 
-::: {#fig-UDMap_foraging_glob}
+- à partir des données de l'ensemble des individus en identifiant des zones "hotspots" [Bakker et al. (2021)](#bakker2021) et de façon global (@fig-UDMap_foraging_hotspot) sur toute la zone d'études (sur des grilles de 100m x 100m)
+- soit de façon plus fine (@fig-UDMap_foraging_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+
+Méthode 2 .
+
+::: {#fig-UDMap_foraging_hotspot}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_glob.html",
+  src = "UDMap_foraging_hotspot.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Zones d'alimentation principales (sur une grille de 100x100m).
+Zones d'alimentation hotspot.
 :::
 
 ::: {#fig-UDMap_foraging_ZOOM}
@@ -496,22 +481,6 @@ tags$iframe(
 ```
 
 Zones d'alimentation secondaires (sur des grilles zone par zone de 10x10m).
-:::
-
-Méthode 2 [Bakker et al. (2021)](#bakker2021).
-
-::: {#fig-UDMap_foraging_hotspot}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_hotspot.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zones d'alimentation hotspot, méthode 2.
 :::
 
 ### Zone d'alimentation en fonction de l'age
