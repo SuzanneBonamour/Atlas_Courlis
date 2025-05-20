@@ -64,7 +64,6 @@ data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
 data_image_path <- "D:/Projets_Suzanne/Courlis/3) Data/3) images/"
 data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
-
 ```
 
 ::: {.logo-row style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;"}
@@ -205,11 +204,7 @@ Le nettoyage des données issues des balises GPS a principalement été effectu�
 
 En résumé, les points utilisé pour déterminé les comportements d'alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d'étude ont été utilisé. Le temps entre chaque point de localisation sauvegardé par individé pouvant varier et propoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l'oiseau a enregistré plus d'un point par période de 5 min ont été analyses (éviter d'analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basses de 100 points estimés par individus sur une période supérieure à de fois 28 jours (deux cycles lunaires) à été appliqué pour maintenir une très haute qualité de suivi des individus pour les analyses.
 
-### Taille du jeu de données analysé
-
-#### Etape de nettoyage
-
-## Taille jeu de données 
+### Taille des jeux de données analysés
 
 Taille du jeu de données brut :
 
@@ -221,15 +216,7 @@ Taille du jeu de données dans la zone d'étude :
 - Nombre d'individu : 83
 - Nombre de point GPS enregistrés : 3 138 014
 
-Taille du jeu de données final utilisé :
-
-- Nombre d'individu : 46
-- Nombre de point GPS enregistrés : 406 687
-- Nombre de femme : 7, nombre de mâle : 7
-- Nombre de juvéniles : 7, nombre d'adulte : 18
-
 ```{r}
-#| eval: false
 #| include: false
 data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
 GPS <- st_read(file.path(data_generated_path, "GPS_clean.gpkg"))
@@ -238,7 +225,6 @@ GPS$y_m_d <- ymd(as.Date(GPS$datetime))
 ```
 
 ```{r}
-#| eval: false
 #| include: false
 
 nb_point <- length(GPS$ID)
@@ -263,14 +249,15 @@ sexe_dt <- GPS %>%
 
 # texte à ajouter dans quarto quand propore :
 
-# Après nettoyage et filtration des données :
-# 
-# -   la période de suivi court de `r min_year` à `r max_year`
-# -   `r nb_point` point GPS ont été analysés
-# -   `r nb_ind` individus ont été étudiés
-# -   `r age_dt_point$Var1[1]` points GPS correspondent à `r age_dt_ind$n[1]` individus adultes, `r age_dt_point$Var1[2]` points GPS correspondent à `r age_dt_ind$n[2]` des individus juvéniles, et `r age_dt_ind$n[3]` des individus n'ont pas d'âge identifié
-# -   `r sexe_dt$n[1]` individus sont assignées femelles, `r sexe_dt$n[2]` sont assignés mâles, et `r sexe_dt$n[3]` individus n'ont pas de sexe identifié
 ```
+
+Taille du jeu de données final utilisé (après nettoyage et filtration des données) :
+
+- La période de suivi court de `r min_year` à `r max_year`
+- Nombre d'individu : 46
+- Nombre de point GPS enregistrés : 406 687
+- Nombre de femme : 7 (`r sexe_dt$n[1]` points GPS), nombre de mâle : 7 (`r sexe_dt$n[2]` points GPS)
+- Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
 
 ## Temps passé dans la réserve de Moëze-Oléron
 
@@ -1088,6 +1075,10 @@ space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
 </p>
 
 Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
+
+<a href="#top">↑ retour en haut</a>
+
+# **Financements**
 
 <a href="#top">↑ retour en haut</a>
 
