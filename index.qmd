@@ -105,7 +105,7 @@ Cette étude s’inscrit dans le cadre du projet « Adaptation des limicoles aux
 
 ### Morphologie
 
-Le Courlis cendré est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 15 cm), courbé vers le bas. Dimorphisme sexuel peu marqué ; la femelle est généralement plus grande avec un bec plus long.
+Le Courlis cendré est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 15 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
 
 ### Comportement général
 
@@ -379,33 +379,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs secondaires.
-:::
-
-### Reposoirs entre fonction de la hauteur d'eau
-
-Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_roosting_tides_high_type_ZOOM).
-
-Le marégraphe utilisé pour obetenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous. La hauteur d'eau est moyennée pour chaque période du grain temporelle choisi (5 min). La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargée via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19).
-
-Le type de de marée hautes en fonction de la hauteur est défini comme :
-
--   marée de mortes eaux : inférieur à 4.8m
--   marée de vives eaux : entre 4.8m et 6.4m
--   submersion de la réserve : supérieur à 6.4m
-
-::: {#fig-UDMap_roosting_tides_high_type_ZOOM}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_tides_high_type_ZOOM.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs secondaires en fonction de la hauteur de marée basse.
+Reposoirs
 :::
 
 ### Reposoir en fonction de l'age
@@ -452,8 +426,6 @@ Les zones d'almimentation sont estimées :
 
 - à partir des données de l'ensemble des individus en identifiant des zones "hotspots" [Bakker et al. (2021)](#bakker2021) et de façon global (@fig-UDMap_foraging_hotspot) sur toute la zone d'études (sur des grilles de 100m x 100m)
 - soit de façon plus fine (@fig-UDMap_foraging_ZOOM) sur les zones spécifiques A, B, C, D et E (voir @fig-zone_map, sur des grilles de 10m x 10m). Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-Méthode 2 .
 
 ::: {#fig-UDMap_foraging_hotspot}
 ```{r}
@@ -613,6 +585,32 @@ tags$iframe(
 ```
 
 Variation de zone d'alimentation en fonction du jour et de la nuit.
+:::
+
+### Reposoirs entre fonction de la hauteur d'eau
+
+Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_roosting_tides_high_type_ZOOM).
+
+Le marégraphe utilisé pour obetenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous. La hauteur d'eau est moyennée pour chaque période du grain temporelle choisi (5 min). La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargée via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19).
+
+Le type de de marée hautes en fonction de la hauteur est défini comme :
+
+-   marée de mortes eaux : inférieur à 4.8m
+-   marée de vives eaux : entre 4.8m et 6.4m
+-   submersion de la lagune : supérieur à 6.4m
+
+::: {#fig-UDMap_roosting_tides_high_type_ZOOM}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_tides_high_type_ZOOM.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs secondaires en fonction de la hauteur de marée basse.
 :::
 
 ### Utilisation de l'espace par les Courlis cendré lors d'évènements climatiques extrêmes

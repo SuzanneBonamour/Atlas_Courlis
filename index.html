@@ -408,7 +408,7 @@ Figure&nbsp;4: Domaine vital à 95% (ligne) et à 50% (couleur pleine).
 </div>
 </figure>
 </div>
-<p>Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs, <strong>?@fig-HR_pourc_RN</strong>).</p>
+<p>Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs, <a href="#fig-area_hr_plot" class="quarto-xref">Figure&nbsp;5</a>).</p>
 <div id="fig-area_hr_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-area_hr_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -534,16 +534,20 @@ Figure&nbsp;10: Variation des reposoirs en fonction du sexe.
 <section id="identification-des-zones-dalimentation" class="level2">
 <h2 class="anchored" data-anchor-id="identification-des-zones-dalimentation">Identification des zones d’alimentation</h2>
 <p>Le comportement d’alimentation est défini comme un point GPS d’une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction <span style="font-family: 'Courier';">speedfilter</span> du package “adehabitatHR”.</p>
-<p>Les zones d’almimentation sont estimées à partir des données de l’ensemble des individus, soit de façon global (<a href="#fig-UDMap_foraging_glob" class="quarto-xref">Figure&nbsp;11</a>) sur toute la zone d’études (sur des grilles de 100m x 100m), soit de façon plus fine (<a href="#fig-UDMap_foraging_ZOOM" class="quarto-xref">Figure&nbsp;12</a>) sur les zones spécifiques A, B, C, D et E (voir <a href="#fig-zone_map" class="quarto-xref">Figure&nbsp;2</a>, sur des grilles de 10m x 10m). Les zones d’alimentation sont identifiées à l’aide de la fonction <span style="font-family: 'Courier';">kernelUD</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</p>
-<div id="fig-UDMap_foraging_glob" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Les zones d’almimentation sont estimées :</p>
+<ul>
+<li>à partir des données de l’ensemble des individus en identifiant des zones “hotspots” <a href="#bakker2021">Bakker et al.&nbsp;(2021)</a> et de façon global (<a href="#fig-UDMap_foraging_hotspot" class="quarto-xref">Figure&nbsp;11</a>) sur toute la zone d’études (sur des grilles de 100m x 100m)</li>
+<li>soit de façon plus fine (<a href="#fig-UDMap_foraging_ZOOM" class="quarto-xref">Figure&nbsp;12</a>) sur les zones spécifiques A, B, C, D et E (voir <a href="#fig-zone_map" class="quarto-xref">Figure&nbsp;2</a>, sur des grilles de 10m x 10m). Les zones d’alimentation sont identifiées à l’aide de la fonction <span style="font-family: 'Courier';">kernelUD</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</li>
+</ul>
+<div id="fig-UDMap_foraging_hotspot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11: Zones d’alimentation principales (sur une grille de 100x100m).
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_hotspot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Zones d’alimentation hotspot.
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_foraging_hotspot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_glob.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_foraging_hotspot.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -563,27 +567,12 @@ Figure&nbsp;12: Zones d’alimentation secondaires (sur des grilles zone par zon
 </div>
 </figure>
 </div>
-<p>Méthode 2 <a href="#bakker2021">Bakker et al.&nbsp;(2021)</a>.</p>
-<div id="fig-UDMap_foraging_hotspot" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_hotspot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13: Zones d’alimentation hotspot, méthode 2.
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_hotspot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_hotspot.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
 <section id="zone-dalimentation-en-fonction-de-lage" class="level3">
 <h3 class="anchored" data-anchor-id="zone-dalimentation-en-fonction-de-lage">Zone d’alimentation en fonction de l’age</h3>
 <div id="fig-UDMap_foraging_age_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_age_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14: Variation de zone d’alimentation en fonction de l’âge.
+Figure&nbsp;13: Variation de zone d’alimentation en fonction de l’âge.
 </figcaption>
 <div aria-describedby="fig-UDMap_foraging_age_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -600,7 +589,7 @@ Figure&nbsp;14: Variation de zone d’alimentation en fonction de l’âge.
 <div id="fig-UDMap_roosting_sex_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_sex_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15: Variation de zone d’alimentation en fonction du sexe.
+Figure&nbsp;14: Variation de zone d’alimentation en fonction du sexe.
 </figcaption>
 <div aria-describedby="fig-UDMap_roosting_sex_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -615,12 +604,12 @@ Figure&nbsp;15: Variation de zone d’alimentation en fonction du sexe.
 </section>
 <section id="distance-entre-les-reposoirs-et-les-zones-dalimentation" class="level2">
 <h2 class="anchored" data-anchor-id="distance-entre-les-reposoirs-et-les-zones-dalimentation">Distance entre les reposoirs et les zones d’alimentation</h2>
-<p>La distance entre la zone d’alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d’alimetation et de repos à chaque cycle de marais (<a href="#fig-distance_roost_forag_plot" class="quarto-xref">Figure&nbsp;16</a>).</p>
+<p>La distance entre la zone d’alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d’alimetation et de repos à chaque cycle de marais (<a href="#fig-distance_roost_forag_plot" class="quarto-xref">Figure&nbsp;15</a>).</p>
 <p>Il y a une corrélation significative (p-value : 6.93e-16 ***) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.</p>
 <div id="fig-distance_roost_forag_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-distance_roost_forag_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;16: Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d’alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
+Figure&nbsp;15: Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d’alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
 </figcaption>
 <div aria-describedby="fig-distance_roost_forag_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -635,11 +624,11 @@ Figure&nbsp;16: Distance moyenne (+/- écart-type) individuelle et journalières
 </div>
 </figure>
 </div>
-<p>Les distances à chaque cycle de marais des paires de centoïds individuels entre les zones d’alimentation et de repos ont été comparé entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (<a href="#fig-distance_roost_forag_age_sex_plot" class="quarto-xref">Figure&nbsp;17</a>).</p>
+<p>Les distances à chaque cycle de marais des paires de centoïds individuels entre les zones d’alimentation et de repos ont été comparé entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (<a href="#fig-distance_roost_forag_age_sex_plot" class="quarto-xref">Figure&nbsp;16</a>).</p>
 <div id="fig-distance_roost_forag_age_sex_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-distance_roost_forag_age_sex_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;17: Effets du sexe (à gauche) et de l’âge (à droite) sur la distance individuelle à chaque cycle de marais entre les zones d’alimentation et de repos.
+Figure&nbsp;16: Effets du sexe (à gauche) et de l’âge (à droite) sur la distance individuelle à chaque cycle de marais entre les zones d’alimentation et de repos.
 </figcaption>
 <div aria-describedby="fig-distance_roost_forag_age_sex_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -664,7 +653,7 @@ Figure&nbsp;17: Effets du sexe (à gauche) et de l’âge (à droite) sur la dis
 <div id="fig-plot.roosting_maree_repet" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-plot.roosting_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;18: Variation des reposoirs individuels au cours des cycles de marée.
+Figure&nbsp;17: Variation des reposoirs individuels au cours des cycles de marée.
 </figcaption>
 <div aria-describedby="fig-plot.roosting_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -685,7 +674,7 @@ Figure&nbsp;18: Variation des reposoirs individuels au cours des cycles de maré
 <div id="fig-plot_._foraging_maree_repet" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-plot_._foraging_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;19: Variation des zones d’alimentation individuelles au cours des cycles de marée.
+Figure&nbsp;18: Variation des zones d’alimentation individuelles au cours des cycles de marée.
 </figcaption>
 <div aria-describedby="fig-plot_._foraging_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -711,7 +700,7 @@ Figure&nbsp;19: Variation des zones d’alimentation individuelles au cours des 
 <div id="fig-UDMap_roosting_jour_nuit_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_jour_nuit_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20: Variation de reposoirs en fonction du jour et de la nuit.
+Figure&nbsp;19: Variation de reposoirs en fonction du jour et de la nuit.
 </figcaption>
 <div aria-describedby="fig-UDMap_roosting_jour_nuit_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -726,7 +715,7 @@ Figure&nbsp;20: Variation de reposoirs en fonction du jour et de la nuit.
 <div id="fig-UDMap_roosting_jour_nuit_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_jour_nuit_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;21: Variation de zone d’alimentation en fonction du jour et de la nuit.
+Figure&nbsp;20: Variation de zone d’alimentation en fonction du jour et de la nuit.
 </figcaption>
 <div aria-describedby="fig-UDMap_roosting_jour_nuit_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -758,7 +747,7 @@ Figure&nbsp;21: Variation de zone d’alimentation en fonction du jour et de la 
 <div id="fig-UDMap_ECE_wspd" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wspd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;22: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;21: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wspd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -772,7 +761,7 @@ Figure&nbsp;22: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_ECE_wspd_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wspd_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;23: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;22: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wspd_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -789,7 +778,7 @@ Figure&nbsp;23: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_ECE_wNO" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wNO-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;23: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wNO-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -803,7 +792,7 @@ Figure&nbsp;24: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_ECE_wNO_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wNO_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;24: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wNO_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -820,7 +809,7 @@ Figure&nbsp;25: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_ECE_wNO_wspd80" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wNO_wspd80-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;26: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;25: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wNO_wspd80-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -834,7 +823,7 @@ Figure&nbsp;26: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_ECE_wNO_wspd80_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wNO_wspd80_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;26: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wNO_wspd80_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -848,7 +837,7 @@ Figure&nbsp;27: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_ECE_wNO_wspd95" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wNO_wspd95-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;28: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;27: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wNO_wspd95-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -862,7 +851,7 @@ Figure&nbsp;28: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_ECE_wNO_wspd95_ZOOM" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_ECE_wNO_wspd95_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;29: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Figure&nbsp;28: Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
 </figcaption>
 <div aria-describedby="fig-UDMap_ECE_wNO_wspd95_ZOOM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -887,7 +876,7 @@ Figure&nbsp;29: Variation des reposoirs en fonction de la vitesse du vent : vent
 <div id="fig-UDMap_100x100_roosting_in_out_saison_glob" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_100x100_roosting_in_out_saison_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30: Zone de repos pendant et hors période de chasse.
+Figure&nbsp;29: Zone de repos pendant et hors période de chasse.
 </figcaption>
 <div aria-describedby="fig-UDMap_100x100_roosting_in_out_saison_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -901,7 +890,7 @@ Figure&nbsp;30: Zone de repos pendant et hors période de chasse.
 <div id="fig-UDMap_100x100_foraging_in_out_saison_glob" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_100x100_foraging_in_out_saison_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;31: Zone d’alimentation pendant et hors période de chasse.
+Figure&nbsp;30: Zone d’alimentation pendant et hors période de chasse.
 </figcaption>
 <div aria-describedby="fig-UDMap_100x100_foraging_in_out_saison_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -920,7 +909,7 @@ Figure&nbsp;31: Zone d’alimentation pendant et hors période de chasse.
 <div id="fig-UDMap_100x100_roosting_jour_de_chasse_glob" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_100x100_roosting_jour_de_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;32: Zone de repos lors de la présence ou abscence de chasseur.
+Figure&nbsp;31: Zone de repos lors de la présence ou abscence de chasseur.
 </figcaption>
 <div aria-describedby="fig-UDMap_100x100_roosting_jour_de_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -934,7 +923,7 @@ Figure&nbsp;32: Zone de repos lors de la présence ou abscence de chasseur.
 <div id="fig-UDMap_100x100_foraging_jour_de_chasse_glob" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_100x100_foraging_jour_de_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;33: Zone d’alimentation lors de la présence ou abscence de chasseur.
+Figure&nbsp;32: Zone d’alimentation lors de la présence ou abscence de chasseur.
 </figcaption>
 <div aria-describedby="fig-UDMap_100x100_foraging_jour_de_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -952,7 +941,7 @@ Figure&nbsp;33: Zone d’alimentation lors de la présence ou abscence de chasse
 <div id="fig-UDMap_100x100_roosting_seuil_chasse_glob" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_100x100_roosting_seuil_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;34: Zone de repos en fonction du nombre de chasseur présents.
+Figure&nbsp;33: Zone de repos en fonction du nombre de chasseur présents.
 </figcaption>
 <div aria-describedby="fig-UDMap_100x100_roosting_seuil_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -966,7 +955,7 @@ Figure&nbsp;34: Zone de repos en fonction du nombre de chasseur présents.
 <div id="fig-UDMap_100x100_foraging_seuil_chasse_glob" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_100x100_foraging_seuil_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;35: Zone d’alimentation en fonction du nombre de chasseur présents.
+Figure&nbsp;34: Zone d’alimentation en fonction du nombre de chasseur présents.
 </figcaption>
 <div aria-describedby="fig-UDMap_100x100_foraging_seuil_chasse_glob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1004,7 +993,7 @@ Une tonne de chasse au gibier d’eau, Éguille-sur-Seudre, Charente-Maritime, F
 <div id="fig-map_tonnes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-map_tonnes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;36: Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
+Figure&nbsp;35: Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
 </figcaption>
 <div aria-describedby="fig-map_tonnes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1015,7 +1004,7 @@ Figure&nbsp;36: Tonnes de chasse (point noir), entourées de zones de danger de 
 </div>
 </figure>
 </div>
-<p>Afin d’étudier l’effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l’utilisation del’espace des Courlis cendré, deux zones ont été définies (<a href="#fig-map_tonnes_v2" class="quarto-xref">Figure&nbsp;37</a>) :</p>
+<p>Afin d’étudier l’effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l’utilisation del’espace des Courlis cendré, deux zones ont été définies (<a href="#fig-map_tonnes_v2" class="quarto-xref">Figure&nbsp;36</a>) :</p>
 <ul>
 <li>Zone de danger : zone d’un rayon de 300m entourant chaque tonnes de chasse (en orange)</li>
 <li>Zone de proximité : zone d’une rayon de 1.5 km entournat chaque tonnes de chasse (en jaune)</li>
@@ -1023,7 +1012,7 @@ Figure&nbsp;36: Tonnes de chasse (point noir), entourées de zones de danger de 
 <div id="fig-map_tonnes_v2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;37: Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
+Figure&nbsp;36: Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
 </figcaption>
 <div aria-describedby="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1055,7 +1044,7 @@ IND_i \sim \mathcal{N}(0, \sigma_b^2), \quad \varepsilon_{it} \sim \mathcal{N}(0
 <div id="fig-preds_tonnes_chasses_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-preds_tonnes_chasses_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale ou de danger en fonction de la période de chasse.
+Figure&nbsp;37: Nombre de point GPS rapporté à l’aire de la zone marginale ou de danger en fonction de la période de chasse.
 </figcaption>
 <div aria-describedby="fig-preds_tonnes_chasses_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -1073,23 +1062,23 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
 <p>Résultats du modèle :</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="alggwbmblm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#alggwbmblm table {
+<div id="lwjfxvxisw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lwjfxvxisw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#alggwbmblm thead, #alggwbmblm tbody, #alggwbmblm tfoot, #alggwbmblm tr, #alggwbmblm td, #alggwbmblm th {
+#lwjfxvxisw thead, #lwjfxvxisw tbody, #lwjfxvxisw tfoot, #lwjfxvxisw tr, #lwjfxvxisw td, #lwjfxvxisw th {
   border-style: none;
 }
 
-#alggwbmblm p {
+#lwjfxvxisw p {
   margin: 0;
   padding: 0;
 }
 
-#alggwbmblm .gt_table {
+#lwjfxvxisw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1115,12 +1104,12 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-left-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_caption {
+#lwjfxvxisw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#alggwbmblm .gt_title {
+#lwjfxvxisw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1132,7 +1121,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-width: 0;
 }
 
-#alggwbmblm .gt_subtitle {
+#lwjfxvxisw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1144,7 +1133,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-width: 0;
 }
 
-#alggwbmblm .gt_heading {
+#lwjfxvxisw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1156,13 +1145,13 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_bottom_border {
+#lwjfxvxisw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_col_headings {
+#lwjfxvxisw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1177,7 +1166,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_col_heading {
+#lwjfxvxisw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1197,7 +1186,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#alggwbmblm .gt_column_spanner_outer {
+#lwjfxvxisw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1209,15 +1198,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 4px;
 }
 
-#alggwbmblm .gt_column_spanner_outer:first-child {
+#lwjfxvxisw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#alggwbmblm .gt_column_spanner_outer:last-child {
+#lwjfxvxisw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#alggwbmblm .gt_column_spanner {
+#lwjfxvxisw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1229,11 +1218,11 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   width: 100%;
 }
 
-#alggwbmblm .gt_spanner_row {
+#lwjfxvxisw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#alggwbmblm .gt_group_heading {
+#lwjfxvxisw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1259,7 +1248,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   text-align: left;
 }
 
-#alggwbmblm .gt_empty_group_heading {
+#lwjfxvxisw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1274,15 +1263,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: middle;
 }
 
-#alggwbmblm .gt_from_md > :first-child {
+#lwjfxvxisw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#alggwbmblm .gt_from_md > :last-child {
+#lwjfxvxisw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#alggwbmblm .gt_row {
+#lwjfxvxisw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1301,7 +1290,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#alggwbmblm .gt_stub {
+#lwjfxvxisw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1314,7 +1303,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#alggwbmblm .gt_stub_row_group {
+#lwjfxvxisw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1328,15 +1317,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: top;
 }
 
-#alggwbmblm .gt_row_group_first td {
+#lwjfxvxisw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#alggwbmblm .gt_row_group_first th {
+#lwjfxvxisw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#alggwbmblm .gt_summary_row {
+#lwjfxvxisw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1346,16 +1335,16 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#alggwbmblm .gt_first_summary_row {
+#lwjfxvxisw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_first_summary_row.thick {
+#lwjfxvxisw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#alggwbmblm .gt_last_summary_row {
+#lwjfxvxisw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1365,7 +1354,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_grand_summary_row {
+#lwjfxvxisw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1375,7 +1364,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#alggwbmblm .gt_first_grand_summary_row {
+#lwjfxvxisw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1385,7 +1374,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_last_grand_summary_row_top {
+#lwjfxvxisw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1395,11 +1384,11 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_striped {
+#lwjfxvxisw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#alggwbmblm .gt_table_body {
+#lwjfxvxisw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1408,7 +1397,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_footnotes {
+#lwjfxvxisw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1422,7 +1411,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_footnote {
+#lwjfxvxisw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1431,7 +1420,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#alggwbmblm .gt_sourcenotes {
+#lwjfxvxisw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1445,7 +1434,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#alggwbmblm .gt_sourcenote {
+#lwjfxvxisw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1453,72 +1442,72 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#alggwbmblm .gt_left {
+#lwjfxvxisw .gt_left {
   text-align: left;
 }
 
-#alggwbmblm .gt_center {
+#lwjfxvxisw .gt_center {
   text-align: center;
 }
 
-#alggwbmblm .gt_right {
+#lwjfxvxisw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#alggwbmblm .gt_font_normal {
+#lwjfxvxisw .gt_font_normal {
   font-weight: normal;
 }
 
-#alggwbmblm .gt_font_bold {
+#lwjfxvxisw .gt_font_bold {
   font-weight: bold;
 }
 
-#alggwbmblm .gt_font_italic {
+#lwjfxvxisw .gt_font_italic {
   font-style: italic;
 }
 
-#alggwbmblm .gt_super {
+#lwjfxvxisw .gt_super {
   font-size: 65%;
 }
 
-#alggwbmblm .gt_footnote_marks {
+#lwjfxvxisw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#alggwbmblm .gt_asterisk {
+#lwjfxvxisw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#alggwbmblm .gt_indent_1 {
+#lwjfxvxisw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#alggwbmblm .gt_indent_2 {
+#lwjfxvxisw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#alggwbmblm .gt_indent_3 {
+#lwjfxvxisw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#alggwbmblm .gt_indent_4 {
+#lwjfxvxisw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#alggwbmblm .gt_indent_5 {
+#lwjfxvxisw .gt_indent_5 {
   text-indent: 25px;
 }
 
-#alggwbmblm .katex-display {
+#lwjfxvxisw .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#alggwbmblm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#lwjfxvxisw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1591,23 +1580,23 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
 </div>
 </div>
 <div class="cell-output-display">
-<div id="zwiyfumsgt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zwiyfumsgt table {
+<div id="buevwmgmhk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#buevwmgmhk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zwiyfumsgt thead, #zwiyfumsgt tbody, #zwiyfumsgt tfoot, #zwiyfumsgt tr, #zwiyfumsgt td, #zwiyfumsgt th {
+#buevwmgmhk thead, #buevwmgmhk tbody, #buevwmgmhk tfoot, #buevwmgmhk tr, #buevwmgmhk td, #buevwmgmhk th {
   border-style: none;
 }
 
-#zwiyfumsgt p {
+#buevwmgmhk p {
   margin: 0;
   padding: 0;
 }
 
-#zwiyfumsgt .gt_table {
+#buevwmgmhk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1633,12 +1622,12 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-left-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_caption {
+#buevwmgmhk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zwiyfumsgt .gt_title {
+#buevwmgmhk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1650,7 +1639,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-width: 0;
 }
 
-#zwiyfumsgt .gt_subtitle {
+#buevwmgmhk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1662,7 +1651,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-width: 0;
 }
 
-#zwiyfumsgt .gt_heading {
+#buevwmgmhk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1674,13 +1663,13 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_bottom_border {
+#buevwmgmhk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_col_headings {
+#buevwmgmhk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1695,7 +1684,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_col_heading {
+#buevwmgmhk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1715,7 +1704,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#zwiyfumsgt .gt_column_spanner_outer {
+#buevwmgmhk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1727,15 +1716,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 4px;
 }
 
-#zwiyfumsgt .gt_column_spanner_outer:first-child {
+#buevwmgmhk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zwiyfumsgt .gt_column_spanner_outer:last-child {
+#buevwmgmhk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zwiyfumsgt .gt_column_spanner {
+#buevwmgmhk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1747,11 +1736,11 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   width: 100%;
 }
 
-#zwiyfumsgt .gt_spanner_row {
+#buevwmgmhk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zwiyfumsgt .gt_group_heading {
+#buevwmgmhk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1777,7 +1766,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   text-align: left;
 }
 
-#zwiyfumsgt .gt_empty_group_heading {
+#buevwmgmhk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1792,15 +1781,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: middle;
 }
 
-#zwiyfumsgt .gt_from_md > :first-child {
+#buevwmgmhk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zwiyfumsgt .gt_from_md > :last-child {
+#buevwmgmhk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zwiyfumsgt .gt_row {
+#buevwmgmhk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1819,7 +1808,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#zwiyfumsgt .gt_stub {
+#buevwmgmhk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1832,7 +1821,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#zwiyfumsgt .gt_stub_row_group {
+#buevwmgmhk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1846,15 +1835,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: top;
 }
 
-#zwiyfumsgt .gt_row_group_first td {
+#buevwmgmhk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zwiyfumsgt .gt_row_group_first th {
+#buevwmgmhk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zwiyfumsgt .gt_summary_row {
+#buevwmgmhk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1864,16 +1853,16 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#zwiyfumsgt .gt_first_summary_row {
+#buevwmgmhk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_first_summary_row.thick {
+#buevwmgmhk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zwiyfumsgt .gt_last_summary_row {
+#buevwmgmhk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1883,7 +1872,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_grand_summary_row {
+#buevwmgmhk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1893,7 +1882,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#zwiyfumsgt .gt_first_grand_summary_row {
+#buevwmgmhk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1903,7 +1892,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_last_grand_summary_row_top {
+#buevwmgmhk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1913,11 +1902,11 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_striped {
+#buevwmgmhk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zwiyfumsgt .gt_table_body {
+#buevwmgmhk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1926,7 +1915,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_footnotes {
+#buevwmgmhk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1940,7 +1929,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_footnote {
+#buevwmgmhk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1949,7 +1938,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#zwiyfumsgt .gt_sourcenotes {
+#buevwmgmhk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1963,7 +1952,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#zwiyfumsgt .gt_sourcenote {
+#buevwmgmhk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1971,72 +1960,72 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#zwiyfumsgt .gt_left {
+#buevwmgmhk .gt_left {
   text-align: left;
 }
 
-#zwiyfumsgt .gt_center {
+#buevwmgmhk .gt_center {
   text-align: center;
 }
 
-#zwiyfumsgt .gt_right {
+#buevwmgmhk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zwiyfumsgt .gt_font_normal {
+#buevwmgmhk .gt_font_normal {
   font-weight: normal;
 }
 
-#zwiyfumsgt .gt_font_bold {
+#buevwmgmhk .gt_font_bold {
   font-weight: bold;
 }
 
-#zwiyfumsgt .gt_font_italic {
+#buevwmgmhk .gt_font_italic {
   font-style: italic;
 }
 
-#zwiyfumsgt .gt_super {
+#buevwmgmhk .gt_super {
   font-size: 65%;
 }
 
-#zwiyfumsgt .gt_footnote_marks {
+#buevwmgmhk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zwiyfumsgt .gt_asterisk {
+#buevwmgmhk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zwiyfumsgt .gt_indent_1 {
+#buevwmgmhk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zwiyfumsgt .gt_indent_2 {
+#buevwmgmhk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zwiyfumsgt .gt_indent_3 {
+#buevwmgmhk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zwiyfumsgt .gt_indent_4 {
+#buevwmgmhk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zwiyfumsgt .gt_indent_5 {
+#buevwmgmhk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zwiyfumsgt .katex-display {
+#buevwmgmhk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zwiyfumsgt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#buevwmgmhk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2069,23 +2058,23 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
 </div>
 </div>
 <div class="cell-output-display">
-<div id="rgsphdjeiq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rgsphdjeiq table {
+<div id="fcseninixy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fcseninixy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rgsphdjeiq thead, #rgsphdjeiq tbody, #rgsphdjeiq tfoot, #rgsphdjeiq tr, #rgsphdjeiq td, #rgsphdjeiq th {
+#fcseninixy thead, #fcseninixy tbody, #fcseninixy tfoot, #fcseninixy tr, #fcseninixy td, #fcseninixy th {
   border-style: none;
 }
 
-#rgsphdjeiq p {
+#fcseninixy p {
   margin: 0;
   padding: 0;
 }
 
-#rgsphdjeiq .gt_table {
+#fcseninixy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2111,12 +2100,12 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-left-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_caption {
+#fcseninixy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rgsphdjeiq .gt_title {
+#fcseninixy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2128,7 +2117,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-width: 0;
 }
 
-#rgsphdjeiq .gt_subtitle {
+#fcseninixy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2140,7 +2129,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-width: 0;
 }
 
-#rgsphdjeiq .gt_heading {
+#fcseninixy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2152,13 +2141,13 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_bottom_border {
+#fcseninixy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_col_headings {
+#fcseninixy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2173,7 +2162,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_col_heading {
+#fcseninixy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2193,7 +2182,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#rgsphdjeiq .gt_column_spanner_outer {
+#fcseninixy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2205,15 +2194,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 4px;
 }
 
-#rgsphdjeiq .gt_column_spanner_outer:first-child {
+#fcseninixy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rgsphdjeiq .gt_column_spanner_outer:last-child {
+#fcseninixy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rgsphdjeiq .gt_column_spanner {
+#fcseninixy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2225,11 +2214,11 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   width: 100%;
 }
 
-#rgsphdjeiq .gt_spanner_row {
+#fcseninixy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rgsphdjeiq .gt_group_heading {
+#fcseninixy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2255,7 +2244,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   text-align: left;
 }
 
-#rgsphdjeiq .gt_empty_group_heading {
+#fcseninixy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2270,15 +2259,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: middle;
 }
 
-#rgsphdjeiq .gt_from_md > :first-child {
+#fcseninixy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rgsphdjeiq .gt_from_md > :last-child {
+#fcseninixy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rgsphdjeiq .gt_row {
+#fcseninixy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2297,7 +2286,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   overflow-x: hidden;
 }
 
-#rgsphdjeiq .gt_stub {
+#fcseninixy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2310,7 +2299,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rgsphdjeiq .gt_stub_row_group {
+#fcseninixy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2324,15 +2313,15 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   vertical-align: top;
 }
 
-#rgsphdjeiq .gt_row_group_first td {
+#fcseninixy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rgsphdjeiq .gt_row_group_first th {
+#fcseninixy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rgsphdjeiq .gt_summary_row {
+#fcseninixy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2342,16 +2331,16 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rgsphdjeiq .gt_first_summary_row {
+#fcseninixy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_first_summary_row.thick {
+#fcseninixy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rgsphdjeiq .gt_last_summary_row {
+#fcseninixy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2361,7 +2350,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_grand_summary_row {
+#fcseninixy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2371,7 +2360,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rgsphdjeiq .gt_first_grand_summary_row {
+#fcseninixy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2381,7 +2370,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-top-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_last_grand_summary_row_top {
+#fcseninixy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2391,11 +2380,11 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_striped {
+#fcseninixy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rgsphdjeiq .gt_table_body {
+#fcseninixy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2404,7 +2393,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-bottom-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_footnotes {
+#fcseninixy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2418,7 +2407,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_footnote {
+#fcseninixy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2427,7 +2416,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rgsphdjeiq .gt_sourcenotes {
+#fcseninixy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2441,7 +2430,7 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   border-right-color: #D3D3D3;
 }
 
-#rgsphdjeiq .gt_sourcenote {
+#fcseninixy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2449,72 +2438,72 @@ Figure&nbsp;38: Nombre de point GPS rapporté à l’aire de la zone marginale o
   padding-right: 5px;
 }
 
-#rgsphdjeiq .gt_left {
+#fcseninixy .gt_left {
   text-align: left;
 }
 
-#rgsphdjeiq .gt_center {
+#fcseninixy .gt_center {
   text-align: center;
 }
 
-#rgsphdjeiq .gt_right {
+#fcseninixy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rgsphdjeiq .gt_font_normal {
+#fcseninixy .gt_font_normal {
   font-weight: normal;
 }
 
-#rgsphdjeiq .gt_font_bold {
+#fcseninixy .gt_font_bold {
   font-weight: bold;
 }
 
-#rgsphdjeiq .gt_font_italic {
+#fcseninixy .gt_font_italic {
   font-style: italic;
 }
 
-#rgsphdjeiq .gt_super {
+#fcseninixy .gt_super {
   font-size: 65%;
 }
 
-#rgsphdjeiq .gt_footnote_marks {
+#fcseninixy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rgsphdjeiq .gt_asterisk {
+#fcseninixy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rgsphdjeiq .gt_indent_1 {
+#fcseninixy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rgsphdjeiq .gt_indent_2 {
+#fcseninixy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rgsphdjeiq .gt_indent_3 {
+#fcseninixy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rgsphdjeiq .gt_indent_4 {
+#fcseninixy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rgsphdjeiq .gt_indent_5 {
+#fcseninixy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rgsphdjeiq .katex-display {
+#fcseninixy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rgsphdjeiq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fcseninixy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
