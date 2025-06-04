@@ -451,37 +451,173 @@ Reposoirs zone E
 
 L'âge des individus est déterminé au baguage grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
 
-::: {#fig-UDMap_roosting_age_ZOOM}
+:::::::: panel-tabset
+### Zone A
+
+::: {#fig-UDMap_roosting_age_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_age_ZOOM.html",
+  src = "UDMap_roosting_age_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de l'âge.
+Reposoirs zone A en fonction de l'âge
 :::
+
+### Zone B
+
+::: {#fig-UDMap_roosting_age_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_age_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone B en fonction de l'âge
+:::
+
+### Zone C
+
+::: {#fig-UDMap_roosting_age_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_age_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone C en fonction de l'âge
+:::
+
+### Zone D
+
+::: {#fig-UDMap_roosting_age_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_age_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone D en fonction de l'âge
+:::
+
+### Zone E
+
+::: {#fig-UDMap_roosting_age_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_age_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction de l'âge
+:::
+::::::::
 
 ### Reposoir en fonction du sexe
 
 Le sexe des individus a été déterminé lors de la pose des GPS.
 
-::: {#fig-UDMap_roosting_sex_ZOOM}
+:::::::: panel-tabset
+### Zone A
+
+::: {#fig-UDMap_roosting_sex_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_sex_ZOOM.html",
+  src = "UDMap_roosting_sex_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction du sexe.
+Reposoirs zone A en fonction du sexe
 :::
+
+### Zone B
+
+::: {#fig-UDMap_roosting_sex_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_sex_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone B en fonction du sexe
+:::
+
+### Zone C
+
+::: {#fig-UDMap_roosting_sex_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_sex_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone C en fonction du sexe
+:::
+
+### Zone D
+
+::: {#fig-UDMap_roosting_sex_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_sex_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone D en fonction du sexe
+:::
+
+### Zone E
+
+::: {#fig-UDMap_roosting_sex_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_sex_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction du sexe
+:::
+::::::::
 
 ## Identification des zones d'alimentation
 
@@ -506,53 +642,257 @@ tags$iframe(
 Zones d'alimentation hotspot.
 :::
 
-::: {#fig-UDMap_foraging_ZOOM}
+Analyses zone par zone :
+
+:::::::: panel-tabset
+### Zone A
+
+::: {#fig-UDMap_foraging_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_ZOOM.html",
+  src = "UDMap_foraging_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Zones d'alimentation secondaires (sur des grilles zone par zone de 10x10m).
+Alimentation zone A
 :::
+
+### Zone B
+
+::: {#fig-UDMap_foraging_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B
+:::
+
+### Zone C
+
+::: {#fig-UDMap_foraging_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C
+:::
+
+### Zone D
+
+::: {#fig-UDMap_foraging_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone D
+:::
+
+### Zone E
+
+::: {#fig-UDMap_foraging_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone E
+:::
+::::::::
 
 ### Zone d'alimentation en fonction de l'age
 
-::: {#fig-UDMap_foraging_age_ZOOM}
+:::::::: panel-tabset
+### Zone A
+
+::: {#fig-UDMap_foraging_age_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_age_ZOOM.html",
+  src = "UDMap_foraging_age_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation de zone d'alimentation en fonction de l'âge.
+Alimentation zone A en fonction de l'âge
 :::
+
+### Zone B
+
+::: {#fig-UDMap_foraging_age_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_age_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B en fonction de l'âge
+:::
+
+### Zone C
+
+::: {#fig-UDMap_foraging_age_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_age_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C en fonction de l'âge
+:::
+
+### Zone D
+
+::: {#fig-UDMap_foraging_age_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_age_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone D en fonction de l'âge
+:::
+
+### Zone E
+
+::: {#fig-UDMap_foraging_age_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_age_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone E en fonction de l'âge
+:::
+::::::::
 
 ### Zone d'alimentation en fonction du sexe
 
-<div>
+:::::::: panel-tabset
+### Zone A
 
+::: {#fig-UDMap_foraging_sex_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_sex_ZOOM.html",
+  src = "UDMap_foraging_sex_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation de zone d'alimentation en fonction du sexe.
+Alimentation zone A en fonction du sexe
+:::
 
-</div>
+### Zone B
+
+::: {#fig-UDMap_foraging_sex_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_sex_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B en fonction du sexe
+:::
+
+### Zone C
+
+::: {#fig-UDMap_foraging_sex_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_sex_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C en fonction du sexe
+:::
+
+### Zone D
+
+::: {#fig-UDMap_foraging_sex_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_sex_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone D en fonction du sexe
+:::
+
+### Zone E
+
+::: {#fig-UDMap_foraging_sex_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_sex_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone E en fonction du sexe
+:::
+::::::::
 
 ## Distance entre les reposoirs et les zones d'alimentation
 
@@ -622,39 +962,173 @@ Variation des zones d'alimentation individuelles au cours des cycles de marée.
 
 Les périodes de jour et de nuit sont définies sur la base des levers et couchers du soleil issus du logiciel de marée "wxtide32".
 
-Reposoir en fonction du jour et de la nuit.
+#### Reposoirs
 
-::: {#fig-UDMap_roosting_jour_nuit_ZOOM}
+:::::::: panel-tabset
+##### Zone A
+
+::: {#fig-UDMap_roosting_jour_nuit_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_jour_nuit_ZOOM.html",
+  src = "UDMap_roosting_jour_nuit_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation de reposoirs en fonction du jour et de la nuit.
+Reposoirs zone A en fonction du jour et de la nuit
 :::
 
-Zone d'alimentation en fonction du jour et de la nuit.
+##### Zone B
 
-<div>
-
+::: {#fig-UDMap_roosting_jour_nuit_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_jour_nuit_ZOOM.html",
+  src = "UDMap_roosting_jour_nuit_B.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation de zone d'alimentation en fonction du jour et de la nuit.
+Reposoirs zone B en fonction du jour et de la nuit
+:::
 
-</div>
+##### Zone C
+
+::: {#fig-UDMap_roosting_jour_nuit_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_jour_nuit_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone C en fonction du jour et de la nuit
+:::
+
+##### Zone D
+
+::: {#fig-UDMap_roosting_jour_nuit_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_jour_nuit_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone D en fonction du jour et de la nuit
+:::
+
+##### Zone E
+
+::: {#fig-UDMap_roosting_jour_nuit_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_jour_nuit_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction du jour et de la nuit
+:::
+::::::::
+
+#### Alimentation
+
+:::::::: panel-tabset
+##### Zone A
+
+::: {#fig-UDMap_foraging_jour_nuit_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_jour_nuit_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone A en fonction du jour et de la nuit
+:::
+
+##### Zone B
+
+::: {#fig-UDMap_foraging_jour_nuit_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_jour_nuit_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone B en fonction du jour et de la nuit
+:::
+
+##### Zone C
+
+::: {#fig-UDMap_foraging_jour_nuit_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_jour_nuit_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone C en fonction du jour et de la nuit
+:::
+
+##### Zone D
+
+::: {#fig-UDMap_foraging_jour_nuit_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_jour_nuit_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone D en fonction du jour et de la nuit
+:::
+
+##### Zone E
+
+::: {#fig-UDMap_foraging_jour_nuit_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_jour_nuit_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction du jour et de la nuit
+:::
+::::::::
 
 ### Reposoirs entre fonction de la hauteur d'eau
 
@@ -668,24 +1142,8 @@ Le type de de marée hautes en fonction de la hauteur est défini comme :
 -   marée de vives eaux : entre 4.8m et 6.4m
 -   submersion de la lagune : supérieur à 6.4m
 
-::: {#fig-UDMap_roosting_tides_high_type_ZOOM}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_tides_high_type_ZOOM.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs secondaires en fonction de la hauteur de marée basse.
-:::
-
-Analyses zone par zone :
-
 :::::::: panel-tabset
-### Zone A
+#### Zone A
 
 ::: {#fig-UDMap_roosting_ZOOM_tides_high_type_A}
 ```{r}
@@ -701,7 +1159,7 @@ tags$iframe(
 Reposoirs en fonction de la hauteur d'eau, zone A
 :::
 
-### Zone B
+#### Zone B
 
 ::: {#fig-UDMap_roosting_ZOOM_tides_high_type}
 ```{r}
@@ -717,7 +1175,7 @@ tags$iframe(
 Reposoirs en fonction de la hauteur d'eau, zone B
 :::
 
-### Zone C
+#### Zone C
 
 ::: {#fig-UDMap_roosting_ZOOM_tides_high_type_C}
 ```{r}
@@ -733,7 +1191,7 @@ tags$iframe(
 Reposoirs en fonction de la hauteur d'eau, zone C
 :::
 
-### Zone D
+#### Zone D
 
 ::: {#fig-UDMap_roosting_ZOOM_tides_high_type_D}
 ```{r}
@@ -749,7 +1207,7 @@ tags$iframe(
 Reposoirs en fonction de la hauteur d'eau, zone D
 :::
 
-### Zone E
+#### Zone E
 
 ::: {#fig-UDMap_roosting_ZOOM_tides_high_type_E}
 ```{r}
@@ -781,125 +1239,517 @@ A partir de ces deux paramètres météorologiques, 3 paramètres météorologiq
 
 -   les évènements de vent fort : ECE supérieur à 95%
 -   les évènements de vent de Nord-Ouest : orientation entre 270 et 360 degrés
--   les évènements de vent fort de Nord-Ouest : ECE supérieur à 80% et d'orientation entre 270 et 360 degrés
+-   les évènements de vent fort de Nord-Ouest : ECE supérieur à 95% et d'orientation entre 270 et 360 degrés
 
 #### Vents forts
 
-::: {#fig-UDMap_ECE_wspd}
+##### Reposoirs 
+
+:::::::: panel-tabset
+###### Zone A
+
+::: {#fig-UDMap_roosting_ECE_wspd_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wspd.html",
+  src = "UDMap_roosting_ECE_wspd_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone A en fonction des vents forts
 :::
 
-::: {#fig-UDMap_ECE_wspd_ZOOM}
+###### Zone B
+
+::: {#fig-UDMap_roosting_ECE_wspd_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wspd_ZOOM.html",
+  src = "UDMap_foraging_ECE_wspd_B.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone B en fonction des vents forts
 :::
+
+###### Zone C
+
+::: {#fig-UDMap_roosting_ECE_wspd_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wspd_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone C en fonction des vents forts
+:::
+
+###### Zone D
+
+::: {#fig-UDMap_roosting_ECE_wspd_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wspd_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone D en fonction des vents forts
+:::
+
+###### Zone E
+
+::: {#fig-UDMap_roosting_ECE_wspd_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wspd_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction des vents forts
+:::
+::::::::
+
+##### Alimentation 
+
+:::::::: panel-tabset
+###### Zone A
+
+::: {#fig-UDMap_foraging_ECE_wspd_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wspd_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone A en fonction des vents forts
+:::
+
+###### Zone B
+
+::: {#fig-UDMap_foraging_ECE_wspd_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wspd_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B en fonction des vents forts
+:::
+
+###### Zone C
+
+::: {#fig-UDMap_foraging_ECE_wspd_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wspd_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C en fonction des vents forts
+:::
+
+###### Zone D
+
+::: {#fig-UDMap_foraging_ECE_wspd_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wspd_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone D en fonction des vents forts
+:::
+
+###### Zone E
+
+::: {#fig-UDMap_foraging_ECE_wspd_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wspd_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone E en fonction des vents forts
+:::
+::::::::
 
 #### Vent de Nord-Ouest
 
-::: {#fig-UDMap_ECE_wNO}
+##### Reposoirs 
+
+:::::::: panel-tabset
+###### Zone A
+
+::: {#fig-UDMap_roosting_ECE_wNO_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wNO.html",
+  src = "UDMap_roosting_ECE_wNO_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone A en fonction des vents forts
 :::
 
-::: {#fig-UDMap_ECE_wNO_ZOOM}
+###### Zone B
+
+::: {#fig-UDMap_roosting_ECE_wNO_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wNO_ZOOM.html",
+  src = "UDMap_roosting_ECE_wNO_B.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone B en fonction des vents forts
 :::
+
+###### Zone C
+
+::: {#fig-UDMap_roosting_ECE_wNO_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone C en fonction des vents forts
+:::
+
+###### Zone D
+
+::: {#fig-UDMap_roosting_ECE_wNO_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone D en fonction des vents forts
+:::
+
+###### Zone E
+
+::: {#fig-UDMap_roosting_ECE_wNO_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction des vents forts
+:::
+::::::::
+
+##### Alimentation 
+
+:::::::: panel-tabset
+###### Zone A
+
+::: {#fig-UDMap_roosting_ECE_wNO_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone A en fonction des vents de Nord-Ouest
+:::
+
+###### Zone B
+
+::: {#fig-UDMap_roosting_ECE_wNO_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B en fonction des vents de Nord-Ouest
+:::
+
+###### Zone C
+
+::: {#fig-UDMap_roosting_ECE_wNO_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C en fonction des vents de Nord-Ouest
+:::
+
+###### Zone D
+
+::: {#fig-UDMap_roosting_ECE_wNO_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone D en fonction des vents de Nord-Ouest
+:::
+
+###### Zone E
+
+::: {#fig-UDMap_roosting_ECE_wNO_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone E en fonction des vents de Nord-Ouest
+:::
+::::::::
 
 #### Vents forts de Nord-Ouest
 
-::: {#fig-UDMap_ECE_wNO_wspd80}
+##### Reposoirs 
+
+:::::::: panel-tabset
+###### Zone A
+
+::: {#fig-UDMap_roosting_ECE_wNO_wspd95_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wNO_wspd80.html",
+  src = "UDMap_roosting_ECE_wNO_wspd95_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone A en fonction des vents de Nord-Ouest et des vents forts
 :::
 
-::: {#fig-UDMap_ECE_wNO_wspd80_ZOOM}
+###### Zone B
+
+::: {#fig-UDMap_roosting_ECE_wNO_wspd95_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wNO_wspd80_ZOOM.html",
+  src = "UDMap_roosting_ECE_wNO_wspd95_B.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone B en fonction des vents de Nord-Ouest et des vents forts
 :::
 
-::: {#fig-UDMap_ECE_wNO_wspd95}
+###### Zone C
+
+::: {#fig-UDMap_roosting_ECE_wNO_wspd95_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wNO_wspd95.html",
+  src = "UDMap_roosting_ECE_wNO_wspd95_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone C en fonction des vents de Nord-Ouest et des vents forts
 :::
 
-::: {#fig-UDMap_ECE_wNO_wspd95_ZOOM}
+###### Zone D
+
+::: {#fig-UDMap_roosting_ECE_wNO_wspd95_D}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_ECE_wNO_wspd95_ZOOM.html",
+  src = "UDMap_roosting_ECE_wNO_wspd95_D.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Variation des reposoirs en fonction de la vitesse du vent : vents fort ou de vents normaux.
+Reposoirs zone D en fonction des vents de Nord-Ouest et des vents forts
 :::
+
+###### Zone E
+
+::: {#fig-UDMap_roosting_ECE_wNO_wspd95_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_ECE_wNO_wspd95_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction des vents de Nord-Ouest et des vents forts
+:::
+::::::::
+
+##### Alimentation 
+
+:::::::: panel-tabset
+###### Zone A
+
+::: {#fig-UDMap_foraging_ECE_wNO_wspd95_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wNO_wspd95_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone A en fonction des vents de Nord-Ouest et des vents forts
+:::
+
+###### Zone B
+
+::: {#fig-UDMap_foraging_ECE_wNO_wspd95_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wNO_wspd95_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B en fonction des vents de Nord-Ouest et des vents forts
+:::
+
+###### Zone C
+
+::: {#fig-UDMap_foraging_ECE_wNO_wspd95_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wNO_wspd95_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C en fonction des vents de Nord-Ouest et des vents forts
+:::
+
+###### Zone D
+
+::: {#fig-UDMap_foraging_ECE_wNO_wspd95_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wNO_wspd95_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone D en fonction des vents de Nord-Ouest et des vents forts
+:::
+
+###### Zone E
+
+::: {#fig-UDMap_foraging_ECE_wNO_wspd95_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_ECE_wNO_wspd95_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone E en fonction des vents de Nord-Ouest et des vents forts
+:::
+::::::::
 
 ### Chasse
 
