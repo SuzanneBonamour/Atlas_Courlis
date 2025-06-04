@@ -360,12 +360,12 @@ Analyses zone par zone :
 :::::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_roosting_ZOOM_A}
+::: {#fig-UDMap_roosting_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_A.html",
+  src = "UDMap_roosting_A.html",
   width = "100%",
   height = "400px"
 )
@@ -376,12 +376,12 @@ Reposoirs zone A
 
 ### Zone B
 
-::: {#fig-UDMap_roosting_ZOOM_B}
+::: {#fig-UDMap_roosting_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_B.html",
+  src = "UDMap_roosting_B.html",
   width = "100%",
   height = "400px"
 )
@@ -392,12 +392,12 @@ Reposoirs zone B
 
 ### Zone C
 
-::: {#fig-UDMap_roosting_ZOOM_C}
+::: {#fig-UDMap_roosting_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_C.html",
+  src = "UDMap_roosting_C.html",
   width = "100%",
   height = "400px"
 )
@@ -408,12 +408,12 @@ Reposoirs zone C
 
 ### Zone D
 
-::: {#fig-UDMap_roosting_ZOOM_D}
+::: {#fig-UDMap_roosting_D}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_D.html",
+  src = "UDMap_roosting_D.html",
   width = "100%",
   height = "400px"
 )
@@ -424,12 +424,12 @@ Reposoirs zone D
 
 ### Zone E
 
-::: {#fig-UDMap_roosting_ZOOM_E}
+::: {#fig-UDMap_roosting_E}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_E.html",
+  src = "UDMap_roosting_E.html",
   width = "100%",
   height = "400px"
 )
@@ -1137,12 +1137,12 @@ Le type de de marée hautes en fonction de la hauteur est défini comme :
 :::::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_roosting_ZOOM_tides_high_type_A}
+::: {#fig-UDMap_roosting_tides_high_type_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_tides_high_type_A.html",
+  src = "UDMap_roosting_tides_high_type_A.html",
   width = "100%",
   height = "400px"
 )
@@ -1153,12 +1153,12 @@ Reposoirs en fonction de la hauteur d'eau, zone A
 
 #### Zone B
 
-::: {#fig-UDMap_roosting_ZOOM_tides_high_type}
+::: {#fig-UDMap_roosting_tides_high_type_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_tides_high_type_B.html",
+  src = "UDMap_roosting_tides_high_type_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1169,12 +1169,12 @@ Reposoirs en fonction de la hauteur d'eau, zone B
 
 #### Zone C
 
-::: {#fig-UDMap_roosting_ZOOM_tides_high_type_C}
+::: {#fig-UDMap_roosting_tides_high_type_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_tides_high_type_C.html",
+  src = "UDMap_roosting_tides_high_type_C.html",
   width = "100%",
   height = "400px"
 )
@@ -1185,12 +1185,12 @@ Reposoirs en fonction de la hauteur d'eau, zone C
 
 #### Zone D
 
-::: {#fig-UDMap_roosting_ZOOM_tides_high_type_D}
+::: {#fig-UDMap_roosting_tides_high_type_D}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_tides_high_type_D.html",
+  src = "UDMap_roosting_tides_high_type_D.html",
   width = "100%",
   height = "400px"
 )
@@ -1201,12 +1201,12 @@ Reposoirs en fonction de la hauteur d'eau, zone D
 
 #### Zone E
 
-::: {#fig-UDMap_roosting_ZOOM_tides_high_type_E}
+::: {#fig-UDMap_roosting_tides_high_type_E}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_ZOOM_tides_high_type_E.html",
+  src = "UDMap_roosting_tides_high_type_E.html",
   width = "100%",
   height = "400px"
 )
