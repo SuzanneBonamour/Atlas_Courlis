@@ -79,7 +79,6 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
   Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
 </p>
 
-
 ## Contexte de l'étude
 
 Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-Photo_intro).
@@ -154,15 +153,11 @@ International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Dire
 
 # **Atlas dynamiques**
 
-```{=html}
 <img src="Eurasian_Curlew_by_Tisha_Mukherjee_08.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : Tisha Mukherjee (Wikimedia Commons)
-
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : Tisha Mukherjee (Wikimedia Commons)
 </p>
 
 Le détails des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
@@ -1855,28 +1850,20 @@ r2 %>%
 
 # **Discussion**
 
-```{=html}
 <img src="Numenius_arquata_(no).jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : Arnstein Rønning (Wikimedia Commons)
-
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : Arnstein Rønning (Wikimedia Commons)
 </p>
 
 # **Reproductibilité des analyses**
 
-```{=html}
 <img src="France_-_17_-_Saint-Froult_-_Sentier_des_Polders.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : KiwiNeko14 (Wikimedia Commons)
-
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : KiwiNeko14 (Wikimedia Commons)
 </p>
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
@@ -1907,15 +1894,11 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 
 # **Bibliographie**
 
-```{=html}
 <img src="France_-_17_-_Saint-Froult_-_Plage_de_Plaisance.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : KiwiNeko14 (Wikimedia Commons)
-
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : KiwiNeko14 (Wikimedia Commons)
 </p>
 
 -   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
@@ -1925,15 +1908,11 @@ Crédit photo : KiwiNeko14 (Wikimedia Commons)
 
 # **Travail de terrain**
 
-```{=html}
 <img src="Réserve_naturelle_nationale_de_Moëze-Oléron(3).jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : Ji-Elle (Wikimedia Commons)
-
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : Ji-Elle (Wikimedia Commons)
 </p>
 
 Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
@@ -1942,19 +1921,22 @@ Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et éq
 
 # **Financements**
 
+<img src="RNN_Moëze_Oléron_-_img_48640.jpg"
+     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : Pmau (Wikimedia Commons)
+</p>
+
 <a href="#top">↑ retour en haut</a>
 
 # **Remerciements**
 
-```{=html}
 <img src="RNN_Moëze_Oléron_-_img_48656.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : Pmau (Wikimedia Commons)
-
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : Pmau (Wikimedia Commons)
 </p>
 
 Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pour leurs conseils pertinents.
@@ -1963,15 +1945,11 @@ Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pou
 
 # **Contact**
 
-```{=html}
 <img src="Pont_d'Oléron.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : Mutichou (Wikimedia Commons)
-
+<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
+  Crédit photo : Mutichou (Wikimedia Commons)
 </p>
 
 Analyses et rédaction de l'atlas par [Suzanne Bonamour](https://github.com/SuzanneBonamour), chargée de traitement de données, LPO France.
