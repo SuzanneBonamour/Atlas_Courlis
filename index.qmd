@@ -72,11 +72,15 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 
 # **Introduction**
 
+```{=html}
 <img src="20170226-Großer_Brachvogel.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
+
+Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
+
 </p>
 
 ## Contexte de l'étude
@@ -153,11 +157,15 @@ International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Dire
 
 # **Atlas dynamiques**
 
+```{=html}
 <img src="Eurasian_Curlew_by_Tisha_Mukherjee_08.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : Tisha Mukherjee (Wikimedia Commons)
+
+Crédit photo : Tisha Mukherjee (Wikimedia Commons)
+
 </p>
 
 Le détails des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
@@ -337,7 +345,7 @@ Le comportement de repos est défini comme un point GPS d'une vitesse de déplac
 Les reposoirs sont estimé :
 
 -   à partir des données de l'ensemble des individus via la délimitation de zone "hotspot" [Bakker et al. (2021)](#bakker2021) et de façon global sur toute la zone d'études (sur des grilles de 100m x 100m, @fig-UDMap_roosting_hotspot_from1id)
--   de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, @fig-UDMap_roosting_ZOOM_A, @fig-UDMap_roosting_ZOOM_B, @fig-UDMap_roosting_ZOOM_C, @fig-UDMap_roosting_ZOOM_D, @fig-UDMap_roosting_ZOOM_E).
+-   de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, @fig-UDMap_roosting_A, @fig-UDMap_roosting_B, @fig-UDMap_roosting_C, @fig-UDMap_roosting_D, @fig-UDMap_roosting_E).
 
 Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
@@ -1124,7 +1132,7 @@ Reposoirs zone E en fonction du jour et de la nuit
 
 ### Reposoirs entre fonction de la hauteur d'eau
 
-Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_roosting_ZOOM_tides_high_type_A, @fig-UDMap_roosting_ZOOM_tides_high_type_B, @fig-UDMap_roosting_ZOOM_tides_high_type_C, @fig-UDMap_roosting_ZOOM_tides_high_type_D, @fig-UDMap_roosting_ZOOM_tides_high_type_E).
+Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_roosting_tides_high_type_A, @fig-UDMap_roosting_tides_high_type_B, @fig-UDMap_roosting_tides_high_type_C, @fig-UDMap_roosting_tides_high_type_D, @fig-UDMap_roosting_tides_high_type_E).
 
 Le marégraphe utilisé pour obetenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous. La hauteur d'eau est moyennée pour chaque période du grain temporelle choisi (5 min). La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargée via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19).
 
@@ -1216,7 +1224,7 @@ Reposoirs en fonction de la hauteur d'eau, zone E
 :::
 ::::::::
 
-### Utilisation de l'espace par les Courlis cendré lors d'évènements climatiques extrêmes
+### Utilisation de l'espace par les Courlis cendré lors d'évènements de vent extrêmes
 
 Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
 
@@ -1233,96 +1241,14 @@ A partir de ces deux paramètres météorologiques, 3 paramètres météorologiq
 -   les évènements de vent de Nord-Ouest : orientation entre 270 et 360 degrés
 -   les évènements de vent fort de Nord-Ouest : ECE supérieur à 95% et d'orientation entre 270 et 360 degrés
 
-#### Vents forts
+L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes detectées sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme "normaux".
 
-##### Reposoirs 
+Les vents de Nord-Ouest semblent de pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les reportements de repos. 
 
-:::::::: panel-tabset
-###### Zone A
-
-::: {#fig-UDMap_roosting_ECE_wspd_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wspd_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone A en fonction des vents forts
-:::
-
-###### Zone B
-
-::: {#fig-UDMap_roosting_ECE_wspd_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wspd_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone B en fonction des vents forts
-:::
-
-###### Zone C
-
-::: {#fig-UDMap_roosting_ECE_wspd_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wspd_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone C en fonction des vents forts
-:::
-
-###### Zone D
-
-::: {#fig-UDMap_roosting_ECE_wspd_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wspd_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D en fonction des vents forts
-:::
-
-###### Zone E
-
-::: {#fig-UDMap_roosting_ECE_wspd_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wspd_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E en fonction des vents forts
-:::
-::::::::
-
-##### Alimentation 
+Seuls les resultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
 
 :::::::: panel-tabset
-###### Zone A
+#### Zone A
 
 ::: {#fig-UDMap_foraging_ECE_wspd_A}
 ```{r}
@@ -1338,7 +1264,7 @@ tags$iframe(
 Alimentation zone A en fonction des vents forts
 :::
 
-###### Zone B
+#### Zone B
 
 ::: {#fig-UDMap_foraging_ECE_wspd_B}
 ```{r}
@@ -1354,7 +1280,7 @@ tags$iframe(
 Alimentation zone B en fonction des vents forts
 :::
 
-###### Zone C
+#### Zone C
 
 ::: {#fig-UDMap_foraging_ECE_wspd_C}
 ```{r}
@@ -1370,7 +1296,7 @@ tags$iframe(
 Alimentation zone C en fonction des vents forts
 :::
 
-###### Zone D
+#### Zone D
 
 ::: {#fig-UDMap_foraging_ECE_wspd_D}
 ```{r}
@@ -1386,7 +1312,7 @@ tags$iframe(
 Alimentation zone D en fonction des vents forts
 :::
 
-###### Zone E
+#### Zone E
 
 ::: {#fig-UDMap_foraging_ECE_wspd_E}
 ```{r}
@@ -1403,179 +1329,7 @@ Alimentation zone E en fonction des vents forts
 :::
 ::::::::
 
-#### Vents forts de Nord-Ouest
-
-Les vent de Nord Ouest seuls ne semblent pas avoir d'effet marqué sur le comportement des courlis. Cependant, lorsque les vents de Nord-Ouest sont particulièrement fort, cela pourrait avoir uen influence sur les comportements de repos et d'alimentation.
-
-##### Reposoirs 
-
-:::::::: panel-tabset
-###### Zone A
-
-::: {#fig-UDMap_roosting_ECE_wNO_wspd95_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wNO_wspd95_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone A en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone B
-
-::: {#fig-UDMap_roosting_ECE_wNO_wspd95_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wNO_wspd95_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone B en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone C
-
-::: {#fig-UDMap_roosting_ECE_wNO_wspd95_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wNO_wspd95_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone C en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone D
-
-::: {#fig-UDMap_roosting_ECE_wNO_wspd95_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wNO_wspd95_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone E
-
-::: {#fig-UDMap_roosting_ECE_wNO_wspd95_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_ECE_wNO_wspd95_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E en fonction des vents de Nord-Ouest et des vents forts
-:::
-::::::::
-
-##### Alimentation 
-
-:::::::: panel-tabset
-###### Zone A
-
-::: {#fig-UDMap_foraging_ECE_wNO_wspd95_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wNO_wspd95_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone A en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone B
-
-::: {#fig-UDMap_foraging_ECE_wNO_wspd95_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wNO_wspd95_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone B en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone C
-
-::: {#fig-UDMap_foraging_ECE_wNO_wspd95_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wNO_wspd95_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone C en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone D
-
-::: {#fig-UDMap_foraging_ECE_wNO_wspd95_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wNO_wspd95_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone D en fonction des vents de Nord-Ouest et des vents forts
-:::
-
-###### Zone E
-
-::: {#fig-UDMap_foraging_ECE_wNO_wspd95_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wNO_wspd95_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone E en fonction des vents de Nord-Ouest et des vents forts
-:::
-::::::::
-
-### Chasse
+### Comportement d'évitement de la chasse à pied et à la tonnes
 
 #### Chasse à pied
 
@@ -1850,20 +1604,42 @@ r2 %>%
 
 # **Discussion**
 
+```{=html}
 <img src="Numenius_arquata_(no).jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : Arnstein Rønning (Wikimedia Commons)
+
+Crédit photo : Arnstein Rønning (Wikimedia Commons)
+
 </p>
+
+## Jeu de données et puissance statistique
+
+Bien que ce jeu de données soit exceptionnel de par son nombre d'individus suivis (99 individus) et la durée de ce suivi (10 ans), les analyses statistiques effectuées ici manques de puissance pour répondre avec précisions et plus de robustesse aux questions posées.
+
+Notamment, les données sur les chasses (et la pêches) manque de précisions et d'ampleur temporelles et géopgraphies. 
+
+Ce travail constitue une étape crucial pour obtenir une image générale des comportements de Courlis cenrdrée dans la région, mais cela ne pourra que bénéficier de plus d'années de suivi et de plus d'individus équipé, en parallèle d'une récolte plus fine, lorsque cela est possible, des données environnementales et des pressions anthropiques.
+
+## Perspectives 
+
+XX
+
+
 
 # **Reproductibilité des analyses**
 
+```{=html}
 <img src="France_-_17_-_Saint-Froult_-_Sentier_des_Polders.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : KiwiNeko14 (Wikimedia Commons)
+
+Crédit photo : KiwiNeko14 (Wikimedia Commons)
+
 </p>
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
@@ -1894,11 +1670,15 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 
 # **Bibliographie**
 
+```{=html}
 <img src="France_-_17_-_Saint-Froult_-_Plage_de_Plaisance.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : KiwiNeko14 (Wikimedia Commons)
+
+Crédit photo : KiwiNeko14 (Wikimedia Commons)
+
 </p>
 
 -   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
@@ -1908,11 +1688,15 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 
 # **Travail de terrain**
 
+```{=html}
 <img src="Réserve_naturelle_nationale_de_Moëze-Oléron(3).jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : Ji-Elle (Wikimedia Commons)
+
+Crédit photo : Ji-Elle (Wikimedia Commons)
+
 </p>
 
 Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
@@ -1921,22 +1705,30 @@ Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et éq
 
 # **Financements**
 
+```{=html}
 <img src="RNN_Moëze_Oléron_-_img_48640.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : Pmau (Wikimedia Commons)
+
+Crédit photo : Pmau (Wikimedia Commons)
+
 </p>
 
 <a href="#top">↑ retour en haut</a>
 
 # **Remerciements**
 
+```{=html}
 <img src="RNN_Moëze_Oléron_-_img_48656.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : Pmau (Wikimedia Commons)
+
+Crédit photo : Pmau (Wikimedia Commons)
+
 </p>
 
 Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pour leurs conseils pertinents.
@@ -1945,11 +1737,15 @@ Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pou
 
 # **Contact**
 
+```{=html}
 <img src="Pont_d'Oléron.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+```
 
 <p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-  Crédit photo : Mutichou (Wikimedia Commons)
+
+Crédit photo : Mutichou (Wikimedia Commons)
+
 </p>
 
 Analyses et rédaction de l'atlas par [Suzanne Bonamour](https://github.com/SuzanneBonamour), chargée de traitement de données, LPO France.
