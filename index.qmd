@@ -266,6 +266,19 @@ sexe_dt <- GPS %>%
 # - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
 ```
 
+## Période d'émission des balises GPS
+
+::: {#fig-emission_plot}
+```{r}
+#| echo: false
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("emission_plot.png", dpi = 100)
+```
+
+Période d'émission des balises GPS pour les individus étudiés.
+:::
+
 ## Temps passé dans la réserve de Moëze-Oléron
 
 Le temps passé dans la réservé est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
@@ -325,6 +338,19 @@ knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
 
 Aire du domaine vital individuel à 95% (ronds oranges) ou 50% (triangles verts). Moyenne (lignes pleines) +/- écart-type (lignes pointillés). Pourcentage de chevauchement avec la réserve en couleurs.
+:::
+
+Aire (en m²) du domaine vital des individus en fonction de leur age ou de leur sexe.
+
+::: {#fig-surface_sex_age_all_plot}
+```{r}
+#| echo: false
+#| out.width: 70% 
+#| fig-align: "center"
+knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
+```
+
+Aire du domaine vital des individus à 95% et 50% en fonction de leur age ou de leur sexe.
 :::
 
 ## Identification des reposoirs
@@ -444,6 +470,90 @@ tags$iframe(
 ```
 
 Reposoirs zone E
+:::
+::::::::
+
+### Reposoir en fonction du mois de l'année
+
+:::::::: panel-tabset
+### Zone A
+
+::: {#fig-UDMap_roosting_month_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_month_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone A en fonction du mois
+:::
+
+### Zone B
+
+::: {#fig-UDMap_roosting_month_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_month_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone B en fonction du mois
+:::
+
+### Zone C
+
+::: {#fig-UDMap_roosting_month_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_month_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone C en fonction du mois
+:::
+
+### Zone D
+
+::: {#fig-UDMap_roosting_month_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_month_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone D en fonction du mois
+:::
+
+### Zone E
+
+::: {#fig-UDMap_roosting_month_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_month_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone E en fonction du mois
 :::
 ::::::::
 
@@ -726,6 +836,90 @@ Alimentation zone E
 :::
 ::::::::
 
+### Zone d'alimentation en fonction du mois de l'année
+
+:::::::: panel-tabset
+### Zone A
+
+::: {#fig-UDMap_foraging_month_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_month_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone A en fonction du mois
+:::
+
+### Zone B
+
+::: {#fig-UDMap_foraging_month_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_month_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone B en fonction du mois
+:::
+
+### Zone C
+
+::: {#fig-UDMap_foraging_month_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_month_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone C en fonction du mois
+:::
+
+### Zone D
+
+::: {#fig-UDMap_foraging_month_D}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_month_D.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone D en fonction du mois
+:::
+
+### Zone E
+
+::: {#fig-UDMap_foraging_month_E}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_month_E.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone E en fonction du mois
+:::
+::::::::
+
 ### Zone d'alimentation en fonction de l'age
 
 :::::::: panel-tabset
@@ -894,18 +1088,34 @@ Alimentation zone E en fonction du sexe
 :::
 ::::::::
 
+## Zone critique de repos et d'alimentation
+
+::: {#fig-zone_critique_hotsport_map_v1}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "zone_critique_hotsport_map_v1.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone critique de repos et d'alimentation
+:::
+
 ## Distance entre les reposoirs et les zones d'alimentation
 
-La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimetation et de repos à chaque cycle de marais (@fig-distance_roost_forag_plot).
+La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimetation et de repos à chaque cycle de marais (@fig-distance_roost_forag_allvar_plot).
 
 Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
 
-::: {#fig-distance_roost_forag_plot}
+::: {#fig-distance_roost_forag_allvar_plot}
 ```{r}
 #| echo: false
-#| out.width: 70% 
+#| out.width: 90% 
 #| fig-align: "center"
-knitr::include_graphics("distance_roost_forag_plot.png", dpi = 100)
+knitr::include_graphics("distance_roost_forag_allvar_plot.png", dpi = 100)
 ```
 
 Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
@@ -915,9 +1125,10 @@ Les distances à chaque cycle de marais des paires de centoïds individuels entr
 
 ::: {#fig-distance_roost_forag_age_sex_plot}
 ```{r}
-#| echo: false
-#| out.width: 70% 
-#| fig-align: "center"
+#| eval: false
+#| fig-align: center
+#| include: false
+#| out-width: 70%
 knitr::include_graphics("distance_roost_forag_age_sex_plot.png", dpi = 100)
 ```
 
@@ -929,6 +1140,8 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 ## Fidélité aux espaces au cours des cycles de marée
 
 Afin d'estimer la fidélité au espace, pour le repos, comme pour l'alimentation, des zones d'utilisation principale de l'espace sont estimée en fonction des années ou des mois, puis le chvauchement de ces zones est estimé deux à deux. Un fort chevauchement équivaut à une forte similarité entre les zones au cours du temps, ce qui équivaut à une forte fidélité aux espaces.
+
+La fidélité inter-annuelle aux espaces a également été estimé. Néanmoins, trop de variabilité inter-individuelle sont resortie pour voir tirer des conclusions de ces analyses.
 
 ### Reposoirs
 
@@ -1142,6 +1355,8 @@ Le type de de marée hautes en fonction de la hauteur est défini comme :
 -   marée de vives eaux : entre 4.8m et 6.4m
 -   submersion de la lagune : supérieur à 6.4m
 
+Les dates détectées de submersion de la lagune sont : XXX
+
 :::::::: panel-tabset
 #### Zone A
 
@@ -1337,30 +1552,30 @@ Alimentation zone E en fonction des vents forts
 
 L'utilisation de l'espace par les Courlis cendrés pendant et hors période de chasse à pied sont comparés.
 
-Les données disponibles pour la chasse à pied se restreinge à la zone DPM. Les analyses sont donc faites uniquement dans un rayon de 1 km autour de ce point DPM.
+Les données disponibles pour la chasse à pied se restreinge à la zone DPM. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs.
 
-Egalement, afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est réduite autour de la période de chasse, de juillet à février.
+Egalement, afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restrait autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
 
-::: {#fig-UDMap_100x100_roosting_in_out_saison_glob}
+::: {#fig-UDMap_roosting_chasse_in_out_saison_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_100x100_roosting_in_out_saison_glob.html",
+  src = "UDMap_roosting_chasse_in_out_saison_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Zone de repos pendant et hors période de chasse.
+Zone de repos pendant (in) et hors (out) période de chasse.
 :::
 
-::: {#fig-UDMap_100x100_foraging_in_out_saison_glob}
+::: {#fig-UDMap_foraging_chasse_in_out_saison_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_100x100_foraging_in_out_saison_glob.html",
+  src = "UDMap_foraging_chasse_in_out_saison_C.html",
   width = "100%",
   height = "400px"
 )
@@ -1369,71 +1584,9 @@ tags$iframe(
 Zone d'alimentation pendant et hors période de chasse.
 :::
 
-##### Effet de la présence de chasseur pendant la période de chasse
+Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé. 
 
-L'utilisation de l'espace par les Courlis cendrés lors de jour de présence ou d'abscence de chasseur sur le site sont comparés.
-
-Le jeu de données est ici restreint à la période de chasse uniquement.
-
-::: {#fig-UDMap_100x100_roosting_jour_de_chasse_glob}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_100x100_roosting_jour_de_chasse_glob.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zone de repos lors de la présence ou abscence de chasseur.
-:::
-
-::: {#fig-UDMap_100x100_foraging_jour_de_chasse_glob}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_100x100_foraging_jour_de_chasse_glob.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zone d'alimentation lors de la présence ou abscence de chasseur.
-:::
-
-##### Effet du nombre de chasseur
-
-L'utilisation de l'espace par les Courlis cendrés en fonction du nombre de chasseur présence sur site sont comparés.
-
-::: {#fig-UDMap_100x100_roosting_seuil_chasse_glob}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_100x100_roosting_seuil_chasse_glob.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zone de repos en fonction du nombre de chasseur présents.
-:::
-
-::: {#fig-UDMap_100x100_foraging_seuil_chasse_glob}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_100x100_foraging_seuil_chasse_glob.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zone d'alimentation en fonction du nombre de chasseur présents.
-:::
+Aucun effet n'a pu être visieullement détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
 #### Chasse à la tonnes
 
@@ -1617,17 +1770,23 @@ Crédit photo : Arnstein Rønning (Wikimedia Commons)
 
 ## Jeu de données et puissance statistique
 
-Bien que ce jeu de données soit exceptionnel de par son nombre d'individus suivis (99 individus) et la durée de ce suivi (10 ans), les analyses statistiques effectuées ici manques de puissance pour répondre avec précisions et plus de robustesse aux questions posées.
+Bien que ce jeu de données soit exceptionnel de par son nombre d'individus suivis (99 individus) et son échelle temporelle (10 ans), les analyses statistiques effectuées ici manques de puissance pour répondre avec précisions et plus de robustesse aux questions posées.
 
-Notamment, les données sur les chasses (et la pêches) manque de précisions et d'ampleur temporelles et géopgraphies. 
+Notamment, les données sur les chasses (et la pêche) manque de précisions et d'ampleur temporelles et géopgraphiques. 
 
 Ce travail constitue une étape crucial pour obtenir une image générale des comportements de Courlis cenrdrée dans la région, mais cela ne pourra que bénéficier de plus d'années de suivi et de plus d'individus équipé, en parallèle d'une récolte plus fine, lorsque cela est possible, des données environnementales et des pressions anthropiques.
+
+## Protocole de d'échantillonnage des oiseaux équipés
+
+Des contraintes techniques lié à l'écologie de l'espèce et aux autorisations de baguages ont contraint la capture des oiseaux équipés à s'est effectué sur la plage du grand travers, le long de la côte au sein de la réserve de Moëze-Oléron.
+
+Ainsi donc, les oiseaux étudié ici on une utilisation de l'espace orienté autour de cette zone, représentant un biais important dans les analyses.
+
+Il serait particulièrement interessant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve, notamment sur l'ile d'Oléron pour obtenir une vue globale généralisable à l'ensemble de la population de Courlis dans la région.
 
 ## Perspectives 
 
 XX
-
-
 
 # **Reproductibilité des analyses**
 
