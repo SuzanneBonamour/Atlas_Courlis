@@ -67,7 +67,7 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
 ::: {.logo-row style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;"}
-<img src="lpo_logo.jpg" alt="Logo Gauche" style="height: 80px;"/> <img src="reserve_logo.png" alt="Logo Droit" style="height: 80px;"/>
+<img src="lpo_logo.jpg" alt="Logo Gauche" style="height: 100px;"/> <img src="reserve_logo.png" alt="Logo Droit" style="height: 100px;"/>
 :::
 
 # **Introduction**
@@ -77,11 +77,9 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
-
-</p>
+:::
 
 ## Contexte de l'étude
 
@@ -95,20 +93,24 @@ L’objectif général de cette étude est de mieux comprendre l’utilisation d
 knitr::include_graphics("Photo_intro.png", dpi = 100)
 ```
 
-Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, crédit photos : Armel Deniau, Loic Jomat, Romain Beaubert).
+Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, crédit photos : Armel Deniau/LPO, Loic Jomat/LPO, Romain Beaubert/LPO).
 :::
 
 À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
 
 Le travail présenté ici propose une cartographie fine de la répartition des courlis dans le site fonctionnel de la réserve de Moëze-Oléron en fonction des fluctuations environnementales et des perturbations anthropiques détectées et mesurables sur la zone.
 
-Cette étude s’inscrit dans le cadre du projet « Adaptation des limicoles aux changements climatiques ».
+Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par l’Etat (Fonds Vert) et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
+
+::: {.logo-row style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;"}
+<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" alt="Logo Gauche" style="height: 100px;"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" alt="Logo Droit" style="height: 100px;"/>
+:::
 
 ## L'espèce d'étude : le courlis cendré (<em>Numenius arquata</em>)
 
 ### Morphologie
 
-Le Courlis cendré est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 15 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
+Le Courlis cendré est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
 
 ### Comportement général
 
@@ -149,9 +151,9 @@ IUCN : Near Threatened (Quasi menacé) à l’échelle mondiale.
 
 Europe : Annexe II de la Convention de Berne. Déclin confirmé dans plusieurs États membres.
 
-France : Liste rouge nationale : Vulnérable. Protégé par l’arrêté du 29 octobre 2009. Espèce non chassable.
+France : Vulnérable. Espèce inscrite à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année.
 
-International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions, mais interdite en France).
+International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions).
 
 <a href="#top">↑ retour en haut</a>
 
@@ -162,13 +164,11 @@ International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Dire
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : Tisha Mukherjee (Wikimedia Commons)
+:::
 
-</p>
-
-Le détails des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
+Le détail des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
 
 ## La zone d'étude
 
@@ -184,9 +184,9 @@ La zone d'étude (voir @fig-zone_map) est un rectangle de `r area_box_km` km² q
 -   au Nord jusqu'à l'estuaire de la Charente,
 -   à l'Est jusqu'à la limite Est de la ville de Rochefort,
 -   au Sud jusqu'à l'estuaire de la Seudre,
--   et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi zone fonctionnellle du bassin de Marennes, la réserve de Moëze-Oléron et le marais de Brouage.
+-   et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi zone fonctionnelle du bassin de Marennes, la réserve de Moëze-Oléron et le marais de Brouage.
 
-Les études sur la zone globale ont été effectué avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B, C, D et E ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
+Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B, C, D et E ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
 
 ::: {#fig-zone_map}
 ```{r}
@@ -202,13 +202,28 @@ tags$iframe(
 Zones d'études - zone d'étude globale (zone blanche) et zones d'études réduites (zones A, B, C, D et E)
 :::
 
+Nouvelle zone d'étude ???
+
+::: {#fig-zone_map}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "zone_map_new.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'études - zone d'étude globale (zone blanche) et zones d'études réduites (zones AA, BB, CC)
+:::
 ## Les données GPS utilisées
 
 ### Nettoyage des données GPS
 
 Le nettoyage des données issues des balises GPS a principalement été effectué à l'aide du package R adehabitat [Calenge (2006)](#calenge2006).
 
-En résumé, les points utilisé pour déterminé les comportements d'alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d'étude ont été utilisé. Le temps entre chaque point de localisation sauvegardé par individé pouvant varier et propoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l'oiseau a enregistré plus d'un point par période de 5 min ont été analyses (éviter d'analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basses de 100 points estimés par individus sur une période supérieure à de fois 28 jours (deux cycles lunaires) à été appliqué pour maintenir une très haute qualité de suivi des individus pour les analyses.
+En résumé, les points utilisés pour déterminer les comportements d’alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5 km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d’étude ont été utilisés. Le temps entre chaque point de localisation sauvegardé par individu pouvant varier et provoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l’oiseau a enregistré plus d’un point par période de 5 min ont été analysés (éviter d’analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basse de 100 points estimés par individus sur une période supérieure à 28 jours (deux cycles lunaires) a été appliquée pour maintenir une très haute qualité de suivi des individus pour les analyses.
 
 ### Taille des jeux de données analysés
 
@@ -271,7 +286,7 @@ sexe_dt <- GPS %>%
 ::: {#fig-emission_plot}
 ```{r}
 #| echo: false
-#| out.width: 70% 
+#| out.width: 90% 
 #| fig-align: "center"
 knitr::include_graphics("emission_plot.png", dpi = 100)
 ```
@@ -279,9 +294,9 @@ knitr::include_graphics("emission_plot.png", dpi = 100)
 Période d'émission des balises GPS pour les individus étudiés.
 :::
 
-## Temps passé dans la réserve de Moëze-Oléron
+## Temps passé dans la réserve naturelle de Moëze-Oléron
 
-Le temps passé dans la réservé est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
+Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
 
 Pourcentage moyen de temps passé dans la réserve pour :
 
@@ -298,14 +313,14 @@ Pourcentage moyen de temps passé dans la réserve pour :
 knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
 ```
 
-Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentage moyen pour chaque comportement.
+Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
 :::
 
 ## Domaines vitaux au sein de la réserve de Moëze-Oléron
 
 La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal.
 
-Les distribution d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.
+Les distributions d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.
 
 Les domaines vitaux (<em>home range</em>) ont ici été estimés (@fig-UDMap_HR_ID) à l’aide des fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
@@ -340,7 +355,7 @@ knitr::include_graphics("area_hr_plot.png", dpi = 100)
 Aire du domaine vital individuel à 95% (ronds oranges) ou 50% (triangles verts). Moyenne (lignes pleines) +/- écart-type (lignes pointillés). Pourcentage de chevauchement avec la réserve en couleurs.
 :::
 
-Aire (en m²) du domaine vital des individus en fonction de leur age ou de leur sexe.
+Aire (en m²) du domaine vital des individus en fonction de leur âge ou de leur sexe.
 
 ::: {#fig-surface_sex_age_all_plot}
 ```{r}
@@ -350,7 +365,7 @@ Aire (en m²) du domaine vital des individus en fonction de leur age ou de leur 
 knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 ```
 
-Aire du domaine vital des individus à 95% et 50% en fonction de leur age ou de leur sexe.
+Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
 :::
 
 ## Identification des reposoirs
@@ -368,9 +383,9 @@ Crédit photo : Idaho69 (Wikimedia Commons)
 
 Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les reposoirs sont estimé :
+Les reposoirs sont estimés :
 
--   à partir des données de l'ensemble des individus via la délimitation de zone "hotspot" [Bakker et al. (2021)](#bakker2021) et de façon global sur toute la zone d'études (sur des grilles de 100m x 100m, @fig-UDMap_roosting_hotspot_from1id)
+-   à partir des données de l'ensemble des individus via la délimitation de zone "hotspot" [Bakker et al. (2021)](#bakker2021) et de façon globale sur toute la zone d'études (sur des grilles de 100m x 100m, @fig-UDMap_roosting_hotspot_from1id)
 -   de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, @fig-UDMap_roosting_A, @fig-UDMap_roosting_B, @fig-UDMap_roosting_C, @fig-UDMap_roosting_D, @fig-UDMap_roosting_E).
 
 Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
@@ -470,6 +485,63 @@ tags$iframe(
 ```
 
 Reposoirs zone E
+:::
+::::::::
+
+
+Nouvelles zones d'études ??????
+
+Verticle à 95% et 50%
+
+Analyses zone par zone :
+
+:::::::: panel-tabset
+### Zone AA
+
+::: {#fig-UDMap_roosting_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_95_50_AA.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone AA
+:::
+
+### Zone BB
+
+::: {#fig-UDMap_roosting_BB}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_95_50_BB.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone B
+:::
+
+### Zone CC
+
+::: {#fig-UDMap_roosting_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_roosting_95_50_CC.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Reposoirs zone CC
 :::
 ::::::::
 
@@ -733,7 +805,7 @@ Reposoirs zone E en fonction du sexe
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les zones d'almimentation sont estimées :
+Les zones d'alimentation sont estimées :
 
 -   à partir des données de l'ensemble des individus en identifiant des zones "hotspots" [Bakker et al. (2021)](#bakker2021) et de façon global (@fig-UDMap_foraging_hotspot) sur toute la zone d'études (sur des grilles de 100m x 100m)
 -   soit de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, @fig-UDMap_foraging_A, @fig-UDMap_foraging_B, @fig-UDMap_foraging_C, @fig-UDMap_foraging_D, @fig-UDMap_foraging_E). Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
@@ -833,6 +905,60 @@ tags$iframe(
 ```
 
 Alimentation zone E
+:::
+::::::::
+
+Nouvelles zones ????
+
+Vertice à 95 et 50%
+
+:::::::: panel-tabset
+### Zone AA
+
+::: {#fig-UDMap_foraging_AA}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_95_50_AA.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone AA
+:::
+
+### Zone BB
+
+::: {#fig-UDMap_foraging_BB}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_95_50_BB.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone BB
+:::
+
+### Zone CC
+
+::: {#fig-UDMap_foraging_CC}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_foraging_95_50_CC.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone CC
 :::
 ::::::::
 
@@ -1106,7 +1232,7 @@ Zone critique de repos et d'alimentation
 
 ## Distance entre les reposoirs et les zones d'alimentation
 
-La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimetation et de repos à chaque cycle de marais (@fig-distance_roost_forag_allvar_plot).
+La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_roost_forag_allvar_plot).
 
 Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
 
@@ -1121,7 +1247,7 @@ knitr::include_graphics("distance_roost_forag_allvar_plot.png", dpi = 100)
 Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
 :::
 
-Les distances à chaque cycle de marais des paires de centoïds individuels entre les zones d'alimentation et de repos ont été comparé entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_age_sex_plot).
+Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_age_sex_plot).
 
 ::: {#fig-distance_roost_forag_age_sex_plot}
 ```{r}
@@ -1135,13 +1261,13 @@ knitr::include_graphics("distance_roost_forag_age_sex_plot.png", dpi = 100)
 Effets du sexe (à gauche) et de l'âge (à droite) sur la distance individuelle à chaque cycle de marais entre les zones d'alimentation et de repos.
 :::
 
-Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significatives entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
+Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
 
 ## Fidélité aux espaces au cours des cycles de marée
 
-Afin d'estimer la fidélité au espace, pour le repos, comme pour l'alimentation, des zones d'utilisation principale de l'espace sont estimée en fonction des années ou des mois, puis le chvauchement de ces zones est estimé deux à deux. Un fort chevauchement équivaut à une forte similarité entre les zones au cours du temps, ce qui équivaut à une forte fidélité aux espaces.
+Afin d'estimer la fidélité à leurs zones, pour le repos, comme pour l'alimentation, des zones d'utilisation principale de l'espace sont estimées en fonction des années ou des mois, puis le chevauchement de ces zones est estimé deux à deux. Un fort chevauchement équivaut à une forte similarité entre les zones au cours du temps, ce qui équivaut à une forte fidélité à leurs zones.
 
-La fidélité inter-annuelle aux espaces a également été estimé. Néanmoins, trop de variabilité inter-individuelle sont resortie pour voir tirer des conclusions de ces analyses.
+La fidélité inter-annuelle aux espaces a également été estimé. Néanmoins, trop de variabilité inter-individuelle sont ressorties pour pouvoir tirer des conclusions de ces analyses.
 
 ### Reposoirs
 
@@ -1169,7 +1295,7 @@ knitr::include_graphics("plot.foraging_maree_repet.png", dpi = 100)
 Variation des zones d'alimentation individuelles au cours des cycles de marée.
 :::
 
-## Quelles zones de report des oiseaux lors des fluctuations environnementales et des perturbations anthrophiques ?
+## Quelles zones de report des oiseaux lors des fluctuations environnementales et des perturbations anthropiques ?
 
 ### Fluctuation de l'utilisation de l'espace entre le jour et la nuit
 
@@ -1347,13 +1473,15 @@ Reposoirs zone E en fonction du jour et de la nuit
 
 Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_roosting_tides_high_type_A, @fig-UDMap_roosting_tides_high_type_B, @fig-UDMap_roosting_tides_high_type_C, @fig-UDMap_roosting_tides_high_type_D, @fig-UDMap_roosting_tides_high_type_E).
 
-Le marégraphe utilisé pour obetenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous. La hauteur d'eau est moyennée pour chaque période du grain temporelle choisi (5 min). La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargée via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19).
+Le marégraphe utilisé pour obtenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous dans les séries de données. La hauteur d'eau est moyennée pour chaque période du grain temporelle choisie (5 min). La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargées via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19).
 
-Le type de de marée hautes en fonction de la hauteur est défini comme :
+Le type de de marée haute en fonction de la hauteur est définie comme :
 
 -   marée de mortes eaux : inférieur à 4.8m
 -   marée de vives eaux : entre 4.8m et 6.4m
 -   submersion de la lagune : supérieur à 6.4m
+
+Le choix de ces seuils est choisi de manière empirique par la connaissance de l’influence des hauteurs d’eau sur les reposoirs de marée haute. 
 
 Les dates détectées de submersion de la lagune sont : XXX
 
@@ -1450,17 +1578,17 @@ Ici, les paramètres météorologiques étudiés sont :
 -   la vitesse moyenne journalière du vent
 -   l'orientation moyenne journalière du vent
 
-A partir de ces deux paramètres météorologiques, 3 paramètres météorologiques extrèmes ont été calculés :
+A partir de ces deux paramètres météorologiques, 3 paramètres météorologiques extrêmes ont été calculés :
 
 -   les évènements de vent fort : ECE supérieur à 95%
 -   les évènements de vent de Nord-Ouest : orientation entre 270 et 360 degrés
 -   les évènements de vent fort de Nord-Ouest : ECE supérieur à 95% et d'orientation entre 270 et 360 degrés
 
-L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes detectées sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme "normaux".
+L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes detectés sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme "normaux".
 
-Les vents de Nord-Ouest semblent de pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les reportements de repos. 
+Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos.
 
-Seuls les resultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
+Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
 
 :::::::: panel-tabset
 #### Zone A
@@ -1544,17 +1672,17 @@ Alimentation zone E en fonction des vents forts
 :::
 ::::::::
 
-### Comportement d'évitement de la chasse à pied et à la tonnes
+### Comportement d’évitement de la chasse sur le Domaine Public Maritime et de la chasse à la tonne 
 
-#### Chasse à pied
+#### Chasse sur le Domaine Public Maritime
 
 ##### Effet de la période de chasse
 
 L'utilisation de l'espace par les Courlis cendrés pendant et hors période de chasse à pied sont comparés.
 
-Les données disponibles pour la chasse à pied se restreinge à la zone DPM. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs.
+Les données disponibles de comptage de chasseur sur le Domaine Public maritime (DPM) se restreignent à la plage de Saint-Froult. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs. 
 
-Egalement, afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restrait autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
+Également, afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restraint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
 
 ::: {#fig-UDMap_roosting_chasse_in_out_saison_C}
 ```{r}
@@ -1584,11 +1712,11 @@ tags$iframe(
 Zone d'alimentation pendant et hors période de chasse.
 :::
 
-Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé. 
+Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé.
 
-Aucun effet n'a pu être visieullement détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
+Aucun effet n'a pu être visuellement détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
-#### Chasse à la tonnes
+#### Chasse à la tonne
 
 ::: {style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;"}
 <img src="Une_tonne_de_chasse_au_gibier_d&apos;eau.jpg" style="width: 100%;"/>
@@ -1596,7 +1724,7 @@ Aucun effet n'a pu être visieullement détecté sur l'utilisation de l'espace p
 <p>Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (crédit photo: Jean-Pierre Bazard).</p>
 :::
 
-La [chasse à la tonnes](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et dissimulée appelée tonne. Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer et de tirer les oiseaux migrateurs, principalement les anatidés (canards, oies), souvent de nuit.
+La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et dissimulée appelée tonne. Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer et de tirer les oiseaux migrateurs, principalement les anatidés (canards, oies), souvent de nuit.
 
 La tonne est enterrée ou semi-enterrée et équipée pour permettre l’observation, l’attente prolongée et le tir. Des appelants vivants (canards domestiques dressés) ou artificiels (formes flottantes) sont disposés sur le plan d’eau pour simuler la présence d’un groupe et inciter les oiseaux sauvages à se poser.
 
@@ -1628,10 +1756,10 @@ tags$iframe(
 Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
 :::
 
-Afin d'étudier l'effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l'utilisation del'espace des Courlis cendré, deux zones ont été définies (@fig-map_tonnes_v2) :
+Afin d'étudier l'effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l'utilisation de l'espace des Courlis cendré, deux zones ont été définies (@fig-map_tonnes_v2) :
 
--   Zone de danger : zone d'un rayon de 300m entourant chaque tonnes de chasse (en orange)
--   Zone de proximité : zone d'une rayon de 1.5 km entournat chaque tonnes de chasse (en jaune)
+-   Zone de danger : zone d'un rayon de 300m entourant chaque tonne de chasse (en orange)
+-   Zone de proximité : zone d'un rayon de 1.5 km entourant chaque tonne de chasse (en jaune)
 
 ::: {#fig-map_tonnes_v2}
 ```{r}
@@ -1647,7 +1775,7 @@ tags$iframe(
 Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
 :::
 
-Pour estimer les effets de la période de chasse (hors ou pendant la pépriode de chasse) et de la zone (de danger ou de proximité) sur la répartition spatiale des points GPS enregistrés pour chaque individu, le modèle linéaire mixte suivant a été appliqué via le packages R "lmerTest":
+Pour estimer les effets de la période de chasse (hors ou pendant la période de chasse) et de la zone (de danger ou de proximité) sur la répartition spatiale des points GPS enregistrés pour chaque individu, le modèle linéaire mixte suivant a été appliqué via le packages R "lmerTest":
 
 $$
 Nbpoint_{it} = \beta_0 + \beta_1 \text{zone}_i + \beta_2 \text{period}_t + \beta_3 \left(\text{zone}_i \times \text{period}_t\right) + IND_i + \varepsilon_{it}
@@ -1667,11 +1795,11 @@ Ainsi, le nombre de point GPS enregistrés $Nbpoint_{it}$ pour l'individu $i$ es
 
 $\beta_0$ est l'ordonné à l'origine du modèle.
 
-Puisqu'un même individus comptent plusieurs points GPS enregistré, et que ces points ne sont donc pas indépendants entre eux, un effet aléaoire $IND_i$ a été ajouté. $\varepsilon_{it}$ correspond aux résidus du modèle, autrement dit à la variation dans le nombre de points GPS $Nbpoint_{it}$ qui n'est pas expliqué par ces variables.
+Puisqu'un même individu compte plusieurs points GPS enregistrés, et que ces points ne sont donc pas indépendants entre eux, un effet aléaoire $IND_i$ a été ajouté. $\varepsilon_{it}$ correspond aux résidus du modèle, autrement dit à la variation dans le nombre de points GPS $Nbpoint_{it}$ qui n'est pas expliqué par ces variables.
 
-Puisque la chasse à la tonnes se pratique de nuit, uniquement les points GPS enregistrés de nuit ont été inclus dans l'analyse.
+Puisque la chasse à la tonne se pratique de nuit, uniquement les points GPS enregistrés de nuit ont été inclus dans l'analyse.
 
-Aussi, l'aire des zones de danger et de proximité sont nécessairement différentes, avec la zone de proximité bien plus étendues que la zone de danger. Le nombre point GPS enregistrés pour chaque individus dans chaque zone a donc été divisé par surface total de chaque zone afin de prendre en compte la non répartition homogène des points GPS entre les deux zones uniquement due à leur surface respective.
+Aussi, l'aire des zones de danger et de proximité sont nécessairement différentes, avec la zone de proximité bien plus étendues que la zone de danger. Le nombre point GPS enregistrés pour chaque individu dans chaque zone a donc été divisé par surface total de chaque zone afin de prendre en compte la non répartition homogène des points GPS entre les deux zones uniquement due à leur surface respective.
 
 ::: {#fig-preds_tonnes_chasses_plot}
 ```{r}
@@ -1762,19 +1890,17 @@ r2 %>%
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : Arnstein Rønning (Wikimedia Commons)
-
-</p>
+:::
 
 ## Jeu de données et puissance statistique
 
 Bien que ce jeu de données soit exceptionnel de par son nombre d'individus suivis (99 individus) et son échelle temporelle (10 ans), les analyses statistiques effectuées ici manques de puissance pour répondre avec précisions et plus de robustesse aux questions posées.
 
-Notamment, les données sur les chasses (et la pêche) manque de précisions et d'ampleur temporelles et géopgraphiques. 
+Notamment, les données sur les chasses (et la pêche) manquent de précisions et d'ampleur temporelles et géographiques.
 
-Ce travail constitue une étape crucial pour obtenir une image générale des comportements de Courlis cenrdrée dans la région, mais cela ne pourra que bénéficier de plus d'années de suivi et de plus d'individus équipé, en parallèle d'une récolte plus fine, lorsque cela est possible, des données environnementales et des pressions anthropiques.
+Ce travail constitue une étape cruciale pour obtenir une image générale des comportements de Courlis cendré dans la région, mais cela ne pourra que bénéficier de plus d'années de suivi et de plus d'individus équipé, en parallèle d'une récolte plus fine, lorsque cela est possible, des données environnementales et des pressions anthropiques.
 
 ## Protocole de d'échantillonnage des oiseaux équipés
 
@@ -1784,7 +1910,7 @@ Ainsi donc, les oiseaux étudié ici on une utilisation de l'espace orienté aut
 
 Il serait particulièrement interessant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve, notamment sur l'ile d'Oléron pour obtenir une vue globale généralisable à l'ensemble de la population de Courlis dans la région.
 
-## Perspectives 
+## Perspectives
 
 XX
 
@@ -1795,11 +1921,9 @@ XX
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : KiwiNeko14 (Wikimedia Commons)
-
-</p>
+:::
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
 
@@ -1823,7 +1947,7 @@ Ouvrez R et exécutez : `r    install.packages(c("lubridate", "ggplot2", "sf", "
 
 5.  **Lancer les scripts**
 
-Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et les cartographies sont disponibles sur le github repository XX. Afin de repoduire les résultats, faire tourner les scripts les uns après les autres par ordre alphabétique "A_Courlis_GPS_x", puis "B_Courlis_ENV_x", etc...
+Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et les cartographies sont disponibles sur le github repository XX. Afin de reproduire les résultats, faire tourner les scripts les uns après les autres par ordre alphabétique "A_Courlis_GPS_x", puis "B_Courlis_ENV_x", etc...
 
 <a href="#top">↑ retour en haut</a>
 
@@ -1834,11 +1958,9 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : KiwiNeko14 (Wikimedia Commons)
-
-</p>
+:::
 
 -   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
 -   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
@@ -1852,11 +1974,9 @@ Crédit photo : KiwiNeko14 (Wikimedia Commons)
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : Ji-Elle (Wikimedia Commons)
-
-</p>
+:::
 
 Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
 
@@ -1869,11 +1989,9 @@ Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et éq
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : Pmau (Wikimedia Commons)
-
-</p>
+:::
 
 <a href="#top">↑ retour en haut</a>
 
@@ -1884,11 +2002,9 @@ Crédit photo : Pmau (Wikimedia Commons)
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : Pmau (Wikimedia Commons)
-
-</p>
+:::
 
 Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pour leurs conseils pertinents.
 
@@ -1901,11 +2017,9 @@ Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pou
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
 
-<p style="font-size: 0.8em !important; color: lightgray !important; text-align: right !important; margin-top: 0 !important;">
-
+::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : Mutichou (Wikimedia Commons)
-
-</p>
+:::
 
 Analyses et rédaction de l'atlas par [Suzanne Bonamour](https://github.com/SuzanneBonamour), chargée de traitement de données, LPO France.
 
