@@ -1449,10 +1449,6 @@ Ainsi donc, les oiseaux étudié ici on une utilisation de l'espace orienté aut
 
 Il serait particulièrement interessant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve, notamment sur l'ile d'Oléron pour obtenir une vue globale généralisable à l'ensemble de la population de Courlis dans la région.
 
-## Perspectives
-
-XX
-
 # **Reproductibilité des analyses**
 
 Analyses et rédaction de l'atlas par [Suzanne Bonamour](https://github.com/SuzanneBonamour), chargée de traitement de données, LPO France.
