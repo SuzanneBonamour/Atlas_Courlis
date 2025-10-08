@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Suzanne Bonamour">
+<meta name="author" content="Suzanne BONAMOUR, Gwenaël QUINTENNE, Pierre ROUSSEAU, Loïc JOMAT, Pierrick BOCHER, Frédérique JIGUET, Adrien CHAIGNE">
 
 <title>Utilisation de l’espace par le Courlis cendré aux alentours de la réserve de Moëze-Oléron</title>
 <style>
@@ -68,6 +68,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="index_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="index_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+
+<script src="index_files/libs/datatables-binding-0.33/datatables.js"></script>
+
+<script src="index_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="index_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link href="index_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+<script src="index_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+<link href="index_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="index_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -126,7 +146,20 @@ window.Quarto = {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction</strong></a>
   <ul class="collapse">
-  <li><a href="#contexte-de-létude" id="toc-contexte-de-létude" class="nav-link" data-scroll-target="#contexte-de-létude">Contexte de l’étude</a></li>
+  <li><a href="#contexte-de-létude" id="toc-contexte-de-létude" class="nav-link" data-scroll-target="#contexte-de-létude">Contexte de l’étude</a>
+  <ul class="collapse">
+  <li><a href="#objectifs-scientifiques-et-techniques" id="toc-objectifs-scientifiques-et-techniques" class="nav-link" data-scroll-target="#objectifs-scientifiques-et-techniques">Objectifs scientifiques et techniques</a></li>
+  <li><a href="#travail-de-terrain" id="toc-travail-de-terrain" class="nav-link" data-scroll-target="#travail-de-terrain">Travail de terrain</a></li>
+  <li><a href="#financements" id="toc-financements" class="nav-link" data-scroll-target="#financements">Financements</a></li>
+  </ul></li>
+  <li><a href="#auteur.ices-affiliations-and-contributions" id="toc-auteur.ices-affiliations-and-contributions" class="nav-link" data-scroll-target="#auteur.ices-affiliations-and-contributions">Auteur.ices, affiliations and contributions</a>
+  <ul class="collapse">
+  <li><a href="#analyses-statistiques-et-spatiales" id="toc-analyses-statistiques-et-spatiales" class="nav-link" data-scroll-target="#analyses-statistiques-et-spatiales">Analyses statistiques et spatiales</a></li>
+  <li><a href="#travail-de-terrain-capture-et-baguage-des-oiseaux" id="toc-travail-de-terrain-capture-et-baguage-des-oiseaux" class="nav-link" data-scroll-target="#travail-de-terrain-capture-et-baguage-des-oiseaux">Travail de terrain, capture et baguage des oiseaux</a></li>
+  <li><a href="#rédaction" id="toc-rédaction" class="nav-link" data-scroll-target="#rédaction">Rédaction</a></li>
+  <li><a href="#recherche-de-financements-et-partenaires" id="toc-recherche-de-financements-et-partenaires" class="nav-link" data-scroll-target="#recherche-de-financements-et-partenaires">Recherche de financements et partenaires</a></li>
+  <li><a href="#comité-scientifitques" id="toc-comité-scientifitques" class="nav-link" data-scroll-target="#comité-scientifitques">Comité scientifitques</a></li>
+  </ul></li>
   <li><a href="#lespèce-détude-le-courlis-cendré-numenius-arquata" id="toc-lespèce-détude-le-courlis-cendré-numenius-arquata" class="nav-link" data-scroll-target="#lespèce-détude-le-courlis-cendré-numenius-arquata">L’espèce d’étude : le courlis cendré (<em>Numenius arquata</em>)</a>
   <ul class="collapse">
   <li><a href="#morphologie" id="toc-morphologie" class="nav-link" data-scroll-target="#morphologie">Morphologie</a></li>
@@ -184,10 +217,6 @@ window.Quarto = {
   </ul></li>
   <li><a href="#reproductibilité-des-analyses" id="toc-reproductibilité-des-analyses" class="nav-link" data-scroll-target="#reproductibilité-des-analyses"><strong>Reproductibilité des analyses</strong></a></li>
   <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie"><strong>Bibliographie</strong></a></li>
-  <li><a href="#travail-de-terrain" id="toc-travail-de-terrain" class="nav-link" data-scroll-target="#travail-de-terrain"><strong>Travail de terrain</strong></a></li>
-  <li><a href="#financements" id="toc-financements" class="nav-link" data-scroll-target="#financements"><strong>Financements</strong></a></li>
-  <li><a href="#remerciements" id="toc-remerciements" class="nav-link" data-scroll-target="#remerciements"><strong>Remerciements</strong></a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact"><strong>Contact</strong></a></li>
   </ul>
 </nav>
 </div>
@@ -205,7 +234,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Auteur·rice</div>
     <div class="quarto-title-meta-contents">
-             <p>Suzanne Bonamour </p>
+             <p>Suzanne BONAMOUR, Gwenaël QUINTENNE, Pierre ROUSSEAU, Loïc JOMAT, Pierrick BOCHER, Frédérique JIGUET, Adrien CHAIGNE </p>
           </div>
   </div>
     
@@ -229,8 +258,10 @@ window.Quarto = {
 </div>
 <section id="contexte-de-létude" class="level2">
 <h2 class="anchored" data-anchor-id="contexte-de-létude">Contexte de l’étude</h2>
+<section id="objectifs-scientifiques-et-techniques" class="level3">
+<h3 class="anchored" data-anchor-id="objectifs-scientifiques-et-techniques">Objectifs scientifiques et techniques</h3>
 <p>Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d’Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (<a href="#fig-Photo_intro" class="quarto-xref">Figure&nbsp;1</a>).</p>
-<p>L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (<a href="#fig-zone_map" class="quarto-xref">Figure&nbsp;3</a>). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.</p>
+<p>L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (<a href="#fig-zone_map_new" class="quarto-xref">Figure&nbsp;2</a>). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.</p>
 <div id="fig-Photo_intro" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-Photo_intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -255,6 +286,69 @@ Figure&nbsp;1: Courlis cendré (a), Equipement GPS d’un courlis cendré (b), S
 <div class="logo-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;">
 <p><img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" alt="Logo Gauche" style="height: 100px;"> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" alt="Logo Droit" style="height: 100px;"></p>
 </div>
+</section>
+<section id="travail-de-terrain" class="level3">
+<h3 class="anchored" data-anchor-id="travail-de-terrain">Travail de terrain</h3>
+<p>Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d’obtenir les données nécessaires à ces analyses.</p>
+</section>
+<section id="financements" class="level3">
+<h3 class="anchored" data-anchor-id="financements">Financements</h3>
+<p>XXX</p>
+<p>XXX</p>
+<p>XXX</p>
+</section>
+</section>
+<section id="auteur.ices-affiliations-and-contributions" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="auteur.ices-affiliations-and-contributions">Auteur.ices, affiliations and contributions</h2>
+<section id="analyses-statistiques-et-spatiales" class="level3">
+<h3 class="anchored" data-anchor-id="analyses-statistiques-et-spatiales">Analyses statistiques et spatiales</h3>
+<ul>
+<li>Suzanne Bonamour (LPO France)</li>
+<li>Gwenael Quaintenne (LPO France)</li>
+</ul>
+</section>
+<section id="travail-de-terrain-capture-et-baguage-des-oiseaux" class="level3">
+<h3 class="anchored" data-anchor-id="travail-de-terrain-capture-et-baguage-des-oiseaux">Travail de terrain, capture et baguage des oiseaux</h3>
+<ul>
+<li>Pierre Rousseau (RNN Moëze-Oléron)</li>
+<li>Loïc Jomat (RNN Moëze-Oléron)</li>
+<li>Adrien Chaigne (RNN Moëze-Oléron)</li>
+<li>Pierrick Bocher (RNN Moëze-Oléron)</li>
+<li>Frédéric Jiguet (RNN Moëze-Oléron)</li>
+<li>et beaucoup d’autre personnes !</li>
+</ul>
+</section>
+<section id="rédaction" class="level3">
+<h3 class="anchored" data-anchor-id="rédaction">Rédaction</h3>
+<ul>
+<li>Suzanne Bonamour (LPO France)</li>
+</ul>
+</section>
+<section id="recherche-de-financements-et-partenaires" class="level3">
+<h3 class="anchored" data-anchor-id="recherche-de-financements-et-partenaires">Recherche de financements et partenaires</h3>
+<ul>
+<li>Adrien Chaigne (RNN Moëze-Oléron)</li>
+</ul>
+</section>
+<section id="comité-scientifitques" class="level3">
+<h3 class="anchored" data-anchor-id="comité-scientifitques">Comité scientifitques</h3>
+<ul>
+<li>Pierrick Bocher (Univ. La Rochelle)</li>
+<li>Frédéric Jiguet (MNHN, CESCO, Paris)</li>
+<li>Gwenael Quaintenne (LPO France)</li>
+</ul>
+<p>Pour toutes questions, contacter :</p>
+<p>Suzanne Bonamour <code>suzanne.bonamour@lpo.fr</code> ou Adrien Chaigne <code>adrien.chaigne@lpo.fr</code></p>
+<p><img src="lpo_logo.jpg" class="absolute" data-top="600" data-left="0" width="65" height="65"></p>
+<p><img src="reserve_logo.png" class="absolute" data-top="600" data-left="70" width="130" height="65"></p>
+<p><img src="MNHN-logo.jpg" class="absolute" data-top="600" data-left="200" width="65" height="65"></p>
+<p><img src="logo_CESCO.png" class="absolute" data-top="600" data-left="270" width="210" height="65"></p>
+<p><img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" class="absolute" data-top="600" data-left="485" width="140" height="70"></p>
+<p><img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" class="absolute" data-top="600" data-left="625" width="160" height="75"></p>
+<p><img src="LIENSs_transp1-e1485208828412.png" class="absolute" data-top="600" data-left="785" width="80" height="75"></p>
+<p><img src="fonds-vert_logo.png" class="absolute" data-top="600" data-left="860" width="120" height="75"></p>
+<p><a href="#top">↑ retour en haut</a></p>
+</section>
 </section>
 <section id="lespèce-détude-le-courlis-cendré-numenius-arquata" class="level2">
 <h2 class="anchored" data-anchor-id="lespèce-détude-le-courlis-cendré-numenius-arquata">L’espèce d’étude : le courlis cendré (<em>Numenius arquata</em>)</h2>
@@ -313,35 +407,20 @@ Figure&nbsp;1: Courlis cendré (a), Equipement GPS d’un courlis cendré (b), S
 <p>Le détail des méthodes est disponible dans le document <span style="font-family: 'Courier';">Readme</span> du projet.</p>
 <section id="la-zone-détude" class="level2">
 <h2 class="anchored" data-anchor-id="la-zone-détude">La zone d’étude</h2>
-<p>La zone d’étude (voir <a href="#fig-zone_map" class="quarto-xref">Figure&nbsp;3</a>) est un rectangle de 623.5 km² qui s’étend :</p>
+<p>La zone d’étude (voir <a href="#fig-zone_map_new" class="quarto-xref">Figure&nbsp;2</a>) est un rectangle de 623.5 km² qui s’étend :</p>
 <ul>
 <li>au Nord jusqu’à l’estuaire de la Charente,</li>
 <li>à l’Est jusqu’à la limite Est de la ville de Rochefort,</li>
 <li>au Sud jusqu’à l’estuaire de la Seudre,</li>
 <li>et à l’Ouest jusqu’à la facade Est de l’ile d’Oléron, englobant ainsi zone fonctionnelle du bassin de Marennes, la réserve de Moëze-Oléron et le marais de Brouage.</li>
 </ul>
-<p>Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B, C, D et E ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.</p>
-<div id="fig-zone_map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B et C ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.</p>
+<div id="fig-zone_map_new" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-zone_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Zones d’études - zone d’étude globale (zone blanche) et zones d’études réduites (zones A, B, C, D et E)
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-zone_map_new-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Zones d’études - zone d’étude globale (zone blanche) et zones d’études réduites (zones A, B, C)
 </figcaption>
-<div aria-describedby="fig-zone_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="zone_map.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-<p>Nouvelle zone d’étude ???</p>
-<div id="fig-zone_map" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-zone_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Zones d’études - zone d’étude globale (zone blanche) et zones d’études réduites (zones AA, BB, CC)
-</figcaption>
-<div aria-describedby="fig-zone_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-zone_map_new-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
 <iframe src="zone_map_new.html" width="100%" height="400px"></iframe>
@@ -377,7 +456,7 @@ Figure&nbsp;3: Zones d’études - zone d’étude globale (zone blanche) et zon
 <div id="fig-emission_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-emission_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Période d’émission des balises GPS pour les individus étudiés.
+Figure&nbsp;3: Période d’émission des balises GPS pour les individus étudiés.
 </figcaption>
 <div aria-describedby="fig-emission_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -406,7 +485,7 @@ Figure&nbsp;4: Période d’émission des balises GPS pour les individus étudi�
 <div id="fig-duree_dans_reserve_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-duree_dans_reserve_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
+Figure&nbsp;4: Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
 </figcaption>
 <div aria-describedby="fig-duree_dans_reserve_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -426,13 +505,13 @@ Figure&nbsp;5: Temps passé dans la réserve de Moëze-Oléron pour chaque indiv
 <h2 class="anchored" data-anchor-id="domaines-vitaux-au-sein-de-la-réserve-de-moëze-oléron">Domaines vitaux au sein de la réserve de Moëze-Oléron</h2>
 <p>La distribution d’utilisation (<em>Utilization Distribution</em>, ou “UD”) est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal.</p>
 <p>Les distributions d’utilisation de l’espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la <a href="https://fr.wikipedia.org/wiki/Estimation_par_noyau">règle de Silverman</a>, ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.</p>
-<p>Les domaines vitaux (<em>home range</em>) ont ici été estimés (<a href="#fig-UDMap_HR_ID" class="quarto-xref">Figure&nbsp;6</a>) à l’aide des fonctions <span style="font-family: 'Courier';">kernelUD</span> et <span style="font-family: 'Courier';">getverticeshr</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</p>
+<p>Les domaines vitaux (<em>home range</em>) ont ici été estimés (<a href="#fig-UDMap_HR_ID" class="quarto-xref">Figure&nbsp;5</a>) à l’aide des fonctions <span style="font-family: 'Courier';">kernelUD</span> et <span style="font-family: 'Courier';">getverticeshr</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</p>
 <p>Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus.</p>
 <p>Deux niveaux de domaine vital sont définis pour chaque individu : - Le domaine vital étendu (à 95%) correspondant à l’enveloppe englobant 95 % de la surface d’utilisation - Le noyau d’activité (à 50%) représentant les zones de fréquentation la plus intense</p>
 <div id="fig-UDMap_HR_ID" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_HR_ID-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Domaine vital à 95% (ligne) et à 50% (couleur pleine).
+Figure&nbsp;5: Domaine vital à 95% (ligne) et à 50% (couleur pleine).
 </figcaption>
 <div aria-describedby="fig-UDMap_HR_ID-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -443,11 +522,11 @@ Figure&nbsp;6: Domaine vital à 95% (ligne) et à 50% (couleur pleine).
 </div>
 </figure>
 </div>
-<p>Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs, <a href="#fig-area_hr_plot" class="quarto-xref">Figure&nbsp;7</a>).</p>
+<p>Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs, <a href="#fig-area_hr_plot" class="quarto-xref">Figure&nbsp;6</a>).</p>
 <div id="fig-area_hr_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-area_hr_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Aire du domaine vital individuel à 95% (ronds oranges) ou 50% (triangles verts). Moyenne (lignes pleines) +/- écart-type (lignes pointillés). Pourcentage de chevauchement avec la réserve en couleurs.
+Figure&nbsp;6: Aire du domaine vital individuel à 95% (ronds oranges) ou 50% (triangles verts). Moyenne (lignes pleines) +/- écart-type (lignes pointillés). Pourcentage de chevauchement avec la réserve en couleurs.
 </figcaption>
 <div aria-describedby="fig-area_hr_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -466,7 +545,7 @@ Figure&nbsp;7: Aire du domaine vital individuel à 95% (ronds oranges) ou 50% (t
 <div id="fig-surface_sex_age_all_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-surface_sex_age_all_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
+Figure&nbsp;7: Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
 </figcaption>
 <div aria-describedby="fig-surface_sex_age_all_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -489,40 +568,21 @@ Figure&nbsp;8: Aire du domaine vital des individus à 95% et 50% en fonction de 
 </p><p>Crédit photo : Idaho69 (Wikimedia Commons)</p>
 <p></p>
 <p>Le comportement de repos est défini comme un point GPS d’une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction <span style="font-family: 'Courier';">speedfilter</span> du package “adehabitatHR”.</p>
-<p>Les reposoirs sont estimés :</p>
-<ul>
-<li>à partir des données de l’ensemble des individus via la délimitation de zone “hotspot” <a href="#bakker2021">Bakker et al.&nbsp;(2021)</a> et de façon globale sur toute la zone d’études (sur des grilles de 100m x 100m, <a href="#fig-UDMap_roosting_hotspot_from1id" class="quarto-xref">Figure&nbsp;9</a>)</li>
-<li>de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, <a href="#fig-UDMap_roosting_A" class="quarto-xref">Figure&nbsp;15</a>, <a href="#fig-UDMap_roosting_B" class="quarto-xref">Figure&nbsp;11</a>, <a href="#fig-UDMap_roosting_C" class="quarto-xref">Figure&nbsp;17</a>, <a href="#fig-UDMap_roosting_D" class="quarto-xref">Figure&nbsp;13</a>, <a href="#fig-UDMap_roosting_E" class="quarto-xref">Figure&nbsp;14</a>).</li>
-</ul>
 <p>Pour les deux méthodes, les reposoirs sont identifiés à l’aide de la fonction <span style="font-family: 'Courier';">kernelUD</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</p>
-<div id="fig-UDMap_roosting_hotspot_from1id" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_hotspot_from1id-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Reposoirs (hotspot).
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_hotspot_from1id-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_hotspot_from1id.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-<p>Analyses zone par zone :</p>
+<p>Verticle à 95% et 50%</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div id="fig-UDMap_roosting_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-UDMap_kud_roosting_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: Reposoirs zone A
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Reposoirs zone A
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -530,15 +590,15 @@ Figure&nbsp;10: Reposoirs zone A
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div id="fig-UDMap_roosting_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-UDMap_kud_roosting_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11: Reposoirs zone B
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Reposoirs zone B
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -546,103 +606,15 @@ Figure&nbsp;11: Reposoirs zone B
 </div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div id="fig-UDMap_roosting_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-UDMap_kud_roosting_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;12: Reposoirs zone C
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Reposoirs zone C
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<div id="fig-UDMap_roosting_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13: Reposoirs zone D
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-<div id="fig-UDMap_roosting_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14: Reposoirs zone E
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_E.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<p>Nouvelles zones d’études ??????</p>
-<p>Verticle à 95% et 50%</p>
-<p>Analyses zone par zone :</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Zone AA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Zone BB</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Zone CC</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div id="fig-UDMap_roosting_A" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15: Reposoirs zone AA
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_95_50_AA.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div id="fig-UDMap_roosting_BB" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_BB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;16: Reposoirs zone B
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_BB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_95_50_BB.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<div id="fig-UDMap_roosting_C" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;17: Reposoirs zone CC
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_95_50_CC.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -654,82 +626,50 @@ Figure&nbsp;17: Reposoirs zone CC
 <section id="reposoir-en-fonction-du-mois-de-lannée" class="level3">
 <h3 class="anchored" data-anchor-id="reposoir-en-fonction-du-mois-de-lannée">Reposoir en fonction du mois de l’année</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<div id="fig-UDMap_roosting_month_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="fig-UDMap_kud_roosting_month_label_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_month_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;18: Reposoirs zone A en fonction du mois
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_month_label_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Reposoirs zone A en fonction du mois
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_month_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_month_label_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_month_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_month_label_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<div id="fig-UDMap_roosting_month_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="fig-UDMap_kud_roosting_month_label_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_month_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;19: Reposoirs zone B en fonction du mois
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_month_label_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Reposoirs zone B en fonction du mois
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_month_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_month_label_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_month_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_month_label_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<div id="fig-UDMap_roosting_month_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="fig-UDMap_kud_roosting_month_label_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_month_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20: Reposoirs zone C en fonction du mois
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_month_label_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: Reposoirs zone C en fonction du mois
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_month_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_month_label_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_month_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
-<div id="fig-UDMap_roosting_month_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_month_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;21: Reposoirs zone D en fonction du mois
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_month_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_month_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
-<div id="fig-UDMap_roosting_month_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_month_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;22: Reposoirs zone E en fonction du mois
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_month_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_month_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_month_label_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -743,82 +683,50 @@ Figure&nbsp;22: Reposoirs zone E en fonction du mois
 <h3 class="anchored" data-anchor-id="reposoir-en-fonction-de-lage">Reposoir en fonction de l’age</h3>
 <p>L’âge des individus est déterminé au baguage grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l’année suivante.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<div id="fig-UDMap_roosting_age_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="fig-UDMap_kud_roosting_age_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;23: Reposoirs zone A en fonction de l’âge
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14: Reposoirs zone A en fonction de l’âge
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_age_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_age_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<div id="fig-UDMap_roosting_age_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="fig-UDMap_kud_roosting_age_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24: Reposoirs zone B en fonction de l’âge
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15: Reposoirs zone B en fonction de l’âge
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_age_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_age_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
-<div id="fig-UDMap_roosting_age_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="fig-UDMap_kud_roosting_age_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25: Reposoirs zone C en fonction de l’âge
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16: Reposoirs zone C en fonction de l’âge
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_age_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
-<div id="fig-UDMap_roosting_age_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_age_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;26: Reposoirs zone D en fonction de l’âge
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_age_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_age_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
-<div id="fig-UDMap_roosting_age_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_age_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27: Reposoirs zone E en fonction de l’âge
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_age_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_age_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_age_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -832,82 +740,50 @@ Figure&nbsp;27: Reposoirs zone E en fonction de l’âge
 <h3 class="anchored" data-anchor-id="reposoir-en-fonction-du-sexe">Reposoir en fonction du sexe</h3>
 <p>Le sexe des individus a été déterminé lors de la pose des GPS.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-5" role="tab" aria-controls="tabset-5-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
-<div id="fig-UDMap_roosting_sex_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="fig-UDMap_kud_roosting_sex_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;28: Reposoirs zone A en fonction du sexe
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17: Reposoirs zone A en fonction du sexe
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_sex_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_sex_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
-<div id="fig-UDMap_roosting_sex_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="fig-UDMap_kud_roosting_sex_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;29: Reposoirs zone B en fonction du sexe
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18: Reposoirs zone B en fonction du sexe
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_sex_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_sex_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
-<div id="fig-UDMap_roosting_sex_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="fig-UDMap_kud_roosting_sex_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30: Reposoirs zone C en fonction du sexe
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19: Reposoirs zone C en fonction du sexe
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_sex_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
-<div id="fig-UDMap_roosting_sex_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_sex_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;31: Reposoirs zone D en fonction du sexe
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_sex_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_sex_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-5-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-5-tab">
-<div id="fig-UDMap_roosting_sex_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_sex_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;32: Reposoirs zone E en fonction du sexe
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_sex_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_sex_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_sex_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -921,158 +797,52 @@ Figure&nbsp;32: Reposoirs zone E en fonction du sexe
 <section id="identification-des-zones-dalimentation" class="level2">
 <h2 class="anchored" data-anchor-id="identification-des-zones-dalimentation">Identification des zones d’alimentation</h2>
 <p>Le comportement d’alimentation est défini comme un point GPS d’une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction <span style="font-family: 'Courier';">speedfilter</span> du package “adehabitatHR”.</p>
-<p>Les zones d’alimentation sont estimées :</p>
-<ul>
-<li>à partir des données de l’ensemble des individus en identifiant des zones “hotspots” <a href="#bakker2021">Bakker et al.&nbsp;(2021)</a> et de façon global (<a href="#fig-UDMap_foraging_hotspot" class="quarto-xref">Figure&nbsp;33</a>) sur toute la zone d’études (sur des grilles de 100m x 100m)</li>
-<li>soit de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, <a href="#fig-UDMap_foraging_A" class="quarto-xref">Figure&nbsp;34</a>, <a href="#fig-UDMap_foraging_B" class="quarto-xref">Figure&nbsp;35</a>, <a href="#fig-UDMap_foraging_C" class="quarto-xref">Figure&nbsp;36</a>, <a href="#fig-UDMap_foraging_D" class="quarto-xref">Figure&nbsp;37</a>, <a href="#fig-UDMap_foraging_E" class="quarto-xref">Figure&nbsp;38</a>). Les zones d’alimentation sont identifiées à l’aide de la fonction <span style="font-family: 'Courier';">kernelUD</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</li>
-</ul>
-<div id="fig-UDMap_foraging_hotspot" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_hotspot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;33: Zones d’alimentation hotspot.
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_hotspot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_hotspot.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-<p>Analyses zone par zone :</p>
+<p>Les zones d’alimentation sont identifiées à l’aide de la fonction <span style="font-family: 'Courier';">kernelUD</span> du package “adehabitatHR” <a href="#calenge2006">Calenge (2006)</a>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
-<div id="fig-UDMap_foraging_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div id="fig-UDMap_kud_foraging_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;34: Alimentation zone A
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20: Alimentation zone A
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
-<div id="fig-UDMap_foraging_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div id="fig-UDMap_kud_foraging_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;35: Alimentation zone B
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;21: Alimentation zone B
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
-<div id="fig-UDMap_foraging_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<div id="fig-UDMap_kud_foraging_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;36: Alimentation zone C
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22: Alimentation zone C
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
-<div id="fig-UDMap_foraging_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;37: Alimentation zone D
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-6-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-5-tab">
-<div id="fig-UDMap_foraging_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;38: Alimentation zone E
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_E.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<p>Nouvelles zones ????</p>
-<p>Vertice à 95 et 50%</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true" href="">Zone AA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false" href="">Zone BB</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false" href="">Zone CC</a></li></ul>
-<div class="tab-content">
-<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
-<div id="fig-UDMap_foraging_AA" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_AA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;39: Alimentation zone AA
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_AA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_95_50_AA.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
-<div id="fig-UDMap_foraging_BB" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_BB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;40: Alimentation zone BB
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_BB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_95_50_BB.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
-<div id="fig-UDMap_foraging_CC" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_CC-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;41: Alimentation zone CC
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_CC-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_95_50_CC.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1084,82 +854,50 @@ Figure&nbsp;41: Alimentation zone CC
 <section id="zone-dalimentation-en-fonction-du-mois-de-lannée" class="level3">
 <h3 class="anchored" data-anchor-id="zone-dalimentation-en-fonction-du-mois-de-lannée">Zone d’alimentation en fonction du mois de l’année</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-4" role="tab" aria-controls="tabset-8-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-5" role="tab" aria-controls="tabset-8-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
-<div id="fig-UDMap_foraging_month_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<div id="fig-UDMap_kud_foraging_month_label_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_month_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;42: Zone d’alimentation zone A en fonction du mois
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_month_label_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;23: Zone d’alimentation zone A en fonction du mois
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_month_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_month_label_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_month_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_month_label_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
-<div id="fig-UDMap_foraging_month_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<div id="fig-UDMap_kud_foraging_month_label_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_month_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;43: Zone d’alimentation zone B en fonction du mois
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_month_label_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24: Zone d’alimentation zone B en fonction du mois
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_month_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_month_label_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_month_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_month_label_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
-<div id="fig-UDMap_foraging_month_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<div id="fig-UDMap_kud_foraging_month_label_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_month_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;44: Zone d’alimentation zone C en fonction du mois
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_month_label_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;25: Zone d’alimentation zone C en fonction du mois
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_month_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_month_label_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_month_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-8-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-4-tab">
-<div id="fig-UDMap_foraging_month_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_month_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;45: Zone d’alimentation zone D en fonction du mois
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_month_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_month_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-8-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-5-tab">
-<div id="fig-UDMap_foraging_month_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_month_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;46: Zone d’alimentation zone E en fonction du mois
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_month_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_month_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_month_label_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1172,82 +910,50 @@ Figure&nbsp;46: Zone d’alimentation zone E en fonction du mois
 <section id="zone-dalimentation-en-fonction-de-lage" class="level3">
 <h3 class="anchored" data-anchor-id="zone-dalimentation-en-fonction-de-lage">Zone d’alimentation en fonction de l’age</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-4" role="tab" aria-controls="tabset-9-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-5" role="tab" aria-controls="tabset-9-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
-<div id="fig-UDMap_foraging_age_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<div id="fig-UDMap_kud_foraging_age_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;47: Alimentation zone A en fonction de l’âge
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;26: Alimentation zone A en fonction de l’âge
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_age_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_age_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_age_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
-<div id="fig-UDMap_foraging_age_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<div id="fig-UDMap_kud_foraging_age_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;48: Alimentation zone B en fonction de l’âge
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27: Alimentation zone B en fonction de l’âge
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_age_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_age_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_age_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-9-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-3-tab">
-<div id="fig-UDMap_foraging_age_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<div id="fig-UDMap_kud_foraging_age_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;49: Alimentation zone C en fonction de l’âge
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28: Alimentation zone C en fonction de l’âge
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_age_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_age_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-9-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-4-tab">
-<div id="fig-UDMap_foraging_age_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_age_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;50: Alimentation zone D en fonction de l’âge
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_age_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_age_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-9-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-5-tab">
-<div id="fig-UDMap_foraging_age_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_age_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;51: Alimentation zone E en fonction de l’âge
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_age_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_age_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_age_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1260,82 +966,50 @@ Figure&nbsp;51: Alimentation zone E en fonction de l’âge
 <section id="zone-dalimentation-en-fonction-du-sexe" class="level3">
 <h3 class="anchored" data-anchor-id="zone-dalimentation-en-fonction-du-sexe">Zone d’alimentation en fonction du sexe</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-3" role="tab" aria-controls="tabset-10-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-4" role="tab" aria-controls="tabset-10-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-5" role="tab" aria-controls="tabset-10-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-10-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-10-1-tab">
-<div id="fig-UDMap_foraging_sex_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<div id="fig-UDMap_kud_foraging_sex_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;52: Alimentation zone A en fonction du sexe
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;29: Alimentation zone A en fonction du sexe
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_sex_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_sex_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_sex_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-10-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-2-tab">
-<div id="fig-UDMap_foraging_sex_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<div id="fig-UDMap_kud_foraging_sex_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;53: Alimentation zone B en fonction du sexe
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;30: Alimentation zone B en fonction du sexe
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_sex_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_sex_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_sex_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-10-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-3-tab">
-<div id="fig-UDMap_foraging_sex_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
+<div id="fig-UDMap_kud_foraging_sex_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;54: Alimentation zone C en fonction du sexe
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;31: Alimentation zone C en fonction du sexe
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_sex_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_sex_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-10-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-4-tab">
-<div id="fig-UDMap_foraging_sex_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_sex_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;55: Alimentation zone D en fonction du sexe
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_sex_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_sex_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-10-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-5-tab">
-<div id="fig-UDMap_foraging_sex_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_sex_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;56: Alimentation zone E en fonction du sexe
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_sex_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_sex_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_sex_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1348,15 +1022,15 @@ Figure&nbsp;56: Alimentation zone E en fonction du sexe
 </section>
 <section id="zone-critique-de-repos-et-dalimentation" class="level2">
 <h2 class="anchored" data-anchor-id="zone-critique-de-repos-et-dalimentation">Zone critique de repos et d’alimentation</h2>
-<div id="fig-zone_critique_hotsport_map_v1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-zone_critique_hotspot_map_final" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-zone_critique_hotsport_map_v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;57: Zone critique de repos et d’alimentation
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-zone_critique_hotspot_map_final-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;32: Zone critique de repos et d’alimentation
 </figcaption>
-<div aria-describedby="fig-zone_critique_hotsport_map_v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-zone_critique_hotspot_map_final-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="zone_critique_hotsport_map_v1.html" width="100%" height="400px"></iframe>
+<iframe src="zone_critique_hotspot_map_final.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1365,34 +1039,42 @@ Figure&nbsp;57: Zone critique de repos et d’alimentation
 </section>
 <section id="distance-entre-les-reposoirs-et-les-zones-dalimentation" class="level2">
 <h2 class="anchored" data-anchor-id="distance-entre-les-reposoirs-et-les-zones-dalimentation">Distance entre les reposoirs et les zones d’alimentation</h2>
-<p>La distance entre la zone d’alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d’alimentation et de repos à chaque cycle de marais (<a href="#fig-distance_roost_forag_allvar_plot" class="quarto-xref">Figure&nbsp;58</a>).</p>
+<p>La distance entre la zone d’alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d’alimentation et de repos à chaque cycle de marais (<a href="#fig-distance_roost_forag_plot_talk" class="quarto-xref">Figure&nbsp;33</a>).</p>
 <p>Il y a une corrélation significative (p-value : 6.93e-16 ***) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.</p>
+<div id="fig-distance_roost_forag_plot_talk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-distance_roost_forag_plot_talk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33: Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d’alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
+</figcaption>
+<div aria-describedby="fig-distance_roost_forag_plot_talk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="distance_roost_forag_plot_talk.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<p>Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d’alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (<a href="#fig-distance_roost_forag_allvar_plot" class="quarto-xref">Figure&nbsp;34</a>).</p>
 <div id="fig-distance_roost_forag_allvar_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-distance_roost_forag_allvar_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;58: Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d’alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
+Figure&nbsp;34: Effets du sexe, de l’âge et de la hauteur de marée sur la distance individuelle à chaque cycle de marée entre les zones d’alimentation et de repos.
 </figcaption>
 <div aria-describedby="fig-distance_roost_forag_allvar_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="distance_roost_forag_allvar_plot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<p><img src="distance_roost_forag_allvar_plot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-</div>
-</figure>
-</div>
-<p>Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d’alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (<a href="#fig-distance_roost_forag_age_sex_plot" class="quarto-xref">Figure&nbsp;59</a>).</p>
-<div id="fig-distance_roost_forag_age_sex_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-distance_roost_forag_age_sex_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;59
-</figcaption>
-<div aria-describedby="fig-distance_roost_forag_age_sex_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p>Effets du sexe (à gauche) et de l’âge (à droite) sur la distance individuelle à chaque cycle de marais entre les zones d’alimentation et de repos.</p>
 </div>
 </figure>
 </div>
@@ -1407,7 +1089,7 @@ Figure&nbsp;59
 <div id="fig-plot.roosting_maree_repet" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-plot.roosting_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;60: Variation des reposoirs individuels au cours des cycles de marée.
+Figure&nbsp;35: Variation des reposoirs individuels au cours des cycles de marée.
 </figcaption>
 <div aria-describedby="fig-plot.roosting_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -1428,7 +1110,7 @@ Figure&nbsp;60: Variation des reposoirs individuels au cours des cycles de maré
 <div id="fig-plot_._foraging_maree_repet" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-plot_._foraging_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;61: Variation des zones d’alimentation individuelles au cours des cycles de marée.
+Figure&nbsp;36: Variation des zones d’alimentation individuelles au cours des cycles de marée.
 </figcaption>
 <div aria-describedby="fig-plot_._foraging_maree_repet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -1453,82 +1135,50 @@ Figure&nbsp;61: Variation des zones d’alimentation individuelles au cours des 
 <section id="reposoirs-1" class="level4">
 <h4 class="anchored" data-anchor-id="reposoirs-1">Reposoirs</h4>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-11-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-1" role="tab" aria-controls="tabset-11-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-2" role="tab" aria-controls="tabset-11-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-3" role="tab" aria-controls="tabset-11-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-4" role="tab" aria-controls="tabset-11-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-5" role="tab" aria-controls="tabset-11-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-11-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-11-1-tab">
-<div id="fig-UDMap_roosting_jour_nuit_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
+<div id="fig-UDMap_kud_roosting_timeofday_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_jour_nuit_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;62: Reposoirs zone A en fonction du jour et de la nuit
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_timeofday_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;37: Reposoirs zone A en fonction du jour et de la nuit
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_jour_nuit_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_timeofday_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_jour_nuit_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_timeofday_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-11-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-2-tab">
-<div id="fig-UDMap_roosting_jour_nuit_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
+<div id="fig-UDMap_kud_roosting_timeofday_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_jour_nuit_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;63: Reposoirs zone B en fonction du jour et de la nuit
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_timeofday_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;38: Reposoirs zone B en fonction du jour et de la nuit
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_jour_nuit_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_timeofday_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_jour_nuit_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_timeofday_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-11-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-3-tab">
-<div id="fig-UDMap_roosting_jour_nuit_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-9-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-3-tab">
+<div id="fig-UDMap_kud_roosting_timeofday_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_jour_nuit_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;64: Reposoirs zone C en fonction du jour et de la nuit
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_timeofday_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;39: Reposoirs zone C en fonction du jour et de la nuit
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_jour_nuit_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_timeofday_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_jour_nuit_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-11-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-4-tab">
-<div id="fig-UDMap_roosting_jour_nuit_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_jour_nuit_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;65: Reposoirs zone D en fonction du jour et de la nuit
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_jour_nuit_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_jour_nuit_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-11-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-5-tab">
-<div id="fig-UDMap_roosting_jour_nuit_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_jour_nuit_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;66: Reposoirs zone E en fonction du jour et de la nuit
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_jour_nuit_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_jour_nuit_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_timeofday_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1541,82 +1191,50 @@ Figure&nbsp;66: Reposoirs zone E en fonction du jour et de la nuit
 <section id="alimentation-1" class="level4">
 <h4 class="anchored" data-anchor-id="alimentation-1">Alimentation</h4>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-12-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-1" role="tab" aria-controls="tabset-12-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-2" role="tab" aria-controls="tabset-12-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-3" role="tab" aria-controls="tabset-12-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-4" role="tab" aria-controls="tabset-12-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-5" role="tab" aria-controls="tabset-12-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-3" role="tab" aria-controls="tabset-10-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-12-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-12-1-tab">
-<div id="fig-UDMap_foraging_jour_nuit_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-10-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-10-1-tab">
+<div id="fig-UDMap_foraging_timeofday_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_jour_nuit_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;67: Reposoirs zone A en fonction du jour et de la nuit
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_timeofday_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;40: Reposoirs zone A en fonction du jour et de la nuit
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_jour_nuit_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_foraging_timeofday_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_jour_nuit_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_timeofday_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-12-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-2-tab">
-<div id="fig-UDMap_foraging_jour_nuit_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-10-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-2-tab">
+<div id="fig-UDMap_kud_foraging_timeofday_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_jour_nuit_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;68: Reposoirs zone B en fonction du jour et de la nuit
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_timeofday_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;41: Reposoirs zone B en fonction du jour et de la nuit
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_jour_nuit_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_timeofday_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_jour_nuit_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_timeofday_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-12-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-3-tab">
-<div id="fig-UDMap_foraging_jour_nuit_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-10-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-3-tab">
+<div id="fig-UDMap_kud_foraging_timeofday_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_jour_nuit_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;69: Reposoirs zone C en fonction du jour et de la nuit
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_timeofday_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;42: Reposoirs zone C en fonction du jour et de la nuit
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_jour_nuit_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_timeofday_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_jour_nuit_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-12-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-4-tab">
-<div id="fig-UDMap_foraging_jour_nuit_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_jour_nuit_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;70: Reposoirs zone D en fonction du jour et de la nuit
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_jour_nuit_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_jour_nuit_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-12-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-5-tab">
-<div id="fig-UDMap_foraging_jour_nuit_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_jour_nuit_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;71: Reposoirs zone E en fonction du jour et de la nuit
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_jour_nuit_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_jour_nuit_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_timeofday_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1629,7 +1247,7 @@ Figure&nbsp;71: Reposoirs zone E en fonction du jour et de la nuit
 </section>
 <section id="reposoirs-entre-fonction-de-la-hauteur-deau" class="level3">
 <h3 class="anchored" data-anchor-id="reposoirs-entre-fonction-de-la-hauteur-deau">Reposoirs entre fonction de la hauteur d’eau</h3>
-<p>Les reposoirs peuvent varier en fonction de la hauteur d’eau lors des marées hautes (<a href="#fig-UDMap_roosting_tides_high_type_A" class="quarto-xref">Figure&nbsp;72</a>, <a href="#fig-UDMap_roosting_tides_high_type_B" class="quarto-xref">Figure&nbsp;73</a>, <a href="#fig-UDMap_roosting_tides_high_type_C" class="quarto-xref">Figure&nbsp;74</a>, <a href="#fig-UDMap_roosting_tides_high_type_D" class="quarto-xref">Figure&nbsp;75</a>, <a href="#fig-UDMap_roosting_tides_high_type_E" class="quarto-xref">Figure&nbsp;76</a>).</p>
+<p>Les reposoirs peuvent varier en fonction de la hauteur d’eau lors des marées hautes (<a href="#fig-UDMap_kud_roosting_tide_strength_A" class="quarto-xref">Figure&nbsp;43</a>, <a href="#fig-UDMap_kud_roosting_tide_strength_B" class="quarto-xref">Figure&nbsp;44</a>, <a href="#fig-UDMap_kud_roosting_tide_strength_C" class="quarto-xref">Figure&nbsp;45</a>).</p>
 <p>Le marégraphe utilisé pour obtenir les hauteurs d’eau (en m) est celui de l’ile d’Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous dans les séries de données. La hauteur d’eau est moyennée pour chaque période du grain temporelle choisie (5 min). La variable choisi pour la hauteur d’eau est la variable “validé temps différé” en priorité, puis “brute temps différé”, puis “brute haute fréquence”. Les données de hauteurs d’eau ont été téléchargées via le site du <a href="https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19">SHOM</a>.</p>
 <p>Le type de de marée haute en fonction de la hauteur est définie comme :</p>
 <ul>
@@ -1640,82 +1258,50 @@ Figure&nbsp;71: Reposoirs zone E en fonction du jour et de la nuit
 <p>Le choix de ces seuils est choisi de manière empirique par la connaissance de l’influence des hauteurs d’eau sur les reposoirs de marée haute.</p>
 <p>Les dates détectées de submersion de la lagune sont : XXX</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-13-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-1" role="tab" aria-controls="tabset-13-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-2" role="tab" aria-controls="tabset-13-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-3" role="tab" aria-controls="tabset-13-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-4" role="tab" aria-controls="tabset-13-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-5" role="tab" aria-controls="tabset-13-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-11-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-1" role="tab" aria-controls="tabset-11-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-2" role="tab" aria-controls="tabset-11-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-3" role="tab" aria-controls="tabset-11-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-13-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-13-1-tab">
-<div id="fig-UDMap_roosting_tides_high_type_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-11-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-11-1-tab">
+<div id="fig-UDMap_kud_roosting_tide_strength_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_tides_high_type_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;72: Reposoirs en fonction de la hauteur d’eau, zone A
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_tide_strength_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;43: Reposoirs en fonction de la hauteur d’eau, zone A
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_tides_high_type_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_tide_strength_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_tides_high_type_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_tide_strength_A.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-13-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-2-tab">
-<div id="fig-UDMap_roosting_tides_high_type_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-11-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-2-tab">
+<div id="fig-UDMap_kud_roosting_tide_strength_B" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_tides_high_type_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;73: Reposoirs en fonction de la hauteur d’eau, zone B
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_tide_strength_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;44: Reposoirs en fonction de la hauteur d’eau, zone B
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_tides_high_type_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_tide_strength_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_tides_high_type_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_tide_strength_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-13-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-3-tab">
-<div id="fig-UDMap_roosting_tides_high_type_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-11-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-3-tab">
+<div id="fig-UDMap_kud_roosting_tide_strength_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_tides_high_type_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;74: Reposoirs en fonction de la hauteur d’eau, zone C
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_roosting_tide_strength_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;45: Reposoirs en fonction de la hauteur d’eau, zone C
 </figcaption>
-<div aria-describedby="fig-UDMap_roosting_tides_high_type_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_roosting_tide_strength_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_roosting_tides_high_type_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-13-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-4-tab">
-<div id="fig-UDMap_roosting_tides_high_type_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_tides_high_type_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;75: Reposoirs en fonction de la hauteur d’eau, zone D
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_tides_high_type_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_tides_high_type_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-13-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-5-tab">
-<div id="fig-UDMap_roosting_tides_high_type_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_tides_high_type_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;76: Reposoirs en fonction de la hauteur d’eau, zone E
-</figcaption>
-<div aria-describedby="fig-UDMap_roosting_tides_high_type_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_roosting_tides_high_type_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_roosting_tide_strength_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1727,6 +1313,7 @@ Figure&nbsp;76: Reposoirs en fonction de la hauteur d’eau, zone E
 </section>
 <section id="utilisation-de-lespace-par-les-courlis-cendré-lors-dévènements-de-vent-extrêmes" class="level3">
 <h3 class="anchored" data-anchor-id="utilisation-de-lespace-par-les-courlis-cendré-lors-dévènements-de-vent-extrêmes">Utilisation de l’espace par les Courlis cendré lors d’évènements de vent extrêmes</h3>
+<p>/!&nbsp;autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!</p>
 <p>Les données météorologiques sont issues du site <a href="https://meteostat.net/fr/place/fr/la-rochelle?s=07315&amp;t=2025-03-13/2025-03-20">météostat</a> pour la station météorologique de La Rochelle.</p>
 <p>Les évènements climatiques extrêmes (ECE) sont généralement définis comme les évènements d’intensité supérieure (ou inférieur) au quartile 95% des distributions du paramétres météorologiques (REF) sur la période 2015-2024.</p>
 <p>Ici, les paramètres météorologiques étudiés sont :</p>
@@ -1744,82 +1331,50 @@ Figure&nbsp;76: Reposoirs en fonction de la hauteur d’eau, zone E
 <p>Les vents de Nord-Ouest semblent ne pas avoir d’effet sur les comportements de repos ni d’alimentation, tout comme les vents forts sur les comportements de repos.</p>
 <p>Seuls les résultats montrant l’influence des vents forts sur les comportements d’alimentation sont présentés ici.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-14-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-1" role="tab" aria-controls="tabset-14-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-2" role="tab" aria-controls="tabset-14-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-3" role="tab" aria-controls="tabset-14-3" aria-selected="false" href="">Zone C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-4" role="tab" aria-controls="tabset-14-4" aria-selected="false" href="">Zone D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-5" role="tab" aria-controls="tabset-14-5" aria-selected="false" href="">Zone E</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-12-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-1" role="tab" aria-controls="tabset-12-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-2" role="tab" aria-controls="tabset-12-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-3" role="tab" aria-controls="tabset-12-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
-<div id="tabset-14-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-14-1-tab">
-<div id="fig-UDMap_foraging_ECE_wspd_A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-12-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-12-1-tab">
+<div id="fig-UDMap_kud_foraging_ECE_wspd_A" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_ECE_wspd_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;77: Alimentation zone A en fonction des vents forts
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_ECE_wspd_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;46: Alimentation zone A en fonction des vents forts
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_ECE_wspd_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_ECE_wspd_A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_ECE_wspd_A.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_ECE_wspdA.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-14-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-2-tab">
-<div id="fig-UDMap_foraging_ECE_wspd_B" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-12-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-2-tab">
+<div id="fig-UDMap_kud_foraging_ECE_wspd" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_ECE_wspd_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;78: Alimentation zone B en fonction des vents forts
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_ECE_wspd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;47: Alimentation zone B en fonction des vents forts
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_ECE_wspd_B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_ECE_wspd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_ECE_wspd_B.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_ECE_wspd_B.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<div id="tabset-14-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-3-tab">
-<div id="fig-UDMap_foraging_ECE_wspd_C" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tabset-12-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-3-tab">
+<div id="fig-UDMap_kud_foraging_ECE_wspd_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_ECE_wspd_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;79: Alimentation zone C en fonction des vents forts
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_kud_foraging_ECE_wspd_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;48: Alimentation zone C en fonction des vents forts
 </figcaption>
-<div aria-describedby="fig-UDMap_foraging_ECE_wspd_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-UDMap_kud_foraging_ECE_wspd_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="UDMap_foraging_ECE_wspd_C.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-14-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-4-tab">
-<div id="fig-UDMap_foraging_ECE_wspd_D" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_ECE_wspd_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;80: Alimentation zone D en fonction des vents forts
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_ECE_wspd_D-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_ECE_wspd_D.html" width="100%" height="400px"></iframe>
-</div>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<div id="tabset-14-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-5-tab">
-<div id="fig-UDMap_foraging_ECE_wspd_E" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_ECE_wspd_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;81: Alimentation zone E en fonction des vents forts
-</figcaption>
-<div aria-describedby="fig-UDMap_foraging_ECE_wspd_E-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell">
-<div class="cell-output-display">
-<iframe src="UDMap_foraging_ECE_wspd_E.html" width="100%" height="400px"></iframe>
+<iframe src="UDMap_kud_foraging_ECE_wspd_C.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
@@ -1836,12 +1391,19 @@ Figure&nbsp;81: Alimentation zone E en fonction des vents forts
 <section id="effet-de-la-période-de-chasse" class="level5">
 <h5 class="anchored" data-anchor-id="effet-de-la-période-de-chasse">Effet de la période de chasse</h5>
 <p>L’utilisation de l’espace par les Courlis cendrés pendant et hors période de chasse à pied sont comparés.</p>
+<p>!!!!!! testé mais sans effet détecté : jour de chasse, seuil de chasse avec beaucoup de chasseur ou pas</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-71bfaec2567f67345673" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-71bfaec2567f67345673">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7"],["2024/2025","2023/2024","2022/2023","2021/2022","2020/2021","2019/2020","2018/2019"],["08/09/2024","10/09/2023","11/09/2022","12/09/2021","13/09/2020","08/09/2019","09/09/2018"],["31/01/2025","31/01/2024","31/01/2023","31/01/2022","31/01/2021","31/01/2020","31/01/2019"]],"container":"<table class=\"stripe hover cell-border\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Saison<\/th>\n      <th>Ouverture<\/th>\n      <th>Fermeture<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"lengthMenu":[5,10,20,50],"searching":true,"ordering":true,"scrollX":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Saison","targets":1},{"name":"Ouverture","targets":2},{"name":"Fermeture","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <p>Les données disponibles de comptage de chasseur sur le Domaine Public maritime (DPM) se restreignent à la plage de Saint-Froult. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs.</p>
 <p>Également, afin de limiter les effets de variation saisonnière sur l’utilisation de l’espace, le jeu de données est restraint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).</p>
 <div id="fig-UDMap_roosting_chasse_in_out_saison_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_roosting_chasse_in_out_saison_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;82: Zone de repos pendant (in) et hors (out) période de chasse.
+Figure&nbsp;49: Zone de repos pendant (in) et hors (out) période de chasse.
 </figcaption>
 <div aria-describedby="fig-UDMap_roosting_chasse_in_out_saison_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1855,7 +1417,7 @@ Figure&nbsp;82: Zone de repos pendant (in) et hors (out) période de chasse.
 <div id="fig-UDMap_foraging_chasse_in_out_saison_C" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_foraging_chasse_in_out_saison_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;83: Zone d’alimentation pendant et hors période de chasse.
+Figure&nbsp;50: Zone d’alimentation pendant et hors période de chasse.
 </figcaption>
 <div aria-describedby="fig-UDMap_foraging_chasse_in_out_saison_C-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1872,6 +1434,7 @@ Figure&nbsp;83: Zone d’alimentation pendant et hors période de chasse.
 </section>
 <section id="chasse-à-la-tonne" class="level4">
 <h4 class="anchored" data-anchor-id="chasse-à-la-tonne">Chasse à la tonne</h4>
+<p>!!!!!! testé mais sans effets detecté : changement d’utilisation de l’espace quand fermeture de la chasse, avec zone de danger et zone de proximité</p>
 <div style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;">
 <p><img src="Une_tonne_de_chasse_au_gibier_d'eau.jpg" style="width: 100%;"></p>
 <p>
@@ -1895,7 +1458,7 @@ Une tonne de chasse au gibier d’eau, Éguille-sur-Seudre, Charente-Maritime, F
 <div id="fig-map_tonnes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-map_tonnes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;84: Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
+Figure&nbsp;51: Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
 </figcaption>
 <div aria-describedby="fig-map_tonnes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1906,7 +1469,7 @@ Figure&nbsp;84: Tonnes de chasse (point noir), entourées de zones de danger de 
 </div>
 </figure>
 </div>
-<p>Afin d’étudier l’effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l’utilisation de l’espace des Courlis cendré, deux zones ont été définies (<a href="#fig-map_tonnes_v2" class="quarto-xref">Figure&nbsp;85</a>) :</p>
+<p>Afin d’étudier l’effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l’utilisation de l’espace des Courlis cendré, deux zones ont été définies (<a href="#fig-map_tonnes_v2" class="quarto-xref">Figure&nbsp;52</a>) :</p>
 <ul>
 <li>Zone de danger : zone d’un rayon de 300m entourant chaque tonne de chasse (en orange)</li>
 <li>Zone de proximité : zone d’un rayon de 1.5 km entourant chaque tonne de chasse (en jaune)</li>
@@ -1914,7 +1477,7 @@ Figure&nbsp;84: Tonnes de chasse (point noir), entourées de zones de danger de 
 <div id="fig-map_tonnes_v2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;85: Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
+Figure&nbsp;52: Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
 </figcaption>
 <div aria-describedby="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
@@ -1946,1501 +1509,16 @@ IND_i \sim \mathcal{N}(0, \sigma_b^2), \quad \varepsilon_{it} \sim \mathcal{N}(0
 <div id="fig-preds_tonnes_chasses_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-preds_tonnes_chasses_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;86: Nombre de point GPS rapporté à l’aire de la zone marginale ou de danger en fonction de la période de chasse.
+Figure&nbsp;53: Nombre de point GPS rapporté à l’aire de la zone marginale ou de danger en fonction de la période de chasse.
 </figcaption>
 <div aria-describedby="fig-preds_tonnes_chasses_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="preds_tonnes_chasses_plot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
-</figure>
-</div>
-</div>
+<div>
+
 </div>
 </div>
 </figure>
 </div>
 <p>Résultats du modèle :</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="pjbfpadwdu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pjbfpadwdu table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#pjbfpadwdu thead, #pjbfpadwdu tbody, #pjbfpadwdu tfoot, #pjbfpadwdu tr, #pjbfpadwdu td, #pjbfpadwdu th {
-  border-style: none;
-}
-
-#pjbfpadwdu p {
-  margin: 0;
-  padding: 0;
-}
-
-#pjbfpadwdu .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#pjbfpadwdu .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#pjbfpadwdu .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#pjbfpadwdu .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#pjbfpadwdu .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#pjbfpadwdu .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#pjbfpadwdu .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#pjbfpadwdu .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#pjbfpadwdu .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#pjbfpadwdu .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#pjbfpadwdu .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#pjbfpadwdu .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#pjbfpadwdu .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#pjbfpadwdu .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#pjbfpadwdu .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjbfpadwdu .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#pjbfpadwdu .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#pjbfpadwdu .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#pjbfpadwdu .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjbfpadwdu .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#pjbfpadwdu .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjbfpadwdu .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#pjbfpadwdu .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjbfpadwdu .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pjbfpadwdu .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjbfpadwdu .gt_left {
-  text-align: left;
-}
-
-#pjbfpadwdu .gt_center {
-  text-align: center;
-}
-
-#pjbfpadwdu .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#pjbfpadwdu .gt_font_normal {
-  font-weight: normal;
-}
-
-#pjbfpadwdu .gt_font_bold {
-  font-weight: bold;
-}
-
-#pjbfpadwdu .gt_font_italic {
-  font-style: italic;
-}
-
-#pjbfpadwdu .gt_super {
-  font-size: 65%;
-}
-
-#pjbfpadwdu .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#pjbfpadwdu .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#pjbfpadwdu .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#pjbfpadwdu .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#pjbfpadwdu .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#pjbfpadwdu .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#pjbfpadwdu .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#pjbfpadwdu .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#pjbfpadwdu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<thead>
-<tr class="header gt_heading">
-<th colspan="9" class="gt_heading gt_title gt_font_normal gt_bottom_border">Effets fixes</th>
-</tr>
-<tr class="odd gt_col_headings">
-<th id="term" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col"></th>
-<th id="estimate" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Coefficient</th>
-<th id="std.error" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Erreur Std</th>
-<th id="statistic" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">t</th>
-<th id="df" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">df</th>
-<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">p-value</th>
-<th id="conf.low" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">IC 2.5%</th>
-<th id="conf.high" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">IC 97.5%</th>
-<th id="signif" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Signif.</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="term">Intercept</td>
-<td class="gt_row gt_right" headers="estimate">7.73&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="std.error">5.31&nbsp;×&nbsp;10<sup>−2</sup></td>
-<td class="gt_row gt_right" headers="statistic">1.46&nbsp;×&nbsp;10<sup>1</sup></td>
-<td class="gt_row gt_right" headers="df">57.83004</td>
-<td class="gt_row gt_right" headers="p.value">5.47&nbsp;×&nbsp;10<sup>−21</sup></td>
-<td class="gt_row gt_right" headers="conf.low">6.67&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="conf.high">8.79&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_center" headers="signif">***</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="term">Zone de danger</td>
-<td class="gt_row gt_right" headers="estimate">3.68&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="std.error">2.71&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="statistic">1.36</td>
-<td class="gt_row gt_right" headers="df">35.82655</td>
-<td class="gt_row gt_right" headers="p.value">1.82&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="conf.low">−1.81&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="conf.high">9.17&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_center" headers="signif"></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="term">Chasse ouverte</td>
-<td class="gt_row gt_right" headers="estimate">−2.62&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="std.error">6.21&nbsp;×&nbsp;10<sup>−2</sup></td>
-<td class="gt_row gt_right" headers="statistic">−4.22</td>
-<td class="gt_row gt_right" headers="df">1207.88168</td>
-<td class="gt_row gt_right" headers="p.value">2.59&nbsp;×&nbsp;10<sup>−5</sup></td>
-<td class="gt_row gt_right" headers="conf.low">−3.84&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="conf.high">−1.40&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_center" headers="signif">***</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="term">Zone de danger : chasse ouverte</td>
-<td class="gt_row gt_right" headers="estimate">−1.37</td>
-<td class="gt_row gt_right" headers="std.error">2.15&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="statistic">−6.37</td>
-<td class="gt_row gt_right" headers="df">1197.79822</td>
-<td class="gt_row gt_right" headers="p.value">2.61&nbsp;×&nbsp;10<sup>−10</sup></td>
-<td class="gt_row gt_right" headers="conf.low">−1.79</td>
-<td class="gt_row gt_right" headers="conf.high">−9.47&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_center" headers="signif">***</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<div class="cell-output-display">
-<div id="pakieqsujp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pakieqsujp table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#pakieqsujp thead, #pakieqsujp tbody, #pakieqsujp tfoot, #pakieqsujp tr, #pakieqsujp td, #pakieqsujp th {
-  border-style: none;
-}
-
-#pakieqsujp p {
-  margin: 0;
-  padding: 0;
-}
-
-#pakieqsujp .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#pakieqsujp .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#pakieqsujp .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#pakieqsujp .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#pakieqsujp .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#pakieqsujp .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#pakieqsujp .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#pakieqsujp .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#pakieqsujp .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#pakieqsujp .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#pakieqsujp .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#pakieqsujp .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#pakieqsujp .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#pakieqsujp .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#pakieqsujp .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pakieqsujp .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#pakieqsujp .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#pakieqsujp .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#pakieqsujp .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pakieqsujp .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#pakieqsujp .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pakieqsujp .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#pakieqsujp .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pakieqsujp .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pakieqsujp .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pakieqsujp .gt_left {
-  text-align: left;
-}
-
-#pakieqsujp .gt_center {
-  text-align: center;
-}
-
-#pakieqsujp .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#pakieqsujp .gt_font_normal {
-  font-weight: normal;
-}
-
-#pakieqsujp .gt_font_bold {
-  font-weight: bold;
-}
-
-#pakieqsujp .gt_font_italic {
-  font-style: italic;
-}
-
-#pakieqsujp .gt_super {
-  font-size: 65%;
-}
-
-#pakieqsujp .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#pakieqsujp .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#pakieqsujp .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#pakieqsujp .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#pakieqsujp .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#pakieqsujp .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#pakieqsujp .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#pakieqsujp .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#pakieqsujp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<thead>
-<tr class="header gt_heading">
-<th colspan="3" class="gt_heading gt_title gt_font_normal gt_bottom_border">Variance des effets aléatoires</th>
-</tr>
-<tr class="odd gt_col_headings">
-<th id="Effet" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Effet</th>
-<th id="Variance" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Variance</th>
-<th id="aÉcart-type" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Écart-type</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Effet">ID</td>
-<td class="gt_row gt_right" headers="Variance">8.07&nbsp;×&nbsp;10<sup>−2</sup></td>
-<td class="gt_row gt_right" headers="Écart-type">2.84&nbsp;×&nbsp;10<sup>−1</sup></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Effet">ID</td>
-<td class="gt_row gt_right" headers="Variance">2.08</td>
-<td class="gt_row gt_right" headers="Écart-type">1.44</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Effet">ID</td>
-<td class="gt_row gt_right" headers="Variance">−1.68&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="Écart-type">−4.11&nbsp;×&nbsp;10<sup>−1</sup></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Effet">Residual</td>
-<td class="gt_row gt_right" headers="Variance">7.52&nbsp;×&nbsp;10<sup>−1</sup></td>
-<td class="gt_row gt_right" headers="Écart-type">8.67&nbsp;×&nbsp;10<sup>−1</sup></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<div class="cell-output-display">
-<div id="chgbanmkxs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#chgbanmkxs table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#chgbanmkxs thead, #chgbanmkxs tbody, #chgbanmkxs tfoot, #chgbanmkxs tr, #chgbanmkxs td, #chgbanmkxs th {
-  border-style: none;
-}
-
-#chgbanmkxs p {
-  margin: 0;
-  padding: 0;
-}
-
-#chgbanmkxs .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#chgbanmkxs .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#chgbanmkxs .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#chgbanmkxs .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#chgbanmkxs .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#chgbanmkxs .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#chgbanmkxs .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#chgbanmkxs .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#chgbanmkxs .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#chgbanmkxs .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#chgbanmkxs .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#chgbanmkxs .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#chgbanmkxs .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#chgbanmkxs .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#chgbanmkxs .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#chgbanmkxs .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#chgbanmkxs .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#chgbanmkxs .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#chgbanmkxs .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#chgbanmkxs .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#chgbanmkxs .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#chgbanmkxs .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#chgbanmkxs .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#chgbanmkxs .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#chgbanmkxs .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#chgbanmkxs .gt_left {
-  text-align: left;
-}
-
-#chgbanmkxs .gt_center {
-  text-align: center;
-}
-
-#chgbanmkxs .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#chgbanmkxs .gt_font_normal {
-  font-weight: normal;
-}
-
-#chgbanmkxs .gt_font_bold {
-  font-weight: bold;
-}
-
-#chgbanmkxs .gt_font_italic {
-  font-style: italic;
-}
-
-#chgbanmkxs .gt_super {
-  font-size: 65%;
-}
-
-#chgbanmkxs .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#chgbanmkxs .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#chgbanmkxs .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#chgbanmkxs .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#chgbanmkxs .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#chgbanmkxs .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#chgbanmkxs .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#chgbanmkxs .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#chgbanmkxs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<thead>
-<tr class="header gt_heading">
-<th colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border">R²</th>
-</tr>
-<tr class="odd gt_col_headings">
-<th id="R2_conditional" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">R2 conditional</th>
-<th id="R2_marginal" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">R2 marginal</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_right" headers="R2_conditional">0.36</td>
-<td class="gt_row gt_right" headers="R2_marginal">0.06</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
 </section>
 </section>
 </section>
@@ -3470,6 +1548,7 @@ Figure&nbsp;86: Nombre de point GPS rapporté à l’aire de la zone marginale o
 </section>
 <section id="reproductibilité-des-analyses" class="level1">
 <h1><strong>Reproductibilité des analyses</strong></h1>
+<p>Analyses et rédaction de l’atlas par <a href="https://github.com/SuzanneBonamour">Suzanne Bonamour</a>, chargée de traitement de données, LPO France.</p>
 <img src="France_-_17_-_Saint-Froult_-_Sentier_des_Polders.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;">
 <div style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;">
 <p>Crédit photo : KiwiNeko14 (Wikimedia Commons)</p>
@@ -3497,50 +1576,14 @@ Figure&nbsp;86: Nombre de point GPS rapporté à l’aire de la zone marginale o
 </section>
 <section id="bibliographie" class="level1">
 <h1><strong>Bibliographie</strong></h1>
-<img src="France_-_17_-_Saint-Froult_-_Plage_de_Plaisance.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;">
+<img src="RNN_Moëze_Oléron_-_img_48656.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;">
 <div style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;">
-<p>Crédit photo : KiwiNeko14 (Wikimedia Commons)</p>
+<p>Crédit photo : Pmau (Wikimedia Commons)</p>
 </div>
 <ul>
 <li><span id="bakker2021">Bakker, Wiene, et al.&nbsp;(2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.</span></li>
 <li><span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.</span></li>
 </ul>
-<p><a href="#top">↑ retour en haut</a></p>
-</section>
-<section id="travail-de-terrain" class="level1">
-<h1><strong>Travail de terrain</strong></h1>
-<img src="Réserve_naturelle_nationale_de_Moëze-Oléron(3).jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;">
-<div style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;">
-<p>Crédit photo : Ji-Elle (Wikimedia Commons)</p>
-</div>
-<p>Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d’obtenir les données nécessaires à ces analyses.</p>
-<p><a href="#top">↑ retour en haut</a></p>
-</section>
-<section id="financements" class="level1">
-<h1><strong>Financements</strong></h1>
-<img src="RNN_Moëze_Oléron_-_img_48640.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;">
-<div style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;">
-<p>Crédit photo : Pmau (Wikimedia Commons)</p>
-</div>
-<p><a href="#top">↑ retour en haut</a></p>
-</section>
-<section id="remerciements" class="level1">
-<h1><strong>Remerciements</strong></h1>
-<img src="RNN_Moëze_Oléron_-_img_48656.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;">
-<div style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;">
-<p>Crédit photo : Pmau (Wikimedia Commons)</p>
-</div>
-<p>Je remercie Anaïs, Marine, Gwenaël et les membres des réunions “cambouis” pour leurs conseils pertinents.</p>
-<p><a href="#top">↑ retour en haut</a></p>
-</section>
-<section id="contact" class="level1">
-<h1><strong>Contact</strong></h1>
-<img src="Pont_d'Oléron.jpg" style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;">
-<div style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;">
-<p>Crédit photo : Mutichou (Wikimedia Commons)</p>
-</div>
-<p>Analyses et rédaction de l’atlas par <a href="https://github.com/SuzanneBonamour">Suzanne Bonamour</a>, chargée de traitement de données, LPO France.</p>
-<p>Pour toute question, contactez-moi à : <code>suzanne.bonamour@lpo.fr</code>.</p>
 <p><a href="#top">↑ retour en haut</a></p>
 </section>
 

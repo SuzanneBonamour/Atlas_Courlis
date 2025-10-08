@@ -11,25 +11,9 @@ format:
       body-width: 1400px
       margin-width: 300px
     self-contained: false
-author: Suzanne Bonamour
+author: "Suzanne BONAMOUR, Gwenaël QUINTENNE, Pierre ROUSSEAU, Loïc JOMAT, Pierrick BOCHER, Frédérique JIGUET, Adrien CHAIGNE"
 editor: visual
 theme: journal 
-resources:
-  - zone_map.html
-  - home_range_map.html
-  - HR_pour_RN.html
-  - UDMap.roosting_year_repet_pop.html
-  - UDMap_foraging_jour_nuit_ZOOM.html
-  - UDMap_roosting_jour_nuit_ZOOM.html
-  - UDMap_foraging_sex_ZOOM.html
-  - UDMap_roosting_sex_ZOOM.html
-  - UDMap_foraging_age_ZOOM.html
-  - UDMap_roosting_age_ZOOM.html
-  - UDMap_foraging_glob.html
-  - UDMap_roosting_glob.html
-  - UDMap_foraging_ZOOM.html
-  - UDMap_roosting_tides_high_type_ZOOM.html
-  - UDMap_roosting_ZOOM.html
 ---
 
 ```{r}
@@ -37,7 +21,7 @@ resources:
 
 # self-contained: true
 
-rm(list=ls()) # Nettoyage de l'environnement
+rm(list = ls()) # Nettoyage de l'environnement
 
 ## Packages --------------------------------------------------------------------
 # Choix automatique (par défaut, rapide)
@@ -48,6 +32,9 @@ library(viridis)
 library(readxl)
 library(htmltools)
 library(sf)
+library(readxl)
+library(DT)
+library(dplyr)
 
 ## time zone -------------------------------------------------------------------
 
@@ -55,7 +42,7 @@ with_tz(Sys.time(), "Europe/Paris")
 
 ## Palette ---------------------------------------------------------------------
 
-palette_viri = viridis::viridis(10, begin = 0, end = 1, direction = 1, option = "plasma")
+palette_viri <- viridis::viridis(10, begin = 0, end = 1, direction = 1, option = "plasma")
 
 ## Chemins de données ----------------------------------------------------------
 
@@ -83,9 +70,11 @@ Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
 
 ## Contexte de l'étude
 
+### Objectifs scientifiques et techniques
+
 Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-Photo_intro).
 
-L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
+L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map_new). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
 
 ::: {#fig-Photo_intro}
 ```{r}
@@ -105,6 +94,70 @@ Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux c
 ::: {.logo-row style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;"}
 <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" alt="Logo Gauche" style="height: 100px;"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" alt="Logo Droit" style="height: 100px;"/>
 :::
+
+### Travail de terrain
+
+Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
+
+### Financements
+
+XXX
+
+XXX
+
+XXX
+
+## Auteur.ices, affiliations and contributions {.smaller} 
+
+### Analyses statistiques et spatiales
+
+- Suzanne Bonamour (LPO France) 
+- Gwenael Quaintenne (LPO France)
+
+### Travail de terrain, capture et baguage des oiseaux
+
+- Pierre Rousseau (RNN Moëze-Oléron)
+- Loïc Jomat (RNN Moëze-Oléron)
+- Adrien Chaigne (RNN Moëze-Oléron)
+- Pierrick Bocher (RNN Moëze-Oléron)
+- Frédéric Jiguet (RNN Moëze-Oléron)
+- et beaucoup d'autre personnes !
+
+### Rédaction 
+
+- Suzanne Bonamour (LPO France)
+
+### Recherche de financements et partenaires 
+
+- Adrien Chaigne (RNN Moëze-Oléron)
+
+### Comité scientifitques 
+
+- Pierrick Bocher (Univ. La Rochelle)
+- Frédéric Jiguet (MNHN, CESCO, Paris)
+- Gwenael Quaintenne (LPO France)
+
+Pour toutes questions, contacter : 
+
+Suzanne Bonamour `suzanne.bonamour@lpo.fr` ou Adrien Chaigne `adrien.chaigne@lpo.fr`
+
+![](lpo_logo.jpg){.absolute top=600 left=0 width="65" height="65"}
+
+![](reserve_logo.png){.absolute top=600 left=70 width="130" height="65"}
+
+![](MNHN-logo.jpg){.absolute top=600 left=200 width="65" height="65"}
+
+![](logo_CESCO.png){.absolute top=600 left=270 width="210" height="65"}
+
+![](Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png){.absolute top=600 left=485 width="140" height="70"}
+
+![](Logo-FSE-UE-Region-Nouvelle-Aquitaine.png){.absolute top=600 left=625 width="160" height="75"}
+
+![](LIENSs_transp1-e1485208828412.png){.absolute top=600 left=785 width="80" height="75"}
+
+![](fonds-vert_logo.png){.absolute top=600 left=860 width="120" height="75"}
+
+<a href="#top">↑ retour en haut</a>
 
 ## L'espèce d'étude : le courlis cendré (<em>Numenius arquata</em>)
 
@@ -174,37 +227,21 @@ Le détail des méthodes est disponible dans le document [Readme]{style="font-fa
 
 ```{r}
 #| include: false
-BOX <- sf::st_read(paste0(data_generated_path, "BOX.gpkg")) 
+BOX <- sf::st_read(paste0(data_generated_path, "BOX.gpkg"))
 area_box <- sf::st_area(BOX)
 area_box_km <- as.numeric((round(area_box / 1000000, 1)))
 ```
 
-La zone d'étude (voir @fig-zone_map) est un rectangle de `r area_box_km` km² qui s'étend :
+La zone d'étude (voir @fig-zone_map_new) est un rectangle de `r area_box_km` km² qui s'étend :
 
 -   au Nord jusqu'à l'estuaire de la Charente,
 -   à l'Est jusqu'à la limite Est de la ville de Rochefort,
 -   au Sud jusqu'à l'estuaire de la Seudre,
 -   et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi zone fonctionnelle du bassin de Marennes, la réserve de Moëze-Oléron et le marais de Brouage.
 
-Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B, C, D et E ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
+Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B et C ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
 
-::: {#fig-zone_map}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "zone_map.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zones d'études - zone d'étude globale (zone blanche) et zones d'études réduites (zones A, B, C, D et E)
-:::
-
-Nouvelle zone d'étude ???
-
-::: {#fig-zone_map}
+::: {#fig-zone_map_new}
 ```{r}
 #| echo: false
 
@@ -215,8 +252,9 @@ tags$iframe(
 )
 ```
 
-Zones d'études - zone d'étude globale (zone blanche) et zones d'études réduites (zones AA, BB, CC)
+Zones d'études - zone d'étude globale (zone blanche) et zones d'études réduites (zones A, B, C)
 :::
+
 ## Les données GPS utilisées
 
 ### Nettoyage des données GPS
@@ -251,29 +289,30 @@ GPS$y_m_d <- ymd(as.Date(GPS$datetime))
 #| include: false
 
 nb_point <- length(GPS$ID)
-  
+
 nb_ind <- length(unique(GPS$ID))
 
-min_year <- min(GPS$year) ; max_year <- max(GPS$year)
+min_year <- min(GPS$year)
+max_year <- max(GPS$year)
 
 age_dt_point <- as.data.frame(table(GPS$age))
 
-age_dt_ind <- GPS %>% 
-  dplyr::select(ID, age) %>% 
-  distinct() %>% 
-  group_by(age) %>% 
+age_dt_ind <- GPS %>%
+  dplyr::select(ID, age) %>%
+  distinct() %>%
+  group_by(age) %>%
   summarise(n = n())
 
-sexe_dt <- GPS %>% 
-  dplyr::select(ID, sex) %>% 
-  distinct() %>% 
-  group_by(sex) %>% 
+sexe_dt <- GPS %>%
+  dplyr::select(ID, sex) %>%
+  distinct() %>%
+  group_by(sex) %>%
   summarise(n = n())
 
 # texte à ajouter dans quarto quand propore :
 
 # Taille du jeu de données final utilisé (après nettoyage et filtration des données) :
-# 
+#
 # - La période de suivi court de `r min_year` à `r max_year`
 # - Nombre d'individu : 46
 # - Nombre de point GPS enregistrés : 406 687
@@ -286,7 +325,7 @@ sexe_dt <- GPS %>%
 ::: {#fig-emission_plot}
 ```{r}
 #| echo: false
-#| out.width: 90% 
+#| out.width: 90%
 #| fig-align: "center"
 knitr::include_graphics("emission_plot.png", dpi = 100)
 ```
@@ -308,7 +347,7 @@ Pourcentage moyen de temps passé dans la réserve pour :
 ::: {#fig-duree_dans_reserve_plot}
 ```{r}
 #| echo: false
-#| out.width: 70% 
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
 ```
@@ -347,7 +386,7 @@ Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et
 ::: {#fig-area_hr_plot}
 ```{r}
 #| echo: false
-#| out.width: 70% 
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
@@ -360,7 +399,7 @@ Aire (en m²) du domaine vital des individus en fonction de leur âge ou de leur
 ::: {#fig-surface_sex_age_all_plot}
 ```{r}
 #| echo: false
-#| out.width: 70% 
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 ```
@@ -383,38 +422,19 @@ Crédit photo : Idaho69 (Wikimedia Commons)
 
 Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les reposoirs sont estimés :
-
--   à partir des données de l'ensemble des individus via la délimitation de zone "hotspot" [Bakker et al. (2021)](#bakker2021) et de façon globale sur toute la zone d'études (sur des grilles de 100m x 100m, @fig-UDMap_roosting_hotspot_from1id)
--   de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, @fig-UDMap_roosting_A, @fig-UDMap_roosting_B, @fig-UDMap_roosting_C, @fig-UDMap_roosting_D, @fig-UDMap_roosting_E).
-
 Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
-::: {#fig-UDMap_roosting_hotspot_from1id}
-```{r}
-#| echo: false
+Verticle à 95% et 50%
 
-tags$iframe(
-  src = "UDMap_roosting_hotspot_from1id.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs (hotspot).
-:::
-
-Analyses zone par zone :
-
-:::::::: panel-tabset
+:::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_roosting_A}
+::: {#fig-UDMap_kud_roosting_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_A.html",
+  src = "UDMap_kud_roosting_A.html",
   width = "100%",
   height = "400px"
 )
@@ -425,12 +445,12 @@ Reposoirs zone A
 
 ### Zone B
 
-::: {#fig-UDMap_roosting_B}
+::: {#fig-UDMap_kud_roosting_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_B.html",
+  src = "UDMap_kud_roosting_B.html",
   width = "100%",
   height = "400px"
 )
@@ -441,12 +461,12 @@ Reposoirs zone B
 
 ### Zone C
 
-::: {#fig-UDMap_roosting_C}
+::: {#fig-UDMap_kud_roosting_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_C.html",
+  src = "UDMap_kud_roosting_C.html",
   width = "100%",
   height = "400px"
 )
@@ -454,108 +474,19 @@ tags$iframe(
 
 Reposoirs zone C
 :::
-
-### Zone D
-
-::: {#fig-UDMap_roosting_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D
-:::
-
-### Zone E
-
-::: {#fig-UDMap_roosting_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E
-:::
-::::::::
-
-
-Nouvelles zones d'études ??????
-
-Verticle à 95% et 50%
-
-Analyses zone par zone :
-
-:::::::: panel-tabset
-### Zone AA
-
-::: {#fig-UDMap_roosting_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_95_50_AA.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone AA
-:::
-
-### Zone BB
-
-::: {#fig-UDMap_roosting_BB}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_95_50_BB.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone B
-:::
-
-### Zone CC
-
-::: {#fig-UDMap_roosting_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_95_50_CC.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone CC
-:::
-::::::::
+::::::
 
 ### Reposoir en fonction du mois de l'année
 
 :::::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_roosting_month_A}
+::: {#fig-UDMap_kud_roosting_month_label_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_month_A.html",
+  src = "UDMap_kud_roosting_month_label_A.html",
   width = "100%",
   height = "400px"
 )
@@ -566,12 +497,12 @@ Reposoirs zone A en fonction du mois
 
 ### Zone B
 
-::: {#fig-UDMap_roosting_month_B}
+::: {#fig-UDMap_kud_roosting_month_label_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_month_B.html",
+  src = "UDMap_kud_roosting_month_label_B.html",
   width = "100%",
   height = "400px"
 )
@@ -582,50 +513,18 @@ Reposoirs zone B en fonction du mois
 
 ### Zone C
 
-::: {#fig-UDMap_roosting_month_C}
+::: {#fig-UDMap_kud_roosting_month_label_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_month_C.html",
+  src = "UDMap_kud_roosting_month_label_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
 Reposoirs zone C en fonction du mois
-:::
-
-### Zone D
-
-::: {#fig-UDMap_roosting_month_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_month_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D en fonction du mois
-:::
-
-### Zone E
-
-::: {#fig-UDMap_roosting_month_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_month_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E en fonction du mois
 :::
 ::::::::
 
@@ -636,12 +535,12 @@ L'âge des individus est déterminé au baguage grâce au plumage des individus.
 :::::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_roosting_age_A}
+::: {#fig-UDMap_kud_roosting_age_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_age_A.html",
+  src = "UDMap_kud_roosting_age_A.html",
   width = "100%",
   height = "400px"
 )
@@ -652,12 +551,12 @@ Reposoirs zone A en fonction de l'âge
 
 ### Zone B
 
-::: {#fig-UDMap_roosting_age_B}
+::: {#fig-UDMap_kud_roosting_age_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_age_B.html",
+  src = "UDMap_kud_roosting_age_B.html",
   width = "100%",
   height = "400px"
 )
@@ -668,50 +567,18 @@ Reposoirs zone B en fonction de l'âge
 
 ### Zone C
 
-::: {#fig-UDMap_roosting_age_C}
+::: {#fig-UDMap_kud_roosting_age_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_age_C.html",
+  src = "UDMap_kud_roosting_age_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
 Reposoirs zone C en fonction de l'âge
-:::
-
-### Zone D
-
-::: {#fig-UDMap_roosting_age_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_age_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D en fonction de l'âge
-:::
-
-### Zone E
-
-::: {#fig-UDMap_roosting_age_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_age_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E en fonction de l'âge
 :::
 ::::::::
 
@@ -722,12 +589,12 @@ Le sexe des individus a été déterminé lors de la pose des GPS.
 :::::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_roosting_sex_A}
+::: {#fig-UDMap_kud_roosting_sex_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_sex_A.html",
+  src = "UDMap_kud_roosting_sex_A.html",
   width = "100%",
   height = "400px"
 )
@@ -738,12 +605,12 @@ Reposoirs zone A en fonction du sexe
 
 ### Zone B
 
-::: {#fig-UDMap_roosting_sex_B}
+::: {#fig-UDMap_kud_roosting_sex_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_sex_B.html",
+  src = "UDMap_kud_roosting_sex_B.html",
   width = "100%",
   height = "400px"
 )
@@ -754,12 +621,12 @@ Reposoirs zone B en fonction du sexe
 
 ### Zone C
 
-::: {#fig-UDMap_roosting_sex_C}
+::: {#fig-UDMap_kud_roosting_sex_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_sex_C.html",
+  src = "UDMap_kud_roosting_sex_C.html",
   width = "100%",
   height = "400px"
 )
@@ -767,74 +634,23 @@ tags$iframe(
 
 Reposoirs zone C en fonction du sexe
 :::
-
-### Zone D
-
-::: {#fig-UDMap_roosting_sex_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_sex_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D en fonction du sexe
-:::
-
-### Zone E
-
-::: {#fig-UDMap_roosting_sex_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_sex_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E en fonction du sexe
-:::
 ::::::::
 
 ## Identification des zones d'alimentation
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
-Les zones d'alimentation sont estimées :
+Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
--   à partir des données de l'ensemble des individus en identifiant des zones "hotspots" [Bakker et al. (2021)](#bakker2021) et de façon global (@fig-UDMap_foraging_hotspot) sur toute la zone d'études (sur des grilles de 100m x 100m)
--   soit de façon plus fine sur les zones spécifiques A, B, C, D et E (sur des grilles de 10m x 10m, @fig-UDMap_foraging_A, @fig-UDMap_foraging_B, @fig-UDMap_foraging_C, @fig-UDMap_foraging_D, @fig-UDMap_foraging_E). Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-::: {#fig-UDMap_foraging_hotspot}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_hotspot.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zones d'alimentation hotspot.
-:::
-
-Analyses zone par zone :
-
-:::::::: panel-tabset
+:::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_foraging_A}
+::: {#fig-UDMap_kud_foraging_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_A.html",
+  src = "UDMap_kud_foraging_A.html",
   width = "100%",
   height = "400px"
 )
@@ -845,12 +661,12 @@ Alimentation zone A
 
 ### Zone B
 
-::: {#fig-UDMap_foraging_B}
+::: {#fig-UDMap_kud_foraging_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_B.html",
+  src = "UDMap_kud_foraging_B.html",
   width = "100%",
   height = "400px"
 )
@@ -861,12 +677,12 @@ Alimentation zone B
 
 ### Zone C
 
-::: {#fig-UDMap_foraging_C}
+::: {#fig-UDMap_kud_foraging_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_C.html",
+  src = "UDMap_kud_foraging_C.html",
   width = "100%",
   height = "400px"
 )
@@ -874,105 +690,19 @@ tags$iframe(
 
 Alimentation zone C
 :::
-
-### Zone D
-
-::: {#fig-UDMap_foraging_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone D
-:::
-
-### Zone E
-
-::: {#fig-UDMap_foraging_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone E
-:::
-::::::::
-
-Nouvelles zones ????
-
-Vertice à 95 et 50%
-
-:::::::: panel-tabset
-### Zone AA
-
-::: {#fig-UDMap_foraging_AA}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_95_50_AA.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone AA
-:::
-
-### Zone BB
-
-::: {#fig-UDMap_foraging_BB}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_95_50_BB.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone BB
-:::
-
-### Zone CC
-
-::: {#fig-UDMap_foraging_CC}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_95_50_CC.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone CC
-:::
-::::::::
+::::::
 
 ### Zone d'alimentation en fonction du mois de l'année
 
 :::::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_foraging_month_A}
+::: {#fig-UDMap_kud_foraging_month_label_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_month_A.html",
+  src = "UDMap_kud_foraging_month_label_A.html",
   width = "100%",
   height = "400px"
 )
@@ -983,12 +713,12 @@ Zone d'alimentation zone A en fonction du mois
 
 ### Zone B
 
-::: {#fig-UDMap_foraging_month_B}
+::: {#fig-UDMap_kud_foraging_month_label_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_month_B.html",
+  src = "UDMap_kud_foraging_month_label_B.html",
   width = "100%",
   height = "400px"
 )
@@ -999,50 +729,18 @@ Zone d'alimentation zone B en fonction du mois
 
 ### Zone C
 
-::: {#fig-UDMap_foraging_month_C}
+::: {#fig-UDMap_kud_foraging_month_label_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_month_C.html",
+  src = "UDMap_kud_foraging_month_label_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
 Zone d'alimentation zone C en fonction du mois
-:::
-
-### Zone D
-
-::: {#fig-UDMap_foraging_month_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_month_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zone d'alimentation zone D en fonction du mois
-:::
-
-### Zone E
-
-::: {#fig-UDMap_foraging_month_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_month_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zone d'alimentation zone E en fonction du mois
 :::
 ::::::::
 
@@ -1051,12 +749,12 @@ Zone d'alimentation zone E en fonction du mois
 :::::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_foraging_age_A}
+::: {#fig-UDMap_kud_foraging_age_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_age_A.html",
+  src = "UDMap_kud_foraging_age_A.html",
   width = "100%",
   height = "400px"
 )
@@ -1067,12 +765,12 @@ Alimentation zone A en fonction de l'âge
 
 ### Zone B
 
-::: {#fig-UDMap_foraging_age_B}
+::: {#fig-UDMap_kud_foraging_age_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_age_B.html",
+  src = "UDMap_kud_foraging_age_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1083,50 +781,18 @@ Alimentation zone B en fonction de l'âge
 
 ### Zone C
 
-::: {#fig-UDMap_foraging_age_C}
+::: {#fig-UDMap_kud_foraging_age_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_age_C.html",
+  src = "UDMap_kud_foraging_age_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
 Alimentation zone C en fonction de l'âge
-:::
-
-### Zone D
-
-::: {#fig-UDMap_foraging_age_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_age_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone D en fonction de l'âge
-:::
-
-### Zone E
-
-::: {#fig-UDMap_foraging_age_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_age_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone E en fonction de l'âge
 :::
 ::::::::
 
@@ -1135,12 +801,12 @@ Alimentation zone E en fonction de l'âge
 :::::::: panel-tabset
 ### Zone A
 
-::: {#fig-UDMap_foraging_sex_A}
+::: {#fig-UDMap_kud_foraging_sex_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_sex_A.html",
+  src = "UDMap_kud_foraging_sex_A.html",
   width = "100%",
   height = "400px"
 )
@@ -1151,12 +817,12 @@ Alimentation zone A en fonction du sexe
 
 ### Zone B
 
-::: {#fig-UDMap_foraging_sex_B}
+::: {#fig-UDMap_kud_foraging_sex_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_sex_B.html",
+  src = "UDMap_kud_foraging_sex_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1167,12 +833,12 @@ Alimentation zone B en fonction du sexe
 
 ### Zone C
 
-::: {#fig-UDMap_foraging_sex_C}
+::: {#fig-UDMap_kud_foraging_sex_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_sex_C.html",
+  src = "UDMap_kud_foraging_sex_C.html",
   width = "100%",
   height = "400px"
 )
@@ -1180,48 +846,16 @@ tags$iframe(
 
 Alimentation zone C en fonction du sexe
 :::
-
-### Zone D
-
-::: {#fig-UDMap_foraging_sex_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_sex_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone D en fonction du sexe
-:::
-
-### Zone E
-
-::: {#fig-UDMap_foraging_sex_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_sex_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone E en fonction du sexe
-:::
 ::::::::
 
 ## Zone critique de repos et d'alimentation
 
-::: {#fig-zone_critique_hotsport_map_v1}
+::: {#fig-zone_critique_hotspot_map_final}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "zone_critique_hotsport_map_v1.html",
+  src = "zone_critique_hotspot_map_final.html",
   width = "100%",
   height = "400px"
 )
@@ -1232,33 +866,32 @@ Zone critique de repos et d'alimentation
 
 ## Distance entre les reposoirs et les zones d'alimentation
 
-La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_roost_forag_allvar_plot).
+La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_roost_forag_plot_talk).
 
 Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
 
-::: {#fig-distance_roost_forag_allvar_plot}
+::: {#fig-distance_roost_forag_plot_talk}
 ```{r}
 #| echo: false
-#| out.width: 90% 
+#| out.width: 90%
 #| fig-align: "center"
-knitr::include_graphics("distance_roost_forag_allvar_plot.png", dpi = 100)
+knitr::include_graphics("distance_roost_forag_plot_talk.png", dpi = 100)
 ```
 
 Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
 :::
 
-Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_age_sex_plot).
+Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_allvar_plot).
 
-::: {#fig-distance_roost_forag_age_sex_plot}
+::: {#fig-distance_roost_forag_allvar_plot}
 ```{r}
-#| eval: false
+#| echo: false
 #| fig-align: center
-#| include: false
 #| out-width: 70%
-knitr::include_graphics("distance_roost_forag_age_sex_plot.png", dpi = 100)
+knitr::include_graphics("distance_roost_forag_allvar_plot.png", dpi = 100)
 ```
 
-Effets du sexe (à gauche) et de l'âge (à droite) sur la distance individuelle à chaque cycle de marais entre les zones d'alimentation et de repos.
+Effets du sexe, de l'âge et de la hauteur de marée sur la distance individuelle à chaque cycle de marée entre les zones d'alimentation et de repos.
 :::
 
 Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
@@ -1274,7 +907,7 @@ La fidélité inter-annuelle aux espaces a également été estimé. Néanmoins,
 ::: {#fig-plot.roosting_maree_repet}
 ```{r}
 #| echo: false
-#| out.width: 70% 
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("plot.roosting_maree_repet.png", dpi = 100)
 ```
@@ -1287,7 +920,7 @@ Variation des reposoirs individuels au cours des cycles de marée.
 ::: {#fig-plot_._foraging_maree_repet}
 ```{r}
 #| echo: false
-#| out.width: 70% 
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("plot.foraging_maree_repet.png", dpi = 100)
 ```
@@ -1306,12 +939,12 @@ Les périodes de jour et de nuit sont définies sur la base des levers et couche
 :::::::: panel-tabset
 ##### Zone A
 
-::: {#fig-UDMap_roosting_jour_nuit_A}
+::: {#fig-UDMap_kud_roosting_timeofday_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_jour_nuit_A.html",
+  src = "UDMap_kud_roosting_timeofday_A.html",
   width = "100%",
   height = "400px"
 )
@@ -1322,12 +955,12 @@ Reposoirs zone A en fonction du jour et de la nuit
 
 ##### Zone B
 
-::: {#fig-UDMap_roosting_jour_nuit_B}
+::: {#fig-UDMap_kud_roosting_timeofday_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_jour_nuit_B.html",
+  src = "UDMap_kud_roosting_timeofday_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1338,50 +971,18 @@ Reposoirs zone B en fonction du jour et de la nuit
 
 ##### Zone C
 
-::: {#fig-UDMap_roosting_jour_nuit_C}
+::: {#fig-UDMap_kud_roosting_timeofday_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_jour_nuit_C.html",
+  src = "UDMap_kud_roosting_timeofday_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
 Reposoirs zone C en fonction du jour et de la nuit
-:::
-
-##### Zone D
-
-::: {#fig-UDMap_roosting_jour_nuit_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_jour_nuit_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D en fonction du jour et de la nuit
-:::
-
-##### Zone E
-
-::: {#fig-UDMap_roosting_jour_nuit_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_jour_nuit_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E en fonction du jour et de la nuit
 :::
 ::::::::
 
@@ -1390,12 +991,12 @@ Reposoirs zone E en fonction du jour et de la nuit
 :::::::: panel-tabset
 ##### Zone A
 
-::: {#fig-UDMap_foraging_jour_nuit_A}
+::: {#fig-UDMap_foraging_timeofday_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_jour_nuit_A.html",
+  src = "UDMap_kud_foraging_timeofday_A.html",
   width = "100%",
   height = "400px"
 )
@@ -1406,12 +1007,12 @@ Reposoirs zone A en fonction du jour et de la nuit
 
 ##### Zone B
 
-::: {#fig-UDMap_foraging_jour_nuit_B}
+::: {#fig-UDMap_kud_foraging_timeofday_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_jour_nuit_B.html",
+  src = "UDMap_kud_foraging_timeofday_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1422,12 +1023,12 @@ Reposoirs zone B en fonction du jour et de la nuit
 
 ##### Zone C
 
-::: {#fig-UDMap_foraging_jour_nuit_C}
+::: {#fig-UDMap_kud_foraging_timeofday_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_jour_nuit_C.html",
+  src = "UDMap_kud_foraging_timeofday_C.html",
   width = "100%",
   height = "400px"
 )
@@ -1435,43 +1036,11 @@ tags$iframe(
 
 Reposoirs zone C en fonction du jour et de la nuit
 :::
-
-##### Zone D
-
-::: {#fig-UDMap_foraging_jour_nuit_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_jour_nuit_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone D en fonction du jour et de la nuit
-:::
-
-##### Zone E
-
-::: {#fig-UDMap_foraging_jour_nuit_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_jour_nuit_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone E en fonction du jour et de la nuit
-:::
 ::::::::
 
 ### Reposoirs entre fonction de la hauteur d'eau
 
-Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_roosting_tides_high_type_A, @fig-UDMap_roosting_tides_high_type_B, @fig-UDMap_roosting_tides_high_type_C, @fig-UDMap_roosting_tides_high_type_D, @fig-UDMap_roosting_tides_high_type_E).
+Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_kud_roosting_tide_strength_A, @fig-UDMap_kud_roosting_tide_strength_B, @fig-UDMap_kud_roosting_tide_strength_C).
 
 Le marégraphe utilisé pour obtenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous dans les séries de données. La hauteur d'eau est moyennée pour chaque période du grain temporelle choisie (5 min). La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargées via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19).
 
@@ -1481,19 +1050,19 @@ Le type de de marée haute en fonction de la hauteur est définie comme :
 -   marée de vives eaux : entre 4.8m et 6.4m
 -   submersion de la lagune : supérieur à 6.4m
 
-Le choix de ces seuils est choisi de manière empirique par la connaissance de l’influence des hauteurs d’eau sur les reposoirs de marée haute. 
+Le choix de ces seuils est choisi de manière empirique par la connaissance de l’influence des hauteurs d’eau sur les reposoirs de marée haute.
 
 Les dates détectées de submersion de la lagune sont : XXX
 
 :::::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_roosting_tides_high_type_A}
+::: {#fig-UDMap_kud_roosting_tide_strength_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_tides_high_type_A.html",
+  src = "UDMap_kud_roosting_tide_strength_A.html",
   width = "100%",
   height = "400px"
 )
@@ -1504,12 +1073,12 @@ Reposoirs en fonction de la hauteur d'eau, zone A
 
 #### Zone B
 
-::: {#fig-UDMap_roosting_tides_high_type_B}
+::: {#fig-UDMap_kud_roosting_tide_strength_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_tides_high_type_B.html",
+  src = "UDMap_kud_roosting_tide_strength_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1520,12 +1089,12 @@ Reposoirs en fonction de la hauteur d'eau, zone B
 
 #### Zone C
 
-::: {#fig-UDMap_roosting_tides_high_type_C}
+::: {#fig-UDMap_kud_roosting_tide_strength_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_tides_high_type_C.html",
+  src = "UDMap_kud_roosting_tide_strength_C.html",
   width = "100%",
   height = "400px"
 )
@@ -1533,41 +1102,12 @@ tags$iframe(
 
 Reposoirs en fonction de la hauteur d'eau, zone C
 :::
-
-#### Zone D
-
-::: {#fig-UDMap_roosting_tides_high_type_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_tides_high_type_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs en fonction de la hauteur d'eau, zone D
-:::
-
-#### Zone E
-
-::: {#fig-UDMap_roosting_tides_high_type_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_roosting_tides_high_type_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs en fonction de la hauteur d'eau, zone E
-:::
 ::::::::
 
 ### Utilisation de l'espace par les Courlis cendré lors d'évènements de vent extrêmes
+
+
+/!\ autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
 
 Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
 
@@ -1593,12 +1133,12 @@ Seuls les résultats montrant l'influence des vents forts sur les comportements 
 :::::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_foraging_ECE_wspd_A}
+::: {#fig-UDMap_kud_foraging_ECE_wspd_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_ECE_wspd_A.html",
+  src = "UDMap_kud_foraging_ECE_wspdA.html",
   width = "100%",
   height = "400px"
 )
@@ -1609,12 +1149,12 @@ Alimentation zone A en fonction des vents forts
 
 #### Zone B
 
-::: {#fig-UDMap_foraging_ECE_wspd_B}
+::: {#fig-UDMap_kud_foraging_ECE_wspd}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_ECE_wspd_B.html",
+  src = "UDMap_kud_foraging_ECE_wspd_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1625,12 +1165,12 @@ Alimentation zone B en fonction des vents forts
 
 #### Zone C
 
-::: {#fig-UDMap_foraging_ECE_wspd_C}
+::: {#fig-UDMap_kud_foraging_ECE_wspd_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_ECE_wspd_C.html",
+  src = "UDMap_kud_foraging_ECE_wspd_C.html",
   width = "100%",
   height = "400px"
 )
@@ -1638,41 +1178,9 @@ tags$iframe(
 
 Alimentation zone C en fonction des vents forts
 :::
-
-#### Zone D
-
-::: {#fig-UDMap_foraging_ECE_wspd_D}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wspd_D.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone D en fonction des vents forts
-:::
-
-#### Zone E
-
-::: {#fig-UDMap_foraging_ECE_wspd_E}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_foraging_ECE_wspd_E.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone E en fonction des vents forts
-:::
 ::::::::
 
-### Comportement d’évitement de la chasse sur le Domaine Public Maritime et de la chasse à la tonne 
+### Comportement d’évitement de la chasse sur le Domaine Public Maritime et de la chasse à la tonne
 
 #### Chasse sur le Domaine Public Maritime
 
@@ -1680,7 +1188,34 @@ Alimentation zone E en fonction des vents forts
 
 L'utilisation de l'espace par les Courlis cendrés pendant et hors période de chasse à pied sont comparés.
 
-Les données disponibles de comptage de chasseur sur le Domaine Public maritime (DPM) se restreignent à la plage de Saint-Froult. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs. 
+!!!!!! testé mais sans effet détecté : jour de chasse, seuil de chasse avec beaucoup de chasseur ou pas
+
+```{r}
+#| echo: false
+
+tableau <- read_excel("date_periode_chasse.xlsx") %>%
+  mutate(
+    Ouverture = as.Date(`Date d'ouverture de la chasse`), # conversion en Date
+    Ouverture = format(`Date d'ouverture de la chasse`, "%d/%m/%Y"), # format français
+    Fermeture = as.Date(`Date de fermeture de la chasse`), # conversion en Date
+    Fermeture = format(`Date de fermeture de la chasse`, "%d/%m/%Y") # format français
+  ) %>%
+  dplyr::select(Saison, Ouverture, Fermeture)
+
+datatable(
+  tableau,
+  options = list(
+    pageLength = 10,
+    lengthMenu = c(5, 10, 20, 50),
+    searching = TRUE,
+    ordering = TRUE,
+    scrollX = TRUE
+  ),
+  class = "stripe hover cell-border"
+)
+```
+
+Les données disponibles de comptage de chasseur sur le Domaine Public maritime (DPM) se restreignent à la plage de Saint-Froult. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs.
 
 Également, afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restraint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
 
@@ -1717,6 +1252,9 @@ Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasse
 Aucun effet n'a pu être visuellement détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
 #### Chasse à la tonne
+
+!!!!!! testé mais sans effets detecté : changement d'utilisation de l'espace quand fermeture de la chasse, avec zone de danger et zone de proximité
+
 
 ::: {style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;"}
 <img src="Une_tonne_de_chasse_au_gibier_d&apos;eau.jpg" style="width: 100%;"/>
@@ -1806,7 +1344,7 @@ Aussi, l'aire des zones de danger et de proximité sont nécessairement différe
 #| echo: false
 #| out.width: 40% #"50%"  # ou "300px", selon ce que tu veux
 #| fig-align: "center"
-knitr::include_graphics("preds_tonnes_chasses_plot.png")
+# knitr::include_graphics("preds_tonnes_chasses_plot.png")
 ```
 
 Nombre de point GPS rapporté à l'aire de la zone marginale ou de danger en fonction de la période de chasse.
@@ -1817,70 +1355,71 @@ Résultats du modèle :
 ```{r, warning=FALSE}
 #| echo: false
 
-library(gt)
-
-atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis/"
-
-
-# Charger les résultats du modèle
-# model_table <- readRDS(paste0(atlas_path,"resultats_modele_lmer.rds"))
-
-# Charger les résultats
-res <- readRDS(paste0(atlas_path,"resultats_modeles.rds"))
-fixed <- res$fixed
-r2 <- res$r2
-random <- res$random
-
-# Tableau des effets fixes
-
-fixed <- fixed %>%
-  mutate(term = recode(term,
-                       `(Intercept)` = "Intercept",
-                       "zonezone de danger" = "Zone de danger",
-                       "tonnes_periodchasse ouverte" = "Chasse ouverte",
-                       "zonezone de danger:tonnes_periodchasse ouverte" = "Zone de danger : chasse ouverte"
-  ))
-
-
-fixed %>%
-  gt() %>%
-  tab_header(title = "Effets fixes") %>%
-  cols_hide(columns = vars(effect)) %>%
-  fmt_scientific(
-    columns = vars(estimate, std.error, statistic, p.value, conf.low, conf.high),
-    decimals = 2
-  ) %>%
-  cols_label(
-    term = "",
-    estimate = "Coefficient",
-    std.error = "Erreur Std",
-    statistic = "t",
-    p.value = "p-value",
-    conf.low = "IC 2.5%",
-    conf.high = "IC 97.5%",
-    signif = "Signif."
-  ) %>%
-  tab_style(
-    style = list(cell_text(weight = "bold")),
-    locations = cells_column_labels(everything())
-  )
-
-
-# Effets aléatoires
-random %>%
-  gt() %>%
-  tab_header(title = "Variance des effets aléatoires") %>%
-  fmt_scientific(columns = vars(Variance, `Écart-type`), decimals = 2)
-
-# R²
-r2 %>%
-  gt() %>%
-  tab_header(title = "R²") %>%
-  cols_hide(columns = optional) %>%
-  cols_label(R2_conditional = "R2 conditional",
-    R2_marginal = "R2 marginal") %>% 
-  fmt_number(columns = everything(), decimals = 2)
-
+# library(gt)
+#
+# atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis/"
+#
+#
+# # Charger les résultats du modèle
+# # model_table <- readRDS(paste0(atlas_path,"resultats_modele_lmer.rds"))
+#
+# # Charger les résultats
+# res <- readRDS(paste0(atlas_path, "resultats_modeles.rds"))
+# fixed <- res$fixed
+# r2 <- res$r2
+# random <- res$random
+#
+# # Tableau des effets fixes
+#
+# fixed <- fixed %>%
+#   mutate(term = recode(term,
+#     `(Intercept)` = "Intercept",
+#     "zonezone de danger" = "Zone de danger",
+#     "tonnes_periodchasse ouverte" = "Chasse ouverte",
+#     "zonezone de danger:tonnes_periodchasse ouverte" = "Zone de danger : chasse ouverte"
+#   ))
+#
+#
+# fixed %>%
+#   gt() %>%
+#   tab_header(title = "Effets fixes") %>%
+#   cols_hide(columns = vars(effect)) %>%
+#   fmt_scientific(
+#     columns = vars(estimate, std.error, statistic, p.value, conf.low, conf.high),
+#     decimals = 2
+#   ) %>%
+#   cols_label(
+#     term = "",
+#     estimate = "Coefficient",
+#     std.error = "Erreur Std",
+#     statistic = "t",
+#     p.value = "p-value",
+#     conf.low = "IC 2.5%",
+#     conf.high = "IC 97.5%",
+#     signif = "Signif."
+#   ) %>%
+#   tab_style(
+#     style = list(cell_text(weight = "bold")),
+#     locations = cells_column_labels(everything())
+#   )
+#
+#
+# # Effets aléatoires
+# random %>%
+#   gt() %>%
+#   tab_header(title = "Variance des effets aléatoires") %>%
+#   fmt_scientific(columns = vars(Variance, `Écart-type`), decimals = 2)
+#
+# # R²
+# r2 %>%
+#   gt() %>%
+#   tab_header(title = "R²") %>%
+#   cols_hide(columns = optional) %>%
+#   cols_label(
+#     R2_conditional = "R2 conditional",
+#     R2_marginal = "R2 marginal"
+#   ) %>%
+#   fmt_number(columns = everything(), decimals = 2)
 ```
 
 # **Discussion**
@@ -1915,6 +1454,8 @@ Il serait particulièrement interessant de poursuivre ce suivi en équipant des 
 XX
 
 # **Reproductibilité des analyses**
+
+Analyses et rédaction de l'atlas par [Suzanne Bonamour](https://github.com/SuzanneBonamour), chargée de traitement de données, LPO France.
 
 ```{=html}
 <img src="France_-_17_-_Saint-Froult_-_Sentier_des_Polders.jpg"
@@ -1954,50 +1495,6 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 # **Bibliographie**
 
 ```{=html}
-<img src="France_-_17_-_Saint-Froult_-_Plage_de_Plaisance.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : KiwiNeko14 (Wikimedia Commons)
-:::
-
--   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
--   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
-
-<a href="#top">↑ retour en haut</a>
-
-# **Travail de terrain**
-
-```{=html}
-<img src="Réserve_naturelle_nationale_de_Moëze-Oléron(3).jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : Ji-Elle (Wikimedia Commons)
-:::
-
-Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
-
-<a href="#top">↑ retour en haut</a>
-
-# **Financements**
-
-```{=html}
-<img src="RNN_Moëze_Oléron_-_img_48640.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : Pmau (Wikimedia Commons)
-:::
-
-<a href="#top">↑ retour en haut</a>
-
-# **Remerciements**
-
-```{=html}
 <img src="RNN_Moëze_Oléron_-_img_48656.jpg"
      style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
 ```
@@ -2006,23 +1503,7 @@ Crédit photo : Pmau (Wikimedia Commons)
 Crédit photo : Pmau (Wikimedia Commons)
 :::
 
-Je remercie Anaïs, Marine, Gwenaël et les membres des réunions "cambouis" pour leurs conseils pertinents.
-
-<a href="#top">↑ retour en haut</a>
-
-# **Contact**
-
-```{=html}
-<img src="Pont_d'Oléron.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : Mutichou (Wikimedia Commons)
-:::
-
-Analyses et rédaction de l'atlas par [Suzanne Bonamour](https://github.com/SuzanneBonamour), chargée de traitement de données, LPO France.
-
-Pour toute question, contactez-moi à : `suzanne.bonamour@lpo.fr`.
+-   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
+-   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
 
 <a href="#top">↑ retour en haut</a>
