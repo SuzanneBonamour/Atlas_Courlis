@@ -53,11 +53,7 @@ data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
-::: {.logo-row style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;"}
-<img src="lpo_logo.jpg" alt="Logo Gauche" style="height: 100px;"/> <img src="reserve_logo.png" alt="Logo Droit" style="height: 100px;"/>
-:::
-
-# **Introduction**
+# **Contexte de l'étude**
 
 ```{=html}
 <img src="20170226-Großer_Brachvogel.jpg"
@@ -67,8 +63,6 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
 :::
-
-## Contexte de l'étude
 
 ### Objectifs scientifiques et techniques
 
@@ -88,24 +82,6 @@ Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la
 À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
 
 Le travail présenté ici propose une cartographie fine de la répartition des courlis dans le site fonctionnel de la réserve de Moëze-Oléron en fonction des fluctuations environnementales et des perturbations anthropiques détectées et mesurables sur la zone.
-
-Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par l’Etat (Fonds Vert) et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
-
-::: {.logo-row style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;"}
-<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" alt="Logo Gauche" style="height: 100px;"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" alt="Logo Droit" style="height: 100px;"/>
-:::
-
-### Travail de terrain
-
-Pierre Rousseau, Loic Jomat, Romain Beaubert et Adrien Chaigne ont bagué et équipé de GPS les Courlis cendrés afin d'obtenir les données nécessaires à ces analyses.
-
-### Financements
-
-XXX
-
-XXX
-
-XXX
 
 ## Auteur.ices, affiliations and contributions {.smaller} 
 
@@ -131,25 +107,25 @@ XXX
 
 - Adrien Chaigne (RNN Moëze-Oléron)
 
-### Comité scientifitques 
+### Comité scientifitque 
 
 - Pierrick Bocher (Univ. La Rochelle)
 - Frédéric Jiguet (MNHN, CESCO, Paris)
 - Gwenael Quaintenne (LPO France)
 
-Pour toutes questions, contacter : 
+Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
 
-Suzanne Bonamour `suzanne.bonamour@lpo.fr` ou Adrien Chaigne `adrien.chaigne@lpo.fr`
+Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par l’Etat (Fonds Vert) et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
 
-::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top:20px;"}
-<img src="lpo_logo.jpg" width="65">
-<img src="reserve_logo.png" width="130">
-<img src="MNHN-logo.jpg" width="65">
-<img src="logo_CESCO.png" width="210">
-<img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" width="140">
-<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" width="160">
-<img src="LIENSs_transp1-e1485208828412.png" width="80">
-<img src="fonds-vert_logo.png" width="120">
+::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
+<img src="lpo_logo.jpg" height="100">
+<img src="reserve_logo.png" height="100">
+<img src="MNHN-logo.jpg" height="100">
+<img src="logo_CESCO.png" height="100">
+<img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100">
+<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100">
+<img src="LIENSs_transp1-e1485208828412.png" height="100">
+<img src="fonds-vert_logo.png" height="100">
 :::
 
 <a href="#top">↑ retour en haut</a>
