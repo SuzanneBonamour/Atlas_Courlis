@@ -1190,12 +1190,12 @@ Les données disponibles de comptage de chasseur sur le Domaine Public maritime 
 
 Également, afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restraint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
 
-::: {#fig-UDMap_roosting_chasse_in_out_saison_C}
+::: {#fig-UDMap_kud_roosting_in_out_saison_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_roosting_chasse_in_out_saison_C.html",
+  src = "UDMap_kud_roosting_in_out_saison_B.html",
   width = "100%",
   height = "400px"
 )
@@ -1204,12 +1204,12 @@ tags$iframe(
 Zone de repos pendant (in) et hors (out) période de chasse.
 :::
 
-::: {#fig-UDMap_foraging_chasse_in_out_saison_C}
+::: {#fig-UDMap_kud_foraging_in_out_saison_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_foraging_chasse_in_out_saison_C.html",
+  src = "UDMap_kud_foraging_in_out_saison_B.html",
   width = "100%",
   height = "400px"
 )
