@@ -11,7 +11,7 @@ format:
       body-width: 1400px
       margin-width: 300px
     self-contained: false
-author: "Suzanne BONAMOUR, Gwenaël QUINTENNE, Pierre ROUSSEAU, Loïc JOMAT, Pierrick BOCHER, Frédérique JIGUET, Adrien CHAIGNE"
+author: "Suzanne Bonamour, Gwenaël Quintenne, Pierre Rousseau, Loïc Jomat, Pierrick Bocher, Frédérique Jiguet, Adrien Chaigne"
 editor: visual
 theme: journal 
 ---
