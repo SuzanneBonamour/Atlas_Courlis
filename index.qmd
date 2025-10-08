@@ -141,21 +141,16 @@ Pour toutes questions, contacter :
 
 Suzanne Bonamour `suzanne.bonamour@lpo.fr` ou Adrien Chaigne `adrien.chaigne@lpo.fr`
 
-![](lpo_logo.jpg){.absolute top=600 left=0 width="65" height="65"}
-
-![](reserve_logo.png){.absolute top=600 left=70 width="130" height="65"}
-
-![](MNHN-logo.jpg){.absolute top=600 left=200 width="65" height="65"}
-
-![](logo_CESCO.png){.absolute top=600 left=270 width="210" height="65"}
-
-![](Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png){.absolute top=600 left=485 width="140" height="70"}
-
-![](Logo-FSE-UE-Region-Nouvelle-Aquitaine.png){.absolute top=600 left=625 width="160" height="75"}
-
-![](LIENSs_transp1-e1485208828412.png){.absolute top=600 left=785 width="80" height="75"}
-
-![](fonds-vert_logo.png){.absolute top=600 left=860 width="120" height="75"}
+::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top:20px;"}
+<img src="lpo_logo.jpg" width="65">
+<img src="reserve_logo.png" width="130">
+<img src="MNHN-logo.jpg" width="65">
+<img src="logo_CESCO.png" width="210">
+<img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" width="140">
+<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" width="160">
+<img src="LIENSs_transp1-e1485208828412.png" width="80">
+<img src="fonds-vert_logo.png" width="120">
+:::
 
 <a href="#top">↑ retour en haut</a>
 
