@@ -89,49 +89,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="index_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -1363,8 +1320,8 @@ Figure&nbsp;48: Alimentation zone C en fonction des vents forts
 <p>!!!!!! testé mais sans effet détecté : jour de chasse, seuil de chasse avec beaucoup de chasseur ou pas</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-454bc687b2ebf8d1c70a" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-454bc687b2ebf8d1c70a">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7"],["2024/2025","2023/2024","2022/2023","2021/2022","2020/2021","2019/2020","2018/2019"],["08/09/2024","10/09/2023","11/09/2022","12/09/2021","13/09/2020","08/09/2019","09/09/2018"],["31/01/2025","31/01/2024","31/01/2023","31/01/2022","31/01/2021","31/01/2020","31/01/2019"]],"container":"<table class=\"stripe hover cell-border\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Saison<\/th>\n      <th>Ouverture<\/th>\n      <th>Fermeture<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"lengthMenu":[5,10,20,50],"searching":true,"ordering":true,"scrollX":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Saison","targets":1},{"name":"Ouverture","targets":2},{"name":"Fermeture","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1c2db2e7da6a4f2170d4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1c2db2e7da6a4f2170d4">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7"],["2024/2025","2023/2024","2022/2023","2021/2022","2020/2021","2019/2020","2018/2019"],["08/09/2024","10/09/2023","11/09/2022","12/09/2021","13/09/2020","08/09/2019","09/09/2018"],["31/01/2025","31/01/2024","31/01/2023","31/01/2022","31/01/2021","31/01/2020","31/01/2019"]],"container":"<table class=\"stripe hover cell-border\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Saison<\/th>\n      <th>Ouverture<\/th>\n      <th>Fermeture<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"lengthMenu":[5,10,20,50],"searching":true,"ordering":true,"scrollX":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Saison","targets":1},{"name":"Ouverture","targets":2},{"name":"Fermeture","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Les données disponibles de comptage de chasseur sur le Domaine Public maritime (DPM) se restreignent à la plage de Saint-Froult. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs.</p>
@@ -1403,7 +1360,7 @@ Figure&nbsp;50: Zone d’alimentation pendant et hors période de chasse.
 </section>
 <section id="chasse-à-la-tonne" class="level4">
 <h4 class="anchored" data-anchor-id="chasse-à-la-tonne">Chasse à la tonne</h4>
-<p>!!!!!! testé mais sans effets detecté : changement d’utilisation de l’espace quand fermeture de la chasse, avec zone de danger et zone de proximité</p>
+<p>!!!!!! testé mais sans effets detecté : changement d’utilisation de l’espace quand fermeture de la chasse, avec zone de danger et zone de proximité &gt; saison de chasse (sept-fev), saison + heure de chasse, periode d’étude de chasse (15j av/ap), periode d’étude + heure de chasse (15j av/ap),</p>
 <div style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;">
 <p><img src="Une_tonne_de_chasse_au_gibier_d'eau.jpg" style="width: 100%;"></p>
 <p>
@@ -1438,56 +1395,25 @@ Figure&nbsp;51: Tonnes de chasse (point noir), entourées de zones de danger de 
 </div>
 </figure>
 </div>
-<p>Afin d’étudier l’effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l’utilisation de l’espace des Courlis cendré, deux zones ont été définies (<a href="#fig-map_tonnes_v2" class="quarto-xref">Figure&nbsp;52</a>) :</p>
+<p>Afin d’étudier l’effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l’utilisation de l’espace des Courlis cendré, deux zones ont été définies (<strong>?@fig-map_tonnes_v2</strong>) :</p>
 <ul>
 <li>Zone de danger : zone d’un rayon de 300m entourant chaque tonne de chasse (en orange)</li>
 <li>Zone de proximité : zone d’un rayon de 1.5 km entourant chaque tonne de chasse (en jaune)</li>
 </ul>
-<div id="fig-map_tonnes_v2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-intersection_tonne_map" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;52: Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-intersection_tonne_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;52: Tonnes de chasse (point noir, en gros si proche de la RNN, en petit si à distance) et zone de dérangement (rayon de 300 m en rouge, de 500 m en jaune, de 1000 m en marron).
 </figcaption>
-<div aria-describedby="fig-map_tonnes_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-intersection_tonne_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<iframe src="map_tonnes_v2.html" width="100%" height="400px"></iframe>
+<iframe src="intersection_tonne_map.html" width="100%" height="400px"></iframe>
 </div>
 </div>
 </div>
 </figure>
 </div>
-<p>Pour estimer les effets de la période de chasse (hors ou pendant la période de chasse) et de la zone (de danger ou de proximité) sur la répartition spatiale des points GPS enregistrés pour chaque individu, le modèle linéaire mixte suivant a été appliqué via le packages R “lmerTest”:</p>
-<p><span class="math display">
-Nbpoint_{it} = \beta_0 + \beta_1 \text{zone}_i + \beta_2 \text{period}_t + \beta_3 \left(\text{zone}_i \times \text{period}_t\right) + IND_i + \varepsilon_{it}
-</span></p>
-<p>Avec :</p>
-<p><span class="math display">
-IND_i \sim \mathcal{N}(0, \sigma_b^2), \quad \varepsilon_{it} \sim \mathcal{N}(0, \sigma^2)
-</span></p>
-<p>Ainsi, le nombre de point GPS enregistrés <span class="math inline">Nbpoint_{it}</span> pour l’individu <span class="math inline">i</span> est expliqué par trois effets fixes :</p>
-<ul>
-<li><span class="math inline">\beta_1</span> correspondant l’effet de la zone <span class="math inline">\text{zone}_i</span></li>
-<li><span class="math inline">\beta_2</span> correspondant à l’effet de la période <span class="math inline">\text{period}_t</span></li>
-<li><span class="math inline">\beta_3</span> correspondant à l’effet intéractif de la <span class="math inline">\text{zone}_i</span> par la <span class="math inline">\text{period}_t</span>, c’est-à-dire l’effet de la zone de danger <em>versus</em> de proximité sachant que le point a été enregistré durant <em>versus</em> en dehors de la période de chasse</li>
-</ul>
-<p><span class="math inline">\beta_0</span> est l’ordonné à l’origine du modèle.</p>
-<p>Puisqu’un même individu compte plusieurs points GPS enregistrés, et que ces points ne sont donc pas indépendants entre eux, un effet aléaoire <span class="math inline">IND_i</span> a été ajouté. <span class="math inline">\varepsilon_{it}</span> correspond aux résidus du modèle, autrement dit à la variation dans le nombre de points GPS <span class="math inline">Nbpoint_{it}</span> qui n’est pas expliqué par ces variables.</p>
-<p>Puisque la chasse à la tonne se pratique de nuit, uniquement les points GPS enregistrés de nuit ont été inclus dans l’analyse.</p>
-<p>Aussi, l’aire des zones de danger et de proximité sont nécessairement différentes, avec la zone de proximité bien plus étendues que la zone de danger. Le nombre point GPS enregistrés pour chaque individu dans chaque zone a donc été divisé par surface total de chaque zone afin de prendre en compte la non répartition homogène des points GPS entre les deux zones uniquement due à leur surface respective.</p>
-<div id="fig-preds_tonnes_chasses_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-preds_tonnes_chasses_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;53: Nombre de point GPS rapporté à l’aire de la zone marginale ou de danger en fonction de la période de chasse.
-</figcaption>
-<div aria-describedby="fig-preds_tonnes_chasses_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-
-</div>
-</div>
-</figure>
-</div>
-<p>Résultats du modèle :</p>
 </section>
 </section>
 </section>

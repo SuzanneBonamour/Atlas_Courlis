@@ -1224,7 +1224,7 @@ Aucun effet n'a pu être visuellement détecté sur l'utilisation de l'espace po
 
 #### Chasse à la tonne
 
-!!!!!! testé mais sans effets detecté : changement d'utilisation de l'espace quand fermeture de la chasse, avec zone de danger et zone de proximité
+!!!!!! testé mais sans effets detecté : changement d'utilisation de l'espace quand fermeture de la chasse, avec zone de danger et zone de proximité > saison de chasse (sept-fev), saison + heure de chasse, periode d'étude de chasse (15j av/ap),  periode d'étude + heure de chasse (15j av/ap), 
 
 
 ::: {style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;"}
@@ -1265,133 +1265,19 @@ tags$iframe(
 Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (cercle) colorés en fonction du nombre de zone superposées.
 :::
 
-Afin d'étudier l'effet de la chasse à la tonnes (point noir) et des tonnes de chasse sur l'utilisation de l'espace des Courlis cendré, deux zones ont été définies (@fig-map_tonnes_v2) :
-
--   Zone de danger : zone d'un rayon de 300m entourant chaque tonne de chasse (en orange)
--   Zone de proximité : zone d'un rayon de 1.5 km entourant chaque tonne de chasse (en jaune)
-
-::: {#fig-map_tonnes_v2}
+::: {#fig-intersection_tonne_map}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "map_tonnes_v2.html",
+  src = "intersection_tonne_map.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Tonnes de chasse (point noir), zone de proximité (jaune, 1.5km), zone de danger (rouge, 300m).
+Tonnes de chasse (point noir, en gros si proche de la RNN, en petit si à distance) et zone de dérangement (rayon de 300 m en rouge, de 500 m en jaune, de 1000 m en marron).
 :::
-
-Pour estimer les effets de la période de chasse (hors ou pendant la période de chasse) et de la zone (de danger ou de proximité) sur la répartition spatiale des points GPS enregistrés pour chaque individu, le modèle linéaire mixte suivant a été appliqué via le packages R "lmerTest":
-
-$$
-Nbpoint_{it} = \beta_0 + \beta_1 \text{zone}_i + \beta_2 \text{period}_t + \beta_3 \left(\text{zone}_i \times \text{period}_t\right) + IND_i + \varepsilon_{it}
-$$
-
-Avec :
-
-$$
-IND_i \sim \mathcal{N}(0, \sigma_b^2), \quad \varepsilon_{it} \sim \mathcal{N}(0, \sigma^2)
-$$
-
-Ainsi, le nombre de point GPS enregistrés $Nbpoint_{it}$ pour l'individu $i$ est expliqué par trois effets fixes :
-
--   $\beta_1$ correspondant l'effet de la zone $\text{zone}_i$
--   $\beta_2$ correspondant à l'effet de la période $\text{period}_t$
--   $\beta_3$ correspondant à l'effet intéractif de la $\text{zone}_i$ par la $\text{period}_t$, c'est-à-dire l'effet de la zone de danger *versus* de proximité sachant que le point a été enregistré durant *versus* en dehors de la période de chasse
-
-$\beta_0$ est l'ordonné à l'origine du modèle.
-
-Puisqu'un même individu compte plusieurs points GPS enregistrés, et que ces points ne sont donc pas indépendants entre eux, un effet aléaoire $IND_i$ a été ajouté. $\varepsilon_{it}$ correspond aux résidus du modèle, autrement dit à la variation dans le nombre de points GPS $Nbpoint_{it}$ qui n'est pas expliqué par ces variables.
-
-Puisque la chasse à la tonne se pratique de nuit, uniquement les points GPS enregistrés de nuit ont été inclus dans l'analyse.
-
-Aussi, l'aire des zones de danger et de proximité sont nécessairement différentes, avec la zone de proximité bien plus étendues que la zone de danger. Le nombre point GPS enregistrés pour chaque individu dans chaque zone a donc été divisé par surface total de chaque zone afin de prendre en compte la non répartition homogène des points GPS entre les deux zones uniquement due à leur surface respective.
-
-::: {#fig-preds_tonnes_chasses_plot}
-```{r}
-#| echo: false
-#| out.width: 40% #"50%"  # ou "300px", selon ce que tu veux
-#| fig-align: "center"
-# knitr::include_graphics("preds_tonnes_chasses_plot.png")
-```
-
-Nombre de point GPS rapporté à l'aire de la zone marginale ou de danger en fonction de la période de chasse.
-:::
-
-Résultats du modèle :
-
-```{r, warning=FALSE}
-#| echo: false
-
-# library(gt)
-#
-# atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis/"
-#
-#
-# # Charger les résultats du modèle
-# # model_table <- readRDS(paste0(atlas_path,"resultats_modele_lmer.rds"))
-#
-# # Charger les résultats
-# res <- readRDS(paste0(atlas_path, "resultats_modeles.rds"))
-# fixed <- res$fixed
-# r2 <- res$r2
-# random <- res$random
-#
-# # Tableau des effets fixes
-#
-# fixed <- fixed %>%
-#   mutate(term = recode(term,
-#     `(Intercept)` = "Intercept",
-#     "zonezone de danger" = "Zone de danger",
-#     "tonnes_periodchasse ouverte" = "Chasse ouverte",
-#     "zonezone de danger:tonnes_periodchasse ouverte" = "Zone de danger : chasse ouverte"
-#   ))
-#
-#
-# fixed %>%
-#   gt() %>%
-#   tab_header(title = "Effets fixes") %>%
-#   cols_hide(columns = vars(effect)) %>%
-#   fmt_scientific(
-#     columns = vars(estimate, std.error, statistic, p.value, conf.low, conf.high),
-#     decimals = 2
-#   ) %>%
-#   cols_label(
-#     term = "",
-#     estimate = "Coefficient",
-#     std.error = "Erreur Std",
-#     statistic = "t",
-#     p.value = "p-value",
-#     conf.low = "IC 2.5%",
-#     conf.high = "IC 97.5%",
-#     signif = "Signif."
-#   ) %>%
-#   tab_style(
-#     style = list(cell_text(weight = "bold")),
-#     locations = cells_column_labels(everything())
-#   )
-#
-#
-# # Effets aléatoires
-# random %>%
-#   gt() %>%
-#   tab_header(title = "Variance des effets aléatoires") %>%
-#   fmt_scientific(columns = vars(Variance, `Écart-type`), decimals = 2)
-#
-# # R²
-# r2 %>%
-#   gt() %>%
-#   tab_header(title = "R²") %>%
-#   cols_hide(columns = optional) %>%
-#   cols_label(
-#     R2_conditional = "R2 conditional",
-#     R2_marginal = "R2 marginal"
-#   ) %>%
-#   fmt_number(columns = everything(), decimals = 2)
-```
 
 # **Discussion**
 
