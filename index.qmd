@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de l'espace par le Courlis cendré aux alentours de la réserve de Moëze-Oléron"
+title: "Utilisation de l'espace par le Courlis cendré dans le site fonctionnel de la réserve de Moëze-Oléron"
 lang: fr
 format:
   html:
@@ -53,18 +53,18 @@ data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
-# **Contexte de l'étude**
+# **Contexte**
 
 ```{=html}
 <img src="20170226-Großer_Brachvogel.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
 ```
 
 ::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
 Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
 :::
 
-### Objectifs scientifiques et techniques
+## Objectifs scientifiques et techniques
 
 Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-Photo_intro).
 
@@ -83,38 +83,6 @@ Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la
 
 Le travail présenté ici propose une cartographie fine de la répartition des courlis dans le site fonctionnel de la réserve de Moëze-Oléron en fonction des fluctuations environnementales et des perturbations anthropiques détectées et mesurables sur la zone.
 
-## Auteur.ices, affiliations and contributions {.smaller} 
-
-### Analyses statistiques et spatiales
-
-- Suzanne Bonamour (LPO France) 
-- Gwenael Quaintenne (LPO France)
-
-### Travail de terrain, capture et baguage des oiseaux
-
-- Pierre Rousseau (RNN Moëze-Oléron)
-- Loïc Jomat (RNN Moëze-Oléron)
-- Adrien Chaigne (RNN Moëze-Oléron)
-- Pierrick Bocher (RNN Moëze-Oléron)
-- Frédéric Jiguet (RNN Moëze-Oléron)
-- et beaucoup d'autre personnes !
-
-### Rédaction 
-
-- Suzanne Bonamour (LPO France)
-
-### Recherche de financements et partenaires 
-
-- Adrien Chaigne (RNN Moëze-Oléron)
-
-### Comité scientifitque 
-
-- Pierrick Bocher (Univ. La Rochelle)
-- Frédéric Jiguet (MNHN, CESCO, Paris)
-- Gwenael Quaintenne (LPO France)
-
-Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
-
 Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par l’Etat (Fonds Vert) et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
 
 ::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
@@ -130,11 +98,11 @@ Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux c
 
 <a href="#top">↑ retour en haut</a>
 
-## L'espèce d'étude : le courlis cendré (<em>Numenius arquata</em>)
+## Le courlis cendré
 
 ### Morphologie
 
-Le Courlis cendré est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
+Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
 
 ### Comportement général
 
@@ -181,11 +149,11 @@ International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Dire
 
 <a href="#top">↑ retour en haut</a>
 
-# **Atlas dynamiques**
+# **Analyses spatiales**
 
 ```{=html}
 <img src="Eurasian_Curlew_by_Tisha_Mukherjee_08.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
 ```
 
 ::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
@@ -378,11 +346,11 @@ knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
 :::
 
-## Identification des reposoirs
+## Les principaux reposoirs
 
 ```{=html}
 <img src="Pointe_d'Arceau_et_pointe_de_Bellevue,_Oléron.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: bottom; margin-bottom: 5px;" />
+     style="width: 100%; height: 200px; object-fit: cover; object-position: bottom; margin-bottom: 20px;" />
 ```
 
 <p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
@@ -396,6 +364,113 @@ Le comportement de repos est défini comme un point GPS d'une vitesse de déplac
 Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
 Verticle à 95% et 50%
+
+test téléchangement carte png 
+
+::: {#fig-UDMap_kud_roosting_A}
+
+```{r}
+#| echo: false
+library(htmltools)
+
+div(
+  style = "display: flex; gap: 10px; align-items: flex-start;",
+
+  # Carte dynamique
+  div(
+    style = "flex: 1;",
+    tags$iframe(
+      id = "map-iframe-roosting-a",
+      src = "UDMap_kud_roosting_A.html",
+      width = "100%",
+      height = "400px",
+      style = "border: none;"
+    )
+  ),
+
+  # Bouton de téléchargement
+  div(
+    style = "padding-top: 10px;",
+    tags$button(
+      id = "download-btn-roosting-a",
+      class = "btn btn-primary",
+      style = "padding: 8px 16px; cursor: pointer;",
+      HTML("&#128229; T&eacute;l&eacute;charger PNG")
+    )
+  )
+)
+
+# Charger les bibliothèques nécessaires
+tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js")
+
+# Script JavaScript
+tags$script(HTML("
+(function() {
+  document.getElementById('download-btn-roosting-a').addEventListener('click', function() {
+    var iframe = document.getElementById('map-iframe-roosting-a');
+    var button = this;
+
+    button.disabled = true;
+    button.textContent = 'Generation...';
+
+    function waitForLib() {
+      if (typeof domtoimage !== 'undefined') {
+        captureIframe();
+      } else {
+        setTimeout(waitForLib, 100);
+      }
+    }
+
+    function captureIframe() {
+      try {
+        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var iframeBody = iframeDoc.body;
+
+        domtoimage.toBlob(iframeBody, {
+          width: iframe.offsetWidth,
+          height: iframe.offsetHeight,
+          style: {
+            transform: 'scale(1)',
+            transformOrigin: 'top left'
+          }
+        })
+        .then(function(blob) {
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = 'UDMap_kud_roosting_A.png';
+          a.click();
+          URL.revokeObjectURL(url);
+
+          button.disabled = false;
+          button.innerHTML = '&#128229; T&eacute;l&eacute;charger PNG';
+        })
+        .catch(function(error) {
+          console.error('Erreur de capture:', error);
+          window.open(iframe.src, '_blank');
+          alert('Capture automatique impossible. Carte ouverte dans nouvel onglet. Utilisez outil de capture navigateur.');
+          button.disabled = false;
+          button.innerHTML = '&#128229; T&eacute;l&eacute;charger PNG';
+        });
+
+      } catch (e) {
+        console.error('Erreur CORS:', e);
+        window.open(iframe.src, '_blank');
+        alert('Restrictions de securite. Carte ouverte dans nouvel onglet. Utilisez outil de capture.');
+        button.disabled = false;
+        button.innerHTML = '&#128229; T&eacute;l&eacute;charger PNG';
+      }
+    }
+
+    waitForLib();
+  });
+})();
+"))
+```
+
+Reposoirs zone A
+
+:::
 
 :::::: panel-tabset
 ### Zone A
@@ -607,7 +682,7 @@ Reposoirs zone C en fonction du sexe
 :::
 ::::::::
 
-## Identification des zones d'alimentation
+## Les principales zones d'alimentation
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
@@ -819,22 +894,6 @@ Alimentation zone C en fonction du sexe
 :::
 ::::::::
 
-## Zone critique de repos et d'alimentation
-
-::: {#fig-zone_critique_hotspot_map_final}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "zone_critique_hotspot_map_final.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Zone critique de repos et d'alimentation
-:::
-
 ## Distance entre les reposoirs et les zones d'alimentation
 
 La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_roost_forag_plot_talk).
@@ -899,9 +958,9 @@ knitr::include_graphics("plot.foraging_maree_repet.png", dpi = 100)
 Variation des zones d'alimentation individuelles au cours des cycles de marée.
 :::
 
-## Quelles zones de report des oiseaux lors des fluctuations environnementales et des perturbations anthropiques ?
+## Report des oiseaux lors des fluctuations environnementales et des perturbations anthropiques
 
-### Fluctuation de l'utilisation de l'espace entre le jour et la nuit
+### Utilisation de l'espace le jour et la nuit
 
 Les périodes de jour et de nuit sont définies sur la base des levers et couchers du soleil issus du logiciel de marée "wxtide32".
 
@@ -1279,11 +1338,27 @@ tags$iframe(
 Tonnes de chasse (point noir, en gros si proche de la RNN, en petit si à distance) et zone de dérangement (rayon de 300 m en rouge, de 500 m en jaune, de 1000 m en marron).
 :::
 
+## Zones critiques
+
+::: {#fig-zone_critique_map}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "zone_critique_map.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone critique: en orange = foraging ; en violet = roosting ; en clair = 95% en foncé = 50% ; en dehors de la réserve, les zones de superposition de roosting et de foraging à 50% en rouge, à 95% en jaune ; les tonnes de chasses non superposé au foraging et roosting en point noir, superposé au 50% en rouge, superposé au 95% en jaune
+:::
+
 # **Discussion**
 
 ```{=html}
 <img src="Numenius_arquata_(no).jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
 ```
 
 ::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
@@ -1308,11 +1383,9 @@ Il serait particulièrement interessant de poursuivre ce suivi en équipant des 
 
 # **Reproductibilité des analyses**
 
-Analyses et rédaction de l'atlas par [Suzanne Bonamour](https://github.com/SuzanneBonamour), chargée de traitement de données, LPO France.
-
 ```{=html}
 <img src="France_-_17_-_Saint-Froult_-_Sentier_des_Polders.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
 ```
 
 ::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
@@ -1320,6 +1393,8 @@ Crédit photo : KiwiNeko14 (Wikimedia Commons)
 :::
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
+
+L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github de Suzanne Bonamour](https://github.com/SuzanneBonamour) 
 
 1.  **Lisez le READme**
 
@@ -1349,7 +1424,7 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 
 ```{=html}
 <img src="RNN_Moëze_Oléron_-_img_48656.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 5px;" />
+     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
 ```
 
 ::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
@@ -1358,5 +1433,39 @@ Crédit photo : Pmau (Wikimedia Commons)
 
 -   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
 -   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
+
+<a href="#top">↑ retour en haut</a>
+
+# **Auteur.ices, affiliations et contributions**
+
+## Analyses statistiques et spatiales
+
+- Suzanne Bonamour (LPO France) 
+- Gwenael Quaintenne (LPO France)
+
+## Travail de terrain, capture et baguage des oiseaux
+
+- Pierre Rousseau (RNN Moëze-Oléron)
+- Loïc Jomat (RNN Moëze-Oléron)
+- Adrien Chaigne (RNN Moëze-Oléron)
+- Pierrick Bocher (RNN Moëze-Oléron)
+- Frédéric Jiguet (RNN Moëze-Oléron)
+- et beaucoup d'autre personnes !
+
+## Rédaction 
+
+- Suzanne Bonamour (LPO France)
+
+## Recherche de financements et partenaires 
+
+- Adrien Chaigne (RNN Moëze-Oléron)
+
+## Comité scientifique 
+
+- Pierrick Bocher (Univ. La Rochelle)
+- Frédéric Jiguet (MNHN, CESCO, Paris)
+- Gwenael Quaintenne (LPO France)
+
+Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
 
 <a href="#top">↑ retour en haut</a>
