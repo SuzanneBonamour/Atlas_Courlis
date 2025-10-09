@@ -55,29 +55,44 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 
 # **Contexte**
 
-```{=html}
-<img src="20170226-Großer_Brachvogel.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
+Créée en 1985, la Réserve naturelle nationale de Moëze-Oléron (RNNMO, @fig-Photo_intro) s’étend sur près de 6 800 hectares entre le continent charentais et l’île d’Oléron. Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année environ 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants. 
+
+::: {#fig-Photo_intro}
+```{r, out.height = "300px", out.width= "1350px"}
+#| echo: false
+knitr::include_graphics("photo_intro_RNNMO.png", dpi = 100)
 ```
 
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : JoachimKohlerBremen (Wikimedia Commons)
+La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (RNNMO - LPO), b) vue aérienne côté continent (Romain Beaubert LPO), c) vue aérienne de la côte (RNNMO - LPO).
 :::
+
+Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques (@fig-flux) et contribuant à la conservation des oiseaux d’eau à l’échelle internationale.
+
+::: {#fig-flux}
+```{r, out.height = "400px", out.width= "600px"}
+#| echo: false
+knitr::include_graphics("Cartes flux migrateurs France RN (2).jpg", dpi = 100)
+```
+
+La réserve naturelle nationale de Moëze-Oléron est un maillon important sur le route de migration de nombreuses espèces de limicoles (RNNMO - LPO).
+:::
+
+Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendrés au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-baguage).
+
+::: {#fig-baguage}
+```{r, out.height = "300px", out.width= "800px"}
+#| echo: false
+knitr::include_graphics("baguage.png", dpi = 100)
+```
+
+Suivi du coulirs cendré : a) courlis cendré bagué (Armel Deniau), b) pose d'un GPS sur une courlis cendré (Loic Jomat)
+:::
+
+<a href="#top">↑ retour en haut</a>
 
 ## Objectifs scientifiques et techniques
 
-Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendré au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-Photo_intro).
-
 L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map_new). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
-
-::: {#fig-Photo_intro}
-```{r}
-#| echo: false
-knitr::include_graphics("Photo_intro.png", dpi = 100)
-```
-
-Courlis cendré (a), Equipement GPS d'un courlis cendré (b), Survol drone de la réserve naturelle nationale de Moëze-Oléron côté continent (c, crédit photos : Armel Deniau/LPO, Loic Jomat/LPO, Romain Beaubert/LPO).
-:::
 
 À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
 
@@ -89,15 +104,15 @@ Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux c
 
 ## Le courlis cendré
 
-### Morphologie
+**Morphologie**
 
 Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
 
-### Comportement général
+**Comportement général**
 
 Espèce discrète, au comportement prudent. Territorial en période de reproduction, grégaire en dehors de celle-ci. Chant flûté, ascendant et mélancolique, souvent émis en vol.
 
-### Régime alimentaire
+**Régime alimentaire**
 
 Régime invertivore dominant : vers de terre, insectes, mollusques, crustacés. Complété ponctuellement par des graines et baies. Alimentation au sol ou par sondage dans la vase ou les prairies humides. Habitat
 
@@ -105,15 +120,15 @@ Régime invertivore dominant : vers de terre, insectes, mollusques, crustacés. 
 -   Habitat d’alimentation : vasières intertidales, estuaires, prés salés, prairies humides, pâtures.
 -   Habitat de repos (hors reproduction) : vasières, zones littorales, lagunes, marais salants.
 
-### Saison de reproduction
+**Saison de reproduction**
 
 Avril à juillet. Nid au sol, souvent dissimulé dans la végétation. Ponte de 3–4 œufs. Incubation \~28 jours. Émancipation des jeunes vers 5–6 semaines.
 
-### Migration
+**Migration**
 
 Migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, présence à l’année dans certaines régions littorales (ex. : Baie de Somme, estuaire de la Loire), migration marquée en automne et au printemps.
 
-### Effectifs de population
+**Effectifs de population**
 
 Population mondiale : estimée à 140 000 – 240 000 couples reproducteurs (équivalent à environ 280 000 – 480 000 individus matures).
 
@@ -126,7 +141,7 @@ Population française :
 
 Tendance : déclin modéré à marqué en Europe occidentale. Fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %).
 
-### Statuts de conservation
+**Statuts de conservation**
 
 IUCN : Near Threatened (Quasi menacé) à l’échelle mondiale.
 
@@ -139,15 +154,6 @@ International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Dire
 <a href="#top">↑ retour en haut</a>
 
 # **Analyses spatiales**
-
-```{=html}
-<img src="Eurasian_Curlew_by_Tisha_Mukherjee_08.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : Tisha Mukherjee (Wikimedia Commons)
-:::
 
 Le détail des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
 
