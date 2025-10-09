@@ -85,17 +85,6 @@ Le travail présenté ici propose une cartographie fine de la répartition des c
 
 Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par l’Etat (Fonds Vert) et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
 
-::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
-<img src="lpo_logo.jpg" height="100">
-<img src="reserve_logo.png" height="100">
-<img src="MNHN-logo.jpg" height="100">
-<img src="logo_CESCO.png" height="100">
-<img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100">
-<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100">
-<img src="LIENSs_transp1-e1485208828412.png" height="100">
-<img src="fonds-vert_logo.png" height="100">
-:::
-
 <a href="#top">↑ retour en haut</a>
 
 ## Le courlis cendré
@@ -1469,3 +1458,14 @@ Crédit photo : Pmau (Wikimedia Commons)
 Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
 
 <a href="#top">↑ retour en haut</a>
+
+::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
+<img src="lpo_logo.jpg" height="100">
+<img src="reserve_logo.png" height="100">
+<img src="MNHN-logo.jpg" height="100">
+<img src="logo_CESCO.png" height="100">
+<img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100">
+<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100">
+<img src="LIENSs_transp1-e1485208828412.png" height="100">
+<img src="fonds-vert_logo.png" height="100">
+:::
