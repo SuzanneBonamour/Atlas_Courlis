@@ -53,7 +53,15 @@ data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
-# **Contexte**
+# **Messages clés**
+
+Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.
+
+Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis militibus discrepantes opposita cuncta superasse virtute.
+
+Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique ut solent avia montium petiere celsorum.
+
+# **Contexte et objectifs scientifiques**
 
 Créée en 1985, la Réserve naturelle nationale de Moëze-Oléron (RNNMO, @fig-Photo_intro) s’étend sur près de 6 800 hectares entre le continent charentais et l’île d’Oléron. Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année environ 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants. 
 
@@ -69,7 +77,7 @@ La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (RNNMO
 Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques (@fig-flux) et contribuant à la conservation des oiseaux d’eau à l’échelle internationale.
 
 ::: {#fig-flux}
-```{r, out.height = "400px", out.width= "800px"}
+```{r, out.height = "400px", out.width= "900px"}
 #| echo: false
 knitr::include_graphics("Cartes flux migrateurs France RN (2).jpg", dpi = 100)
 ```
@@ -90,8 +98,6 @@ Suivi du coulirs cendré : a) courlis cendré bagué (Armel Deniau), b) pose d'u
 
 <a href="#top">↑ retour en haut</a>
 
-## Objectifs scientifiques et techniques
-
 L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map_new). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
 
 À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
@@ -102,7 +108,7 @@ Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux c
 
 <a href="#top">↑ retour en haut</a>
 
-## Le courlis cendré
+# **Le courlis cendré**
 
 ::: {#fig-baguage}
 ```{r, out.height = "300px", out.width= "500"}
@@ -162,11 +168,7 @@ International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Dire
 
 <a href="#top">↑ retour en haut</a>
 
-# **Analyses spatiales**
-
-Le détail des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
-
-## La zone d'étude
+# **La zone d'étude**
 
 ```{r}
 #| include: false
@@ -198,72 +200,8 @@ tags$iframe(
 Zones d'études - zone d'étude globale (zone blanche) et zones d'études réduites (zones A, B, C)
 :::
 
-## Les données GPS utilisées
 
-### Nettoyage des données GPS
-
-Le nettoyage des données issues des balises GPS a principalement été effectué à l'aide du package R adehabitat [Calenge (2006)](#calenge2006).
-
-En résumé, les points utilisés pour déterminer les comportements d’alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5 km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d’étude ont été utilisés. Le temps entre chaque point de localisation sauvegardé par individu pouvant varier et provoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l’oiseau a enregistré plus d’un point par période de 5 min ont été analysés (éviter d’analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basse de 100 points estimés par individus sur une période supérieure à 28 jours (deux cycles lunaires) a été appliquée pour maintenir une très haute qualité de suivi des individus pour les analyses.
-
-### Taille des jeux de données analysés
-
-Taille du jeu de données brut :
-
--   Nombre d'individu : 99
--   Nombre de point GPS enregistrés : 5 230 178
-
-Taille du jeu de données dans la zone d'étude :
-
--   Nombre d'individu : 83
--   Nombre de point GPS enregistrés : 3 138 014
-
-```{r}
-#| eval: false
-#| include: false
-data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
-GPS <- st_read(file.path(data_generated_path, "GPS_clean.gpkg"))
-
-GPS$y_m_d <- ymd(as.Date(GPS$datetime))
-```
-
-```{r}
-#| eval: false
-#| include: false
-
-nb_point <- length(GPS$ID)
-
-nb_ind <- length(unique(GPS$ID))
-
-min_year <- min(GPS$year)
-max_year <- max(GPS$year)
-
-age_dt_point <- as.data.frame(table(GPS$age))
-
-age_dt_ind <- GPS %>%
-  dplyr::select(ID, age) %>%
-  distinct() %>%
-  group_by(age) %>%
-  summarise(n = n())
-
-sexe_dt <- GPS %>%
-  dplyr::select(ID, sex) %>%
-  distinct() %>%
-  group_by(sex) %>%
-  summarise(n = n())
-
-# texte à ajouter dans quarto quand propore :
-
-# Taille du jeu de données final utilisé (après nettoyage et filtration des données) :
-#
-# - La période de suivi court de `r min_year` à `r max_year`
-# - Nombre d'individu : 46
-# - Nombre de point GPS enregistrés : 406 687
-# - Nombre de femme : 7 (`r sexe_dt$n[1]` points GPS), nombre de mâle : 7 (`r sexe_dt$n[2]` points GPS)
-# - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
-```
-
-## Période d'émission des balises GPS
+# ** Périodes d'émission des balises GPS**
 
 ::: {#fig-emission_plot}
 ```{r}
@@ -276,7 +214,7 @@ knitr::include_graphics("emission_plot.png", dpi = 100)
 Période d'émission des balises GPS pour les individus étudiés.
 :::
 
-## Temps passé dans la réserve naturelle de Moëze-Oléron
+# **Temps passé dans la réserve naturelle de Moëze-Oléron**
 
 Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
 
@@ -298,7 +236,7 @@ knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
 Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
 :::
 
-## Domaines vitaux au sein de la réserve de Moëze-Oléron
+# **Domaines vitaux au sein de la réserve de Moëze-Oléron**
 
 La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal.
 
@@ -350,7 +288,7 @@ knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
 :::
 
-## Les principaux reposoirs
+# **Les principaux reposoirs**
 
 ::: {#fig-baguage}
 ```{r, out.height = "300px", out.width= "500px"}
@@ -475,7 +413,7 @@ Reposoirs zone A
 :::
 
 :::::: panel-tabset
-### Zone A
+## Zone A
 
 ::: {#fig-UDMap_kud_roosting_A}
 ```{r}
@@ -491,7 +429,7 @@ tags$iframe(
 Reposoirs zone A
 :::
 
-### Zone B
+## Zone B
 
 ::: {#fig-UDMap_kud_roosting_B}
 ```{r}
@@ -507,7 +445,7 @@ tags$iframe(
 Reposoirs zone B
 :::
 
-### Zone C
+## Zone C
 
 ::: {#fig-UDMap_kud_roosting_C}
 ```{r}
@@ -524,59 +462,7 @@ Reposoirs zone C
 :::
 ::::::
 
-### Reposoir en fonction du mois de l'année
-
-:::::::: panel-tabset
-### Zone A
-
-::: {#fig-UDMap_kud_roosting_month_label_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_roosting_month_label_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone A en fonction du mois
-:::
-
-### Zone B
-
-::: {#fig-UDMap_kud_roosting_month_label_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_roosting_month_label_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone B en fonction du mois
-:::
-
-### Zone C
-
-::: {#fig-UDMap_kud_roosting_month_label_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_roosting_month_label_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone C en fonction du mois
-:::
-::::::::
-
-### Reposoir en fonction de l'age
+## Reposoir en fonction de l'age
 
 L'âge des individus est déterminé au baguage grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
 
@@ -630,7 +516,7 @@ Reposoirs zone C en fonction de l'âge
 :::
 ::::::::
 
-### Reposoir en fonction du sexe
+## Reposoir en fonction du sexe
 
 Le sexe des individus a été déterminé lors de la pose des GPS.
 
@@ -684,302 +570,64 @@ Reposoirs zone C en fonction du sexe
 :::
 ::::::::
 
-## Les principales zones d'alimentation
+## Zone d'alimentation en fonction du calendrier
 
-::: {#fig-baguage}
-```{r, out.height = "300px", out.width= "500px"}
-#| echo: false
-knitr::include_graphics("Pierre-Marie Epiney.png", dpi = 100)
-```
-
-Comportement d'alimentation (Pierre-Marie Epiney)
-:::
-
-
-Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
-
-Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-:::::: panel-tabset
-### Zone A
-
-::: {#fig-UDMap_kud_foraging_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone A
-:::
-
-### Zone B
-
-::: {#fig-UDMap_kud_foraging_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone B
-:::
-
-### Zone C
-
-::: {#fig-UDMap_kud_foraging_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone C
-:::
-::::::
-
-### Zone d'alimentation en fonction du mois de l'année
+### Reposoir en fonction du mois de l'année
 
 :::::::: panel-tabset
-### Zone A
+#### Zone A
 
-::: {#fig-UDMap_kud_foraging_month_label_A}
+::: {#fig-UDMap_kud_roosting_month_label_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_month_label_A.html",
+  src = "UDMap_kud_roosting_month_label_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Zone d'alimentation zone A en fonction du mois
+Reposoirs zone A en fonction du mois
 :::
 
-### Zone B
+#### Zone B
 
-::: {#fig-UDMap_kud_foraging_month_label_B}
+::: {#fig-UDMap_kud_roosting_month_label_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_month_label_B.html",
+  src = "UDMap_kud_roosting_month_label_B.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Zone d'alimentation zone B en fonction du mois
+Reposoirs zone B en fonction du mois
 :::
 
-### Zone C
+#### Zone C
 
-::: {#fig-UDMap_kud_foraging_month_label_C}
+::: {#fig-UDMap_kud_roosting_month_label_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_month_label_C.html",
+  src = "UDMap_kud_roosting_month_label_C.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Zone d'alimentation zone C en fonction du mois
+Reposoirs zone C en fonction du mois
 :::
 ::::::::
 
-### Zone d'alimentation en fonction de l'age
+### Reposoir en fonction du jour et de la nuit
 
 :::::::: panel-tabset
-### Zone A
-
-::: {#fig-UDMap_kud_foraging_age_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_age_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone A en fonction de l'âge
-:::
-
-### Zone B
-
-::: {#fig-UDMap_kud_foraging_age_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_age_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone B en fonction de l'âge
-:::
-
-### Zone C
-
-::: {#fig-UDMap_kud_foraging_age_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_age_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone C en fonction de l'âge
-:::
-::::::::
-
-### Zone d'alimentation en fonction du sexe
-
-:::::::: panel-tabset
-### Zone A
-
-::: {#fig-UDMap_kud_foraging_sex_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_sex_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone A en fonction du sexe
-:::
-
-### Zone B
-
-::: {#fig-UDMap_kud_foraging_sex_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_sex_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone B en fonction du sexe
-:::
-
-### Zone C
-
-::: {#fig-UDMap_kud_foraging_sex_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_sex_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Alimentation zone C en fonction du sexe
-:::
-::::::::
-
-## Distance entre les reposoirs et les zones d'alimentation
-
-La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_roost_forag_plot_talk).
-
-Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
-
-::: {#fig-distance_roost_forag_plot_talk}
-```{r}
-#| echo: false
-#| out.width: 90%
-#| fig-align: "center"
-knitr::include_graphics("distance_roost_forag_plot_talk.png", dpi = 100)
-```
-
-Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
-:::
-
-Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_allvar_plot).
-
-::: {#fig-distance_roost_forag_allvar_plot}
-```{r}
-#| echo: false
-#| fig-align: center
-#| out-width: 70%
-knitr::include_graphics("distance_roost_forag_allvar_plot.png", dpi = 100)
-```
-
-Effets du sexe, de l'âge et de la hauteur de marée sur la distance individuelle à chaque cycle de marée entre les zones d'alimentation et de repos.
-:::
-
-Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
-
-## Fidélité aux espaces au cours des cycles de marée
-
-Afin d'estimer la fidélité à leurs zones, pour le repos, comme pour l'alimentation, des zones d'utilisation principale de l'espace sont estimées en fonction des années ou des mois, puis le chevauchement de ces zones est estimé deux à deux. Un fort chevauchement équivaut à une forte similarité entre les zones au cours du temps, ce qui équivaut à une forte fidélité à leurs zones.
-
-La fidélité inter-annuelle aux espaces a également été estimé. Néanmoins, trop de variabilité inter-individuelle sont ressorties pour pouvoir tirer des conclusions de ces analyses.
-
-### Reposoirs
-
-::: {#fig-plot.roosting_maree_repet}
-```{r}
-#| echo: false
-#| out.width: 70%
-#| fig-align: "center"
-knitr::include_graphics("plot.roosting_maree_repet.png", dpi = 100)
-```
-
-Variation des reposoirs individuels au cours des cycles de marée.
-:::
-
-### ! Alimentation
-
-::: {#fig-plot_._foraging_maree_repet}
-```{r}
-#| echo: false
-#| out.width: 70%
-#| fig-align: "center"
-knitr::include_graphics("plot.foraging_maree_repet.png", dpi = 100)
-```
-
-Variation des zones d'alimentation individuelles au cours des cycles de marée.
-:::
-
-## Report des oiseaux lors des fluctuations environnementales et des perturbations anthropiques
-
-### Utilisation de l'espace le jour et la nuit
-
-Les périodes de jour et de nuit sont définies sur la base des levers et couchers du soleil issus du logiciel de marée "wxtide32".
-
-#### Reposoirs
-
-:::::::: panel-tabset
-##### Zone A
+#### Zone A
 
 ::: {#fig-UDMap_kud_roosting_timeofday_A}
 ```{r}
@@ -995,7 +643,7 @@ tags$iframe(
 Reposoirs zone A en fonction du jour et de la nuit
 :::
 
-##### Zone B
+#### Zone B
 
 ::: {#fig-UDMap_kud_roosting_timeofday_B}
 ```{r}
@@ -1011,7 +659,7 @@ tags$iframe(
 Reposoirs zone B en fonction du jour et de la nuit
 :::
 
-##### Zone C
+#### Zone C
 
 ::: {#fig-UDMap_kud_roosting_timeofday_C}
 ```{r}
@@ -1019,58 +667,6 @@ Reposoirs zone B en fonction du jour et de la nuit
 
 tags$iframe(
   src = "UDMap_kud_roosting_timeofday_C.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone C en fonction du jour et de la nuit
-:::
-::::::::
-
-#### Alimentation
-
-:::::::: panel-tabset
-##### Zone A
-
-::: {#fig-UDMap_foraging_timeofday_A}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_timeofday_A.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone A en fonction du jour et de la nuit
-:::
-
-##### Zone B
-
-::: {#fig-UDMap_kud_foraging_timeofday_B}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_timeofday_B.html",
-  width = "100%",
-  height = "400px"
-)
-```
-
-Reposoirs zone B en fonction du jour et de la nuit
-:::
-
-##### Zone C
-
-::: {#fig-UDMap_kud_foraging_timeofday_C}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "UDMap_kud_foraging_timeofday_C.html",
   width = "100%",
   height = "400px"
 )
@@ -1146,7 +742,287 @@ Reposoirs en fonction de la hauteur d'eau, zone C
 :::
 ::::::::
 
-### Utilisation de l'espace par les Courlis cendré lors d'évènements de vent extrêmes
+
+# **Les principales zones d'alimentation**
+
+::: {#fig-baguage}
+```{r, out.height = "300px", out.width= "500px"}
+#| echo: false
+knitr::include_graphics("Pierre-Marie Epiney.png", dpi = 100)
+```
+
+Comportement d'alimentation (Pierre-Marie Epiney)
+:::
+
+
+Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
+
+Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+
+:::::: panel-tabset
+## Zone A
+
+::: {#fig-UDMap_kud_foraging_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone A
+:::
+
+## Zone B
+
+::: {#fig-UDMap_kud_foraging_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B
+:::
+
+## Zone C
+
+::: {#fig-UDMap_kud_foraging_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C
+:::
+::::::
+
+## Zone d'alimentation en fonction des caractéristiques biologique des individus
+
+### Zone d'alimentation en fonction de l'age
+
+:::::::: panel-tabset
+#### Zone A
+
+::: {#fig-UDMap_kud_foraging_age_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_age_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone A en fonction de l'âge
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_foraging_age_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_age_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B en fonction de l'âge
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_foraging_age_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_age_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C en fonction de l'âge
+:::
+::::::::
+
+### Zone d'alimentation en fonction du sexe
+
+:::::::: panel-tabset
+#### Zone A
+
+::: {#fig-UDMap_kud_foraging_sex_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_sex_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone A en fonction du sexe
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_foraging_sex_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_sex_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone B en fonction du sexe
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_foraging_sex_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_sex_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Alimentation zone C en fonction du sexe
+:::
+::::::::
+
+
+## Zone d'alimentation en fonction du calendrier
+
+### Zone d'alimentation en fonction du mois de l'année
+
+:::::::: panel-tabset
+#### Zone A
+
+::: {#fig-UDMap_kud_foraging_month_label_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_month_label_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone A en fonction du mois
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_foraging_month_label_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_month_label_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone B en fonction du mois
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_foraging_month_label_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_month_label_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone C en fonction du mois
+:::
+::::::::
+
+### Zone d'alimentation en fonction du jour et de la nuit
+
+:::::::: panel-tabset
+#### Zone A
+
+::: {#fig-UDMap_kud_foraging_timeofday_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_timeofday_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone A en fonction du jour et de la nuit
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_foraging_timeofday_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_timeofday_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone B en fonction du jour et de la nuit
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_foraging_timeofday_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_timeofday_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zone d'alimentation zone C en fonction du jour et de la nuit
+:::
+::::::::
+
+# **Utilisation de l'espace par les Courlis cendré lors d'évènements de vent extrêmes**
 
 
 /!\ autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
@@ -1173,7 +1049,7 @@ Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de r
 Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
 
 :::::::: panel-tabset
-#### Zone A
+## Zone A
 
 ::: {#fig-UDMap_kud_foraging_ECE_wspd_A}
 ```{r}
@@ -1189,7 +1065,7 @@ tags$iframe(
 Alimentation zone A en fonction des vents forts
 :::
 
-#### Zone B
+## Zone B
 
 ::: {#fig-UDMap_kud_foraging_ECE_wspd}
 ```{r}
@@ -1205,7 +1081,7 @@ tags$iframe(
 Alimentation zone B en fonction des vents forts
 :::
 
-#### Zone C
+## Zone C
 
 ::: {#fig-UDMap_kud_foraging_ECE_wspd_C}
 ```{r}
@@ -1222,11 +1098,76 @@ Alimentation zone C en fonction des vents forts
 :::
 ::::::::
 
-### Comportement d’évitement de la chasse sur le Domaine Public Maritime et de la chasse à la tonne
 
-#### Chasse sur le Domaine Public Maritime
+# **Distance entre les reposoirs et les zones d'alimentation**
 
-##### Effet de la période de chasse
+La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_roost_forag_plot_talk).
+
+Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
+
+::: {#fig-distance_roost_forag_plot_talk}
+```{r}
+#| echo: false
+#| out.width: 90%
+#| fig-align: "center"
+knitr::include_graphics("distance_roost_forag_plot_talk.png", dpi = 100)
+```
+
+Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
+:::
+
+Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_allvar_plot).
+
+::: {#fig-distance_roost_forag_allvar_plot}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 70%
+knitr::include_graphics("distance_roost_forag_allvar_plot.png", dpi = 100)
+```
+
+Effets du sexe, de l'âge et de la hauteur de marée sur la distance individuelle à chaque cycle de marée entre les zones d'alimentation et de repos.
+:::
+
+Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
+
+## Fidélité aux espaces au cours des cycles de marée
+
+Afin d'estimer la fidélité à leurs zones, pour le repos, comme pour l'alimentation, des zones d'utilisation principale de l'espace sont estimées en fonction des années ou des mois, puis le chevauchement de ces zones est estimé deux à deux. Un fort chevauchement équivaut à une forte similarité entre les zones au cours du temps, ce qui équivaut à une forte fidélité à leurs zones.
+
+La fidélité inter-annuelle aux espaces a également été estimé. Néanmoins, trop de variabilité inter-individuelle sont ressorties pour pouvoir tirer des conclusions de ces analyses.
+
+### Reposoirs
+
+::: {#fig-plot.roosting_maree_repet}
+```{r}
+#| echo: false
+#| out.width: 70%
+#| fig-align: "center"
+knitr::include_graphics("plot.roosting_maree_repet.png", dpi = 100)
+```
+
+Variation des reposoirs individuels au cours des cycles de marée.
+:::
+
+### ! Alimentation
+
+::: {#fig-plot_._foraging_maree_repet}
+```{r}
+#| echo: false
+#| out.width: 70%
+#| fig-align: "center"
+knitr::include_graphics("plot.foraging_maree_repet.png", dpi = 100)
+```
+
+Variation des zones d'alimentation individuelles au cours des cycles de marée.
+:::
+
+# **Evitement des chasseurs et des zones de chasses**
+
+## Chasse sur le Domaine Public Maritime
+
+Effet de la période de chasse : 
 
 L'utilisation de l'espace par les Courlis cendrés pendant et hors période de chasse à pied sont comparés.
 
@@ -1293,7 +1234,7 @@ Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasse
 
 Aucun effet n'a pu être visuellement détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
-#### Chasse à la tonne
+## Chasse à la tonne
 
 !!!!!! testé mais sans effets detecté : changement d'utilisation de l'espace quand fermeture de la chasse, avec zone de danger et zone de proximité > saison de chasse (sept-fev), saison + heure de chasse, periode d'étude de chasse (15j av/ap),  periode d'étude + heure de chasse (15j av/ap), 
 
@@ -1350,7 +1291,7 @@ tags$iframe(
 Tonnes de chasse (point noir, en gros si proche de la RNN, en petit si à distance) et zone de dérangement (rayon de 300 m en rouge, de 500 m en jaune, de 1000 m en marron).
 :::
 
-## Zones critiques
+# **Zones critiques**
 
 ::: {#fig-zone_critique_map}
 ```{r}
@@ -1384,7 +1325,100 @@ Ainsi donc, les oiseaux étudié ici on une utilisation de l'espace orienté aut
 
 Il serait particulièrement interessant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve, notamment sur l'ile d'Oléron pour obtenir une vue globale généralisable à l'ensemble de la population de Courlis dans la région.
 
-# **Reproductibilité des analyses**
+# **Matériels et Méthodes**
+
+Le détail des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
+
+## Les données GPS
+
+### Nettoyage des données GPS
+
+Le nettoyage des données issues des balises GPS a principalement été effectué à l'aide du package R adehabitat [Calenge (2006)](#calenge2006).
+
+En résumé, les points utilisés pour déterminer les comportements d’alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5 km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d’étude ont été utilisés. Le temps entre chaque point de localisation sauvegardé par individu pouvant varier et provoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l’oiseau a enregistré plus d’un point par période de 5 min ont été analysés (éviter d’analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basse de 100 points estimés par individus sur une période supérieure à 28 jours (deux cycles lunaires) a été appliquée pour maintenir une très haute qualité de suivi des individus pour les analyses.
+
+### Taille des jeux de données analysés
+
+Taille du jeu de données brut :
+
+-   Nombre d'individu : 99
+-   Nombre de point GPS enregistrés : 5 230 178
+
+Taille du jeu de données dans la zone d'étude :
+
+-   Nombre d'individu : 83
+-   Nombre de point GPS enregistrés : 3 138 014
+
+```{r}
+#| eval: false
+#| include: false
+data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
+GPS <- st_read(file.path(data_generated_path, "GPS_clean.gpkg"))
+
+GPS$y_m_d <- ymd(as.Date(GPS$datetime))
+```
+
+```{r}
+#| eval: false
+#| include: false
+
+nb_point <- length(GPS$ID)
+
+nb_ind <- length(unique(GPS$ID))
+
+min_year <- min(GPS$year)
+max_year <- max(GPS$year)
+
+age_dt_point <- as.data.frame(table(GPS$age))
+
+age_dt_ind <- GPS %>%
+  dplyr::select(ID, age) %>%
+  distinct() %>%
+  group_by(age) %>%
+  summarise(n = n())
+
+sexe_dt <- GPS %>%
+  dplyr::select(ID, sex) %>%
+  distinct() %>%
+  group_by(sex) %>%
+  summarise(n = n())
+
+# texte à ajouter dans quarto quand propore :
+
+# Taille du jeu de données final utilisé (après nettoyage et filtration des données) :
+#
+# - La période de suivi court de `r min_year` à `r max_year`
+# - Nombre d'individu : 46
+# - Nombre de point GPS enregistrés : 406 687
+# - Nombre de femme : 7 (`r sexe_dt$n[1]` points GPS), nombre de mâle : 7 (`r sexe_dt$n[2]` points GPS)
+# - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
+```
+
+## Résumé des méthodes utilisées pour les analyses
+
+**Analyses 1**
+
+Ardeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae, qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam.
+
+**Analyses 2**
+
+Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.
+
+**Analyses 3**
+
+Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.
+
+**Analyses 4**
+
+Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia restitisset.
+
+**Analyses 5**
+
+Et olim licet otiosae sint tribus pacataeque centuriae et nulla suffragiorum certamina set Pompiliani redierit securitas temporis, per omnes tamen quotquot sunt partes terrarum, ut domina suscipitur et regina et ubique patrum reverenda cum auctoritate canities populique Romani nomen circumspectum et verecundum.
+
+**Voir ci-dessous pour plus de détails.**
+
+## Reproductibilité des analyses
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
 
@@ -1423,12 +1457,12 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 
 # **Auteur.ices, affiliations et contributions**
 
-## Analyses statistiques et spatiales
+**Analyses statistiques et spatiales**
 
 - Suzanne Bonamour (LPO France) 
 - Gwenael Quaintenne (LPO France)
 
-## Travail de terrain, capture et baguage des oiseaux
+**Travail de terrain, capture et baguage des oiseaux**
 
 - Pierre Rousseau (RNN Moëze-Oléron)
 - Loïc Jomat (RNN Moëze-Oléron)
@@ -1437,15 +1471,15 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 - Frédéric Jiguet (RNN Moëze-Oléron)
 - et beaucoup d'autre personnes !
 
-## Rédaction 
+**Rédaction** 
 
 - Suzanne Bonamour (LPO France)
 
-## Recherche de financements et partenaires 
+**Recherche de financements et partenaires** 
 
 - Adrien Chaigne (RNN Moëze-Oléron)
 
-## Comité scientifique 
+**Comité scientifique**
 
 - Pierrick Bocher (Univ. La Rochelle)
 - Frédéric Jiguet (MNHN, CESCO, Paris)
