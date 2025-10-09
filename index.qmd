@@ -69,7 +69,7 @@ La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (RNNMO
 Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques (@fig-flux) et contribuant à la conservation des oiseaux d’eau à l’échelle internationale.
 
 ::: {#fig-flux}
-```{r, out.height = "400px", out.width= "600px"}
+```{r, out.height = "400px", out.width= "800px"}
 #| echo: false
 knitr::include_graphics("Cartes flux migrateurs France RN (2).jpg", dpi = 100)
 ```
@@ -103,6 +103,15 @@ Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux c
 <a href="#top">↑ retour en haut</a>
 
 ## Le courlis cendré
+
+::: {#fig-baguage}
+```{r, out.height = "300px", out.width= "500"}
+#| echo: false
+knitr::include_graphics("20170226-Großer_Brachvogel.jpg", dpi = 100)
+```
+
+Courlis cendrés en vol (Großer_Brachvogel)
+:::
 
 **Morphologie**
 
@@ -343,16 +352,14 @@ Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de
 
 ## Les principaux reposoirs
 
-```{=html}
-<img src="Pointe_d'Arceau_et_pointe_de_Bellevue,_Oléron.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: bottom; margin-bottom: 20px;" />
+::: {#fig-baguage}
+```{r, out.height = "300px", out.width= "500px"}
+#| echo: false
+knitr::include_graphics("roosting_Laurie Campbell.jpg", dpi = 100)
 ```
 
-<p style="font-size: 0.8em; color: lightgray; text-align: right; margin-top: 0;">
-
-Crédit photo : Idaho69 (Wikimedia Commons)
-
-</p>
+Comportement de repos (*roosting* en anglais) (Laurie Campbell)
+:::
 
 Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
@@ -678,6 +685,16 @@ Reposoirs zone C en fonction du sexe
 ::::::::
 
 ## Les principales zones d'alimentation
+
+::: {#fig-baguage}
+```{r, out.height = "300px", out.width= "500px"}
+#| echo: false
+knitr::include_graphics("Pierre-Marie Epiney.png", dpi = 100)
+```
+
+Comportement d'alimentation (Pierre-Marie Epiney)
+:::
+
 
 Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
 
@@ -1351,15 +1368,6 @@ Zone critique: en orange = foraging ; en violet = roosting ; en clair = 95% en f
 
 # **Discussion**
 
-```{=html}
-<img src="Numenius_arquata_(no).jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : Arnstein Rønning (Wikimedia Commons)
-:::
-
 ## Jeu de données et puissance statistique
 
 Bien que ce jeu de données soit exceptionnel de par son nombre d'individus suivis (99 individus) et son échelle temporelle (10 ans), les analyses statistiques effectuées ici manques de puissance pour répondre avec précisions et plus de robustesse aux questions posées.
@@ -1377,15 +1385,6 @@ Ainsi donc, les oiseaux étudié ici on une utilisation de l'espace orienté aut
 Il serait particulièrement interessant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve, notamment sur l'ile d'Oléron pour obtenir une vue globale généralisable à l'ensemble de la population de Courlis dans la région.
 
 # **Reproductibilité des analyses**
-
-```{=html}
-<img src="France_-_17_-_Saint-Froult_-_Sentier_des_Polders.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : KiwiNeko14 (Wikimedia Commons)
-:::
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
 
@@ -1416,15 +1415,6 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 <a href="#top">↑ retour en haut</a>
 
 # **Bibliographie**
-
-```{=html}
-<img src="RNN_Moëze_Oléron_-_img_48656.jpg"
-     style="width: 100%; height: 200px; object-fit: cover; object-position: center; margin-bottom: 20px;" />
-```
-
-::: {style="font-size: 0.5em; color: #aaa; text-align: right; margin-top: -10px;"}
-Crédit photo : Pmau (Wikimedia Commons)
-:::
 
 -   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
 -   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
