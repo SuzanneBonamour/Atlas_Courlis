@@ -63,7 +63,7 @@ Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem per
 
 # **Contexte et objectifs scientifiques**
 
-Créée en 1985, la Réserve naturelle nationale de Moëze-Oléron (RNNMO, @fig-Photo_intro) s’étend sur près de 6 800 hectares entre le continent charentais et l’île d’Oléron. Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année environ 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants. 
+Créée en 1985, la Réserve Naturelle Nationale de Moëze-Oléron (RNNMO, @fig-Photo_intro), située dans le département de la charente maritime, s’étend sur près de 6 800 hectares entre le continent et l’île d’Oléron. Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année jusqu'à 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants.
 
 ::: {#fig-Photo_intro}
 ```{r, out.height = "300px", out.width= "1350px"}
@@ -71,7 +71,7 @@ Créée en 1985, la Réserve naturelle nationale de Moëze-Oléron (RNNMO, @fig-
 knitr::include_graphics("photo_intro_RNNMO.png", dpi = 100)
 ```
 
-La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (RNNMO - LPO), b) vue aérienne côté continent (Romain Beaubert LPO), c) vue aérienne de la côte (RNNMO - LPO).
+La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (©RNNMO - LPO), b) vue aérienne côté continent (©Romain Beaubert - LPO), c) vue aérienne de la côte (©RNNMO - LPO).
 :::
 
 Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques (@fig-flux) et contribuant à la conservation des oiseaux d’eau à l’échelle internationale.
@@ -93,7 +93,7 @@ Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaborat
 knitr::include_graphics("baguage.png", dpi = 100)
 ```
 
-Suivi du coulirs cendré : a) courlis cendré bagué (Armel Deniau), b) pose d'un GPS sur une courlis cendré (Loic Jomat)
+Suivi du coulirs cendré : a) courlis cendré bagué (©Armel Deniau), b) pose d'un GPS sur une courlis cendré (©Loic Jomat)
 :::
 
 <a href="#top">↑ retour en haut</a>
@@ -110,7 +110,7 @@ Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux c
 
 # **Le courlis cendré**
 
-::: {#fig-baguage}
+::: {#fig-20170226}
 ```{r, out.height = "300px", out.width= "500"}
 #| echo: false
 knitr::include_graphics("20170226-Großer_Brachvogel.jpg", dpi = 100)
@@ -184,8 +184,6 @@ La zone d'étude (voir @fig-zone_map_new) est un rectangle de `r area_box_km` km
 -   au Sud jusqu'à l'estuaire de la Seudre,
 -   et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi zone fonctionnelle du bassin de Marennes, la réserve de Moëze-Oléron et le marais de Brouage.
 
-Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B et C ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
-
 ::: {#fig-zone_map_new}
 ```{r}
 #| echo: false
@@ -197,11 +195,59 @@ tags$iframe(
 )
 ```
 
-Zones d'études - zone d'étude globale (zone blanche) et zones d'études réduites (zones A, B, C)
+La zone d'étude est divisée en trois zones distinctes A, B et C
 :::
 
+# **Périodes de suivi des individus**
 
-# ** Périodes d'émission des balises GPS**
+Les individus sont bagués et équipés de GPS au sein de la RNNMO (voir le site de baguage, épingle rouge @fig-zone_map_new).
+
+```{r}
+#| eval: false
+#| include: false
+data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
+GPS <- st_read(file.path(data_generated_path, "GPS_clean.gpkg"))
+
+GPS$y_m_d <- ymd(as.Date(GPS$datetime))
+```
+
+```{r}
+#| eval: false
+#| include: false
+
+nb_point <- length(GPS$ID)
+
+nb_ind <- length(unique(GPS$ID))
+
+min_year <- min(GPS$year)
+max_year <- max(GPS$year)
+
+age_dt_point <- as.data.frame(table(GPS$age))
+
+age_dt_ind <- GPS %>%
+  dplyr::select(ID, age) %>%
+  distinct() %>%
+  group_by(age) %>%
+  summarise(n = n())
+
+sexe_dt <- GPS %>%
+  dplyr::select(ID, sex) %>%
+  distinct() %>%
+  group_by(sex) %>%
+  summarise(n = n())
+
+# texte à ajouter dans quarto quand propore :
+
+# Taille du jeu de données final utilisé (après nettoyage et filtration des données) :
+#
+# - La période de suivi court de `r min_year` à `r max_year`
+# - Nombre d'individu : 46
+# - Nombre de point GPS enregistrés : 406 687
+# - Nombre de femme : 7 (`r sexe_dt$n[1]` points GPS), nombre de mâle : 7 (`r sexe_dt$n[2]` points GPS)
+# - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
+```
+
+Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L'âge et le sexe n'a pas été identifié pour XX individus.
 
 ::: {#fig-emission_plot}
 ```{r}
@@ -211,19 +257,12 @@ Zones d'études - zone d'étude globale (zone blanche) et zones d'études rédui
 knitr::include_graphics("emission_plot.png", dpi = 100)
 ```
 
-Période d'émission des balises GPS pour les individus étudiés.
+Période d'émission des balises GPS pour chaque individu
 :::
 
 # **Temps passé dans la réserve naturelle de Moëze-Oléron**
 
-Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
-
-Pourcentage moyen de temps passé dans la réserve pour :
-
--   les comportements de repos : 0.597 %
--   les comportements d'alimentation : 0.631 %
--   tous autres comportements : 0.619 %
--   tous les comportements réunis : 0.610 %
+Le pourcentage de temps moyen passé dans la RNNMO par individu est en moyenne de 61%, de 60% pour les comportements de repos uniquement, de 63% pour les comportements d'alimentation uniquement, et de 62% pour les autres comportements.
 
 ::: {#fig-duree_dans_reserve_plot}
 ```{r}
@@ -236,17 +275,9 @@ knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
 Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
 :::
 
-# **Domaines vitaux au sein de la réserve de Moëze-Oléron**
+# **Domaines vitaux**
 
-La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal.
-
-Les distributions d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.
-
-Les domaines vitaux (<em>home range</em>) ont ici été estimés (@fig-UDMap_HR_ID) à l’aide des fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus.
-
-Deux niveaux de domaine vital sont définis pour chaque individu : - Le domaine vital étendu (à 95%) correspondant à l’enveloppe englobant 95 % de la surface d’utilisation - Le noyau d’activité (à 50%) représentant les zones de fréquentation la plus intense
+Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50% des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_ID).
 
 ::: {#fig-UDMap_HR_ID}
 ```{r}
@@ -259,10 +290,11 @@ tags$iframe(
 )
 ```
 
-Domaine vital à 95% (ligne) et à 50% (couleur pleine).
+Domaine vital étendu, en ligne (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine (enveloppe englobant 50% de la surface d'utilisation)
 :::
 
-Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs, @fig-area_hr_plot).
+
+Les individus ont des domaines vitaux (tous types de comportements confondus) moyen de XXm², avec une zone principale d'activité de XXm² (@fig-area_hr_plot). 
 
 ::: {#fig-area_hr_plot}
 ```{r}
@@ -272,10 +304,10 @@ Aire (en m²) des domaines vitaux individuels estimés à 95% (ronds oranges) et
 knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
 
-Aire du domaine vital individuel à 95% (ronds oranges) ou 50% (triangles verts). Moyenne (lignes pleines) +/- écart-type (lignes pointillés). Pourcentage de chevauchement avec la réserve en couleurs.
+Aire des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts, en m² ± écart-type) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs).
 :::
 
-Aire (en m²) du domaine vital des individus en fonction de leur âge ou de leur sexe.
+La surface du domaine vital des individus ne varie pas en fonction de l'âge ni du sexe des individus.
 
 ::: {#fig-surface_sex_age_all_plot}
 ```{r}
@@ -290,25 +322,20 @@ Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de
 
 # **Les principaux reposoirs**
 
-::: {#fig-baguage}
-```{r, out.height = "300px", out.width= "500px"}
+::: {#fig-roosting}
+```{r, out.height = "300px", out.width= "450px"}
 #| echo: false
 knitr::include_graphics("roosting_Laurie Campbell.jpg", dpi = 100)
 ```
 
-Comportement de repos (*roosting* en anglais) (Laurie Campbell)
+Comportement de repos (*roosting* en anglais) (©Laurie Campbell)
 :::
 
-Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
+A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zone de repos.
 
-Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-Verticle à 95% et 50%
-
-test téléchangement carte png 
+test téléchangement carte png
 
 ::: {#fig-UDMap_kud_roosting_A}
-
 ```{r}
 #| echo: false
 library(htmltools)
@@ -409,10 +436,10 @@ tags$script(HTML("
 ```
 
 Reposoirs zone A
-
 :::
 
 :::::: panel-tabset
+
 ## Zone A
 
 ::: {#fig-UDMap_kud_roosting_A}
@@ -426,7 +453,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone A
+Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) 
 :::
 
 ## Zone B
@@ -442,7 +469,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone B
+Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) 
 :::
 
 ## Zone C
@@ -458,15 +485,15 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone C
+Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) 
 :::
 ::::::
 
-## Reposoir en fonction de l'age
+## Reposoirs en fonction de l'age
 
-L'âge des individus est déterminé au baguage grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
+Le courlis cendré est considéré comme juvénile de sa sortie du nid au 1er septembre de l'année suivant leur éclosion. Au delà de cette période, ils arborent leur plumage mature et sont considéré comme adulte. 
 
-:::::::: panel-tabset
+:::::: panel-tabset
 ### Zone A
 
 ::: {#fig-UDMap_kud_roosting_age_A}
@@ -480,7 +507,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone A en fonction de l'âge
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 ### Zone B
@@ -496,7 +523,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone B en fonction de l'âge
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 ### Zone C
@@ -512,15 +539,13 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone C en fonction de l'âge
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
-::::::::
+::::::
 
-## Reposoir en fonction du sexe
+## Reposoirs en fonction du sexe
 
-Le sexe des individus a été déterminé lors de la pose des GPS.
-
-:::::::: panel-tabset
+:::::: panel-tabset
 ### Zone A
 
 ::: {#fig-UDMap_kud_roosting_sex_A}
@@ -534,7 +559,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone A en fonction du sexe
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 ### Zone B
@@ -550,7 +575,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone B en fonction du sexe
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 ### Zone C
@@ -566,15 +591,15 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone C en fonction du sexe
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
-::::::::
+::::::
 
-## Zone d'alimentation en fonction du calendrier
+## Reposoirs en fonction du calendrier
 
-### Reposoir en fonction du mois de l'année
+### Reposoirs en fonction du mois de l'année
 
-:::::::: panel-tabset
+:::::: panel-tabset
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_month_label_A}
@@ -622,11 +647,11 @@ tags$iframe(
 
 Reposoirs zone C en fonction du mois
 :::
-::::::::
+::::::
 
-### Reposoir en fonction du jour et de la nuit
+### Reposoirs en fonction du jour et de la nuit
 
-:::::::: panel-tabset
+:::::: panel-tabset
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_timeofday_A}
@@ -674,7 +699,7 @@ tags$iframe(
 
 Reposoirs zone C en fonction du jour et de la nuit
 :::
-::::::::
+::::::
 
 ### Reposoirs entre fonction de la hauteur d'eau
 
@@ -692,7 +717,7 @@ Le choix de ces seuils est choisi de manière empirique par la connaissance de l
 
 Les dates détectées de submersion de la lagune sont : XXX
 
-:::::::: panel-tabset
+:::::: panel-tabset
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_tide_strength_A}
@@ -740,24 +765,20 @@ tags$iframe(
 
 Reposoirs en fonction de la hauteur d'eau, zone C
 :::
-::::::::
-
+::::::
 
 # **Les principales zones d'alimentation**
 
-::: {#fig-baguage}
-```{r, out.height = "300px", out.width= "500px"}
+A chaque marée base, les courlis cendrés descendent sur l'estran (principalement) à la recherche de nourriture.
+
+::: {#fig-foraging}
+```{r, out.height = "300px", out.width= "450px"}
 #| echo: false
 knitr::include_graphics("Pierre-Marie Epiney.png", dpi = 100)
 ```
 
-Comportement d'alimentation (Pierre-Marie Epiney)
+Comportement de recherche d'alimentaire (*foraging* en anglais) (©Pierre-Marie Epiney)
 :::
-
-
-Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
-
-Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
 :::::: panel-tabset
 ## Zone A
@@ -813,7 +834,7 @@ Alimentation zone C
 
 ### Zone d'alimentation en fonction de l'age
 
-:::::::: panel-tabset
+:::::: panel-tabset
 #### Zone A
 
 ::: {#fig-UDMap_kud_foraging_age_A}
@@ -827,7 +848,7 @@ tags$iframe(
 )
 ```
 
-Alimentation zone A en fonction de l'âge
+Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 #### Zone B
@@ -843,7 +864,7 @@ tags$iframe(
 )
 ```
 
-Alimentation zone B en fonction de l'âge
+Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 #### Zone C
@@ -859,13 +880,13 @@ tags$iframe(
 )
 ```
 
-Alimentation zone C en fonction de l'âge
+Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
-::::::::
+::::::
 
 ### Zone d'alimentation en fonction du sexe
 
-:::::::: panel-tabset
+:::::: panel-tabset
 #### Zone A
 
 ::: {#fig-UDMap_kud_foraging_sex_A}
@@ -879,7 +900,7 @@ tags$iframe(
 )
 ```
 
-Alimentation zone A en fonction du sexe
+Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 #### Zone B
@@ -895,7 +916,7 @@ tags$iframe(
 )
 ```
 
-Alimentation zone B en fonction du sexe
+Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 #### Zone C
@@ -911,16 +932,15 @@ tags$iframe(
 )
 ```
 
-Alimentation zone C en fonction du sexe
+Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
-::::::::
-
+::::::
 
 ## Zone d'alimentation en fonction du calendrier
 
 ### Zone d'alimentation en fonction du mois de l'année
 
-:::::::: panel-tabset
+:::::: panel-tabset
 #### Zone A
 
 ::: {#fig-UDMap_kud_foraging_month_label_A}
@@ -968,11 +988,11 @@ tags$iframe(
 
 Zone d'alimentation zone C en fonction du mois
 :::
-::::::::
+::::::
 
 ### Zone d'alimentation en fonction du jour et de la nuit
 
-:::::::: panel-tabset
+:::::: panel-tabset
 #### Zone A
 
 ::: {#fig-UDMap_kud_foraging_timeofday_A}
@@ -1020,12 +1040,11 @@ tags$iframe(
 
 Zone d'alimentation zone C en fonction du jour et de la nuit
 :::
-::::::::
+::::::
 
 # **Utilisation de l'espace par les Courlis cendré lors d'évènements de vent extrêmes**
 
-
-/!\ autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
+/! autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
 
 Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
 
@@ -1048,7 +1067,7 @@ Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de r
 
 Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
 
-:::::::: panel-tabset
+:::::: panel-tabset
 ## Zone A
 
 ::: {#fig-UDMap_kud_foraging_ECE_wspd_A}
@@ -1096,8 +1115,7 @@ tags$iframe(
 
 Alimentation zone C en fonction des vents forts
 :::
-::::::::
-
+::::::
 
 # **Distance entre les reposoirs et les zones d'alimentation**
 
@@ -1167,7 +1185,7 @@ Variation des zones d'alimentation individuelles au cours des cycles de marée.
 
 ## Chasse sur le Domaine Public Maritime
 
-Effet de la période de chasse : 
+Effet de la période de chasse :
 
 L'utilisation de l'espace par les Courlis cendrés pendant et hors période de chasse à pied sont comparés.
 
@@ -1236,8 +1254,7 @@ Aucun effet n'a pu être visuellement détecté sur l'utilisation de l'espace po
 
 ## Chasse à la tonne
 
-!!!!!! testé mais sans effets detecté : changement d'utilisation de l'espace quand fermeture de la chasse, avec zone de danger et zone de proximité > saison de chasse (sept-fev), saison + heure de chasse, periode d'étude de chasse (15j av/ap),  periode d'étude + heure de chasse (15j av/ap), 
-
+!!!!!! testé mais sans effets detecté : changement d'utilisation de l'espace quand fermeture de la chasse, avec zone de danger et zone de proximité \> saison de chasse (sept-fev), saison + heure de chasse, periode d'étude de chasse (15j av/ap), periode d'étude + heure de chasse (15j av/ap),
 
 ::: {style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;"}
 <img src="Une_tonne_de_chasse_au_gibier_d&apos;eau.jpg" style="width: 100%;"/>
@@ -1327,7 +1344,42 @@ Il serait particulièrement interessant de poursuivre ce suivi en équipant des 
 
 # **Matériels et Méthodes**
 
+temps passé dans la r&serve : Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
+
+## Assignation des comportements 
+
+### Repos
+
+Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
+
+Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+
+### Alimentation
+
+Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
+
+Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+
+## Age 
+L'âge des individus est déterminé au baguage grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
+## Sex
+
+Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B et C ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
+
+
 Le détail des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
+
+## domaine vitaux 
+
+La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal.
+
+Les distributions d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.
+
+Les domaines vitaux (<em>home range</em>) ont ici été estimés (@fig-UDMap_HR_ID) à l’aide des fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+
+Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus.
+
+Deux niveaux de domaine vital sont définis pour chaque individu : - Le domaine vital étendu (à 95%) correspondant à l’enveloppe englobant 95 % de la surface d’utilisation - Le noyau d’activité (à 50%) représentant les zones de fréquentation la plus intense
 
 ## Les données GPS
 
@@ -1336,63 +1388,6 @@ Le détail des méthodes est disponible dans le document [Readme]{style="font-fa
 Le nettoyage des données issues des balises GPS a principalement été effectué à l'aide du package R adehabitat [Calenge (2006)](#calenge2006).
 
 En résumé, les points utilisés pour déterminer les comportements d’alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5 km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d’étude ont été utilisés. Le temps entre chaque point de localisation sauvegardé par individu pouvant varier et provoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l’oiseau a enregistré plus d’un point par période de 5 min ont été analysés (éviter d’analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basse de 100 points estimés par individus sur une période supérieure à 28 jours (deux cycles lunaires) a été appliquée pour maintenir une très haute qualité de suivi des individus pour les analyses.
-
-### Taille des jeux de données analysés
-
-Taille du jeu de données brut :
-
--   Nombre d'individu : 99
--   Nombre de point GPS enregistrés : 5 230 178
-
-Taille du jeu de données dans la zone d'étude :
-
--   Nombre d'individu : 83
--   Nombre de point GPS enregistrés : 3 138 014
-
-```{r}
-#| eval: false
-#| include: false
-data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
-GPS <- st_read(file.path(data_generated_path, "GPS_clean.gpkg"))
-
-GPS$y_m_d <- ymd(as.Date(GPS$datetime))
-```
-
-```{r}
-#| eval: false
-#| include: false
-
-nb_point <- length(GPS$ID)
-
-nb_ind <- length(unique(GPS$ID))
-
-min_year <- min(GPS$year)
-max_year <- max(GPS$year)
-
-age_dt_point <- as.data.frame(table(GPS$age))
-
-age_dt_ind <- GPS %>%
-  dplyr::select(ID, age) %>%
-  distinct() %>%
-  group_by(age) %>%
-  summarise(n = n())
-
-sexe_dt <- GPS %>%
-  dplyr::select(ID, sex) %>%
-  distinct() %>%
-  group_by(sex) %>%
-  summarise(n = n())
-
-# texte à ajouter dans quarto quand propore :
-
-# Taille du jeu de données final utilisé (après nettoyage et filtration des données) :
-#
-# - La période de suivi court de `r min_year` à `r max_year`
-# - Nombre d'individu : 46
-# - Nombre de point GPS enregistrés : 406 687
-# - Nombre de femme : 7 (`r sexe_dt$n[1]` points GPS), nombre de mâle : 7 (`r sexe_dt$n[2]` points GPS)
-# - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
-```
 
 ## Résumé des méthodes utilisées pour les analyses
 
@@ -1422,7 +1417,7 @@ Et olim licet otiosae sint tribus pacataeque centuriae et nulla suffragiorum cer
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
 
-L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github de Suzanne Bonamour](https://github.com/SuzanneBonamour) 
+L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github de Suzanne Bonamour](https://github.com/SuzanneBonamour)
 
 1.  **Lisez le READme**
 
@@ -1459,43 +1454,36 @@ Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et l
 
 **Analyses statistiques et spatiales**
 
-- Suzanne Bonamour (LPO France) 
-- Gwenael Quaintenne (LPO France)
+-   Suzanne Bonamour (LPO France)
+-   Gwenael Quaintenne (LPO France)
 
 **Travail de terrain, capture et baguage des oiseaux**
 
-- Pierre Rousseau (RNN Moëze-Oléron)
-- Loïc Jomat (RNN Moëze-Oléron)
-- Adrien Chaigne (RNN Moëze-Oléron)
-- Pierrick Bocher (RNN Moëze-Oléron)
-- Frédéric Jiguet (RNN Moëze-Oléron)
-- et beaucoup d'autre personnes !
+-   Pierre Rousseau (RNN Moëze-Oléron)
+-   Loïc Jomat (RNN Moëze-Oléron)
+-   Adrien Chaigne (RNN Moëze-Oléron)
+-   Pierrick Bocher (RNN Moëze-Oléron)
+-   Frédéric Jiguet (RNN Moëze-Oléron)
+-   et beaucoup d'autre personnes !
 
-**Rédaction** 
+**Rédaction**
 
-- Suzanne Bonamour (LPO France)
+-   Suzanne Bonamour (LPO France)
 
-**Recherche de financements et partenaires** 
+**Recherche de financements et partenaires**
 
-- Adrien Chaigne (RNN Moëze-Oléron)
+-   Adrien Chaigne (RNN Moëze-Oléron)
 
 **Comité scientifique**
 
-- Pierrick Bocher (Univ. La Rochelle)
-- Frédéric Jiguet (MNHN, CESCO, Paris)
-- Gwenael Quaintenne (LPO France)
+-   Pierrick Bocher (Univ. La Rochelle)
+-   Frédéric Jiguet (MNHN, CESCO, Paris)
+-   Gwenael Quaintenne (LPO France)
 
 Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
 
 <a href="#top">↑ retour en haut</a>
 
 ::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
-<img src="lpo_logo.jpg" height="100">
-<img src="reserve_logo.png" height="100">
-<img src="MNHN-logo.jpg" height="100">
-<img src="logo_CESCO.png" height="100">
-<img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100">
-<img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100">
-<img src="LIENSs_transp1-e1485208828412.png" height="100">
-<img src="fonds-vert_logo.png" height="100">
+<img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
 :::
