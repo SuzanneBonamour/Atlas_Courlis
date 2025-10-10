@@ -195,7 +195,7 @@ tags$iframe(
 )
 ```
 
-La zone d'étude est divisée en trois zones distinctes A, B et C
+La zone d'étude est divisée en trois zones distinctes A, B et C ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 # **Périodes de suivi des individus**
@@ -260,7 +260,7 @@ knitr::include_graphics("emission_plot.png", dpi = 100)
 Période d'émission des balises GPS pour chaque individu
 :::
 
-# **Temps passé dans la réserve naturelle de Moëze-Oléron**
+# **Temps passé dans la réserve naturelle de Moëze-Oléron** {#section-tempsDansReserve}
 
 Le pourcentage de temps moyen passé dans la RNNMO par individu est en moyenne de 61%, de 60% pour les comportements de repos uniquement, de 63% pour les comportements d'alimentation uniquement, et de 62% pour les autres comportements.
 
@@ -275,7 +275,7 @@ knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
 Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
 :::
 
-# **Domaines vitaux**
+# **Domaines vitaux** {#section-HR}
 
 Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50% des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_ID).
 
@@ -320,7 +320,7 @@ knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
 :::
 
-# **Les principaux reposoirs**
+# **Les principaux reposoirs** {#section-reposoir}
 
 ::: {#fig-roosting}
 ```{r, out.height = "300px", out.width= "450px"}
@@ -453,7 +453,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) 
+Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ## Zone B
@@ -469,7 +469,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) 
+Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
 :::
 
 ## Zone C
@@ -485,11 +485,11 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) 
+Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
 :::
 ::::::
 
-## Reposoirs en fonction de l'age
+## Reposoirs en fonction de l'age {#section-age1}
 
 Le courlis cendré est considéré comme juvénile de sa sortie du nid au 1er septembre de l'année suivant leur éclosion. Au delà de cette période, ils arborent leur plumage mature et sont considéré comme adulte. 
 
@@ -507,7 +507,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone B
@@ -523,7 +523,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone C
@@ -539,11 +539,13 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
-## Reposoirs en fonction du sexe
+## Reposoirs en fonction du sexe {#section-sexe1}
+
+Les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur zone de repos. 
 
 :::::: panel-tabset
 ### Zone A
@@ -559,7 +561,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone B
@@ -575,7 +577,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone C
@@ -591,13 +593,16 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
 ## Reposoirs en fonction du calendrier
 
-### Reposoirs en fonction du mois de l'année
+Les zones de repos peuvent varier en fonction de la période de l'année et des saisons.
+
+### Reposoirs en fonction du mois de l'année 
+
 
 :::::: panel-tabset
 #### Zone A
@@ -613,7 +618,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone A en fonction du mois
+Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -629,7 +634,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone B en fonction du mois
+Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -645,7 +650,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone C en fonction du mois
+Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -665,7 +670,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone A en fonction du jour et de la nuit
+Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -681,7 +686,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone B en fonction du jour et de la nuit
+Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -697,23 +702,15 @@ tags$iframe(
 )
 ```
 
-Reposoirs zone C en fonction du jour et de la nuit
+Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
-### Reposoirs entre fonction de la hauteur d'eau
+### Reposoirs entre fonction de la hauteur d'eau {#section-hauteurEau1}
+
+XXX
 
 Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_kud_roosting_tide_strength_A, @fig-UDMap_kud_roosting_tide_strength_B, @fig-UDMap_kud_roosting_tide_strength_C).
-
-Le marégraphe utilisé pour obtenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité, puis corrélation avec la cotinière et la rochelle quand il y a des trous dans les séries de données. La hauteur d'eau est moyennée pour chaque période du grain temporelle choisie (5 min). La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargées via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19).
-
-Le type de de marée haute en fonction de la hauteur est définie comme :
-
--   marée de mortes eaux : inférieur à 4.8m
--   marée de vives eaux : entre 4.8m et 6.4m
--   submersion de la lagune : supérieur à 6.4m
-
-Le choix de ces seuils est choisi de manière empirique par la connaissance de l’influence des hauteurs d’eau sur les reposoirs de marée haute.
 
 Les dates détectées de submersion de la lagune sont : XXX
 
@@ -767,7 +764,7 @@ Reposoirs en fonction de la hauteur d'eau, zone C
 :::
 ::::::
 
-# **Les principales zones d'alimentation**
+# **Les principales zones d'alimentation**{#section-alimentation}
 
 A chaque marée base, les courlis cendrés descendent sur l'estran (principalement) à la recherche de nourriture.
 
@@ -832,7 +829,9 @@ Alimentation zone C
 
 ## Zone d'alimentation en fonction des caractéristiques biologique des individus
 
-### Zone d'alimentation en fonction de l'age
+Les zones d'alimentations peuvent varier avec l'âge. Les courlis encore juvéniles étant moins expérimentés que les adultes, ils pourraient être assignés à des zones de recherche alimentaire moins favorables. 
+
+### Zone d'alimentation en fonction de l'age {#section-age2}
 
 :::::: panel-tabset
 #### Zone A
@@ -884,7 +883,9 @@ Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu 
 :::
 ::::::
 
-### Zone d'alimentation en fonction du sexe
+### Zone d'alimentation en fonction du sexe {#section-sexe2}
+
+Les zones d'alimentation varié en fonction des sexe des individus. Les mâles sont resteint à des zones d'eau moins profondes dû à leur bec en moyenne plus court que celui des femelles.
 
 :::::: panel-tabset
 #### Zone A
@@ -900,7 +901,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -916,7 +917,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -932,13 +933,15 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
 ## Zone d'alimentation en fonction du calendrier
 
-### Zone d'alimentation en fonction du mois de l'année
+### Zone d'alimentation en fonction du mois de l'année {#section-mois2}
+
+Les zones d'alimentation peuvent varier en fonction de la période de l'année et des saisons.
 
 :::::: panel-tabset
 #### Zone A
@@ -954,7 +957,8 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation zone A en fonction du mois
+Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+
 :::
 
 #### Zone B
@@ -970,7 +974,7 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation zone B en fonction du mois
+Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -986,7 +990,7 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation zone C en fonction du mois
+Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1006,7 +1010,7 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation zone A en fonction du jour et de la nuit
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1022,7 +1026,7 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation zone B en fonction du jour et de la nuit
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1038,7 +1042,7 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation zone C en fonction du jour et de la nuit
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1119,7 +1123,16 @@ Alimentation zone C en fonction des vents forts
 
 # **Distance entre les reposoirs et les zones d'alimentation**
 
-La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centroïds géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_roost_forag_plot_talk).
+La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_schema_geoportail_4).
+
+::: {#fig-distance_schema_geoportail_4}
+```{r, out.height = "500px", out.width= "900"}
+#| echo: false
+knitr::include_graphics("distance_schema_geoportail_4.png", dpi = 100)
+```
+
+Distance entre les zones de repos et d'alimentation, calculé à chaque cycle de marée et moyennée par individu
+:::
 
 Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
 
@@ -1310,6 +1323,8 @@ Tonnes de chasse (point noir, en gros si proche de la RNN, en petit si à distan
 
 # **Zones critiques**
 
+Les principales zones de repos et d'alimentation estimées précédemment permettent de mettre en évidence des zones d'importance majeure pour les courlis cendrés dans le bassin fonctionnel étudié, mais pourtant en dehors des limites de protection de la RNNMO. Les emplacements des tonnes de chasses sont superposés à ces zones, mettant en evidence les zones de dérangement et de risque majeur pour les oiseaux.
+
 ::: {#fig-zone_critique_map}
 ```{r}
 #| echo: false
@@ -1321,7 +1336,7 @@ tags$iframe(
 )
 ```
 
-Zone critique: en orange = foraging ; en violet = roosting ; en clair = 95% en foncé = 50% ; en dehors de la réserve, les zones de superposition de roosting et de foraging à 50% en rouge, à 95% en jaune ; les tonnes de chasses non superposé au foraging et roosting en point noir, superposé au 50% en rouge, superposé au 95% en jaune
+Zone critique de dérangement du courlis cendré : zones d'alimentation en bleu (principaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS) ; zone de repos en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zone secondaires d'alimentation et de repos en jaune ; tonnes de chasse, points noirs ; tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges ; tonnes de chasse dans les zones secondaire sd'alimentation et:ou de repos en points jaunes ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 # **Discussion**
@@ -1344,102 +1359,120 @@ Il serait particulièrement interessant de poursuivre ce suivi en équipant des 
 
 # **Matériels et Méthodes**
 
-temps passé dans la r&serve : Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
-
-## Assignation des comportements 
-
-### Repos
-
-Le comportement de repos est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée hautes. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
-
-Pour les deux méthodes, les reposoirs sont identifiés à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-### Alimentation
-
-Le comportement d'alimentation est défini comme un point GPS d'une vitesse de déplacement inférieure ou égale à 0.5 Km/h et entre 2h avant et 2h après la marée base. La vitesse de déplacement pour chaque point GPS a été estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR".
-
-Les zones d'alimentation sont identifiées à l'aide de la fonction [kernelUD]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-## Age 
-L'âge des individus est déterminé au baguage grâce au plumage des individus. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
-## Sex
-
-Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B et C ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
-
-
-Le détail des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet.
-
-## domaine vitaux 
-
-La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal.
-
-Les distributions d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.
-
-Les domaines vitaux (<em>home range</em>) ont ici été estimés (@fig-UDMap_HR_ID) à l’aide des fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
-
-Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus.
-
-Deux niveaux de domaine vital sont définis pour chaque individu : - Le domaine vital étendu (à 95%) correspondant à l’enveloppe englobant 95 % de la surface d’utilisation - Le noyau d’activité (à 50%) représentant les zones de fréquentation la plus intense
-
-## Les données GPS
-
-### Nettoyage des données GPS
+## Nettoyage des données GPS
 
 Le nettoyage des données issues des balises GPS a principalement été effectué à l'aide du package R adehabitat [Calenge (2006)](#calenge2006).
 
-En résumé, les points utilisés pour déterminer les comportements d’alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5 km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d’étude ont été utilisés. Le temps entre chaque point de localisation sauvegardé par individu pouvant varier et provoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l’oiseau a enregistré plus d’un point par période de 5 min ont été analysés (éviter d’analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basse de 100 points estimés par individus sur une période supérieure à 28 jours (deux cycles lunaires) a été appliquée pour maintenir une très haute qualité de suivi des individus pour les analyses.
+En résumé, les points utilisés pour déterminer les comportements d’alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5 km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min a été estimé pour chaque individus. Uniquement les points situés dans la zone d’étude ont été utilisés. Le temps entre chaque point de localisation sauvegardé par individu pouvant varier et provoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l’oiseau a enregistré plus d’un point par période de 5 min ont été analysés (éviter d’analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basse de 100 points estimés par individus sur une période supérieure à 28 jours (de eudx cycles lunaires) a été appliquée pour maintenir une très haute qualité de suivi des individus pour les analyses.
 
 ## Résumé des méthodes utilisées pour les analyses
 
-**Analyses 1**
+Le détail des méthodes est disponible dans le document [Readme]{style="font-family: 'Courier';"} du projet. 
 
-Ardeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae, qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam.
+**Assignation des comportements**
 
-**Analyses 2**
+Chaque points GPS enregistrés est associé à un comportement de repos, de recherche alimentaire ou autre.
 
-Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.
+*Comportements de repos*
 
-**Analyses 3**
+Voir section "[Les principaux reposoirs](#section-reposoir)"
 
-Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.
+Un point GPS est considéré comme correspondant à du repos si :
 
-**Analyses 4**
+- vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR")
+- entre 2h avant et 2h après une marée haute
+- XX
+- XX
 
-Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia restitisset.
+*Comportement de recherche alimentaire*
 
-**Analyses 5**
+Voir section "[Les principales zones d'alimentation](#section-alimentation)"
 
-Et olim licet otiosae sint tribus pacataeque centuriae et nulla suffragiorum certamina set Pompiliani redierit securitas temporis, per omnes tamen quotquot sunt partes terrarum, ut domina suscipitur et regina et ubique patrum reverenda cum auctoritate canities populique Romani nomen circumspectum et verecundum.
+Un point GPS est considéré comme correspondant à de la recherche alimentaire si :
 
-**Voir ci-dessous pour plus de détails.**
+- vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR")
+- entre 2h avant et 2h après une marée basse
+
+**Identification de l'âge des individus** 
+
+Voir section "[Reposoirs en fonction de l'age](#section-age1)" et section "[Zone d'alimentation en fonction de l'age](#section-age1)".
+
+L'âge des individus est déterminé au baguage grâce à leur plumage. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
+
+**Identification du sexe des individus** 
+
+Voir section "[Reposoirs en fonction du sexe](#section-sexe1)" et section "[Zone d'alimentation en fonction du sexe](#section-sexe2)".
+
+Le sexe des individus est déterminé au baguage grâce à XX, les femelles étant plus XX que les mâles
+
+**Classification des hauteurs d'eau**
+
+Voir section "[Zone de repos en fonction de la hauteur d'eau](#section-hauteurEau1)"
+
+Le marégraphe utilisé pour obtenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité. Lorsque les données été manquante pour ce marégraphe, les hauteur d'eau on ét é prédites via une  corrélation avec la cotinière et la rochelle. La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargées via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19). La hauteur d'eau est moyennée pour chaque période du grain temporelle choisie (5 min). 
+
+Basée sur l'expertise de terrain, les marées hautes ont été classées en fonction de la hauteur mesurée ou prédites. La marée est classifiées de marée de mortes eaux si la hauteur d'eau est inférieure à 4.8m, de marée de vives eaux entre 4.8m et 6.4m. Au delà de 6.4m de hauteur d'eau, la marée provoque une submersion de la lagune.
+
+**Evènement climatique extremes**
+
+/! autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
+
+Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
+
+Les évènements climatiques extrêmes (ECE) sont généralement définis comme les évènements d'intensité supérieure (ou inférieur) au quartile 95% des distributions du paramétres météorologiques (REF) sur la période 2015-2024.
+
+Ici, les paramètres météorologiques étudiés sont :
+
+-   la vitesse moyenne journalière du vent
+-   l'orientation moyenne journalière du vent
+
+A partir de ces deux paramètres météorologiques, 3 paramètres météorologiques extrêmes ont été calculés :
+
+-   les évènements de vent fort : ECE supérieur à 95%
+-   les évènements de vent de Nord-Ouest : orientation entre 270 et 360 degrés
+-   les évènements de vent fort de Nord-Ouest : ECE supérieur à 95% et d'orientation entre 270 et 360 degrés
+
+L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes detectés sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme "normaux".
+
+Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos.
+
+Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
+
+**Analyses spatiales**
+
+L'ensemble des analyses statiales sont basées sur des estimations de zones d'utilisation de l'espace dites "distribution d'utilisation". La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal. Les distributions d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. 
+
+Les estimations de distribution d'utilisation de l'espace ont été effectué avec les fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+
+L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.
+
+Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B et C ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
+
+Suivant les analyses, le sous jeu de données utilisé pour estimer les distributions d'utilisation de l'espace est différent et restreint à la zone A, B et C, au comportement ciblé (repos ou alimentation), et/ou à la (ou les) variable(s) d'interêt(s) (par exemple avec sexe ou age connus, date de submersion, etc...).
+
+Afin de garantir de représentativité égale à chaque individus étudiés amlgré l'hétérogénéïté dans les quantités de point GPS enregistrés, un échantillonnage aléatoire de point a été effectué à chaque analyse. Pour chaque individus et catégories de variables analysées (comportement, zone, sex, age, etc...), 1000 points sont échantillonné aléatoirement sans remise. La probabilité d'échantillonnage est fonction du temps entre chaque point, plus un point représente une période de temps peu enregistré, plus il aura de probabilité d'être échantillonné. Lorsqu'un individu présente moins de 1000 point pour une combinaison de variable données, tous les disponibles pour cette combinaison sont sélectionnés.
+
+- Domaines vitaux : 
+
+Voir section "[Domaines vitaux](#section-HR)"
+
+Les domaines vitaux (<em>home range</em>) ont ici été estimés via des fonction de distribution d'utilisation de l'espace (voir précédement) pour chaque individu séparemment. Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus. 
+
+Deux niveaux de domaine vital sont définis pour chaque individu : i) le domaine vital étendu qui correspond à l’enveloppe englobant 95 % de la surface d’utilisation, ii) le noyau d’activité correspond à l'enveloppe englobant les principaux 50% de la surface d'utilisation, représente les zones de fréquentation la plus intense.
+
+- Temps passé dans la RNNMO :
+
+Voir section "[Temps passé dans la réserve](#section-tempsDansReserve)"
+
+Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
 
 ## Reproductibilité des analyses
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
 
-L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github de Suzanne Bonamour](https://github.com/SuzanneBonamour)
+Les données utilisées sont disponibles ici : XX
 
-1.  **Lisez le READme**
-
-Voir le READme pour les détails sur les jeux de données et les méthodes.
-
-2.  **Les données analysées**
-
-Toutes les données utilisées sont disponibles ici : XX
-
-3.  **Cloner le dépôt**
-
-    ``` sh
-    git clone [CourlisServeur](https://github.com/SuzanneBonamour/CourlisServeur.git)  
-    ```
-
-4.  **Installer les dépendances**
-
-Ouvrez R et exécutez : `r    install.packages(c("lubridate", "ggplot2", "sf", "classInt",    "tidyr", "remotes", "leaflet", "adehabitatLT",    "trip", "extrafont", "ggthemes", "raster",    "graticule", "data.table", "stringi", "terra",    "ggalt", "tidyverse", "beepr", "readr"))`
-
-5.  **Lancer les scripts**
-
-Tous les scripts pour le nettoyage des données GPS, les analyses spatiales et les cartographies sont disponibles sur le github repository XX. Afin de reproduire les résultats, faire tourner les scripts les uns après les autres par ordre alphabétique "A_Courlis_GPS_x", puis "B_Courlis_ENV_x", etc...
+L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github](https://github.com/SuzanneBonamour)
 
 <a href="#top">↑ retour en haut</a>
 
