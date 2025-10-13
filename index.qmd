@@ -1,19 +1,19 @@
 ---
 title: "Utilisation de l'espace par le Courlis cendré dans le site fonctionnel de la réserve de Moëze-Oléron"
+author: "Suzanne Bonamour, Gwenaël Quintenne, Pierre Rousseau, Loïc Jomat, Pierrick Bocher, Frédérique Jiguet, Adrien Chaigne"
 lang: fr
+date-format: long
+editor: visual
 format:
   html:
+    theme: journal
     toc: true
-    html-math-method: katex
-    css: styles.css
     fig-cap-location: top
+    link-citations: true
+    document-css: false
     grid:
       body-width: 1400px
       margin-width: 300px
-    self-contained: false
-author: "Suzanne Bonamour, Gwenaël Quintenne, Pierre Rousseau, Loïc Jomat, Pierrick Bocher, Frédérique Jiguet, Adrien Chaigne"
-editor: visual
-theme: journal 
 ---
 
 ```{r}
@@ -55,7 +55,7 @@ atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 
 # **Messages clés**
 
-Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.
+XXX Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.
 
 Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis militibus discrepantes opposita cuncta superasse virtute.
 
@@ -119,52 +119,21 @@ knitr::include_graphics("20170226-Großer_Brachvogel.jpg", dpi = 100)
 Courlis cendrés en vol (Großer_Brachvogel)
 :::
 
-**Morphologie**
+**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
 
-Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
+**Comportement général** : Espèce discrète, au comportement prudent. Territorial en période de reproduction, grégaire en dehors de celle-ci.
 
-**Comportement général**
+**Régime alimentaire** : Principalement des vers de terre, insectes, mollusques, crustacés ; complété ponctuellement par des graines et baies. Alimentation au sol ou par sondage dans la vase ou les prairies humides. 
 
-Espèce discrète, au comportement prudent. Territorial en période de reproduction, grégaire en dehors de celle-ci. Chant flûté, ascendant et mélancolique, souvent émis en vol.
+**Habitats** : Reproduction en prairies humides, landes, tourbières, marais, zones agricoles extensives. Alimentation en vasières intertidales, estuaires, prés salés, prairies humides ou pâtures. Repos (hors reproduction) en vasières, zones littorales, lagunes, marais salants.
 
-**Régime alimentaire**
+**Saison de reproduction** : De Avril à juillet. Nid au sol, souvent dissimulé dans la végétation. Ponte de 3–4 œufs. Incubation \~28 jours. Émancipation des jeunes vers 5–6 semaines.
 
-Régime invertivore dominant : vers de terre, insectes, mollusques, crustacés. Complété ponctuellement par des graines et baies. Alimentation au sol ou par sondage dans la vase ou les prairies humides. Habitat
+**Migration** : Migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, présence à l’année dans certaines régions littorales (ex. : Baie de Somme, estuaire de la Loire), migration marquée en automne et au printemps.
 
--   Habitat de reproduction : prairies humides, landes, tourbières, marais, zones agricoles extensives.
--   Habitat d’alimentation : vasières intertidales, estuaires, prés salés, prairies humides, pâtures.
--   Habitat de repos (hors reproduction) : vasières, zones littorales, lagunes, marais salants.
+**Effectifs de population** : La population mondiale est estimée à 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).
 
-**Saison de reproduction**
-
-Avril à juillet. Nid au sol, souvent dissimulé dans la végétation. Ponte de 3–4 œufs. Incubation \~28 jours. Émancipation des jeunes vers 5–6 semaines.
-
-**Migration**
-
-Migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, présence à l’année dans certaines régions littorales (ex. : Baie de Somme, estuaire de la Loire), migration marquée en automne et au printemps.
-
-**Effectifs de population**
-
-Population mondiale : estimée à 140 000 – 240 000 couples reproducteurs (équivalent à environ 280 000 – 480 000 individus matures).
-
-Population européenne : estimée à 97 000 – 167 000 couples (BirdLife International, 2021).
-
-Population française :
-
--   Nicheurs : 2 200 à 2 800 couples (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est).
--   Hivernants : 20 000 à 30 000 individus, surtout sur le littoral atlantique et dans le sud-est.
-
-Tendance : déclin modéré à marqué en Europe occidentale. Fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %).
-
-**Statuts de conservation**
-
-IUCN : Near Threatened (Quasi menacé) à l’échelle mondiale.
-
-Europe : Annexe II de la Convention de Berne. Déclin confirmé dans plusieurs États membres.
-
-France : Vulnérable. Espèce inscrite à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année.
-
-International : Annexe II de la Convention de Bonn (CMS). Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions).
+**Tendance démographique et statuts de conservation** : Le courlis cendré est en déclin modéré à marqué en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (Quasi menacé) à l’échelle mondiale par IUCN. En europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme Vulnérable et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année. A l'international, il est classé à l'Annexe II de la Convention de Bonn (CMS).
 
 <a href="#top">↑ retour en haut</a>
 
@@ -177,12 +146,11 @@ area_box <- sf::st_area(BOX)
 area_box_km <- as.numeric((round(area_box / 1000000, 1)))
 ```
 
-La zone d'étude (voir @fig-zone_map_new) est un rectangle de `r area_box_km` km² qui s'étend :
+L'aire d'étude (voir @fig-zone_map_new) est un rectangle de `r area_box_km` km² qui s'étend au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi zone fonctionnelle du bassin de Marennes, la RNNMO (polygone vert) et le marais de Brouage.
 
--   au Nord jusqu'à l'estuaire de la Charente,
--   à l'Est jusqu'à la limite Est de la ville de Rochefort,
--   au Sud jusqu'à l'estuaire de la Seudre,
--   et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi zone fonctionnelle du bassin de Marennes, la réserve de Moëze-Oléron et le marais de Brouage.
+L'aire d'étude est divisée en trois zone A, B et C pour facilité l'analyse spatiale fine.
+
+Les individus sont tous bagués et équipés de GPS au sein de la RNNMO au site de baguage dédié, matérialisé par l'épingle rouge sur les cartes.
 
 ::: {#fig-zone_map_new}
 ```{r}
@@ -200,7 +168,6 @@ La zone d'étude est divisée en trois zones distinctes A, B et C ; limite de la
 
 # **Périodes de suivi des individus**
 
-Les individus sont bagués et équipés de GPS au sein de la RNNMO (voir le site de baguage, épingle rouge @fig-zone_map_new).
 
 ```{r}
 #| eval: false
@@ -277,24 +244,65 @@ Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en
 
 # **Domaines vitaux** {#section-HR}
 
-Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50% des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_ID).
+Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50% des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_gp_1).
 
-::: {#fig-UDMap_HR_ID}
+::: {#fig-UDMap_HR_gp_1}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_HR_ID.html",
+  src = "UDMap_HR_gp_1.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Domaine vital étendu, en ligne (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine (enveloppe englobant 50% de la surface d'utilisation)
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
 :::
 
+::: {#fig-UDMap_HR_gp_2}
+```{r}
+#| echo: false
 
-Les individus ont des domaines vitaux (tous types de comportements confondus) moyen de XXm², avec une zone principale d'activité de XXm² (@fig-area_hr_plot). 
+tags$iframe(
+  src = "UDMap_HR_gp_2.html",
+  width = "100%",
+  height = "600px"
+)
+```
+
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
+:::
+
+::: {#fig-UDMap_HR_gp_3}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_HR_gp_3.html",
+  width = "100%",
+  height = "600px"
+)
+```
+
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
+:::
+
+::: {#fig-UDMap_HR_gp_4}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_HR_gp_4.html",
+  width = "100%",
+  height = "600px"
+)
+```
+
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
+:::
+
+Les individus ont des domaines vitaux (tous types de comportements confondus) moyen de 644m², avec une zone principale d'activité de 67m² (@fig-area_hr_plot). 
 
 ::: {#fig-area_hr_plot}
 ```{r}
@@ -307,7 +315,7 @@ knitr::include_graphics("area_hr_plot.png", dpi = 100)
 Aire des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts, en m² ± écart-type) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs).
 :::
 
-La surface du domaine vital des individus ne varie pas en fonction de l'âge ni du sexe des individus.
+La surface du domaine vital des individus ne varie pas en fonction du sexe, avec les mâles présentant un plus petit domaine vital à 95% que les femelles (coef = -0.28, p-value = 0.04). La surface du domaine vital ne varie pas en fonction de l'âge.
 
 ::: {#fig-surface_sex_age_all_plot}
 ```{r}
@@ -322,6 +330,8 @@ Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de
 
 # **Les principaux reposoirs** {#section-reposoir}
 
+A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zone de repos.
+
 ::: {#fig-roosting}
 ```{r, out.height = "300px", out.width= "450px"}
 #| echo: false
@@ -330,8 +340,6 @@ knitr::include_graphics("roosting_Laurie Campbell.jpg", dpi = 100)
 
 Comportement de repos (*roosting* en anglais) (©Laurie Campbell)
 :::
-
-A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zone de repos.
 
 test téléchangement carte png
 
@@ -766,7 +774,7 @@ Reposoirs en fonction de la hauteur d'eau, zone C
 
 # **Les principales zones d'alimentation**{#section-alimentation}
 
-A chaque marée base, les courlis cendrés descendent sur l'estran (principalement) à la recherche de nourriture.
+A chaque marée base, les courlis cendrés partent à la recherche de nourriture.
 
 ::: {#fig-foraging}
 ```{r, out.height = "300px", out.width= "450px"}
@@ -829,7 +837,7 @@ Alimentation zone C
 
 ## Zone d'alimentation en fonction des caractéristiques biologique des individus
 
-Les zones d'alimentations peuvent varier avec l'âge. Les courlis encore juvéniles étant moins expérimentés que les adultes, ils pourraient être assignés à des zones de recherche alimentaire moins favorables. 
+Les zones d'alimentation peuvent varier avec l'âge. Les courlis encore juvéniles étant moins expérimentés que les adultes, ils pourraient être assignés à des zones de recherche alimentaire moins favorables. 
 
 ### Zone d'alimentation en fonction de l'age {#section-age2}
 
@@ -1046,49 +1054,194 @@ Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentat
 :::
 ::::::
 
-# **Utilisation de l'espace par les Courlis cendré lors d'évènements de vent extrêmes**
+# **Utilisation de l'espace lors d'évènements de vent extrêmes**
 
-/! autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
+Les évènements climatiques extrèmes sont en augmentation, en fréquence et en intensité, avec le changement climatiques ([beniston2004](#beniston2004)). Les évènements de vents forts sont suspectés d'être préjudiciable pour les courlis cendré et on s'attend à ce que leur utilisation de l'espace soit modifié lors des tempêtes. 
 
-Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
+L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme jours de référence. Les évènements extrèmes sont ici distingué en trois catégories : i) les évènements de vent fort (vitesse de vent supérieur aux 95% des enregistrements), ii) les évènements de vent de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux 
 
-Les évènements climatiques extrêmes (ECE) sont généralement définis comme les évènements d'intensité supérieure (ou inférieur) au quartile 95% des distributions du paramétres météorologiques (REF) sur la période 2015-2024.
+XXX Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos. Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici. autre variable extrème à ajouter ? roosting aussi XXX
 
-Ici, les paramètres météorologiques étudiés sont :
+## Reposoirs en fonction d'évènements venteux extrèmes
 
--   la vitesse moyenne journalière du vent
--   l'orientation moyenne journalière du vent
-
-A partir de ces deux paramètres météorologiques, 3 paramètres météorologiques extrêmes ont été calculés :
-
--   les évènements de vent fort : ECE supérieur à 95%
--   les évènements de vent de Nord-Ouest : orientation entre 270 et 360 degrés
--   les évènements de vent fort de Nord-Ouest : ECE supérieur à 95% et d'orientation entre 270 et 360 degrés
-
-L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes detectés sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme "normaux".
-
-Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos.
-
-Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
+### Evènements de vent fort
 
 :::::: panel-tabset
-## Zone A
+#### Zone A
+
+::: {#fig-UDMap_kud_roosting_ECE_wspd_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wspd_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_roosting_ECE_wspd}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wspd_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_roosting_ECE_wspd_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wspd_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+::::::
+
+### Evènements de vent de Nord-Ouest
+
+:::::: panel-tabset
+#### Zone A
+
+::: {#fig-UDMap_kud_roosting_ECE_wNO_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wNO_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_roosting_ECE_wNO_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wNO_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_roosting_ECE_wNO_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wNO_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+::::::
+
+### Evènements de vent fort de Nord-Ouest
+
+:::::: panel-tabset
+#### Zone A
+
+::: {#fig-UDMap_kud_roosting_ECE_wNO_wspd95_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wNO_wspd95_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_roosting_ECE_wNO_wspd95_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wNO_wspd95_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_roosting_ECE_wNO_wspd95_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_roosting_ECE_wNO_wspd95_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+::::::
+
+## Zones d'alimentation en fonction d'évènements venteux extrèmes
+
+### Evènements de vent fort
+
+:::::: panel-tabset
+#### Zone A
 
 ::: {#fig-UDMap_kud_foraging_ECE_wspd_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_ECE_wspdA.html",
+  src = "UDMap_kud_foraging_ECE_wspd_A.html",
   width = "100%",
   height = "400px"
 )
 ```
 
-Alimentation zone A en fonction des vents forts
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
-## Zone B
+#### Zone B
 
 ::: {#fig-UDMap_kud_foraging_ECE_wspd}
 ```{r}
@@ -1101,10 +1254,10 @@ tags$iframe(
 )
 ```
 
-Alimentation zone B en fonction des vents forts
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
-## Zone C
+#### Zone C
 
 ::: {#fig-UDMap_kud_foraging_ECE_wspd_C}
 ```{r}
@@ -1117,22 +1270,115 @@ tags$iframe(
 )
 ```
 
-Alimentation zone C en fonction des vents forts
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
-# **Distance entre les reposoirs et les zones d'alimentation**
+### Evènements de vent de Nord-Ouest
 
-La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_schema_geoportail_4).
+:::::: panel-tabset
+#### Zone A
 
-::: {#fig-distance_schema_geoportail_4}
-```{r, out.height = "500px", out.width= "900"}
+::: {#fig-UDMap_kud_foraging_ECE_wNO_A}
+```{r}
 #| echo: false
-knitr::include_graphics("distance_schema_geoportail_4.png", dpi = 100)
+
+tags$iframe(
+  src = "UDMap_kud_foraging_ECE_wNO_A.html",
+  width = "100%",
+  height = "400px"
+)
 ```
 
-Distance entre les zones de repos et d'alimentation, calculé à chaque cycle de marée et moyennée par individu
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_foraging_ECE_wNO_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_ECE_wNO_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_foraging_ECE_wNO_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_ECE_wNO_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+::::::
+
+### Evènements de vent fort de Nord-Ouest
+
+:::::: panel-tabset
+#### Zone A
+
+::: {#fig-UDMap_kud_foraging_ECE_wNO_wspd95_A}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_ECE_wNO_wspd95_A.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone B
+
+::: {#fig-UDMap_kud_foraging_ECE_wNO_wspd95_B}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_ECE_wNO_wspd95_B.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+
+#### Zone C
+
+::: {#fig-UDMap_kud_foraging_ECE_wNO_wspd95_C}
+```{r}
+#| echo: false
+
+tags$iframe(
+  src = "UDMap_kud_foraging_ECE_wNO_wspd95_C.html",
+  width = "100%",
+  height = "400px"
+)
+```
+
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+:::
+::::::
+
+# **Distance entre les reposoirs et les zones d'alimentation** {#section-distance}
 
 Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
 
@@ -1196,13 +1442,11 @@ Variation des zones d'alimentation individuelles au cours des cycles de marée.
 
 # **Evitement des chasseurs et des zones de chasses**
 
-## Chasse sur le Domaine Public Maritime
+## Chasse à pied 
 
-Effet de la période de chasse :
+La chasse à pied est autorisée sur le Domaine Public Maritime (DPM) aux alentours de la RNNMO. Il est attendu que la présence de chasseur et de tir dérange les courlis cendré et que leur utilisation de l'espace pour les comportements de repos et d'alimentation en soient perturbé.
 
-L'utilisation de l'espace par les Courlis cendrés pendant et hors période de chasse à pied sont comparés.
-
-!!!!!! testé mais sans effet détecté : jour de chasse, seuil de chasse avec beaucoup de chasseur ou pas
+Dans d'ouverture et de fermeture de la chasse sur le DPM :
 
 ```{r}
 #| echo: false
@@ -1229,9 +1473,7 @@ datatable(
 )
 ```
 
-Les données disponibles de comptage de chasseur sur le Domaine Public maritime (DPM) se restreignent à la plage de Saint-Froult. Les analyses sont donc faites uniquement dans la zone C autour de la zone principale de présence des chasseurs.
-
-Également, afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restraint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
+Afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restreint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
 
 ::: {#fig-UDMap_kud_roosting_in_out_saison_B}
 ```{r}
@@ -1244,7 +1486,7 @@ tags$iframe(
 )
 ```
 
-Zone de repos pendant (in) et hors (out) période de chasse.
+Zones de repos en fonction hors et pendant la saison de chasse : zones de repos hors saison de chasse en rose ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones de repos en rose foncé, 50% des points GPS ; zone de repos secondaires en rose clair, 95% des points GPS), zones de repos pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones de repos secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ::: {#fig-UDMap_kud_foraging_in_out_saison_B}
@@ -1258,40 +1500,27 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation pendant et hors période de chasse.
+Zones d'alimentation en fonction hors et pendant la saison de chasse : zones d'alimentation hors saison de chasse en bleu ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones d'alimentation secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
-Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé.
-
-Aucun effet n'a pu être visuellement détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
+Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé, mais aucun effet n'a pu être détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
 ## Chasse à la tonne
 
-!!!!!! testé mais sans effets detecté : changement d'utilisation de l'espace quand fermeture de la chasse, avec zone de danger et zone de proximité \> saison de chasse (sept-fev), saison + heure de chasse, periode d'étude de chasse (15j av/ap), periode d'étude + heure de chasse (15j av/ap),
+::: {#fig-foraging}
+```{r, out.height = "300px", out.width= "450px"}
+#| echo: false
+knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg", dpi = 100)
+```
 
-::: {style="float: right; width: 550px; margin: 0 0 1em 1em; text-align: center; font-size: 0.9em; color: #555;"}
-<img src="Une_tonne_de_chasse_au_gibier_d&apos;eau.jpg" style="width: 100%;"/>
-
-<p>Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (crédit photo: Jean-Pierre Bazard).</p>
+Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (©Jean-Pierre Bazard).
 :::
 
-La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et dissimulée appelée tonne. Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer et de tirer les oiseaux migrateurs, principalement les anatidés (canards, oies), souvent de nuit.
+La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs, principalement les anatidés (canards, oies), souvent de nuit.
 
-La tonne est enterrée ou semi-enterrée et équipée pour permettre l’observation, l’attente prolongée et le tir. Des appelants vivants (canards domestiques dressés) ou artificiels (formes flottantes) sont disposés sur le plan d’eau pour simuler la présence d’un groupe et inciter les oiseaux sauvages à se poser.
+En charente-maritime, la période de chasse s'ouverture généralement fin aout, jusqu'à la fin février. Le tir est autorisé de nuit et jusqu'à 1h après le levé du soeil et 1h avant le coucher du soleil du le domaine public maritime. Le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime et fluvial. La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes. 
 
-Ces plans d’eau (appelé mare à la tonne) sont spécifiquement aménagés pour optimiser leur attractivité : contrôle de la végétation, entretien régulier, et gestion du niveau d’eau. Leur usage est réservé aux installations déclarées.
-
-Cette pratique est fortement ancrée dans le patrimoine cynégétique local, notamment sur le littoral et les marais de Charente-Maritime. Toutefois, elle soulève des questions relatives à la pression exercée sur les espèces migratrices, à la conservation des zones humides, et à la cohabitation avec d’autres usagers de la nature.
-
-Réglementation en Charente-Maritime :
-
--   Période de chasse : ouverture généralement fin aout, fermeture fin février.
--   Horaires de tir : Le tir de nuit est autorisé dans le cadre de la chasse à la tonne. En période anticipée (à partir du 17 août), le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime (DPM) et fluvial (DPF).
--   Installations des tonnes : La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes. Les installations doivent répondre à des normes de sécurité et ne peuvent être déplacées sans autorisation.
--   Appelants : L’utilisation d’appelants vivants est autorisée sous réserve de déclaration, baguage et respect des règles de détention (traçabilité, soins, conditions sanitaires). Les formes artificielles sont également admises.
-
-::: {style="clear: both;"}
-:::
+Il est attendu que les tonnes de chasse constitues un dérangement non négligeable pour les oiseaux d'eaux, même lorsqu'il ne sont pas chassé, comme c'est le cas pour le Courlis cendré.
 
 ::: {#fig-map_tonnes}
 ```{r}
@@ -1371,43 +1600,27 @@ Le détail des méthodes est disponible dans le document [Readme]{style="font-fa
 
 **Assignation des comportements**
 
-Chaque points GPS enregistrés est associé à un comportement de repos, de recherche alimentaire ou autre.
+Chaque points GPS enregistrés est associé à un comportement de repos (voir section "Les principaux reposoirs" [ici](#section-reposoir)), de recherche alimentaire (voir section "Les principales zones d'alimentation" [ici](#section-alimentation)) ou autre.
 
-*Comportements de repos*
+*Comportements de repos* : Un point GPS est considéré comme correspondant à du repos si : i) vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR"), ii) entre 2h avant et 2h après une marée haute, iii) au dessus du plus bas niveau d'eau de marée base (au dessus du *Lowest Astronomical Tide* en anglais) et iv) en dehors de la zone intertidal (déterminée par Litto3D data). 
 
-Voir section "[Les principaux reposoirs](#section-reposoir)"
-
-Un point GPS est considéré comme correspondant à du repos si :
-
-- vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR")
-- entre 2h avant et 2h après une marée haute
-- XX
-- XX
-
-*Comportement de recherche alimentaire*
-
-Voir section "[Les principales zones d'alimentation](#section-alimentation)"
-
-Un point GPS est considéré comme correspondant à de la recherche alimentaire si :
-
-- vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR")
-- entre 2h avant et 2h après une marée basse
+*Comportement de recherche alimentaire* : Un point GPS est considéré comme correspondant à de la recherche alimentaire si : i) vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR"), et ii) entre 2h avant et 2h après une marée basse. 
 
 **Identification de l'âge des individus** 
 
-Voir section "[Reposoirs en fonction de l'age](#section-age1)" et section "[Zone d'alimentation en fonction de l'age](#section-age1)".
+Voir section "Reposoirs en fonction de l'age" [ici](#section-age1) et section "Zone d'alimentation en fonction de l'age" [ici](#section-age1).
 
 L'âge des individus est déterminé au baguage grâce à leur plumage. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
 
 **Identification du sexe des individus** 
 
-Voir section "[Reposoirs en fonction du sexe](#section-sexe1)" et section "[Zone d'alimentation en fonction du sexe](#section-sexe2)".
+Voir section "Reposoirs en fonction du sexe" [ici](#section-sexe1) et section "Zone d'alimentation en fonction du sexe" [ici](#section-sexe2).
 
-Le sexe des individus est déterminé au baguage grâce à XX, les femelles étant plus XX que les mâles
+Le sexe des individus est déterminé au baguage par morphométrie, les femelles étant plus grandes que les mâles.
 
 **Classification des hauteurs d'eau**
 
-Voir section "[Zone de repos en fonction de la hauteur d'eau](#section-hauteurEau1)"
+Voir section "Zone de repos en fonction de la hauteur d'eau" [ici](#section-hauteurEau1).
 
 Le marégraphe utilisé pour obtenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité. Lorsque les données été manquante pour ce marégraphe, les hauteur d'eau on ét é prédites via une  corrélation avec la cotinière et la rochelle. La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargées via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19). La hauteur d'eau est moyennée pour chaque période du grain temporelle choisie (5 min). 
 
@@ -1415,16 +1628,15 @@ Basée sur l'expertise de terrain, les marées hautes ont été classées en fon
 
 **Evènement climatique extremes**
 
-/! autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
+Les évènements climatiques extrêmes (ECE) sont définis comme les évènements d'intensité supérieure au quartile 95% des distributions du paramétres météorologiques sur la période 2015-2024 (REF).
 
 Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
 
-Les évènements climatiques extrêmes (ECE) sont généralement définis comme les évènements d'intensité supérieure (ou inférieur) au quartile 95% des distributions du paramétres météorologiques (REF) sur la période 2015-2024.
+/! autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
 
-Ici, les paramètres météorologiques étudiés sont :
 
--   la vitesse moyenne journalière du vent
--   l'orientation moyenne journalière du vent
+
+Les paramètres météorologiques étudiés sont la vitesse et l'orientation moyenne journalière du vent.
 
 A partir de ces deux paramètres météorologiques, 3 paramètres météorologiques extrêmes ont été calculés :
 
@@ -1437,6 +1649,21 @@ L'utilisation de l'espace pour les comportements de repos et d'alimentation pend
 Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos.
 
 Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
+
+**Distance entre les zones de repos et d'alimentations**
+
+Voir section "[Distance entre les reposoirs et les zones d'alimentation](#section-distance)".
+
+La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_schema_geoportail_4).
+
+::: {#fig-distance_schema_geoportail_4}
+```{r, out.height = "500px", out.width= "900"}
+#| echo: false
+knitr::include_graphics("distance_schema_geoportail_4.png", dpi = 100)
+```
+
+Distance entre les zones de repos et d'alimentation, calculé à chaque cycle de marée et moyennée par individu
+:::
 
 **Analyses spatiales**
 
@@ -1452,21 +1679,21 @@ Suivant les analyses, le sous jeu de données utilisé pour estimer les distribu
 
 Afin de garantir de représentativité égale à chaque individus étudiés amlgré l'hétérogénéïté dans les quantités de point GPS enregistrés, un échantillonnage aléatoire de point a été effectué à chaque analyse. Pour chaque individus et catégories de variables analysées (comportement, zone, sex, age, etc...), 1000 points sont échantillonné aléatoirement sans remise. La probabilité d'échantillonnage est fonction du temps entre chaque point, plus un point représente une période de temps peu enregistré, plus il aura de probabilité d'être échantillonné. Lorsqu'un individu présente moins de 1000 point pour une combinaison de variable données, tous les disponibles pour cette combinaison sont sélectionnés.
 
-- Domaines vitaux : 
+*Domaines vitaux*
 
-Voir section "[Domaines vitaux](#section-HR)"
+Voir section "Domaines vitaux" [ici](#section-HR).
 
 Les domaines vitaux (<em>home range</em>) ont ici été estimés via des fonction de distribution d'utilisation de l'espace (voir précédement) pour chaque individu séparemment. Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus. 
 
 Deux niveaux de domaine vital sont définis pour chaque individu : i) le domaine vital étendu qui correspond à l’enveloppe englobant 95 % de la surface d’utilisation, ii) le noyau d’activité correspond à l'enveloppe englobant les principaux 50% de la surface d'utilisation, représente les zones de fréquentation la plus intense.
 
-- Temps passé dans la RNNMO :
+*Temps passé dans la RNNMO* 
 
-Voir section "[Temps passé dans la réserve](#section-tempsDansReserve)"
+Voir section "Temps passé dans la réserve" [ici](#section-tempsDansReserve).
 
 Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
 
-## Reproductibilité des analyses
+## Données et codes
 
 Toutes les analyses, graphiques et cartes ont été produites à l'aide du logiciel R version XXX et RStudio version XXX.
 
@@ -1479,6 +1706,7 @@ L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github]
 # **Bibliographie**
 
 -   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
+- <span id="beniston2004">Beniston, M., & Stephenson, D. B. (2004). Extreme climatic events and their evolution under changing climatic conditions. Global and planetary change, 44(1-4), 1-9.
 -   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
 
 <a href="#top">↑ retour en haut</a>
