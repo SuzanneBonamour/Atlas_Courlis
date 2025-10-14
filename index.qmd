@@ -496,6 +496,63 @@ tags$iframe(
 Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
+```{r}
+# ---- Packages ----
+library(sf)
+library(jsonlite)
+library(stringr)
+library(dplyr)
+library(knitr)
+
+# ---- Fichier HTML de la carte ----
+html_file <- "UDMap_kud_roosting_age_A.html" # <-- adapte le nom
+
+# ---- Lire le contenu HTML ----
+html_text <- paste(paste0(atlas_path, readLines(html_file, warn = FALSE), collapse = "\n"))
+
+# ---- Extraire tous les blocs GeoJSON intégrés ----
+json_blocks <- str_extract_all(
+  html_text,
+  "\\{\\s*\"type\"\\s*:\\s*\"FeatureCollection\"[\\s\\S]*?\\}\\s*\\}\\s*\\]\\s*\\}"
+)[[1]]
+
+# ---- Vérification ----
+cat("Nombre de couches GeoJSON trouvées :", length(json_blocks), "\n")
+
+# ---- Fonction pour calculer les aires à partir d’un bloc GeoJSON ----
+calc_area <- function(geojson_text, name = "layer") {
+  tmpfile <- tempfile(fileext = ".geojson")
+  writeLines(geojson_text, tmpfile)
+
+  gdf <- st_read(tmpfile, quiet = TRUE)
+  gdf <- st_transform(gdf, 2154) # Lambert 93 (unités en mètres)
+
+  gdf <- gdf %>%
+    mutate(
+      surface_m2 = as.numeric(st_area(geometry)),
+      surface_ha = surface_m2 / 10000,
+      couche = name
+    )
+  return(gdf)
+}
+
+# ---- Appliquer la fonction aux deux couches principales ----
+# (si tu as deux couches : data_95 et data_50)
+data_95 <- calc_area(json_blocks[1], "data_95")
+data_50 <- calc_area(json_blocks[2], "data_50")
+
+# ---- Combiner et faire un tableau résumé par param ----
+table_aires <- bind_rows(data_95, data_50) %>%
+  st_drop_geometry() %>%
+  group_by(couche, param) %>%
+  summarise(surface_ha = sum(surface_ha, na.rm = TRUE), .groups = "drop") %>%
+  arrange(couche, desc(surface_ha))
+
+# ---- Afficher le tableau joliment ----
+kable(table_aires, caption = "Surfaces (ha) par catégorie `param` pour data_50 et data_95")
+```
+
+
 ### Zone B
 
 ::: {#fig-UDMap_kud_roosting_age_B}
