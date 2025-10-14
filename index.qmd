@@ -220,24 +220,9 @@ knitr::include_graphics("emission_plot.png", dpi = 100)
 Période d'émission des balises GPS pour chaque individu
 :::
 
-# Temps passé dans la réserve naturelle de Moëze-Oléron {#section-tempsDansReserve}
-
-Le pourcentage de temps moyen passé dans la RNNMO par individu est en moyenne de 61%, de 60% pour les comportements de repos uniquement, de 63% pour les comportements d'alimentation uniquement, et de 62% pour les autres comportements.
-
-::: {#fig-duree_dans_reserve_plot}
-```{r}
-#| echo: false
-#| out.width: 70%
-#| fig-align: "center"
-knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
-```
-
-Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
-:::
-
 # Domaines vitaux {#section-HR}
 
-Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50% des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_gp_1).
+Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50 % des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_gp_1).
 
 ::: {#fig-UDMap_HR_gp_1}
 ```{r}
@@ -250,7 +235,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 1.
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 1.
 :::
 
 ::: {#fig-UDMap_HR_gp_2}
@@ -264,7 +249,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 2.
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 2.
 :::
 
 ::: {#fig-UDMap_HR_gp_3}
@@ -278,7 +263,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 3.
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 3.
 :::
 
 ::: {#fig-UDMap_HR_gp_4}
@@ -292,7 +277,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 4.
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 4.
 :::
 
 Les individus ont des domaines vitaux (tous types de comportements confondus) moyen de 644m², avec une zone principale d'activité de 67m² (@fig-area_hr_plot). 
@@ -305,10 +290,10 @@ Les individus ont des domaines vitaux (tous types de comportements confondus) mo
 knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
 
-Aire des domaines vitaux individuels estimés à 95% (ronds oranges) et 50% (triangles verts, en m² ± écart-type) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs).
+Aire des domaines vitaux individuels estimés à 95 % (ronds oranges) et 50 % (triangles verts, en m² ± écart-type) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs).
 :::
 
-La surface du domaine vital des individus ne varie pas en fonction du sexe, avec les mâles présentant un plus petit domaine vital à 95% que les femelles (coef = -0.28, p-value = 0.04). La surface du domaine vital ne varie pas en fonction de l'âge.
+La surface du domaine vital des individus ne varie pas en fonction du sexe, avec les mâles présentant un plus petit domaine vital à 95 % que les femelles (coef = -0.28, p-value = 0.04). La surface du domaine vital ne varie pas en fonction de l'âge.
 
 ::: {#fig-surface_sex_age_all_plot}
 ```{r}
@@ -318,7 +303,7 @@ La surface du domaine vital des individus ne varie pas en fonction du sexe, avec
 knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 ```
 
-Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
+Aire du domaine vital des individus à 95 % et 50 % en fonction de leur âge ou de leur sexe.
 :::
 
 # Les principaux reposoirs {#section-reposoir}
@@ -454,7 +439,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos : principaux reposoirs en rose foncé (50 % des points GPS), zones secondaires de repos en rose clair (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ## Zone B
@@ -470,7 +455,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
+Zones de repos : principaux reposoirs en rose foncé (50 % des points GPS), zones secondaires de repos en rose clair (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
 :::
 
 ## Zone C
@@ -486,7 +471,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones secondaires de repos en rose clair (95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
+Zones de repos : principaux reposoirs en rose foncé (50 % des points GPS), zones secondaires de repos en rose clair (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
 :::
 ::::::
 
@@ -508,7 +493,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone B
@@ -524,7 +509,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone C
@@ -540,7 +525,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -562,7 +547,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone B
@@ -578,7 +563,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ### Zone C
@@ -594,7 +579,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -619,7 +604,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -635,7 +620,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -651,7 +636,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à gris de août à septembre (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -671,7 +656,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -687,7 +672,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -703,7 +688,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -848,7 +833,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS)
 :::
 
 #### Zone B
@@ -864,7 +849,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS)
 :::
 
 #### Zone C
@@ -880,7 +865,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS)
 :::
 ::::::
 
@@ -902,7 +887,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -918,7 +903,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -934,7 +919,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -958,7 +943,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 
 :::
 
@@ -975,7 +960,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -991,7 +976,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1011,7 +996,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1027,7 +1012,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1043,7 +1028,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1051,7 +1036,7 @@ Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentat
 
 Les évènements climatiques extrèmes sont en augmentation, en fréquence et en intensité, avec le changement climatiques ([beniston2004](#beniston2004)). Les évènements de vents forts sont suspectés d'être préjudiciable pour les courlis cendré et on s'attend à ce que leur utilisation de l'espace soit modifié lors des tempêtes. 
 
-L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme jours de référence. Les évènements extrèmes sont ici distingué en trois catégories : i) les évènements de vent fort (vitesse de vent supérieur aux 95% des enregistrements), ii) les évènements de vent de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux 
+L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme jours de référence. Les évènements extrèmes sont ici distingué en trois catégories : i) les évènements de vent fort (vitesse de vent supérieur aux 95 % des enregistrements), ii) les évènements de vent de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux 
 
 XXX Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos. Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici. autre variable extrème à ajouter ? roosting aussi XXX
 
@@ -1073,7 +1058,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1089,7 +1074,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1105,7 +1090,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1125,7 +1110,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1141,7 +1126,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1157,7 +1142,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1177,7 +1162,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1193,7 +1178,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1209,7 +1194,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1231,7 +1216,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1247,7 +1232,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1263,7 +1248,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1283,7 +1268,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1299,7 +1284,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1315,7 +1300,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1335,7 +1320,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1351,7 +1336,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1367,7 +1352,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; zones d'alimentation secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1479,7 +1464,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction hors et pendant la saison de chasse : zones de repos hors saison de chasse en rose ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones de repos en rose foncé, 50% des points GPS ; zones de repos secondaires en rose clair, 95% des points GPS), zones de repos pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones de repos secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction hors et pendant la saison de chasse : zones de repos hors saison de chasse en rose ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones de repos en rose foncé, 50 % des points GPS ; zones de repos secondaires en rose clair, 95 % des points GPS), zones de repos pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50 % des points GPS ; zones de repos secondaires en gris clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ::: {#fig-UDMap_kud_foraging_in_out_saison_B}
@@ -1493,7 +1478,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction hors et pendant la saison de chasse : zones d'alimentation hors saison de chasse en bleu ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones d'alimentation secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction hors et pendant la saison de chasse : zones d'alimentation hors saison de chasse en bleu ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones d'alimentation en bleu foncé, 50 % des points GPS ; zones d'alimentation secondaires en bleu clair, 95 % des points GPS), zones d'alimentation pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50 % des points GPS ; zones d'alimentation secondaires en gris clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé, mais aucun effet n'a pu être détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
@@ -1558,7 +1543,7 @@ tags$iframe(
 )
 ```
 
-Zone critique de dérangement du courlis cendré : zones d'alimentation en bleu (principaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS) ; zones de repos en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zone secondaires d'alimentation et de repos en jaune ; tonnes de chasse, points noirs ; tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges ; tonnes de chasse dans les zones secondaire sd'alimentation et:ou de repos en points jaunes ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zone critique de dérangement du courlis cendré : zones d'alimentation en bleu (principaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS) ; zones de repos en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS) ; zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zone secondaires d'alimentation et de repos en jaune ; tonnes de chasse, points noirs ; tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges ; tonnes de chasse dans les zones secondaire sd'alimentation et:ou de repos en points jaunes ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 # Discussion
@@ -1623,7 +1608,7 @@ Basée sur l'expertise de terrain, les marées hautes ont été classées en fon
 
 Voir section "Utilisation de l'espace lors d'évènements de vent extrêmes" [ici](#section-ECE)".
 
-Les évènements climatiques extrêmes (ECE) sont définis comme les évènements d'intensité supérieure au quartile 95% des distributions du paramétres météorologiques sur la période 2015-2024. Trois variables ECE ont été calculé à partir de la vitesse et l'orientation moyenne journalière du vent: i) les évènements de vent fort : 5% des vitesses de vent les plus fortes, ii)  les évènements de vent de Nord-Ouest : orientation du vent entre 270 et 360 degrés, et iii) les évènements de vent fort de Nord-Ouest : 5% des vitesses de vent les plus fortes et d'orientation entre 270 et 360 degrés. Un ECE est un jour où l'une de ces 3 variables a été détectées. L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec ECE detectés sont comparés aux jours j-7 avant les évènements extrêmes et considéré comme jour de référence.
+Les évènements climatiques extrêmes (ECE) sont définis comme les évènements d'intensité supérieure au quartile 95 % des distributions du paramétres météorologiques sur la période 2015-2024. Trois variables ECE ont été calculé à partir de la vitesse et l'orientation moyenne journalière du vent: i) les évènements de vent fort : 5% des vitesses de vent les plus fortes, ii)  les évènements de vent de Nord-Ouest : orientation du vent entre 270 et 360 degrés, et iii) les évènements de vent fort de Nord-Ouest : 5% des vitesses de vent les plus fortes et d'orientation entre 270 et 360 degrés. Un ECE est un jour où l'une de ces 3 variables a été détectées. L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec ECE detectés sont comparés aux jours j-7 avant les évènements extrêmes et considéré comme jour de référence.
 
 Les données météorologiques utilisées sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
 
@@ -1633,35 +1618,27 @@ Voir section "Distance entre les reposoirs et les zones d'alimentation" [ici](#s
 
 La distance entre la zones d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marée.
 
-**Analyses spatiales**
+**Distribution d'utilisation de l'espace**
 
 Voir sections "Les principaux reposoirs" [ici](#section-reposoir) et "Les principales zones d'alimentation" [ici](#section-alimentation).
 
-L'ensemble des analyses statiales sont basées sur des estimations de zones d'utilisation de l'espace dites "distribution d'utilisation". La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal. Les distributions d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. 
+*Méthodes des kernels* : L'ensemble des analyses statiales sont basées sur des estimations de fonction de "distribution d'utilisation" de l'espace. La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD" en anglais) décrit la probabilité de présence d’un individu dans l'espace en fonction des points GPS qui lui ont été associés [Worton (1989)](#Worton1989). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal. Les estimations de distribution d'utilisation de l'espace ont été effectué par la méthode dite du noyau (*kernel* en anglais) et avec les fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
-Les estimations de distribution d'utilisation de l'espace ont été effectué avec les fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
+*Paramètre de lissage (h)* : L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, en anglais, nommé *h*), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 pour permettre des analyses à grain plus fin (voir dans sur chaque carte pour la valeur de *h* utilisées).
 
-L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, nommé h), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau), ajustée par un facteur de 1/2 (h/2) pour permettre des analyses à grain plus fin.
+*Echantillonnage aélatoire* : Afin de garantir de représentativité égale à chaque individus étudiés amlgré l'hétérogénéïté dans les quantités de point GPS enregistrés, un échantillonnage aléatoire de point a été effectué à chaque analyse. Pour chaque individus et catégories de variables analysées (comportement, zone, sex, age, etc...), 1000 points sont échantillonné aléatoirement sans remise. La probabilité d'échantillonnage est fonction du temps entre chaque point, plus un point représente une période de temps peu enregistré, plus il aura de probabilité d'être échantillonné. Lorsqu'un individu présente moins de 1000 point pour une combinaison de variable données, tous les disponibles pour cette combinaison sont sélectionnés.
 
-Les études sur la zone globale ont été effectuées avec un grain spatial large en grille de 100 m x 100 m. Les études sur les zones réduites A, B et C ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
+*Sous jeu de données utilisé* : Suivant les analyses, le jeu de données utilisé pour estimer les distributions d'utilisation de l'espace est différent et restreint à la zone A, B et C, au comportement ciblé (repos ou alimentation), et/ou à la (ou les) variable(s) d'interêt(s) sans valeur inconnues (c'est-à-dire sans *NA*).
 
-Suivant les analyses, le sous jeu de données utilisé pour estimer les distributions d'utilisation de l'espace est différent et restreint à la zone A, B et C, au comportement ciblé (repos ou alimentation), et/ou à la (ou les) variable(s) d'interêt(s) (par exemple avec sexe ou age connus, date de submersion, etc...).
+*Grain spatial* : Les analyses spatiales ont été effectués avec un grain spatial fin en grille de 10 m x 10 m.
 
-Afin de garantir de représentativité égale à chaque individus étudiés amlgré l'hétérogénéïté dans les quantités de point GPS enregistrés, un échantillonnage aléatoire de point a été effectué à chaque analyse. Pour chaque individus et catégories de variables analysées (comportement, zone, sex, age, etc...), 1000 points sont échantillonné aléatoirement sans remise. La probabilité d'échantillonnage est fonction du temps entre chaque point, plus un point représente une période de temps peu enregistré, plus il aura de probabilité d'être échantillonné. Lorsqu'un individu présente moins de 1000 point pour une combinaison de variable données, tous les disponibles pour cette combinaison sont sélectionnés.
-
-*Domaines vitaux*
+**Domaines vitaux**
 
 Voir section "Domaines vitaux" [ici](#section-HR).
 
-Les domaines vitaux (<em>home range</em>) ont ici été estimés via des fonction de distribution d'utilisation de l'espace (voir précédement) pour chaque individu séparemment. Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus. 
+Les domaines vitaux (<em>home range</em> en anglais) ont ici été estimés par la même méthode qye les autres analayses spatiales, mais pour chaque individu séparemment. Les calculs ont été réalisés à partir de l’ensemble des points de localisation disponibles pour chaque individu, tous comportements confondus. 
 
-Deux niveaux de domaine vital sont définis pour chaque individu : i) le domaine vital étendu qui correspond à l’enveloppe englobant 95 % de la surface d’utilisation, ii) le noyau d’activité correspond à l'enveloppe englobant les principaux 50% de la surface d'utilisation, représente les zones de fréquentation la plus intense.
-
-*Temps passé dans la RNNMO* 
-
-Voir section "Temps passé dans la réserve" [ici](#section-tempsDansReserve).
-
-Le temps passé dans la réserve est estimé comme le nombre de point GPS observés dans et hors réserve pour chaque individu. Chaque point représente 5 min de temps.
+Deux niveaux de domaine vital sont calculés pour chaque individu : i) le domaine vital étendu qui correspond à l’enveloppe englobant 95 % de la surface d’utilisation, ii) le noyau d’activité correspond à l'enveloppe englobant les principaux 50 % de la surface d'utilisation, représente les zones de fréquentation la plus intense.
 
 ## Données et codes
 
@@ -1673,9 +1650,10 @@ L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github]
 
 # Bibliographie
 
--   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
 - <span id="beniston2004">Beniston, M., & Stephenson, D. B. (2004). Extreme climatic events and their evolution under changing climatic conditions. Global and planetary change, 44(1-4), 1-9.
 -   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
+- <span id="Worton1989">Worton, B.J., 1989. Kernel methods for estimating the utilization distribution in home-range
+studies. Ecology 70, 164–168.
 
 # Auteur.ices, affiliations et contributions
 
@@ -1691,8 +1669,12 @@ L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github]
 
 Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
 
-<a href="#top">↑ retour en haut</a>
+# Financeurs
+
+La région Nouvelle-Aquitaine, France Nation Verte, XXX
 
 ::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
 <img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
 :::
+
+<a href="#top">↑ retour en haut</a>
