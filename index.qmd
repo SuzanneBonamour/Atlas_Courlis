@@ -53,7 +53,7 @@ data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
-# **Messages clés**
+# Messages clés
 
 XXX Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.
 
@@ -61,12 +61,12 @@ Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum ext
 
 Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique ut solent avia montium petiere celsorum.
 
-# **Contexte et objectifs scientifiques**
+# Contexte et objectifs scientifiques
 
 Créée en 1985, la Réserve Naturelle Nationale de Moëze-Oléron (RNNMO, @fig-Photo_intro), située dans le département de la charente maritime, s’étend sur près de 6 800 hectares entre le continent et l’île d’Oléron. Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année jusqu'à 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants.
 
 ::: {#fig-Photo_intro}
-```{r, out.height = "300px", out.width= "1350px"}
+```{r, out.height = "500px", out.width= "2300px"}
 #| echo: false
 knitr::include_graphics("photo_intro_RNNMO.png", dpi = 100)
 ```
@@ -77,26 +77,24 @@ La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (©RNN
 Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques (@fig-flux) et contribuant à la conservation des oiseaux d’eau à l’échelle internationale.
 
 ::: {#fig-flux}
-```{r, out.height = "400px", out.width= "900px"}
+```{r, out.height = "500px", out.width= "1100px"}
 #| echo: false
 knitr::include_graphics("Cartes flux migrateurs France RN (2).jpg", dpi = 100)
 ```
 
-La réserve naturelle nationale de Moëze-Oléron est un maillon important sur le route de migration de nombreuses espèces de limicoles (RNNMO - LPO).
+La réserve naturelle nationale de Moëze-Oléron est un maillon important sur le route de migration de nombreuses espèces de limicoles (©RNNMO - LPO).
 :::
 
 Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendrés au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-baguage).
 
 ::: {#fig-baguage}
-```{r, out.height = "300px", out.width= "800px"}
+```{r, out.height = "500px", out.width= "1350px"}
 #| echo: false
 knitr::include_graphics("baguage.png", dpi = 100)
 ```
 
 Suivi du coulirs cendré : a) courlis cendré bagué (©Armel Deniau), b) pose d'un GPS sur une courlis cendré (©Loic Jomat)
 :::
-
-<a href="#top">↑ retour en haut</a>
 
 L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map_new). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
 
@@ -106,17 +104,15 @@ Le travail présenté ici propose une cartographie fine de la répartition des c
 
 Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par l’Etat (Fonds Vert) et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
 
-<a href="#top">↑ retour en haut</a>
-
-# **Le courlis cendré**
+# Le courlis cendré
 
 ::: {#fig-20170226}
-```{r, out.height = "300px", out.width= "500"}
+```{r, out.height = "500px", out.width= "700px"}
 #| echo: false
 knitr::include_graphics("20170226-Großer_Brachvogel.jpg", dpi = 100)
 ```
 
-Courlis cendrés en vol (Großer_Brachvogel)
+Courlis cendrés en vol (©Großer Brachvogel)
 :::
 
 **Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
@@ -135,9 +131,7 @@ Courlis cendrés en vol (Großer_Brachvogel)
 
 **Tendance démographique et statuts de conservation** : Le courlis cendré est en déclin modéré à marqué en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (Quasi menacé) à l’échelle mondiale par IUCN. En europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme Vulnérable et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année. A l'international, il est classé à l'Annexe II de la Convention de Bonn (CMS).
 
-<a href="#top">↑ retour en haut</a>
-
-# **La zone d'étude**
+# La zone d'étude
 
 ```{r}
 #| include: false
@@ -159,15 +153,14 @@ Les individus sont tous bagués et équipés de GPS au sein de la RNNMO au site 
 tags$iframe(
   src = "zone_map_new.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
 La zone d'étude est divisée en trois zones distinctes A, B et C ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
-# **Périodes de suivi des individus**
-
+# Périodes de suivi des individus
 
 ```{r}
 #| eval: false
@@ -227,7 +220,7 @@ knitr::include_graphics("emission_plot.png", dpi = 100)
 Période d'émission des balises GPS pour chaque individu
 :::
 
-# **Temps passé dans la réserve naturelle de Moëze-Oléron** {#section-tempsDansReserve}
+# Temps passé dans la réserve naturelle de Moëze-Oléron {#section-tempsDansReserve}
 
 Le pourcentage de temps moyen passé dans la RNNMO par individu est en moyenne de 61%, de 60% pour les comportements de repos uniquement, de 63% pour les comportements d'alimentation uniquement, et de 62% pour les autres comportements.
 
@@ -242,7 +235,7 @@ knitr::include_graphics("duree_dans_reserve_plot.png", dpi = 100)
 Temps passé dans la réserve de Moëze-Oléron pour chaque individu (points) en fonction du type de comportement. En lignes, les pourcentages moyens pour chaque comportement.
 :::
 
-# **Domaines vitaux** {#section-HR}
+# Domaines vitaux {#section-HR}
 
 Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50% des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_gp_1).
 
@@ -257,7 +250,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 1.
 :::
 
 ::: {#fig-UDMap_HR_gp_2}
@@ -271,7 +264,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 2.
 :::
 
 ::: {#fig-UDMap_HR_gp_3}
@@ -285,7 +278,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 3.
 :::
 
 ::: {#fig-UDMap_HR_gp_4}
@@ -299,7 +292,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). 
+Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50% de la surface d'utilisation). Groupe d'individu 4.
 :::
 
 Les individus ont des domaines vitaux (tous types de comportements confondus) moyen de 644m², avec une zone principale d'activité de 67m² (@fig-area_hr_plot). 
@@ -328,12 +321,12 @@ knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 Aire du domaine vital des individus à 95% et 50% en fonction de leur âge ou de leur sexe.
 :::
 
-# **Les principaux reposoirs** {#section-reposoir}
+# Les principaux reposoirs {#section-reposoir}
 
-A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zone de repos.
+A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zones de repos.
 
 ::: {#fig-roosting}
-```{r, out.height = "300px", out.width= "450px"}
+```{r, out.height = "500px", out.width= "750px"}
 #| echo: false
 knitr::include_graphics("roosting_Laurie Campbell.jpg", dpi = 100)
 ```
@@ -358,7 +351,7 @@ div(
       id = "map-iframe-roosting-a",
       src = "UDMap_kud_roosting_A.html",
       width = "100%",
-      height = "400px",
+      height = "600px",
       style = "border: none;"
     )
   ),
@@ -457,7 +450,7 @@ Reposoirs zone A
 tags$iframe(
   src = "UDMap_kud_roosting_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -473,7 +466,7 @@ Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones
 tags$iframe(
   src = "UDMap_kud_roosting_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -489,7 +482,7 @@ Zones de repos : principaux reposoirs en rose foncé (50% des points GPS), zones
 tags$iframe(
   src = "UDMap_kud_roosting_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -511,7 +504,7 @@ Le courlis cendré est considéré comme juvénile de sa sortie du nid au 1er se
 tags$iframe(
   src = "UDMap_kud_roosting_age_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -527,7 +520,7 @@ Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux repo
 tags$iframe(
   src = "UDMap_kud_roosting_age_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -543,7 +536,7 @@ Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux repo
 tags$iframe(
   src = "UDMap_kud_roosting_age_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -553,7 +546,7 @@ Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux repo
 
 ## Reposoirs en fonction du sexe {#section-sexe1}
 
-Les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur zone de repos. 
+Les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur zones de repos. 
 
 :::::: panel-tabset
 ### Zone A
@@ -565,7 +558,7 @@ Les courlis cendrés femelles et mâles ne présentent pas de différence marqu�
 tags$iframe(
   src = "UDMap_kud_roosting_sex_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -581,7 +574,7 @@ Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposo
 tags$iframe(
   src = "UDMap_kud_roosting_sex_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -597,7 +590,7 @@ Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposo
 tags$iframe(
   src = "UDMap_kud_roosting_sex_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -622,7 +615,7 @@ Les zones de repos peuvent varier en fonction de la période de l'année et des 
 tags$iframe(
   src = "UDMap_kud_roosting_month_label_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -638,7 +631,7 @@ Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à g
 tags$iframe(
   src = "UDMap_kud_roosting_month_label_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -654,7 +647,7 @@ Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à g
 tags$iframe(
   src = "UDMap_kud_roosting_month_label_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -674,7 +667,7 @@ Zones de repos en fonction du moi de l'année : reposoir en nuances de rose à g
 tags$iframe(
   src = "UDMap_kud_roosting_timeofday_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -690,7 +683,7 @@ Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pr
 tags$iframe(
   src = "UDMap_kud_roosting_timeofday_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -706,7 +699,7 @@ Zones de repos en fonction du jour et de la nuit : reposoirs de jour en rose (pr
 tags$iframe(
   src = "UDMap_kud_roosting_timeofday_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -732,7 +725,7 @@ Les dates détectées de submersion de la lagune sont : XXX
 tags$iframe(
   src = "UDMap_kud_roosting_tide_strength_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -748,7 +741,7 @@ Reposoirs en fonction de la hauteur d'eau, zone A
 tags$iframe(
   src = "UDMap_kud_roosting_tide_strength_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -764,7 +757,7 @@ Reposoirs en fonction de la hauteur d'eau, zone B
 tags$iframe(
   src = "UDMap_kud_roosting_tide_strength_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -772,12 +765,12 @@ Reposoirs en fonction de la hauteur d'eau, zone C
 :::
 ::::::
 
-# **Les principales zones d'alimentation**{#section-alimentation}
+# Les principales zones d'alimentation {#section-alimentation}
 
 A chaque marée base, les courlis cendrés partent à la recherche de nourriture.
 
 ::: {#fig-foraging}
-```{r, out.height = "300px", out.width= "450px"}
+```{r, out.height = "500px", out.width= "750px"}
 #| echo: false
 knitr::include_graphics("Pierre-Marie Epiney.png", dpi = 100)
 ```
@@ -795,7 +788,7 @@ Comportement de recherche d'alimentaire (*foraging* en anglais) (©Pierre-Marie 
 tags$iframe(
   src = "UDMap_kud_foraging_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -811,7 +804,7 @@ Alimentation zone A
 tags$iframe(
   src = "UDMap_kud_foraging_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -827,7 +820,7 @@ Alimentation zone B
 tags$iframe(
   src = "UDMap_kud_foraging_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -835,11 +828,11 @@ Alimentation zone C
 :::
 ::::::
 
-## Zone d'alimentation en fonction des caractéristiques biologique des individus
+## Zones d'alimentation en fonction des caractéristiques biologique des individus
 
 Les zones d'alimentation peuvent varier avec l'âge. Les courlis encore juvéniles étant moins expérimentés que les adultes, ils pourraient être assignés à des zones de recherche alimentaire moins favorables. 
 
-### Zone d'alimentation en fonction de l'age {#section-age2}
+### Zones d'alimentation en fonction de l'age {#section-age2}
 
 :::::: panel-tabset
 #### Zone A
@@ -851,11 +844,11 @@ Les zones d'alimentation peuvent varier avec l'âge. Les courlis encore juvénil
 tags$iframe(
   src = "UDMap_kud_foraging_age_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 #### Zone B
@@ -867,11 +860,11 @@ Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu 
 tags$iframe(
   src = "UDMap_kud_foraging_age_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 
 #### Zone C
@@ -883,15 +876,15 @@ Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu 
 tags$iframe(
   src = "UDMap_kud_foraging_age_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zone d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
+Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS)
 :::
 ::::::
 
-### Zone d'alimentation en fonction du sexe {#section-sexe2}
+### Zones d'alimentation en fonction du sexe {#section-sexe2}
 
 Les zones d'alimentation varié en fonction des sexe des individus. Les mâles sont resteint à des zones d'eau moins profondes dû à leur bec en moyenne plus court que celui des femelles.
 
@@ -905,11 +898,11 @@ Les zones d'alimentation varié en fonction des sexe des individus. Les mâles s
 tags$iframe(
   src = "UDMap_kud_foraging_sex_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -921,11 +914,11 @@ Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (
 tags$iframe(
   src = "UDMap_kud_foraging_sex_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -937,17 +930,17 @@ Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (
 tags$iframe(
   src = "UDMap_kud_foraging_sex_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zone d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zone d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; reposoirs secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
-## Zone d'alimentation en fonction du calendrier
+## Zones d'alimentation en fonction du calendrier
 
-### Zone d'alimentation en fonction du mois de l'année {#section-mois2}
+### Zones d'alimentation en fonction du mois de l'année {#section-mois2}
 
 Les zones d'alimentation peuvent varier en fonction de la période de l'année et des saisons.
 
@@ -961,11 +954,11 @@ Les zones d'alimentation peuvent varier en fonction de la période de l'année e
 tags$iframe(
   src = "UDMap_kud_foraging_month_label_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 
 :::
 
@@ -978,11 +971,11 @@ Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nu
 tags$iframe(
   src = "UDMap_kud_foraging_month_label_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -994,15 +987,15 @@ Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nu
 tags$iframe(
   src = "UDMap_kud_foraging_month_label_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du mois de l'année : zones d'alimentation en nuances de bleu à gris de août à septembre (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
-### Zone d'alimentation en fonction du jour et de la nuit
+### zones d'alimentation en fonction du jour et de la nuit
 
 :::::: panel-tabset
 #### Zone A
@@ -1014,11 +1007,11 @@ Zones d'alimentation en fonction du mois de l'année : zone d'alimentation en nu
 tags$iframe(
   src = "UDMap_kud_foraging_timeofday_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1030,11 +1023,11 @@ Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentat
 tags$iframe(
   src = "UDMap_kud_foraging_timeofday_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1046,15 +1039,15 @@ Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentat
 tags$iframe(
   src = "UDMap_kud_foraging_timeofday_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction du jour et de la nuit : zones d'alimentation de jour en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation nocturnes en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
-# **Utilisation de l'espace lors d'évènements de vent extrêmes**
+# Utilisation de l'espace lors d'évènements de vent extrêmes {#section-ECE}
 
 Les évènements climatiques extrèmes sont en augmentation, en fréquence et en intensité, avec le changement climatiques ([beniston2004](#beniston2004)). Les évènements de vents forts sont suspectés d'être préjudiciable pour les courlis cendré et on s'attend à ce que leur utilisation de l'espace soit modifié lors des tempêtes. 
 
@@ -1069,50 +1062,50 @@ XXX Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements 
 :::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_kud_roosting_ECE_wspd_A}
+::: {#fig-UDMap_kud_roosting_vent_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_ECE_wspd_A.html",
+  src = "UDMap_kud_roosting_vent_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
 
-::: {#fig-UDMap_kud_roosting_ECE_wspd}
+::: {#fig-UDMap_kud_roosting_vent}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_ECE_wspd_B.html",
+  src = "UDMap_kud_roosting_vent_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
 
-::: {#fig-UDMap_kud_roosting_ECE_wspd_C}
+::: {#fig-UDMap_kud_roosting_vent_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_ECE_wspd_C.html",
+  src = "UDMap_kud_roosting_vent_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1121,50 +1114,50 @@ Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'ali
 :::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_kud_roosting_ECE_wNO_A}
+::: {#fig-UDMap_kud_roosting_orientation_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_ECE_wNO_A.html",
+  src = "UDMap_kud_roosting_orientation_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
 
-::: {#fig-UDMap_kud_roosting_ECE_wNO_B}
+::: {#fig-UDMap_kud_roosting_orientation_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_ECE_wNO_B.html",
+  src = "UDMap_kud_roosting_orientation_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
 
-::: {#fig-UDMap_kud_roosting_ECE_wNO_C}
+::: {#fig-UDMap_kud_roosting_orientation_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_ECE_wNO_C.html",
+  src = "UDMap_kud_roosting_orientation_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1180,11 +1173,11 @@ Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zo
 tags$iframe(
   src = "UDMap_kud_roosting_ECE_wNO_wspd95_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1196,11 +1189,11 @@ Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zo
 tags$iframe(
   src = "UDMap_kud_roosting_ECE_wNO_wspd95_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1212,11 +1205,11 @@ Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zo
 tags$iframe(
   src = "UDMap_kud_roosting_ECE_wNO_wspd95_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1227,50 +1220,50 @@ Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zo
 :::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_kud_foraging_ECE_wspd_A}
+::: {#fig-UDMap_kud_foraging_vent_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_ECE_wspd_A.html",
+  src = "UDMap_kud_foraging_vent_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
 
-::: {#fig-UDMap_kud_foraging_ECE_wspd}
+::: {#fig-UDMap_kud_foraging_vent}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_ECE_wspd_B.html",
+  src = "UDMap_kud_foraging_vent_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
 
-::: {#fig-UDMap_kud_foraging_ECE_wspd_C}
+::: {#fig-UDMap_kud_foraging_vent_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_ECE_wspd_C.html",
+  src = "UDMap_kud_foraging_vent_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'alimentation de lors de vent fort en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références sans vent fort en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1279,50 +1272,50 @@ Zones d'alimentation repos en fonction d'évènements de vent fort : zones d'ali
 :::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_kud_foraging_ECE_wNO_A}
+::: {#fig-UDMap_kud_foraging_orientation_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_ECE_wNO_A.html",
+  src = "UDMap_kud_foraging_orientation_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
 
-::: {#fig-UDMap_kud_foraging_ECE_wNO_B}
+::: {#fig-UDMap_kud_foraging_orientation_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_ECE_wNO_B.html",
+  src = "UDMap_kud_foraging_orientation_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
 
-::: {#fig-UDMap_kud_foraging_ECE_wNO_C}
+::: {#fig-UDMap_kud_foraging_orientation_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_ECE_wNO_C.html",
+  src = "UDMap_kud_foraging_orientation_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
@@ -1338,11 +1331,11 @@ Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zo
 tags$iframe(
   src = "UDMap_kud_foraging_ECE_wNO_wspd95_A.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone B
@@ -1354,11 +1347,11 @@ Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zo
 tags$iframe(
   src = "UDMap_kud_foraging_ECE_wNO_wspd95_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 #### Zone C
@@ -1370,17 +1363,17 @@ Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zo
 tags$iframe(
   src = "UDMap_kud_foraging_ECE_wNO_wspd95_C.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation repos en fonction d'évènements de vent de Nord-Ouest : zones d'alimentation de lors de vent fort de Nord-Ouest en bleu (pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation les jours de références vent fort de Nord-Ouest en jaune (pricipaux reposoirs en jaune foncé, 50% des points GPS ; zones d'alimentation secondaires en jaune clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 ::::::
 
-# **Distance entre les reposoirs et les zones d'alimentation** {#section-distance}
+# Distance entre les reposoirs et les zones d'alimentation {#section-distance}
 
-Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marais.
+Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marée.
 
 ::: {#fig-distance_roost_forag_plot_talk}
 ```{r}
@@ -1390,10 +1383,10 @@ Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la dista
 knitr::include_graphics("distance_roost_forag_plot_talk.png", dpi = 100)
 ```
 
-Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marais entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
+Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marée entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
 :::
 
-Les distances à chaque cycle de marais des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_allvar_plot).
+Les distances à chaque cycle de marée des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_allvar_plot).
 
 ::: {#fig-distance_roost_forag_allvar_plot}
 ```{r}
@@ -1406,7 +1399,7 @@ knitr::include_graphics("distance_roost_forag_allvar_plot.png", dpi = 100)
 Effets du sexe, de l'âge et de la hauteur de marée sur la distance individuelle à chaque cycle de marée entre les zones d'alimentation et de repos.
 :::
 
-Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre la zone d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
+Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre la zones d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
 
 ## Fidélité aux espaces au cours des cycles de marée
 
@@ -1440,7 +1433,7 @@ knitr::include_graphics("plot.foraging_maree_repet.png", dpi = 100)
 Variation des zones d'alimentation individuelles au cours des cycles de marée.
 :::
 
-# **Evitement des chasseurs et des zones de chasses**
+# Evitement des chasseurs et des zones de chasses
 
 ## Chasse à pied 
 
@@ -1473,20 +1466,20 @@ datatable(
 )
 ```
 
-Afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restreint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (in), 15 premier jour après la fermeture de la chasse (out).
+Afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restreint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (période de chasse), 15 premier jour après la fermeture de la chasse (hors période de chasse).
 
 ::: {#fig-UDMap_kud_roosting_in_out_saison_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_in_out_saison_B.html",
+  src = "UDMap_kud_roosting_période_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones de repos en fonction hors et pendant la saison de chasse : zones de repos hors saison de chasse en rose ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones de repos en rose foncé, 50% des points GPS ; zone de repos secondaires en rose clair, 95% des points GPS), zones de repos pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones de repos secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones de repos en fonction hors et pendant la saison de chasse : zones de repos hors saison de chasse en rose ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones de repos en rose foncé, 50% des points GPS ; zones de repos secondaires en rose clair, 95% des points GPS), zones de repos pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones de repos secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 ::: {#fig-UDMap_kud_foraging_in_out_saison_B}
@@ -1494,13 +1487,13 @@ Zones de repos en fonction hors et pendant la saison de chasse : zones de repos 
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_in_out_saison_B.html",
+  src = "UDMap_kud_foraging_période_B.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction hors et pendant la saison de chasse : zones d'alimentation hors saison de chasse en bleu ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zone d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones d'alimentation secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction hors et pendant la saison de chasse : zones d'alimentation hors saison de chasse en bleu ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones d'alimentation en bleu foncé, 50% des points GPS ; zones d'alimentation secondaires en bleu clair, 95% des points GPS), zones d'alimentation pendant la période de chasse en gris (pricipaux reposoirs en gris foncé, 50% des points GPS ; zones d'alimentation secondaires en gris clair, 95% des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
 Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé, mais aucun effet n'a pu être détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
@@ -1508,7 +1501,7 @@ Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasse
 ## Chasse à la tonne
 
 ::: {#fig-foraging}
-```{r, out.height = "300px", out.width= "450px"}
+```{r, out.height = "500px", out.width= "700px"}
 #| echo: false
 knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg", dpi = 100)
 ```
@@ -1516,7 +1509,7 @@ knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg", dpi = 100)
 Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (©Jean-Pierre Bazard).
 :::
 
-La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs, principalement les anatidés (canards, oies), souvent de nuit.
+La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs (principalement les anatidés).
 
 En charente-maritime, la période de chasse s'ouverture généralement fin aout, jusqu'à la fin février. Le tir est autorisé de nuit et jusqu'à 1h après le levé du soeil et 1h avant le coucher du soleil du le domaine public maritime. Le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime et fluvial. La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes. 
 
@@ -1529,7 +1522,7 @@ Il est attendu que les tonnes de chasse constitues un dérangement non négligea
 tags$iframe(
   src = "map_tonnes.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
@@ -1543,14 +1536,14 @@ Tonnes de chasse (point noir), entourées de zones de danger de 300 m de rayon (
 tags$iframe(
   src = "intersection_tonne_map.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
 Tonnes de chasse (point noir, en gros si proche de la RNN, en petit si à distance) et zone de dérangement (rayon de 300 m en rouge, de 500 m en jaune, de 1000 m en marron).
 :::
 
-# **Zones critiques**
+# Zones critiques
 
 Les principales zones de repos et d'alimentation estimées précédemment permettent de mettre en évidence des zones d'importance majeure pour les courlis cendrés dans le bassin fonctionnel étudié, mais pourtant en dehors des limites de protection de la RNNMO. Les emplacements des tonnes de chasses sont superposés à ces zones, mettant en evidence les zones de dérangement et de risque majeur pour les oiseaux.
 
@@ -1561,14 +1554,14 @@ Les principales zones de repos et d'alimentation estimées précédemment permet
 tags$iframe(
   src = "zone_critique_map.html",
   width = "100%",
-  height = "400px"
+  height = "600px"
 )
 ```
 
-Zone critique de dérangement du courlis cendré : zones d'alimentation en bleu (principaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS) ; zone de repos en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zone secondaires d'alimentation et de repos en jaune ; tonnes de chasse, points noirs ; tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges ; tonnes de chasse dans les zones secondaire sd'alimentation et:ou de repos en points jaunes ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zone critique de dérangement du courlis cendré : zones d'alimentation en bleu (principaux reposoirs en bleu foncé, 50% des points GPS ; reposoirs secondaires en bleu clair, 95% des points GPS) ; zones de repos en rose (pricipaux reposoirs en rose foncé, 50% des points GPS ; reposoirs secondaires en rose clair, 95% des points GPS) ; zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zone secondaires d'alimentation et de repos en jaune ; tonnes de chasse, points noirs ; tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges ; tonnes de chasse dans les zones secondaire sd'alimentation et:ou de repos en points jaunes ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
 :::
 
-# **Discussion**
+# Discussion
 
 ## Jeu de données et puissance statistique
 
@@ -1586,7 +1579,7 @@ Ainsi donc, les oiseaux étudié ici on une utilisation de l'espace orienté aut
 
 Il serait particulièrement interessant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve, notamment sur l'ile d'Oléron pour obtenir une vue globale généralisable à l'ensemble de la population de Courlis dans la région.
 
-# **Matériels et Méthodes**
+# Matériels et Méthodes
 
 ## Nettoyage des données GPS
 
@@ -1608,19 +1601,19 @@ Chaque points GPS enregistrés est associé à un comportement de repos (voir se
 
 **Identification de l'âge des individus** 
 
-Voir section "Reposoirs en fonction de l'age" [ici](#section-age1) et section "Zone d'alimentation en fonction de l'age" [ici](#section-age1).
+Voir section "Reposoirs en fonction de l'age" [ici](#section-age1) et section "zones d'alimentation en fonction de l'age" [ici](#section-age1).
 
 L'âge des individus est déterminé au baguage grâce à leur plumage. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
 
 **Identification du sexe des individus** 
 
-Voir section "Reposoirs en fonction du sexe" [ici](#section-sexe1) et section "Zone d'alimentation en fonction du sexe" [ici](#section-sexe2).
+Voir section "Reposoirs en fonction du sexe" [ici](#section-sexe1) et section "zones d'alimentation en fonction du sexe" [ici](#section-sexe2).
 
 Le sexe des individus est déterminé au baguage par morphométrie, les femelles étant plus grandes que les mâles.
 
 **Classification des hauteurs d'eau**
 
-Voir section "Zone de repos en fonction de la hauteur d'eau" [ici](#section-hauteurEau1).
+Voir section "zones de repos en fonction de la hauteur d'eau" [ici](#section-hauteurEau1).
 
 Le marégraphe utilisé pour obtenir les hauteurs d'eau (en m) est celui de l'ile d'Aix en priorité. Lorsque les données été manquante pour ce marégraphe, les hauteur d'eau on ét é prédites via une  corrélation avec la cotinière et la rochelle. La variable choisi pour la hauteur d'eau est la variable "validé temps différé" en priorité, puis "brute temps différé", puis "brute haute fréquence". Les données de hauteurs d'eau ont été téléchargées via le site du [SHOM](https://data.shom.fr/donnees/refmar/189/download#001=eyJjIjpbLTI0Njc0Ni4zNzYyODU2MTMwMiw1NzMzNjYzLjU2NTM3OTgzXSwieiI6OCwiciI6MCwibCI6W3sidHlwZSI6IlJFRk1BUiIsImlkZW50aWZpZXIiOiJSRUZNQVIvUk9OSU0iLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfV19). La hauteur d'eau est moyennée pour chaque période du grain temporelle choisie (5 min). 
 
@@ -1628,44 +1621,21 @@ Basée sur l'expertise de terrain, les marées hautes ont été classées en fon
 
 **Evènement climatique extremes**
 
-Les évènements climatiques extrêmes (ECE) sont définis comme les évènements d'intensité supérieure au quartile 95% des distributions du paramétres météorologiques sur la période 2015-2024 (REF).
+Voir section "Utilisation de l'espace lors d'évènements de vent extrêmes" [ici](#section-ECE)".
 
-Les données météorologiques sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
+Les évènements climatiques extrêmes (ECE) sont définis comme les évènements d'intensité supérieure au quartile 95% des distributions du paramétres météorologiques sur la période 2015-2024. Trois variables ECE ont été calculé à partir de la vitesse et l'orientation moyenne journalière du vent: i) les évènements de vent fort : 5% des vitesses de vent les plus fortes, ii)  les évènements de vent de Nord-Ouest : orientation du vent entre 270 et 360 degrés, et iii) les évènements de vent fort de Nord-Ouest : 5% des vitesses de vent les plus fortes et d'orientation entre 270 et 360 degrés. Un ECE est un jour où l'une de ces 3 variables a été détectées. L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec ECE detectés sont comparés aux jours j-7 avant les évènements extrêmes et considéré comme jour de référence.
 
-/! autre variable extrème à ajouter ? roosting aussi ? !!!!!!!!!!!
-
-
-
-Les paramètres météorologiques étudiés sont la vitesse et l'orientation moyenne journalière du vent.
-
-A partir de ces deux paramètres météorologiques, 3 paramètres météorologiques extrêmes ont été calculés :
-
--   les évènements de vent fort : ECE supérieur à 95%
--   les évènements de vent de Nord-Ouest : orientation entre 270 et 360 degrés
--   les évènements de vent fort de Nord-Ouest : ECE supérieur à 95% et d'orientation entre 270 et 360 degrés
-
-L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes detectés sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme "normaux".
-
-Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos.
-
-Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici.
+Les données météorologiques utilisées sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
 
 **Distance entre les zones de repos et d'alimentations**
 
-Voir section "[Distance entre les reposoirs et les zones d'alimentation](#section-distance)".
+Voir section "Distance entre les reposoirs et les zones d'alimentation" [ici](#section-distance)".
 
-La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marais (@fig-distance_schema_geoportail_4).
-
-::: {#fig-distance_schema_geoportail_4}
-```{r, out.height = "500px", out.width= "900"}
-#| echo: false
-knitr::include_graphics("distance_schema_geoportail_4.png", dpi = 100)
-```
-
-Distance entre les zones de repos et d'alimentation, calculé à chaque cycle de marée et moyennée par individu
-:::
+La distance entre la zones d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marée.
 
 **Analyses spatiales**
+
+Voir sections "Les principaux reposoirs" [ici](#section-reposoir) et "Les principales zones d'alimentation" [ici](#section-alimentation).
 
 L'ensemble des analyses statiales sont basées sur des estimations de zones d'utilisation de l'espace dites "distribution d'utilisation". La distribution d'utilisation (<em>Utilization Distribution</em>, ou "UD") est une fonction mathématique (une densité de probabilité) qui décrit la probabilité de présence d’un individu dans son environnement en fonction des points GPS qui lui ont été associés (Worton, 1995). Elle permet donc d’estimer les zones les plus fréquemment utilisées par un animal. Les distributions d'utilisation de l'espace ont été estimé par la méthode dite du noyau (kernel), qui consiste à lisser les localisations individuelles afin de produire une carte continue de l’utilisation de l’espace. 
 
@@ -1701,45 +1671,23 @@ Les données utilisées sont disponibles ici : XX
 
 L'ensemble des codes produits pour les analyses sont à retrouver ici : [Github](https://github.com/SuzanneBonamour)
 
-<a href="#top">↑ retour en haut</a>
-
-# **Bibliographie**
+# Bibliographie
 
 -   <span id="bakker2021">Bakker, Wiene, et al. (2021) Connecting foraging and roosting areas reveals how food stocks explain shorebird numbers. Estuarine, Coastal and Shelf Science 259 (2021): 107458.
 - <span id="beniston2004">Beniston, M., & Stephenson, D. B. (2004). Extreme climatic events and their evolution under changing climatic conditions. Global and planetary change, 44(1-4), 1-9.
 -   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
 
-<a href="#top">↑ retour en haut</a>
+# Auteur.ices, affiliations et contributions
 
-# **Auteur.ices, affiliations et contributions**
+**Analyses statistiques et spatiales** : Suzanne Bonamour (LPO France), Gwenael Quaintenne (LPO France)
 
-**Analyses statistiques et spatiales**
+**Travail de terrain, capture et baguage des oiseaux** : Pierre Rousseau (RNN Moëze-Oléron), Loïc Jomat (RNN Moëze-Oléron), Adrien Chaigne (RNN Moëze-Oléron), Pierrick Bocher (RNN Moëze-Oléron), Frédéric Jiguet (RNN Moëze-Oléron), et beaucoup d'autre personnes !
 
--   Suzanne Bonamour (LPO France)
--   Gwenael Quaintenne (LPO France)
+**Rédaction** : Suzanne Bonamour (LPO France)
 
-**Travail de terrain, capture et baguage des oiseaux**
+**Recherche de financements et partenaires** : Adrien Chaigne (RNN Moëze-Oléron)
 
--   Pierre Rousseau (RNN Moëze-Oléron)
--   Loïc Jomat (RNN Moëze-Oléron)
--   Adrien Chaigne (RNN Moëze-Oléron)
--   Pierrick Bocher (RNN Moëze-Oléron)
--   Frédéric Jiguet (RNN Moëze-Oléron)
--   et beaucoup d'autre personnes !
-
-**Rédaction**
-
--   Suzanne Bonamour (LPO France)
-
-**Recherche de financements et partenaires**
-
--   Adrien Chaigne (RNN Moëze-Oléron)
-
-**Comité scientifique**
-
--   Pierrick Bocher (Univ. La Rochelle)
--   Frédéric Jiguet (MNHN, CESCO, Paris)
--   Gwenael Quaintenne (LPO France)
+**Comité scientifique** : Pierrick Bocher (Univ. La Rochelle), Frédéric Jiguet (MNHN, CESCO, Paris)
 
 Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
 
