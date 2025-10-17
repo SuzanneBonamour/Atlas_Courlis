@@ -138,7 +138,9 @@ area_box <- sf::st_area(BOX)
 area_box_km <- as.numeric((round(area_box / 1000000, 1)))
 ```
 
-L'aire d'étude s'étend sur une surface de `r area_box_km` km² au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi la zone fonctionnelle de la RNNMO. L'aire d'étude est divisée en trois zone A, B et C pour facilité l'analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage dédié, matérialisé par l'épingle rouge sur les cartes. Voir le carte ci-dessous @fig-zone_map_new.
+L'aire d'étude s'étend sur une surface de `r area_box_km` km² au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi la zone fonctionnelle de la RNNMO. 
+
+L'aire d'étude est divisée en trois zone A, B et C pour facilité l'analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage au sud de la zone B. Voir la carte ci-dessous @fig-zone_map_new.
 
 ::: {#fig-zone_map_new}
 ```{r}
@@ -151,7 +153,7 @@ tags$iframe(
 )
 ```
 
-L'aire d'étude est divisée en trois zones distinctes A, B et C. Les limites de la RNNMO en vert. Le site de baguage à l'épingle rouge.
+L'aire d'étude est divisée en trois zones d'étude A, B et C autour de ma RNNMO (en vert), avec le site de baguage en zone B (épingle rouge).
 :::
 
 # Périodes de suivi des individus
@@ -201,7 +203,7 @@ sexe_dt <- GPS %>%
 # - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
 ```
 
-Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L'âge et le sexe n'a pas été identifié pour XX individus.
+Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L'âge et le sexe n'a pas été identifié pour XX individus. Chaque individu a en moyenne XX point GPS enregistrés représentant des périodes de temps de 5 min.
 
 ::: {#fig-emission_plot}
 ```{r}
@@ -211,12 +213,12 @@ Le jeu de données analysé est constitué de XX point GPS enregistré entre 201
 knitr::include_graphics("emission_plot.png", dpi = 100)
 ```
 
-Période d'émission des balises GPS pour chaque individu
+Période d'émission des balises GPS pour chaque individu.
 :::
 
 # Domaines vitaux {#section-HR}
 
-Chaque individu a un domaine vital spécifique, avec un noyau d’activité représentant les zones de fréquentation la plus intense (50 % des points GPS enregistrés), et un domaine vital plus étendu englobant 95 % de la surface d’utilisation (@fig-UDMap_HR_gp_1).
+Chaque courlis cendré a un domaine vital individuel, avec un noyau d’activité représentant la zone de fréquentation la plus intense (englobant 50 % des points GPS enregistrés pour l'individu), et un domaine vital plus étendu correspondant a ces autres espaces moins fréquement utilisés (englobant 95 % des points GPS, @fig-UDMap_HR_gp_1).
 
 ::: {#fig-UDMap_HR_gp_1}
 ```{r}
@@ -229,7 +231,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 1.
+Domaines vitaux, groupe d'individus 1 : Domaine vital étendu à 95% en transparence, domaine vital principal en couleur opaque.
 :::
 
 ::: {#fig-UDMap_HR_gp_2}
@@ -243,7 +245,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 2.
+Domaines vitaux, groupe d'individus 2 : Domaine vital étendu à 95% en transparence, domaine vital principal en couleur opaque.
 :::
 
 ::: {#fig-UDMap_HR_gp_3}
@@ -257,7 +259,7 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 3.
+Domaines vitaux, groupe d'individus 3 : Domaine vital étendu à 95% en transparence, domaine vital principal en couleur opaque.
 :::
 
 ::: {#fig-UDMap_HR_gp_4}
@@ -271,10 +273,10 @@ tags$iframe(
 )
 ```
 
-Domaine vital étendu, en couleur claire (enveloppe englobant 95 % de la surface d’utilisation), domaine vital principal, en couleur pleine entourée de blanc (enveloppe englobant 50 % de la surface d'utilisation). Groupe d'individu 4.
+Domaines vitaux, groupe d'individus 4 : Domaine vital étendu à 95% en transparence, domaine vital principal en couleur opaque.
 :::
 
-Les individus ont des domaines vitaux (tous types de comportements confondus) moyen de 644m², avec une zone principale d'activité de 67m² (@fig-area_hr_plot). 
+Les individus ont des domaines vitaux (tous types de comportements confondus) d'une surface moyenne de 644m², avec une zone principale d'activité à 50% de 67m² (@fig-area_hr_plot). 
 
 ::: {#fig-area_hr_plot}
 ```{r}
@@ -287,7 +289,9 @@ knitr::include_graphics("area_hr_plot.png", dpi = 100)
 Aire des domaines vitaux individuels estimés à 95 % (ronds oranges) et 50 % (triangles verts, en m² ± écart-type) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs).
 :::
 
-La surface du domaine vital des individus ne varie pas en fonction du sexe, avec les mâles présentant un plus petit domaine vital à 95 % que les femelles (coef = -0.28, p-value = 0.04). La surface du domaine vital ne varie pas en fonction de l'âge.
+La surface du domaine vital des individus ne varie pas en fonction du sexe, avec les mâles présentant un plus petit domaine vital à 95 % que les femelles (coef = -0.28, p-value = 0.04). La surface du domaine vital ne varie pas en fonction de l'âge (@fig-surface_sex_age_all_plot).
+
+!!!!! refaire le graphe, avec des lettre a,b,c,d, et peut être mieux organisé pour les vertice et param ? adapter la legende aussi !!!!!!
 
 ::: {#fig-surface_sex_age_all_plot}
 ```{r}
@@ -297,12 +301,12 @@ La surface du domaine vital des individus ne varie pas en fonction du sexe, avec
 knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
 ```
 
-Aire du domaine vital des individus à 95 % et 50 % en fonction de leur âge ou de leur sexe.
+Aire du domaine vital des individus à 95 % et 50 % en fonction de leur âge (a), de leur sexe.
 :::
 
 # Les principaux reposoirs {#section-reposoir}
 
-A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zones de repos.
+A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zones de repos appelés "reposoirs".
 
 ::: {#fig-roosting}
 ```{r, out.height = "500px", out.width= "750px"}
@@ -433,7 +437,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50 % des points GPS), zones secondaires de repos en rose clair (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Reposoirs en zone A : reposoirs principaux en rose opaque (50 % des points GPS), reposoirs secondaires en rose transparent (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
 :::
 
 ## Zone B
@@ -449,7 +453,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50 % des points GPS), zones secondaires de repos en rose clair (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
+Reposoirs en zone B : reposoirs principaux en rose opaque (50 % des points GPS), reposoirs secondaires en rose transparent (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
 :::
 
 ## Zone C
@@ -465,13 +469,11 @@ tags$iframe(
 )
 ```
 
-Zones de repos : principaux reposoirs en rose foncé (50 % des points GPS), zones secondaires de repos en rose clair (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge 
+Reposoirs en zone C : reposoirs principaux en rose opaque (50 % des points GPS), reposoirs secondaires en rose transparent (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge. 
 :::
 ::::::
 
 ## Reposoirs en fonction de l'age {#section-age1}
-
-Le courlis cendré est considéré comme juvénile de sa sortie du nid au 1er septembre de l'année suivant leur éclosion. Au delà de cette période, ils arborent leur plumage mature et sont considéré comme adulte. 
 
 :::::: panel-tabset
 ### Zone A
@@ -487,7 +489,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Reposoirs en fonction de l'âge en zone A : Reposoirs adultes en rose, reposoirs juvéniles en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 ```{r}
@@ -563,7 +565,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Reposoirs en fonction de l'âge en zone B : Reposoirs adultes en rose, reposoirs juvéniles en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 ### Zone C
@@ -579,7 +581,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs juvéniles en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Reposoirs en fonction de l'âge en zone C : Reposoirs adultes en rose, reposoirs juvéniles en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -601,7 +603,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Reposoirs en fonction du sexe en zone A : Reposoirs femellem en rose, reposoirs mâle en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 ### Zone B
@@ -617,7 +619,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Reposoirs en fonction du sexe en zone B : Reposoirs femellem en rose, reposoirs mâle en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 ### Zone C
@@ -633,7 +635,7 @@ tags$iframe(
 )
 ```
 
-Zones de repos en fonction du sexe : reposoirs femelle en rose (pricipaux reposoirs en rose foncé, 50 % des points GPS ; reposoirs secondaires en rose clair, 95 % des points GPS), reposoirs mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Reposoirs en fonction du sexe en zone C : Reposoirs femellem en rose, reposoirs mâle en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -831,7 +833,7 @@ tags$iframe(
 )
 ```
 
-Alimentation zone A
+Zone d'alimentation en zone A : zones d'alimentation principales en bleu opaque (50 % des points GPS), zoens d'alimentation secondaires en bleu transparent (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
 :::
 
 ## Zone B
@@ -847,7 +849,7 @@ tags$iframe(
 )
 ```
 
-Alimentation zone B
+Zone d'alimentation en zone B : zones d'alimentation principales en bleu opaque (50 % des points GPS), zoens d'alimentation secondaires en bleu transparent (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
 :::
 
 ## Zone C
@@ -863,7 +865,7 @@ tags$iframe(
 )
 ```
 
-Alimentation zone C
+Zone d'alimentation en zone C : zones d'alimentation principales en bleu opaque (50 % des points GPS), zoens d'alimentation secondaires en bleu transparent (95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -887,7 +889,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS)
+Zones d'alimentation en fonction de l'âge en zone A : Zone d'alimentation adultes en bleu, zone d'alimentation juvéniles en jaune. Principales zones d'alimentation en opaque, zone d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -903,7 +905,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS)
+Zones d'alimentation en fonction de l'âge en zone B : Zone d'alimentation adultes en bleu, zone d'alimentation juvéniles en jaune. Principales zones d'alimentation en opaque, zone d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -919,7 +921,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction de l'âge : zones d'alimentation adulte en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation juvénile en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS)
+Zones d'alimentation en fonction de l'âge en zone C : Zone d'alimentation adultes en bleu, zone d'alimentation juvéniles en jaune. Principales zones d'alimentation en opaque, zone d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -941,7 +943,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe en zone A : Zone d'alimentation femelle en bleu, zone d'alimentation mâle en jaune. Principales zones d'alimentation en opaque, zone d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -957,7 +959,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe en zone A : Zone d'alimentation femelle en bleu, zone d'alimentation mâle en jaune. Principales zones d'alimentation en opaque, zone d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -973,7 +975,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du sexe : zones d'alimentation femelle en bleu (pricipaux reposoirs en bleu foncé, 50 % des points GPS ; reposoirs secondaires en bleu clair, 95 % des points GPS), zones d'alimentation mâle en jaune (pricipaux reposoirs en jaune foncé, 50 % des points GPS ; reposoirs secondaires en jaune clair, 95 % des points GPS) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+Zones d'alimentation en fonction du sexe en zone A : Zone d'alimentation femelle en bleu, zone d'alimentation mâle en jaune. Principales zones d'alimentation en opaque, zone d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -1642,7 +1644,7 @@ Chaque points GPS enregistrés est associé à un comportement de repos (voir se
 
 Voir section "Reposoirs en fonction de l'age" [ici](#section-age1) et section "zones d'alimentation en fonction de l'age" [ici](#section-age1).
 
-L'âge des individus est déterminé au baguage grâce à leur plumage. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
+Le courlis cendré est considéré comme juvénile de sa sortie du nid au 1er septembre de l'année suivant leur éclosion. Au delà de cette période, ils arborent leur plumage mature et sont considéré comme adulte. L'âge des individus est déterminé au baguage grâce à leur plumage. Les individus juvéniles lors du baguage et de la pose du GPS deviennent adultes après le 1er septembre de l'année suivante.
 
 **Identification du sexe des individus** 
 
