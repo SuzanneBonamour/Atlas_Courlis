@@ -85,7 +85,7 @@ knitr::include_graphics("Cartes flux migrateurs France RN (2).jpg", dpi = 100)
 La réserve naturelle nationale de Moëze-Oléron est un maillon important sur le route de migration de nombreuses espèces de limicoles (©RNNMO - LPO).
 :::
 
-Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendrés au sein de la Réserve Naturelle Nationale de Moëze-Oléron (@fig-baguage).
+Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendrés au sein de la RNNMO (@fig-baguage).
 
 ::: {#fig-baguage}
 ```{r, out.height = "500px", out.width= "1350px"}
@@ -93,16 +93,14 @@ Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaborat
 knitr::include_graphics("baguage.png", dpi = 100)
 ```
 
-Suivi du coulirs cendré : a) courlis cendré bagué (©Armel Deniau), b) pose d'un GPS sur une courlis cendré (©Loic Jomat)
+Equipement d'un coulirs cendré : a) courlis cendré bagué (©Armel Deniau), b) pose d'un GPS sur une courlis cendré (©Loic Jomat)
 :::
 
-L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par ces oiseaux dans un site fonctionnel comprenant le bassin de Marennes et le marais de Brouage (@fig-zone_map_new). Cette recherche s’inscrit dans un contexte de recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, et de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture). Il s’agit d’identifier et de proposer des zones prioritaires à préserver pour l’accueil des limicoles.
+L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel local de la RNNMO, comprenant le bassin de Marennes et le marais de Brouage et la mer des Pertuis (@fig-zone_map_new). Le courlis cendré est mis à contribution ici comme une espèce parapluie afin d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil des limicoles dans le zone d'étude. 
 
-À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la réserve, l’objectif principal est de produire un atlas dynamique décrivant l’usage de l’espace par ces oiseaux, en lien avec les activités humaines et les effets de la maritimisation.
+À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans a RNNMO, leurs déplacements ont été analysé afin de dégager les principales zones utilisées par les oiseaux et leurs variations en fonction de changements environnementaux et pressions cinégétique. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, ...) ainsi que d'un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle.
 
-Le travail présenté ici propose une cartographie fine de la répartition des courlis dans le site fonctionnel de la réserve de Moëze-Oléron en fonction des fluctuations environnementales et des perturbations anthropiques détectées et mesurables sur la zone.
-
-Cette étude s’inscrit dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par l’Etat (Fonds Vert) et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
+*Cette étude entre dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).*
 
 # Le courlis cendré
 
@@ -115,21 +113,21 @@ knitr::include_graphics("20170226-Großer_Brachvogel.jpg", dpi = 100)
 Courlis cendrés en vol (©Großer Brachvogel)
 :::
 
-**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe. Longueur : 55–65 cm. Envergure : 90–110 cm. Poids : 600–1200 g. Plumage brun-gris tacheté, bec long (jusqu’à 19 cm), courbé vers le bas. Dimorphisme sexuel marqué ; la femelle est généralement plus grande avec un bec plus long.
+**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe, de longtemps entre 55–65 cm pour une envergure entre 90–110 cm et un  poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L'espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.
 
-**Comportement général** : Espèce discrète, au comportement prudent. Territorial en période de reproduction, grégaire en dehors de celle-ci.
+**Comportement social** : C'est une espèce discrète, au comportement prudent. Il est territorial en période de reproduction, et grégaire hors reproduction.
 
-**Régime alimentaire** : Principalement des vers de terre, insectes, mollusques, crustacés ; complété ponctuellement par des graines et baies. Alimentation au sol ou par sondage dans la vase ou les prairies humides. 
+**Régime alimentaire** : Il mange principalement des vers de terre, des insectes, des mollusques et des crustacés ; et complète ponctuellement sont régime alimentaire par des graines et baies. Il s'alimente au sol ou par sondage dans la vase ou les prairies humides. 
 
-**Habitats** : Reproduction en prairies humides, landes, tourbières, marais, zones agricoles extensives. Alimentation en vasières intertidales, estuaires, prés salés, prairies humides ou pâtures. Repos (hors reproduction) en vasières, zones littorales, lagunes, marais salants.
+**Habitats** : Sa reproduction est faite avec un nid au sol, souvent dissimulé dans la végétation en prairies humides, en landes, en tourbières, en marais, ou zones agricoles extensives. Il utilise des vasières intertidales, des estuaires, des prés salés, des prairies humides ou des pâtures pour sont alimentation, et des vasières, des zones littorales, des lagunes, ou marais salants pour ses périodes de repos.
 
-**Saison de reproduction** : De Avril à juillet. Nid au sol, souvent dissimulé dans la végétation. Ponte de 3–4 œufs. Incubation \~28 jours. Émancipation des jeunes vers 5–6 semaines.
+**Saison de reproduction** : Sa saison de reproduction s'étends d'avril à juillet. Les femelles pondent en général entre 3 et 4 œufs. L'incubation dure environ 28 jours, et les jeunes deviennent autonomes à l'âge de 5 à 6 semaines.
 
-**Migration** : Migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, présence à l’année dans certaines régions littorales (ex. : Baie de Somme, estuaire de la Loire), migration marquée en automne et au printemps.
+**Migration** : Les courlis cendré est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.
 
-**Effectifs de population** : La population mondiale est estimée à 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).
+**Effectifs de population** : La population mondiale est estimée à \~ 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).
 
-**Tendance démographique et statuts de conservation** : Le courlis cendré est en déclin modéré à marqué en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (Quasi menacé) à l’échelle mondiale par IUCN. En europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme Vulnérable et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année. A l'international, il est classé à l'Annexe II de la Convention de Bonn (CMS).
+**Tendance démographique et statuts de conservation** : Le courlis cendré est en "déclin modéré" à "marqué" en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (*quasi menacé* en français) à l’échelle mondiale par IUCN et inscrit à l'Annexe II de la Convention de Bonn (CMS). En Europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme "Vulnérable" et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année depuis XXXX. 
 
 # La zone d'étude
 
@@ -140,11 +138,7 @@ area_box <- sf::st_area(BOX)
 area_box_km <- as.numeric((round(area_box / 1000000, 1)))
 ```
 
-L'aire d'étude (voir @fig-zone_map_new) est un rectangle de `r area_box_km` km² qui s'étend au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi zone fonctionnelle du bassin de Marennes, la RNNMO (polygone vert) et le marais de Brouage.
-
-L'aire d'étude est divisée en trois zone A, B et C pour facilité l'analyse spatiale fine.
-
-Les individus sont tous bagués et équipés de GPS au sein de la RNNMO au site de baguage dédié, matérialisé par l'épingle rouge sur les cartes.
+L'aire d'étude s'étend sur une surface de `r area_box_km` km² au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi la zone fonctionnelle de la RNNMO. L'aire d'étude est divisée en trois zone A, B et C pour facilité l'analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage dédié, matérialisé par l'épingle rouge sur les cartes. Voir le carte ci-dessous @fig-zone_map_new.
 
 ::: {#fig-zone_map_new}
 ```{r}
@@ -157,7 +151,7 @@ tags$iframe(
 )
 ```
 
-La zone d'étude est divisée en trois zones distinctes A, B et C ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge
+L'aire d'étude est divisée en trois zones distinctes A, B et C. Les limites de la RNNMO en vert. Le site de baguage à l'épingle rouge.
 :::
 
 # Périodes de suivi des individus
@@ -497,6 +491,8 @@ Zones de repos en fonction de l'âge : reposoirs adultes en rose (pricipaux repo
 :::
 
 ```{r}
+#| eval: false
+#| include: false
 # ---- Packages ----
 library(sf)
 library(jsonlite)
@@ -508,6 +504,7 @@ library(knitr)
 html_file <- "UDMap_kud_roosting_age_A.html" # <-- adapte le nom
 
 # ---- Lire le contenu HTML ----
+atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis/"
 html_text <- paste(paste0(atlas_path, readLines(html_file, warn = FALSE), collapse = "\n"))
 
 # ---- Extraire tous les blocs GeoJSON intégrés ----
