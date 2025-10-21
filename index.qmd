@@ -1442,12 +1442,21 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 
 # Fidélité aux reposoirs
 
-XXX
+::: {#fig-pred_50_95_plot}
+```{r}
+#| echo: false
+#| out.width: 100%
+#| fig-align: "center"
+knitr::include_graphics("pred_50_95_plot.png", dpi = 100)
+```
+
+Prédictions des meilleures modèles expliquant les valeurs individuelles de richesse en reposoirs (a,d), d'indice de Shanon en reposoirs (b,e) et de taux de variation en reposoirs (c,f) pour les reposoirs principaux (a,b,c) et les reposoirs secondaires (d,e,f). 
+:::
 
 # Connectivité entre les reposoirs
 
-::: {#fig-elephants layout-ncol=2}
-::: {#fig-distance_roost_forag_plot_talk}
+::: {#fig-network layout-ncol=2}
+::: {#fig-network_plot_50}
 ```{r}
 #| echo: false
 #| out.width: 100%
@@ -1458,11 +1467,11 @@ knitr::include_graphics("network_plot_50.png", dpi = 100)
 Réseau de connexions entre les principaux reposoirs (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (jaune → rose) et la largeur. Toutes les connexions sont représentées. Limites de la RNNMO en noir.
 :::
 
-::: {#fig-distance_roost_forag_plot_talk}
+::: {#fig-network_plot_all_quantile}
 ```{r}
 #| echo: false
 #| out.width: 100%
-#| fig-align: "left"
+#| fig-align: "center"
 knitr::include_graphics("network_plot_all_quantile.png", dpi = 100)
 ```
 
@@ -1538,16 +1547,14 @@ Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasse
 
 ## Chasse à la tonne
 
-<div>
-
+::: {#fig-tonne}
 ```{r, out.height = "500px", out.width= "700px"}
 #| echo: false
 knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg", dpi = 100)
 ```
 
-Une tonne de chasse au gibier d'eau, Éguille-sur-Seudre, Charente-Maritime, France (©Jean-Pierre Bazard).
-
-</div>
+La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (©RNNMO - LPO), b) vue aérienne côté continent (©Romain Beaubert - LPO), c) vue aérienne de la côte (©RNNMO - LPO).
+:::
 
 La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs (principalement les anatidés).
 
