@@ -276,33 +276,22 @@ tags$iframe(
 Domaines vitaux, groupe d'individus 4 : Domaine vital étendu à 95% en transparence, domaine vital principal en couleur opaque.
 :::
 
-Les individus ont des domaines vitaux (tous types de comportements confondus) d'une surface moyenne de 644m², avec une zone principale d'activité à 50% de 67m² (@fig-area_hr_plot).
+Les individus ont des domaines vitaux (tous types de comportements confondus) d'une surface moyenne de 644 (± 389) m², avec une zone principale d'activité à 50% de 67 (± 33.43) m² (@fig-area_hr_plot).
 
 ::: {#fig-area_hr_plot}
 ```{r}
 #| echo: false
-#| out.width: 70%
+#| out.width: 90%
 #| fig-align: "center"
 knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
 
-Aire des domaines vitaux individuels estimés à 95 % (ronds oranges) et 50 % (triangles verts, en m² ± écart-type) et pourcentage situés dans la réserve naturelle de Moëze-Oléron (gradients de couleurs).
+Aire des domaines vitaux estimés aux verticles à 50% (a, haut) et vertice 95% (a, bas) en fonction du sexe (femelle en triangle, mâle en rond), de l'âge (juvénile en forme vide, adulte en forme pleine) et du pourcentage d'utilisation de la RNNMO (nuance de bleu) ; Distribution des pourcentage d'utilisation de la RNNMO pour les domaiens vitaux estimés aux verticles à 50% (b, haut) et vertice 95% (b, bas), moyenne d'utilisation en ligne noire.
 :::
 
-La surface du domaine vital des individus ne varie pas en fonction du sexe, avec les mâles présentant un plus petit domaine vital à 95 % que les femelles (coef = -0.28, p-value = 0.04). La surface du domaine vital ne varie pas en fonction de l'âge (@fig-surface_sex_age_all_plot).
+La surface des domaines vitaux (aux vertices à 95% comme à 50%) des mâles est significativement plus petite que celles des domaines vitaux des femelles (mâle *vs* femelle : -0.25 ± 0.1, p-value = 0.01). La surface du domaine vital ne varie pas en fonction de l'âge.
 
-!!!!! refaire le graphe, avec des lettre a,b,c,d, et peut être mieux organisé pour les vertice et param ? adapter la legende aussi !!!!!!
-
-::: {#fig-surface_sex_age_all_plot}
-```{r}
-#| echo: false
-#| out.width: 70%
-#| fig-align: "center"
-knitr::include_graphics("surface_sex_age_all_plot.png", dpi = 100)
-```
-
-Aire du domaine vital des individus à 95 % et 50 % en fonction de leur âge (a), de leur sexe.
-:::
+En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal (vertice à 50%) sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital élargi (vertice à 95%) sont dans la RNNMO.
 
 # Les reposoirs {#section-reposoir}
 
@@ -1445,7 +1434,7 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 ::: {#fig-pred_50_95_plot}
 ```{r}
 #| echo: false
-#| out.width: 100%
+#| out.width: 90%
 #| fig-align: "center"
 knitr::include_graphics("pred_50_95_plot.png", dpi = 100)
 ```
@@ -1459,7 +1448,7 @@ Prédictions des meilleures modèles expliquant les valeurs individuelles de ric
 ::: {#fig-network_plot_50}
 ```{r}
 #| echo: false
-#| out.width: 100%
+#| out.width: 90%
 #| fig-align: "center"
 knitr::include_graphics("network_plot_50.png", dpi = 100)
 ```
@@ -1470,7 +1459,7 @@ Réseau de connexions entre les principaux reposoirs (zones noires). Flèches : 
 ::: {#fig-network_plot_all_quantile}
 ```{r}
 #| echo: false
-#| out.width: 100%
+#| out.width: 90%
 #| fig-align: "center"
 knitr::include_graphics("network_plot_all_quantile.png", dpi = 100)
 ```
@@ -1553,7 +1542,7 @@ Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasse
 knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg", dpi = 100)
 ```
 
-La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (©RNNMO - LPO), b) vue aérienne côté continent (©Romain Beaubert - LPO), c) vue aérienne de la côte (©RNNMO - LPO).
+La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (©RNNMO - LPO), b) Vue aérienne côté continent (©Romain Beaubert - LPO), c) Vue aérienne depuis la côte (©RNNMO - LPO).
 :::
 
 La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs (principalement les anatidés).
