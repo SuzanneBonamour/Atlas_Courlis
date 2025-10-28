@@ -1531,10 +1531,38 @@ Figure&nbsp;66: Effets du sexe, de l’âge et de la hauteur de marée sur la di
 </section>
 <section id="fidélité-aux-reposoirs" class="level1">
 <h1>Fidélité aux reposoirs</h1>
+<p>La fidélité en reposoirs est estimée par deux mesures complémentaires pour chaque individu :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mesure</th>
+<th>Définition</th>
+<th>Interprétation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><em>Equitabilité</em></strong></td>
+<td>Diversité d’utilisation des zones de repos</td>
+<td>Equitabilité proche de 1 : utilisation équilibrée de plusieurs reposoirs différents (fidélité faible) ; équitabilité proche de 0 : comportements de repos concentrés sur peu de reposoirs différents (fidélité forte)</td>
+</tr>
+<tr class="even">
+<td><strong><em>Taux de variation</em></strong></td>
+<td>Fréquence de mouvement entre reposoirs, mesure l’instabilité temporelle dans les choix de reposoirs</td>
+<td>Plus la valeur est <em>élevée</em>, plus les changements de reposoirs sont fréquements (fidélité faible)</td>
+</tr>
+</tbody>
+</table>
+<p>Ces mesures de variabilité <em>vs</em> fidélité en reposoirs sont calculé pour les reposoirs principaux (estimés au vertice 50%) et les reposoirs secondaires (estimés au vertice 95%). Plusieurs modèles linéaires mixtes (effet aléatoire individu) généralisé (Gaussien, Gamma ou transformation log) avec les effets fixes ‘âge’, ‘sexe’ et ‘intensité de marée’ et leur interaction deux à deux ont été comparés. Uniquement les résultats des meilleurs modèles sélectionnés par AIC sont présentés.</p>
 <div id="fig-pred_50_95_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-pred_50_95_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;67: Prédictions des meilleures modèles expliquant les valeurs individuelles de richesse en reposoirs (a,d), d’indice de Shanon en reposoirs (b,e) et de taux de variation en reposoirs (c,f) pour les reposoirs principaux (a,b,c) et les reposoirs secondaires (d,e,f).
+Figure&nbsp;67: Prédictions de l’équitabilité (a) et le taux de variation (b) en reposoirs principaux (estimés au vertice 50%).
 </figcaption>
 <div aria-describedby="fig-pred_50_95_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="center">
@@ -1549,6 +1577,10 @@ Figure&nbsp;67: Prédictions des meilleures modèles expliquant les valeurs indi
 </div>
 </figure>
 </div>
+<p>L’équitabilité en reposoirs principaux est significativement plus faible lors des submersions (coef : -0.34 ± 0.05, p-value &lt; 1.10^6) en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cet différence diminue lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l’équitabilité en reposoirs semble plus fortes chez les mâles lors des marées de vives eaux et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (<a href="#fig-pred_50_95_plot" class="quarto-xref">Figure&nbsp;67</a> a).</p>
+<p>Le taux de variation en reposoirs principaux (estimés au vertice 50%) est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 +/- 0.031, p-value = 0.03). Autrement dit, les juvéniles changent moins souvent de reposoirs principaux que les adultes (<a href="#fig-pred_50_95_plot" class="quarto-xref">Figure&nbsp;67</a> b).</p>
+<p>Autrement dit, les courlis cendrées pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions).</p>
+<p>Le taux de variation et l’équitabilité en reposoirs secondaires ne varient ni en fonction de l’âge, du sexe, ou de l’intensité des marées.</p>
 </section>
 <section id="connectivité-entre-les-reposoirs" class="level1">
 <h1>Connectivité entre les reposoirs</h1>
@@ -1612,8 +1644,8 @@ Figure&nbsp;68
 <p>Dans d’ouverture et de fermeture de la chasse sur le DPM :</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-301d79be63520c121ec0" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-301d79be63520c121ec0">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7"],["2024/2025","2023/2024","2022/2023","2021/2022","2020/2021","2019/2020","2018/2019"],["08/09/2024","10/09/2023","11/09/2022","12/09/2021","13/09/2020","08/09/2019","09/09/2018"],["31/01/2025","31/01/2024","31/01/2023","31/01/2022","31/01/2021","31/01/2020","31/01/2019"]],"container":"<table class=\"stripe hover cell-border\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Saison<\/th>\n      <th>Ouverture<\/th>\n      <th>Fermeture<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"lengthMenu":[5,10,20,50],"searching":true,"ordering":true,"scrollX":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Saison","targets":1},{"name":"Ouverture","targets":2},{"name":"Fermeture","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-5a1c0b93b9d34a1a0724" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5a1c0b93b9d34a1a0724">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7"],["2024/2025","2023/2024","2022/2023","2021/2022","2020/2021","2019/2020","2018/2019"],["08/09/2024","10/09/2023","11/09/2022","12/09/2021","13/09/2020","08/09/2019","09/09/2018"],["31/01/2025","31/01/2024","31/01/2023","31/01/2022","31/01/2021","31/01/2020","31/01/2019"]],"container":"<table class=\"stripe hover cell-border\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Saison<\/th>\n      <th>Ouverture<\/th>\n      <th>Fermeture<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"lengthMenu":[5,10,20,50],"searching":true,"ordering":true,"scrollX":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Saison","targets":1},{"name":"Ouverture","targets":2},{"name":"Fermeture","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Afin de limiter les effets de variation saisonnière sur l’utilisation de l’espace, le jeu de données est restreint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (période de chasse), 15 premier jour après la fermeture de la chasse (hors période de chasse).</p>

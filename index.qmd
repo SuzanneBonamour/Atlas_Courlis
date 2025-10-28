@@ -1431,6 +1431,15 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 
 # Fidélité aux reposoirs
 
+La fidélité en reposoirs est estimée par deux mesures complémentaires pour chaque individu :
+
+| Mesure                             | Définition                                   | Interprétation                                                                               |
+| -----------------------------------| --------------------------------------- |-------------------------------------------------------------------------- |
+| ***Equitabilité***          | Diversité d'utilisation des zones de repos | Equitabilité proche de 1 : utilisation équilibrée de plusieurs reposoirs différents (fidélité faible) ; équitabilité proche de 0 : comportements de repos concentrés sur peu de reposoirs différents (fidélité forte)
+| ***Taux de variation*** | Fréquence de mouvement entre reposoirs, mesure l'instabilité temporelle dans les choix de reposoirs | Plus la valeur est *élevée*, plus les changements de reposoirs sont fréquements (fidélité faible)   |
+
+Ces mesures de variabilité *vs* fidélité en reposoirs sont calculé pour les reposoirs principaux (estimés au vertice 50%) et les reposoirs secondaires (estimés au vertice 95%). Plusieurs modèles linéaires mixtes (effet aléatoire individu) généralisé (Gaussien, Gamma ou transformation log) avec les effets fixes 'âge', 'sexe' et 'intensité de marée' et leur interaction deux à deux ont été comparés. Uniquement les résultats des meilleurs modèles sélectionnés par AIC sont présentés.
+
 ::: {#fig-pred_50_95_plot}
 ```{r}
 #| echo: false
@@ -1439,8 +1448,16 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 knitr::include_graphics("pred_50_95_plot.png", dpi = 100)
 ```
 
-Prédictions des meilleures modèles expliquant les valeurs individuelles de richesse en reposoirs (a,d), d'indice de Shanon en reposoirs (b,e) et de taux de variation en reposoirs (c,f) pour les reposoirs principaux (a,b,c) et les reposoirs secondaires (d,e,f). 
+Prédictions de l'équitabilité (a) et le taux de variation (b) en reposoirs principaux (estimés au vertice 50%). 
 :::
+
+L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions (coef : -0.34 ± 0.05, p-value < 1.10^6) en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cet différence diminue lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l'équitabilité en reposoirs semble plus fortes chez les mâles lors des marées de vives eaux et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (@fig-pred_50_95_plot a).
+
+Le taux de variation en reposoirs principaux (estimés au vertice 50%) est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 +/- 0.031, p-value = 0.03). Autrement dit, les juvéniles changent moins souvent de reposoirs principaux que les adultes (@fig-pred_50_95_plot b).
+
+Autrement dit, les courlis cendrées pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). 
+
+Le taux de variation et l'équitabilité en reposoirs secondaires ne varient ni en fonction de l'âge, du sexe, ou de l'intensité des marées.
 
 # Connectivité entre les reposoirs
 
