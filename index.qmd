@@ -293,6 +293,28 @@ La surface des domaines vitaux (aux vertices à 95% comme à 50%) des mâles est
 
 En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal (vertice à 50%) sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital élargi (vertice à 95%) sont dans la RNNMO.
 
+::: {#fig-area_hr_plot}
+```{r}
+#| echo: false
+#| out.width: 70%
+#| fig-align: "center"
+knitr::include_graphics("hr_plot.png", dpi = 100)
+```
+
+Aire des domaines vitaux estimés aux verticles à 50% (haut) et vertice 95% (bas) en fonction du sexe (femelle en triangle, mâle en rond), de l'âge (juvénile en forme vide, adulte en forme pleine) et du pourcentage d'utilisation de la RNNMO (nuance de bleu).
+:::
+
+::: {#fig-hist_danslareserve}
+```{r}
+#| echo: false
+#| out.width: 70%
+#| fig-align: "center"
+knitr::include_graphics("hist_danslareserve.png", dpi = 100)
+```
+
+Distribution des pourcentages d'utilisation de la RNNMO pour les domaiens vitaux estimés aux verticles à 50% et95%, moyenne d'utilisation en ligne noire.
+:::
+
 # Les reposoirs {#section-reposoir}
 
 A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zones de repos appelés "reposoirs".
