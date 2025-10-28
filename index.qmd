@@ -8,6 +8,7 @@ format:
   html:
     theme: journal
     toc: true
+    number-sections: true
     fig-cap-location: top
     link-citations: true
     document-css: false
@@ -1724,9 +1725,9 @@ L'ensemble des codes produits sont disponibles ici : [Github](https://github.com
 
 # Bibliographie
 
--   <span id="beniston2004">Beniston, M., & Stephenson, D. B. (2004). Extreme climatic events and their evolution under changing climatic conditions. Global and planetary change, 44(1-4), 1-9.
--   <span id="calenge2006">Calenge, C., (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. Ecol. Model. 197 (3), 516–519.
--   <span id="Worton1989">Worton, B.J., 1989. Kernel methods for estimating the utilization distribution in home-range studies. Ecology 70, 164–168.
+-   <span id="beniston2004">Beniston, M., & Stephenson, D. B. (2004). Extreme climatic events and their evolution under changing climatic conditions. *Global and planetary change*, 44(1-4), 1-9.
+-   <span id="calenge2006">Calenge, C. (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. *Ecol. Model.* 197 (3), 516–519.
+-   <span id="Worton1989">Worton, B.J. (1989). Kernel methods for estimating the utilization distribution in home-range studies. *Ecology* 70, 164–168.
 
 # Auteur.ices, affiliations et contributions
 
