@@ -123,7 +123,7 @@ Courlis cendrés en vol (©Großer Brachvogel)
 
 **Saison de reproduction** : Sa saison de reproduction s'étends d'avril à juillet. Les femelles pondent en général entre 3 et 4 œufs. L'incubation dure environ 28 jours, et les jeunes deviennent autonomes à l'âge de 5 à 6 semaines.
 
-**Migration** : Les courlis cendré est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.
+**Migration** : Les courlis cendrés est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.
 
 **Effectifs de population** : La population mondiale est estimée à \~ 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).
 
@@ -283,26 +283,13 @@ Les individus ont des domaines vitaux (tous types de comportements confondus) d'
 #| echo: false
 #| out.width: 70%
 #| fig-align: "center"
-knitr::include_graphics("area_hr_plot.png", dpi = 100)
-```
-
-Aire des domaines vitaux estimés aux verticles à 50% (a, haut) et vertice 95% (a, bas) en fonction du sexe (femelle en triangle, mâle en rond), de l'âge (juvénile en forme vide, adulte en forme pleine) et du pourcentage d'utilisation de la RNNMO (nuance de bleu) ; Distribution des pourcentage d'utilisation de la RNNMO pour les domaiens vitaux estimés aux verticles à 50% (b, haut) et vertice 95% (b, bas), moyenne d'utilisation en ligne noire.
-:::
-
-La surface des domaines vitaux (aux vertices à 95% comme à 50%) des mâles est significativement plus petite que celles des domaines vitaux des femelles (mâle *vs* femelle : -0.25 ± 0.1, p-value = 0.01). La surface du domaine vital ne varie pas en fonction de l'âge.
-
-En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal (vertice à 50%) sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital élargi (vertice à 95%) sont dans la RNNMO.
-
-::: {#fig-area_hr_plot}
-```{r}
-#| echo: false
-#| out.width: 70%
-#| fig-align: "center"
 knitr::include_graphics("hr_plot.png", dpi = 100)
 ```
 
 Aire des domaines vitaux estimés aux verticles à 50% (haut) et vertice 95% (bas) en fonction du sexe (femelle en triangle, mâle en rond), de l'âge (juvénile en forme vide, adulte en forme pleine) et du pourcentage d'utilisation de la RNNMO (nuance de bleu).
 :::
+
+La surface des domaines vitaux (aux vertices à 95% comme à 50%) des mâles est significativement plus petite que celles des domaines vitaux des femelles (mâle *vs* femelle : -0.25 ± 0.1, p-value = 0.01). La surface du domaine vital ne varie pas en fonction de l'âge.
 
 ::: {#fig-hist_danslareserve}
 ```{r}
@@ -312,8 +299,10 @@ Aire des domaines vitaux estimés aux verticles à 50% (haut) et vertice 95% (ba
 knitr::include_graphics("hist_danslareserve.png", dpi = 100)
 ```
 
-Distribution des pourcentages d'utilisation de la RNNMO pour les domaiens vitaux estimés aux verticles à 50% et95%, moyenne d'utilisation en ligne noire.
+Distribution des pourcentages d'utilisation de la RNNMO pour les domaines vitaux estimés aux verticles à 50% et95%, moyenne d'utilisation en ligne noire.
 :::
+
+En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal (vertice à 50%) sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital élargi (vertice à 95%) sont dans la RNNMO.
 
 # Les reposoirs {#section-reposoir}
 
@@ -598,7 +587,7 @@ Reposoirs en fonction de l'âge en zone C : Reposoirs adultes en rose, reposoirs
 
 ## Reposoirs en fonction du sexe {#section-sexe1}
 
-Les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur zones de repos.
+les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur zones de repos.
 
 :::::: panel-tabset
 ### Zone A
@@ -759,8 +748,6 @@ Reposoirs en fonction du jour et de la nuit en zone C : Reposoirs diurnes en ros
 ::::::
 
 ### Reposoirs entre fonction de la hauteur d'eau {#section-hauteurEau1}
-
-XXX
 
 Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_kud_roosting_tide_strength_A, @fig-UDMap_kud_roosting_tide_strength_B, @fig-UDMap_kud_roosting_tide_strength_C).
 
@@ -1099,11 +1086,11 @@ Zones d'alimentation en fonction du jour et de la nuit en zone C : Zones d'alime
 
 # Utilisation de l'espace lors d'évènements de vent extrêmes {#section-ECE}
 
-Les évènements climatiques extrèmes sont en augmentation, en fréquence et en intensité, avec le changement climatiques ([beniston2004](#beniston2004)). Les évènements de vents forts sont suspectés d'être préjudiciable pour les courlis cendré et on s'attend à ce que leur utilisation de l'espace soit modifié lors des tempêtes.
+Les évènements climatiques extrèmes sont en augmentation, en fréquence et en intensité, avec le changement climatiques ([beniston2004](#beniston2004)). Les évènements de vents forts sont suspectés d'être préjudiciable pour les courlis cendrés et on s'attend à ce que leur utilisation de l'espace soit modifié lors des tempêtes.
 
 L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme jours de référence. Les évènements extrèmes sont ici distingué en trois catégories : i) les évènements de vent fort (vitesse de vent supérieur aux 95 % des enregistrements), ii) les évènements de vent de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux
 
-XXX Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos. Seuls les résultats montrant l'influence des vents forts sur les comportements d'alimentation sont présentés ici. autre variable extrème à ajouter ? roosting aussi XXX
+Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos. 
 
 ## Reposoirs en fonction d'évènements venteux extrèmes
 
@@ -1433,7 +1420,7 @@ Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la dista
 knitr::include_graphics("distance_roost_forag_plot_talk.png", dpi = 100)
 ```
 
-Distance moyenne (+/- écart-type) individuelle et journalières à chaque cycle de marée entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (+/- écart-type en lignes grises tirets).
+Distance moyenne (± écart-type) individuelle et journalières à chaque cycle de marée entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (± écart-type en lignes grises tirets).
 :::
 
 Les distances à chaque cycle de marée des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors péridoe de chasse (@fig-distance_roost_forag_allvar_plot).
@@ -1475,9 +1462,9 @@ Prédictions de l'équitabilité (a) et le taux de variation (b) en reposoirs pr
 
 L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions (coef : -0.34 ± 0.05, p-value \< 1.10\^6) en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cet différence diminue lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l'équitabilité en reposoirs semble plus fortes chez les mâles lors des marées de vives eaux et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (@fig-pred_50_95_plot a).
 
-Le taux de variation en reposoirs principaux (estimés au vertice 50%) est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 +/- 0.031, p-value = 0.03). Autrement dit, les juvéniles changent moins souvent de reposoirs principaux que les adultes (@fig-pred_50_95_plot b).
+Le taux de variation en reposoirs principaux (estimés au vertice 50%) est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 ± 0.031, p-value = 0.03). Autrement dit, les juvéniles changent moins souvent de reposoirs principaux que les adultes (@fig-pred_50_95_plot b).
 
-Autrement dit, les courlis cendrées pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions).
+Autrement dit, les courlis cendréses pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions).
 
 Le taux de variation et l'équitabilité en reposoirs secondaires ne varient ni en fonction de l'âge, du sexe, ou de l'intensité des marées.
 
@@ -1511,7 +1498,7 @@ Réseau de connexions entre les principaux reposoirs (zones noires) et secondair
 
 ## Chasse à pied
 
-La chasse à pied est autorisée sur le Domaine Public Maritime (DPM) aux alentours de la RNNMO. Il est attendu que la présence de chasseur et de tir dérange les courlis cendré et que leur utilisation de l'espace pour les comportements de repos et d'alimentation en soient perturbé.
+La chasse à pied est autorisée sur le Domaine Public Maritime (DPM) aux alentours de la RNNMO. Il est attendu que la présence de chasseur et de tir dérange les courlis cendrés et que leur utilisation de l'espace pour les comportements de repos et d'alimentation en soient perturbé.
 
 Dans d'ouverture et de fermeture de la chasse sur le DPM :
 
@@ -1729,7 +1716,7 @@ Deux enveloppes de domaine vital sont calculées pour chaque individu : i) le do
 
 ## Données et codes
 
-Toutes les analyses, graphiques et cartes ont été réalisés avec le logiciel R version XXX et RStudio version XXX.
+Toutes les analyses, graphiques et cartes ont été réalisés avec le logiciel R version 4.4.2.
 
 Les données utilisées sont disponibles ici : XXX
 
@@ -1757,7 +1744,7 @@ Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzan
 
 # Financeurs
 
-La région Nouvelle-Aquitaine, France Nation Verte, XXX
+La région Nouvelle-Aquitaine et France Nation Verte.
 
 ::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
 <img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
