@@ -208,7 +208,7 @@ Le jeu de données analysé est constitué de XX point GPS enregistré entre 201
 ::: {#fig-emission_plot}
 ```{r}
 #| echo: false
-#| out.width: 90%
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("emission_plot.png", dpi = 100)
 ```
@@ -281,7 +281,7 @@ Les individus ont des domaines vitaux (tous types de comportements confondus) d'
 ::: {#fig-area_hr_plot}
 ```{r}
 #| echo: false
-#| out.width: 90%
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("area_hr_plot.png", dpi = 100)
 ```
@@ -1406,7 +1406,7 @@ Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la dista
 ::: {#fig-distance_roost_forag_plot_talk}
 ```{r}
 #| echo: false
-#| out.width: 90%
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("distance_roost_forag_plot_talk.png", dpi = 100)
 ```
@@ -1433,58 +1433,57 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 
 La fidélité en reposoirs est estimée par deux mesures complémentaires pour chaque individu :
 
-| Mesure                             | Définition                                   | Interprétation                                                                               |
-| -----------------------------------| --------------------------------------- |-------------------------------------------------------------------------- |
-| ***Equitabilité***          | Diversité d'utilisation des zones de repos | Equitabilité proche de 1 : utilisation équilibrée de plusieurs reposoirs différents (fidélité faible) ; équitabilité proche de 0 : comportements de repos concentrés sur peu de reposoirs différents (fidélité forte)
-| ***Taux de variation*** | Fréquence de mouvement entre reposoirs, mesure l'instabilité temporelle dans les choix de reposoirs | Plus la valeur est *élevée*, plus les changements de reposoirs sont fréquements (fidélité faible)   |
+| Mesure | Définition | Interprétation |
+|------------------|-------------------|-----------------------------------|
+| ***Equitabilité*** | Diversité d'utilisation des zones de repos | Equitabilité proche de 1 : utilisation équilibrée de plusieurs reposoirs différents (fidélité faible) ; équitabilité proche de 0 : comportements de repos concentrés sur peu de reposoirs différents (fidélité forte) |
+| ***Taux de variation*** | Fréquence de mouvement entre reposoirs, mesure l'instabilité temporelle dans les choix de reposoirs | Plus la valeur est *élevée*, plus les changements de reposoirs sont fréquements (fidélité faible) |
 
 Ces mesures de variabilité *vs* fidélité en reposoirs sont calculé pour les reposoirs principaux (estimés au vertice 50%) et les reposoirs secondaires (estimés au vertice 95%). Plusieurs modèles linéaires mixtes (effet aléatoire individu) généralisé (Gaussien, Gamma ou transformation log) avec les effets fixes 'âge', 'sexe' et 'intensité de marée' et leur interaction deux à deux ont été comparés. Uniquement les résultats des meilleurs modèles sélectionnés par AIC sont présentés.
 
 ::: {#fig-pred_50_95_plot}
 ```{r}
 #| echo: false
-#| out.width: 90%
+#| out.width: 70%
 #| fig-align: "center"
 knitr::include_graphics("pred_50_95_plot.png", dpi = 100)
 ```
 
-Prédictions de l'équitabilité (a) et le taux de variation (b) en reposoirs principaux (estimés au vertice 50%). 
+Prédictions de l'équitabilité (a) et le taux de variation (b) en reposoirs principaux (estimés au vertice 50%).
 :::
 
-L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions (coef : -0.34 ± 0.05, p-value < 1.10^6) en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cet différence diminue lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l'équitabilité en reposoirs semble plus fortes chez les mâles lors des marées de vives eaux et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (@fig-pred_50_95_plot a).
+L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions (coef : -0.34 ± 0.05, p-value \< 1.10\^6) en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cet différence diminue lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l'équitabilité en reposoirs semble plus fortes chez les mâles lors des marées de vives eaux et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (@fig-pred_50_95_plot a).
 
 Le taux de variation en reposoirs principaux (estimés au vertice 50%) est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 +/- 0.031, p-value = 0.03). Autrement dit, les juvéniles changent moins souvent de reposoirs principaux que les adultes (@fig-pred_50_95_plot b).
 
-Autrement dit, les courlis cendrées pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). 
+Autrement dit, les courlis cendrées pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions).
 
 Le taux de variation et l'équitabilité en reposoirs secondaires ne varient ni en fonction de l'âge, du sexe, ou de l'intensité des marées.
 
 # Connectivité entre les reposoirs
 
-::: {#fig-network layout-ncol=2}
+::::: {#fig-network layout-ncol="2"}
 ::: {#fig-network_plot_50}
 ```{r}
 #| echo: false
-#| out.width: 90%
+#| out.width: 100%
 #| fig-align: "center"
 knitr::include_graphics("network_plot_50.png", dpi = 100)
 ```
 
-Réseau de connexions entre les principaux reposoirs (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (jaune → rose) et la largeur. Toutes les connexions sont représentées. Limites de la RNNMO en noir.
+Réseau de connexions entre tous les principaux reposoirs (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (blanc → bleu → rose) et la largeur. Toutes les connexions sont représentées. RNNMO en vert.
 :::
 
 ::: {#fig-network_plot_all_quantile}
 ```{r}
 #| echo: false
-#| out.width: 90%
+#| out.width: 100%
 #| fig-align: "center"
 knitr::include_graphics("network_plot_all_quantile.png", dpi = 100)
 ```
 
-Réseau de connexions entre les principaux reposoirs (zones noires) et secondaires (zones grises). Flèches : intensité croissante des connexions indiquée par la couleur (jaune → rose) et la largeur. Toutes les connexions sont représentées. Limites de la RNNMO en noir.
+Réseau de connexions entre les principaux reposoirs (zones noires) et secondaires (zones grises) uniquement pour les 5% de plus fortes connexions. Flèches : intensité croissante des connexions indiquée par la couleur (bleu → rose) et la largeur. RNNMO en vert.
 :::
-:::
-
+:::::
 
 # Evitement des chasseurs et des zones de chasses
 
@@ -1622,13 +1621,13 @@ Ce travail est une première étape dans l'étude de l'utilisation de l'espace p
 
 Les contraintes techniques liées à l'écologie du courlis cendré et aux autorisations de baguage ont restreint la zone de capture des oiseaux à équiper sur la plage du grand travers (le long de la côte au sein de la réserve de Moëze-Oléron). Les oiseaux étudiés ici ont donc un tropisme marqué vers cette zone, représentant un biais non négligeable dans les analyses spatiales. Il serait particulièrement intéressant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve pour obtenir une vue plus généralisable à l'ensemble de la population de Courlis dans la région.
 
-## Manque de données de pression de chasse 
+## Manque de données de pression de chasse
 
 Les effets de la chasse à pied et de la chasse à la tonnes ont été partiellement évalués dans cette étude. Néanmoins, la pression de chasse n'a pas pu être incluse dans les analyses par manque de données. Des donnes spatialisées tout au long des saisons de chasse (sur le nombre de chasseurs présents, la durée des sessions de chasse, la quantité de tirs effectués et/ou les quantités de prélèvement) seraient des ajouts cruciaux pour évaluer plus en détails les impacts de la chasse sur les comportements de déplacements du coulis cendré.
 
 ## Quels sont les effets de la pêche à pied sur les comprtements de déplacement du courlis cendré ?
 
-La zone d'étude est un lieu de pêche à pied non professionnelle particulièrement prisé. Le courlis cendré pourrait être dérangé par la présence de pêcheurs à pied pour sa recherche de nourriture comme pour ses déplacements entre estran et reposoirs. L'étude des effets de la pression de pêche à pied serait un ajout pertinent pour étendre notre compréhension de l'utilisation de l'espace par le courlis cendré à un ensemble plus large des activités anthropiques ayant lieu dans la région. 
+La zone d'étude est un lieu de pêche à pied non professionnelle particulièrement prisé. Le courlis cendré pourrait être dérangé par la présence de pêcheurs à pied pour sa recherche de nourriture comme pour ses déplacements entre estran et reposoirs. L'étude des effets de la pression de pêche à pied serait un ajout pertinent pour étendre notre compréhension de l'utilisation de l'espace par le courlis cendré à un ensemble plus large des activités anthropiques ayant lieu dans la région.
 
 # Matériels et Méthodes
 
