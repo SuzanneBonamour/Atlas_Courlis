@@ -54,7 +54,7 @@ data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
-# Synthèse du rapport
+# Points clés
 
 ## Contexte et objectifs
 
@@ -1074,7 +1074,7 @@ Zones d'alimentation en fonction du mois de l'année en zone C : Zones d'aliment
 :::
 ::::::
 
-### zones d'alimentation en fonction du jour et de la nuit
+### Zones d'alimentation en fonction du jour et de la nuit
 
 :::::: panel-tabset
 #### Zone A
@@ -1536,13 +1536,17 @@ Réseau de connexions entre les principaux reposoirs (zones noires) et secondair
 :::
 :::::
 
+Les reposoirs sont fortement connectés entre deux grâce à une forte dynamiques spatio-temporelles des coulis centdré dans l'ensemble de la zones d'étude.
+
+Les reposoirs principaux sont bien reliés entre eux, XXX
+
 # Evitement des chasseurs et des zones de chasses
 
 ## Chasse à pied
 
-La chasse à pied est autorisée sur le Domaine Public Maritime (DPM) aux alentours de la RNNMO. Il est attendu que la présence de chasseur et de tir dérange les courlis cendrés et que leur utilisation de l'espace pour les comportements de repos et d'alimentation en soient perturbé.
+La chasse à pied est autorisée sur le Domaine Public Maritime (DPM) aux alentours de la RNNMO. Il est attendu que la présence de chasseurs et le bruit des tirs dérangent les courlis cendrés et que leur comportements de repos et d'alimentation en soient perturbés.
 
-Dans d'ouverture et de fermeture de la chasse sur le DPM :
+Dates d'ouverture et de fermeture de la chasse sur le DPM :
 
 ```{r}
 #| echo: false
@@ -1618,12 +1622,12 @@ En charente-maritime, la période de chasse s'ouverture généralement fin aout,
 
 Il est attendu que les tonnes de chasse constitues un dérangement non négligeable pour les oiseaux d'eaux, même lorsqu'il ne sont pas chassé, comme c'est le cas pour le Courlis cendré.
 
-::: {#fig-map_tonnes}
+::: {#fig-map_tonnes_superposition}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "map_tonnes.html",
+  src = "map_tonnes_superposition.html",
   width = "100%",
   height = "600px"
 )
@@ -1762,7 +1766,7 @@ Toutes les analyses, graphiques et cartes ont été réalisés avec le logiciel 
 
 Les données utilisées sont disponibles ici : XXX
 
-L'ensemble des codes produits sont disponibles ici : [Github](https://github.com/SuzanneBonamour)
+L'ensemble des codes produits sont disponibles ici XXX : [Github](https://github.com/SuzanneBonamour)
 
 # Bibliographie
 
@@ -1772,9 +1776,11 @@ L'ensemble des codes produits sont disponibles ici : [Github](https://github.com
 
 # Auteur.ices, affiliations et contributions
 
-**Analyses statistiques et spatiales** : Suzanne Bonamour (LPO France), Gwenael Quaintenne (LPO France)
+Cette étude a nécessité la participation d'une moyenne de XXX personnes sur le terrain durant environ XXX nuits par an depuis 2016, anisi qu'une personne à temps plein (35h/semaine) pendant 6 mois pour l'analyse des données et la redaction de ce rapport.
 
 **Travail de terrain, capture et baguage des oiseaux** : Pierre Rousseau (RNN Moëze-Oléron), Loïc Jomat (RNN Moëze-Oléron), Adrien Chaigne (RNN Moëze-Oléron), Pierrick Bocher (RNN Moëze-Oléron), Frédéric Jiguet (RNN Moëze-Oléron), et beaucoup d'autre personnes !
+
+**Analyses statistiques et spatiales** : Suzanne Bonamour (LPO France), Gwenael Quaintenne (LPO France)
 
 **Rédaction** : Suzanne Bonamour (LPO France)
 
