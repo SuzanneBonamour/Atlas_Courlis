@@ -54,13 +54,52 @@ data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
-# Messages clés
+# Synthèse du rapport
 
-XXX Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.
+## Contexte et objectifs
 
-Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis militibus discrepantes opposita cuncta superasse virtute.
+La Réserve Naturelle Nationale de Moëze-Oléron (6 800 ha, Charente-Maritime), gérée par la LPO depuis 1985, est un site clé pour les oiseaux d’eau migrateurs du littoral atlantique. Elle relie zones humides, estrans et marais conchylicoles, et accueille chaque année jusqu’à 100 000 oiseaux.
 
-Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique ut solent avia montium petiere celsorum.
+Depuis 2015, la LPO, en partenariat avec le CNRS et le Muséum national d’Histoire naturelle, suit par GPS plusieurs dizaines de Courlis cendrés (Numenius arquata) afin de comprendre comment cette espèce utilise l’espace dans et autour de la réserve. Ce limicole emblématique, classé « Vulnérable » en France et « Quasi menacé » à l’échelle mondiale, sert ici d’espèce parapluie pour orienter la gestion des zones côtières fréquentées par de nombreuses autres espèces d’oiseaux d’eau.
+
+## Principaux résultats
+
+**Utilisation de l’espace et domaines vitaux** : Chaque individu exploite un domaine vital moyen d’environ 640 m². En moyenne, les courlis passent plus de la moitié de leur temps (52%) à l’intérieur de la réserve. Les femelles utilisent des territoires significativement plus vastes que les mâles, probablement en lien avec leur plus grande taille et leur bec plus long.
+
+**Reposoirs et zones d’alimentation** : Les oiseaux alternent entre reposoirs (marée haute) et zones d’alimentation (marée basse). Les reposoirs et zones d'alimentation se situent à la fois à l’intérieur et en dehors de la réserve, notamment dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation principales sont concentrées sur les vasières côtières et les prés salés, alors que les reposoirs se situent souvent en zones plus abritées. Les courlis juvéniles parcourent des distances plus longues entre les sites de repos et d’alimentation, traduisant un comportement plus exploratoire ou une moindre efficacité.
+
+**Effets des marées et conditions météorologiques** : Les marées hautes et les submersions limitent les zones disponibles, renforçant la fidélité des oiseaux à certains reposoirs connus. Les événements de vent fort n’affectent pas significativement les comportements de repos, mais peuvent modifier temporairement les zones d'alimentation.
+
+**Effets de la chasse à pied et chasse à la tonne** : Les données suggèrent un impact potentiel de dérangement, notamment autour des zones non protégées. Bien qu’aucun effet direct n’ait été mesuré sur les déplacements à court terme, la superposition entre zones de chasse et zones d’alimentation clées montre un risque de perturbation élevé. 
+
+**Zones critiques identifiées** : Les analyses spatiales révèlent plusieurs zones critiques de repos et d’alimentation situées hors du périmètre actuel de la réserve, souvent à proximité immédiate de zones de chasse. Ces secteurs représentent des priorités de conservation et de gestion concertée.
+
+## Enseignements clés pour la gestion
+
+La RNN de Moëze-Oléron joue un rôle central mais partiel : de nombreuses zones fonctionnelles importantes se trouvent à l’extérieur de ses limites. 
+
+La conservation du Courlis cendré et des autres limicoles dépend d’une gestion coordonnée à l’échelle du bassin des Pertuis charentais.
+
+Il est nécessaire de mieux intégrer les activités humaines (chasse, pêche, tourisme) dans les stratégies de préservation, via : des zones tampons autour des reposoirs sensibles, un dialogue renforcé avec les usagers (chasseurs, ostréiculteurs, pêcheurs à pied), et le suivi à long terme des déplacements via GPS.
+
+## Perspectives et besoins identifiés
+
+Élargir le suivi GPS à d’autres sites de capture pour limiter les biais et mieux représenter l’ensemble de la population.
+
+Améliorer les données de pression de chasse et de fréquentation humaine (comptage de chasseurs, tirs, pêche à pied).
+
+Analyser les effets cumulés du changement climatique, de la submersion marine et des usages littoraux.
+
+Renforcer les partenariats territoriaux pour protéger les zones fonctionnelles au-delà de la réserve.
+
+## Partenaires et financement
+
+Étude conduite par la LPO France et la RNN de Moëze-Oléron, en collaboration avec le CNRS (LIENSs) et le MNHN (CESCO).
+Projet financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional, FEDER) dans le cadre du programme « Adaptation des limicoles aux changements climatiques ».
+
+::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
+<img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
+:::
 
 # Contexte de l'étude
 
@@ -588,7 +627,7 @@ Reposoirs en fonction de l'âge en zone C : Reposoirs adultes en rose, reposoirs
 
 ## Reposoirs en fonction du sexe {#section-sexe1}
 
-les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur reposoirs.
+Les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur reposoirs.
 
 :::::: panel-tabset
 ### Zone A
@@ -1570,7 +1609,7 @@ Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasse
 knitr::include_graphics("Une_tonne_de_chasse_au_gibier_d'eau.jpg", dpi = 100)
 ```
 
-La RNNMO. a) Sentier des Polders (©RNNMO - LPO), b) Vue aérienne côté continent (©Romain Beaubert - LPO), c) Vue aérienne depuis la côte (©RNNMO - LPO).
+Tonnes de chasse
 :::
 
 La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs (principalement les anatidés).
@@ -1745,30 +1784,28 @@ L'ensemble des codes produits sont disponibles ici : [Github](https://github.com
 
 Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzanne Bonamour `suzanne.bonamour@lpo.fr`.
 
-# Financeurs
-
-Cette étude entre dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
-
-::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
-<img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
-:::
-
 # Annexes
 
 ## Tableau des correspondance bague et ID
 ```{r}
-#| echo: false
+#| include: false
 table_correspondance <- read.csv("table_correspondance.csv", row.names = NULL)
 ```
 
 ```{r echo=FALSE, message=FALSE}
 # Click table
 table_correspondance %>%
-  datatable(extensions = 'Buttons',
-            options = list(dom = 'Blfrtip',
-                           buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
-                           lengthMenu = list(c(10,25,50,-1),
-                                             c(10,25,50,"All"))))
+  datatable(
+    extensions = "Buttons",
+    options = list(
+      dom = "Blfrtip",
+      buttons = c("copy", "csv", "excel", "pdf", "print"),
+      lengthMenu = list(
+        c(10, 25, 50, -1),
+        c(10, 25, 50, "All")
+      )
+    )
+  )
 ```
 
 <a href="#top">↑ retour en haut</a>
