@@ -62,9 +62,9 @@ Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum ext
 
 Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique ut solent avia montium petiere celsorum.
 
-# Contexte et objectifs scientifiques
+# Contexte de l'étude
 
-Créée en 1985, la Réserve Naturelle Nationale de Moëze-Oléron (RNNMO, @fig-Photo_intro), située dans le département de la charente maritime, s’étend sur près de 6 800 hectares entre le continent et l’île d’Oléron. Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année jusqu'à 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants.
+Créée en 1985, la Réserve Naturelle Nationale de Moëze-Oléron (RNNMO), située dans le département de la charente maritime, s’étend sur près de 6 800 hectares entre le continent et l’île d’Oléron (@fig-Photo_intro). Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année jusqu'à 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants.
 
 ::: {#fig-Photo_intro}
 ```{r, out.height = "500px", out.width= "2300px"}
@@ -75,7 +75,7 @@ knitr::include_graphics("photo_intro_RNNMO.png", dpi = 100)
 La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (©RNNMO - LPO), b) vue aérienne côté continent (©Romain Beaubert - LPO), c) vue aérienne de la côte (©RNNMO - LPO).
 :::
 
-Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques (@fig-flux) et contribuant à la conservation des oiseaux d’eau à l’échelle internationale.
+Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques et contribuant à la conservation des oiseaux d’eau à l’échelle internationale (@fig-flux).
 
 ::: {#fig-flux}
 ```{r, out.height = "500px", out.width= "1100px"}
@@ -97,13 +97,29 @@ knitr::include_graphics("baguage.png", dpi = 100)
 Equipement d'un coulirs cendré : a) courlis cendré bagué (©Armel Deniau), b) pose d'un GPS sur une courlis cendré (©Loic Jomat)
 :::
 
-L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel local de la RNNMO, comprenant le bassin de Marennes et le marais de Brouage et la mer des Pertuis (@fig-zone_map_new). Le courlis cendré est mis à contribution ici comme une espèce parapluie afin d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil des limicoles dans le zone d'étude.
+# Objectifs scientifiques
 
-À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans a RNNMO, leurs déplacements ont été analysé afin de dégager les principales zones utilisées par les oiseaux et leurs variations en fonction de changements environnementaux et pressions cinégétique. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, ...) ainsi que d'un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle.
+L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel local de la RNNMO. Le courlis cendré est mis à contribution ici comme une espèce parapluie afin d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil des limicoles dans le zone d'étude.
 
-*Cette étude entre dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).*
+À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans a RNNMO, leurs déplacements ont été analysés afin de dégager les principales zones utilisées par les oiseaux et leurs variations en fonction de changements environnementaux et pressions cinégétique. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, ...) ainsi que d'un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle.
 
 # Le courlis cendré
+
+**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>, @fig-20170226) est le plus grand limicole d’Europe, de longtemps entre 55–65 cm pour une envergure entre 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L'espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.
+
+**Comportement social** : C'est une espèce discrète, au comportement prudent. Il est territorial en période de reproduction, et grégaire hors reproduction.
+
+**Régime alimentaire** : Il mange principalement des vers de terre, des insectes, des mollusques et des crustacés ; et complète ponctuellement sont régime alimentaire par des graines et baies. Il s'alimente au sol ou par sondage dans la vase ou les prairies humides.
+
+**Habitats** : Sa reproduction est faite avec un nid au sol, souvent dissimulé dans la végétation en prairies humides, en landes, en tourbières, en marais, ou zones agricoles extensives. Il utilise des vasières intertidales, des estuaires, des prés salés, des prairies humides ou des pâtures pour sont alimentation, et des vasières, des zones littorales, des lagunes, ou marais salants pour ses périodes de repos (@fig-Photo_intro).
+
+**Saison de reproduction** : Sa saison de reproduction s'étends d'avril à juillet. Les femelles pondent en général entre 3 et 4 œufs. L'incubation dure environ 28 jours, et les jeunes deviennent autonomes à l'âge de 5 à 6 semaines.
+
+**Migration** : Les courlis cendrés est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.
+
+**Effectifs de population** : La population mondiale est estimée à \~ 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).
+
+**Tendance démographique et statuts de conservation** : Le courlis cendré est en "déclin modéré" à "marqué" en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (*quasi menacé* en français) à l’échelle mondiale par IUCN et inscrit à l'Annexe II de la Convention de Bonn (CMS). En Europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme "Vulnérable" et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année depuis XXXX.
 
 ::: {#fig-20170226}
 ```{r, out.height = "500px", out.width= "700px"}
@@ -114,22 +130,6 @@ knitr::include_graphics("20170226-Großer_Brachvogel.jpg", dpi = 100)
 Courlis cendrés en vol (©Großer Brachvogel)
 :::
 
-**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe, de longtemps entre 55–65 cm pour une envergure entre 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L'espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.
-
-**Comportement social** : C'est une espèce discrète, au comportement prudent. Il est territorial en période de reproduction, et grégaire hors reproduction.
-
-**Régime alimentaire** : Il mange principalement des vers de terre, des insectes, des mollusques et des crustacés ; et complète ponctuellement sont régime alimentaire par des graines et baies. Il s'alimente au sol ou par sondage dans la vase ou les prairies humides.
-
-**Habitats** : Sa reproduction est faite avec un nid au sol, souvent dissimulé dans la végétation en prairies humides, en landes, en tourbières, en marais, ou zones agricoles extensives. Il utilise des vasières intertidales, des estuaires, des prés salés, des prairies humides ou des pâtures pour sont alimentation, et des vasières, des zones littorales, des lagunes, ou marais salants pour ses périodes de repos.
-
-**Saison de reproduction** : Sa saison de reproduction s'étends d'avril à juillet. Les femelles pondent en général entre 3 et 4 œufs. L'incubation dure environ 28 jours, et les jeunes deviennent autonomes à l'âge de 5 à 6 semaines.
-
-**Migration** : Les courlis cendrés est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.
-
-**Effectifs de population** : La population mondiale est estimée à \~ 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).
-
-**Tendance démographique et statuts de conservation** : Le courlis cendré est en "déclin modéré" à "marqué" en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (*quasi menacé* en français) à l’échelle mondiale par IUCN et inscrit à l'Annexe II de la Convention de Bonn (CMS). En Europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme "Vulnérable" et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année depuis XXXX.
-
 # La zone d'étude
 
 ```{r}
@@ -139,9 +139,7 @@ area_box <- sf::st_area(BOX)
 area_box_km <- as.numeric((round(area_box / 1000000, 1)))
 ```
 
-L'aire d'étude s'étend sur une surface de `r area_box_km` km² au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi la zone fonctionnelle de la RNNMO.
-
-L'aire d'étude est divisée en trois zone A, B et C pour facilité l'analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage au sud de la zone B. Voir la carte ci-dessous @fig-zone_map_new.
+La zone d'étude englobe le site fonctionnel local de la RNNMO, comprenant le bassin de Marennes et le marais de Brouage et la mer des Pertuis (@fig-zone_map_new). L'aire d'étude s'étend sur une surface de `r area_box_km` km² au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi la zone fonctionnelle de la RNNMO. L'aire d'étude est divisée en trois zone A, B et C pour faciliter l'analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage au sud de la zone B (@fig-zone_map_new).
 
 ::: {#fig-zone_map_new}
 ```{r}
@@ -204,7 +202,7 @@ sexe_dt <- GPS %>%
 # - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
 ```
 
-Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L'âge et le sexe n'a pas été identifié pour XX individus. Chaque individu a en moyenne XX point GPS enregistrés représentant des périodes de temps de 5 min.
+Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L'âge et le sexe n'a pas été identifié pour XX individus. Chaque individu a en moyenne XX point GPS enregistrés représentant des périodes de temps de 5 min (@fig-emission_plot).
 
 ::: {#fig-emission_plot}
 ```{r}
@@ -219,7 +217,7 @@ Période d'émission des balises GPS pour chaque individu.
 
 # Domaines vitaux {#section-HR}
 
-Chaque courlis cendré a un domaine vital individuel, avec un noyau d’activité représentant la zone de fréquentation la plus intense (englobant 50 % des points GPS enregistrés pour l'individu, c'est-à-dire estimé au vertice à 50%, et nommée par la suite "domaine vital principal"), et un domaine vital plus large correspondant a ces autres espaces moins fréquement utilisés (englobant 95 % des points GPS, c'est-à-dire estimé au vertice à 95%, et nommée par la suite "domaine vital étendu" @fig-UDMap_HR_gp_1).
+Chaque courlis cendré a un domaine vital individuel, avec un noyau d’activité représentant la zone de fréquentation la plus intense (englobant 50 % des points GPS enregistrés pour l'individu, c'est-à-dire estimé au vertice à 50%, et nommée par la suite "domaine vital principal"), et un domaine vital plus large correspondant a ces autres espaces moins fréquement utilisés (englobant 95 % des points GPS, c'est-à-dire estimé au vertice à 95%, et nommée par la suite "domaine vital étendu" @fig-UDMap_HR_gp_1, @fig-UDMap_HR_gp_2, @fig-UDMap_HR_gp_3, @fig-UDMap_HR_gp_4).
 
 ::: {#fig-UDMap_HR_gp_1}
 ```{r}
@@ -303,7 +301,7 @@ knitr::include_graphics("hist_danslareserve.png", dpi = 100)
 Distribution des pourcentages d'utilisation de la RNNMO pour les domaines vitaux principaux et étendus, moyenne d'utilisation en ligne noire.
 :::
 
-En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital étendu sont dans la RNNMO.
+En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital étendu sont dans la RNNMO (#fig-hist_danslareserve).
 
 # Les reposoirs {#section-reposoir}
 
@@ -1749,10 +1747,28 @@ Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzan
 
 # Financeurs
 
-La région Nouvelle-Aquitaine et France Nation Verte.
+Cette étude entre dans le cadre du projet "Adaptation des limicoles aux changements climatiques", financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).
 
 ::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
 <img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
 :::
+
+# Annexes
+
+## Tableau des correspondance bague et ID
+```{r}
+#| echo: false
+table_correspondance <- read.csv("table_correspondance.csv", row.names = NULL)
+```
+
+```{r echo=FALSE, message=FALSE}
+# Click table
+table_correspondance %>%
+  datatable(extensions = 'Buttons',
+            options = list(dom = 'Blfrtip',
+                           buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+                           lengthMenu = list(c(10,25,50,-1),
+                                             c(10,25,50,"All"))))
+```
 
 <a href="#top">↑ retour en haut</a>

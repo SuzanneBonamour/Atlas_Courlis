@@ -54,6 +54,22 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="index_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
+<script src="index_files/libs/jszip-1.13.6/jszip.min.js"></script>
+
+<script src="index_files/libs/pdfmake-1.13.6/pdfmake.js"></script>
+
+<script src="index_files/libs/pdfmake-1.13.6/vfs_fonts.js"></script>
+
+<link href="index_files/libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet">
+
+<script src="index_files/libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+
+<script src="index_files/libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+
+<script src="index_files/libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+
+<script src="index_files/libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+
 
 
 </head>
@@ -67,74 +83,79 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#messages-clés" id="toc-messages-clés" class="nav-link active" data-scroll-target="#messages-clés"><span class="header-section-number">1</span> Messages clés</a></li>
-  <li><a href="#contexte-et-objectifs-scientifiques" id="toc-contexte-et-objectifs-scientifiques" class="nav-link" data-scroll-target="#contexte-et-objectifs-scientifiques"><span class="header-section-number">2</span> Contexte et objectifs scientifiques</a></li>
-  <li><a href="#le-courlis-cendré" id="toc-le-courlis-cendré" class="nav-link" data-scroll-target="#le-courlis-cendré"><span class="header-section-number">3</span> Le courlis cendré</a></li>
-  <li><a href="#la-zone-détude" id="toc-la-zone-détude" class="nav-link" data-scroll-target="#la-zone-détude"><span class="header-section-number">4</span> La zone d’étude</a></li>
-  <li><a href="#périodes-de-suivi-des-individus" id="toc-périodes-de-suivi-des-individus" class="nav-link" data-scroll-target="#périodes-de-suivi-des-individus"><span class="header-section-number">5</span> Périodes de suivi des individus</a></li>
-  <li><a href="#section-HR" id="toc-section-HR" class="nav-link" data-scroll-target="#section-HR"><span class="header-section-number">6</span> Domaines vitaux</a></li>
-  <li><a href="#section-reposoir" id="toc-section-reposoir" class="nav-link" data-scroll-target="#section-reposoir"><span class="header-section-number">7</span> Les reposoirs</a>
+  <li><a href="#contexte-de-létude" id="toc-contexte-de-létude" class="nav-link" data-scroll-target="#contexte-de-létude"><span class="header-section-number">2</span> Contexte de l’étude</a></li>
+  <li><a href="#objectifs-scientifiques" id="toc-objectifs-scientifiques" class="nav-link" data-scroll-target="#objectifs-scientifiques"><span class="header-section-number">3</span> Objectifs scientifiques</a></li>
+  <li><a href="#le-courlis-cendré" id="toc-le-courlis-cendré" class="nav-link" data-scroll-target="#le-courlis-cendré"><span class="header-section-number">4</span> Le courlis cendré</a></li>
+  <li><a href="#la-zone-détude" id="toc-la-zone-détude" class="nav-link" data-scroll-target="#la-zone-détude"><span class="header-section-number">5</span> La zone d’étude</a></li>
+  <li><a href="#périodes-de-suivi-des-individus" id="toc-périodes-de-suivi-des-individus" class="nav-link" data-scroll-target="#périodes-de-suivi-des-individus"><span class="header-section-number">6</span> Périodes de suivi des individus</a></li>
+  <li><a href="#section-HR" id="toc-section-HR" class="nav-link" data-scroll-target="#section-HR"><span class="header-section-number">7</span> Domaines vitaux</a></li>
+  <li><a href="#section-reposoir" id="toc-section-reposoir" class="nav-link" data-scroll-target="#section-reposoir"><span class="header-section-number">8</span> Les reposoirs</a>
   <ul class="collapse">
-  <li><a href="#section-age1" id="toc-section-age1" class="nav-link" data-scroll-target="#section-age1"><span class="header-section-number">7.1</span> Reposoirs en fonction de l’âge</a></li>
-  <li><a href="#section-sexe1" id="toc-section-sexe1" class="nav-link" data-scroll-target="#section-sexe1"><span class="header-section-number">7.2</span> Reposoirs en fonction du sexe</a></li>
-  <li><a href="#reposoirs-en-fonction-du-calendrier" id="toc-reposoirs-en-fonction-du-calendrier" class="nav-link" data-scroll-target="#reposoirs-en-fonction-du-calendrier"><span class="header-section-number">7.3</span> Reposoirs en fonction du calendrier</a>
+  <li><a href="#section-age1" id="toc-section-age1" class="nav-link" data-scroll-target="#section-age1"><span class="header-section-number">8.1</span> Reposoirs en fonction de l’âge</a></li>
+  <li><a href="#section-sexe1" id="toc-section-sexe1" class="nav-link" data-scroll-target="#section-sexe1"><span class="header-section-number">8.2</span> Reposoirs en fonction du sexe</a></li>
+  <li><a href="#reposoirs-en-fonction-du-calendrier" id="toc-reposoirs-en-fonction-du-calendrier" class="nav-link" data-scroll-target="#reposoirs-en-fonction-du-calendrier"><span class="header-section-number">8.3</span> Reposoirs en fonction du calendrier</a>
   <ul class="collapse">
-  <li><a href="#reposoirs-en-fonction-du-mois-de-lannée" id="toc-reposoirs-en-fonction-du-mois-de-lannée" class="nav-link" data-scroll-target="#reposoirs-en-fonction-du-mois-de-lannée"><span class="header-section-number">7.3.1</span> Reposoirs en fonction du mois de l’année</a></li>
-  <li><a href="#reposoirs-en-fonction-du-jour-et-de-la-nuit" id="toc-reposoirs-en-fonction-du-jour-et-de-la-nuit" class="nav-link" data-scroll-target="#reposoirs-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">7.3.2</span> Reposoirs en fonction du jour et de la nuit</a></li>
-  <li><a href="#section-hauteurEau1" id="toc-section-hauteurEau1" class="nav-link" data-scroll-target="#section-hauteurEau1"><span class="header-section-number">7.3.3</span> Reposoirs entre fonction de la hauteur d’eau</a></li>
+  <li><a href="#reposoirs-en-fonction-du-mois-de-lannée" id="toc-reposoirs-en-fonction-du-mois-de-lannée" class="nav-link" data-scroll-target="#reposoirs-en-fonction-du-mois-de-lannée"><span class="header-section-number">8.3.1</span> Reposoirs en fonction du mois de l’année</a></li>
+  <li><a href="#reposoirs-en-fonction-du-jour-et-de-la-nuit" id="toc-reposoirs-en-fonction-du-jour-et-de-la-nuit" class="nav-link" data-scroll-target="#reposoirs-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">8.3.2</span> Reposoirs en fonction du jour et de la nuit</a></li>
+  <li><a href="#section-hauteurEau1" id="toc-section-hauteurEau1" class="nav-link" data-scroll-target="#section-hauteurEau1"><span class="header-section-number">8.3.3</span> Reposoirs entre fonction de la hauteur d’eau</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#section-alimentation" id="toc-section-alimentation" class="nav-link" data-scroll-target="#section-alimentation"><span class="header-section-number">8</span> Les zones d’alimentation</a>
+  <li><a href="#section-alimentation" id="toc-section-alimentation" class="nav-link" data-scroll-target="#section-alimentation"><span class="header-section-number">9</span> Les zones d’alimentation</a>
   <ul class="collapse">
-  <li><a href="#zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus" id="toc-zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus"><span class="header-section-number">8.1</span> Zones d’alimentation en fonction des caractéristiques biologique des individus</a>
+  <li><a href="#zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus" id="toc-zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus"><span class="header-section-number">9.1</span> Zones d’alimentation en fonction des caractéristiques biologique des individus</a>
   <ul class="collapse">
-  <li><a href="#section-age2" id="toc-section-age2" class="nav-link" data-scroll-target="#section-age2"><span class="header-section-number">8.1.1</span> Zones d’alimentation en fonction de l’âge</a></li>
-  <li><a href="#section-sexe2" id="toc-section-sexe2" class="nav-link" data-scroll-target="#section-sexe2"><span class="header-section-number">8.1.2</span> Zones d’alimentation en fonction du sexe</a></li>
+  <li><a href="#section-age2" id="toc-section-age2" class="nav-link" data-scroll-target="#section-age2"><span class="header-section-number">9.1.1</span> Zones d’alimentation en fonction de l’âge</a></li>
+  <li><a href="#section-sexe2" id="toc-section-sexe2" class="nav-link" data-scroll-target="#section-sexe2"><span class="header-section-number">9.1.2</span> Zones d’alimentation en fonction du sexe</a></li>
   </ul></li>
-  <li><a href="#zones-dalimentation-en-fonction-du-calendrier" id="toc-zones-dalimentation-en-fonction-du-calendrier" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-du-calendrier"><span class="header-section-number">8.2</span> Zones d’alimentation en fonction du calendrier</a>
+  <li><a href="#zones-dalimentation-en-fonction-du-calendrier" id="toc-zones-dalimentation-en-fonction-du-calendrier" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-du-calendrier"><span class="header-section-number">9.2</span> Zones d’alimentation en fonction du calendrier</a>
   <ul class="collapse">
-  <li><a href="#section-mois2" id="toc-section-mois2" class="nav-link" data-scroll-target="#section-mois2"><span class="header-section-number">8.2.1</span> Zones d’alimentation en fonction du mois de l’année</a></li>
-  <li><a href="#zones-dalimentation-en-fonction-du-jour-et-de-la-nuit" id="toc-zones-dalimentation-en-fonction-du-jour-et-de-la-nuit" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">8.2.2</span> zones d’alimentation en fonction du jour et de la nuit</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#section-ECE" id="toc-section-ECE" class="nav-link" data-scroll-target="#section-ECE"><span class="header-section-number">9</span> Utilisation de l’espace lors d’évènements de vent extrêmes</a>
-  <ul class="collapse">
-  <li><a href="#reposoirs-en-fonction-dévènements-venteux-extrèmes" id="toc-reposoirs-en-fonction-dévènements-venteux-extrèmes" class="nav-link" data-scroll-target="#reposoirs-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">9.1</span> Reposoirs en fonction d’évènements venteux extrèmes</a>
-  <ul class="collapse">
-  <li><a href="#evènements-de-vent-fort" id="toc-evènements-de-vent-fort" class="nav-link" data-scroll-target="#evènements-de-vent-fort"><span class="header-section-number">9.1.1</span> Evènements de vent fort</a></li>
-  <li><a href="#evènements-de-vent-de-nord-ouest" id="toc-evènements-de-vent-de-nord-ouest" class="nav-link" data-scroll-target="#evènements-de-vent-de-nord-ouest"><span class="header-section-number">9.1.2</span> Evènements de vent de Nord-Ouest</a></li>
-  <li><a href="#evènements-de-vent-fort-de-nord-ouest" id="toc-evènements-de-vent-fort-de-nord-ouest" class="nav-link" data-scroll-target="#evènements-de-vent-fort-de-nord-ouest"><span class="header-section-number">9.1.3</span> Evènements de vent fort de Nord-Ouest</a></li>
-  </ul></li>
-  <li><a href="#zones-dalimentation-en-fonction-dévènements-venteux-extrèmes" id="toc-zones-dalimentation-en-fonction-dévènements-venteux-extrèmes" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">9.2</span> Zones d’alimentation en fonction d’évènements venteux extrèmes</a>
-  <ul class="collapse">
-  <li><a href="#evènements-de-vent-fort-1" id="toc-evènements-de-vent-fort-1" class="nav-link" data-scroll-target="#evènements-de-vent-fort-1"><span class="header-section-number">9.2.1</span> Evènements de vent fort</a></li>
-  <li><a href="#evènements-de-vent-de-nord-ouest-1" id="toc-evènements-de-vent-de-nord-ouest-1" class="nav-link" data-scroll-target="#evènements-de-vent-de-nord-ouest-1"><span class="header-section-number">9.2.2</span> Evènements de vent de Nord-Ouest</a></li>
-  <li><a href="#evènements-de-vent-fort-de-nord-ouest-1" id="toc-evènements-de-vent-fort-de-nord-ouest-1" class="nav-link" data-scroll-target="#evènements-de-vent-fort-de-nord-ouest-1"><span class="header-section-number">9.2.3</span> Evènements de vent fort de Nord-Ouest</a></li>
+  <li><a href="#section-mois2" id="toc-section-mois2" class="nav-link" data-scroll-target="#section-mois2"><span class="header-section-number">9.2.1</span> Zones d’alimentation en fonction du mois de l’année</a></li>
+  <li><a href="#zones-dalimentation-en-fonction-du-jour-et-de-la-nuit" id="toc-zones-dalimentation-en-fonction-du-jour-et-de-la-nuit" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">9.2.2</span> zones d’alimentation en fonction du jour et de la nuit</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#section-distance" id="toc-section-distance" class="nav-link" data-scroll-target="#section-distance"><span class="header-section-number">10</span> Distance entre les reposoirs et les zones d’alimentation</a></li>
-  <li><a href="#fidélité-aux-reposoirs" id="toc-fidélité-aux-reposoirs" class="nav-link" data-scroll-target="#fidélité-aux-reposoirs"><span class="header-section-number">11</span> Fidélité aux reposoirs</a></li>
-  <li><a href="#connectivité-entre-les-reposoirs" id="toc-connectivité-entre-les-reposoirs" class="nav-link" data-scroll-target="#connectivité-entre-les-reposoirs"><span class="header-section-number">12</span> Connectivité entre les reposoirs</a></li>
-  <li><a href="#evitement-des-chasseurs-et-des-zones-de-chasses" id="toc-evitement-des-chasseurs-et-des-zones-de-chasses" class="nav-link" data-scroll-target="#evitement-des-chasseurs-et-des-zones-de-chasses"><span class="header-section-number">13</span> Evitement des chasseurs et des zones de chasses</a>
+  <li><a href="#section-ECE" id="toc-section-ECE" class="nav-link" data-scroll-target="#section-ECE"><span class="header-section-number">10</span> Utilisation de l’espace lors d’évènements de vent extrêmes</a>
   <ul class="collapse">
-  <li><a href="#chasse-à-pied" id="toc-chasse-à-pied" class="nav-link" data-scroll-target="#chasse-à-pied"><span class="header-section-number">13.1</span> Chasse à pied</a></li>
-  <li><a href="#chasse-à-la-tonne" id="toc-chasse-à-la-tonne" class="nav-link" data-scroll-target="#chasse-à-la-tonne"><span class="header-section-number">13.2</span> Chasse à la tonne</a></li>
-  </ul></li>
-  <li><a href="#zones-critiques" id="toc-zones-critiques" class="nav-link" data-scroll-target="#zones-critiques"><span class="header-section-number">14</span> Zones critiques</a></li>
-  <li><a href="#pour-aller-plus-loin" id="toc-pour-aller-plus-loin" class="nav-link" data-scroll-target="#pour-aller-plus-loin"><span class="header-section-number">15</span> Pour aller plus loin</a>
+  <li><a href="#reposoirs-en-fonction-dévènements-venteux-extrèmes" id="toc-reposoirs-en-fonction-dévènements-venteux-extrèmes" class="nav-link" data-scroll-target="#reposoirs-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">10.1</span> Reposoirs en fonction d’évènements venteux extrèmes</a>
   <ul class="collapse">
-  <li><a href="#un-fort-tropisme-vers-le-site-de-baguage" id="toc-un-fort-tropisme-vers-le-site-de-baguage" class="nav-link" data-scroll-target="#un-fort-tropisme-vers-le-site-de-baguage"><span class="header-section-number">15.1</span> Un fort tropisme vers le site de baguage</a></li>
-  <li><a href="#manque-de-données-de-pression-de-chasse" id="toc-manque-de-données-de-pression-de-chasse" class="nav-link" data-scroll-target="#manque-de-données-de-pression-de-chasse"><span class="header-section-number">15.2</span> Manque de données de pression de chasse</a></li>
-  <li><a href="#quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré" id="toc-quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré" class="nav-link" data-scroll-target="#quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré"><span class="header-section-number">15.3</span> Quels sont les effets de la pêche à pied sur les comprtements de déplacement du courlis cendré ?</a></li>
+  <li><a href="#evènements-de-vent-fort" id="toc-evènements-de-vent-fort" class="nav-link" data-scroll-target="#evènements-de-vent-fort"><span class="header-section-number">10.1.1</span> Evènements de vent fort</a></li>
+  <li><a href="#evènements-de-vent-de-nord-ouest" id="toc-evènements-de-vent-de-nord-ouest" class="nav-link" data-scroll-target="#evènements-de-vent-de-nord-ouest"><span class="header-section-number">10.1.2</span> Evènements de vent de Nord-Ouest</a></li>
+  <li><a href="#evènements-de-vent-fort-de-nord-ouest" id="toc-evènements-de-vent-fort-de-nord-ouest" class="nav-link" data-scroll-target="#evènements-de-vent-fort-de-nord-ouest"><span class="header-section-number">10.1.3</span> Evènements de vent fort de Nord-Ouest</a></li>
   </ul></li>
-  <li><a href="#matériels-et-méthodes" id="toc-matériels-et-méthodes" class="nav-link" data-scroll-target="#matériels-et-méthodes"><span class="header-section-number">16</span> Matériels et Méthodes</a>
+  <li><a href="#zones-dalimentation-en-fonction-dévènements-venteux-extrèmes" id="toc-zones-dalimentation-en-fonction-dévènements-venteux-extrèmes" class="nav-link" data-scroll-target="#zones-dalimentation-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">10.2</span> Zones d’alimentation en fonction d’évènements venteux extrèmes</a>
   <ul class="collapse">
-  <li><a href="#nettoyage-des-données-gps" id="toc-nettoyage-des-données-gps" class="nav-link" data-scroll-target="#nettoyage-des-données-gps"><span class="header-section-number">16.1</span> Nettoyage des données GPS</a></li>
-  <li><a href="#résumé-des-méthodes-utilisées-pour-les-analyses" id="toc-résumé-des-méthodes-utilisées-pour-les-analyses" class="nav-link" data-scroll-target="#résumé-des-méthodes-utilisées-pour-les-analyses"><span class="header-section-number">16.2</span> Résumé des méthodes utilisées pour les analyses</a></li>
-  <li><a href="#données-et-codes" id="toc-données-et-codes" class="nav-link" data-scroll-target="#données-et-codes"><span class="header-section-number">16.3</span> Données et codes</a></li>
+  <li><a href="#evènements-de-vent-fort-1" id="toc-evènements-de-vent-fort-1" class="nav-link" data-scroll-target="#evènements-de-vent-fort-1"><span class="header-section-number">10.2.1</span> Evènements de vent fort</a></li>
+  <li><a href="#evènements-de-vent-de-nord-ouest-1" id="toc-evènements-de-vent-de-nord-ouest-1" class="nav-link" data-scroll-target="#evènements-de-vent-de-nord-ouest-1"><span class="header-section-number">10.2.2</span> Evènements de vent de Nord-Ouest</a></li>
+  <li><a href="#evènements-de-vent-fort-de-nord-ouest-1" id="toc-evènements-de-vent-fort-de-nord-ouest-1" class="nav-link" data-scroll-target="#evènements-de-vent-fort-de-nord-ouest-1"><span class="header-section-number">10.2.3</span> Evènements de vent fort de Nord-Ouest</a></li>
   </ul></li>
-  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie"><span class="header-section-number">17</span> Bibliographie</a></li>
-  <li><a href="#auteur.ices-affiliations-et-contributions" id="toc-auteur.ices-affiliations-et-contributions" class="nav-link" data-scroll-target="#auteur.ices-affiliations-et-contributions"><span class="header-section-number">18</span> Auteur.ices, affiliations et contributions</a></li>
-  <li><a href="#financeurs" id="toc-financeurs" class="nav-link" data-scroll-target="#financeurs"><span class="header-section-number">19</span> Financeurs</a></li>
+  </ul></li>
+  <li><a href="#section-distance" id="toc-section-distance" class="nav-link" data-scroll-target="#section-distance"><span class="header-section-number">11</span> Distance entre les reposoirs et les zones d’alimentation</a></li>
+  <li><a href="#fidélité-aux-reposoirs" id="toc-fidélité-aux-reposoirs" class="nav-link" data-scroll-target="#fidélité-aux-reposoirs"><span class="header-section-number">12</span> Fidélité aux reposoirs</a></li>
+  <li><a href="#connectivité-entre-les-reposoirs" id="toc-connectivité-entre-les-reposoirs" class="nav-link" data-scroll-target="#connectivité-entre-les-reposoirs"><span class="header-section-number">13</span> Connectivité entre les reposoirs</a></li>
+  <li><a href="#evitement-des-chasseurs-et-des-zones-de-chasses" id="toc-evitement-des-chasseurs-et-des-zones-de-chasses" class="nav-link" data-scroll-target="#evitement-des-chasseurs-et-des-zones-de-chasses"><span class="header-section-number">14</span> Evitement des chasseurs et des zones de chasses</a>
+  <ul class="collapse">
+  <li><a href="#chasse-à-pied" id="toc-chasse-à-pied" class="nav-link" data-scroll-target="#chasse-à-pied"><span class="header-section-number">14.1</span> Chasse à pied</a></li>
+  <li><a href="#chasse-à-la-tonne" id="toc-chasse-à-la-tonne" class="nav-link" data-scroll-target="#chasse-à-la-tonne"><span class="header-section-number">14.2</span> Chasse à la tonne</a></li>
+  </ul></li>
+  <li><a href="#zones-critiques" id="toc-zones-critiques" class="nav-link" data-scroll-target="#zones-critiques"><span class="header-section-number">15</span> Zones critiques</a></li>
+  <li><a href="#pour-aller-plus-loin" id="toc-pour-aller-plus-loin" class="nav-link" data-scroll-target="#pour-aller-plus-loin"><span class="header-section-number">16</span> Pour aller plus loin</a>
+  <ul class="collapse">
+  <li><a href="#un-fort-tropisme-vers-le-site-de-baguage" id="toc-un-fort-tropisme-vers-le-site-de-baguage" class="nav-link" data-scroll-target="#un-fort-tropisme-vers-le-site-de-baguage"><span class="header-section-number">16.1</span> Un fort tropisme vers le site de baguage</a></li>
+  <li><a href="#manque-de-données-de-pression-de-chasse" id="toc-manque-de-données-de-pression-de-chasse" class="nav-link" data-scroll-target="#manque-de-données-de-pression-de-chasse"><span class="header-section-number">16.2</span> Manque de données de pression de chasse</a></li>
+  <li><a href="#quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré" id="toc-quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré" class="nav-link" data-scroll-target="#quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré"><span class="header-section-number">16.3</span> Quels sont les effets de la pêche à pied sur les comprtements de déplacement du courlis cendré ?</a></li>
+  </ul></li>
+  <li><a href="#matériels-et-méthodes" id="toc-matériels-et-méthodes" class="nav-link" data-scroll-target="#matériels-et-méthodes"><span class="header-section-number">17</span> Matériels et Méthodes</a>
+  <ul class="collapse">
+  <li><a href="#nettoyage-des-données-gps" id="toc-nettoyage-des-données-gps" class="nav-link" data-scroll-target="#nettoyage-des-données-gps"><span class="header-section-number">17.1</span> Nettoyage des données GPS</a></li>
+  <li><a href="#résumé-des-méthodes-utilisées-pour-les-analyses" id="toc-résumé-des-méthodes-utilisées-pour-les-analyses" class="nav-link" data-scroll-target="#résumé-des-méthodes-utilisées-pour-les-analyses"><span class="header-section-number">17.2</span> Résumé des méthodes utilisées pour les analyses</a></li>
+  <li><a href="#données-et-codes" id="toc-données-et-codes" class="nav-link" data-scroll-target="#données-et-codes"><span class="header-section-number">17.3</span> Données et codes</a></li>
+  </ul></li>
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie"><span class="header-section-number">18</span> Bibliographie</a></li>
+  <li><a href="#auteur.ices-affiliations-et-contributions" id="toc-auteur.ices-affiliations-et-contributions" class="nav-link" data-scroll-target="#auteur.ices-affiliations-et-contributions"><span class="header-section-number">19</span> Auteur.ices, affiliations et contributions</a></li>
+  <li><a href="#financeurs" id="toc-financeurs" class="nav-link" data-scroll-target="#financeurs"><span class="header-section-number">20</span> Financeurs</a></li>
+  <li><a href="#annexes" id="toc-annexes" class="nav-link" data-scroll-target="#annexes"><span class="header-section-number">21</span> Annexes</a>
+  <ul class="collapse">
+  <li><a href="#tableau-des-correspondance-bague-et-id" id="toc-tableau-des-correspondance-bague-et-id" class="nav-link" data-scroll-target="#tableau-des-correspondance-bague-et-id"><span class="header-section-number">21.1</span> Tableau des correspondance bague et ID</a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -171,9 +192,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis militibus discrepantes opposita cuncta superasse virtute.</p>
 <p>Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique ut solent avia montium petiere celsorum.</p>
 </section>
-<section id="contexte-et-objectifs-scientifiques" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Contexte et objectifs scientifiques</h1>
-<p>Créée en 1985, la Réserve Naturelle Nationale de Moëze-Oléron (RNNMO, <a href="#fig-Photo_intro" class="quarto-xref">Figure&nbsp;1</a>), située dans le département de la charente maritime, s’étend sur près de 6 800 hectares entre le continent et l’île d’Oléron. Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année jusqu’à 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants.</p>
+<section id="contexte-de-létude" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Contexte de l’étude</h1>
+<p>Créée en 1985, la Réserve Naturelle Nationale de Moëze-Oléron (RNNMO), située dans le département de la charente maritime, s’étend sur près de 6 800 hectares entre le continent et l’île d’Oléron (<a href="#fig-Photo_intro" class="quarto-xref">Figure&nbsp;1</a>). Gérée par la Ligue pour la Protection des Oiseaux (LPO-France), elle abrite chaque année jusqu’à 100 000 oiseaux d’eau, dont de nombreux limicoles migrateurs et hivernants.</p>
 <div id="fig-Photo_intro" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-Photo_intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -192,7 +213,7 @@ Figure&nbsp;1: La réserve naturelle nationale de Moëze-Oléron. a) Sentier des
 </div>
 </figure>
 </div>
-<p>Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques (<a href="#fig-flux" class="quarto-xref">Figure&nbsp;2</a>) et contribuant à la conservation des oiseaux d’eau à l’échelle internationale.</p>
+<p>Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques et contribuant à la conservation des oiseaux d’eau à l’échelle internationale (<a href="#fig-flux" class="quarto-xref">Figure&nbsp;2</a>).</p>
 <div id="fig-flux" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-flux-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -230,12 +251,22 @@ Figure&nbsp;3: Equipement d’un coulirs cendré : a) courlis cendré bagué (©
 </div>
 </figure>
 </div>
-<p>L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel local de la RNNMO, comprenant le bassin de Marennes et le marais de Brouage et la mer des Pertuis (<a href="#fig-zone_map_new" class="quarto-xref">Figure&nbsp;5</a>). Le courlis cendré est mis à contribution ici comme une espèce parapluie afin d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil des limicoles dans le zone d’étude.</p>
-<p>À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans a RNNMO, leurs déplacements ont été analysé afin de dégager les principales zones utilisées par les oiseaux et leurs variations en fonction de changements environnementaux et pressions cinégétique. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, …) ainsi que d’un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle.</p>
-<p><em>Cette étude entre dans le cadre du projet “Adaptation des limicoles aux changements climatiques”, financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).</em></p>
 </section>
-<section id="le-courlis-cendré" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Le courlis cendré</h1>
+<section id="objectifs-scientifiques" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Objectifs scientifiques</h1>
+<p>L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel local de la RNNMO. Le courlis cendré est mis à contribution ici comme une espèce parapluie afin d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil des limicoles dans le zone d’étude.</p>
+<p>À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans a RNNMO, leurs déplacements ont été analysés afin de dégager les principales zones utilisées par les oiseaux et leurs variations en fonction de changements environnementaux et pressions cinégétique. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, …) ainsi que d’un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle.</p>
+</section>
+<section id="le-courlis-cendré" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Le courlis cendré</h1>
+<p><strong>Morphologie</strong> : Le Courlis cendré (<em>Numenius arquata</em>, <a href="#fig-20170226" class="quarto-xref">Figure&nbsp;4</a>) est le plus grand limicole d’Europe, de longtemps entre 55–65 cm pour une envergure entre 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L’espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.</p>
+<p><strong>Comportement social</strong> : C’est une espèce discrète, au comportement prudent. Il est territorial en période de reproduction, et grégaire hors reproduction.</p>
+<p><strong>Régime alimentaire</strong> : Il mange principalement des vers de terre, des insectes, des mollusques et des crustacés ; et complète ponctuellement sont régime alimentaire par des graines et baies. Il s’alimente au sol ou par sondage dans la vase ou les prairies humides.</p>
+<p><strong>Habitats</strong> : Sa reproduction est faite avec un nid au sol, souvent dissimulé dans la végétation en prairies humides, en landes, en tourbières, en marais, ou zones agricoles extensives. Il utilise des vasières intertidales, des estuaires, des prés salés, des prairies humides ou des pâtures pour sont alimentation, et des vasières, des zones littorales, des lagunes, ou marais salants pour ses périodes de repos (<a href="#fig-Photo_intro" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<p><strong>Saison de reproduction</strong> : Sa saison de reproduction s’étends d’avril à juillet. Les femelles pondent en général entre 3 et 4 œufs. L’incubation dure environ 28 jours, et les jeunes deviennent autonomes à l’âge de 5 à 6 semaines.</p>
+<p><strong>Migration</strong> : Les courlis cendrés est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.</p>
+<p><strong>Effectifs de population</strong> : La population mondiale est estimée à ~ 140 000 – 240 000 couples reproducteurs, avec ~ 97 000 – 167 000 couples en europe. La population française s’élève à ~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et ~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).</p>
+<p><strong>Tendance démographique et statuts de conservation</strong> : Le courlis cendré est en “déclin modéré” à “marqué” en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé “<em>Near Threatened</em>” (<em>quasi menacé</em> en français) à l’échelle mondiale par IUCN et inscrit à l’Annexe II de la Convention de Bonn (CMS). En Europe, il est classé à l’Annexe II de la Convention de Berne et l’Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme “Vulnérable” et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année depuis XXXX.</p>
 <div id="fig-20170226" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-20170226-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -254,19 +285,10 @@ Figure&nbsp;4: Courlis cendrés en vol (©Großer Brachvogel)
 </div>
 </figure>
 </div>
-<p><strong>Morphologie</strong> : Le Courlis cendré (<em>Numenius arquata</em>) est le plus grand limicole d’Europe, de longtemps entre 55–65 cm pour une envergure entre 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L’espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.</p>
-<p><strong>Comportement social</strong> : C’est une espèce discrète, au comportement prudent. Il est territorial en période de reproduction, et grégaire hors reproduction.</p>
-<p><strong>Régime alimentaire</strong> : Il mange principalement des vers de terre, des insectes, des mollusques et des crustacés ; et complète ponctuellement sont régime alimentaire par des graines et baies. Il s’alimente au sol ou par sondage dans la vase ou les prairies humides.</p>
-<p><strong>Habitats</strong> : Sa reproduction est faite avec un nid au sol, souvent dissimulé dans la végétation en prairies humides, en landes, en tourbières, en marais, ou zones agricoles extensives. Il utilise des vasières intertidales, des estuaires, des prés salés, des prairies humides ou des pâtures pour sont alimentation, et des vasières, des zones littorales, des lagunes, ou marais salants pour ses périodes de repos.</p>
-<p><strong>Saison de reproduction</strong> : Sa saison de reproduction s’étends d’avril à juillet. Les femelles pondent en général entre 3 et 4 œufs. L’incubation dure environ 28 jours, et les jeunes deviennent autonomes à l’âge de 5 à 6 semaines.</p>
-<p><strong>Migration</strong> : Les courlis cendrés est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.</p>
-<p><strong>Effectifs de population</strong> : La population mondiale est estimée à ~ 140 000 – 240 000 couples reproducteurs, avec ~ 97 000 – 167 000 couples en europe. La population française s’élève à ~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et ~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).</p>
-<p><strong>Tendance démographique et statuts de conservation</strong> : Le courlis cendré est en “déclin modéré” à “marqué” en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé “<em>Near Threatened</em>” (<em>quasi menacé</em> en français) à l’échelle mondiale par IUCN et inscrit à l’Annexe II de la Convention de Bonn (CMS). En Europe, il est classé à l’Annexe II de la Convention de Berne et l’Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme “Vulnérable” et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année depuis XXXX.</p>
 </section>
-<section id="la-zone-détude" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> La zone d’étude</h1>
-<p>L’aire d’étude s’étend sur une surface de 623.5 km² au Nord jusqu’à l’estuaire de la Charente, à l’Est jusqu’à la limite Est de la ville de Rochefort, au Sud jusqu’à l’estuaire de la Seudre, et à l’Ouest jusqu’à la facade Est de l’ile d’Oléron, englobant ainsi la zone fonctionnelle de la RNNMO.</p>
-<p>L’aire d’étude est divisée en trois zone A, B et C pour facilité l’analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage au sud de la zone B. Voir la carte ci-dessous <a href="#fig-zone_map_new" class="quarto-xref">Figure&nbsp;5</a>.</p>
+<section id="la-zone-détude" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> La zone d’étude</h1>
+<p>La zone d’étude englobe le site fonctionnel local de la RNNMO, comprenant le bassin de Marennes et le marais de Brouage et la mer des Pertuis (<a href="#fig-zone_map_new" class="quarto-xref">Figure&nbsp;5</a>). L’aire d’étude s’étend sur une surface de 623.5 km² au Nord jusqu’à l’estuaire de la Charente, à l’Est jusqu’à la limite Est de la ville de Rochefort, au Sud jusqu’à l’estuaire de la Seudre, et à l’Ouest jusqu’à la facade Est de l’ile d’Oléron, englobant ainsi la zone fonctionnelle de la RNNMO. L’aire d’étude est divisée en trois zone A, B et C pour faciliter l’analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage au sud de la zone B (<a href="#fig-zone_map_new" class="quarto-xref">Figure&nbsp;5</a>).</p>
 <div id="fig-zone_map_new" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-zone_map_new-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -282,9 +304,9 @@ Figure&nbsp;5: L’aire d’étude est divisée en trois zones d’étude A, B e
 </figure>
 </div>
 </section>
-<section id="périodes-de-suivi-des-individus" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Périodes de suivi des individus</h1>
-<p>Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L’âge et le sexe n’a pas été identifié pour XX individus. Chaque individu a en moyenne XX point GPS enregistrés représentant des périodes de temps de 5 min.</p>
+<section id="périodes-de-suivi-des-individus" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Périodes de suivi des individus</h1>
+<p>Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L’âge et le sexe n’a pas été identifié pour XX individus. Chaque individu a en moyenne XX point GPS enregistrés représentant des périodes de temps de 5 min (<a href="#fig-emission_plot" class="quarto-xref">Figure&nbsp;6</a>).</p>
 <div id="fig-emission_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-emission_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -304,9 +326,9 @@ Figure&nbsp;6: Période d’émission des balises GPS pour chaque individu.
 </figure>
 </div>
 </section>
-<section id="section-HR" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Domaines vitaux</h1>
-<p>Chaque courlis cendré a un domaine vital individuel, avec un noyau d’activité représentant la zone de fréquentation la plus intense (englobant 50 % des points GPS enregistrés pour l’individu, c’est-à-dire estimé au vertice à 50%, et nommée par la suite “domaine vital principal”), et un domaine vital plus large correspondant a ces autres espaces moins fréquement utilisés (englobant 95 % des points GPS, c’est-à-dire estimé au vertice à 95%, et nommée par la suite “domaine vital étendu” <a href="#fig-UDMap_HR_gp_1" class="quarto-xref">Figure&nbsp;7</a>).</p>
+<section id="section-HR" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Domaines vitaux</h1>
+<p>Chaque courlis cendré a un domaine vital individuel, avec un noyau d’activité représentant la zone de fréquentation la plus intense (englobant 50 % des points GPS enregistrés pour l’individu, c’est-à-dire estimé au vertice à 50%, et nommée par la suite “domaine vital principal”), et un domaine vital plus large correspondant a ces autres espaces moins fréquement utilisés (englobant 95 % des points GPS, c’est-à-dire estimé au vertice à 95%, et nommée par la suite “domaine vital étendu” <a href="#fig-UDMap_HR_gp_1" class="quarto-xref">Figure&nbsp;7</a>, <a href="#fig-UDMap_HR_gp_2" class="quarto-xref">Figure&nbsp;8</a>, <a href="#fig-UDMap_HR_gp_3" class="quarto-xref">Figure&nbsp;9</a>, <a href="#fig-UDMap_HR_gp_4" class="quarto-xref">Figure&nbsp;10</a>).</p>
 <div id="fig-UDMap_HR_gp_1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-UDMap_HR_gp_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -401,10 +423,10 @@ Figure&nbsp;12: Distribution des pourcentages d’utilisation de la RNNMO pour l
 </div>
 </figure>
 </div>
-<p>En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital étendu sont dans la RNNMO.</p>
+<p>En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital étendu sont dans la RNNMO (#fig-hist_danslareserve).</p>
 </section>
-<section id="section-reposoir" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Les reposoirs</h1>
+<section id="section-reposoir" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Les reposoirs</h1>
 <p>A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des reposoirs appelés “reposoirs”.</p>
 <div id="fig-roosting" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -561,8 +583,8 @@ Figure&nbsp;16: Reposoirs en zone C : reposoirs principaux en rose opaque, repos
 </div>
 </div>
 </div>
-<section id="section-age1" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="section-age1"><span class="header-section-number">7.1</span> Reposoirs en fonction de l’âge</h2>
+<section id="section-age1" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="section-age1"><span class="header-section-number">8.1</span> Reposoirs en fonction de l’âge</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -617,8 +639,8 @@ Figure&nbsp;19: Reposoirs en fonction de l’âge en zone C : Reposoirs adultes 
 </div>
 </div>
 </section>
-<section id="section-sexe1" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="section-sexe1"><span class="header-section-number">7.2</span> Reposoirs en fonction du sexe</h2>
+<section id="section-sexe1" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="section-sexe1"><span class="header-section-number">8.2</span> Reposoirs en fonction du sexe</h2>
 <p>les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur reposoirs.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Zone C</a></li></ul>
@@ -674,11 +696,11 @@ Figure&nbsp;22: Reposoirs en fonction du sexe en zone C : Reposoirs femelle en r
 </div>
 </div>
 </section>
-<section id="reposoirs-en-fonction-du-calendrier" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="reposoirs-en-fonction-du-calendrier"><span class="header-section-number">7.3</span> Reposoirs en fonction du calendrier</h2>
+<section id="reposoirs-en-fonction-du-calendrier" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reposoirs-en-fonction-du-calendrier"><span class="header-section-number">8.3</span> Reposoirs en fonction du calendrier</h2>
 <p>Les reposoirs peuvent varier en fonction de la période de l’année et des saisons.</p>
-<section id="reposoirs-en-fonction-du-mois-de-lannée" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="reposoirs-en-fonction-du-mois-de-lannée"><span class="header-section-number">7.3.1</span> Reposoirs en fonction du mois de l’année</h3>
+<section id="reposoirs-en-fonction-du-mois-de-lannée" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="reposoirs-en-fonction-du-mois-de-lannée"><span class="header-section-number">8.3.1</span> Reposoirs en fonction du mois de l’année</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -733,8 +755,8 @@ Figure&nbsp;25: Reposoirs en fonction du mois de l’année en zone A : Reposoir
 </div>
 </div>
 </section>
-<section id="reposoirs-en-fonction-du-jour-et-de-la-nuit" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="reposoirs-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">7.3.2</span> Reposoirs en fonction du jour et de la nuit</h3>
+<section id="reposoirs-en-fonction-du-jour-et-de-la-nuit" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="reposoirs-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">8.3.2</span> Reposoirs en fonction du jour et de la nuit</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -789,8 +811,8 @@ Figure&nbsp;28: Reposoirs en fonction du jour et de la nuit en zone C : Reposoir
 </div>
 </div>
 </section>
-<section id="section-hauteurEau1" class="level3" data-number="7.3.3">
-<h3 data-number="7.3.3" class="anchored" data-anchor-id="section-hauteurEau1"><span class="header-section-number">7.3.3</span> Reposoirs entre fonction de la hauteur d’eau</h3>
+<section id="section-hauteurEau1" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="section-hauteurEau1"><span class="header-section-number">8.3.3</span> Reposoirs entre fonction de la hauteur d’eau</h3>
 <p>Les reposoirs peuvent varier en fonction de la hauteur d’eau lors des marées hautes (<a href="#fig-UDMap_kud_roosting_tide_strength_A" class="quarto-xref">Figure&nbsp;29</a>, <a href="#fig-UDMap_kud_roosting_tide_strength_B" class="quarto-xref">Figure&nbsp;30</a>, <a href="#fig-UDMap_kud_roosting_tide_strength_C" class="quarto-xref">Figure&nbsp;31</a>).</p>
 <p>Les dates détectées de submersion de la lagune sont : XXX</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -849,8 +871,8 @@ Figure&nbsp;31: Reposoirs en fonction de la hauteur d’eau en zone C : Reposoir
 </section>
 </section>
 </section>
-<section id="section-alimentation" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Les zones d’alimentation</h1>
+<section id="section-alimentation" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Les zones d’alimentation</h1>
 <p>A chaque marée base, les courlis cendrés partent à la recherche de nourriture.</p>
 <div id="fig-foraging" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -924,11 +946,11 @@ Figure&nbsp;35: Zone d’alimentation en zone C : zones d’alimentation princip
 </div>
 </div>
 </div>
-<section id="zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus"><span class="header-section-number">8.1</span> Zones d’alimentation en fonction des caractéristiques biologique des individus</h2>
+<section id="zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-des-caractéristiques-biologique-des-individus"><span class="header-section-number">9.1</span> Zones d’alimentation en fonction des caractéristiques biologique des individus</h2>
 <p>Les zones d’alimentation peuvent varier avec l’âge. Les courlis encore juvéniles étant moins expérimentés que les adultes, ils pourraient être assignés à des zones de recherche alimentaire moins favorables.</p>
-<section id="section-age2" class="level3" data-number="8.1.1">
-<h3 data-number="8.1.1" class="anchored" data-anchor-id="section-age2"><span class="header-section-number">8.1.1</span> Zones d’alimentation en fonction de l’âge</h3>
+<section id="section-age2" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="section-age2"><span class="header-section-number">9.1.1</span> Zones d’alimentation en fonction de l’âge</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -983,8 +1005,8 @@ Figure&nbsp;38: Zones d’alimentation en fonction de l’âge en zone C : Zone 
 </div>
 </div>
 </section>
-<section id="section-sexe2" class="level3" data-number="8.1.2">
-<h3 data-number="8.1.2" class="anchored" data-anchor-id="section-sexe2"><span class="header-section-number">8.1.2</span> Zones d’alimentation en fonction du sexe</h3>
+<section id="section-sexe2" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="section-sexe2"><span class="header-section-number">9.1.2</span> Zones d’alimentation en fonction du sexe</h3>
 <p>Les zones d’alimentation varié en fonction des sexe des individus. Les mâles sont resteint à des zones d’eau moins profondes dû à leur bec en moyenne plus court que celui des femelles.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false" href="">Zone C</a></li></ul>
@@ -1041,10 +1063,10 @@ Figure&nbsp;41: Zones d’alimentation en fonction du sexe en zone A : Zone d’
 </div>
 </section>
 </section>
-<section id="zones-dalimentation-en-fonction-du-calendrier" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-du-calendrier"><span class="header-section-number">8.2</span> Zones d’alimentation en fonction du calendrier</h2>
-<section id="section-mois2" class="level3" data-number="8.2.1">
-<h3 data-number="8.2.1" class="anchored" data-anchor-id="section-mois2"><span class="header-section-number">8.2.1</span> Zones d’alimentation en fonction du mois de l’année</h3>
+<section id="zones-dalimentation-en-fonction-du-calendrier" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-du-calendrier"><span class="header-section-number">9.2</span> Zones d’alimentation en fonction du calendrier</h2>
+<section id="section-mois2" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="section-mois2"><span class="header-section-number">9.2.1</span> Zones d’alimentation en fonction du mois de l’année</h3>
 <p>Les zones d’alimentation peuvent varier en fonction de la période de l’année et des saisons.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-3" role="tab" aria-controls="tabset-10-3" aria-selected="false" href="">Zone C</a></li></ul>
@@ -1100,8 +1122,8 @@ Figure&nbsp;44: Zones d’alimentation en fonction du mois de l’année en zone
 </div>
 </div>
 </section>
-<section id="zones-dalimentation-en-fonction-du-jour-et-de-la-nuit" class="level3" data-number="8.2.2">
-<h3 data-number="8.2.2" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">8.2.2</span> zones d’alimentation en fonction du jour et de la nuit</h3>
+<section id="zones-dalimentation-en-fonction-du-jour-et-de-la-nuit" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-du-jour-et-de-la-nuit"><span class="header-section-number">9.2.2</span> zones d’alimentation en fonction du jour et de la nuit</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-11-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-1" role="tab" aria-controls="tabset-11-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-2" role="tab" aria-controls="tabset-11-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-3" role="tab" aria-controls="tabset-11-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -1158,15 +1180,15 @@ Figure&nbsp;47: Zones d’alimentation en fonction du jour et de la nuit en zone
 </section>
 </section>
 </section>
-<section id="section-ECE" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Utilisation de l’espace lors d’évènements de vent extrêmes</h1>
+<section id="section-ECE" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Utilisation de l’espace lors d’évènements de vent extrêmes</h1>
 <p>Les évènements climatiques extrèmes sont en augmentation, en fréquence et en intensité, avec le changement climatiques (<a href="#beniston2004">beniston2004</a>). Les évènements de vents forts sont suspectés d’être préjudiciable pour les courlis cendrés et on s’attend à ce que leur utilisation de l’espace soit modifié lors des tempêtes.</p>
 <p>L’utilisation de l’espace pour les comportements de repos et d’alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme jours de référence. Les évènements extrèmes sont ici distingué en trois catégories : i) les évènements de vent fort (vitesse de vent supérieur aux 95 % des enregistrements), ii) les évènements de vent de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux</p>
 <p>Les vents de Nord-Ouest semblent ne pas avoir d’effet sur les comportements de repos ni d’alimentation, tout comme les vents forts sur les comportements de repos.</p>
-<section id="reposoirs-en-fonction-dévènements-venteux-extrèmes" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="reposoirs-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">9.1</span> Reposoirs en fonction d’évènements venteux extrèmes</h2>
-<section id="evènements-de-vent-fort" class="level3" data-number="9.1.1">
-<h3 data-number="9.1.1" class="anchored" data-anchor-id="evènements-de-vent-fort"><span class="header-section-number">9.1.1</span> Evènements de vent fort</h3>
+<section id="reposoirs-en-fonction-dévènements-venteux-extrèmes" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="reposoirs-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">10.1</span> Reposoirs en fonction d’évènements venteux extrèmes</h2>
+<section id="evènements-de-vent-fort" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="evènements-de-vent-fort"><span class="header-section-number">10.1.1</span> Evènements de vent fort</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-12-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-1" role="tab" aria-controls="tabset-12-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-2" role="tab" aria-controls="tabset-12-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-3" role="tab" aria-controls="tabset-12-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -1221,8 +1243,8 @@ Figure&nbsp;50: Reposoirs en fonction d’évènements de vent fort en zone C : 
 </div>
 </div>
 </section>
-<section id="evènements-de-vent-de-nord-ouest" class="level3" data-number="9.1.2">
-<h3 data-number="9.1.2" class="anchored" data-anchor-id="evènements-de-vent-de-nord-ouest"><span class="header-section-number">9.1.2</span> Evènements de vent de Nord-Ouest</h3>
+<section id="evènements-de-vent-de-nord-ouest" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="evènements-de-vent-de-nord-ouest"><span class="header-section-number">10.1.2</span> Evènements de vent de Nord-Ouest</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-13-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-1" role="tab" aria-controls="tabset-13-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-2" role="tab" aria-controls="tabset-13-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-3" role="tab" aria-controls="tabset-13-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -1277,8 +1299,8 @@ Figure&nbsp;53: Reposoirs en fonction d’évènements de vent de Nord-Ouest en 
 </div>
 </div>
 </section>
-<section id="evènements-de-vent-fort-de-nord-ouest" class="level3" data-number="9.1.3">
-<h3 data-number="9.1.3" class="anchored" data-anchor-id="evènements-de-vent-fort-de-nord-ouest"><span class="header-section-number">9.1.3</span> Evènements de vent fort de Nord-Ouest</h3>
+<section id="evènements-de-vent-fort-de-nord-ouest" class="level3" data-number="10.1.3">
+<h3 data-number="10.1.3" class="anchored" data-anchor-id="evènements-de-vent-fort-de-nord-ouest"><span class="header-section-number">10.1.3</span> Evènements de vent fort de Nord-Ouest</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-14-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-1" role="tab" aria-controls="tabset-14-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-2" role="tab" aria-controls="tabset-14-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-3" role="tab" aria-controls="tabset-14-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -1334,10 +1356,10 @@ Figure&nbsp;56: Reposoirs en fonction d’évènements de vent fort de Nord-Oues
 </div>
 </section>
 </section>
-<section id="zones-dalimentation-en-fonction-dévènements-venteux-extrèmes" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">9.2</span> Zones d’alimentation en fonction d’évènements venteux extrèmes</h2>
-<section id="evènements-de-vent-fort-1" class="level3" data-number="9.2.1">
-<h3 data-number="9.2.1" class="anchored" data-anchor-id="evènements-de-vent-fort-1"><span class="header-section-number">9.2.1</span> Evènements de vent fort</h3>
+<section id="zones-dalimentation-en-fonction-dévènements-venteux-extrèmes" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="zones-dalimentation-en-fonction-dévènements-venteux-extrèmes"><span class="header-section-number">10.2</span> Zones d’alimentation en fonction d’évènements venteux extrèmes</h2>
+<section id="evènements-de-vent-fort-1" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="evènements-de-vent-fort-1"><span class="header-section-number">10.2.1</span> Evènements de vent fort</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-15-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-1" role="tab" aria-controls="tabset-15-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-2" role="tab" aria-controls="tabset-15-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-3" role="tab" aria-controls="tabset-15-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -1392,8 +1414,8 @@ Figure&nbsp;59: Zones d’alimentation en fonction d’évènements de vent fort
 </div>
 </div>
 </section>
-<section id="evènements-de-vent-de-nord-ouest-1" class="level3" data-number="9.2.2">
-<h3 data-number="9.2.2" class="anchored" data-anchor-id="evènements-de-vent-de-nord-ouest-1"><span class="header-section-number">9.2.2</span> Evènements de vent de Nord-Ouest</h3>
+<section id="evènements-de-vent-de-nord-ouest-1" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="evènements-de-vent-de-nord-ouest-1"><span class="header-section-number">10.2.2</span> Evènements de vent de Nord-Ouest</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-16-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-1" role="tab" aria-controls="tabset-16-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-2" role="tab" aria-controls="tabset-16-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-3" role="tab" aria-controls="tabset-16-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -1448,8 +1470,8 @@ Figure&nbsp;62: Zones d’alimentation en fonction d’évènements de vent de N
 </div>
 </div>
 </section>
-<section id="evènements-de-vent-fort-de-nord-ouest-1" class="level3" data-number="9.2.3">
-<h3 data-number="9.2.3" class="anchored" data-anchor-id="evènements-de-vent-fort-de-nord-ouest-1"><span class="header-section-number">9.2.3</span> Evènements de vent fort de Nord-Ouest</h3>
+<section id="evènements-de-vent-fort-de-nord-ouest-1" class="level3" data-number="10.2.3">
+<h3 data-number="10.2.3" class="anchored" data-anchor-id="evènements-de-vent-fort-de-nord-ouest-1"><span class="header-section-number">10.2.3</span> Evènements de vent fort de Nord-Ouest</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-17-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-1" role="tab" aria-controls="tabset-17-1" aria-selected="true" href="">Zone A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-2" role="tab" aria-controls="tabset-17-2" aria-selected="false" href="">Zone B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-3" role="tab" aria-controls="tabset-17-3" aria-selected="false" href="">Zone C</a></li></ul>
 <div class="tab-content">
@@ -1506,8 +1528,8 @@ Figure&nbsp;65: Zones d’alimentation en fonction d’évènements de vent fort
 </section>
 </section>
 </section>
-<section id="section-distance" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Distance entre les reposoirs et les zones d’alimentation</h1>
+<section id="section-distance" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Distance entre les reposoirs et les zones d’alimentation</h1>
 <p>Il y a une corrélation significative (p-value : 6.93e-16 ***) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marée.</p>
 <div id="fig-distance_roost_forag_plot_talk" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1548,8 +1570,8 @@ Figure&nbsp;67: Effets du sexe, de l’âge et de la hauteur de marée sur la di
 </div>
 <p>Les juvéniles parcourent significativement plus de distance entre leurs zones d’alimentation et de repos que les adultes. Il n’y a pas de différence significative entre les mâles et les femelles. La distance entre les zones d’alimentation et de repos d’allonge lors de la période de chasse (et plus de variabilité ?).</p>
 </section>
-<section id="fidélité-aux-reposoirs" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Fidélité aux reposoirs</h1>
+<section id="fidélité-aux-reposoirs" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Fidélité aux reposoirs</h1>
 <p>La fidélité en reposoirs est estimée par deux mesures complémentaires pour chaque individu :</p>
 <table class="caption-top table">
 <colgroup>
@@ -1601,8 +1623,8 @@ Figure&nbsp;68: Prédictions de l’équitabilité (a) et le taux de variation (
 <p>Autrement dit, les courlis cendréses pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions).</p>
 <p>Le taux de variation et l’équitabilité en reposoirs secondaires ne varient ni en fonction de l’âge, du sexe, ou de l’intensité des marées.</p>
 </section>
-<section id="connectivité-entre-les-reposoirs" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Connectivité entre les reposoirs</h1>
+<section id="connectivité-entre-les-reposoirs" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Connectivité entre les reposoirs</h1>
 <div id="fig-network" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1655,16 +1677,16 @@ Figure&nbsp;69
 </figure>
 </div>
 </section>
-<section id="evitement-des-chasseurs-et-des-zones-de-chasses" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Evitement des chasseurs et des zones de chasses</h1>
-<section id="chasse-à-pied" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="chasse-à-pied"><span class="header-section-number">13.1</span> Chasse à pied</h2>
+<section id="evitement-des-chasseurs-et-des-zones-de-chasses" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Evitement des chasseurs et des zones de chasses</h1>
+<section id="chasse-à-pied" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="chasse-à-pied"><span class="header-section-number">14.1</span> Chasse à pied</h2>
 <p>La chasse à pied est autorisée sur le Domaine Public Maritime (DPM) aux alentours de la RNNMO. Il est attendu que la présence de chasseur et de tir dérange les courlis cendrés et que leur utilisation de l’espace pour les comportements de repos et d’alimentation en soient perturbé.</p>
 <p>Dans d’ouverture et de fermeture de la chasse sur le DPM :</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-b96db805de71907a3f35" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-b96db805de71907a3f35">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7"],["2024/2025","2023/2024","2022/2023","2021/2022","2020/2021","2019/2020","2018/2019"],["08/09/2024","10/09/2023","11/09/2022","12/09/2021","13/09/2020","08/09/2019","09/09/2018"],["31/01/2025","31/01/2024","31/01/2023","31/01/2022","31/01/2021","31/01/2020","31/01/2019"]],"container":"<table class=\"stripe hover cell-border\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Saison<\/th>\n      <th>Ouverture<\/th>\n      <th>Fermeture<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"lengthMenu":[5,10,20,50],"searching":true,"ordering":true,"scrollX":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Saison","targets":1},{"name":"Ouverture","targets":2},{"name":"Fermeture","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6f32f4e9586b43329c27" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6f32f4e9586b43329c27">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7"],["2024/2025","2023/2024","2022/2023","2021/2022","2020/2021","2019/2020","2018/2019"],["08/09/2024","10/09/2023","11/09/2022","12/09/2021","13/09/2020","08/09/2019","09/09/2018"],["31/01/2025","31/01/2024","31/01/2023","31/01/2022","31/01/2021","31/01/2020","31/01/2019"]],"container":"<table class=\"stripe hover cell-border\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Saison<\/th>\n      <th>Ouverture<\/th>\n      <th>Fermeture<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"lengthMenu":[5,10,20,50],"searching":true,"ordering":true,"scrollX":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Saison","targets":1},{"name":"Ouverture","targets":2},{"name":"Fermeture","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Afin de limiter les effets de variation saisonnière sur l’utilisation de l’espace, le jeu de données est restreint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (période de chasse), 15 premier jour après la fermeture de la chasse (hors période de chasse).</p>
@@ -1698,8 +1720,8 @@ Figure&nbsp;71: Zones d’alimentation en fonction hors et pendant la saison de 
 </div>
 <p>Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé, mais aucun effet n’a pu être détecté sur l’utilisation de l’espace pour le repos et l’alimentation.</p>
 </section>
-<section id="chasse-à-la-tonne" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="chasse-à-la-tonne"><span class="header-section-number">13.2</span> Chasse à la tonne</h2>
+<section id="chasse-à-la-tonne" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="chasse-à-la-tonne"><span class="header-section-number">14.2</span> Chasse à la tonne</h2>
 <div id="fig-tonne" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-tonne-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1751,8 +1773,8 @@ Figure&nbsp;74: Tonnes de chasse (point noir, en gros si proche de la RNN, en pe
 </div>
 </section>
 </section>
-<section id="zones-critiques" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Zones critiques</h1>
+<section id="zones-critiques" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Zones critiques</h1>
 <p>Les principales reposoirs et d’alimentation estimées précédemment permettent de mettre en évidence des zones d’importance majeure pour les courlis cendrés dans le bassin fonctionnel étudié, mais pourtant en dehors des limites de protection de la RNNMO. Les emplacements des tonnes de chasses sont superposés à ces zones, mettant en evidence les zones de dérangement et de risque majeur pour les oiseaux.</p>
 <div id="fig-zone_critique_map" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1769,31 +1791,31 @@ Figure&nbsp;75: Zone critique de dérangement du courlis cendré : zones d’ali
 </figure>
 </div>
 </section>
-<section id="pour-aller-plus-loin" class="level1" data-number="15">
-<h1 data-number="15"><span class="header-section-number">15</span> Pour aller plus loin</h1>
+<section id="pour-aller-plus-loin" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Pour aller plus loin</h1>
 <p>Ce travail est une première étape dans l’étude de l’utilisation de l’espace par le courlis cendré dans et aux alentours de la RNNMO, et plusieurs compléments pertinents et marges d’amélioration peuvent être dégagés à ce stade.</p>
-<section id="un-fort-tropisme-vers-le-site-de-baguage" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="un-fort-tropisme-vers-le-site-de-baguage"><span class="header-section-number">15.1</span> Un fort tropisme vers le site de baguage</h2>
+<section id="un-fort-tropisme-vers-le-site-de-baguage" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="un-fort-tropisme-vers-le-site-de-baguage"><span class="header-section-number">16.1</span> Un fort tropisme vers le site de baguage</h2>
 <p>Les contraintes techniques liées à l’écologie du courlis cendré et aux autorisations de baguage ont restreint la zone de capture des oiseaux à équiper sur la plage du grand travers (le long de la côte au sein de la réserve de Moëze-Oléron). Les oiseaux étudiés ici ont donc un tropisme marqué vers cette zone, représentant un biais non négligeable dans les analyses spatiales. Il serait particulièrement intéressant de poursuivre ce suivi en équipant des oiseaux sur d’autres sites autour de la réserve pour obtenir une vue plus généralisable à l’ensemble de la population de Courlis dans la région.</p>
 </section>
-<section id="manque-de-données-de-pression-de-chasse" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="manque-de-données-de-pression-de-chasse"><span class="header-section-number">15.2</span> Manque de données de pression de chasse</h2>
+<section id="manque-de-données-de-pression-de-chasse" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="manque-de-données-de-pression-de-chasse"><span class="header-section-number">16.2</span> Manque de données de pression de chasse</h2>
 <p>Les effets de la chasse à pied et de la chasse à la tonnes ont été partiellement évalués dans cette étude. Néanmoins, la pression de chasse n’a pas pu être incluse dans les analyses par manque de données. Des donnes spatialisées tout au long des saisons de chasse (sur le nombre de chasseurs présents, la durée des sessions de chasse, la quantité de tirs effectués et/ou les quantités de prélèvement) seraient des ajouts cruciaux pour évaluer plus en détails les impacts de la chasse sur les comportements de déplacements du coulis cendré.</p>
 </section>
-<section id="quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré"><span class="header-section-number">15.3</span> Quels sont les effets de la pêche à pied sur les comprtements de déplacement du courlis cendré ?</h2>
+<section id="quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="quels-sont-les-effets-de-la-pêche-à-pied-sur-les-comprtements-de-déplacement-du-courlis-cendré"><span class="header-section-number">16.3</span> Quels sont les effets de la pêche à pied sur les comprtements de déplacement du courlis cendré ?</h2>
 <p>La zone d’étude est un lieu de pêche à pied non professionnelle particulièrement prisé. Le courlis cendré pourrait être dérangé par la présence de pêcheurs à pied pour sa recherche de nourriture comme pour ses déplacements entre estran et reposoirs. L’étude des effets de la pression de pêche à pied serait un ajout pertinent pour étendre notre compréhension de l’utilisation de l’espace par le courlis cendré à un ensemble plus large des activités anthropiques ayant lieu dans la région.</p>
 </section>
 </section>
-<section id="matériels-et-méthodes" class="level1" data-number="16">
-<h1 data-number="16"><span class="header-section-number">16</span> Matériels et Méthodes</h1>
-<section id="nettoyage-des-données-gps" class="level2" data-number="16.1">
-<h2 data-number="16.1" class="anchored" data-anchor-id="nettoyage-des-données-gps"><span class="header-section-number">16.1</span> Nettoyage des données GPS</h2>
+<section id="matériels-et-méthodes" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> Matériels et Méthodes</h1>
+<section id="nettoyage-des-données-gps" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="nettoyage-des-données-gps"><span class="header-section-number">17.1</span> Nettoyage des données GPS</h2>
 <p>Le nettoyage des données issues des balises GPS a principalement été effectué à l’aide du package R adehabitat <a href="#calenge2006">Calenge (2006)</a>.</p>
 <p>En résumé, les points utilisés pour déterminer les comportements d’alimentation et de repos sont stationnaire (vitesse inférieure ou égale à 0.5 km/h). Pour que chaque individu ait le même poids dans les analyses, un point toutes les 5 min ont été estimé pour chaque individu. Uniquement les points situés dans la zone d’étude ont été utilisés. Le temps entre chaque point de localisation sauvegardé par individu pouvant varier et provoquer des périodes de carences de données plus ou moins longues, les périodes où la balise GPS de l’oiseau a enregistré plus d’un point par période de 5 min ont été analysés (éviter d’analyser des positions GPS trop peu précises et de résolutions temporelles hétérogènes). Une limite basse de 100 points estimés par individus sur une période supérieure à 28 jours (de deux cycles lunaires) a été appliquée pour maintenir une très haute qualité de suivi des individus pour les analyses.</p>
 </section>
-<section id="résumé-des-méthodes-utilisées-pour-les-analyses" class="level2" data-number="16.2">
-<h2 data-number="16.2" class="anchored" data-anchor-id="résumé-des-méthodes-utilisées-pour-les-analyses"><span class="header-section-number">16.2</span> Résumé des méthodes utilisées pour les analyses</h2>
+<section id="résumé-des-méthodes-utilisées-pour-les-analyses" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="résumé-des-méthodes-utilisées-pour-les-analyses"><span class="header-section-number">17.2</span> Résumé des méthodes utilisées pour les analyses</h2>
 <p>Le détail des méthodes est disponible dans le document <span style="font-family: 'Courier';">Readme</span> du projet.</p>
 <p><strong>Assignation des comportements</strong></p>
 <p>Chaque point GPS enregistré est associé à un comportement de repos (voir section “Les principaux reposoirs” <a href="#section-reposoir">ici</a>), de recherche alimentaire (voir section “Les principales zones d’alimentation” <a href="#section-alimentation">ici</a>) ou autre.</p>
@@ -1828,23 +1850,23 @@ Figure&nbsp;75: Zone critique de dérangement du courlis cendré : zones d’ali
 <p>Les domaines vitaux (<em>home range</em> en anglais) ont été estimés par les mêmes méthodes de distributions spatial d’utilisation et de kernels comme précédemment, mais pour chaque individu séparément sur l’ensemble des points GPS, tous comportements confondus.</p>
 <p>Deux enveloppes de domaine vital sont calculées pour chaque individu : i) le domaine vital étendu qui correspond à l’enveloppe englobant 95 % de la surface d’utilisation, ii) le noyau d’activité correspondant aux 50 % de surface d’utilisation, représente les zones de fréquentation la plus intense.</p>
 </section>
-<section id="données-et-codes" class="level2" data-number="16.3">
-<h2 data-number="16.3" class="anchored" data-anchor-id="données-et-codes"><span class="header-section-number">16.3</span> Données et codes</h2>
+<section id="données-et-codes" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="données-et-codes"><span class="header-section-number">17.3</span> Données et codes</h2>
 <p>Toutes les analyses, graphiques et cartes ont été réalisés avec le logiciel R version 4.4.2.</p>
 <p>Les données utilisées sont disponibles ici : XXX</p>
 <p>L’ensemble des codes produits sont disponibles ici : <a href="https://github.com/SuzanneBonamour">Github</a></p>
 </section>
 </section>
-<section id="bibliographie" class="level1" data-number="17">
-<h1 data-number="17"><span class="header-section-number">17</span> Bibliographie</h1>
+<section id="bibliographie" class="level1" data-number="18">
+<h1 data-number="18"><span class="header-section-number">18</span> Bibliographie</h1>
 <ul>
 <li><span id="beniston2004">Beniston, M., &amp; Stephenson, D. B. (2004). Extreme climatic events and their evolution under changing climatic conditions. <em>Global and planetary change</em>, 44(1-4), 1-9.</span></li>
 <li><span id="calenge2006">Calenge, C. (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. <em>Ecol. Model.</em> 197 (3), 516–519.</span></li>
 <li><span id="Worton1989">Worton, B.J. (1989). Kernel methods for estimating the utilization distribution in home-range studies. <em>Ecology</em> 70, 164–168.</span></li>
 </ul>
 </section>
-<section id="auteur.ices-affiliations-et-contributions" class="level1" data-number="18">
-<h1 data-number="18"><span class="header-section-number">18</span> Auteur.ices, affiliations et contributions</h1>
+<section id="auteur.ices-affiliations-et-contributions" class="level1" data-number="19">
+<h1 data-number="19"><span class="header-section-number">19</span> Auteur.ices, affiliations et contributions</h1>
 <p><strong>Analyses statistiques et spatiales</strong> : Suzanne Bonamour (LPO France), Gwenael Quaintenne (LPO France)</p>
 <p><strong>Travail de terrain, capture et baguage des oiseaux</strong> : Pierre Rousseau (RNN Moëze-Oléron), Loïc Jomat (RNN Moëze-Oléron), Adrien Chaigne (RNN Moëze-Oléron), Pierrick Bocher (RNN Moëze-Oléron), Frédéric Jiguet (RNN Moëze-Oléron), et beaucoup d’autre personnes !</p>
 <p><strong>Rédaction</strong> : Suzanne Bonamour (LPO France)</p>
@@ -1852,13 +1874,25 @@ Figure&nbsp;75: Zone critique de dérangement du courlis cendré : zones d’ali
 <p><strong>Comité scientifique</strong> : Pierrick Bocher (Univ. La Rochelle), Frédéric Jiguet (MNHN, CESCO, Paris)</p>
 <p>Pour toutes questions, contacter Adrien Chaigne <code>adrien.chaigne@lpo.fr</code> ou Suzanne Bonamour <code>suzanne.bonamour@lpo.fr</code>.</p>
 </section>
-<section id="financeurs" class="level1" data-number="19">
-<h1 data-number="19"><span class="header-section-number">19</span> Financeurs</h1>
-<p>La région Nouvelle-Aquitaine et France Nation Verte.</p>
+<section id="financeurs" class="level1" data-number="20">
+<h1 data-number="20"><span class="header-section-number">20</span> Financeurs</h1>
+<p>Cette étude entre dans le cadre du projet “Adaptation des limicoles aux changements climatiques”, financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional).</p>
 <div class="logo-line" style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;">
 <p><img src="lpo_logo.jpg" height="100"> <img src="reserve_logo.png" height="100"> <img src="MNHN-logo.jpg" height="100"> <img src="logo_CESCO.png" height="100"> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"> <img src="LIENSs_transp1-e1485208828412.png" height="100"> <img src="fonds-vert_logo.png" height="100"></p>
 </div>
+</section>
+<section id="annexes" class="level1" data-number="21">
+<h1 data-number="21"><span class="header-section-number">21</span> Annexes</h1>
+<section id="tableau-des-correspondance-bague-et-id" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="tableau-des-correspondance-bague-et-id"><span class="header-section-number">21.1</span> Tableau des correspondance bague et ID</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0dedc6f1589ca0f03f22" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0dedc6f1589ca0f03f22">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80"],["4025065","EA542002","EA542017","EA580424","EA580425","EA580426","EA580430","EA580433","EA580432","EA580462","EA580466","EA580467","EA580468","EA580469","EA580470","EA580471","EA580476","EA580477","EA580478","EA580480","EA580481","EA580489","EA580490","EA580491","EA580492","EA580493","EA580494","EA580495","EA580497","EA580498","EA580499","EA581501","EA581504","EA581505","EA581506","EA581507","EA581508","EA581509","EA581511","EA581512","EA581513","EA581514","EA581515","EA581520","EA635119","EA635142","EA639684","EA580500","EA581522","EA581523","EA581527","EA581540","EA581541","EA581542","EA581544","EA581545","EA581546","EA581547","EA581639","EA593051","EA635101","EA635103","EA635104","EA635105","EA635108","EA635109","EA635112","EA581521","EC103787","EC103788","EC103791","EC103792","EA671454","EC103765","EC103766","EC110552","EN08034","EA580463","EA580464","EA580465"],["A1","A2","A3","A4","A5","A6","A7","A8","A9","B1","B2","B3","B4","B5","B6","B7","B8","B9","C1","C2","C3","C4","C5","C6","C7","C8","C9","D1","D2","D3","D4","D5","D6","D7","D8","D9","E1","E2","E3","E4","E5","E6","E7","E8","E9","F1","F2","F3","F4","F5","F6","F7","F8","F9","G1","G2","G3","G4","G5","G6","G7","G8","G9","H1","H2","H3","H4","H5","H6","H7","H8","H9","I1","I2","I3","I4","I5","I6","I7","I8"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>bague<\/th>\n      <th>ID<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"bague","targets":1},{"name":"ID","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <p><a href="#top">↑ retour en haut</a></p>
+</section>
 </section>
 
 </main>
