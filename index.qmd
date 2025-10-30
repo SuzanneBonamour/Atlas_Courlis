@@ -340,7 +340,7 @@ knitr::include_graphics("hist_danslareserve.png", dpi = 100)
 Distribution des pourcentages d'utilisation de la RNNMO pour les domaines vitaux principaux et étendus, moyenne d'utilisation en ligne noire.
 :::
 
-En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital étendu sont dans la RNNMO (#fig-hist_danslareserve).
+En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital étendu sont dans la RNNMO (@fig-hist_danslareserve).
 
 # Les reposoirs {#section-reposoir}
 
