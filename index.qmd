@@ -319,7 +319,7 @@ Les individus ont des domaines vitaux d'une surface moyenne de 644 (± 389) m²,
 ::: {#fig-area_hr_plot}
 ```{r}
 #| echo: false
-#| out.width: 70%
+#| out.width: 90%
 #| fig-align: "center"
 knitr::include_graphics("hr_plot.png", dpi = 100)
 ```
@@ -332,7 +332,7 @@ La surface des domaines vitaux (principaux comme étendus) des mâles est signif
 ::: {#fig-hist_danslareserve}
 ```{r}
 #| echo: false
-#| out.width: 70%
+#| out.width: 50%
 #| fig-align: "center"
 knitr::include_graphics("hist_danslareserve.png", dpi = 100)
 ```
@@ -1673,7 +1673,7 @@ L'ensemble des codes produits sont disponibles ici XXX : [Github](https://github
 
 Cette étude a nécessité la participation d'une moyenne de XXX personnes sur le terrain durant environ XXX nuits par an depuis 2016, anisi qu'une personne à temps plein (35h/semaine) pendant 6 mois pour l'analyse des données et la redaction de ce rapport.
 
-**Travail de terrain, capture et baguage des oiseaux** : Pierre Rousseau (RNN Moëze-Oléron), Loïc Jomat (RNN Moëze-Oléron), Adrien Chaigne (RNN Moëze-Oléron), Pierrick Bocher (RNN Moëze-Oléron), Frédéric Jiguet (RNN Moëze-Oléron), et beaucoup d'autre personnes !
+**Travail de terrain, capture et baguage des oiseaux** : Pierre Rousseau (RNN Moëze-Oléron), Loïc Jomat (RNN Moëze-Oléron), Adrien Chaigne (RNN Moëze-Oléron), Pierrick Bocher (RNN Moëze-Oléron), Frédéric Jiguet (RNN Moëze-Oléron), et beaucoup d'autres personnes !
 
 **Analyses statistiques et spatiales** : Suzanne Bonamour (LPO France), Gwenael Quaintenne (LPO France)
 
