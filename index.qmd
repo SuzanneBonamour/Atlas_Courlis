@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de l'espace par le Courlis cendré dans le site fonctionnel de la réserve de Moëze-Oléron"
+title: "Utilisation de l'espace par le Courlis cendré dans le site fonctionnel de la Réserve Naturelle Nationale de Moëze-Oléron"
 author: "Suzanne Bonamour, Gwenaël Quintenne, Pierre Rousseau, Loïc Jomat, Pierrick Bocher, Frédéric Jiguet, Adrien Chaigne"
 lang: fr
 date-format: long
@@ -36,6 +36,7 @@ library(sf)
 library(readxl)
 library(DT)
 library(dplyr)
+library(readr)
 
 ## time zone -------------------------------------------------------------------
 
@@ -54,6 +55,13 @@ data_view_map_path <- "D:/Projets_Suzanne/Courlis/3) Data/4) view_map/"
 atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis"
 ```
 
+```{r}
+#| echo: false
+#| out.width: 100%
+#| fig-align: "center"
+knitr::include_graphics("courlis-cendre_AA_new-scaled_MIGRATLANE.jpg", dpi = 100)
+```
+
 # Points clés
 
 ## Contexte et objectifs
@@ -68,7 +76,7 @@ Depuis 2015, la LPO, en partenariat avec le CNRS et le Muséum national d’Hist
 
 **Reposoirs et zones d’alimentation** : Les oiseaux alternent entre reposoirs (marée haute) et zones d’alimentation (marée basse). Les reposoirs et zones d'alimentation se situent à la fois à l’intérieur et en dehors de la réserve, notamment dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation principales sont concentrées sur les vasières côtières et les prés salés, alors que les reposoirs se situent souvent en zones plus abritées. Les courlis juvéniles parcourent des distances plus longues entre les sites de repos et d’alimentation, traduisant un comportement plus exploratoire ou une moindre efficacité.
 
-**Effets des marées et conditions météorologiques** : Les marées hautes et les submersions limitent les zones disponibles, renforçant la fidélité des oiseaux à certains reposoirs connus. Les événements de vent fort n’affectent pas significativement les comportements de repos, mais peuvent modifier temporairement les zones d'alimentation.
+**Effets des marées et conditions météorologiques** : Les marées hautes et les submersions limitent les zones disponibles, renforçant la fidélité des oiseaux à certains reposoirs connus. Les événements de vents forts n’affectent pas significativement les comportements de repos, mais peuvent modifier temporairement les zones d'alimentation.
 
 **Effets de la chasse à pied et chasse à la tonne** : Les données suggèrent un impact potentiel de dérangement, notamment autour des zones non protégées. Bien qu’aucun effet direct n’ait été mesuré sur les déplacements à court terme, la superposition entre zones de chasse et zones d’alimentation clées montre un risque de perturbation élevé. 
 
@@ -125,7 +133,7 @@ knitr::include_graphics("Cartes flux migrateurs France RN (2).jpg", dpi = 100)
 La RNNMO est un maillon important sur le route de migration de nombreuses espèces de limicoles (©RNNMO - LPO).
 :::
 
-Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendrés au sein de la RNNMO (@fig-baguage).
+Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendrés au sein de la RNNMO (@fig-baguage, [Annexe 1](#Annexe1)).
 
 ::: {#fig-baguage}
 ```{r, out.height = "500px", out.width= "1350px"}
@@ -133,32 +141,32 @@ Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaborat
 knitr::include_graphics("baguage.png", dpi = 100)
 ```
 
-Equipement d'un coulirs cendré : a) courlis cendré bagué (©Armel Deniau), b) pose d'un GPS sur une courlis cendré (©Loic Jomat)
+Equipement d'un coulirs cendré : a) courlis cendré bagué (©Armel Deniau), b) pose d'un GPS sur un courlis cendré (©Loic Jomat)
 :::
 
 # Objectifs scientifiques
 
-L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel local de la RNNMO. Le courlis cendré est mis à contribution ici comme une espèce parapluie afin d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil des limicoles dans le zone d'étude.
+L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel de la RNNMO. Le courlis cendré est mis à contribution ici en tant qu'*espèce parapluie* dans le but d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil et la conversation des limicoles dans la zone d'étude.
 
-À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans a RNNMO, leurs déplacements ont été analysés afin de dégager les principales zones utilisées par les oiseaux et leurs variations en fonction de changements environnementaux et pressions cinégétique. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, ...) ainsi que d'un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle.
+À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la RNNMO, les déplacements des oiseaux ont été analysés afin de dégager les principales zones utilisées. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, ...) ainsi que d'un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, les variations utilisation de l'habitat par les courlis cendrés en fonction de changements environnementaux et pressions cinégétiques ont également été étudiées.
 
 # Le courlis cendré
 
-**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>, @fig-20170226) est le plus grand limicole d’Europe, de longtemps entre 55–65 cm pour une envergure entre 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L'espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.
+**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>, @fig-20170226) est le plus grand limicole d’Europe, avec une longueur de 55–65 cm pour une envergure de 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L'espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.
 
 **Comportement social** : C'est une espèce discrète, au comportement prudent. Il est territorial en période de reproduction, et grégaire hors reproduction.
 
-**Régime alimentaire** : Il mange principalement des vers de terre, des insectes, des mollusques et des crustacés ; et complète ponctuellement sont régime alimentaire par des graines et baies. Il s'alimente au sol ou par sondage dans la vase ou les prairies humides.
+**Régime alimentaire** : Il mange principalement des vers de terre, des insectes, des mollusques et des crustacés ; il complète ponctuellement sont régime alimentaire par des graines et baies. Il s'alimente au sol ou par sondage dans la vase et les prairies humides.
 
-**Habitats** : Sa reproduction est faite avec un nid au sol, souvent dissimulé dans la végétation en prairies humides, en landes, en tourbières, en marais, ou zones agricoles extensives. Il utilise des vasières intertidales, des estuaires, des prés salés, des prairies humides ou des pâtures pour sont alimentation, et des vasières, des zones littorales, des lagunes, ou marais salants pour ses périodes de repos (@fig-Photo_intro).
+**Habitats** : Sa reproduction s'effectue avec un nid au sol, souvent dissimulé dans la végétation en prairies humides, en landes, en tourbières, en marais. Il utilise des vasières intertidales, des estuaires, des prés salés, des prairies humides ou des pâtures pour sont alimentation, et des vasières, des zones littorales, des lagunes, ou marais salants pour ses périodes de repos (@fig-Photo_intro).
 
-**Saison de reproduction** : Sa saison de reproduction s'étends d'avril à juillet. Les femelles pondent en général entre 3 et 4 œufs. L'incubation dure environ 28 jours, et les jeunes deviennent autonomes à l'âge de 5 à 6 semaines.
+**Saison de reproduction** : Sa saison de reproduction s'étends d'avril à juillet. Les femelles adulte pondent en général entre 3 et 4 œufs chaque année. L'incubation dure environ 28 jours, et les jeunes deviennent autonomes à l'âge de 5 à 6 semaines.
 
-**Migration** : Les courlis cendrés est une migrateur partiel. Les populations du nord-est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrésdans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.
+**Migration** : Le courlis cendré est un migrateur partiel. Les populations du Nord-Est de l’Europe hivernent principalement en Europe occidentale et sur les côtes atlantiques africaines. En France, il y a une présence à l’année de courlis cenrdrés dans certaines régions littorales (ex. : baie de Somme, estuaire de la Loire), et une migration marquée en automne et au printemps.
 
-**Effectifs de population** : La population mondiale est estimée à \~ 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le nord-ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral atlantique et dans le sud-est).
+**Effectifs de population** : La population mondiale est estimée à \~ 140 000 – 240 000 couples reproducteurs, avec \~ 97 000 – 167 000 couples en Europe. La population française s'élève à \~ 2 200 à 2 800 couples nicheurs (principalement dans le Nord-Ouest, Centre-Val de Loire, Grand Est) et \~ 20 000 à 30 000 individus hivernants (surtout sur le littoral Atlantique et dans le Sud-Est).
 
-**Tendance démographique et statuts de conservation** : Le courlis cendré est en "déclin modéré" à "marqué" en Europe occidentale. Il connait un fort recul des effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (*quasi menacé* en français) à l’échelle mondiale par IUCN et inscrit à l'Annexe II de la Convention de Bonn (CMS). En Europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme "Vulnérable" et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficiant actuellement d’un moratoire de suspension de la chasse reconduit chaque année depuis XXXX.
+**Tendance démographique et statuts de conservation** : Le courlis cendré est en "déclin modéré" à "marqué" en Europe occidentale. Il connait un fort recul de ses effectifs nicheurs en France depuis les années 1980 (perte estimée à plus de 30 %). Il est classé "*Near Threatened*" (*quasi menacé* en français) à l’échelle mondiale par l'IUCN et inscrit à l'Annexe II de la Convention de Bonn (CMS). En Europe, il est classé à l'Annexe II de la Convention de Berne et l'Annexe II.2 de la Directive Oiseaux (espèce chassable sous conditions), avec un déclin confirmé dans plusieurs États membres. En France, il est considéré comme "Vulnérable" et est inscrit à l’arrêté ministériel du 26 juin 1987 fixant la liste des espèces de gibier dont la chasse est autorisée mais bénéficie actuellement d’un moratoire de suspension de la chasse reconduit chaque année depuis la siason de chasse 2009/2010 ([Annexe 2](#Annexe2))
 
 ::: {#fig-20170226}
 ```{r, out.height = "500px", out.width= "700px"}
@@ -178,7 +186,7 @@ area_box <- sf::st_area(BOX)
 area_box_km <- as.numeric((round(area_box / 1000000, 1)))
 ```
 
-La zone d'étude englobe le site fonctionnel local de la RNNMO, comprenant le bassin de Marennes et le marais de Brouage et la mer des Pertuis (@fig-zone_map_new). L'aire d'étude s'étend sur une surface de `r area_box_km` km² au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi la zone fonctionnelle de la RNNMO. L'aire d'étude est divisée en trois zone A, B et C pour faciliter l'analyse spatiale fine. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage au sud de la zone B (@fig-zone_map_new).
+La zone d'étude englobe le site fonctionnel de la RNNMO, comprenant le bassin de Marennes, le marais de Brouage et la mer des Pertuis (@fig-zone_map_new). L'aire d'étude s'étend sur une surface de `r area_box_km` km² au Nord jusqu'à l'estuaire de la Charente, à l'Est jusqu'à la limite Est de la ville de Rochefort, au Sud jusqu'à l'estuaire de la Seudre, et à l'Ouest jusqu'à la facade Est de l'ile d'Oléron, englobant ainsi la zone fonctionnelle de la RNNMO. L'aire d'étude est divisée en trois zones A, B et C pour faciliter l'analyse spatiale sur grain fin. Les individus sont bagués et équipés de GPS au sein de la RNNMO au site de baguage situé au Sud de la zone A (@fig-zone_map_new).
 
 ::: {#fig-zone_map_new}
 ```{r}
@@ -191,57 +199,18 @@ tags$iframe(
 )
 ```
 
-L'aire d'étude est divisée en trois zones d'étude A, B et C autour de ma RNNMO (en vert), avec le site de baguage en zone B (épingle rouge).
+L'aire d'étude est divisée en trois zones d'étude A, B et C autour de la RNNMO (en vert), avec le site de baguage en zone A (épingle rouge).
 :::
 
 # Périodes de suivi des individus
 
 ```{r}
-#| eval: false
-#| include: false
-data_generated_path <- "D:/Projets_Suzanne/Courlis/3) Data/2) data_generated/"
-GPS <- st_read(file.path(data_generated_path, "GPS_clean.gpkg"))
-
-GPS$y_m_d <- ymd(as.Date(GPS$datetime))
-```
-
-```{r}
-#| eval: false
 #| include: false
 
-nb_point <- length(GPS$ID)
-
-nb_ind <- length(unique(GPS$ID))
-
-min_year <- min(GPS$year)
-max_year <- max(GPS$year)
-
-age_dt_point <- as.data.frame(table(GPS$age))
-
-age_dt_ind <- GPS %>%
-  dplyr::select(ID, age) %>%
-  distinct() %>%
-  group_by(age) %>%
-  summarise(n = n())
-
-sexe_dt <- GPS %>%
-  dplyr::select(ID, sex) %>%
-  distinct() %>%
-  group_by(sex) %>%
-  summarise(n = n())
-
-# texte à ajouter dans quarto quand propore :
-
-# Taille du jeu de données final utilisé (après nettoyage et filtration des données) :
-#
-# - La période de suivi court de `r min_year` à `r max_year`
-# - Nombre d'individu : 46
-# - Nombre de point GPS enregistrés : 406 687
-# - Nombre de femme : 7 (`r sexe_dt$n[1]` points GPS), nombre de mâle : 7 (`r sexe_dt$n[2]` points GPS)
-# - Nombre de juvéniles : 7 (`r age_dt_ind$n[2]` points GPS), nombre d'adulte : 18 (`r age_dt_point$Freq[1]` points GPS)
+taille_dataset_dt <- read_csv("D:/Projets_Suzanne/Courlis/Atlas_Courlis/taille_dataset_dt.csv")
 ```
 
-Le jeu de données analysé est constitué de XX point GPS enregistré entre 2016 et 2025 pour XX individus. Les données comportent XX femelles, XX mâles, XX adultes et XX juvéniles. L'âge et le sexe n'a pas été identifié pour XX individus. Chaque individu a en moyenne XX point GPS enregistrés représentant des périodes de temps de 5 min (@fig-emission_plot).
+Le jeu de données analysé est constitué de `r prettyNum(taille_dataset_dt[1,2], big.mark = " ")` points GPS enregistrés entre `r prettyNum(round(taille_dataset_dt[3,2]), big.mark = " ")` et `r round(taille_dataset_dt[4,2])` pour `r round(taille_dataset_dt[2,2])` individus. Le nombre de point GPS analysés par individu est d'un minimum de `r round(taille_dataset_dt[5,2])` et maximum de `r prettyNum(round(taille_dataset_dt[6,2]), big.mark = " ")`, pour une moyenne de `r prettyNum(round(taille_dataset_dt[7,2]), big.mark = " ")` ([Annexe 3](#Annexe3)). Les données comportent `r round(taille_dataset_dt[10,2])` femelles, `r round(taille_dataset_dt[11,2])` mâles, `r round(taille_dataset_dt[8,2])` adultes et `r round(taille_dataset_dt[9,2])` juvéniles. Le sexe n'a pas été identifié pour `r round(taille_dataset_dt[12,2])` individus (@fig-emission_plot).
 
 ::: {#fig-emission_plot}
 ```{r}
@@ -256,7 +225,13 @@ Période d'émission des balises GPS pour chaque individu.
 
 # Domaines vitaux {#section-HR}
 
-Chaque courlis cendré a un domaine vital individuel, avec un noyau d’activité représentant la zone de fréquentation la plus intense (englobant 50 % des points GPS enregistrés pour l'individu, c'est-à-dire estimé au vertice à 50%, et nommée par la suite "domaine vital principal"), et un domaine vital plus large correspondant a ces autres espaces moins fréquement utilisés (englobant 95 % des points GPS, c'est-à-dire estimé au vertice à 95%, et nommée par la suite "domaine vital étendu" @fig-UDMap_HR_gp_1, @fig-UDMap_HR_gp_2, @fig-UDMap_HR_gp_3, @fig-UDMap_HR_gp_4).
+Chaque courlis cendré a un domaine vital, avec un noyau d’activité représentant la zone de fréquentation la plus intense (englobe 50 % des points GPS enregistrés pour l'individu, c'est-à-dire estimé au vertice à 50%, et nommée par la suite "domaine vital principal"), et un domaine vital plus large correspondant aux autres espaces qu'il fréquente moins fréquement (englobe 95 % des points GPS, c'est-à-dire estimé au vertice à 95%, et nommée par la suite "domaine vital étendu".
+
+Les domaines vitaux princpaux et étendus de chaque individu ont été représentés sur quatre carte différentes (regroupant 20 individus chacunes) pour faciliter leur visualisation (@fig-UDMap_HR_gp_1, @fig-UDMap_HR_gp_2, @fig-UDMap_HR_gp_3, @fig-UDMap_HR_gp_4).
+
+:::::: panel-tabset
+
+## Domaines vitaux, groupe 1
 
 ::: {#fig-UDMap_HR_gp_1}
 ```{r}
@@ -269,8 +244,10 @@ tags$iframe(
 )
 ```
 
-Domaines vitaux, groupe d'individus 1 : Domaine vital étendu en transparence, domaine vital principal en couleur opaque.
+Domaines vitaux, groupe d'individus 1 : Domaine vital pour chaque individu (couleurs), domaine vital principal en opaque, domaine vitaux étendu en transparence.
 :::
+
+## Domaines vitaux, groupe 2
 
 ::: {#fig-UDMap_HR_gp_2}
 ```{r}
@@ -283,8 +260,10 @@ tags$iframe(
 )
 ```
 
-Domaines vitaux, groupe d'individus 2 : Domaine vital étendu en transparence, domaine vital principal en couleur opaque.
+Domaines vitaux, groupe d'individus 2 : Domaine vital pour chaque individu (couleurs), domaine vital principal en opaque, domaine vitaux étendu en transparence.
 :::
+
+## Domaines vitaux, groupe 3
 
 ::: {#fig-UDMap_HR_gp_3}
 ```{r}
@@ -297,8 +276,10 @@ tags$iframe(
 )
 ```
 
-Domaines vitaux, groupe d'individus 3 : Domaine vital étendu en transparence, domaine vital principal en couleur opaque.
+Domaines vitaux, groupe d'individus 3 : Domaine vital pour chaque individu (couleurs), domaine vital principal en opaque, domaine vitaux étendu en transparence.
 :::
+
+## Domaines vitaux, groupe 4
 
 ::: {#fig-UDMap_HR_gp_4}
 ```{r}
@@ -311,10 +292,12 @@ tags$iframe(
 )
 ```
 
-Domaines vitaux, groupe d'individus 4 : Domaine vital étendu en transparence, domaine vital principal en couleur opaque.
+Domaines vitaux, groupe d'individus 4 : Domaine vital pour chaque individu (couleurs), domaine vital principal en opaque, domaine vitaux étendu en transparence.
 :::
 
-Les individus ont des domaines vitaux d'une surface moyenne de 644 (± 389) m², avec 50% de leur activité dans une zone principale de 67 (± 33.43) m² (@fig-area_hr_plot).
+::::::
+
+Les individus ont des domaines vitaux principaux d'une surface moyenne 67 (± 33) m² et des domaines vitaux étendu d'une surface moyenne de 644 (± 389) m²(@fig-area_hr_plot).
 
 ::: {#fig-area_hr_plot}
 ```{r}
@@ -324,10 +307,10 @@ Les individus ont des domaines vitaux d'une surface moyenne de 644 (± 389) m²,
 knitr::include_graphics("hr_plot.png", dpi = 100)
 ```
 
-Aire des domaines vitaux principaux (haut) et étendus (bas) en fonction du sexe (femelle en triangle, mâle en rond), de l'âge (juvénile en forme vide, adulte en forme pleine) et du pourcentage d'utilisation de la RNNMO (nuance de bleu).
+Aire des domaines vitaux principaux (haut) et étendus (bas) en fonction du sexe (femelles en triangle, mâles en rond), de l'âge (juvéniles en forme vide, adultes en forme pleine) et du pourcentage d'utilisation de la RNNMO (nuances de gris à jaune).
 :::
 
-La surface des domaines vitaux (principaux comme étendus) des mâles est significativement plus petite que celles des domaines vitaux des femelles (mâle *vs* femelle : -0.25 ± 0.1, p-value = 0.01). La surface du domaine vital ne varie pas en fonction de l'âge.
+La surface des domaines vitaux (principaux comme étendus) des mâles est significativement plus petite que celles des femelles (mâle *versus* femelle : -0.25 ± 0.1, p-value = 0.01, [Annexe 4](#Annexe4domaine)). La surface des domaines vitaux ne varie pas en fonction de l'âge ([Annexe 4](#Annexe4domaine)).
 
 ::: {#fig-hist_danslareserve}
 ```{r}
@@ -340,11 +323,11 @@ knitr::include_graphics("hist_danslareserve.png", dpi = 100)
 Distribution des pourcentages d'utilisation de la RNNMO pour les domaines vitaux principaux et étendus, moyenne d'utilisation en ligne noire.
 :::
 
-En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements dans leur domaine vital étendu sont dans la RNNMO (@fig-hist_danslareserve).
+En moyenne, les courlis cendrés utilisent la RNNMO 52% de leur temps. Leurs déplacements au sein de leur domaine vital principal sont à 58% dans la RNNMO, et 46% de leurs déplacements au sein de leur domaine vital étendu sont dans la RNNMO (@fig-hist_danslareserve).
 
 # Les reposoirs {#section-reposoir}
 
-A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des reposoirs appelés "reposoirs".
+A chaque marée haute, les courlis cendrés remontent hors des vasières et se regoupent dans des zones de repos appelés "reposoirs".
 
 ::: {#fig-roosting}
 ```{r, out.height = "500px", out.width= "750px"}
@@ -352,16 +335,16 @@ A chaque marée haute, les courlis cendrés remontent hors des vasières et se r
 knitr::include_graphics("roosting_Laurie Campbell.jpg", dpi = 100)
 ```
 
-Comportement de repos (*roosting* en anglais) (©Laurie Campbell)
+Comportement de repos (*roosting* en anglais, ©Laurie Campbell)
 :::
 
-Les reposoirsoirs sont découpées en deux zones, une zone au vertice à 50%, nommée par la suite "reposoirs principaux" ; et une zone au vertice à 95%, nommée par la suite "reposoirs secondaires".
+Les reposoirs sont découpées en deux zones, une zone au vertice à 50%, nommée par la suite "reposoirs principaux" ; et une zone au vertice à 95%, nommée par la suite "reposoirs secondaires" (@fig-UDMap_kud_roosting_A, @fig-UDMap_kud_roosting_B et @fig-UDMap_kud_roosting_C).
 
 :::::: panel-tabset
+
 ## Zone A
 
-<div>
-
+::: {#fig-UDMap_kud_roosting_A}
 ```{r}
 #| echo: false
 
@@ -372,9 +355,8 @@ tags$iframe(
 )
 ```
 
-Reposoirs en zone A : reposoirs principaux en rose opaque, reposoirs secondaires en rose transparent ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
-
-</div>
+Reposoirs en zone A : Reposoirs principaux en rose opaque, reposoirs secondaires en rose transparent. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
+:::
 
 ## Zone B
 
@@ -389,7 +371,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en zone B : reposoirs principaux en rose opaque, reposoirs secondaires en rose transparent ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Reposoirs en zone B : Reposoirs principaux en rose opaque, reposoirs secondaires en rose transparent. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 ## Zone C
@@ -405,14 +387,21 @@ tags$iframe(
 )
 ```
 
-Reposoirs en zone C : reposoirs principaux en rose opaque, reposoirs secondaires en rose transparent ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Reposoirs en zone C : Reposoirs principaux en rose opaque, reposoirs secondaires en rose transparent. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
-::::::
+:::::: 
 
-## Reposoirs en fonction de l'âge {#section-age1}
+## Reposoirs en fonction des caractéristiques biologiques des individus
+
+### Reposoirs en fonction de l'âge {#section-age1}
+
+Les reposoirs ont été estimés pour chaque catégorie d'âge : adulte et juvénile (@fig-UDMap_kud_roosting_age_A, @fig-UDMap_kud_roosting_age_B et @fig-UDMap_kud_roosting_age_C).
+
+Les courlis cendrés juvéniles étant moins expériementés que les adultes, il est attendu qu'ils utilisent des reposoirs différents et moins favorables que ceux utilisés par les adultes.
 
 :::::: panel-tabset
-### Zone A
+
+#### Zone A
 
 ::: {#fig-UDMap_kud_roosting_age_A}
 ```{r}
@@ -425,69 +414,10 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction de l'âge en zone A : Reposoirs adultes en rose, reposoirs juvéniles en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction de l'âge en zone A : Reposoirs adulte en rose, reposoirs juvénile en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
-```{r}
-#| eval: false
-#| include: false
-# ---- Packages ----
-library(sf)
-library(jsonlite)
-library(stringr)
-library(dplyr)
-library(knitr)
-
-# ---- Fichier HTML de la carte ----
-html_file <- "UDMap_kud_roosting_age_A.html" # <-- adapte le nom
-
-# ---- Lire le contenu HTML ----
-atlas_path <- "D:/Projets_Suzanne/Courlis/Atlas_Courlis/"
-html_text <- paste(paste0(atlas_path, readLines(html_file, warn = FALSE), collapse = "\n"))
-
-# ---- Extraire tous les blocs GeoJSON intégrés ----
-json_blocks <- str_extract_all(
-  html_text,
-  "\\{\\s*\"type\"\\s*:\\s*\"FeatureCollection\"[\\s\\S]*?\\}\\s*\\}\\s*\\]\\s*\\}"
-)[[1]]
-
-# ---- Vérification ----
-cat("Nombre de couches GeoJSON trouvées :", length(json_blocks), "\n")
-
-# ---- Fonction pour calculer les aires à partir d’un bloc GeoJSON ----
-calc_area <- function(geojson_text, name = "layer") {
-  tmpfile <- tempfile(fileext = ".geojson")
-  writeLines(geojson_text, tmpfile)
-
-  gdf <- st_read(tmpfile, quiet = TRUE)
-  gdf <- st_transform(gdf, 2154) # Lambert 93 (unités en mètres)
-
-  gdf <- gdf %>%
-    mutate(
-      surface_m2 = as.numeric(st_area(geometry)),
-      surface_ha = surface_m2 / 10000,
-      couche = name
-    )
-  return(gdf)
-}
-
-# ---- Appliquer la fonction aux deux couches principales ----
-# (si tu as deux couches : data_95 et data_50)
-data_95 <- calc_area(json_blocks[1], "data_95")
-data_50 <- calc_area(json_blocks[2], "data_50")
-
-# ---- Combiner et faire un tableau résumé par param ----
-table_aires <- bind_rows(data_95, data_50) %>%
-  st_drop_geometry() %>%
-  group_by(couche, param) %>%
-  summarise(surface_ha = sum(surface_ha, na.rm = TRUE), .groups = "drop") %>%
-  arrange(couche, desc(surface_ha))
-
-# ---- Afficher le tableau joliment ----
-kable(table_aires, caption = "Surfaces (ha) par catégorie `param` pour data_50 et data_95")
-```
-
-### Zone B
+#### Zone B
 
 ::: {#fig-UDMap_kud_roosting_age_B}
 ```{r}
@@ -500,10 +430,10 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction de l'âge en zone B : Reposoirs adultes en rose, reposoirs juvéniles en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction de l'âge en zone B : Reposoirs adulte en rose, reposoirs juvénile en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
-### Zone C
+#### Zone C
 
 ::: {#fig-UDMap_kud_roosting_age_C}
 ```{r}
@@ -516,16 +446,22 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction de l'âge en zone C : Reposoirs adultes en rose, reposoirs juvéniles en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction de l'âge en zone C : Reposoirs adulte en rose, reposoirs juvénile en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
+
 ::::::
 
-## Reposoirs en fonction du sexe {#section-sexe1}
+Aucune différence marquée entre les reposoirs juvéniles et adultes n'a pu être détectée.
 
-Les courlis cendrés femelles et mâles ne présentent pas de différence marquée quant à leur reposoirs.
+### Reposoirs en fonction du sexe {#section-sexe1}
+
+Les reposoirs ont été estimés pour chaque catégorie de sexe : femelle et mâle (@fig-UDMap_kud_roosting_sex_A, @fig-UDMap_kud_roosting_sex_B et @fig-UDMap_kud_roosting_sex_C).
+
+Les courlis cendrés mâles étant plus petits que les femelles, ils pourraient être exclut des reposoirs les plus favorables à l'issu d'une compétition pour l'espace avec les femelles.
 
 :::::: panel-tabset
-### Zone A
+
+#### Zone A
 
 ::: {#fig-UDMap_kud_roosting_sex_A}
 ```{r}
@@ -538,10 +474,10 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du sexe en zone A : Reposoirs femelle en rose, reposoirs mâle en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du sexe en zone A : Reposoirs femelle en rose, reposoirs mâle en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
-### Zone B
+#### Zone B
 
 ::: {#fig-UDMap_kud_roosting_sex_B}
 ```{r}
@@ -554,10 +490,10 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du sexe en zone B : Reposoirs femelle en rose, reposoirs mâle en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du sexe en zone B : Reposoirs femelle en rose, reposoirs mâle en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
-### Zone C
+#### Zone C
 
 ::: {#fig-UDMap_kud_roosting_sex_C}
 ```{r}
@@ -570,17 +506,22 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du sexe en zone C : Reposoirs femelle en rose, reposoirs mâle en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du sexe en zone C : Reposoirs femelle en rose, reposoirs mâle en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
+Aucune différence marquée entre les reposoirs femelles et mâles n'a pu être détectée.
+
 ## Reposoirs en fonction du calendrier
 
-Les reposoirs peuvent varier en fonction de la période de l'année et des saisons.
+Les reposoirs ont été estimés pour chaque mois de l'année (@fig-UDMap_kud_roosting_month_label_A, @fig-UDMap_kud_roosting_month_label_B et @fig-UDMap_kud_roosting_month_label_C).
+
+Le site naturel est fortement impacté par les variations saisonnières environnementales (ex : météorologie, pêche, chasse, tourisme, cycles des marées à fort coefficient, etc), les reposoirs les plus favorables pourraient donc changer de façon cyclique au cours de l'année.
 
 ### Reposoirs en fonction du mois de l'année
 
 :::::: panel-tabset
+
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_month_label_A}
@@ -594,7 +535,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du mois de l'année en zone A : Reposoirs de août à septembre en nuances de rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du mois de l'année en zone A : Reposoirs de août à septembre en nuances de couleurs. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -610,7 +551,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du mois de l'année en zone A : Reposoirs de août à septembre en nuances de rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du mois de l'année en zone A : Reposoirs de août à septembre en nuances de couleurs. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -626,13 +567,20 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du mois de l'année en zone A : Reposoirs de août à septembre en nuances de rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du mois de l'année en zone A : Reposoirs de août à septembre en nuances de couleurs. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
+Bien qu'il y ait une forte variation en reposoirs au cours des mois, il est difficile de dégager un patron clair à partir de ces résultats.
+
 ### Reposoirs en fonction du jour et de la nuit
 
+Les reposoirs ont été estimés durant les périodes de jour et de nuit (@fig-UDMap_kud_roosting_timeofday_A, @fig-UDMap_kud_roosting_timeofday_B et @fig-UDMap_kud_roosting_timeofday_C).
+
+Il est attendu que les courlis utilisent des zones de repos plus restreintes la nuit que le jour.
+
 :::::: panel-tabset
+
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_timeofday_A}
@@ -646,7 +594,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du jour et de la nuit en zone A : Reposoirs diurnes en rose, reposoirs nocturnes en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du jour et de la nuit en zone A : Reposoirs diurnes en rose, reposoirs nocturnes en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -662,7 +610,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du jour et de la nuit en zone B : Reposoirs diurnes en rose, reposoirs nocturnes en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du jour et de la nuit en zone B : Reposoirs diurnes en rose, reposoirs nocturnes en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -678,69 +626,75 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction du jour et de la nuit en zone C : Reposoirs diurnes en rose, reposoirs nocturnes en jaune. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction du jour et de la nuit en zone C : Reposoirs diurnes en rose, reposoirs nocturnes en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-### Reposoirs entre fonction de la hauteur d'eau {#section-hauteurEau1}
+Aucune différence marquée entre les reposoirs de diurnes et noctures n'a pu être détectée.
 
-Les reposoirs peuvent varier en fonction de la hauteur d'eau lors des marées hautes (@fig-UDMap_kud_roosting_tide_strength_A, @fig-UDMap_kud_roosting_tide_strength_B, @fig-UDMap_kud_roosting_tide_strength_C).
+### Reposoirs en fonction de la hauteur d'eau {#section-hauteurEau1}
+
+Les reposoirs ont été estimés pour trois catégories de hauteur d'eau : marées hautes de mortes eaux, marées hautes de vives eaux, périodes de submersion de la lagune (@fig-UDMap_kud_roosting_tide_strengh_A, @fig-UDMap_kud_roosting_tide_strengh_B, @fig-UDMap_kud_roosting_tide_strengh_C).
+
+Il est attendu que les reposoirs se déplacent vers les zones en altitude (c'est-à-dire, plus loin de l'estran, plus à l'Est de la côte) en fonction de l'augmentation de la hauteur d'eau.
 
 Les dates détectées de submersion de la lagune sont : XXX
 
 :::::: panel-tabset
 #### Zone A
 
-::: {#fig-UDMap_kud_roosting_tide_strength_A}
+::: {#fig-UDMap_kud_roosting_tide_strengh_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_tide_strength_A.html",
+  src = "UDMap_kud_roosting_tide_strengh_A.html",
   width = "100%",
   height = "600px"
 )
 ```
 
-Reposoirs en fonction de la hauteur d'eau en zone A : Reposoirs en marées hautes de mortes eaux en rose, reposoirs en marées hautes de vives eaux en jaune, reposoirs periodes de submersion en rouge. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction de la hauteur d'eau en zone A : Reposoirs en marées hautes de mortes eaux en rose, reposoirs en marées hautes de vives eaux en jaune, reposoirs périodes de submersion en rouge. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
 
-::: {#fig-UDMap_kud_roosting_tide_strength_B}
+::: {#fig-UDMap_kud_roosting_tide_strengh_B}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_tide_strength_B.html",
+  src = "UDMap_kud_roosting_tide_strengh_B.html",
   width = "100%",
   height = "600px"
 )
 ```
 
-Reposoirs en fonction de la hauteur d'eau en zone B : Reposoirs en marées hautes de mortes eaux en rose, reposoirs en marées hautes de vives eaux en jaune, reposoirs periodes de submersion en rouge. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction de la hauteur d'eau en zone B : Reposoirs en marées hautes de mortes eaux en rose, reposoirs en marées hautes de vives eaux en jaune, reposoirs périodes de submersion en rouge. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
 
-::: {#fig-UDMap_kud_roosting_tide_strength_C}
+::: {#fig-UDMap_kud_roosting_tide_strengh_C}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_tide_strength_C.html",
+  src = "UDMap_kud_roosting_tide_strengh_C.html",
   width = "100%",
   height = "600px"
 )
 ```
 
-Reposoirs en fonction de la hauteur d'eau en zone C : Reposoirs en marées hautes de mortes eaux en rose, reposoirs en marées hautes de vives eaux en jaune, reposoirs periodes de submersion en rouge. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction de la hauteur d'eau en zone C : Reposoirs en marées hautes de mortes eaux en rose, reposoirs en marées hautes de vives eaux en jaune, reposoirs périodes de submersion en rouge. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
+Aucune différence marquée entre les reposoirs en fonction de la hauteur d'eau n'a pu être détectée.
+
 # Les zones d'alimentation {#section-alimentation}
 
-A chaque marée base, les courlis cendrés partent à la recherche de nourriture.
+A chaque marée basse, les courlis cendrés partent à la recherche de nourriture.
 
 ::: {#fig-foraging}
 ```{r, out.height = "500px", out.width= "750px"}
@@ -748,12 +702,13 @@ A chaque marée base, les courlis cendrés partent à la recherche de nourriture
 knitr::include_graphics("Pierre-Marie Epiney.png", dpi = 100)
 ```
 
-Comportement de recherche d'alimentaire (*foraging* en anglais) (©Pierre-Marie Epiney)
+Comportement de recherche d'alimentaire (*foraging* en anglais, ©Pierre-Marie Epiney)
 :::
 
-Les zones d'alimentation sont découpées en deux zones, une zone au vertice à 50%, nommée par la suite "zone d'alimentation principales" ; et une zone au vertice à 95%, nommée par la suite "zone d'alimentation secondaires".
+Les zones d'alimentation sont découpées en deux zones, une zone au vertice à 50%, nommée par la suite "zone d'alimentation principale" ; et une zone au vertice à 95%, nommée par la suite "zone d'alimentation secondaire" (@fig-UDMap_kud_foraging_A, @fig-UDMap_kud_foraging_B et @fig-UDMap_kud_foraging_C).
 
 :::::: panel-tabset
+
 ## Zone A
 
 ::: {#fig-UDMap_kud_foraging_A}
@@ -767,7 +722,7 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation en zone A : zones d'alimentation principales en bleu opaque, zones d'alimentation secondaires en bleu transparent ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Zone d'alimentation en zone A : Zones d'alimentation principales en bleu opaque, zones d'alimentation secondaires en bleu transparent. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 ## Zone B
@@ -783,7 +738,7 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation en zone B : zones d'alimentation principales en bleu opaque, zones d'alimentation secondaires en bleu transparent ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Zone d'alimentation en zone B : Zones d'alimentation principales en bleu opaque, zones d'alimentation secondaires en bleu transparent. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 ## Zone C
@@ -799,15 +754,17 @@ tags$iframe(
 )
 ```
 
-Zone d'alimentation en zone C : zones d'alimentation principales en bleu opaque, zones d'alimentation secondaires en bleu transparent ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Zone d'alimentation en zone C : Zones d'alimentation principales en bleu opaque, zones d'alimentation secondaires en bleu transparent. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-## Zones d'alimentation en fonction des caractéristiques biologique des individus
-
-Les zones d'alimentation peuvent varier avec l'âge. Les courlis encore juvéniles étant moins expérimentés que les adultes, ils pourraient être assignés à des zones de recherche alimentaire moins favorables.
+## Zones d'alimentation en fonction des caractéristiques biologiques des individus
 
 ### Zones d'alimentation en fonction de l'âge {#section-age2}
+
+Les zones d'alimentation ont été estimées pour chaque catégorie d'âge : adulte et juvénile (@fig-UDMap_kud_foraging_age_A, @fig-UDMap_kud_foraging_age_B et @fig-UDMap_kud_foraging_age_C).
+
+Les courlis cendrés juvéniles étant moins expériementés que les adultes, ils pourraient être assignés à des zones de recherche alimentaire différentes, et probablement moins favorables que celles utilisées par les adultes.
 
 :::::: panel-tabset
 #### Zone A
@@ -859,9 +816,13 @@ Zones d'alimentation en fonction de l'âge en zone C : Zone d'alimentation adult
 :::
 ::::::
 
+Aucune différence marquée dans les zones d'alimentation juvéniles et adultes n'a été détectée. A noter tout de même, les individus utilisant le marais de Brouage pour leur alimentations sont majoritairement juvéniles (@fig-UDMap_kud_foraging_age_C).
+
 ### Zones d'alimentation en fonction du sexe {#section-sexe2}
 
-Les zones d'alimentation varié en fonction des sexe des individus. Les mâles sont resteint à des zones d'eau moins profondes dû à leur bec en moyenne plus court que celui des femelles.
+Les zones d'alimentation ont été calculées en fonction du sexe : femelle et mâle (@fig-UDMap_kud_foraging_sex_A, @fig-UDMap_kud_foraging_sex_B et @fig-UDMap_kud_foraging_sex_C).
+
+Les mâles ayant des becs plus courts, leur permettant de fouiller moins profondément dans la vase, il est attendu que leurs zones d'alimentation soit moins étendues vers le large de la côté (et donc moins profondément sous la surface de l'eau) que celles des femelles.
 
 :::::: panel-tabset
 #### Zone A
@@ -913,11 +874,15 @@ Zones d'alimentation en fonction du sexe en zone A : Zone d'alimentation femelle
 :::
 ::::::
 
+Comme attendu, les zones d'alimentation varié en fonction des sexe des individus. Les zones d'alimentation femelles occupent une surface de XXX km², alors que celle des mâles occupent une surface de XXX km². Les mâles semblent resteints à des zones d'eau moins profondes, probablement dû à leur bec en moyenne plus court que celui des femelles.
+
 ## Zones d'alimentation en fonction du calendrier
 
 ### Zones d'alimentation en fonction du mois de l'année {#section-mois2}
 
-Les zones d'alimentation peuvent varier en fonction de la période de l'année et des saisons.
+Les zones d'alimentation ont été estimés pour chaque mois de l'année (@fig-UDMap_kud_foraging_month_label_A, @fig-UDMap_kud_foraging_month_label_B et @fig-UDMap_kud_foraging_month_label_C).
+
+Le site naturel est fortement impacté par les variations saisonnières environnementales (ex : météorologie, pêche, chasse, tourisme, cycles des marées de fort coefficient, phénologie des proies, etc), les zones d'alimentation les plus favorables pourraient donc changer de façon cyclique au cours de l'année.
 
 :::::: panel-tabset
 #### Zone A
@@ -933,7 +898,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année en zone A : Zones d'alimentation de août à septembre en nuances de bleu. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction du mois de l'année en zone A : Zones d'alimentation de août à septembre en nuances de couleurs. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -949,7 +914,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année en zone B : Zones d'alimentation de août à septembre en nuances de bleu. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction du mois de l'année en zone B : Zones d'alimentation de août à septembre en nuances de couleurs. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -965,11 +930,17 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du mois de l'année en zone C : Zones d'alimentation de août à septembre en nuances de bleu. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction du mois de l'année en zone C : Zones d'alimentation de août à septembre en nuances de couleurs. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
+Bien qu'il y ait une forte variation en zones d'alimentation au cours des mois, il est difficile de dégager un patron clair à partir de ces résultats.
+
 ### Zones d'alimentation en fonction du jour et de la nuit
+
+Les zones d'alimentation ont été estimées durant les périodes de jour et de nuit (@fig-UDMap_kud_foraging_timeofday_A, @fig-UDMap_kud_foraging_timeofday_B et @fig-UDMap_kud_foraging_timeofday_C).
+
+Il est attendu que les courlis utilisent des zones d'alimentation plus restreintes la nuit que le jour.
 
 :::::: panel-tabset
 #### Zone A
@@ -1021,19 +992,20 @@ Zones d'alimentation en fonction du jour et de la nuit en zone C : Zones d'alime
 :::
 ::::::
 
-# Utilisation de l'espace lors d'évènements de vent extrêmes {#section-ECE}
+Aucune différence marquée dans les zones d'alimentation diurnes et noctures n'a été détectée. 
 
-Les évènements climatiques extrèmes sont en augmentation, en fréquence et en intensité, avec le changement climatiques ([beniston2004](#beniston2004)). Les évènements de vents forts sont suspectés d'être préjudiciable pour les courlis cendrés et on s'attend à ce que leur utilisation de l'espace soit modifié lors des tempêtes.
+# Utilisation de l'espace lors d'évènement climatiques extrêmes {#section-ECE}
 
-L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes et considéré comme jours de référence. Les évènements extrèmes sont ici distingué en trois catégories : i) les évènements de vent fort (vitesse de vent supérieur aux 95 % des enregistrements), ii) les évènements de vent de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux
+Les évènements climatiques extrêmes sont en augmentation, en fréquence comme en intensité, dû aux changements climatiques ([beniston2004](#beniston2004)). Les évènements climatiques extrêmes (comme les tempêtes) sont suspectés d'être préjudiciable pour les courlis cendrés et on s'attend à ce que leur utilisation de l'espace en soit modifiée.
 
-Les vents de Nord-Ouest semblent ne pas avoir d'effet sur les comportements de repos ni d'alimentation, tout comme les vents forts sur les comportements de repos. 
+L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes (considérés comme jours de référence). Les évènements extrêmes sont ici distingués en trois catégories : i) les évènements de vents forts (vitesse de vent supérieure aux 95 % des enregistrements sur la période 2016-2025), ii) les évènements de vents de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux.
 
-## Reposoirs en fonction d'évènements venteux extrèmes
+## Reposoirs lors d'évènements climatiques extrêmes 
 
-### Evènements de vent fort
+### Reposoirs lors de vents forts
 
 :::::: panel-tabset
+
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_vent_A}
@@ -1047,7 +1019,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent fort en zone A : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent fort en rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts en zone A : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1063,7 +1035,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent fort en zone B : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent fort en rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts en zone B : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1079,13 +1051,16 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent fort en zone C : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent fort en rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts en zone C : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-### Evènements de vent de Nord-Ouest
+Aucune effet marqué des vents forts sur les reposoirs n'a été détecté. 
+
+### Reposoirs lors de vents de Nord-Ouest
 
 :::::: panel-tabset
+
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_orientation_A}
@@ -1099,7 +1074,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent de Nord-Ouest en zone A : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent de Nord-Ouest rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone A : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1115,7 +1090,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent de Nord-Ouest en zone B : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent de Nord-Ouest rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone B : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1131,11 +1106,13 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent de Nord-Ouest en zone C : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent de Nord-Ouest rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone C : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-### Evènements de vent fort de Nord-Ouest
+Aucune effet marqué des vents de Nord-Ouest sur les reposoirs n'a été détecté. 
+
+### Reposoirs lors de vents forts de Nord-Ouest
 
 :::::: panel-tabset
 #### Zone A
@@ -1151,7 +1128,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent fort de Nord-Ouest en zone A : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent fort de Nord-Ouest rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone A : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1167,7 +1144,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent fort de Nord-Ouest en zone B : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent fort de Nord-Ouest rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone B : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1183,15 +1160,18 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vent fort de Nord-Ouest en zone C : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vent fort de Nord-Ouest rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone C : Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-## Zones d'alimentation en fonction d'évènements venteux extrèmes
+Aucune effet marqué des vents forts de Nord-Ouest sur les reposoirs n'a été détecté. 
 
-### Evènements de vent fort
+## Zones d'alimentations lors d'évènements climatiques extrêmes 
+
+### Zones d'alimentation lors de vents forts
 
 :::::: panel-tabset
+
 #### Zone A
 
 ::: {#fig-UDMap_kud_foraging_vent_A}
@@ -1205,7 +1185,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent fort en zone A : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent fort en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts en zone A : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1221,7 +1201,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent fort en zone B : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent fort en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts en zone B : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1237,11 +1217,13 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent fort en zone C : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent fort en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts en zone C : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-### Evènements de vent de Nord-Ouest
+Aucune effet marqué des vents forts sur les zones d'alimentation n'a été détecté. 
+
+### Zone d'alimentation lors de vents de Nord-Ouest
 
 :::::: panel-tabset
 #### Zone A
@@ -1257,7 +1239,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent de Nord-Ouest en zone A : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents de Nord-Ouest en zone A : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1273,7 +1255,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent de Nord-Ouest en zone B : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents de Nord-Ouest en zone B : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1289,11 +1271,13 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent de Nord-Ouest en zone C : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents de Nord-Ouest en zone C : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-### Evènements de vent fort de Nord-Ouest
+Aucune effet marqué des vents d'Ouest sur les zones d'alimentation n'a été détecté. 
+
+### Zone d'alimentation lors de vents forts de Nord-Ouest
 
 :::::: panel-tabset
 #### Zone A
@@ -1309,7 +1293,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent fort de Nord-Ouest en zone A : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent fort de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts de Nord-Ouest en zone A : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1325,7 +1309,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent fort de Nord-Ouest en zone B : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent fort de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts de Nord-Ouest en zone B : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1341,13 +1325,13 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vent fort de Nord-Ouest en zone C : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vent fort de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts de Nord-Ouest en zone C : Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts de Nord-Ouest en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-# Distance entre les reposoirs et les zones d'alimentation {#section-distance}
+Aucune effet marqué des vents forts de Nord-Ouest sur les zones d'alimentation n'a été détecté. 
 
-Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la distance individuelle moyenne alimentation-repos et sa variance : les individus qui font le plus loin en moyenne sont aussi ceux qui varient le plus dans la distance parcours à chaque cycle de marée.
+# Distance entre les reposoirs et les zones d'alimentation {#section-distance}
 
 ::: {#fig-dist_plot}
 ```{r}
@@ -1357,10 +1341,10 @@ Il y a une corrélation significative (p-value : 6.93e-16 \*\*\*) entre la dista
 knitr::include_graphics("dist_plot.png", dpi = 100)
 ```
 
-Distance moyenne (± écart-type) individuelle et journalières à chaque cycle de marée entre les zones d'alimentation et de repos. Moyenne de la population en ligne noire (± écart-type en lignes grises tirets).
+Distance moyenne (± écart-type) à chaque cycle de marée entre les zones d'alimentation et de repos pour chaque individu. Moyenne de la population en ligne à tirets noire.
 :::
 
-Les distances à chaque cycle de marée des paires de centroïds individuels entre les zones d'alimentation et de repos ont été comparées entre les mâles et les femelles, les adultes et les juvéniles, et pendant ou hors période de chasse.
+Les distances moyennes entre les zones d'alimentation et de repos ont été modélisées statistiquement en fonction du sexe, de l'âge et de la hauteur d'eau.
 
 ::: {#fig-pred_all_plot}
 ```{r}
@@ -1370,10 +1354,12 @@ Les distances à chaque cycle de marée des paires de centroïds individuels ent
 knitr::include_graphics("pred_all_plot.png", dpi = 100)
 ```
 
-XXX
+Prédictions (± se XX a vérif) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adulte et juvénile sur l'axe des abscisses) et de la hauteur d'eau (marée de morte eaux à gauche, marées de vives eaux à droite).
 :::
 
-Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes. Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre les zones d'alimentation et de repos d'allonge lors de la période de chasse (et plus de variabilité ?).
+Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes (XX p-value : XX, [Annexe 4](#Annexe4distance)). Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre les zones d'alimentation et de repos s'allonge lors de la période de chasse (et plus de variabilité ?) (XX p-value : XX, [Annexe 4](#Annexe4distance)).
+
+Les distances moyennes individuelles entre les zones d'alimentation et de repos ont également été modélisées statistiquement en fonction de la période chasse.
 
 ::: {#fig-pred_all_chasse_plot}
 ```{r}
@@ -1383,20 +1369,21 @@ Les juvéniles parcourent significativement plus de distance entre leurs zones d
 knitr::include_graphics("pred_all_chasse_plot.png", dpi = 100)
 ```
 
-XXX
+Prédictions (± se XX a vérif) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction de la période de chasse (période de chasse ouverte ou fermée sur l'axe des abscissess) et du sexe (femelles en rose, mâles en bleu).
 :::
 
+# Fidélité aux reposoirs {#section-fidelité}
 
-# Fidélité aux reposoirs
-
-La fidélité en reposoirs est estimée par deux mesures complémentaires pour chaque individu :
+La fidélité aux reposoirs a été estimée par deux mesures complémentaires pour chacun des individus :
 
 | Mesure | Définition | Interprétation |
 |------------------|-------------------|-----------------------------------|
-| ***Equitabilité*** | Diversité d'utilisation des reposoirs | Equitabilité proche de 1 : utilisation équilibrée de plusieurs reposoirs différents (fidélité faible) ; équitabilité proche de 0 : comportements de repos concentrés sur peu de reposoirs différents (fidélité forte) |
-| ***Taux de variation*** | Fréquence de mouvement entre reposoirs, mesure l'instabilité temporelle dans les choix de reposoirs | Plus la valeur est *élevée*, plus les changements de reposoirs sont fréquements (fidélité faible) |
+| ***Equitabilité*** | Diversité d'utilisation des reposoirs | Equitabilité proche de 1 : utilisation équilibrée de plusieurs reposoirs (c'est-à-dire fidélité faible) ; équitabilité proche de 0 : comportements de repos concentrés sur peu de reposoirs différents (c'est-à-dire fidélité forte) |
+| ***Taux de variation*** | Fréquence de mouvement entre reposoirs, mesure l'instabilité temporelle dans les choix de reposoirs | Plus la valeur est *élevée*, plus les changements de reposoirs sont fréquents (c'est-à-dire fidélité faible) ; plus la valeur est *faible*, plus les changements de reposoirs sont rares (c'est-à-dire fidélité forte) |
 
-Ces mesures de variabilité *vs* fidélité en reposoirs sont calculées pour les reposoirs principaux et les reposoirs secondaires. Plusieurs modèles linéaires mixtes (effet aléatoire individu) généralisés (Gaussien, Gamma ou transformation log) avec les effets fixes 'âge', 'sexe', 'intensité de marée' et leurs interactions deux à deux ont été comparés. Les résultats des meilleurs modèles sélectionnés par AIC sont présentés ici.
+Ces mesures de variabilité *versus* fidélité aux reposoirs ont été calculées pour les reposoirs principaux et les reposoirs secondaires.
+
+Les variations d'équitabilité et de taux de variation en reposoirs ont été modélisées statistiquement par modèles linéaires mixtes (effet aléatoire individu) généralisés (Gaussien, Gamma ou transformation log) en fonction de l'âge, du sexe, de la hauteur d'eau  et leurs interactions deux à deux (effets fixes). Les résultats des meilleurs modèles sélectionnés par AIC sont présentés ici.
 
 ::: {#fig-pred_50_95_plot}
 ```{r}
@@ -1406,18 +1393,22 @@ Ces mesures de variabilité *vs* fidélité en reposoirs sont calculées pour le
 knitr::include_graphics("pred_50_95_plot.png", dpi = 100)
 ```
 
-Prédictions de l'équitabilité (a) et du taux de variation (b) en reposoirs principaux.
+Prédictions (± se XX a vérif) des meilleurs modèles décrivant les variations a)  d'équitabilité en reposoirs principaux en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adultes en forme pleine, juvéniles en forme vide) et de la hauteur d'eau (sur l'aaxe des abscisses) ; b) du taux de variation en reposoirs principaux en fonction de l'âge.
 :::
 
-L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions (coef : -0.34 ± 0.05, p-value \< 1.10\^6) en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cet différence diminue lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l'équitabilité en reposoirs semble plus fortes chez les mâles lors des marées de vives eaux et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (@fig-pred_50_95_plot a).
+L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cette différence diminue significativement lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l'équitabilité en reposoirs semble plus forte chez les mâles lors des marées de vives eaux (XXXXX p-value : ) et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (@fig-pred_50_95_plot a). Voir [Annexe 4](#Annexe4) pour les détails des résultats.
 
-Le taux de variation en reposoirs principaux est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 ± 0.031, p-value = 0.03). Autrement dit, les juvéniles changent moins souvent de reposoirs principaux que les adultes (@fig-pred_50_95_plot b).
+Le taux de variation en reposoirs principaux est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 ± 0.031, p-value = 0.03, @fig-pred_50_95_plot b, [Annexe 4](#Annexe4)).
 
-Autrement dit, les courlis cendréses pourraient être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint. Les juvéniles sont plus fidèle que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur caractère moins explorateur que les adultes en moyenne. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions).
+Les courlis cendrés pourraient ainsi être plus fidéles à leurs reposoirs principaux lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions) car leur environnement connu est restreint aux zones plus en hauteur. En temps normal, les juvéniles sont plus fidèles que les adultes à leur reposoirs et changent moins souvent de reposoirs principaux, ce qui pourraient refléter leur personnalité en moyenne moins exploratrice que celles des adultes. Néanmoins, les juvéniles semblent se disperser plus que les adultes lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions). Enfin, les mâles sont moins fidèles à leurs reposoirs que les femelles lorsque la marée provoque de fortes montées des eaux (marées de vives eaux et submersions).
 
 Le taux de variation et l'équitabilité en reposoirs secondaires ne varient ni en fonction de l'âge, du sexe, ou de l'intensité des marées.
 
-# Connectivité entre les reposoirs
+# Connectivité entre les reposoirs {#section-connectivité}
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Les reposoirs sont connectés entre eux par les déplacements consécutifs effectués par les courlis cendrés à chaque cycle de marée. Il est attendu que les reposoirs les plus utilisés par la population de courlis étudiées soient plus connectées aux autres reposoirs que les reposoirs utilisées de façon plus sporadique. Egalement, les reposoirs les plus proches devraient être plus connectés les uns les autres que les reposoirs éloignés entre eux. Aussi, la connexion entre les reposoirs principaux est attendue plus forte que la connexion entre les reposoirs pincipaux etreposoirs secondaires, et secondaires entre eux.
 
 ::::: {#fig-network layout-ncol="2"}
 ::: {#fig-network_plot_50}
@@ -1428,7 +1419,7 @@ Le taux de variation et l'équitabilité en reposoirs secondaires ne varient ni 
 knitr::include_graphics("network_plot_50.png", dpi = 100)
 ```
 
-Réseau de connexions entre tous les principaux reposoirs (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (blanc → bleu → rose) et la largeur. Toutes les connexions sont représentées. RNNMO en vert.
+Réseau de connexions entre tous les Reposoirs principaux (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (blanc → bleu → rose) et la largeur. Toutes les connexions sont représentées. RNNMO en vert.
 :::
 
 ::: {#fig-network_plot_all_quantile}
@@ -1439,21 +1430,23 @@ Réseau de connexions entre tous les principaux reposoirs (zones noires). Flèch
 knitr::include_graphics("network_plot_all_quantile.png", dpi = 100)
 ```
 
-Réseau de connexions entre les principaux reposoirs (zones noires) et secondaires (zones grises) uniquement pour les 5% de plus fortes connexions. Flèches : intensité croissante des connexions indiquée par la couleur (bleu → rose) et la largeur. RNNMO en vert.
+Réseau de connexions entre les Reposoirs principaux (zones noires) et secondaires (zones grises) uniquement pour les 5% de plus fortes connexions. Flèches : intensité croissante des connexions indiquée par la couleur (bleu → rose) et la largeur. RNNMO en vert.
 :::
 :::::
 
-Les reposoirs sont fortement connectés entre deux grâce à une forte dynamiques spatio-temporelles des coulis centdré dans l'ensemble de la zones d'étude.
+Les reposoirs sont fortement connectés entre deux grâce à une forte dynamiques spatio-temporelles des coulis cendrés dans l'ensemble de la zones d'étude.
 
-Les reposoirs principaux sont bien reliés entre eux, XXX
+Comme attendu, les reposoirs principaux *Travers* et *Grand cimetière* qui sont les plus proches présentent la plus forte connexion. Aussi, les trois reposoirs pincipaux de la côté continentale, les reposoirs *Grand cimetière*, celui de l'*Ile de Nôle* et le reposoirs entre ces deux-ci sont bien connectés. Il est intéressant de noter que les reposoirs *Grand cimetière* et *Arceau*, sur l'île d'Oléron est également fortement connectés (@fig-network_plot_50).
+
+Comme attendu également, un nombre très important de connexions de faible intensité ont été detectées entre les reposoirs principaux et secondaires, et secondaires entres eux. Néanmoins, deux pincipales connexions s'ajoute à celles détectées pour les reposoirs principaux : celles entre le reposoir du *Grand cimetière* et le reposoir des *Palles*, ainsi que celui entre le reposoir du *Grand cimetière* et celui de la *ferme aquacole* (@fig-network_plot_all_quantile).
 
 # Evitement des chasseurs et des zones de chasses
 
-## Chasse à pied
+## Chasse à pied {#section-chasse_pied}
 
-La chasse à pied est autorisée sur le Domaine Public Maritime (DPM) aux alentours de la RNNMO. Il est attendu que la présence de chasseurs et le bruit des tirs dérangent les courlis cendrés et que leur comportements de repos et d'alimentation en soient perturbés.
+La chasse à pied est autorisée sur le domaine public maritime aux alentours de la RNNMO. Il est attendu que la présence de chasseurs et le bruit des tirs dérangent les courlis cendrés et que leur comportements de repos et d'alimentation en soient perturbés.
 
-Dates d'ouverture et de fermeture de la chasse sur le DPM :
+Dates d'ouverture et de fermeture de la chasse sur le domaine public maritime :
 
 ```{r}
 #| echo: false
@@ -1512,7 +1505,7 @@ Zones d'alimentation en fonction hors et pendant la saison de chasse : zones d'a
 
 Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé, mais aucun effet n'a pu être détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
-## Chasse à la tonne
+## Chasse à la tonne {#section-chasse_tonne} 
 
 ::: {#fig-tonne}
 ```{r, out.height = "500px", out.width= "700px"}
@@ -1525,7 +1518,7 @@ Tonnes de chasse
 
 La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne), est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs (principalement les anatidés).
 
-En charente-maritime, la période de chasse s'ouverture généralement fin aout, jusqu'à la fin février. Le tir est autorisé de nuit et jusqu'à 1h après le levé du soeil et 1h avant le coucher du soleil du le domaine public maritime. Le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime et fluvial. La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes.
+En charente-maritime, la période de chasse s'ouverture généralement fin aout, jusqu'à la fin février. Le tir est autorisé de nuit et jusqu'à 1h après le levé du soleil et 1h avant le coucher du soleil sur le domaine public maritime. Le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime et fluvial. La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes.
 
 Il est attendu que les tonnes de chasse constitues un dérangement non négligeable pour les oiseaux d'eaux, même lorsqu'il ne sont pas chassé, comme c'est le cas pour le Courlis cendré.
 
@@ -1572,7 +1565,7 @@ tags$iframe(
 )
 ```
 
-Zone critique de dérangement du courlis cendré : zones d'alimentation en bleu (principaux reposoirs en bleu foncé ; reposoirs secondaires en bleu clair) ; reposoirs en rose (pricipaux reposoirs en rose foncé ; reposoirs secondaires en rose clair) ; zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zone secondaires d'alimentation et de repos en jaune ; tonnes de chasse, points noirs ; tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges ; tonnes de chasse dans les zones secondaire sd'alimentation et:ou de repos en points jaunes ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Zone critique de dérangement du courlis cendré : zones d'alimentation en bleu (Reposoirs principaux en bleu foncé ; reposoirs secondaires en bleu clair) ; reposoirs en rose (pricipaux reposoirs en rose foncé ; reposoirs secondaires en rose clair) ; zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zone secondaires d'alimentation et de repos en jaune ; tonnes de chasse, points noirs ; tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges ; tonnes de chasse dans les zones secondaire sd'alimentation et:ou de repos en points jaunes ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
 :::
 
 # Pour aller plus loin
@@ -1605,9 +1598,9 @@ Le détail des méthodes est disponible dans le document [Readme]{style="font-fa
 
 **Assignation des comportements**
 
-Chaque point GPS enregistré est associé à un comportement de repos (voir section "Les principaux reposoirs" [ici](#section-reposoir)), de recherche alimentaire (voir section "Les principales zones d'alimentation" [ici](#section-alimentation)) ou autre.
+Chaque point GPS enregistré est associé à un comportement de repos (voir section "Les Reposoirs principaux" [ici](#section-reposoir)), de recherche alimentaire (voir section "Les principales zones d'alimentation" [ici](#section-alimentation)) ou autre.
 
-*Comportements de repos* : Un point GPS est considéré comme correspondant à du repos si : i) vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR"), ii) entre 2h avant et 2h après une marée haute, iii) au-dessus du plus bas niveau d'eau de marée base (au-dessus du *Lowest Astronomical Tide* en anglais) et iv) en dehors de la zone intertidal (déterminée par Litto3D data).
+*Comportements de repos* : Un point GPS est considéré comme correspondant à du repos si : i) vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR"), ii) entre 2h avant et 2h après une marée haute, iii) au-dessus du plus bas niveau d'eau de marée basse (au-dessus du *Lowest Astronomical Tide* en anglais) et iv) en dehors de la zone intertidal (déterminée par Litto3D data).
 
 *Comportement de recherche alimentaire* : Un point GPS est considéré comme correspondant à de la recherche alimentaire si : i) vitesse de déplacement inférieure ou égale à 0.5 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR"), et ii) entre 2h avant et 2h après une marée basse.
 
@@ -1635,19 +1628,13 @@ Basée sur l'expertise de terrain, les marées hautes ont été classées en fon
 
 Voir section "Utilisation de l'espace lors d'évènements de vent extrêmes" [ici](#section-ECE)".
 
-Les évènements climatiques extrêmes (ECE) sont définis comme les évènements d'intensité supérieure au quartile 95 % des distributions du paramètres météorologiques sur la période 2015-2024. Trois variables ECE ont été calculé à partir de la vitesse et l'orientation moyenne journalière du vent : i) les évènements de vent fort : 5% des vitesses de vent les plus fortes, ii) les évènements de vent de Nord-Ouest : orientation du vent entre 270 et 360 degrés, et iii) les évènements de vent fort de Nord-Ouest : 5% des vitesses de vent les plus fortes et d'orientation entre 270 et 360 degrés. Un ECE est un jour où l'une de ces 3 variables a été détectées. L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec ECE détectés sont comparés aux jours j-7 avant les évènements extrêmes et considéré comme jour de référence.
+Les évènements climatiques extrêmes (ECE) sont définis comme les évènements d'intensité supérieure au quartile 95 % des distributions du paramètres météorologiques sur la période 2015-2024. Trois variables ECE ont été calculé à partir de la vitesse et l'orientation moyenne journalière du vent : i) les évènements de vents forts : 5% des vitesses de vent les plus fortes, ii) les évènements de vents de Nord-Ouest : orientation du vent entre 270 et 360 degrés, et iii) les évènements de vents forts de Nord-Ouest : 5% des vitesses de vent les plus fortes et d'orientation entre 270 et 360 degrés. Un ECE est un jour où l'une de ces 3 variables a été détectées. L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec ECE détectés sont comparés aux jours j-7 avant les évènements extrêmes et considéré comme jour de référence.
 
 Les données météorologiques utilisées sont issues du site [météostat](https://meteostat.net/fr/place/fr/la-rochelle?s=07315&t=2025-03-13/2025-03-20) pour la station météorologique de La Rochelle.
 
-**Distance entre les reposoirs et d'alimentations**
-
-Voir section "Distance entre les reposoirs et les zones d'alimentation" [ici](#section-distance)".
-
-La distance entre la zones d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marée.
-
 **Distribution d'utilisation de l'espace**
 
-Voir sections "Les principaux reposoirs" [ici](#section-reposoir) et "Les principales zones d'alimentation" [ici](#section-alimentation).
+Voir sections "Les Reposoirs principaux" [ici](#section-reposoir) et "Les principales zones d'alimentation" [ici](#section-alimentation).
 
 *Méthodes des kernels* : L'ensemble des analyses spatiales sont basées sur des estimations de fonction de "distribution d'utilisation" de l'espace (<em>Utilization Distribution</em>, ou "UD" en anglais) qui décrivent la probabilité de présence d’un individu (ou d'un groupe d'individu) dans l'espace en fonction des points GPS qui lui ont été associés [Worton (1989)](#Worton1989). Les distributions d'utilisation permettent donc d’estimer les zones les plus fréquemment utilisées par un animal. Elles ont été effectuées par la méthode dite du noyau (*kernel* en anglais) et avec les fonctions [kernelUD]{style="font-family: 'Courier';"} et [getverticeshr]{style="font-family: 'Courier';"} du package "adehabitatHR" [Calenge (2006)](#calenge2006).
 
@@ -1666,6 +1653,38 @@ Voir section "Domaines vitaux" [ici](#section-HR).
 Les domaines vitaux (<em>home range</em> en anglais) ont été estimés par les mêmes méthodes de distributions spatial d'utilisation et de kernels comme précédemment, mais pour chaque individu séparément sur l’ensemble des points GPS, tous comportements confondus.
 
 Deux enveloppes de domaine vital sont calculées pour chaque individu : i) le domaine vital étendu qui correspond à l’enveloppe englobant 95 % de la surface d’utilisation, ii) le noyau d’activité correspondant aux 50 % de surface d'utilisation, représente les zones de fréquentation la plus intense.
+
+**Distance entre les reposoirs et d'alimentations**
+
+Voir section "Distance entre les reposoirs et les zones d'alimentation" [ici](#section-distance)".
+
+La distance entre la zones d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marée.
+
+**Fidélité aux reposoirs**
+
+Voir section "Fidélité aux reposoirs" [ici](#section-fidélité)
+
+XXX
+
+**Connectivité entre les reposoirs** 
+
+Voir section "Connectivité entre les reposoirs" [ici](#section-connectivité)
+
+La connectivité entre les reposoirs est calculée en fonction des transitions dans le temps entre les zones de repos pour chaque individu. À chaque itération, un échantillon aléatoire de 300 points GPS est sélectionné pour chaque individu afin de limiter les biais dus à la surreprésentation de certains individus très suivis. Chaque point est associé au reposoir correspondant, et les données sont triées par individu et par ordre chronologique. On identifie ensuite, pour chaque individu, le reposoir visité juste après le reposoir courant, ce qui permet de construire des paires de transitions temporelles. Le nombre de fois qu’une transition d’un reposoir vers un autre se produit est compté, puis ces valeurs sont normalisées entre 0 et 1 pour rendre les poids comparables. Enfin, en répétant cette opération plusieurs fois (ici 30 itérations), on calcule la moyenne des poids de transition, ce qui donne une mesure robuste de la connectivité temporelle entre chaque paire de reposoirs. La connectivité moyenne a été calculée entre les reposoirs principaux, et entre les reposoirs principaux et secondaires.
+
+**Evitement des chasseurs et des zones de chasses** 
+
+Chasse à pied :
+
+Voir section "Chasse à pied" [ici](#section-chasse_pied)
+
+XXX
+
+Chasse à la tonne :
+
+Voir section "Chasse à la tonne" [ici](#section-chasse_tonne)
+
+XXX
 
 ## Données et codes
 
@@ -1699,7 +1718,8 @@ Pour toutes questions, contacter Adrien Chaigne `adrien.chaigne@lpo.fr` ou Suzan
 
 # Annexes
 
-## Tableau des correspondance bague et ID
+## Annexe 1 : Tableau des correspondance bague et ID {#Annexe1}
+
 ```{r}
 #| include: false
 table_correspondance <- read.csv("table_correspondance.csv", row.names = NULL)
@@ -1721,4 +1741,198 @@ table_correspondance %>%
   )
 ```
 
+## Annexe 2 : Historique du statut de chasse du Courlis cendré {#Annexe2}
+
+| Saisons de chasse	| Statut de chasse | Références |
+|-------------------|------------------|------------|
+| Avant 2008/2009 | Chassable du 1er dimanche d'août sur le domaine public maritime et les zones humides côtières, du 21 août en zones humides intérieures et de l'ouverture générale (septembre) dans les autres secteurs au 31 janvier sur tout le territoire. | [DEVN0816509A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000020128976), [DEVN0650169A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000000456442) |
+| De 2008/2009 à 2011/2012 | Moratoire total adpoté pour 5 ans (abrogé un an avant le 3 févr. 2012) | [DEVN0816513A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000019278007) |
+| 2012/2013 |	Moratoire partiel : chassable sur le domaine public maritime et les zones humides côtières jusqu'au 13 février. Moratoire à l'intérieur des terres.	| [DEVL1203355A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000025282726) |
+| De 2013/2014 à 2018/2019 | Moratoire partiel (renouvellement arrêtés 5 ans + 1 an) : Chassable sur le domaine public maritime et les zones humides côtières jusqu'au 31 janvier. Moratoire à l'intérieur des terres. |	[DEVL1312194A](https://www.legifrance.gouv.fr/jo_pdf.do?numJO=0&dateJO=20130730&numTexte=28&pageDebut=…), [TREL1820083A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000037277395) |
+| Depuis saison 2019/2020	| Moratoire total. Tentative réouverture chasse saison 2019/2020 (sous quotas 6000 ind.) mais cassé en référé devant le Conseil d'Etat fin août. Soit chassable 1 mois en théorie sur la saison 2019/2020 avant mortatoire complet. Et depuis renouvellement annuel par arrêté. | [ECLI:FR:CEORD:2019:433434.20190826](https://www.legifrance.gouv.fr/ceta/id/CETATEXT000039112464), [ECLI:FR:CECHR:2020:433432.20201217](https://www.legifrance.gouv.fr/ceta/id/CETATEXT000042701999) |
+
+## Annexe 3 : Nombre de point GPS analysés par individu {#Annexe3}
+
+```{r}
+#| include: false
+nb_point_by_ind <- read.csv("nb_point_by_ind.csv", row.names = NULL)
+```
+
+```{r echo=FALSE, message=FALSE}
+nb_point_by_ind <- nb_point_by_ind %>%
+  rename(`nombre de pointGPS analysés` = nb_point)
+
+# Click table
+nb_point_by_ind %>%
+  datatable(
+    extensions = "Buttons",
+    options = list(
+      dom = "Blfrtip",
+      buttons = c("copy", "csv", "excel", "pdf", "print"),
+      lengthMenu = list(
+        c(10, 25, 50, -1),
+        c(10, 25, 50, "All")
+      )
+    )
+  )
+```
+
+## Annexe 4 : Résultats complets des modèles statistiques présentés
+
+Les modélisations statistiques ont toutes fait l'oject de sélection de modèles par AIC et de vérification des diagnostiques à postériori.
+
+Seuls les résultats des meilleures modèles retenues pour chaque problématique sont présentés ici.
+
+### Domaines vitaux {#Annexe4domaine}
+
+Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
+
+Modèle : aire ~ domaine vital principal ou étendu + sexe
+
+
+|             | coefficient | erreur standard |t value  |            p-value |   
+|-------------|-------------|-----------------|---------|--------------------|
+| intercept   | 1.81        |  0.16           | 11.44   | < $10^{-15}$ ***   |
+| level       | 0.05        |   0.00          | 25.38   | < $10^{-15}$ ***   |
+| sexe(mâle)  | -0.25       |   0.09          | -2.78   |  0.01 **           |
+
+Paramètre de dispersion pour la fonction Gamma : 0.29
+
+Déviance nulle : 203.152  sur 145  degrés de liberté
+
+Déviance résiduelle :  42.439  sur 143  degrés de liberté
+
+AIC : 1765.3
+
+Nombre d'itérations du score de Fisher : 5
+
+### Distance entre les reposoirs et les zones d'alimentation  {#Annexe4distance}
+
+**Distance "zone d'alimentation" - "reposoirs" en fonction du sexe, de l'âge et de la hauteur d'eau**
+
+Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
+
+Modèle : distance moyenne "zone d'alimentation" & "reposoirs" ~ sexe * âge + hauteur d'eau * âge
+
+|                                                    | coefficient | erreur standard | t value |            p-value     | 
+|----------------------------------------------------|-------------|-----------------|---------|------------------------|
+| **intercept**                                      | 8.21        |    0.10         |  81.31  | < $10^{-15}$ ***       |
+| sexe(mâle)                                         | -0.16       |    0.11         |  -1.52  |              0.13      |    
+| âge(juvénile)                                      | -0.09       |    0.29         |  -0.30  |              0.78      |    
+| hauteur d'eau(marée de vives eaux)                 | -0.09       |    0.09         |  -0.94  |              0.35      |    
+| **sexe(mâle):âge(juvénile)**                       |  1.08       |    0.42         |   2.57  |              0.01 *    |  
+| *âge(juvénile):hauteau d'eau(marée de vives eaux)* | -0.81       |    0.42         |  -1.94  |              0.05 .    |  
+
+Paramètre de dispersion pour la fonction Gamma : 0.26
+
+Déviance nulle : 37.642 sur 134 degrés de liberté
+
+Déviance résiduelle : 34.634 sur 129  degrés de liberté
+
+AIC : 2360.1
+
+Nombre d'itérations du score de Fisher : 5
+
+<br/>
+
+**Distance "zone d'alimentation" - "reposoirs" en fonction du sex et de la période de chasse**
+
+Jeu de données resteint au moins de janvier (période de chasse ouverte) et février (période chasse fermée)
+
+Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
+
+Modèle : distance moyenne "zone d'alimentation" & "reposoirs" ~ sexe + période de chasse
+
+|                                                  | coefficient | erreur standard | t value |            p-value       | 
+|--------------------------------------------------|-------------|-----------------|---------|--------------------------|   
+| **intercept**                                    | 8.32        | 0.14            | 61.88   | < $10^{-16}$ ***         |
+| **sexe(mâle)**                                   | -0.98       | 0.17            | -5.96   | < $10^{-7}$ ***          |
+| **période de chasse(fermée)**                    | 0.48        | 0.13            |  3.67   | < $10^{-2}$ **           |
+
+Paramètre de dispersion pour la fonction Gamma : 0.09
+
+Déviance nulle : 5.7820  sur 25 degrés de liberté
+
+Déviance résiduelle : 2.3253  sur 23  degrés de liberté
+
+AIC : 419.21
+
+Nombre d'itérations du score de Fisher : 4
+
+### Fidélité aux reposoirs {#Annexe4fidelité}
+
+**Equitabilité**
+
+Méthode : Modèle linéaire mixte par REML. T-tests par la méthode Satterthwaite (*lmerModLmerTest*)
+
+Modèle : equitabilite ~ sexe * hauteau d'eau + âge * hauteau d'eau + (1 | individu)
+
+REML critère de convergence : 47.5
+
+Résidus standardisés : 
+
+|    min |       1Q |   median |       3Q |      max | 
+|--------|----------|----------|----------|----------|
+| -2.98  | -0.50    | -0.09    |  0.46    |  2.93    | 
+
+Effets aléatoires :
+
+| groupe   |   variance  | ecart-type |
+|----------|-------------|------------|
+| individu | 0.08        |  0.29      | 
+| residu   | 0.04        |  0.19      |  
+
+Nombre d'observation : 314, groupes :  individu, 72
+
+Fixed effects :
+
+|                                             | coefficient | erreur standard    | df     | t value     |   p-value           | 
+|---------------------------------------------|-------------|--------------------|--------|-------------|---------------------|                                
+| **intercept**                               | 0.49        | 0.06               | 86.09  | 7.65        | < $10^{-10}$ ***    |
+| sexe(mâle)                                  | -0.12       | 0.08               | 87.09  | -1.55       | 0.13                |
+| **hauteau d'eau(submersion)**               | -0.34       | 0.05               | 243.37 | -6.44       | < $10^{-9}$ ***     |
+| hauteau d'eau(vives eaux)                   | -0.06       | 0.04               | 239.82 | -1.54       | 0.13                |
+| **âge(juvénile)**                           | -0.30       | 0.09               | 88.90  | -3.26       | < $10^{-2}$ **      |
+| **sexe(mâle):hauteau d'eau(submersion)**    |  0.29       | 0.07               | 245.42 |  4.15       | < $10^{-4}$ ***     |
+| *sexe(mâle):hauteau d'eau(vives eaux)*      |  0.10       | 0.05               | 242.70 |  1.88       | 0.06 .              |
+| **hauteau d'eau(submersion):âge(juvénile)** |  0.31       | 0.08               | 245.12 |  3.64       | < $10^{-3}$ ***     |
+| **hauteau d'eau(vives eaux):âge(juvénile)** |  0.18       | 0.06               | 242.87 |  3.03       | < $10^{-2}$ **      |
+
+<br/>
+
+**Taux de variation**
+
+Méthode : Modèle linéaire mixte par REML. T-tests par la méthode Satterthwaite (*lmerModLmerTest*)
+
+Modèle : variation_taux ~ age + (1 | individu)
+
+REML critère de convergence : -498.2
+
+Résidus standardisés : 
+
+|    min |       1Q |   mediane |       3Q |      max | 
+|--------|----------|-----------|----------|----------|
+| -3.03  | -0.37    | -0.16     |  0.35    |  4.12    | 
+
+Effets aléatoires :
+
+| groupe   |   variance  | ecart-type |
+|----------|-------------|------------|
+| individu | 0.01        |  0.11      | 
+| residu   | 0.01        |  0.90      |  
+
+Nombre d'observation : 314, groupes :  individu, 72
+
+Fixed effects:
+
+|                                            | coefficient | erreur standard    | df     | t value      |   p-value            | 
+|--------------------------------------------|-------------|--------------------|--------|--------------|----------------------|                                
+|**intercept**                               | 0.13        | 0.02               | 69.57  | 85.27        | < $10^{-1}$ ***      |
+|age(juvénile)                               | -0.07       | 0.03               | 70.08  | -2.23        | 0.03 *               |
+
+
+<br/>
+
+<br/>
+  
 <a href="#top">↑ retour en haut</a>
