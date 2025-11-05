@@ -64,46 +64,25 @@ knitr::include_graphics("courlis-cendre_AA_new-scaled_MIGRATLANE.jpg", dpi = 100
 
 # Points clés
 
-## Contexte et objectifs
+**Contexte et objectifs** : La Réserve de Moëze-Oléron (6 800 ha, Charente-Maritime), gérée par la LPO, accueille jusqu’à 100 000 oiseaux d’eau migrateurs par an. Depuis 2015, un suivi GPS du Courlis cendré (Numenius arquata), espèce « Vulnérable », est mené avec le CNRS et le MNHN pour comprendre son utilisation de l’espace et orienter la gestion durable des zones côtières.
 
-La Réserve Naturelle Nationale de Moëze-Oléron (6 800 ha, Charente-Maritime), gérée par la LPO depuis 1985, est un site clé pour les oiseaux d’eau migrateurs du littoral atlantique. Elle relie zones humides, estrans et marais conchylicoles, et accueille chaque année jusqu’à 100 000 oiseaux.
+**Principaux résultats** : 
 
-Depuis 2015, la LPO, en partenariat avec le CNRS et le Muséum national d’Histoire naturelle, suit par GPS plusieurs dizaines de Courlis cendrés (Numenius arquata) afin de comprendre comment cette espèce utilise l’espace dans et autour de la réserve. Ce limicole emblématique, classé « Vulnérable » en France et « Quasi menacé » à l’échelle mondiale, sert ici d’espèce parapluie pour orienter la gestion des zones côtières fréquentées par de nombreuses autres espèces d’oiseaux d’eau.
+- Utilisation de l’espace et domaines vitaux : Chaque individu exploite en moyenne un domaine vital de 640 m², avec une forte variabilité saisonnière. Les oiseaux passent environ 52 % de leur temps dans la réserve, confirmant son rôle essentiel. Les femelles, plus grandes et dotées d’un bec plus long, utilisent des espaces significativement plus vastes que les mâles. 
 
-## Principaux résultats
+- Reposoirs et zones d’alimentation : Les courlis alternent entre reposoirs à marée haute et zones d’alimentationà marée basse, situés dans et hors réserve, surtout dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation se concentrent sur les vasières côtières et les prés salés, tandus que les reposoirs se situent en zones plus abritées. Les jeunes individus parcourent de plus grandes distances entre repos et alimentation, signe d'un comportement plus exploratoire ou une moindre efficacité dans la recherche alimentaire. La fidélité spatiale est marquée : les courlis reviennent régulièrement sur les mêmes reposoirs et zones d’alimentation, notamment au Travers, au Grand Cimetière et à Arceau.
 
-**Utilisation de l’espace et domaines vitaux** : Chaque individu exploite un domaine vital moyen d’environ 640 m². En moyenne, les courlis passent plus de la moitié de leur temps (52%) à l’intérieur de la réserve. Les femelles utilisent des territoires significativement plus vastes que les mâles, probablement en lien avec leur plus grande taille et leur bec plus long.
+- Effets des marées, saisons et conditions météorologiques : Les marées hautes et les submersions limitent les zones disponibles et renforcent la fidélité aux reposoirs connus. Les vents forts n’affectent pas significativement les comportements de repos mais peuvent modifier temporairement les zones d'alimentation. Aucune influence majeure des événements climatiques extrêmes n’a été détectée à ce jour.
 
-**Reposoirs et zones d’alimentation** : Les oiseaux alternent entre reposoirs (marée haute) et zones d’alimentation (marée basse). Les reposoirs et zones d'alimentation se situent à la fois à l’intérieur et en dehors de la réserve, notamment dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation principales sont concentrées sur les vasières côtières et les prés salés, alors que les reposoirs se situent souvent en zones plus abritées. Les courlis juvéniles parcourent des distances plus longues entre les sites de repos et d’alimentation, traduisant un comportement plus exploratoire ou une moindre efficacité.
+- Effets de la chasse : Les données suggèrent un risque de dérangement dans les zones non protégées. Aucun effet direct à court terme n’a été mesuré, mais la superposition entre zones de chasse et zones d’alimentation clés révèle un potentiel de perturbation élevé.
 
-**Effets des marées et conditions météorologiques** : Les marées hautes et les submersions limitent les zones disponibles, renforçant la fidélité des oiseaux à certains reposoirs connus. Les événements de vents forts n’affectent pas significativement les comportements de repos, mais peuvent modifier temporairement les zones d'alimentation.
+- Zones critiques identifiées : Plusieurs zones fonctionnelles majeures se situent hors du périmètre de la RNNMO, notamment dans le bassin de Marennes et les marais de Brouage. Ces espaces, essentiels à la connectivité écologique du courlis cendré et des autres espèces d'oiseaux d'eau très potentiellement, constituent des priorités de gestion concertée.
 
-**Effets de la chasse à pied et chasse à la tonne** : Les données suggèrent un impact potentiel de dérangement, notamment autour des zones non protégées. Bien qu’aucun effet direct n’ait été mesuré sur les déplacements à court terme, la superposition entre zones de chasse et zones d’alimentation clées montre un risque de perturbation élevé. 
+**Enseignements clés pour la gestion** : La réserve joue un rôle central, mais ne couvre qu’une partie du territoire fonctionnel de l’espèce. La préservation du Courlis nécessite une gestion concertée à l’échelle du bassin des Pertuis charentais, incluant zones de chasse, marais et sites ostréicoles. Recommandations : créer des zones tampons autour des reposoirs sensibles, renforcer le dialogue avec les usagers (chasseurs, ostréiculteurs, pêcheurs), et poursuivre le suivi GPS à long terme.
 
-**Zones critiques identifiées** : Les analyses spatiales révèlent plusieurs zones critiques de repos et d’alimentation situées hors du périmètre actuel de la réserve, souvent à proximité immédiate de zones de chasse. Ces secteurs représentent des priorités de conservation et de gestion concertée.
+**Perspectives et besoins identifiés** : Étendre le suivi à d’autres sites de capture. Améliorer les données sur la pression de chasse et la fréquentation humaine. Évaluer les effets combinés du climat, de la submersion et des usages littoraux. Consolider les partenariats territoriaux pour protéger les zones clés hors réserve.
 
-## Enseignements clés pour la gestion
-
-La RNN de Moëze-Oléron joue un rôle central mais partiel : de nombreuses zones fonctionnelles importantes se trouvent à l’extérieur de ses limites. 
-
-La conservation du Courlis cendré et des autres limicoles dépend d’une gestion coordonnée à l’échelle du bassin des Pertuis charentais.
-
-Il est nécessaire de mieux intégrer les activités humaines (chasse, pêche, tourisme) dans les stratégies de préservation, via : des zones tampons autour des reposoirs sensibles, un dialogue renforcé avec les usagers (chasseurs, ostréiculteurs, pêcheurs à pied), et le suivi à long terme des déplacements via GPS.
-
-## Perspectives et besoins identifiés
-
-Élargir le suivi GPS à d’autres sites de capture pour limiter les biais et mieux représenter l’ensemble de la population.
-
-Améliorer les données de pression de chasse et de fréquentation humaine (comptage de chasseurs, tirs, pêche à pied).
-
-Analyser les effets cumulés du changement climatique, de la submersion marine et des usages littoraux.
-
-Renforcer les partenariats territoriaux pour protéger les zones fonctionnelles au-delà de la réserve.
-
-## Partenaires et financement
-
-Étude conduite par la LPO France et la RNN de Moëze-Oléron, en collaboration avec le CNRS (LIENSs) et le MNHN (CESCO).
-Projet financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional, FEDER) dans le cadre du programme « Adaptation des limicoles aux changements climatiques ».
+**Partenaires et financement** : Étude conduite par la LPO France et la RNN de Moëze-Oléron, en collaboration avec le CNRS (LIENSs) et le MNHN (CESCO). Projet financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional, FEDER) dans le cadre du programme « Adaptation des limicoles aux changements climatiques ».
 
 ::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
 <img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
@@ -152,7 +131,7 @@ L’objectif général de cette étude est de mieux comprendre l’utilisation d
 
 # Le courlis cendré
 
-**Morphologie** : Le Courlis cendré (<em>Numenius arquata</em>, @fig-20170226) est le plus grand limicole d’Europe, avec une longueur de 55–65 cm pour une envergure de 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L'espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.
+**Morphologie** : Le Courlis cendré (@fig-20170226) est le plus grand limicole d’Europe, avec une longueur de 55–65 cm pour une envergure de 90–110 cm et un poids de 600 à 1200 g. Son plumage est brun-gris tacheté. Son long bec courbé vers le bas mesure jusqu’à 19 cm. L'espèce présente un dimorphisme sexuel relativement marqué, avec les femelles en moyenne plus grandes et avec un bec plus long que les mâles.
 
 **Comportement social** : C'est une espèce discrète, au comportement prudent. Il est territorial en période de reproduction, et grégaire hors reproduction.
 
@@ -457,7 +436,7 @@ Aucune différence marquée entre les reposoirs juvéniles et adultes n'a pu êt
 
 Les reposoirs ont été estimés pour chaque catégorie de sexe : femelle et mâle (@fig-UDMap_kud_roosting_sex_A, @fig-UDMap_kud_roosting_sex_B et @fig-UDMap_kud_roosting_sex_C).
 
-Les courlis cendrés mâles étant plus petits que les femelles, ils pourraient être exclut des reposoirs les plus favorables à l'issu d'une compétition pour l'espace avec les femelles.
+Les courlis cendrés mâles étant plus petits que les femelles, ils pourraient être exclus des reposoirs les plus favorables à l'issu d'une compétition pour l'espace avec les femelles.
 
 :::::: panel-tabset
 
@@ -516,7 +495,7 @@ Aucune différence marquée entre les reposoirs femelles et mâles n'a pu être 
 
 Les reposoirs ont été estimés pour chaque mois de l'année (@fig-UDMap_kud_roosting_month_label_A, @fig-UDMap_kud_roosting_month_label_B et @fig-UDMap_kud_roosting_month_label_C).
 
-Le site naturel est fortement impacté par les variations saisonnières environnementales (ex : météorologie, pêche, chasse, tourisme, cycles des marées à fort coefficient, etc), les reposoirs les plus favorables pourraient donc changer de façon cyclique au cours de l'année.
+Le site fonctionnel de la RNNMO est fortement impacté par les variations saisonnières environnementales (ex : météorologie, pêche, chasse, tourisme, cycles des marées à fort coefficient, etc), les reposoirs les plus favorables pourraient donc changer de façon cyclique au cours de l'année.
 
 ### Reposoirs en fonction du mois de l'année
 
@@ -638,7 +617,28 @@ Les reposoirs ont été estimés pour trois catégories de hauteur d'eau : maré
 
 Il est attendu que les reposoirs se déplacent vers les zones en altitude (c'est-à-dire, plus loin de l'estran, plus à l'Est de la côte) en fonction de l'augmentation de la hauteur d'eau.
 
-Les dates détectées de submersion de la lagune sont : XXX
+Les dates détectées de submersion de la lagune sont :
+
+```{r}
+#| include: false
+date_sub <- read.csv(paste0(data_generated_path, paste0("date_sub", ".csv")), row.names = NULL)
+```
+
+```{r echo=FALSE, message=FALSE}
+# Click table
+date_sub %>%
+  datatable(
+    extensions = "Buttons",
+    options = list(
+      dom = "Blfrtip",
+      buttons = c("copy", "csv", "excel", "pdf", "print"),
+      lengthMenu = list(
+        c(10, 25, 50, -1),
+        c(10, 25, 50, "All")
+      )
+    )
+  )
+```
 
 :::::: panel-tabset
 #### Zone A
@@ -874,7 +874,7 @@ Zones d'alimentation en fonction du sexe en zone A : Zone d'alimentation femelle
 :::
 ::::::
 
-Comme attendu, les zones d'alimentation varié en fonction des sexe des individus. Les zones d'alimentation femelles occupent une surface de XXX km², alors que celle des mâles occupent une surface de XXX km². Les mâles semblent resteints à des zones d'eau moins profondes, probablement dû à leur bec en moyenne plus court que celui des femelles.
+Comme attendu, les zones d'alimentation semble varier (bien que légèrement) en fonction des sexes des individus. En zone A, les mâles semblent resteints à des zones d'eaux moins profondes (plus proche de la côte) pour leurs zones secondaires et surtout principales d'alimentation, probablement dû à leur bec en moyenne plus court que celui des femelles.
 
 ## Zones d'alimentation en fonction du calendrier
 
@@ -1354,10 +1354,10 @@ Les distances moyennes entre les zones d'alimentation et de repos ont été mod�
 knitr::include_graphics("pred_all_plot.png", dpi = 100)
 ```
 
-Prédictions (± se XX a vérif) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adulte et juvénile sur l'axe des abscisses) et de la hauteur d'eau (marée de morte eaux à gauche, marées de vives eaux à droite).
+Prédictions (± IC 95 %) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adulte et juvénile sur l'axe des abscisses) et de la hauteur d'eau (marée de morte eaux à gauche, marées de vives eaux à droite).
 :::
 
-Les juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les adultes (XX p-value : XX, [Annexe 4](#Annexe4distance)). Il n'y a pas de différence significative entre les mâles et les femelles. La distance entre les zones d'alimentation et de repos s'allonge lors de la période de chasse (et plus de variabilité ?) (XX p-value : XX, [Annexe 4](#Annexe4distance)).
+Les mâles juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les femelles adultes (coef : 1.08 ± 0.42, p-value : 0.01), [Annexe 4](#Annexe4distance)). Néanmoins, les juvéniles parcourent des distance marginalement plus courtes que les adultes lors des marées de vives eaux (coef : -0.81 ± 0.42, p-value : 0.05), [Annexe 4](#Annexe4distance)). Il pourrait aussi y avoir une plus grande variabilité dans les distances parcourues par les juvéniles, sourtout lors des marées de mortes eaux que par les adultes.   
 
 Les distances moyennes individuelles entre les zones d'alimentation et de repos ont également été modélisées statistiquement en fonction de la période chasse.
 
@@ -1369,8 +1369,10 @@ Les distances moyennes individuelles entre les zones d'alimentation et de repos 
 knitr::include_graphics("pred_all_chasse_plot.png", dpi = 100)
 ```
 
-Prédictions (± se XX a vérif) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction de la période de chasse (période de chasse ouverte ou fermée sur l'axe des abscissess) et du sexe (femelles en rose, mâles en bleu).
+Prédictions (± IC 95 %) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction de la période de chasse (période de chasse ouverte ou fermée sur l'axe des abscissess) et du sexe (femelles en rose, mâles en bleu). Il semble également qu'il existe plus grande variabilité dans les distances parcourues hors de la période de chasse.   
 :::
+
+Lorsque la période de chasse est prise en compte dans la sélection de modèle, les effets sont simplifiés mais plus marqués. les mâles parcours des distances moins importantes que celles des femelles (coef : -0.98 ± 0.17, p-value : < 0.01, [Annexe 4](#Annexe4distance)); La distance entre les zones d'alimentation et de repos s'allonge lors de la période de chasse (coef : 0.48 ± 0.13, p-value : < 0.01, [Annexe 4](#Annexe4distance)). 
 
 # Fidélité aux reposoirs {#section-fidelité}
 
@@ -1393,10 +1395,10 @@ Les variations d'équitabilité et de taux de variation en reposoirs ont été m
 knitr::include_graphics("pred_50_95_plot.png", dpi = 100)
 ```
 
-Prédictions (± se XX a vérif) des meilleurs modèles décrivant les variations a)  d'équitabilité en reposoirs principaux en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adultes en forme pleine, juvéniles en forme vide) et de la hauteur d'eau (sur l'aaxe des abscisses) ; b) du taux de variation en reposoirs principaux en fonction de l'âge.
+Prédictions (± IC 95 %) des meilleurs modèles décrivant les variations a)  d'équitabilité en reposoirs principaux en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adultes en forme pleine, juvéniles en forme vide) et de la hauteur d'eau (sur l'aaxe des abscisses) ; b) du taux de variation en reposoirs principaux en fonction de l'âge.
 :::
 
-L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value : 0.002), mais cette différence diminue significativement lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value : 0.003) et des submersions (coef : 0.31 ± 0.08, p-value : 0.0003). Enfin, l'équitabilité en reposoirs semble plus forte chez les mâles lors des marées de vives eaux (XXXXX p-value : ) et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value : 0.00005) en comparaison aux femelles (@fig-pred_50_95_plot a). Voir [Annexe 4](#Annexe4) pour les détails des résultats.
+L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value < 0.01), mais cette différence diminue significativement lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value < 0.01) et des submersions (coef : 0.31 ± 0.08, p-value < 0.01). Enfin, l'équitabilité en reposoirs semble plus forte chez les mâles lors des marées de vives eaux (coef : 0.10 ± 0.05, p-value : 0.06) et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value < 0.01) en comparaison aux femelles (@fig-pred_50_95_plot a). Voir [Annexe 4](#Annexe4) pour les détails des résultats.
 
 Le taux de variation en reposoirs principaux est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 ± 0.031, p-value = 0.03, @fig-pred_50_95_plot b, [Annexe 4](#Annexe4)).
 
@@ -1406,9 +1408,7 @@ Le taux de variation et l'équitabilité en reposoirs secondaires ne varient ni 
 
 # Connectivité entre les reposoirs {#section-connectivité}
 
-!!!!!!!!!!!!!!!!!!!!!!!!!
-
-Les reposoirs sont connectés entre eux par les déplacements consécutifs effectués par les courlis cendrés à chaque cycle de marée. Il est attendu que les reposoirs les plus utilisés par la population de courlis étudiées soient plus connectées aux autres reposoirs que les reposoirs utilisées de façon plus sporadique. Egalement, les reposoirs les plus proches devraient être plus connectés les uns les autres que les reposoirs éloignés entre eux. Aussi, la connexion entre les reposoirs principaux est attendue plus forte que la connexion entre les reposoirs pincipaux etreposoirs secondaires, et secondaires entre eux.
+Les reposoirs sont connectés entre eux par les déplacements consécutifs effectués par les courlis cendrés à chaque cycle de marée. Il est attendu que les reposoirs les plus utilisés soient plus connectées aux autres reposoirs que les reposoirs utilisées de façon plus sporadique. Egalement, les reposoirs les plus proches devraient être plus connectés les uns aux autres que les reposoirs éloignés. Aussi, la connexion entre les reposoirs principaux est attendue plus forte que la connexion entre les reposoirs principaux et secondaires, et les reposoirs secondaires entre eux.
 
 ::::: {#fig-network layout-ncol="2"}
 ::: {#fig-network_plot_50}
@@ -1419,7 +1419,7 @@ Les reposoirs sont connectés entre eux par les déplacements consécutifs effec
 knitr::include_graphics("network_plot_50.png", dpi = 100)
 ```
 
-Réseau de connexions entre tous les Reposoirs principaux (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (blanc → bleu → rose) et la largeur. Toutes les connexions sont représentées. RNNMO en vert.
+Réseau de connexions entre tous les reposoirs principaux (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (blanc → bleu → rose) et la largeur des flèches. Toutes les connexions sont représentées. RNNMO en vert.
 :::
 
 ::: {#fig-network_plot_all_quantile}
@@ -1430,13 +1430,13 @@ Réseau de connexions entre tous les Reposoirs principaux (zones noires). Flèch
 knitr::include_graphics("network_plot_all_quantile.png", dpi = 100)
 ```
 
-Réseau de connexions entre les Reposoirs principaux (zones noires) et secondaires (zones grises) uniquement pour les 5% de plus fortes connexions. Flèches : intensité croissante des connexions indiquée par la couleur (bleu → rose) et la largeur. RNNMO en vert.
+Réseau de connexions entre les reposoirs principaux (zones noires) et secondaires (zones grises) uniquement pour les 50% des plus fortes connexions. Flèches : intensité croissante des connexions indiquée par la couleur (bleu → rose) et la largeur des flèches. RNNMO en vert.
 :::
 :::::
 
-Les reposoirs sont fortement connectés entre deux grâce à une forte dynamiques spatio-temporelles des coulis cendrés dans l'ensemble de la zones d'étude.
+Les reposoirs sont fortement connectés entre deux grâce à une forte dynamiques spatio-temporelles des coulis cendrés dans l'ensemble de la zone d'étude.
 
-Comme attendu, les reposoirs principaux *Travers* et *Grand cimetière* qui sont les plus proches présentent la plus forte connexion. Aussi, les trois reposoirs pincipaux de la côté continentale, les reposoirs *Grand cimetière*, celui de l'*Ile de Nôle* et le reposoirs entre ces deux-ci sont bien connectés. Il est intéressant de noter que les reposoirs *Grand cimetière* et *Arceau*, sur l'île d'Oléron est également fortement connectés (@fig-network_plot_50).
+Comme attendu, les reposoirs principaux *Travers* et *Grand cimetière*, qui sont les plus proches, présentent la plus forte connexion. Aussi, les trois reposoirs principaux de la côté continentale, les reposoirs *Grand cimetière*, celui de l'*Ile de Nôle* et le reposoir entre ces deux derniers sont bien connectés. Il est intéressant de noter que les reposoirs *Grand cimetière* et *Arceau* sur l'île d'Oléron sont également fortement connectés (@fig-network_plot_50).
 
 Comme attendu également, un nombre très important de connexions de faible intensité ont été detectées entre les reposoirs principaux et secondaires, et secondaires entres eux. Néanmoins, deux pincipales connexions s'ajoute à celles détectées pour les reposoirs principaux : celles entre le reposoir du *Grand cimetière* et le reposoir des *Palles*, ainsi que celui entre le reposoir du *Grand cimetière* et celui de la *ferme aquacole* (@fig-network_plot_all_quantile).
 
@@ -1444,9 +1444,11 @@ Comme attendu également, un nombre très important de connexions de faible inte
 
 ## Chasse à pied {#section-chasse_pied}
 
-La chasse à pied est autorisée sur le domaine public maritime aux alentours de la RNNMO. Il est attendu que la présence de chasseurs et le bruit des tirs dérangent les courlis cendrés et que leur comportements de repos et d'alimentation en soient perturbés.
+La chasse à pied est autorisée sur le domaine public maritime aux alentours de la RNNMO, mais interdite au sein de la RNNMO. Il est attendu que la présence de chasseurs et le bruit des tirs dérangent les courlis cendrés et que leur comportements de repos et d'alimentation en soient perturbés.
 
-Dates d'ouverture et de fermeture de la chasse sur le domaine public maritime :
+Dates d'ouverture et de fermeture des saison de chasse sur le domaine public maritime depuis 2018 :
+
+XXX !!! il manque les infos et données entre 2016/2017 et 2017/2018 !!!
 
 ```{r}
 #| echo: false
@@ -1473,35 +1475,37 @@ datatable(
 )
 ```
 
-Afin de limiter les effets de variation saisonnière sur l'utilisation de l'espace, le jeu de données est restreint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (période de chasse), 15 premier jour après la fermeture de la chasse (hors période de chasse).
+Afin de limiter les effets de potentielles variations saisonnières de l'utilisation de l'espace par le courlis cendré, le jeu de données est restreint autour de la fermeture de la chasse : 15 dernier jour de la période de chasse (période de chasse), 15 premier jour après la fermeture de la chasse (hors période de chasse).
 
-::: {#fig-UDMap_kud_roosting_in_out_saison_B}
+::: {#fig-UDMap_kud_roosting_in_out_saison_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_roosting_période_B.html",
+  src = "UDMap_kud_roosting_période_A.html",
   width = "100%",
   height = "600px"
 )
 ```
 
-Reposoirs en fonction de la période de chasse : reposoirs hors saison de chasse en rose ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales reposoirs en rose foncé ; reposoirs secondaires en rose clair), reposoirs pendant la période de chasse en gris (pricipaux reposoirs en gris foncé ; reposoirs secondaires en gris clair) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Reposoirs en fonction de la période de chasse : reposoirs hors saison de chasse en jaune, reposoirs pendant la période de chasse en rose. Principaux reposoirs en opaque, reposoirs secondaires en transparence. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
-::: {#fig-UDMap_kud_foraging_in_out_saison_B}
+::: {#fig-UDMap_kud_foraging_in_out_saison_A}
 ```{r}
 #| echo: false
 
 tags$iframe(
-  src = "UDMap_kud_foraging_période_B.html",
+  src = "UDMap_kud_foraging_période_A.html",
   width = "100%",
   height = "600px"
 )
 ```
 
-Zones d'alimentation en fonction hors et pendant la saison de chasse : zones d'alimentation hors saison de chasse en bleu ("*out*", 15 premiers jours après fermeture de la chasse ; pricipales zones d'alimentation en bleu foncé ; zones d'alimentation secondaires en bleu clair), zones d'alimentation pendant la période de chasse en gris (pricipaux reposoirs en gris foncé ; zones d'alimentation secondaires en gris clair) ; limite de la RNNMO en vert ; site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction de la période de chasse : zones d'alimentation hors saison de chasse en jaune, zones d'alimentation pendant la période de chasse en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
+
+Comme attendu, la période de chasse pourrait avoir une effet sur les zones d'alimentation ou les reposoirs. Les courlis cendrée pourrait explorer des zones plus éloignées de la RNNMO après la fermeture de la chasse. Néanmoins, le nombre resteint d'individus (n = 9) avec des points GPS enregistrés sur ces périodes ne permet pas une puissance statistique suffisante pour conclure. 
 
 Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé, mais aucun effet n'a pu être détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
@@ -1520,7 +1524,7 @@ La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/
 
 En charente-maritime, la période de chasse s'ouverture généralement fin aout, jusqu'à la fin février. Le tir est autorisé de nuit et jusqu'à 1h après le levé du soleil et 1h avant le coucher du soleil sur le domaine public maritime. Le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du domaine public maritime et fluvial. La tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes.
 
-Il est attendu que les tonnes de chasse constitues un dérangement non négligeable pour les oiseaux d'eaux, même lorsqu'il ne sont pas chassé, comme c'est le cas pour le Courlis cendré.
+Il est attendu que les tonnes de chasse constitues un dérangement non négligeable pour les oiseaux d'eau, même lorsqu'il ne sont pas chassé, comme c'est le cas pour le Courlis cendré.
 
 ::: {#fig-map_tonnes_superposition}
 ```{r}
@@ -1658,13 +1662,37 @@ Deux enveloppes de domaine vital sont calculées pour chaque individu : i) le do
 
 Voir section "Distance entre les reposoirs et les zones d'alimentation" [ici](#section-distance)".
 
-La distance entre la zones d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marée.
+La distance entre la zone d'alimentation et de repos a été estimé comme la distance entre les paires de centres géographiques individuels des zones d'alimentation et de repos à chaque cycle de marée.
 
 **Fidélité aux reposoirs**
 
 Voir section "Fidélité aux reposoirs" [ici](#section-fidélité)
 
-XXX
+L’équitabilité en reposoirs mesure la répartition relative des fréquences des reposoirs utilisés par un individu \(x\). Elle mesure à quel point la diversité observée (HHH) se rapproche de la diversité maximale possible (log⁡(R)\log(R)log(R)) pour un nombre donné de catégories.
+
+On définit d’abord la richesse en reposoirs, comme la somme des différents reposoirs utilisés par un individu :
+
+$$
+\text{Richesse} = |\{x_1, x_2, \ldots, x_n\}| = \text{Nombre de valeurs uniques dans } x
+$$
+
+et l'indice de Shannon en reposoirs d'un individu, comme suit :
+
+$$
+Shannon = -\sum_{i=1}^{R} p_i \log(p_i), \quad \text{où } p_i = \frac{n_i}{n}
+$$
+
+L’équitabilité est alors calculée par :
+
+$$
+\text{Équitabilité} = \frac{Shannon}{\log(Richesse)}
+$$
+
+Le taux de variation mesure la fréquence de changement de reposoirs au cours du temps, et a été calculé comme suit :
+
+$$
+\text{Taux de variation} = \frac{\sum_{i=1}^{n-1} \mathbf{1}\big(x_{i+1} \neq x_i\big)}{n - 1}
+$$
 
 **Connectivité entre les reposoirs** 
 
@@ -1672,27 +1700,23 @@ Voir section "Connectivité entre les reposoirs" [ici](#section-connectivité)
 
 La connectivité entre les reposoirs est calculée en fonction des transitions dans le temps entre les zones de repos pour chaque individu. À chaque itération, un échantillon aléatoire de 300 points GPS est sélectionné pour chaque individu afin de limiter les biais dus à la surreprésentation de certains individus très suivis. Chaque point est associé au reposoir correspondant, et les données sont triées par individu et par ordre chronologique. On identifie ensuite, pour chaque individu, le reposoir visité juste après le reposoir courant, ce qui permet de construire des paires de transitions temporelles. Le nombre de fois qu’une transition d’un reposoir vers un autre se produit est compté, puis ces valeurs sont normalisées entre 0 et 1 pour rendre les poids comparables. Enfin, en répétant cette opération plusieurs fois (ici 30 itérations), on calcule la moyenne des poids de transition, ce qui donne une mesure robuste de la connectivité temporelle entre chaque paire de reposoirs. La connectivité moyenne a été calculée entre les reposoirs principaux, et entre les reposoirs principaux et secondaires.
 
-**Evitement des chasseurs et des zones de chasses** 
-
-Chasse à pied :
+**Période de chasse à pied** 
 
 Voir section "Chasse à pied" [ici](#section-chasse_pied)
 
-XXX
+L'effet de la chasse à pied a été estimé en définissant deux période distinctes : une periode de chasse fermée, et une periode de chasse ouverte.
 
-Chasse à la tonne :
+Chaque année, la période de chasse *fermée* correspond aux 15 premiers jours après la fermeture de la chasse, et la période de chasse *ouverte* correspond aux 15 derniers jours de la saison de chasse.
 
-Voir section "Chasse à la tonne" [ici](#section-chasse_tonne)
-
-XXX
+L'effet de la période chasse à pied ouverte ou fermées sur les zones d'alimentation et reposoirs ont ensuite été calculé comme les précedentes analyses spatiales par estimations de fonction de "distribution d'utilisation" de l'espace via la méthode des kernels pour les deux périodes distinctes. 
 
 ## Données et codes
 
 Toutes les analyses, graphiques et cartes ont été réalisés avec le logiciel R version 4.4.2.
 
-Les données utilisées sont disponibles ici : XXX
+Les données utilisées sont disponibles ici : [XXX](en lien sera mis ici pour pourvoir accéder au fichiers de données)
 
-L'ensemble des codes produits sont disponibles ici XXX : [Github](https://github.com/SuzanneBonamour)
+L'ensemble des codes produits sont disponibles ici : [Github](https://github.com/SuzanneBonamour/CourlisServeur)
 
 # Bibliographie
 
