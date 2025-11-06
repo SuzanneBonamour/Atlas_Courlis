@@ -1714,7 +1714,7 @@ L'effet de la période chasse à pied ouverte ou fermées sur les zones d'alimen
 
 Toutes les analyses, graphiques et cartes ont été réalisés avec le logiciel R version 4.4.2.
 
-Les données utilisées sont disponibles ici : [XXX](en lien sera mis ici pour pourvoir accéder au fichiers de données)
+Les données utilisées sont disponibles ici : [OneDrive - Data Courlis](https://lpo061-my.sharepoint.com/:f:/g/personal/suzanne_bonamour_lpo_fr/ElxVxSN3HYRDlEK_d8EuSdIBk8tY371af4W07u8yRs3SwA?e=gAQKVP)
 
 L'ensemble des codes produits sont disponibles ici : [Github](https://github.com/SuzanneBonamour/CourlisServeur)
 
@@ -1928,7 +1928,7 @@ Fixed effects :
 
 Méthode : Modèle linéaire mixte par REML. T-tests par la méthode Satterthwaite (*lmerModLmerTest*)
 
-Modèle : variation_taux ~ age + (1 | individu)
+Modèle : variation_taux ~ âge + (1 | individu)
 
 REML critère de convergence : -498.2
 
@@ -1952,7 +1952,7 @@ Fixed effects:
 |                                            | coefficient | erreur standard    | df     | t value      |   p-value            | 
 |--------------------------------------------|-------------|--------------------|--------|--------------|----------------------|                                
 |**intercept**                               | 0.13        | 0.02               | 69.57  | 85.27        | < $10^{-1}$ ***      |
-|age(juvénile)                               | -0.07       | 0.03               | 70.08  | -2.23        | 0.03 *               |
+|âge(juvénile)                               | -0.07       | 0.03               | 70.08  | -2.23        | 0.03 *               |
 
 
 <br/>
