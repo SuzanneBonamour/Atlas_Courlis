@@ -605,7 +605,7 @@ Aucune différence marquée entre les reposoirs de diurnes et nocturnes n'a pu �
 
 ### Reposoirs en fonction de la hauteur d'eau {#section-hauteurEau1}
 
-Les reposoirs ont été estimés pour trois catégories de hauteur d'eau : marées hautes de mortes eaux, marées hautes de vives eaux, périodes de submersion de la lagune (@fig-UDMap_kud_roosting_tide_strengh_A, @fig-UDMap_kud_roosting_tide_strengh_B, @fig-UDMap_kud_roosting_tide_strengh_C).
+Les reposoirs ont été estimés pour trois catégories de hauteur d'eau : marées hautes de mortes eaux, marées hautes de vives eaux, périodes de submersion de la lagune (@fig-UDMap_kud_roosting_tide_strength_A, @fig-UDMap_kud_roosting_tide_strength_B, @fig-UDMap_kud_roosting_tide_strength_C).
 
 Il est attendu que les reposoirs se déplacent vers les zones en altitude (c'est-à-dire, plus loin de l'estran, plus à l'Est de la côte) en fonction de l'augmentation de la hauteur d'eau.
 
