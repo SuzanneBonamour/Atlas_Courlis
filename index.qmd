@@ -66,17 +66,17 @@ knitr::include_graphics("courlis-cendre_AA_new-scaled_MIGRATLANE.jpg", dpi = 100
 
 **Contexte et objectifs** : La Réserve de Moëze-Oléron (6 800 ha, Charente-Maritime), gérée par la LPO, accueille jusqu’à 100 000 oiseaux d’eau migrateurs par an. Depuis 2015, un suivi GPS du Courlis cendré (Numenius arquata), espèce « Vulnérable », est mené avec le CNRS et le MNHN pour comprendre son utilisation de l’espace et orienter la gestion durable des zones côtières.
 
-**Principaux résultats** : 
+**Principaux résultats** :
 
-- Utilisation de l’espace et domaines vitaux : Chaque individu exploite en moyenne un domaine vital de 640 m², avec une forte variabilité saisonnière. Les oiseaux passent environ 52 % de leur temps dans la réserve, confirmant son rôle essentiel. Les femelles, plus grandes et dotées d’un bec plus long, utilisent des espaces significativement plus vastes que les mâles. 
+-   Utilisation de l’espace et domaines vitaux : Chaque individu exploite en moyenne un domaine vital de 640 m², avec une forte variabilité saisonnière. Les oiseaux passent environ 52 % de leur temps dans la réserve, confirmant son rôle essentiel. Les femelles, plus grandes et dotées d’un bec plus long, utilisent des espaces significativement plus vastes que les mâles.
 
-- Reposoirs et zones d’alimentation : Les courlis alternent entre reposoirs à marée haute et zones d’alimentationà marée basse, situés dans et hors réserve, surtout dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation se concentrent sur les vasières côtières et les prés salés, tandus que les reposoirs se situent en zones plus abritées. Les jeunes individus parcourent de plus grandes distances entre repos et alimentation, signe d'un comportement plus exploratoire ou une moindre efficacité dans la recherche alimentaire. La fidélité spatiale est marquée : les courlis reviennent régulièrement sur les mêmes reposoirs et zones d’alimentation, notamment au Travers, au Grand Cimetière et à Arceau.
+-   Reposoirs et zones d’alimentation : Les courlis alternent entre reposoirs à marée haute et zones d’alimentationà marée basse, situés dans et hors réserve, surtout dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation se concentrent sur les vasières côtières et les prés salés, tandus que les reposoirs se situent en zones plus abritées. Les jeunes individus parcourent de plus grandes distances entre repos et alimentation, signe d'un comportement plus exploratoire ou une moindre efficacité dans la recherche alimentaire. La fidélité spatiale est marquée : les courlis reviennent régulièrement sur les mêmes reposoirs et zones d’alimentation, notamment au Travers, au Grand Cimetière et à Arceau.
 
-- Effets des marées, saisons et conditions météorologiques : Les marées hautes et les submersions limitent les zones disponibles et renforcent la fidélité aux reposoirs connus. Les vents forts n’affectent pas significativement les comportements de repos mais peuvent modifier temporairement les zones d'alimentation. Aucune influence majeure des événements climatiques extrêmes n’a été détectée à ce jour.
+-   Effets des marées, saisons et conditions météorologiques : Les marées hautes et les submersions limitent les zones disponibles et renforcent la fidélité aux reposoirs connus. Les vents forts n’affectent pas significativement les comportements de repos mais peuvent modifier temporairement les zones d'alimentation. Aucune influence majeure des événements climatiques extrêmes n’a été détectée à ce jour.
 
-- Effets de la chasse : Les données suggèrent un risque de dérangement dans les zones non protégées. Aucun effet direct à court terme n’a été mesuré, mais la superposition entre zones de chasse et zones d’alimentation clés révèle un potentiel de perturbation élevé.
+-   Effets de la chasse : Les données suggèrent un risque de dérangement dans les zones non protégées. Aucun effet direct à court terme n’a été mesuré, mais la superposition entre zones de chasse et zones d’alimentation clés révèle un potentiel de perturbation élevé.
 
-- Zones critiques identifiées : Plusieurs zones fonctionnelles majeures se situent hors du périmètre de la RNNMO, notamment dans le bassin de Marennes et les marais de Brouage. Ces espaces, essentiels à la connectivité écologique du courlis cendré et des autres espèces d'oiseaux d'eau très potentiellement, constituent des priorités de gestion concertée.
+-   Zones critiques identifiées : Plusieurs zones fonctionnelles majeures se situent hors du périmètre de la RNNMO, notamment dans le bassin de Marennes et les marais de Brouage. Ces espaces, essentiels à la connectivité écologique du courlis cendré et des autres espèces d'oiseaux d'eau très potentiellement, constituent des priorités de gestion concertée.
 
 **Enseignements clés pour la gestion** : La réserve joue un rôle central, mais ne couvre qu’une partie du territoire fonctionnel de l’espèce. La préservation du Courlis nécessite une gestion concertée à l’échelle du bassin des Pertuis charentais, incluant zones de chasse, marais et sites ostréicoles. Recommandations : créer des zones tampons autour des reposoirs sensibles, renforcer le dialogue avec les usagers (chasseurs, ostréiculteurs, pêcheurs), et poursuivre le suivi GPS à long terme.
 
@@ -109,7 +109,7 @@ Située au cœur du bassin fonctionnel des pertuis charentais, la réserve relie
 knitr::include_graphics("Cartes flux migrateurs France RN (2).jpg", dpi = 100)
 ```
 
-La RNNMO est un maillon important sur le route de migration de nombreuses espèces de limicoles (©RNNMO - LPO).
+La RNNMO est un maillon important sur la route de migration de nombreuses espèces de limicoles (©RNNMO - LPO).
 :::
 
 Depuis 2015, la Ligue pour la Protection des Oiseaux (LPO-France), en collaboration avec les laboratoires LIttoral ENvironnement et Sociétés (LIENSs, UMR 7266, CNRS - Université de La Rochelle) et le Centre d'Écologie et des Sciences de la Conservation (CESCO, UMR 7204, CNRS - MNHN - Sorbonne Université), bague et équipe de GPS des Courlis cendrés au sein de la RNNMO (@fig-baguage, [Annexe 1](#Annexe1)).
@@ -208,8 +208,7 @@ Chaque courlis cendré a un domaine vital, avec un noyau d’activité représen
 
 Les domaines vitaux princpaux et étendus de chaque individu ont été représentés sur quatre carte différentes (regroupant 20 individus chacunes) pour faciliter leur visualisation (@fig-UDMap_HR_gp_1, @fig-UDMap_HR_gp_2, @fig-UDMap_HR_gp_3, @fig-UDMap_HR_gp_4).
 
-:::::: panel-tabset
-
+::::::: panel-tabset
 ## Domaines vitaux, groupe 1
 
 ::: {#fig-UDMap_HR_gp_1}
@@ -273,8 +272,7 @@ tags$iframe(
 
 Domaines vitaux, groupe d'individus 4 : Domaine vital pour chaque individu (couleurs), domaine vital principal en opaque, domaine vitaux étendu en transparence.
 :::
-
-::::::
+:::::::
 
 Les individus ont des domaines vitaux principaux d'une surface moyenne 67 (± 33) m² et des domaines vitaux étendu d'une surface moyenne de 644 (± 389) m²(@fig-area_hr_plot).
 
@@ -320,7 +318,6 @@ Comportement de repos (*roosting* en anglais, ©Laurie Campbell)
 Les reposoirs sont découpées en deux zones, une zone au vertice à 50%, nommée par la suite "reposoirs principaux" ; et une zone au vertice à 95%, nommée par la suite "reposoirs secondaires" (@fig-UDMap_kud_roosting_A, @fig-UDMap_kud_roosting_B et @fig-UDMap_kud_roosting_C).
 
 :::::: panel-tabset
-
 ## Zone A
 
 ::: {#fig-UDMap_kud_roosting_A}
@@ -368,7 +365,7 @@ tags$iframe(
 
 Reposoirs en zone C : Reposoirs principaux en rose opaque, reposoirs secondaires en rose transparent. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
-:::::: 
+::::::
 
 ## Reposoirs en fonction des caractéristiques biologiques des individus
 
@@ -379,7 +376,6 @@ Les reposoirs ont été estimés pour chaque catégorie d'âge : adulte et juvé
 Les courlis cendrés juvéniles étant moins expériementés que les adultes, il est attendu qu'ils utilisent des reposoirs différents et moins favorables que ceux utilisés par les adultes.
 
 :::::: panel-tabset
-
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_age_A}
@@ -427,7 +423,6 @@ tags$iframe(
 
 Reposoirs en fonction de l'âge en zone C : Reposoirs adulte en rose, reposoirs juvénile en jaune. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
-
 ::::::
 
 Aucune différence marquée entre les reposoirs juvéniles et adultes n'a pu être détectée.
@@ -439,7 +434,6 @@ Les reposoirs ont été estimés pour chaque catégorie de sexe : femelle et mâ
 Les courlis cendrés mâles étant plus petits que les femelles, ils pourraient être exclus des reposoirs les plus favorables à l'issu d'une compétition pour l'espace avec les femelles.
 
 :::::: panel-tabset
-
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_sex_A}
@@ -500,7 +494,6 @@ Le site fonctionnel de la RNNMO est fortement impacté par les variations saison
 ### Reposoirs en fonction du mois de l'année
 
 :::::: panel-tabset
-
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_month_label_A}
@@ -559,7 +552,6 @@ Les reposoirs ont été estimés durant les périodes de jour et de nuit (@fig-U
 Il est attendu que les courlis utilisent des zones de repos plus restreintes la nuit que le jour.
 
 :::::: panel-tabset
-
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_timeofday_A}
@@ -708,7 +700,6 @@ Comportement de recherche d'alimentaire (*foraging* en anglais, ©Pierre-Marie E
 Les zones d'alimentation sont découpées en deux zones, une zone au vertice à 50%, nommée par la suite "zone d'alimentation principale" ; et une zone au vertice à 95%, nommée par la suite "zone d'alimentation secondaire" (@fig-UDMap_kud_foraging_A, @fig-UDMap_kud_foraging_B et @fig-UDMap_kud_foraging_C).
 
 :::::: panel-tabset
-
 ## Zone A
 
 ::: {#fig-UDMap_kud_foraging_A}
@@ -992,7 +983,7 @@ Zones d'alimentation en fonction du jour et de la nuit en zone C : Zones d'alime
 :::
 ::::::
 
-Aucune différence marquée dans les zones d'alimentation diurnes et noctures n'a été détectée. 
+Aucune différence marquée dans les zones d'alimentation diurnes et noctures n'a été détectée.
 
 # Utilisation de l'espace lors d'évènement climatiques extrêmes {#section-ECE}
 
@@ -1000,12 +991,11 @@ Les évènements climatiques extrêmes sont en augmentation, en fréquence comme
 
 L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes (considérés comme jours de référence). Les évènements extrêmes sont ici distingués en trois catégories : i) les évènements de vents forts (vitesse de vent supérieure aux 95 % des enregistrements sur la période 2016-2025), ii) les évènements de vents de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux.
 
-## Reposoirs lors d'évènements climatiques extrêmes 
+## Reposoirs lors d'évènements climatiques extrêmes
 
 ### Reposoirs lors de vents forts
 
 :::::: panel-tabset
-
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_vent_A}
@@ -1055,12 +1045,11 @@ Reposoirs en fonction d'évènements de vents forts en zone C : Reposoirs lors d
 :::
 ::::::
 
-Aucune effet marqué des vents forts sur les reposoirs n'a été détecté. 
+Aucune effet marqué des vents forts sur les reposoirs n'a été détecté.
 
 ### Reposoirs lors de vents de Nord-Ouest
 
 :::::: panel-tabset
-
 #### Zone A
 
 ::: {#fig-UDMap_kud_roosting_orientation_A}
@@ -1110,7 +1099,7 @@ Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone C : Reposoir
 :::
 ::::::
 
-Aucune effet marqué des vents de Nord-Ouest sur les reposoirs n'a été détecté. 
+Aucune effet marqué des vents de Nord-Ouest sur les reposoirs n'a été détecté.
 
 ### Reposoirs lors de vents forts de Nord-Ouest
 
@@ -1164,14 +1153,13 @@ Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone C : Re
 :::
 ::::::
 
-Aucune effet marqué des vents forts de Nord-Ouest sur les reposoirs n'a été détecté. 
+Aucune effet marqué des vents forts de Nord-Ouest sur les reposoirs n'a été détecté.
 
-## Zones d'alimentations lors d'évènements climatiques extrêmes 
+## Zones d'alimentations lors d'évènements climatiques extrêmes
 
 ### Zones d'alimentation lors de vents forts
 
 :::::: panel-tabset
-
 #### Zone A
 
 ::: {#fig-UDMap_kud_foraging_vent_A}
@@ -1221,7 +1209,7 @@ Zones d'alimentation en fonction d'évènements de vents forts en zone C : Zones
 :::
 ::::::
 
-Aucune effet marqué des vents forts sur les zones d'alimentation n'a été détecté. 
+Aucune effet marqué des vents forts sur les zones d'alimentation n'a été détecté.
 
 ### Zone d'alimentation lors de vents de Nord-Ouest
 
@@ -1275,7 +1263,7 @@ Zones d'alimentation en fonction d'évènements de vents de Nord-Ouest en zone C
 :::
 ::::::
 
-Aucune effet marqué des vents d'Ouest sur les zones d'alimentation n'a été détecté. 
+Aucune effet marqué des vents d'Ouest sur les zones d'alimentation n'a été détecté.
 
 ### Zone d'alimentation lors de vents forts de Nord-Ouest
 
@@ -1329,7 +1317,7 @@ Zones d'alimentation en fonction d'évènements de vents forts de Nord-Ouest en 
 :::
 ::::::
 
-Aucune effet marqué des vents forts de Nord-Ouest sur les zones d'alimentation n'a été détecté. 
+Aucune effet marqué des vents forts de Nord-Ouest sur les zones d'alimentation n'a été détecté.
 
 # Distance entre les reposoirs et les zones d'alimentation {#section-distance}
 
@@ -1357,7 +1345,7 @@ knitr::include_graphics("pred_all_plot.png", dpi = 100)
 Prédictions (± IC 95 %) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adulte et juvénile sur l'axe des abscisses) et de la hauteur d'eau (marée de morte eaux à gauche, marées de vives eaux à droite).
 :::
 
-Les mâles juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les femelles adultes (coef : 1.08 ± 0.42, p-value : 0.01), [Annexe 4](#Annexe4distance)). Néanmoins, les juvéniles parcourent des distance marginalement plus courtes que les adultes lors des marées de vives eaux (coef : -0.81 ± 0.42, p-value : 0.05), [Annexe 4](#Annexe4distance)). Il pourrait aussi y avoir une plus grande variabilité dans les distances parcourues par les juvéniles, sourtout lors des marées de mortes eaux que par les adultes.   
+Les mâles juvéniles parcourent significativement plus de distance entre leurs zones d'alimentation et de repos que les femelles adultes (coef : 1.08 ± 0.42, p-value : 0.01), [Annexe 4](#Annexe4distance)). Néanmoins, les juvéniles parcourent des distance marginalement plus courtes que les adultes lors des marées de vives eaux (coef : -0.81 ± 0.42, p-value : 0.05), [Annexe 4](#Annexe4distance)). Il pourrait aussi y avoir une plus grande variabilité dans les distances parcourues par les juvéniles, sourtout lors des marées de mortes eaux que par les adultes.
 
 Les distances moyennes individuelles entre les zones d'alimentation et de repos ont également été modélisées statistiquement en fonction de la période chasse.
 
@@ -1369,10 +1357,10 @@ Les distances moyennes individuelles entre les zones d'alimentation et de repos 
 knitr::include_graphics("pred_all_chasse_plot.png", dpi = 100)
 ```
 
-Prédictions (± IC 95 %) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction de la période de chasse (période de chasse ouverte ou fermée sur l'axe des abscissess) et du sexe (femelles en rose, mâles en bleu). Il semble également qu'il existe plus grande variabilité dans les distances parcourues hors de la période de chasse.   
+Prédictions (± IC 95 %) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction de la période de chasse (période de chasse ouverte ou fermée sur l'axe des abscissess) et du sexe (femelles en rose, mâles en bleu). Il semble également qu'il existe plus grande variabilité dans les distances parcourues hors de la période de chasse.
 :::
 
-Lorsque la période de chasse est prise en compte dans la sélection de modèle, les effets sont simplifiés mais plus marqués. les mâles parcours des distances moins importantes que celles des femelles (coef : -0.98 ± 0.17, p-value : < 0.01, [Annexe 4](#Annexe4distance)); La distance entre les zones d'alimentation et de repos s'allonge lors de la période de chasse (coef : 0.48 ± 0.13, p-value : < 0.01, [Annexe 4](#Annexe4distance)). 
+Lorsque la période de chasse est prise en compte dans la sélection de modèle, les effets sont simplifiés mais plus marqués. les mâles parcours des distances moins importantes que celles des femelles (coef : -0.98 ± 0.17, p-value : \< 0.01, [Annexe 4](#Annexe4distance)); La distance entre les zones d'alimentation et de repos s'allonge lors de la période de chasse (coef : 0.48 ± 0.13, p-value : \< 0.01, [Annexe 4](#Annexe4distance)).
 
 # Fidélité aux reposoirs {#section-fidelité}
 
@@ -1385,7 +1373,7 @@ La fidélité aux reposoirs a été estimée par deux mesures complémentaires p
 
 Ces mesures de variabilité *versus* fidélité aux reposoirs ont été calculées pour les reposoirs principaux et les reposoirs secondaires.
 
-Les variations d'équitabilité et de taux de variation en reposoirs ont été modélisées statistiquement par modèles linéaires mixtes (effet aléatoire individu) généralisés (Gaussien, Gamma ou transformation log) en fonction de l'âge, du sexe, de la hauteur d'eau  et leurs interactions deux à deux (effets fixes). Les résultats des meilleurs modèles sélectionnés par AIC sont présentés ici.
+Les variations d'équitabilité et de taux de variation en reposoirs ont été modélisées statistiquement par modèles linéaires mixtes (effet aléatoire individu) généralisés (Gaussien, Gamma ou transformation log) en fonction de l'âge, du sexe, de la hauteur d'eau et leurs interactions deux à deux (effets fixes). Les résultats des meilleurs modèles sélectionnés par AIC sont présentés ici.
 
 ::: {#fig-pred_50_95_plot}
 ```{r}
@@ -1395,10 +1383,10 @@ Les variations d'équitabilité et de taux de variation en reposoirs ont été m
 knitr::include_graphics("pred_50_95_plot.png", dpi = 100)
 ```
 
-Prédictions (± IC 95 %) des meilleurs modèles décrivant les variations a)  d'équitabilité en reposoirs principaux en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adultes en forme pleine, juvéniles en forme vide) et de la hauteur d'eau (sur l'aaxe des abscisses) ; b) du taux de variation en reposoirs principaux en fonction de l'âge.
+Prédictions (± IC 95 %) des meilleurs modèles décrivant les variations a) d'équitabilité en reposoirs principaux en fonction du sexe (femelles en rose, mâles en bleu), de l'âge (adultes en forme pleine, juvéniles en forme vide) et de la hauteur d'eau (sur l'aaxe des abscisses) ; b) du taux de variation en reposoirs principaux en fonction de l'âge.
 :::
 
-L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value < 0.01), mais cette différence diminue significativement lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value < 0.01) et des submersions (coef : 0.31 ± 0.08, p-value < 0.01). Enfin, l'équitabilité en reposoirs semble plus forte chez les mâles lors des marées de vives eaux (coef : 0.10 ± 0.05, p-value : 0.06) et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value < 0.01) en comparaison aux femelles (@fig-pred_50_95_plot a). Voir [Annexe 4](#Annexe4) pour les détails des résultats.
+L'équitabilité en reposoirs principaux est significativement plus faible lors des submersions en comparaison aux marées de mortes eaux. Elle est aussi significativement plus faible chez les juvéniles en comparaison aux adultes (coef : 0.30 ± 0.09, p-value \< 0.01), mais cette différence diminue significativement lors des marées de vives eaux (coef : 0.18 ± 0.06, p-value \< 0.01) et des submersions (coef : 0.31 ± 0.08, p-value \< 0.01). Enfin, l'équitabilité en reposoirs semble plus forte chez les mâles lors des marées de vives eaux (coef : 0.10 ± 0.05, p-value : 0.06) et significativement plus forte lors des submersions (coef : 0.29 ± 0.07, p-value \< 0.01) en comparaison aux femelles (@fig-pred_50_95_plot a). Voir [Annexe 4](#Annexe4) pour les détails des résultats.
 
 Le taux de variation en reposoirs principaux est significativement plus faible chez les juvéniles en comparaison des adultes (coef : -0.07 ± 0.031, p-value = 0.03, @fig-pred_50_95_plot b, [Annexe 4](#Annexe4)).
 
@@ -1422,15 +1410,15 @@ knitr::include_graphics("network_plot_50.png", dpi = 100)
 Réseau de connexions entre tous les reposoirs principaux (zones noires). Flèches : intensité croissante des connexions indiquée par la couleur (blanc → bleu → rose) et la largeur des flèches. Toutes les connexions sont représentées. RNNMO en vert.
 :::
 
-::: {#fig-network_plot_all_quantile}
+::: {#fig-network_plot_50_95}
 ```{r}
 #| echo: false
 #| out.width: 100%
 #| fig-align: "center"
-knitr::include_graphics("network_plot_all_quantile.png", dpi = 100)
+knitr::include_graphics("network_plot_50_95.png", dpi = 100)
 ```
 
-Réseau de connexions entre les reposoirs principaux (zones noires) et secondaires (zones grises) uniquement pour les 50% des plus fortes connexions. Flèches : intensité croissante des connexions indiquée par la couleur (bleu → rose) et la largeur des flèches. RNNMO en vert.
+Réseau de connexions entre les reposoirs principaux (zones noires) et secondaires (zones grises) uniquement pour les 20% des plus fortes connexions. Flèches : intensité croissante des connexions indiquée par la couleur (bleu → rose) et la largeur des flèches. RNNMO en vert.
 :::
 :::::
 
@@ -1505,11 +1493,11 @@ tags$iframe(
 Zones d'alimentation en fonction de la période de chasse : zones d'alimentation hors saison de chasse en jaune, zones d'alimentation pendant la période de chasse en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
-Comme attendu, la période de chasse pourrait avoir une effet sur les zones d'alimentation ou les reposoirs. Les courlis cendrée pourrait explorer des zones plus éloignées de la RNNMO après la fermeture de la chasse. Néanmoins, le nombre resteint d'individus (n = 9) avec des points GPS enregistrés sur ces périodes ne permet pas une puissance statistique suffisante pour conclure. 
+Comme attendu, la période de chasse pourrait avoir une effet sur les zones d'alimentation ou les reposoirs. Les courlis cendrée pourrait explorer des zones plus éloignées de la RNNMO après la fermeture de la chasse. Néanmoins, le nombre resteint d'individus (n = 9) avec des points GPS enregistrés sur ces périodes ne permet pas une puissance statistique suffisante pour conclure.
 
 Les effets de la présence, ou non, de chasseur sur site, et du nombre de chasseur présents ont également été testé, mais aucun effet n'a pu être détecté sur l'utilisation de l'espace pour le repos et l'alimentation.
 
-## Chasse à la tonne {#section-chasse_tonne} 
+## Chasse à la tonne {#section-chasse_tonne}
 
 ::: {#fig-tonne}
 ```{r, out.height = "500px", out.width= "700px"}
@@ -1668,7 +1656,7 @@ La distance entre la zone d'alimentation et de repos a été estimé comme la di
 
 Voir section "Fidélité aux reposoirs" [ici](#section-fidélité)
 
-L’équitabilité en reposoirs mesure la répartition relative des fréquences des reposoirs utilisés par un individu \(x\). Elle mesure à quel point la diversité observée (HHH) se rapproche de la diversité maximale possible (log⁡(R)\log(R)log(R)) pour un nombre donné de catégories.
+L’équitabilité en reposoirs mesure la répartition relative des fréquences des reposoirs utilisés par un individu (x). Elle mesure à quel point la diversité observée (HHH) se rapproche de la diversité maximale possible (log⁡(R)\log(R)log(R)) pour un nombre donné de catégories.
 
 On définit d’abord la richesse en reposoirs, comme la somme des différents reposoirs utilisés par un individu :
 
@@ -1694,13 +1682,13 @@ $$
 \text{Taux de variation} = \frac{\sum_{i=1}^{n-1} \mathbf{1}\big(x_{i+1} \neq x_i\big)}{n - 1}
 $$
 
-**Connectivité entre les reposoirs** 
+**Connectivité entre les reposoirs**
 
 Voir section "Connectivité entre les reposoirs" [ici](#section-connectivité)
 
 La connectivité entre les reposoirs est calculée en fonction des transitions dans le temps entre les zones de repos pour chaque individu. À chaque itération, un échantillon aléatoire de 300 points GPS est sélectionné pour chaque individu afin de limiter les biais dus à la surreprésentation de certains individus très suivis. Chaque point est associé au reposoir correspondant, et les données sont triées par individu et par ordre chronologique. On identifie ensuite, pour chaque individu, le reposoir visité juste après le reposoir courant, ce qui permet de construire des paires de transitions temporelles. Le nombre de fois qu’une transition d’un reposoir vers un autre se produit est compté, puis ces valeurs sont normalisées entre 0 et 1 pour rendre les poids comparables. Enfin, en répétant cette opération plusieurs fois (ici 30 itérations), on calcule la moyenne des poids de transition, ce qui donne une mesure robuste de la connectivité temporelle entre chaque paire de reposoirs. La connectivité moyenne a été calculée entre les reposoirs principaux, et entre les reposoirs principaux et secondaires.
 
-**Période de chasse à pied** 
+**Période de chasse à pied**
 
 Voir section "Chasse à pied" [ici](#section-chasse_pied)
 
@@ -1708,7 +1696,7 @@ L'effet de la chasse à pied a été estimé en définissant deux période disti
 
 Chaque année, la période de chasse *fermée* correspond aux 15 premiers jours après la fermeture de la chasse, et la période de chasse *ouverte* correspond aux 15 derniers jours de la saison de chasse.
 
-L'effet de la période chasse à pied ouverte ou fermées sur les zones d'alimentation et reposoirs ont ensuite été calculé comme les précedentes analyses spatiales par estimations de fonction de "distribution d'utilisation" de l'espace via la méthode des kernels pour les deux périodes distinctes. 
+L'effet de la période chasse à pied ouverte ou fermées sur les zones d'alimentation et reposoirs ont ensuite été calculé comme les précedentes analyses spatiales par estimations de fonction de "distribution d'utilisation" de l'espace via la méthode des kernels pour les deux périodes distinctes.
 
 ## Données et codes
 
@@ -1724,7 +1712,7 @@ L'ensemble des codes produits sont disponibles ici : [Github](https://github.com
 -   <span id="calenge2006">Calenge, C. (2006) The package “adehabitat” for the R software: a tool for the analysis of space and habitat use by animals. *Ecol. Model.* 197 (3), 516–519.
 -   <span id="Worton1989">Worton, B.J. (1989). Kernel methods for estimating the utilization distribution in home-range studies. *Ecology* 70, 164–168.
 
-# Auteur.ices, affiliations et contributions
+# Auteur.ices et contributions
 
 Cette étude a nécessité la participation d'une moyenne de XXX personnes sur le terrain durant environ XXX nuits par an depuis 2016, anisi qu'une personne à temps plein (35h/semaine) pendant 6 mois pour l'analyse des données et la redaction de ce rapport.
 
@@ -1767,13 +1755,13 @@ table_correspondance %>%
 
 ## Annexe 2 : Historique du statut de chasse du Courlis cendré {#Annexe2}
 
-| Saisons de chasse	| Statut de chasse | Références |
-|-------------------|------------------|------------|
+| Saisons de chasse | Statut de chasse | Références |
+|----------------------------|--------------------------|------------------|
 | Avant 2008/2009 | Chassable du 1er dimanche d'août sur le domaine public maritime et les zones humides côtières, du 21 août en zones humides intérieures et de l'ouverture générale (septembre) dans les autres secteurs au 31 janvier sur tout le territoire. | [DEVN0816509A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000020128976), [DEVN0650169A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000000456442) |
 | De 2008/2009 à 2011/2012 | Moratoire total adpoté pour 5 ans (abrogé un an avant le 3 févr. 2012) | [DEVN0816513A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000019278007) |
-| 2012/2013 |	Moratoire partiel : chassable sur le domaine public maritime et les zones humides côtières jusqu'au 13 février. Moratoire à l'intérieur des terres.	| [DEVL1203355A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000025282726) |
-| De 2013/2014 à 2018/2019 | Moratoire partiel (renouvellement arrêtés 5 ans + 1 an) : Chassable sur le domaine public maritime et les zones humides côtières jusqu'au 31 janvier. Moratoire à l'intérieur des terres. |	[DEVL1312194A](https://www.legifrance.gouv.fr/jo_pdf.do?numJO=0&dateJO=20130730&numTexte=28&pageDebut=…), [TREL1820083A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000037277395) |
-| Depuis saison 2019/2020	| Moratoire total. Tentative réouverture chasse saison 2019/2020 (sous quotas 6000 ind.) mais cassé en référé devant le Conseil d'Etat fin août. Soit chassable 1 mois en théorie sur la saison 2019/2020 avant mortatoire complet. Et depuis renouvellement annuel par arrêté. | [ECLI:FR:CEORD:2019:433434.20190826](https://www.legifrance.gouv.fr/ceta/id/CETATEXT000039112464), [ECLI:FR:CECHR:2020:433432.20201217](https://www.legifrance.gouv.fr/ceta/id/CETATEXT000042701999) |
+| 2012/2013 | Moratoire partiel : chassable sur le domaine public maritime et les zones humides côtières jusqu'au 13 février. Moratoire à l'intérieur des terres. | [DEVL1203355A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000025282726) |
+| De 2013/2014 à 2018/2019 | Moratoire partiel (renouvellement arrêtés 5 ans + 1 an) : Chassable sur le domaine public maritime et les zones humides côtières jusqu'au 31 janvier. Moratoire à l'intérieur des terres. | [DEVL1312194A](https://www.legifrance.gouv.fr/jo_pdf.do?numJO=0&dateJO=20130730&numTexte=28&pageDebut=…), [TREL1820083A](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000037277395) |
+| Depuis saison 2019/2020 | Moratoire total. Tentative réouverture chasse saison 2019/2020 (sous quotas 6000 ind.) mais cassé en référé devant le Conseil d'Etat fin août. Soit chassable 1 mois en théorie sur la saison 2019/2020 avant mortatoire complet. Et depuis renouvellement annuel par arrêté. | [ECLI:FR:CEORD:2019:433434.20190826](https://www.legifrance.gouv.fr/ceta/id/CETATEXT000039112464), [ECLI:FR:CECHR:2020:433432.20201217](https://www.legifrance.gouv.fr/ceta/id/CETATEXT000042701999) |
 
 ## Annexe 3 : Nombre de point GPS analysés par individu {#Annexe3}
 
@@ -1811,47 +1799,46 @@ Seuls les résultats des meilleures modèles retenues pour chaque problématique
 
 Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
 
-Modèle : aire ~ domaine vital principal ou étendu + sexe
+Modèle : aire \~ domaine vital principal ou étendu + sexe
 
-
-|             | coefficient | erreur standard |t value  |            p-value |   
-|-------------|-------------|-----------------|---------|--------------------|
-| intercept   | 1.81        |  0.16           | 11.44   | < $10^{-15}$ ***   |
-| level       | 0.05        |   0.00          | 25.38   | < $10^{-15}$ ***   |
-| sexe(mâle)  | -0.25       |   0.09          | -2.78   |  0.01 **           |
+|            | coefficient | erreur standard | t value | p-value              |
+|------------|-------------|-----------------|---------|----------------------|
+| intercept  | 1.81        | 0.16            | 11.44   | \< $10^{-15}$ \*\*\* |
+| level      | 0.05        | 0.00            | 25.38   | \< $10^{-15}$ \*\*\* |
+| sexe(mâle) | -0.25       | 0.09            | -2.78   | 0.01 \*\*            |
 
 Paramètre de dispersion pour la fonction Gamma : 0.29
 
-Déviance nulle : 203.152  sur 145  degrés de liberté
+Déviance nulle : 203.152 sur 145 degrés de liberté
 
-Déviance résiduelle :  42.439  sur 143  degrés de liberté
+Déviance résiduelle : 42.439 sur 143 degrés de liberté
 
 AIC : 1765.3
 
 Nombre d'itérations du score de Fisher : 5
 
-### Distance entre les reposoirs et les zones d'alimentation  {#Annexe4distance}
+### Distance entre les reposoirs et les zones d'alimentation {#Annexe4distance}
 
 **Distance "zone d'alimentation" - "reposoirs" en fonction du sexe, de l'âge et de la hauteur d'eau**
 
 Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
 
-Modèle : distance moyenne "zone d'alimentation" & "reposoirs" ~ sexe * âge + hauteur d'eau * âge
+Modèle : distance moyenne "zone d'alimentation" & "reposoirs" \~ sexe \* âge + hauteur d'eau \* âge
 
-|                                                    | coefficient | erreur standard | t value |            p-value     | 
-|----------------------------------------------------|-------------|-----------------|---------|------------------------|
-| **intercept**                                      | 8.21        |    0.10         |  81.31  | < $10^{-15}$ ***       |
-| sexe(mâle)                                         | -0.16       |    0.11         |  -1.52  |              0.13      |    
-| âge(juvénile)                                      | -0.09       |    0.29         |  -0.30  |              0.78      |    
-| hauteur d'eau(marée de vives eaux)                 | -0.09       |    0.09         |  -0.94  |              0.35      |    
-| **sexe(mâle):âge(juvénile)**                       |  1.08       |    0.42         |   2.57  |              0.01 *    |  
-| *âge(juvénile):hauteau d'eau(marée de vives eaux)* | -0.81       |    0.42         |  -1.94  |              0.05 .    |  
+|   | coefficient | erreur standard | t value | p-value |
+|-------------------------|------------|------------|------------|------------|
+| **intercept** | 8.21 | 0.10 | 81.31 | \< $10^{-15}$ \*\*\* |
+| sexe(mâle) | -0.16 | 0.11 | -1.52 | 0.13 |
+| âge(juvénile) | -0.09 | 0.29 | -0.30 | 0.78 |
+| hauteur d'eau(marée de vives eaux) | -0.09 | 0.09 | -0.94 | 0.35 |
+| **sexe(mâle):âge(juvénile)** | 1.08 | 0.42 | 2.57 | 0.01 \* |
+| *âge(juvénile):hauteau d'eau(marée de vives eaux)* | -0.81 | 0.42 | -1.94 | 0.05 . |
 
 Paramètre de dispersion pour la fonction Gamma : 0.26
 
 Déviance nulle : 37.642 sur 134 degrés de liberté
 
-Déviance résiduelle : 34.634 sur 129  degrés de liberté
+Déviance résiduelle : 34.634 sur 129 degrés de liberté
 
 AIC : 2360.1
 
@@ -1865,19 +1852,19 @@ Jeu de données resteint au moins de janvier (période de chasse ouverte) et fé
 
 Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
 
-Modèle : distance moyenne "zone d'alimentation" & "reposoirs" ~ sexe + période de chasse
+Modèle : distance moyenne "zone d'alimentation" & "reposoirs" \~ sexe + période de chasse
 
-|                                                  | coefficient | erreur standard | t value |            p-value       | 
-|--------------------------------------------------|-------------|-----------------|---------|--------------------------|   
-| **intercept**                                    | 8.32        | 0.14            | 61.88   | < $10^{-16}$ ***         |
-| **sexe(mâle)**                                   | -0.98       | 0.17            | -5.96   | < $10^{-7}$ ***          |
-| **période de chasse(fermée)**                    | 0.48        | 0.13            |  3.67   | < $10^{-2}$ **           |
+|   | coefficient | erreur standard | t value | p-value |
+|------------------------|------------|------------|------------|------------|
+| **intercept** | 8.32 | 0.14 | 61.88 | \< $10^{-16}$ \*\*\* |
+| **sexe(mâle)** | -0.98 | 0.17 | -5.96 | \< $10^{-7}$ \*\*\* |
+| **période de chasse(fermée)** | 0.48 | 0.13 | 3.67 | \< $10^{-2}$ \*\* |
 
 Paramètre de dispersion pour la fonction Gamma : 0.09
 
-Déviance nulle : 5.7820  sur 25 degrés de liberté
+Déviance nulle : 5.7820 sur 25 degrés de liberté
 
-Déviance résiduelle : 2.3253  sur 23  degrés de liberté
+Déviance résiduelle : 2.3253 sur 23 degrés de liberté
 
 AIC : 419.21
 
@@ -1889,38 +1876,38 @@ Nombre d'itérations du score de Fisher : 4
 
 Méthode : Modèle linéaire mixte par REML. T-tests par la méthode Satterthwaite (*lmerModLmerTest*)
 
-Modèle : equitabilite ~ sexe * hauteau d'eau + âge * hauteau d'eau + (1 | individu)
+Modèle : equitabilite \~ sexe \* hauteau d'eau + âge \* hauteau d'eau + (1 \| individu)
 
 REML critère de convergence : 47.5
 
-Résidus standardisés : 
+Résidus standardisés :
 
-|    min |       1Q |   median |       3Q |      max | 
-|--------|----------|----------|----------|----------|
-| -2.98  | -0.50    | -0.09    |  0.46    |  2.93    | 
+| min   | 1Q    | median | 3Q   | max  |
+|-------|-------|--------|------|------|
+| -2.98 | -0.50 | -0.09  | 0.46 | 2.93 |
 
 Effets aléatoires :
 
-| groupe   |   variance  | ecart-type |
-|----------|-------------|------------|
-| individu | 0.08        |  0.29      | 
-| residu   | 0.04        |  0.19      |  
+| groupe   | variance | ecart-type |
+|----------|----------|------------|
+| individu | 0.08     | 0.29       |
+| residu   | 0.04     | 0.19       |
 
-Nombre d'observation : 314, groupes :  individu, 72
+Nombre d'observation : 314, groupes : individu, 72
 
 Fixed effects :
 
-|                                             | coefficient | erreur standard    | df     | t value     |   p-value           | 
-|---------------------------------------------|-------------|--------------------|--------|-------------|---------------------|                                
-| **intercept**                               | 0.49        | 0.06               | 86.09  | 7.65        | < $10^{-10}$ ***    |
-| sexe(mâle)                                  | -0.12       | 0.08               | 87.09  | -1.55       | 0.13                |
-| **hauteau d'eau(submersion)**               | -0.34       | 0.05               | 243.37 | -6.44       | < $10^{-9}$ ***     |
-| hauteau d'eau(vives eaux)                   | -0.06       | 0.04               | 239.82 | -1.54       | 0.13                |
-| **âge(juvénile)**                           | -0.30       | 0.09               | 88.90  | -3.26       | < $10^{-2}$ **      |
-| **sexe(mâle):hauteau d'eau(submersion)**    |  0.29       | 0.07               | 245.42 |  4.15       | < $10^{-4}$ ***     |
-| *sexe(mâle):hauteau d'eau(vives eaux)*      |  0.10       | 0.05               | 242.70 |  1.88       | 0.06 .              |
-| **hauteau d'eau(submersion):âge(juvénile)** |  0.31       | 0.08               | 245.12 |  3.64       | < $10^{-3}$ ***     |
-| **hauteau d'eau(vives eaux):âge(juvénile)** |  0.18       | 0.06               | 242.87 |  3.03       | < $10^{-2}$ **      |
+|   | coefficient | erreur standard | df | t value | p-value |
+|-------------------|-----------|-----------|-----------|-----------|-----------|
+| **intercept** | 0.49 | 0.06 | 86.09 | 7.65 | \< $10^{-10}$ \*\*\* |
+| sexe(mâle) | -0.12 | 0.08 | 87.09 | -1.55 | 0.13 |
+| **hauteau d'eau(submersion)** | -0.34 | 0.05 | 243.37 | -6.44 | \< $10^{-9}$ \*\*\* |
+| hauteau d'eau(vives eaux) | -0.06 | 0.04 | 239.82 | -1.54 | 0.13 |
+| **âge(juvénile)** | -0.30 | 0.09 | 88.90 | -3.26 | \< $10^{-2}$ \*\* |
+| **sexe(mâle):hauteau d'eau(submersion)** | 0.29 | 0.07 | 245.42 | 4.15 | \< $10^{-4}$ \*\*\* |
+| *sexe(mâle):hauteau d'eau(vives eaux)* | 0.10 | 0.05 | 242.70 | 1.88 | 0.06 . |
+| **hauteau d'eau(submersion):âge(juvénile)** | 0.31 | 0.08 | 245.12 | 3.64 | \< $10^{-3}$ \*\*\* |
+| **hauteau d'eau(vives eaux):âge(juvénile)** | 0.18 | 0.06 | 242.87 | 3.03 | \< $10^{-2}$ \*\* |
 
 <br/>
 
@@ -1928,35 +1915,34 @@ Fixed effects :
 
 Méthode : Modèle linéaire mixte par REML. T-tests par la méthode Satterthwaite (*lmerModLmerTest*)
 
-Modèle : variation_taux ~ âge + (1 | individu)
+Modèle : variation_taux \~ âge + (1 \| individu)
 
 REML critère de convergence : -498.2
 
-Résidus standardisés : 
+Résidus standardisés :
 
-|    min |       1Q |   mediane |       3Q |      max | 
-|--------|----------|-----------|----------|----------|
-| -3.03  | -0.37    | -0.16     |  0.35    |  4.12    | 
+| min   | 1Q    | mediane | 3Q   | max  |
+|-------|-------|---------|------|------|
+| -3.03 | -0.37 | -0.16   | 0.35 | 4.12 |
 
 Effets aléatoires :
 
-| groupe   |   variance  | ecart-type |
-|----------|-------------|------------|
-| individu | 0.01        |  0.11      | 
-| residu   | 0.01        |  0.90      |  
+| groupe   | variance | ecart-type |
+|----------|----------|------------|
+| individu | 0.01     | 0.11       |
+| residu   | 0.01     | 0.90       |
 
-Nombre d'observation : 314, groupes :  individu, 72
+Nombre d'observation : 314, groupes : individu, 72
 
 Fixed effects:
 
-|                                            | coefficient | erreur standard    | df     | t value      |   p-value            | 
-|--------------------------------------------|-------------|--------------------|--------|--------------|----------------------|                                
-|**intercept**                               | 0.13        | 0.02               | 69.57  | 85.27        | < $10^{-1}$ ***      |
-|âge(juvénile)                               | -0.07       | 0.03               | 70.08  | -2.23        | 0.03 *               |
+|               | coefficient | erreur standard | df    | t value | p-value             |
+|------------------|-----------|-----------|-----------|-----------|-----------|
+| **intercept** | 0.13        | 0.02            | 69.57 | 85.27   | \< $10^{-1}$ \*\*\* |
+| âge(juvénile) | -0.07       | 0.03            | 70.08 | -2.23   | 0.03 \*             |
 
+<br/>
 
 <br/>
 
-<br/>
-  
 <a href="#top">↑ retour en haut</a>
