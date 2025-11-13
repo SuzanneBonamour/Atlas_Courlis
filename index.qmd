@@ -491,7 +491,7 @@ Les reposoirs ont été estimés pour chaque mois de l'année (@fig-UDMap_kud_ro
 
 Le site fonctionnel de la RNNMO est fortement impacté par les variations saisonnières environnementales (ex : météorologie, pêche, chasse, tourisme, cycles des marées à fort coefficient, etc), les reposoirs les plus favorables pourraient donc changer de façon cyclique au cours de l'année.
 
-### Reposoirs en fonction du mois de l'année
+### Reposoirs mensuels
 
 :::::: panel-tabset
 #### Zone A
@@ -545,7 +545,7 @@ Reposoirs en fonction du mois de l'année en zone C - Reposoirs de août à sept
 
 Bien qu'il y ait une forte variation en reposoirs au cours des mois, il est difficile de dégager un patron clair à partir de ces résultats.
 
-### Reposoirs en fonction du jour et de la nuit
+### Reposoirs diurnes et nocturnes
 
 Les reposoirs ont été estimés durant les périodes de jour et de nuit (@fig-UDMap_kud_roosting_timeofday_A, @fig-UDMap_kud_roosting_timeofday_B et @fig-UDMap_kud_roosting_timeofday_C).
 
@@ -869,7 +869,7 @@ Comme attendu, les zones d'alimentation semble varier (bien que légèrement) en
 
 ## Zones d'alimentation en fonction du calendrier
 
-### Zones d'alimentation en fonction du mois de l'année {#section-mois2}
+### Zones d'alimentation mensuelles {#section-mois2}
 
 Les zones d'alimentation ont été estimés pour chaque mois de l'année (@fig-UDMap_kud_foraging_month_label_A, @fig-UDMap_kud_foraging_month_label_B et @fig-UDMap_kud_foraging_month_label_C).
 
@@ -927,11 +927,11 @@ Zones d'alimentation en fonction du mois de l'année en zone C - Zones d'aliment
 
 Bien qu'il y ait une forte variation en zones d'alimentation au cours des mois, il est difficile de dégager un patron clair à partir de ces résultats.
 
-### Zones d'alimentation en fonction du jour et de la nuit
+### Zones d'alimentation diurnes et noctures
 
 Les zones d'alimentation ont été estimées durant les périodes de jour et de nuit (@fig-UDMap_kud_foraging_timeofday_A, @fig-UDMap_kud_foraging_timeofday_B et @fig-UDMap_kud_foraging_timeofday_C).
 
-Il est attendu que les courlis utilisent des zones d'alimentation plus restreintes la nuit que le jour.
+Il est attendu que les courlis cendré utilisent des zones d'alimentation plus restreintes la nuit que le jour.
 
 :::::: panel-tabset
 #### Zone A
@@ -947,7 +947,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du jour et de la nuit en zone A - Zones d'alimentation diurnes en rose, reposoirs nocturnes en jaune. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction du jour et de la nuit en zone A - Zones d'alimentation diurnes en rose, zones d'alimentation nocturnes en jaune. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -963,7 +963,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du jour et de la nuit en zone B - Zones d'alimentation diurnes en rose, reposoirs nocturnes en jaune. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction du jour et de la nuit en zone B - Zones d'alimentation diurnes en rose, zones d'alimentation nocturnes en jaune. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -979,7 +979,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction du jour et de la nuit en zone C - Zones d'alimentation diurnes en rose, reposoirs nocturnes en jaune. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction du jour et de la nuit en zone C - Zones d'alimentation diurnes en rose, zones d'alimentation nocturnes en jaune. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -987,7 +987,7 @@ Aucune différence marquée dans les zones d'alimentation diurnes et noctures n'
 
 # Utilisation de l'espace lors d'évènement climatiques extrêmes {#section-ECE}
 
-Les évènements climatiques extrêmes sont en augmentation, en fréquence comme en intensité, dû aux changements climatiques ([beniston2004](#beniston2004)). Les évènements climatiques extrêmes (comme les tempêtes) sont suspectés d'être préjudiciable pour les courlis cendrés et on s'attend à ce que leur utilisation de l'espace en soit modifiée.
+Les évènements climatiques extrêmes sont actuellement en augmentation, en fréquence comme en intensité, dû aux changements climatiques ([beniston2004](#beniston2004)). Les évènements climatiques extrêmes (tempêtes et innondations par exemple) sont suspectés d'être préjudiciables pour les courlis cendrés et on s'attend à ce que leur utilisation de l'espace en soit modifiée.
 
 L'utilisation de l'espace pour les comportements de repos et d'alimentation pendant les jours avec évènements extrêmes sont comparés aux jours 7 jours avant les évènements extrêmes (considérés comme jours de référence). Les évènements extrêmes sont ici distingués en trois catégories : i) les évènements de vents forts (vitesse de vent supérieure aux 95 % des enregistrements sur la période 2016-2025), ii) les évènements de vents de Nord-Ouest (avec une orientation du vent entre 270 et 360 degrés) et iii) la combinaison des deux.
 
@@ -1009,7 +1009,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents forts en zone A - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts en zone A - Reposoirs lors des jours de références en jaune, lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1025,7 +1025,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents forts en zone B - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts en zone B - Reposoirs lors des jours de références en jaune, lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1041,11 +1041,11 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents forts en zone C - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts en zone C - Reposoirs lors des jours de références en jaune, lors des évènements de vents forts en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
-Aucune effet marqué des vents forts sur les reposoirs n'a été détecté.
+Aucune effet marqué des vents forts sur les zones de repos n'a été détecté.
 
 ### Reposoirs lors de vents de Nord-Ouest
 
@@ -1079,7 +1079,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone B - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone B - Reposoirs lors des jours de références en jaune, lors des évènements de vents de Nord-Ouest en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1095,7 +1095,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone C - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents de Nord-Ouest en zone C - Reposoirs lors des jours de références en jaune, lors des évènements de vents de Nord-Ouest en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -1117,7 +1117,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone A - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone A - Reposoirs lors des jours de références en jaune, lors des évènements de vents forts de Nord-Ouest en rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1133,7 +1133,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone B - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone B - Reposoirs lors des jours de références en jaune, lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1149,7 +1149,7 @@ tags$iframe(
 )
 ```
 
-Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone C - Reposoirs lors des jours de références en jaune, reposoirs lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Reposoirs en fonction d'évènements de vents forts de Nord-Ouest en zone C - Reposoirs lors des jours de références en jaune, lors des évènements de vents forts de Nord-Ouest rose. Reposoirs principaux en opaque, reposoirs secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -1173,7 +1173,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vents forts en zone A - Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts en zone A - Zones d'alimentation lors des jours de références en jaune, lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone B
@@ -1189,7 +1189,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vents forts en zone B - Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts en zone B - Zones d'alimentation lors des jours de références en jaune, lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
 #### Zone C
@@ -1205,7 +1205,7 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction d'évènements de vents forts en zone C - Zones d'alimentation lors des jours de références en jaune, zones d'alimentation lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction d'évènements de vents forts en zone C - Zones d'alimentation lors des jours de références en jaune, lors des évènements de vents forts en rose. Principales zones d'alimentation en opaque, zones d'alimentation secondaires en transparence. Limites de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 ::::::
 
@@ -1329,7 +1329,7 @@ Aucune effet marqué des vents forts de Nord-Ouest sur les zones d'alimentation 
 knitr::include_graphics("dist_plot.png", dpi = 100)
 ```
 
-Distance moyenne (± écart-type) à chaque cycle de marée entre les zones d'alimentation et de repos pour chaque individu. Moyenne de la population en ligne à tirets noire.
+Distance moyenne (± écart-type) à chaque cycle de marée entre les zones d'alimentation et de repos pour chaque individu. Moyenne de la population en ligne à tirets noirs.
 :::
 
 Les distances moyennes entre les zones d'alimentation et de repos ont été modélisées statistiquement en fonction du sexe, de l'âge et de la hauteur d'eau.
@@ -1353,14 +1353,14 @@ Les distances moyennes individuelles entre les zones d'alimentation et de repos 
 ```{r}
 #| echo: false
 #| fig-align: center
-#| out-width: 40%
+#| out-width: 35%
 knitr::include_graphics("pred_all_chasse_plot.png", dpi = 100)
 ```
 
 Prédictions (± IC 95 %) du meilleur modèle décrivant les variations de distance moyenne entre les zones d'alimentation et de repos en fonction de la période de chasse (période de chasse ouverte ou fermée sur l'axe des abscissess) et du sexe (femelles en rose, mâles en bleu).
 :::
 
-Lorsque la période de chasse est prise en compte dans la sélection de modèle, les effets fixes significatifs sont simplifiés et plus marqués. Les mâles parcourent des distances moins importantes que celles des femelles (coef : -0.98 ± 0.17, p-value : \< 0.01, [Annexe 4](#Annexe4distance)). La distance entre les zones d'alimentation et de repos s'allonge lors de la période de chasse (coef : 0.48 ± 0.13, p-value : \< 0.01, @fig-pred_all_chasse_plot), [Annexe 4](#Annexe4distance)). Il semble également qu'il existe une plus grande variabilité dans les distances parcourues hors de la période de chasse (@fig-pred_all_chasse_plot).
+Lorsque la période de chasse est prise en compte dans la sélection de modèle, les effets fixes significatifs sont simplifiés et plus marqués. Les mâles parcourent des distances moins importantes que celles des femelles (coef : -0.98 ± 0.17, p-value : \< 0.01, [Annexe 4](#Annexe4distance)). La distance entre les zones d'alimentation et de repos s'allonge lors de la période de chasse (coef : 0.48 ± 0.13, p-value : \< 0.01, @fig-pred_all_chasse_plot, [Annexe 4](#Annexe4distance)). Il semble également qu'il existe une plus grande variabilité dans les distances parcourues hors de la période de chasse (@fig-pred_all_chasse_plot).
 
 # Fidélité aux reposoirs {#section-fidelité}
 
