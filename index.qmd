@@ -1513,7 +1513,7 @@ Une tonne de chasse
 
 La [chasse à la tonne](https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Milieux-Foret-et-Biodiversite/Chasse/Chasse-a-la-tonne) est une méthode de chasse au gibier d’eau pratiquée depuis une installation fixe et semi-enterrée appelée "tonne". Celle-ci est aménagée à proximité d’un plan d’eau artificiel (mare de tonne) dans le but d’attirer (appelants vivants ou artificiels souvent utilisés) et de tirer les oiseaux migrateurs (principalement les anatidés).
 
-En charente-maritime, la période de chasse s'ouvre généralement fin août  et s'étend jusqu'à la fin février. Le tir est autorisé de nuit et jusqu'à 1h après le lever du soleil et 1h avant le coucher du soleil sur le DPM. Le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du DPM et fluvial. Chaque tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes.
+En charente-maritime, la période de chasse s'ouvre généralement fin août et s'étend jusqu'à la fin février. Le tir est autorisé de nuit et jusqu'à 1h après le lever du soleil et 1h avant le coucher du soleil sur le DPM. Le tir est interdit de 9h00 à 19h00 sur les territoires situés hors du DPM et fluvial. Chaque tonne doit être déclarée auprès de la préfecture. Une distance minimale de 300 mètres est imposée entre deux tonnes.
 
 Il est attendu que les tonnes de chasse constituent un dérangement non négligeable pour les oiseaux d'eau, même non chassés, comme c'est le cas actuellement pour le courlis cendré.
 
@@ -1808,11 +1808,11 @@ Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
 
 Modèle : aire \~ domaine vital principal ou étendu + sexe
 
-|            | coefficient | erreur standard | t value | p-value              |
-|------------|-------------|-----------------|---------|----------------------|
-| intercept  | 1.81        | 0.16            | 11.44   | \< $10^{-15}$ \*\*\* |
-| domaine vital(étendu)      | 0.05        | 0.00            | 25.38   | \< $10^{-15}$ \*\*\* |
-| sexe(mâle) | -0.25       | 0.09            | -2.78   | 0.01 \*\*            |
+|   | coefficient | erreur standard | t value | p-value |
+|--------------|--------------|--------------|--------------|-----------------|
+| intercept | 1.81 | 0.16 | 11.44 | \< $10^{-15}$ \*\*\* |
+| domaine vital(étendu) | 0.05 | 0.00 | 25.38 | \< $10^{-15}$ \*\*\* |
+| sexe(mâle) | -0.25 | 0.09 | -2.78 | 0.01 \*\* |
 
 Paramètre de dispersion pour la fonction Gamma : 0.29
 
@@ -1833,7 +1833,7 @@ Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log)
 Modèle : distance moyenne "zone d'alimentation" *vs* "reposoirs" \~ sexe \* âge + hauteur d'eau \* âge
 
 |   | coefficient | erreur standard | t value | p-value |
-|-------------------------|------------|------------|------------|------------|
+|--------------------|-------------|-------------|-------------|-------------|
 | **intercept** | 8.21 | 0.10 | 81.31 | \< $10^{-15}$ \*\*\* |
 | sexe(mâle) | -0.16 | 0.11 | -1.52 | 0.13 |
 | âge(juvénile) | -0.09 | 0.29 | -0.30 | 0.78 |
@@ -1862,7 +1862,7 @@ Méthode : Modèle linéaire généralisé, fonction de lien Gamma (log).
 Modèle : distance moyenne "zone d'alimentation" *vs* "reposoirs" \~ sexe + période de chasse
 
 |   | coefficient | erreur standard | t value | p-value |
-|------------------------|------------|------------|------------|------------|
+|-------------------|--------------|--------------|--------------|--------------|
 | **intercept** | 8.32 | 0.14 | 61.88 | \< $10^{-16}$ \*\*\* |
 | **sexe(mâle)** | -0.98 | 0.17 | -5.96 | \< $10^{-7}$ \*\*\* |
 | **période de chasse(fermée)** | 0.48 | 0.13 | 3.67 | \< $10^{-2}$ \*\* |
@@ -1905,7 +1905,7 @@ Nombre d'observation : 314, groupes : individu, 72
 Fixed effects :
 
 |   | coefficient | erreur standard | df | t value | p-value |
-|-------------------|-----------|-----------|-----------|-----------|-----------|
+|-------------|------------|------------|------------|------------|------------|
 | **intercept** | 0.49 | 0.06 | 86.09 | 7.65 | \< $10^{-10}$ \*\*\* |
 | sexe(mâle) | -0.12 | 0.08 | 87.09 | -1.55 | 0.13 |
 | **hauteau d'eau(submersion)** | -0.34 | 0.05 | 243.37 | -6.44 | \< $10^{-9}$ \*\*\* |
@@ -1944,7 +1944,7 @@ Nombre d'observation : 314, groupes : individu, 72
 Fixed effects:
 
 |               | coefficient | erreur standard | df    | t value | p-value             |
-|------------------|-----------|-----------|-----------|-----------|-----------|
+|------------|------------|------------|------------|------------|------------|
 | **intercept** | 0.13        | 0.02            | 69.57 | 85.27   | \< $10^{-1}$ \*\*\* |
 | âge(juvénile) | -0.07       | 0.03            | 70.08 | -2.23   | 0.03 \*             |
 
