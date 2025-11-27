@@ -68,21 +68,21 @@ knitr::include_graphics("courlis-cendre_AA_new-scaled_MIGRATLANE.jpg", dpi = 100
 
 **Principaux résultats** :
 
--   Utilisation de l’espace et domaines vitaux : Chaque individu exploite en moyenne un domaine vital de 640 m², avec une forte variabilité saisonnière. Les oiseaux passent environ 52 % de leur temps dans la réserve, confirmant son rôle essentiel. Les femelles, plus grandes et dotées d’un bec plus long, utilisent des espaces significativement plus vastes que les mâles.
+-   Utilisation de l’espace et domaines vitaux : chaque individu exploite en moyenne un domaine vital de 640 m², avec une forte variabilité saisonnière. Les oiseaux passent environ 52 % de leur temps dans la réserve, confirmant son rôle essentiel. Les femelles, plus grandes et dotées d’un bec plus long, utilisent des espaces significativement plus vastes que les mâles.
 
--   Reposoirs et zones d’alimentation : Les courlis alternent entre reposoirs à marées hautes et zones d’alimentation à marées basses, situés dans et hors réserve, surtout dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation se concentrent sur les vasières côtières et les prés salés, tandis que les reposoirs se situent en zones plus abritées. Les jeunes individus parcourent de plus grandes distances entre repos et alimentation, signe d'un comportement plus exploratoire et/ou une moindre efficacité dans la recherche alimentaire en temps normal. La fidélité spatiale est marquée : les courlis reviennent régulièrement sur les mêmes reposoirs, notamment au Travers, au Grand Cimetière et à Arceau.
+-   Reposoirs et zones d’alimentation : les courlis alternent entre reposoirs à marées hautes et zones d’alimentation à marées basses, situés dans et hors réserve, surtout dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation se concentrent sur les vasières côtières et les prés salés, tandis que les reposoirs se situent en zones plus abritées du vent. Les jeunes individus parcourent de plus grandes distances entre repos et alimentation, signe d'un comportement plus exploratoire et/ou d'une moindre efficacité dans la recherche alimentaire en temps normal. La fidélité spatiale est marquée : les courlis reviennent régulièrement sur les mêmes reposoirs, notamment au Travers, au Grand Cimetière et à Arceau.
 
--   Effets des marées, saisons et conditions météorologiques : Les marées hautes et les submersions limitent les zones disponibles et renforcent la fidélité aux reposoirs connus. Les vents forts n’affectent pas significativement les comportements de repos mais peuvent modifier temporairement les zones d'alimentation. Aucune influence majeure des événements climatiques extrêmes n’a pu être détectée.
+-   Effets des marées, saisons et conditions météorologiques : les marées hautes et les submersions limitent les zones disponibles et renforcent la fidélité aux reposoirs connus. Les vents forts n’affectent pas significativement les comportements de repos mais peuvent modifier temporairement les zones d'alimentation. Aucune influence majeure des événements climatiques extrêmes n’a pu être détectée.
 
--   Effets de la chasse : Les données suggèrent un risque de dérangement dans les zones non protégées. Aucun effet direct à court terme n’a été mesuré, mais la superposition entre zones de chasse et zones d’alimentation clés révèle un potentiel de perturbation élevé.
+-   Effets de la chasse : les données suggèrent un risque de dérangement dans les zones non protégées. Aucun effet direct à court terme n’a été mesuré, mais la superposition entre zones de chasse et zones d’alimentation clés révèle un potentiel de perturbation élevé.
 
--   Zones critiques identifiées : Plusieurs zones fonctionnelles majeures se situent hors du périmètre de la RNNMO, notamment dans le bassin de Marennes et les marais de Brouage. Ces espaces, essentiels à la connectivité écologique du courlis cendré et des autres espèces d'oiseaux d'eau très potentiellement, constituent des priorités de gestion concertées.
+-   Zones critiques identifiées : plusieurs zones fonctionnelles majeures se situent hors du périmètre de la RNNMO, notamment dans le bassin de Marennes et les marais de Brouage. Ces espaces, essentiels à la connectivité écologique du courlis cendré et des autres espèces d'oiseaux d'eau très potentiellement, constituent des priorités de gestion concertées.
 
 **Enseignements clés pour la gestion** : La réserve joue un rôle central, mais ne couvre qu’une partie du territoire fonctionnel de l’espèce. La préservation du courlis nécessite une gestion concertée à l’échelle du bassin des Pertuis charentais, incluant zones de chasse, marais et sites ostréicoles. Recommandations : créer des zones tampons autour des reposoirs sensibles, renforcer le dialogue avec les usagers (chasseurs, ostréiculteurs, pêcheurs), et poursuivre le suivi GPS à long terme.
 
-**Perspectives et besoins identifiés** : Étendre le suivi à d’autres sites de capture. Améliorer les données sur la pression de chasse et la fréquentation humaine. Évaluer les effets combinés du climat, de la submersion et des usages littoraux. Consolider les partenariats territoriaux pour protéger les zones clés hors réserve.
+**Perspectives et besoins identifiés** : Étendre le suivi à d’autres sites de capture. Améliorer les données sur la pression de chasse et la fréquentation humaine. Évaluer les effets combinés du climat, de la submersion et des usages littoraux. Consolider les partenariats territoriaux pour protéger les zones clées hors réserve.
 
-**Partenaires et financement** : Étude conduite par la LPO France et la RNN de Moëze-Oléron, en collaboration avec le CNRS (LIENSs) et le MNHN (CESCO). Projet financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional, FEDER) dans le cadre du programme « Adaptation des limicoles aux changements climatiques ».
+**Partenaires et financement** : Étude conduite par la LPO France et la RNNMO, en collaboration avec le CNRS (LIENSs) et le MNHN (CESCO). Projet financé par le Fonds Vert et la Région Nouvelle-Aquitaine (Fonds Européen de Développement Régional, FEDER) dans le cadre du programme « Adaptation des limicoles aux changements climatiques ».
 
 ::: {.logo-line style="display:flex; justify-content:center; align-items:center; gap:1000px; margin-top:20px;"}
 <img src="lpo_logo.jpg" height="100"/> <img src="reserve_logo.png" height="100"/> <img src="MNHN-logo.jpg" height="100"/> <img src="logo_CESCO.png" height="100"/> <img src="Logo-Prefet-de-la-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="Logo-FSE-UE-Region-Nouvelle-Aquitaine.png" height="100"/> <img src="LIENSs_transp1-e1485208828412.png" height="100"/> <img src="fonds-vert_logo.png" height="100"/>
@@ -98,7 +98,7 @@ Créée en 1985, la Réserve Naturelle Nationale de Moëze-Oléron (RNNMO), situ
 knitr::include_graphics("photo_intro_RNNMO.png", dpi = 100)
 ```
 
-La réserve naturelle nationale de Moëze-Oléron. a) Sentier des Polders (©RNNMO - LPO), b) vue aérienne côté continent (©Romain Beaubert - LPO), c) vue aérienne de la côte (©RNNMO - LPO).
+La réserve naturelle nationale de Moëze-Oléron. a) Vue aérienne de la côte (©RNNMO - LPO), b) les marais côté continent (©Romain Beaubert - LPO), c) sentier des Polders (©RNNMO - LPO).
 :::
 
 Située au cœur du bassin fonctionnel des Pertuis charentais, la réserve relie estrans, marais et zones conchylicoles, formant un maillon essentiel des grands couloirs migratoires atlantiques et contribuant à la conservation de nombreuses espèces d'oiseaux d’eau à l’échelle internationale (@fig-flux).
@@ -127,7 +127,7 @@ Equipement d'un courlis cendré : a) courlis cendré bagué (©Armel Deniau), b)
 
 L’objectif général de cette étude est de mieux comprendre l’utilisation de l’espace par le courlis cendré dans le site fonctionnel de la RNNMO. Le courlis cendré est mis à contribution ici en tant qu'*espèce parapluie* dans le but d’identifier les zones et les temporalités prioritaires à préserver pour l’accueil et la conversation des limicoles dans la zone d'étude.
 
-À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la RNNMO, les déplacements des oiseaux ont été analysés afin de dégager les principales zones utilisées. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, ...) ainsi que d'un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, les variations utilisation de l'habitat par les courlis cendrés en fonction de changements environnementaux et pressions cinégétiques ont également été étudiées.
+À partir de l’analyse des données issues de balises GPS posées sur plusieurs dizaines de courlis cendrés dans la RNNMO, les déplacements des oiseaux ont été analysés afin de dégager les principales zones utilisées. Ce travail s’inscrivant dans un contexte de fortes pressions anthropiques (chasse, pêche à pied, ostréiculture, tourisme, ...) ainsi que d'un recul du trait de côte, entraînant une maritimisation progressive de la réserve naturelle, les variations d'utilisation de l'habitat par les courlis cendrés en fonction de changements environnementaux et pressions cinégétiques ont également été étudiées.
 
 # Le courlis cendré
 
@@ -189,7 +189,7 @@ L'aire d'étude est divisée en trois zones d'étude A, B et C autour de la RNNM
 taille_dataset_dt <- read_csv("D:/Projets_Suzanne/courlis/Atlas_courlis/taille_dataset_dt.csv")
 ```
 
-Le jeu de données analysé est constitué de `r prettyNum(taille_dataset_dt[1,2], big.mark = " ")` points GPS enregistrés entre `r prettyNum(round(taille_dataset_dt[3,2]), big.mark = " ")` et `r round(taille_dataset_dt[4,2])` pour `r round(taille_dataset_dt[2,2])` individus. Le nombre de points GPS analysés par individu est d'un minimum de `r round(taille_dataset_dt[5,2])` et maximum de `r prettyNum(round(taille_dataset_dt[6,2]), big.mark = " ")`, pour une moyenne de `r prettyNum(round(taille_dataset_dt[7,2]), big.mark = " ")` ([Annexe 3](#Annexe3)). Les données comportent `r round(taille_dataset_dt[10,2])` femelles, `r round(taille_dataset_dt[11,2])` mâles, `r round(taille_dataset_dt[8,2])` adultes et `r round(taille_dataset_dt[9,2])` juvéniles. Le sexe n'a pas été identifié pour `r round(taille_dataset_dt[12,2])` individus (@fig-emission_plot).
+Le jeu de données analysé est constitué de `r prettyNum(taille_dataset_dt[1,2], big.mark = " ")` points GPS enregistrés entre `r taille_dataset_dt[3,2]` et `r round(taille_dataset_dt[4,2])` pour `r round(taille_dataset_dt[2,2])` individus. Le nombre de points GPS analysés par individu est d'un minimum de `r round(taille_dataset_dt[5,2])` et maximum de `r prettyNum(round(taille_dataset_dt[6,2]), big.mark = " ")`, pour une moyenne de `r prettyNum(round(taille_dataset_dt[7,2]), big.mark = " ")` ([Annexe 3](#Annexe3)). Les données comportent `r round(taille_dataset_dt[10,2])` femelles, `r round(taille_dataset_dt[11,2])` mâles, `r round(taille_dataset_dt[8,2])` adultes et `r round(taille_dataset_dt[9,2])` juvéniles. Le sexe n'a pas été identifié pour `r round(taille_dataset_dt[12,2])` individus (@fig-emission_plot).
 
 ::: {#fig-emission_plot}
 ```{r}
@@ -367,7 +367,7 @@ Reposoirs en zone C - Reposoirs principaux en rose opaque, reposoirs secondaires
 :::
 ::::::
 
-## Reposoirs en fonction des caractéristiques biologiques des individus
+## Utilisation des reposoirs en fonction des caractéristiques biologiques des individus
 
 ### Reposoirs en fonction de l'âge {#section-age1}
 
@@ -485,13 +485,13 @@ Reposoirs en fonction du sexe en zone C - Reposoirs femelle en rose, reposoirs m
 
 Aucune différence marquée entre les reposoirs femelles et mâles n'a pu être détectée.
 
-## Reposoirs en fonction du calendrier
+## Variations temporelles de l'utilisation des reposoirs
 
 Les reposoirs ont été estimés pour chaque mois de l'année (@fig-UDMap_kud_roosting_month_label_A, @fig-UDMap_kud_roosting_month_label_B et @fig-UDMap_kud_roosting_month_label_C).
 
 Le site fonctionnel de la RNNMO est fortement impacté par les variations saisonnières environnementales (ex : météorologie, pêche, chasse, tourisme, cycles des marées à fort coefficient, etc), les reposoirs les plus favorables pourraient donc changer de façon cyclique au cours de l'année.
 
-### Reposoirs mensuels
+### Reposoirs mois par mois
 
 :::::: panel-tabset
 #### Zone A
@@ -752,7 +752,7 @@ Zone d'alimentation en zone C - Zones d'alimentation principales en bleu opaque,
 :::
 ::::::
 
-## Zones d'alimentation en fonction des caractéristiques biologiques des individus
+## Utilisation des zones d'alimentation en fonction des caractéristiques biologiques des individus
 
 ### Zones d'alimentation en fonction de l'âge {#section-age2}
 
@@ -810,13 +810,13 @@ Zones d'alimentation en fonction de l'âge en zone C - Zone d'alimentation adult
 :::
 ::::::
 
-Aucune différence marquée dans les zones d'alimentation juvéniles et adultes n'a été détectée. A noter tout de même, les individus utilisant le marais de Brouage pour leur alimentation sont majoritairement juvéniles (@fig-UDMap_kud_foraging_age_C).
+Aucune différence marquée dans les zones d'alimentation juvéniles et adultes n'a été détectée. A noter tout de même, les individus utilisant le marais de Brouage pour leur alimentation sont majoritairement juvéniles, mais le nombre d'individus ayant un comportement d'utilisation du marais est trop faible pour en tirer des conclusions (@fig-UDMap_kud_foraging_age_C).
 
 ### Zones d'alimentation en fonction du sexe {#section-sexe2}
 
 Les zones d'alimentation ont été calculées en fonction du sexe : femelle et mâle (@fig-UDMap_kud_foraging_sex_A, @fig-UDMap_kud_foraging_sex_B et @fig-UDMap_kud_foraging_sex_C).
 
-Les mâles ayant des becs plus courts, leur permettant de fouiller moins profondément dans la vase, il est attendu que leurs zones d'alimentation soient moins étendues vers le large de la côte (et donc moins profondément sous la surface de l'eau) que celles des femelles.
+Les mâles ayant des becs plus courts, leur permettant de fouiller moins profondément dans la vase. D’après la littérature scientifique (Donnez et al. 2023), il n’est pas attendu de différence dans la taille des zones d’alimentation entre mâle et femelle. Cependant, à l’échelle locale, une différence dans les zones exploitées pourrait être observée.
 
 :::::: panel-tabset
 #### Zone A
@@ -868,9 +868,9 @@ Zones d'alimentation en fonction du sexe en zone A - Zone d'alimentation femelle
 :::
 ::::::
 
-Comme attendu, les zones d'alimentation semblent varier (bien que légèrement) en fonction des sexes des individus. En zone A, les mâles semblent restreints à des zones d'eaux moins profondes (plus proches de la côte) pour leurs zones secondaires et surtout principales d'alimentation, probablement dû à leur bec en moyenne plus court que celui des femelles.
+Comme attendu, les zones d'alimentation ne semblent pas varier en taille en fonction des sexes des individus. En zone A, les mâles semblent restreints à des zones d'eaux moins profondes (plus proches de la côte) pour leurs zones secondaires et surtout principales d'alimentation, probablement dû à leur bec en moyenne plus court que celui des femelles.
 
-## Zones d'alimentation en fonction du calendrier
+## Variation temporelles de l'utilisation des zones d'alimentation
 
 ### Zones d'alimentation mensuelles {#section-mois2}
 
@@ -1433,9 +1433,9 @@ Comme attendu également, un nombre très important de connexions de faible inte
 
 # Évitement des chasseurs et des zones de chasses
 
-## Chasse à pied {#section-chasse_pied}
+## Chasse sur le domaine public maritime {#section-chasse_pied}
 
-La chasse à pied est autorisée sur le domaine public maritime (DPM) aux alentours de la RNNMO, mais interdite au sein de la RNNMO. Il est attendu que la présence de chasseurs et le bruit des tirs dérangent les courlis cendrés et que leurs comportements de repos et d'alimentation en soient perturbés.
+La chasse est autorisée sur le domaine public maritime (DPM) aux abords de la RNNMO, mais interdite au sein de la RNNMO. Il est attendu que la présence de chasseurs et le bruit des tirs dérangent les courlis cendrés et que leurs comportements de repos et d'alimentation en soient perturbés.
 
 Dates d'ouverture et de fermeture des saisons de chasse sur le DPM depuis 2018 :
 
@@ -1493,10 +1493,10 @@ tags$iframe(
 )
 ```
 
-Zones d'alimentation en fonction de la période de chasse - Zones d'alimentation hors saison de chasse en jaune, zones d'alimentation pendant la période de chasse en rose. Zones d'alimentation principales en opaque, secondaires en transparence. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
+Zones d'alimentation en fonction de la période de chasse - Zones d'alimentation hors saison de chasse en jaune, zones d'alimentation pendant la période de chasse en bleu. Zones d'alimentation principales en opaque, secondaires en transparence. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
 :::
 
-Comme attendu, la période de chasse pourrait avoir un effet sur les zones d'alimentation ou les reposoirs. Les courlis cendrés pourraient explorer des zones plus éloignées de la RNNMO après la fermeture de la chasse. Néanmoins, le nombre restreint d'individus (n = 9) avec des points GPS enregistrés sur ces périodes ne permet pas une puissance statistique suffisante pour conclure.
+Comme attendu, la période de chasse pourrait avoir un effet sur les zones d'alimentation ou les reposoirs. Les courlis cendrés pourraient explorer des zones plus éloignées de la RNNMO après la fermeture de la chasse. Malgré le nombre restreint d’individus (n = 9) avec des points GPS enregistrés sur ces périodes, on constate que les courlis cendrés évitent de s’alimenter à une distance inférieure à 500m de la plage et sur une bande de plage d’environ 2km au nord de la partie continentale de la RNNMO. Cette zone est en effet une zone connue pour être très fréquentée par les chasseurs au gibier d’eau. En phase de repos, le changement de comportement n’apparait pas clairement.
 
 Les effets de la présence, ou non, de chasseur, et du nombre de chasseurs présents aux abords de la station de baguage et sur le DPM ont également été testé, mais aucun effet n'a pu être détecté sur l'utilisation de l'espace pour le repos et l'alimentation sur cette zone restreinte.
 
@@ -1547,7 +1547,7 @@ Tonnes de chasse en point noir (grand proche de la RNNMO, petit à distance) et 
 
 # Zones critiques
 
-Les principaux reposoirs et zone d'alimentation estimés précédemment permettent de mettre en évidence des zones d'importance majeure pour les courlis cendrés dans la zone d'étude, mais pourtant en dehors des limites de protection de la RNNMO. Les emplacements des tonnes de chasses sont superposés à ces zones, mettant en évidence les zones de dérangements et de risques majeurs pour les oiseaux.
+Les principaux reposoirs et zones d'alimentation estimés précédemment permettent de mettre en évidence des zones d'importance majeure pour les courlis cendrés dans la zone d'étude, pourtant en dehors des limites de protection de la RNNMO. Les emplacements des tonnes de chasses sont superposés à ces zones, mettant en évidence les zones de dérangements et de risques majeurs pour les oiseaux dans et en dehors de la RNNMO.
 
 ::: {#fig-zone_critique_map}
 ```{r}
@@ -1569,15 +1569,15 @@ Ce travail est une première étape dans l'étude de l'utilisation de l'espace p
 
 ## Un fort tropisme vers le site de baguage
 
-Les contraintes techniques liées à l'écologie du courlis cendré et aux autorisations de baguage ont restreint la zone de capture des oiseaux à équiper sur la plage du grand travers (le long de la côte au sein de la réserve de Moëze-Oléron, @fig-zone_map_new). Les oiseaux étudiés ici ont donc un tropisme marqué vers cette zone, représentant un biais non négligeable dans les analyses spatiales. Il serait particulièrement intéressant de poursuivre ce suivi en équipant des oiseaux sur d'autres sites autour de la réserve pour obtenir une vue plus généralisable à l'ensemble de la population de courlis cendré dans la région.
+Les contraintes liées à l’écologie des limicoles, à la logistique sur le terrain, à l’accessibilité des reposoirs et aux autorisations de baguage ont restreint principalement la zone de capture des oiseaux dans le polder du Grand Cimetière (partie continentale de la réserve de Moëze-Oléron, @fig-zone_map_new). Les oiseaux étudiés ici ont donc un tropisme marqué vers cette zone, représentant un biais non négligeable dans les analyses spatiales. Il serait particulièrement intéressant de poursuivre ce suivi en équipant plus d’oiseaux sur d’autres sites dans la réserve (partie oléronaise) et autour de la réserve pour obtenir une vue plus généralisable à l’ensemble du bassin de Marennes voir des Pertuis. 
 
 ## Manque de données de pression de chasse
 
-Les effets de la chasse à pied et de la chasse à la tonne ont été partiellement évalués dans cette étude. Néanmoins, la pression de chasse n'a pas pu être incluse dans les analyses par manque de données. Des données spatialisées tout au long des saisons de chasse (sur le nombre de chasseurs présents, la durée des sessions de chasse, la quantité de tirs effectués et/ou les quantités de prélèvement) seraient des ajouts très pertinents pour évaluer plus en détails les impacts de la chasse sur les comportements de déplacement du courlis cendré.
+Les effets de la chasse sur le DPM et de la chasse à la tonne ont été partiellement évalués dans cette étude. Néanmoins, la pression de chasse n'a pas pu être incluse dans les analyses par manque de données. Des données spatialisées tout au long des saisons de chasse (sur le nombre de chasseurs présents, la durée des sessions de chasse, la quantité de tirs effectués et/ou les quantités de prélèvement) seraient des ajouts très pertinents pour évaluer plus en détails les impacts de la chasse sur les comportements de déplacement du courlis cendré.
 
 ## Quels sont les effets de la pêche à pied sur les comportements de déplacement du courlis cendré ?
 
-La zone d'étude est un lieu de pêche à pied non professionnelle particulièrement prisé. Le courlis cendré pourrait être dérangé par la présence de pêcheurs à pied pour sa recherche de nourriture comme pour ses déplacements depuis les zones d'alimentation vers les reposoirs à chaque cycle de marée. L'étude des effets de la pression de pêche à pied serait un ajout pertinent pour étendre notre compréhension des impacts anthropiques sur l'utilisation de l'espace par le courlis cendré dans la région.
+La zone d'étude est un lieu de pêche à pied non professionnelle particulièrement prisé en dehors de la RNNMO. Le courlis cendré pourrait être dérangé par la présence de pêcheurs à pied pour sa recherche de nourriture comme pour ses déplacements depuis les zones d'alimentation vers les reposoirs à chaque cycle de marée. L'étude des effets de la pression de pêche à pied serait un ajout pertinent pour étendre notre compréhension des impacts anthropiques sur l'utilisation de l'espace par le courlis cendré dans la région.
 
 # Matériels et Méthodes
 
@@ -1601,7 +1601,7 @@ Chaque point GPS enregistré est associé à un comportement de repos, d'aliment
 
 *Comportement de recherche alimentaire* : Un point GPS est considéré comme correspondant à de la recherche alimentaire si : i) vitesse de déplacement inférieure ou égale à 1 Km/h (estimé par partir de la fonction [speedfilter]{style="font-family: 'Courier';"} du package "adehabitatHR"), et ii) entre 2h avant et 2h après une marée basse.
 
-*Autre comportement* : Tous les points qui ne sont associés au comportement ni de repos ni d'alimentation.
+*Autre comportement* : Tous les points qui ne sont associés aux comportements ni de repos ni d'alimentation.
 
 **Identification de l'âge des individus**
 
@@ -1639,7 +1639,7 @@ Les données météorologiques utilisées sont issues du site [météostat](http
 
 *Paramètre de lissage (h)* : L’estimation par noyau repose sur un paramètre de lissage (<em>bandwidth</em>, en anglais, nommé *h*), ici calculé selon la [règle de Silverman](https://fr.wikipedia.org/wiki/Estimation_par_noyau) adapté à chaque sous jeu de données pour chaque analyse, ajustée par un facteur de 1/2 pour permettre des analyses à grain fin (voir légende de chaque carte pour la valeur de *h* utilisée).
 
-*Echantillonnage aléatoire* : Afin de garantir une représentativité (quasi)égale à chaque individu étudié malgré l'hétérogénéité dans les quantités de points GPS enregistrés pour chacun, un échantillonnage aléatoire des points a été effectué à chaque analyse. Pour chaque individu et catégorie de variables analysées (comportement, zone, sexe, âge, etc...), 1000 points sont échantillonnés aléatoirement sans remise. La probabilité d'échantillonnage est fonction du temps entre chaque point, plus un point représente une période de temps peu enregistré, plus il aura de probabilité d'être échantillonné. Lorsqu'un individu présente moins de 1000 points pour une combinaison de variable donnée, tous les points GPS disponibles pour cette combinaison sont sélectionnés.
+*Echantillonnage aléatoire* : Afin de garantir une représentativité (quasi)égale à chaque individu étudié malgré l'hétérogénéité dans les quantités de points GPS enregistrés pour chacun, un échantillonnage aléatoire des points a été effectué à chaque analyse. Pour chaque individu et catégorie de variables analysées (comportement, zone, sexe, âge, etc...), 1000 points sont échantillonnés aléatoirement sans remise. La probabilité d'échantillonnage est fonction du temps entre chaque point, plus un point représente une période de temps peu enregistrée, plus il aura de probabilité d'être échantillonné. Lorsqu'un individu présente moins de 1000 points pour une combinaison de variable donnée, tous les points GPS disponibles pour cette combinaison sont sélectionnés.
 
 *Sous jeu de données utilisé* : Suivant les analyses, le jeu de données utilisé pour estimer les distributions d'utilisation de l'espace est différent et restreint à la zone A, B et C, au comportement ciblé (repos ou alimentation), et/ou à la (ou les) variable(s) d'intérêt(s) sans valeur inconnues (c'est-à-dire sans *NA*).
 
