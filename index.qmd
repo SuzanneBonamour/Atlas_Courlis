@@ -1,6 +1,6 @@
 ---
 title: "Utilisation de l'espace par le courlis cendré dans le site fonctionnel de la réserve naturelle nationale de Moëze-Oléron"
-author: "Suzanne Bonamour, Gwenaël Quintenne, Pierre Rousseau, Loïc Jomat, Pierrick Bocher, Frédéric Jiguet, Adrien Chaigne"
+author: "Suzanne Bonamour, Gwenaël Quaintenne, Pierre Rousseau, Loïc Jomat, Pierrick Bocher, Frédéric Jiguet, Adrien Chaigne"
 lang: fr
 date-format: long
 editor: visual
@@ -72,7 +72,7 @@ knitr::include_graphics("courlis-cendre_AA_new-scaled_MIGRATLANE.jpg", dpi = 100
 
 -   Reposoirs et zones d’alimentation : les courlis alternent entre reposoirs à marées hautes et zones d’alimentation à marées basses, situés dans et hors réserve, surtout dans le bassin de Marennes et le marais de Brouage. Les zones d’alimentation se concentrent sur les vasières côtières et les prés salés, tandis que les reposoirs se situent en zones plus abritées du vent. Les jeunes individus parcourent de plus grandes distances entre repos et alimentation, signe d'un comportement plus exploratoire et/ou d'une moindre efficacité dans la recherche alimentaire en temps normal. La fidélité spatiale est marquée : les courlis reviennent régulièrement sur les mêmes reposoirs, notamment au Travers, au Grand Cimetière et à Arceau.
 
--   Effets des marées, saisons et conditions météorologiques : les marées hautes et les submersions limitent les zones disponibles et renforcent la fidélité aux reposoirs connus. Les vents forts n’affectent pas significativement les comportements de repos mais peuvent modifier temporairement les zones d'alimentation. Aucune influence majeure des événements climatiques extrêmes n’a pu être détectée.
+-   Effets des marées, saisons et conditions météorologiques : les marées hautes et les submersions limitent les zones disponibles et renforcent la fidélité aux reposoirs connus. Les vents forts n’affectent pas significativement les comportements de repos mais peuvent modifier temporairement les zones d'alimentation. Aucune influence majeure des événements climatiques extrêmes n’a pu être visuellement détectée.
 
 -   Effets de la chasse : les données suggèrent un risque de dérangement dans les zones non protégées. Aucun effet direct à court terme n’a été mesuré, mais la superposition entre zones de chasse et zones d’alimentation clés révèle un potentiel de perturbation élevé.
 
@@ -425,7 +425,7 @@ Reposoirs en fonction de l'âge en zone C - Reposoirs adulte en rose, reposoirs 
 :::
 ::::::
 
-Aucune différence marquée entre les reposoirs juvéniles et adultes n'a pu être détectée.
+Aucune différence marquée entre les reposoirs juvéniles et adultes n'a pu être visuellement détectée.
 
 ### Reposoirs en fonction du sexe {#section-sexe1}
 
@@ -483,7 +483,7 @@ Reposoirs en fonction du sexe en zone C - Reposoirs femelle en rose, reposoirs m
 :::
 ::::::
 
-Aucune différence marquée entre les reposoirs femelles et mâles n'a pu être détectée.
+Aucune différence marquée entre les reposoirs femelles et mâles n'a pu être visuellement détectée.
 
 ## Variations temporelles de l'utilisation des reposoirs
 
@@ -601,7 +601,7 @@ Reposoirs en fonction du jour et de la nuit en zone C - Reposoirs diurnes en ros
 :::
 ::::::
 
-Aucune différence marquée entre les reposoirs de diurnes et nocturnes n'a pu être détectée.
+Aucune différence marquée entre les reposoirs de diurnes et nocturnes n'a pu être visuellement détectée.
 
 ### Reposoirs en fonction de la hauteur d'eau {#section-hauteurEau1}
 
@@ -685,7 +685,7 @@ Reposoirs en fonction de la hauteur d'eau en zone C - Reposoirs en marées haute
 :::
 ::::::
 
-Aucune différence marquée entre les reposoirs en fonction de la hauteur d'eau n'a pu être détectée.
+Aucune différence marquée entre les reposoirs en fonction de la hauteur d'eau n'a pu être visuellement détectée.
 
 # Les zones d'alimentation {#section-alimentation}
 
@@ -810,7 +810,7 @@ Zones d'alimentation en fonction de l'âge en zone C - Zone d'alimentation adult
 :::
 ::::::
 
-Aucune différence marquée dans les zones d'alimentation juvéniles et adultes n'a été détectée. A noter tout de même, les individus utilisant le marais de Brouage pour leur alimentation sont majoritairement juvéniles, mais le nombre d'individus ayant un comportement d'utilisation du marais est trop faible pour en tirer des conclusions (@fig-UDMap_kud_foraging_age_C).
+Aucune différence marquée dans les zones d'alimentation juvéniles et adultes n'a été visuellement détectée. A noter tout de même, les individus utilisant le marais de Brouage pour leur alimentation sont majoritairement juvéniles, mais le nombre d'individus ayant un comportement d'utilisation du marais est trop faible pour en tirer des conclusions (@fig-UDMap_kud_foraging_age_C).
 
 ### Zones d'alimentation en fonction du sexe {#section-sexe2}
 
@@ -986,7 +986,7 @@ Zones d'alimentation en fonction du jour et de la nuit en zone C - Zones d'alime
 :::
 ::::::
 
-Aucune différence marquée dans les zones d'alimentation diurnes et nocturnes n'a été détectée.
+Aucune différence marquée dans les zones d'alimentation diurnes et nocturnes n'a été visuellement détectée.
 
 # Utilisation de l'espace lors d'évènement climatiques extrêmes {#section-ECE}
 
@@ -1048,7 +1048,7 @@ Reposoirs en fonction d'événements de vents forts en zone C - Reposoirs lors d
 :::
 ::::::
 
-Aucun effet marqué des vents forts sur les zones de repos n'a été détecté.
+Aucun effet marqué des vents forts sur les zones de repos n'a été visuellement détecté.
 
 ### Reposoirs lors de vents de Nord-Ouest
 
@@ -1102,7 +1102,7 @@ Reposoirs en fonction d'événements de vents de Nord-Ouest en zone C - Reposoir
 :::
 ::::::
 
-Aucun effet marqué des vents de Nord-Ouest sur les reposoirs n'a été détecté.
+Aucun effet marqué des vents de Nord-Ouest sur les reposoirs n'a été visuellement détecté.
 
 ### Reposoirs lors de vents forts de Nord-Ouest
 
@@ -1156,7 +1156,7 @@ Reposoirs en fonction d'événements de vents forts de Nord-Ouest en zone C - Re
 :::
 ::::::
 
-Aucun effet marqué des vents forts de Nord-Ouest sur les reposoirs n'a été détecté.
+Aucun effet marqué des vents forts de Nord-Ouest sur les reposoirs n'a été visuellement détecté.
 
 ## Zones d'alimentations lors d'événements climatiques extrêmes
 
@@ -1212,7 +1212,7 @@ Zones d'alimentation en fonction d'événements de vents forts en zone C - Zones
 :::
 ::::::
 
-Aucun effet marqué des vents forts sur les zones d'alimentation n'a été détecté.
+Aucun effet marqué des vents forts sur les zones d'alimentation n'a été visuellement détecté.
 
 ### Zone d'alimentation lors de vents de Nord-Ouest
 
@@ -1266,7 +1266,7 @@ Zones d'alimentation en fonction d'événements de vents de Nord-Ouest en zone C
 :::
 ::::::
 
-Aucun effet marqué des vents d'Ouest sur les zones d'alimentation n'a été détecté.
+Aucun effet marqué des vents d'Ouest sur les zones d'alimentation n'a été visuellement détecté.
 
 ### Zone d'alimentation lors de vents forts de Nord-Ouest
 
@@ -1320,7 +1320,7 @@ Zones d'alimentation en fonction d'événements de vents forts de Nord-Ouest en 
 :::
 ::::::
 
-Aucun effet marqué des vents forts de Nord-Ouest sur les zones d'alimentation n'a été détecté.
+Aucun effet marqué des vents forts de Nord-Ouest sur les zones d'alimentation n'a été visuellement détecté.
 
 # Distance entre les reposoirs et les zones d'alimentation {#section-distance}
 
@@ -1545,24 +1545,6 @@ tags$iframe(
 Tonnes de chasse en point noir (grand proche de la RNNMO, petit à distance) et zones de dérangements (rayon de 300 m en rouge, de 500 m en jaune, de 1000 m en marron).
 :::
 
-# Zones critiques
-
-Les principaux reposoirs et zones d'alimentation estimés précédemment permettent de mettre en évidence des zones d'importance majeure pour les courlis cendrés dans la zone d'étude, pourtant en dehors des limites de protection de la RNNMO. Les emplacements des tonnes de chasses sont superposés à ces zones, mettant en évidence les zones de dérangements et de risques majeurs pour les oiseaux dans et en dehors de la RNNMO.
-
-::: {#fig-zone_critique_map}
-```{r}
-#| echo: false
-
-tags$iframe(
-  src = "zone_critique_map.html",
-  width = "100%",
-  height = "600px"
-)
-```
-
-Zone critique de dérangement du courlis cendré - Zones d'alimentation en bleu (principales en bleu foncé, secondaires en bleu clair). Reposoirs en rose (principaux en rose foncé, secondaires en rose clair). Zones principales d'alimentation et de repos en dehors de la RNNMO en rouge, zones secondaires d'alimentation et de repos en jaune. Tonnes de chasse en points noirs, tonnes de chasse dans les zones principales d'alimentation et/ou de repos en points rouges, tonnes de chasse dans les zones secondaires d'alimentation et/ou de repos en points jaunes. Limite de la RNNMO en vert. Site de baguage à l'épingle rouge.
-:::
-
 # Pour aller plus loin
 
 Ce travail est une première étape dans l'étude de l'utilisation de l'espace par le courlis cendré dans et aux alentours de la RNNMO, et plusieurs compléments pertinents pourraient être envisagés.
@@ -1709,7 +1691,9 @@ L'effet de la période de chasse à pied ouverte ou fermée sur les zones d'alim
 
 Toutes les analyses, graphiques et cartes ont été réalisées avec le logiciel R version 4.4.2.
 
-Les données utilisées sont disponibles ici : [OneDrive - Data courlis](https://lpo061-my.sharepoint.com/:f:/g/personal/suzanne_bonamour_lpo_fr/ElxVxSN3HYRDlEK_d8EuSdIBk8tY371af4W07u8yRs3SwA?e=gAQKVP)
+Les données environnementale utilisées sont disponibles ici : [OneDrive - Data courlis](https://lpo061-my.sharepoint.com/:f:/g/personal/suzanne_bonamour_lpo_fr/ElxVxSN3HYRDlEK_d8EuSdIBk8tY371af4W07u8yRs3SwA?e=gAQKVP)
+
+Les données GPS sont a retrouver ici : XXXX et XXXX.
 
 Les codes produits sont disponibles ici : [Github](https://github.com/SuzanneBonamour/courlisServeur)
 
@@ -1723,7 +1707,7 @@ Les codes produits sont disponibles ici : [Github](https://github.com/SuzanneBon
 
 Cette étude a nécessité la participation d'une moyenne de XXX personnes sur le terrain durant environ XXX nuits par an depuis 2016, ainsi qu'une personne à temps plein (35h/semaine) pendant 6 mois pour l'analyse des données et la rédaction de cet atlas.
 
-**Travail de terrain, capture et baguage des oiseaux** : Pierre Rousseau (RNN Moëze-Oléron), Loïc Jomat (RNN Moëze-Oléron), Adrien Chaigne (RNN Moëze-Oléron), Pierrick Bocher (RNN Moëze-Oléron), Frédéric Jiguet (RNN Moëze-Oléron), et beaucoup d'autres personnes !
+**Travail de terrain, capture et baguage des oiseaux** : Pierre Rousseau (RNN Moëze-Oléron), Loïc Jomat (RNN Moëze-Oléron), Adrien Chaigne (RNN Moëze-Oléron), Pierrick Bocher (Univ. La Rochelle), Frédéric Jiguet (MNHN, CESCO, Paris), et beaucoup d'autres personnes !
 
 **Analyses statistiques et spatiales** : Suzanne Bonamour (LPO France, Rochefort), Gwenaël Quaintenne (LPO France, Rochefort)
 
